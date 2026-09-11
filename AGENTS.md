@@ -18,6 +18,17 @@ This repository is the durable source of truth for Billy's 2026 Sparta fantasy f
 14. Waiver/FAAB recommendations after Week 1 must use the current real-money FAAB balance stored here.
 15. Do not record a proposed roster move as completed unless the user confirms it or authoritative Yahoo evidence confirms it.
 
+## Grok Pulse intelligence feed
+
+16. `intelligence/grok_pulse_latest.json` is the official machine-readable Grok Pulse ingestion point for Sparta. `intelligence/grok_pulse_history.jsonl` is the append-only Pulse pass history.
+17. Treat Grok Pulse as supplemental intelligence only. It may inform player evaluation, watchlists, lineup analysis, waiver priority, injury/role monitoring, and source discovery, but it may never directly change ownership, roster, transactions, FAAB, waiver state, or lineup state.
+18. A Pulse pass is considered new only when `status` is `live` and `completedAt` is populated and differs from the last processed pass. `seeded`, failed, partial, or duplicate passes are not new intelligence events.
+19. Preserve Pulse provenance. Use each item's `at`, `expert`, `outlet`, `players`, `text`, and `url`; verify consequential claims against the underlying source or independent reporting when practical.
+20. Before turning any Pulse item into an add/drop recommendation, re-read current Sparta ownership and roster state. Repository ownership rules always override Pulse availability assumptions.
+21. If Pulse and repository state conflict on ownership or roster status, treat Pulse as stale/intelligence-only unless new ownership-authoritative evidence supports a repository update.
+22. Grok/LOCK is authorized to write only Pulse mirror artifacts under `intelligence/` using its dedicated server-side credential. It must not modify `data/` or any roster, ownership, FAAB, waiver, transaction, lineup, or reconciliation file.
+23. The preferred consumer path is GitHub, not direct `grok.me` scraping: read `intelligence/grok_pulse_latest.json`, compare `completedAt`, then process only genuinely new items.
+
 ## Required operational loop
 
 USER UPDATE → READ CURRENT REPOSITORY STATE → ANALYZE → VALIDATE LEAGUE + DATA INTEGRITY → WRITE DATABASE CHANGE → COMMIT TO GITHUB → READ BACK / VERIFY → REPORT RESULT.
