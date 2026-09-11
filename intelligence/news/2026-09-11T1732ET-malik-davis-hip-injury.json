@@ -1,0 +1,79 @@
+{
+  "league": "sparta",
+  "observed_at_et": "2026-09-11T17:32:04-04:00",
+  "type": "hourly_watch_intelligence_update",
+  "pulse_reliability": {
+    "public_page": "https://trail-sunny-orchid-ember.grok.me/pulse",
+    "direct_page_result": "navigation_stalled_this_run",
+    "canonical_github_mirror": "intelligence/grok_pulse_latest.json",
+    "mirror_reachable": true,
+    "mirror_parseable": true,
+    "latest_completed_at_utc": "2026-09-11T20:09:53.457Z",
+    "newest_item_at_utc": "2026-09-11T19:48:18Z",
+    "newest_item_summary": "Patrick Thorman recommended choosing Michael Mayer's ceiling while Brock Bowers is absent.",
+    "changed_since_prior_stored_observation": true,
+    "contributed_to_primary_recommendation": false,
+    "notes": "The fresh Pulse pass reinforced the existing Mayer Week 1 start but did not surface the Malik Davis injury. Ownership remained controlled by Sparta repository data."
+  },
+  "ownership_changes": [],
+  "transactions_recorded": [],
+  "items": [
+    {
+      "player": "Malik Davis",
+      "sparta_ownership": {
+        "classification": "OWNED",
+        "team": "JD",
+        "evidence": "data/current_roster_jd.json plus confirmed 2026-09-01 JD add"
+      },
+      "category": "injury_roster_downgrade",
+      "summary": "Malik Davis suffered a hip injury during Friday practice. Dallas ruled him out for Week 1, and COO Stephen Jones called it a pretty serious injury that could keep him out for some period of time. The Cowboys' official report says he is likely to be out much longer than Sunday, although final details are pending.",
+      "fantasy_significance": "Davis was JD's contingent-upside RB4 and is not in the current Week 1 starting lineup. The injury makes him JD's weakest current bench asset pending a firm diagnosis and creates an urgent opportunity to recycle the roster spot during the free-pickup window.",
+      "sources": [
+        {
+          "publisher": "Dallas Cowboys",
+          "published_at_et": "2026-09-11T15:20:00-04:00",
+          "url": "https://www.dallascowboys.com/news/malik-davis-out-with-pretty-serious-injury"
+        },
+        {
+          "publisher": "NBC Sports",
+          "published_date": "2026-09-11",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cowboys-rb-malik-davis-will-miss-time-with-a-pretty-serious-hip-injury"
+        }
+      ]
+    },
+    {
+      "player": "Emari Demercado",
+      "sparta_ownership": {
+        "classification": "UNKNOWN",
+        "reason": "No current Yahoo/user ownership confirmation in the repository; absence from draft/current files is not proof of free agency."
+      },
+      "category": "injury_created_role_availability_check",
+      "summary": "The Cowboys identify Demercado as the active-roster back likely to help replace Davis behind Javonte Williams.",
+      "fantasy_significance": "First Dallas RB availability check because he has the clearest immediate path to the vacated No. 2 role, but no acquisition recommendation is valid until Yahoo confirms Sparta availability."
+    },
+    {
+      "player": "Israel Abanikanda",
+      "sparta_ownership": {
+        "classification": "UNKNOWN",
+        "reason": "No current Yahoo/user ownership confirmation in the repository; absence from draft/current files is not proof of free agency."
+      },
+      "category": "deep_rb_availability_check",
+      "summary": "Dallas says practice-squad RB Abanikanda could be elevated or signed to the active roster after Davis' injury.",
+      "fantasy_significance": "Secondary deep-stash check behind Demercado; his game-day role is not yet established."
+    }
+  ],
+  "recommendation": {
+    "action": "AVAILABILITY_CHECK_ONLY",
+    "add": null,
+    "check_in_order": ["Emari Demercado", "Israel Abanikanda"],
+    "drop": null,
+    "conditional_drop_candidate": "Malik Davis",
+    "cost": "$0 only if Yahoo confirms a candidate is available before the Week 1 free-pickup window closes.",
+    "why": "Davis is out for Week 1 and likely longer, eliminating the immediate contingent value for which JD rostered him. Demercado now has the clearest path to the Dallas No. 2 RB job.",
+    "urgency": "HIGH — check Yahoo now, but do not execute an add/drop until availability is verified.",
+    "confidence": "HIGH that Davis is unavailable Week 1; MEDIUM-HIGH that he misses additional time; MEDIUM on Demercado as the initial replacement; NONE on Sparta availability.",
+    "roster_comparison": "Malik Davis is now JD's weakest current roster asset because of the significant injury. No lineup change is required because he was already on the Week 1 bench."
+  },
+  "actionable_add_drop": false,
+  "notification_reason": "A new significant injury directly affects a JD rostered player and warrants an immediate free-window Yahoo availability check. No transaction is recorded."
+}
