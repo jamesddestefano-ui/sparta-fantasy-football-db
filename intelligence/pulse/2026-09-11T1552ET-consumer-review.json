@@ -1,0 +1,78 @@
+{
+  "league": "sparta",
+  "observed_at_et": "2026-09-11T15:52:00-04:00",
+  "type": "grok_pulse_consumer_review",
+  "source_window": {
+    "previous_processed_completedAt": "2026-09-11T03:09:08.613Z",
+    "latest_processed_completedAt": "2026-09-11T18:09:36.330Z",
+    "latest_status": "live",
+    "source_latest": "intelligence/grok_pulse_latest.json",
+    "source_history": "intelligence/grok_pulse_history.jsonl"
+  },
+  "ownership_changes": [],
+  "transactions_recorded": [],
+  "material_new_items": [
+    {
+      "player": "Michael Mayer",
+      "sparta_ownership": {
+        "classification": "OWNED",
+        "team": "JD",
+        "evidence": "data/current_roster_jd.json; user/Yahoo-confirmed transaction history through 2026-09-09"
+      },
+      "category": "multi_week_te_opportunity_upgrade",
+      "summary": "Pulse history added stronger evidence that Brock Bowers' initial 1-2 game timetable may be optimistic. Jared Smola/Draft Sharks expects Bowers to miss Week 2 and possibly remain below full strength until October. RotoBaller/Nick Mariano notes Mayer played 92-95% of snaps in all four 2025 games he was active without Bowers and labels him a weekly top-12 threat while Bowers is out.",
+      "verified_sources": [
+        {
+          "publisher": "Draft Sharks / Jared Smola",
+          "published_at_et": "2026-09-10T17:19:00-04:00",
+          "url": "https://www.draftsharks.com/fantasy-football-news/82527/expect-brock-bowers-to-miss-week-2"
+        },
+        {
+          "publisher": "RotoBaller / Nick Mariano",
+          "published_at": "2026-09-10",
+          "url": "https://www.rotoballer.com/week-1-fantasy-football-waiver-wire-adds-stashes-post-draft-2026/1924373"
+        }
+      ],
+      "pulse_provenance": [
+        "2026-09-11T08:09:45.465Z live pass: Jared Smola Bowers/Week 2 signal",
+        "2026-09-11T12:09:35.073Z live pass: Nick Mariano Mayer 92-95% snap-share/top-12 signal",
+        "2026-09-11T18:09:36.330Z live pass: Sean Koerner Mayer TE11 and Justin Boone Mayer TE13 confirmations"
+      ],
+      "sparta_impact": "Strengthens the existing Michael Mayer hold/start case for Week 1 and increases the probability of at least a two-week usable TE window. No acquisition is needed because Mayer is already on JD.",
+      "recommended_action": "HOLD_START_MAYER",
+      "urgency": "No transaction urgency; monitor Bowers' practice status next week.",
+      "confidence": "HIGH for Week 1 expanded role; MEDIUM-HIGH for Week 2 continued elevated role."
+    },
+    {
+      "player": "Rhamondre Stevenson",
+      "sparta_ownership": {
+        "classification": "OWNED",
+        "team": "JD",
+        "evidence": "data/current_roster_jd.json"
+      },
+      "category": "usage_validation",
+      "summary": "Pulse history highlighted Patrick Thorman's review of Stevenson's opener: 23 touches and 95 total yards despite poor early efficiency, with a positive film-based note on his later-game vision.",
+      "pulse_provenance": "Patrick Thorman / Establish the Run item repeated in live passes after 2026-09-11T06:09Z.",
+      "sparta_impact": "Positive hold signal; does not create a roster move.",
+      "recommended_action": "HOLD",
+      "confidence": "MEDIUM-HIGH"
+    }
+  ],
+  "duplicates_or_nonactionable": [
+    "A.J. Brown high-ankle sprain and Patriots replacement-WR opportunity were already stored in intelligence/news on 2026-09-10; do not duplicate.",
+    "Jadarian Price role/upside signals are not an acquisition opportunity because the authoritative 2026 Sparta auction board shows Price owned by ME for $18.",
+    "Romeo Doubs remains owned by BE; Jordan Mason, Colston Loveland, Kyren Williams, Juwan Johnson and other highlighted Pulse players are already owned in Sparta or otherwise do not create a verified free-agent add.",
+    "Generic ranking-release and QB start/sit items do not justify a Sparta roster move."
+  ],
+  "availability_checks": [],
+  "recommendation": {
+    "action": "NO_ADD_DROP",
+    "add": null,
+    "drop": null,
+    "cost": 0,
+    "why": "No new candidate in this pass is verified as FREE_AGENT_CONFIRMED or WAIVERS_CONFIRMED and superior to JD's weakest roster asset. The strongest new intelligence benefits players JD already owns, especially Michael Mayer.",
+    "urgency": "NONE",
+    "confidence": "HIGH"
+  },
+  "actionable_alert": false
+}
