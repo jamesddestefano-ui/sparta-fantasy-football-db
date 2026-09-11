@@ -2,7 +2,6 @@
   "league": "sparta",
   "starting_budget": 100,
   "real_money": true,
-  "free_pickups_through_week": 1,
   "balances": [
     {
       "team": "BE",
@@ -53,6 +52,21 @@
       "balance": 100
     }
   ],
-  "source": "Yahoo Sparta standings screenshots supplied 2026-09-10; no later Sparta FAAB activity confirmed",
-  "observed_at": "2026-09-10T18:38:00-04:00"
+  "source": "Yahoo Sparta standings screenshots plus explicit user-confirmed pickup-cost rule through 2026-09-11",
+  "observed_at": "2026-09-11T19:32:08-04:00",
+  "pickup_transaction_fee_usd": 1,
+  "pickup_transaction_fee_is_separate_from_faab": true,
+  "faab_bid_free_pickups_through_week": 1,
+  "cost_rule": "Every player add costs a $1 real-money transaction fee. Waiver acquisitions also cost the winning FAAB bid.",
+  "last_confirmed_activity": {
+    "timestamp_et": "2026-09-11 19:23",
+    "team": "JD",
+    "player": "Emari Demercado",
+    "action": "ADD_DROP",
+    "dropped": "Malik Davis",
+    "transaction_fee_usd": 1,
+    "faab_bid": 0,
+    "faab_balance_after": 100,
+    "source": "Explicit user confirmation"
+  }
 }

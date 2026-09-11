@@ -1,0 +1,79 @@
+{
+  "league": "sparta",
+  "type": "grok_pulse_consumer_review",
+  "reviewed_at_et": "2026-09-11T19:32:08-04:00",
+  "pulse": {
+    "status": "live",
+    "completedAt": "2026-09-11T22:09:30.408Z",
+    "prior_processed_completedAt": "2026-09-11T20:09:53.457Z",
+    "new_completed_pass": true,
+    "item_count": 12
+  },
+  "new_material_items": [],
+  "reconciliation": [
+    {
+      "player": "Michael Mayer",
+      "repository_classification": "OWNED",
+      "team": "JD",
+      "result": "HOLD/START; repeated positive Pulse consensus, no lineup change."
+    },
+    {
+      "player": "Jordan Mason",
+      "repository_classification": "OWNED",
+      "team": "ANT",
+      "result": "Not an add."
+    },
+    {
+      "player": "Jadarian Price",
+      "repository_classification": "OWNED",
+      "team": "ME",
+      "result": "Not an add."
+    },
+    {
+      "player": "Malik Davis",
+      "repository_classification": "DROPPED/HISTORICAL",
+      "team": "JD",
+      "result": "Pulse stash mention is stale after the confirmed 19:23 ET Sparta drop."
+    },
+    {
+      "player": "Emari Demercado",
+      "repository_classification": "OWNED",
+      "team": "JD",
+      "result": "Current healthy RB stash; not an add."
+    }
+  ],
+  "independent_scan": {
+    "result": "No materially actionable new roster or lineup change.",
+    "confirmed_health": [
+      {
+        "player": "Michael Mayer",
+        "note": "Brock Bowers is ruled out; Mayer remains the clear short-term TE opportunity.",
+        "source_url": "https://www.raiders.com/team/injury-report/week/REG-1"
+      },
+      {
+        "player": "Ja'Marr Chase",
+        "note": "Cleared for Week 1 after full participation.",
+        "source_url": "https://www.nbcsports.com/fantasy/football/player-news"
+      },
+      {
+        "player": "Xavier Worthy",
+        "note": "Full participant on the official Week 1 injury report.",
+        "source_url": "https://www.nfl.com/injuries/"
+      }
+    ]
+  },
+  "recommendation": {
+    "add": null,
+    "drop": null,
+    "cost": null,
+    "why": "No verified $1 upgrade justified additional roster churn after the confirmed Davis-to-Demercado replacement.",
+    "urgency": "HOLD",
+    "confidence": "HIGH"
+  },
+  "repository_integrity_corrections": [
+    "Week 1 bench synchronized to Emari Demercado; Malik Davis removed.",
+    "Sparta pickup cost normalized to $1 real-money transaction fee plus any FAAB bid.",
+    "Demercado transaction normalized to $1 fee, $0 FAAB bid, $100 FAAB remaining."
+  ],
+  "pulse_contributed_to_actionable_recommendation": false
+}

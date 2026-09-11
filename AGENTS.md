@@ -15,7 +15,7 @@ This repository is the durable source of truth for Billy's 2026 Sparta fantasy f
 11. Before every substantive write: read current repository state, validate Sparta scope, make the smallest change, commit, re-read, and verify exact values.
 12. If a write, commit, or read-back fails, report failure explicitly. Never claim the repository was updated when only chat context changed.
 13. Keep provenance. Yahoo screenshots and user confirmations are high-authority sources; external fantasy sources are intelligence sources only.
-14. Waiver/FAAB recommendations after Week 1 must use the current real-money FAAB balance stored here.
+14. Every completed player add costs a $1 real-money transaction fee. A waiver acquisition costs that $1 fee plus the winning FAAB bid. Week 1 pickups may require no FAAB bid, but they are not free of the $1 transaction fee. Waiver/FAAB recommendations after Week 1 must use the current real-money FAAB balance stored here.
 15. Do not record a proposed roster move as completed unless the user confirms it or authoritative Yahoo evidence confirms it.
 
 ## Grok Pulse intelligence feed
