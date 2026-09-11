@@ -1,26 +1,52 @@
 {
   "league": "sparta",
   "consumer": "ChatGPT Sparta Fantasy Watch",
-  "last_processed_completedAt": "2026-09-11T18:09:36.330Z",
-  "processed_at": "2026-09-11T19:52:00Z",
+  "last_processed_completedAt": "2026-09-11T20:09:53.457Z",
+  "processed_at": "2026-09-11T22:03:17Z",
   "pulse_status": "live",
   "pulse_item_count": 12,
   "new_material_items_ingested": 2,
   "assessment": [
-    "Michael Mayer: new Pulse-history evidence strengthened the existing hold/start case. Jared Smola expects Brock Bowers to miss Week 2 and possibly remain below full strength until October; Nick Mariano/RotoBaller documented 92-95% Mayer snap shares in four 2025 games active without Bowers and a current top-12 TE threat assessment.",
-    "Rhamondre Stevenson: Patrick Thorman's 23-touch, 95-total-yard opener review is a positive usage/film validation for a JD-owned player; no roster move created.",
-    "A.J. Brown high-ankle injury fallout was already stored in dedicated Sept. 10 intelligence records, so the repeated Pulse signals were not duplicated.",
-    "Jadarian Price is owned by ME for $18 on the authoritative Sparta auction board, so Sean Koerner/Jeff Bell upside signals cannot support an add recommendation.",
-    "No new player was verified FREE_AGENT_CONFIRMED or WAIVERS_CONFIRMED and superior to JD's weakest current asset. No add/drop or transaction was recorded."
+    "Michael Mayer: Patrick Thorman recommended choosing Mayer's ceiling with Brock Bowers out, and Jamie Calandro would start Mayer over Kyle Pitts. This strengthens the existing Week 1 HOLD/START decision; Mayer is already JD's starter.",
+    "The remaining Pulse items were repeats or not actionable against Sparta ownership. Jadarian Price remains OWNED by ME; no add recommendation is permitted.",
+    "Separately, explicit user-confirmed Yahoo evidence established Malik Davis on fantasy IR and Emari Demercado added by JD for $0 with no drop. These are authoritative league-state events, not Grok-derived ownership.",
+    "No additional player was verified FREE_AGENT_CONFIRMED or WAIVERS_CONFIRMED and superior to JD's weakest active asset."
   ],
-  "ownership_changes": [],
-  "transactions_recorded": [],
-  "actionable_alert": false,
+  "ownership_changes": [
+    {
+      "player": "Malik Davis",
+      "team": "JD",
+      "status": "IR",
+      "basis": "explicit user/Yahoo confirmation; independent of Grok"
+    },
+    {
+      "player": "Emari Demercado",
+      "team": "JD",
+      "status": "ACTIVE",
+      "basis": "explicit user-confirmed $0 Yahoo add; independent of Grok"
+    }
+  ],
+  "transactions_recorded": [
+    {
+      "team": "JD",
+      "action": "MOVE_TO_IR",
+      "player": "Malik Davis",
+      "cost": 0
+    },
+    {
+      "team": "JD",
+      "action": "ADD",
+      "player": "Emari Demercado",
+      "cost": 0,
+      "drop": null
+    }
+  ],
+  "actionable_alert": true,
   "provenance": {
     "source": "intelligence/grok_pulse_latest.json plus intelligence/grok_pulse_history.jsonl",
-    "source_completedAt": "2026-09-11T18:09:36.330Z",
-    "source_sha": "f47ca6b59402598181ab75386df4769691a8ff02",
-    "consumer_review": "intelligence/pulse/2026-09-11T1552ET-consumer-review.json",
-    "repository_base_commit": "68a95da39b77bf382b43577a8c9f714362cd1d30"
+    "source_completedAt": "2026-09-11T20:09:53.457Z",
+    "source_sha": "386f296b29860041901584d2ae717f47a92f860b",
+    "consumer_review": "intelligence/pulse/2026-09-11T1803ET-consumer-review.json",
+    "repository_base_commit": "bfb169a4ce012e912746d96f41d2281a491f4739"
   }
 }

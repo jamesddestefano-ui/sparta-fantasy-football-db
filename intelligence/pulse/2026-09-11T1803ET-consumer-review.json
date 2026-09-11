@@ -1,0 +1,92 @@
+{
+  "league": "sparta",
+  "type": "grok_pulse_consumer_review",
+  "reviewed_at_et": "2026-09-11T18:03:17-04:00",
+  "pulse": {
+    "status": "live",
+    "completedAt": "2026-09-11T20:09:53.457Z",
+    "prior_processed_completedAt": "2026-09-11T18:09:36.330Z",
+    "new_completed_pass": true,
+    "item_count": 12
+  },
+  "materially_new_items": [
+    {
+      "expert": "Patrick Thorman",
+      "at": "2026-09-11T19:48:18Z",
+      "players": [
+        "Michael Mayer",
+        "Brock Bowers"
+      ],
+      "signal": "Choose Mayer's ceiling while Bowers is absent.",
+      "sparta_impact": "Reinforces HOLD/START for JD-owned Mayer; no acquisition decision.",
+      "source_url": "https://x.com/Pat_Thorman/status/2098498891297460241"
+    },
+    {
+      "expert": "Jamie Calandro",
+      "at": "2026-09-11T18:50:39Z",
+      "players": [
+        "Michael Mayer",
+        "Kyle Pitts Sr."
+      ],
+      "signal": "Would happily start Mayer over Pitts.",
+      "sparta_impact": "Independent expert convergence behind Mayer as JD's Week 1 starter.",
+      "source_url": "https://x.com/jac3600/status/2098484381996183770"
+    }
+  ],
+  "ownership_reconciliation": [
+    {
+      "player": "Michael Mayer",
+      "classification": "OWNED",
+      "team": "JD",
+      "action": "HOLD_START"
+    },
+    {
+      "player": "Jadarian Price",
+      "classification": "OWNED",
+      "team": "ME",
+      "action": "NOT_AN_ADD"
+    }
+  ],
+  "independent_verification": [
+    {
+      "claim": "Brock Bowers is out for Week 1; Michael Mayer is next on the Raiders depth chart.",
+      "publisher": "Las Vegas Raiders",
+      "url": "https://www.raiders.com/team/injury-report/week/REG-1"
+    },
+    {
+      "claim": "Dallas described Malik Davis' hip injury as serious and expects Demercado to help replace him.",
+      "publisher": "Dallas Cowboys",
+      "url": "https://www.dallascowboys.com/news/malik-davis-out-with-pretty-serious-injury"
+    }
+  ],
+  "authoritative_transaction_sync": {
+    "source": "Explicit user confirmation with Yahoo roster evidence; not Grok Pulse.",
+    "events": [
+      {
+        "team": "JD",
+        "action": "MOVE_TO_IR",
+        "player": "Malik Davis",
+        "cost": 0
+      },
+      {
+        "team": "JD",
+        "action": "ADD",
+        "player": "Emari Demercado",
+        "drop": null,
+        "cost": 0
+      }
+    ],
+    "faab_after": 100,
+    "waiver_priority_change_recorded": false
+  },
+  "recommendation": {
+    "add": null,
+    "drop": null,
+    "cost": 0,
+    "why": "Confirmed Demercado acquisition already captures the Dallas injury-created role; no further verified upgrade surfaced.",
+    "urgency": "HOLD",
+    "confidence": "HIGH on transaction state and Mayer start; no new add recommendation."
+  },
+  "pulse_contributed": true,
+  "transaction_state_changed_by_pulse": false
+}
