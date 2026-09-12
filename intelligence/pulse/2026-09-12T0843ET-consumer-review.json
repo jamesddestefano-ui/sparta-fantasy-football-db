@@ -1,0 +1,83 @@
+{
+  "league": "sparta",
+  "consumer": "Prime Sparta Fantasy Watch",
+  "review_type": "watch_iteration",
+  "processed_at": "2026-09-12T12:43:40Z",
+  "authoritative_yahoo_state": {
+    "snapshot_path": "data/yahoo_live_snapshot_latest.json",
+    "snapshot_sha": "12236e63c032120193a0357d7c67ef9b8f890817",
+    "observed_at": "2026-09-12T08:15:30-04:00",
+    "completed": true,
+    "source": "authenticated Yahoo Agent Computer",
+    "league": "sparta",
+    "yahoo_league_id": "102586",
+    "team_code": "JD",
+    "team_name": "TB12 of Ass/Cousin Fucker",
+    "roster_changed": false,
+    "new_transactions": 0,
+    "availability_checked": true,
+    "verified_ownership": {
+      "Emari Demercado": "OWNED_JD_BENCH",
+      "Malik Davis": "WAIVERS_SEP_13",
+      "Israel Abanikanda": "FREE_AGENT",
+      "Javonte Williams": "OWNED_MM"
+    },
+    "faab_balance": 100
+  },
+  "grok_pulse": {
+    "status": "live",
+    "completedAt": "2026-09-12T12:09:33.015Z",
+    "source_sha": "16ab535ede6fe11b4ebc852066652bbb8bb2e204",
+    "prior_processed_completedAt": "2026-09-12T10:09:32.041Z",
+    "new_completed_pass": true,
+    "assessment": [
+      "Michael Mayer, Tetairoa McMillan, Quinshon Judkins and J.K. Dobbins items are semantic repeats of prior Week 1 analysis.",
+      "The Ja'Kobi Lane and Caleb Douglas waiver-stash item concerns two players already owned by JD and only confirms existing bench holds.",
+      "The Malik Davis stash item predates and is superseded by the official surgery and season-ending IR report; it must not be treated as current advice.",
+      "Remaining items do not create a new JD acquisition or lineup decision."
+    ],
+    "contributed_to_material_decision": false
+  },
+  "nfl_pulse": {
+    "cursor_sha": "8b78e8ee1fbd469a8f2bd5b64692765b0917ae01",
+    "pulse_id": "20260912-070200-davis-hip-surgery-ir",
+    "detected_at_et": "2026-09-12T07:02:00-04:00",
+    "category": "INJURY_STATUS_ROLE_CHANGE",
+    "fact_confidence": 4,
+    "urgency": "HIGH",
+    "relevance": "YES",
+    "materially_used": true,
+    "changed_decision": true,
+    "confirmed_existing_thesis": true,
+    "created_new_thesis": false,
+    "conflicted_with_other_evidence": false,
+    "usefulness_grade": "UNRESOLVED",
+    "independent_verification": {
+      "source": "Dallas Cowboys",
+      "url": "https://www.dallascowboys.com/news/malik-davis-out-with-pretty-serious-injury",
+      "fact": "Malik Davis required hip surgery and will be placed on season-ending injured reserve."
+    }
+  },
+  "decision": {
+    "decision_id": "SPARTA-2026W1-DEMERCADO-HOLD-20260912-0815",
+    "action": "HOLD",
+    "player": "Emari Demercado",
+    "detail": "Keep Demercado as JD's primary Dallas handcuff. Do not spend another $1 to add Israel Abanikanda and do not reclaim Malik Davis. Keep Demercado benched for Week 1.",
+    "confidence": 4,
+    "urgency": "HIGH",
+    "deadline": "2026-09-13T18:50:00-04:00",
+    "transaction_cost_impact": "$0 now; avoids an unnecessary $1 pickup fee. JD FAAB remains $100."
+  },
+  "durable_learning": {
+    "original_decision_commit": "b23d92816d9bef3a7a367edac6821536e05bff58",
+    "decision_schema_supplement_commit": "1ed25e237f5f97d3d587f371c0421cfb0397b6b7",
+    "lineage_schema_supplement_commit": "8ce40467ac58806c9bf9b30287a99262b4853a5b",
+    "historical_rationale_rewritten": false,
+    "note": "Append-only schema supplements complete the required Pulse lineage fields while preserving the original decision record."
+  },
+  "ingestion_held": false,
+  "transactions_recorded": [],
+  "acquisitions_recommended": [],
+  "actionable_alert": true,
+  "user_notification": "required for new materially actionable HOLD/no-churn decision"
+}
