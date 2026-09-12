@@ -1,0 +1,62 @@
+{
+  "league": "sparta",
+  "consumer": "Prime Sparta Fantasy Watch",
+  "review_type": "watch_iteration",
+  "processed_at": "2026-09-12T14:52:19Z",
+  "authoritative_yahoo_state": {
+    "snapshot_path": "data/yahoo_live_snapshot_latest.json",
+    "snapshot_sha": "12236e63c032120193a0357d7c67ef9b8f890817",
+    "observed_at": "2026-09-12T08:15:30-04:00",
+    "completed": true,
+    "source": "authenticated Yahoo Agent Computer",
+    "league": "sparta",
+    "yahoo_league_id": "102586",
+    "team_code": "JD",
+    "roster_changed": false,
+    "new_transactions": 0,
+    "lineup_changed": false,
+    "faab_balance": 100,
+    "ingestion_held": false
+  },
+  "grok_pulse": {
+    "status": "live",
+    "completedAt": "2026-09-12T14:09:33.919Z",
+    "source_sha": "848902f8ff46c34e3dacd3bdfd3562ff2305d5b6",
+    "prior_processed_completedAt": "2026-09-12T12:09:33.015Z",
+    "new_completed_pass": true,
+    "item_count": 12,
+    "new_material_items": 0,
+    "assessment": [
+      "All 12 items are unchanged from the previously processed live pass.",
+      "JD-relevant Mayer, McMillan, Judkins and Dobbins items are semantic duplicates and do not change the current Week 1 lineup recommendation.",
+      "The Malik Davis stash item remains stale and superseded by official surgery and season-ending injured-reserve reporting.",
+      "No new verified free-agent target, acquisition, drop, FAAB, trade, or lineup action was created."
+    ],
+    "contributed_to_material_decision": false
+  },
+  "nfl_pulse": {
+    "cursor_path": "intelligence/nfl_pulse_cursor.json",
+    "cursor_sha": "8b78e8ee1fbd469a8f2bd5b64692765b0917ae01",
+    "last_pulse_id": "20260912-070200-davis-hip-surgery-ir",
+    "new_production_eligible_pulse": false,
+    "contributed_to_new_material_decision": false
+  },
+  "external_verification": {
+    "checked_at_et": "2026-09-12T10:52:19-04:00",
+    "result": "No new actionable JD-specific change. Raiders officially list Brock Bowers out, confirming the already-established Michael Mayer start; Bengals reporting clears Ja'Marr Chase.",
+    "sources": [
+      "https://www.raiders.com/news/las-vegas-raiders-miami-dolphins-nfl-week-1-2026-injury-report",
+      "https://www.bucsnation.com/tampa-bay-buccaneers-injuries/68458/buccaneers-bengals-final-injury-report-nfl-week-1"
+    ]
+  },
+  "learning": {
+    "new_material_recommendation": false,
+    "decision_record_appended": false,
+    "pulse_lineage_appended": false,
+    "reason": "No new material decision; prior Demercado and Mayer recommendations are unchanged."
+  },
+  "transactions_recorded": [],
+  "acquisitions_recommended": [],
+  "actionable_alert": false,
+  "user_notification": "skip"
+}
