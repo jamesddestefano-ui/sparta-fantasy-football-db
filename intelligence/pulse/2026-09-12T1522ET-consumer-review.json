@@ -1,0 +1,81 @@
+{
+  "league": "sparta",
+  "consumer": "Prime Sparta Fantasy Watch",
+  "reviewed_at_et": "2026-09-12T15:22:01-04:00",
+  "grok_pulse": {
+    "status": "live",
+    "completedAt": "2026-09-12T18:51:14.740Z",
+    "source_sha": "cece242563f6f7ebebb24a11b12124f09181e558",
+    "item_count": 14,
+    "new_schema_verified": true,
+    "schema_fields_verified": [
+      "kind",
+      "eventId",
+      "signal",
+      "why",
+      "implication"
+    ],
+    "named_source_monitoring_verified": [
+      "Establish The Run",
+      "Adam Levitan",
+      "Matthew Berry"
+    ]
+  },
+  "authoritative_state": {
+    "yahoo_snapshot_observed_at": "2026-09-12T12:16:52-04:00",
+    "yahoo_snapshot_sha": "4c46f4cc9ff2958722ae9879df4236ee6c250535",
+    "transactions_changed": false,
+    "roster_changed": false,
+    "lineup_changed": false,
+    "faab_changed": false,
+    "jd_faab": 100
+  },
+  "sparta_review": [
+    {
+      "underlying_event": "Brock Bowers Week 1 OUT",
+      "jd_effect": "Michael Mayer is already owned by JD and already in the Week 1 starting lineup.",
+      "action": "NO_CHANGE",
+      "deduplication": "Existing Mayer start thesis; do not count ETR, Schefter, Rapoport, and analyst reactions as separate injury facts."
+    },
+    {
+      "underlying_event": "Ja'Marr Chase cleared/IN",
+      "jd_effect": "Chase is already owned by JD and already starting.",
+      "action": "NO_CHANGE"
+    },
+    {
+      "underlying_event": "Malik Nabers questionable",
+      "jd_effect": "Grok names JD-owned Malachi Fields as a possible beneficiary, but no verified role change supports replacing JD's current starters.",
+      "action": "BENCH_WATCH_ONLY"
+    },
+    {
+      "underlying_event": "Malik Davis IR and Israel Abanikanda signed to active roster",
+      "jd_effect": "Same underlying development already consumed through NFL Pulse; JD already holds Emari Demercado.",
+      "action": "NO_CHANGE",
+      "deduplication": "Do not create a second Demercado decision from Grok repetition."
+    },
+    {
+      "underlying_event": "Michael Mayer contract extension",
+      "jd_effect": "Confirms organizational commitment but does not independently change the existing Week 1 START/HOLD decision.",
+      "action": "NO_CHANGE"
+    }
+  ],
+  "quality_findings": [
+    "The new Grok schema and ETR/Levitan/Berry source expansion are present in production.",
+    "The Levitan record levitan-odunze-kamara groups multiple distinct player developments under one eventId; future producer output should use one underlying NFL development per eventId.",
+    "Automatic hourly scheduling remains unproven until the next pass advances without a manual trigger."
+  ],
+  "nfl_pulse": {
+    "cursor_sha": "1666f13e70057befe9b1824f7cbb72c85904b237",
+    "last_sparta_pulse_id": "20260912-151300-davis-ir-abanikanda-53",
+    "current_grok_overlap_deduped": true,
+    "contributed_to_new_decision": false
+  },
+  "ownership_changes": [],
+  "transactions_recorded": [],
+  "actionability": "no_new_actionable_information",
+  "actionable_alert": false,
+  "grok_pulse_contributed": false,
+  "nfl_pulse_contributed": false,
+  "learning_decision_id": null,
+  "note": "No new ADD/DROP/FAAB/START/BENCH/TRADE recommendation. Avoid marginal $1 transaction churn."
+}
