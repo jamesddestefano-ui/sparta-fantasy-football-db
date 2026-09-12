@@ -11,7 +11,7 @@
   "opponent_team_name": "AMON A ROLL",
   "opponent_team_code": "ANT",
   "record": "0-0-0",
-  "observed_at": "2026-09-12T08:15:30-04:00",
+  "observed_at": "2026-09-12T12:16:52-04:00",
   "completed": true,
   "roster": [
     {
@@ -434,12 +434,19 @@
     "fa_label": "FA",
     "waiver_label": "W (date)",
     "yahoo_note": "Free agents move to waivers when their game starts",
-    "targeted_scan": true
+    "targeted_scan": true,
+    "fa_scan_detail": {
+      "Israel Abanikanda": "FA \u2014 Dallas RB; Add Player shown",
+      "Malik Davis": "Waivers (Sep 13) \u2014 Dallas RB",
+      "Emari Demercado": "Rostered by TB12 of Ass/Cousin Fucker (JD)",
+      "Jaydon Blue": "FA \u2014 PHI RB; Add Player shown",
+      "Javonte Williams": "Rostered by Pablo Pledgescobars (team 8 / MM)"
+    }
   },
   "player_aliases": {
     "Andy Borregales": "Andres Borregales"
   },
-  "durable_files_note": "This snapshot is CURRENT LIVE VIEW only. Durable history remains in current_roster_jd.json, transactions.json, faab.json, waiver_state.json, lineups/, reconciliation.json.",
+  "durable_files_note": "This snapshot is CURRENT LIVE VIEW only. Durable history remains in current_roster_jd.json, transactions.json, faab.json, waiver_state.json, lineups/, reconciliation.json. No durable writes this check (roster match; 0 new txs).",
   "source": "authenticated Yahoo Agent Computer",
   "isolation": "Sparta only \u2014 no Mongo/DFS/props",
   "fa_scan_targets": {
@@ -452,12 +459,15 @@
   },
   "check_meta": {
     "routine": "Sparta Live Check",
-    "pull_dir": "/workspace/sparta-yahoo-live-20260912-1200",
-    "pull_observed_at": "2026-09-12T08:03:00-04:00",
+    "pull_dir": "/workspace/sparta-yahoo-live-20260912-1211",
+    "pull_observed_at": "2026-09-12T12:16:52-04:00",
+    "provenance": "Authenticated Yahoo Agent Computer pull artifact sparta-yahoo-live-20260912-1211 (pull_summary.json + screenshots); quiet noon check ~12:16 ET",
     "new_transactions_ingested": 0,
     "durable_tx_writes": false,
     "roster_changed": false,
+    "roster_matches_prior_17": true,
     "yahoo_fa_scan": "OK",
+    "semantic_dedupe": "0 durable tx writes; latest still Sep 11 4:23 pm Demercado add / Davis drop",
     "timestamp_policy": "Yahoo UI display treated as Pacific \u2192 ET (matches prior verified 19:23 ET Demercado txn); semantic dedupe only"
   }
 }
