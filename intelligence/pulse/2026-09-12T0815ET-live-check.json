@@ -1,0 +1,40 @@
+{
+  "league": "sparta",
+  "consumer": "Sparta FF Bot Live Check",
+  "review_type": "sparta_live_check",
+  "processed_at": "2026-09-12T12:15:30Z",
+  "yahoo_snapshot": {
+    "path": "data/yahoo_live_snapshot_latest.json",
+    "observed_at": "2026-09-12T08:15:30-04:00",
+    "completed": true,
+    "yahoo_league_id": "102586",
+    "team_code": "JD",
+    "team_name": "TB12 of Ass/Cousin Fucker",
+    "source": "authenticated Yahoo Agent Computer",
+    "authority_validation": "PASSED",
+    "yahoo_fa_scan": "OK"
+  },
+  "ingestion": {
+    "new_transactions": 0,
+    "durable_writes": false,
+    "reason": "All visible Yahoo txs already present under semantic dedupe (America/New_York day; Andy=Andres Borregales)"
+  },
+  "nfl_pulse_delta": {
+    "status": "CONSUMED",
+    "new_active_pulses": [
+      "20260912-070200-davis-hip-surgery-ir"
+    ],
+    "quarantine_skipped": 0,
+    "prioritized_YES": 1,
+    "material_alerts": 1
+  },
+  "recommendation": {
+    "action": "HOLD",
+    "player": "Emari Demercado",
+    "detail": "HOLD Demercado as primary DAL handcuff after Malik Davis surgery/season-ending IR upgrade. Do NOT drop/churn Demercado for Abanikanda. Do NOT claim Davis on waivers Sep 13. Abanikanda remains FA watch-only (PS elevation contingency). No W1 start of Demercado over Stevenson/Judkins/Dobbins.",
+    "format": "HOLD\u2014Emari Demercado\u2014primary DAL backup after Davis SE IR; no Abanikanda churn; no Davis claim"
+  },
+  "decision_id": "SPARTA-2026W1-DEMERCADO-HOLD-20260912-0815",
+  "actionable_alert": true,
+  "isolation": "Sparta only \u2014 no Mongo/DFS/props"
+}
