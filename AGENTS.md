@@ -66,3 +66,13 @@ USER UPDATE → READ CURRENT REPOSITORY STATE → ANALYZE → VALIDATE LEAGUE + 
 46. Never cross-contaminate learning state with Mongo, DFS, props, or another league. Only shared NFL intelligence may be compared outside Sparta; ownership, roster, FAAB, waiver, lineup, and performance metrics remain Sparta-specific.
 47. No hindsight rewriting. Historical recommendation text, reasoning, confidence, urgency, timestamps, and decision-time evidence remain immutable; outcomes and lessons are appended afterward.
 48. The Prime learning standard is: OBSERVE → RECOMMEND → RECORD → GRADE → DIAGNOSE → LEARN → UPDATE RULES → TEST AGAIN. The objective is improving calibration, speed, accuracy, discipline, and value—not merely counting wins.
+
+
+## NFL Pulse Bot (shared NFL intelligence)
+
+49. `/workspace/prime-nfl-pulse` is the certified NFL Pulse Bot production store. Sparta consumes only production-eligible records (`status=active`). Quarantined records are excluded from normal intelligence. `UNCONFIRMED_HIGH_PRIORITY` may be reviewed only if explicitly labeled unconfirmed.
+50. Maintain delta cursor `intelligence/nfl_pulse_cursor.json` (`last_sparta_pulse_consumed_at`, `last_sparta_pulse_id`). Do not reprocess unchanged records.
+51. Prioritize `SPARTA_relevance=YES`; review `POSSIBLE`; ignore `NO` unless independent Sparta evidence warrants review.
+52. Pulse is evidence only. It never determines ADD/DROP/FAAB/START/SIT/TRADE/waiver priority. Authenticated Yahoo/Sparta state remains authoritative for ownership and availability. Never infer Sparta availability or ownership from Pulse or public roster %.
+53. Keep `pulse_fact_confidence` separate from `sparta_decision_confidence`. On credible conflict with Pulse, record `PULSE_CONFLICT` with competing evidence; do not silently choose.
+54. When Pulse materially contributes to a Sparta recommendation, link it in `learning/decision_ledger.jsonl` and update `intelligence/sparta_pulse_learning.json` usefulness/outcome metrics after grading. Isolation from Mongo/DFS/props remains absolute.
