@@ -28,6 +28,7 @@ This repository is the durable source of truth for Billy's 2026 Sparta fantasy f
 21. If Pulse and repository state conflict on ownership or roster status, treat Pulse as stale/intelligence-only unless new ownership-authoritative evidence supports a repository update.
 22. Grok/LOCK is authorized to write only Pulse mirror artifacts under `intelligence/` using its dedicated server-side credential. It must not modify `data/` or any roster, ownership, FAAB, waiver, transaction, lineup, or reconciliation file.
 23. The preferred consumer path is GitHub, not direct `grok.me` scraping: read `intelligence/grok_pulse_latest.json`, compare `completedAt`, then process only genuinely new items.
+24. User-facing Watch output must be ownership-filtered: elevate only JD-owned players, players with confirmed Sparta availability, or an opponent-owned player whose change directly creates a meaningful JD waiver, lineup, trade, or matchup decision. Do not surface incidental names merely because they appear in a feed or article.
 
 ## Required operational loop
 
