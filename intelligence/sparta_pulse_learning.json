@@ -1,12 +1,15 @@
 {
   "league": "sparta",
-  "pulses_reviewed": 0,
+  "pulses_considered": 0,
   "pulses_used": 0,
-  "pulses_rejected_by_sparta": 0,
+  "pulses_rejected": 0,
   "actions_changed_by_pulse": 0,
   "successful_actions_changed_by_pulse": 0,
   "unsuccessful_actions_changed_by_pulse": 0,
   "average_information_lead_time": null,
+  "highly_useful_pulses": 0,
+  "misleading_pulses": 0,
+  "too_late_pulses": 0,
   "pulse_source_performance": {},
   "pulse_category_performance": {},
   "usefulness_grades": {
@@ -19,7 +22,10 @@
     "WRONG": 0,
     "UNRESOLVED": 0
   },
-  "updated_at_et": "2026-09-12T00:27:49-04:00",
+  "double_count_protection": true,
+  "ownership_authority": "authenticated Yahoo Sparta state and durable Sparta repository state only",
+  "updated_at_et": "2026-09-12T00:34:00-04:00",
   "decision_ledger_path": "learning/decision_ledger.jsonl",
-  "note": "Pulse-specific aggregates; decision events live in learning/decision_ledger.jsonl per AGENTS.md"
+  "pulse_lineage_path": "learning/pulse_decision_lineage.jsonl",
+  "note": "NFL Pulse-specific aggregates only; do not duplicate the NFL Pulse production database in Sparta. Decision events remain in learning/decision_ledger.jsonl."
 }
