@@ -1,32 +1,34 @@
 {
   "league": "sparta",
   "consumer": "Prime Sparta Fantasy Watch",
-  "last_processed_completedAt": "2026-09-12T10:09:32.041Z",
-  "processed_at": "2026-09-12T10:56:19Z",
+  "last_processed_completedAt": "2026-09-12T12:09:33.015Z",
+  "processed_at": "2026-09-12T12:43:40Z",
   "pulse_status": "live",
   "pulse_item_count": 12,
   "new_material_items_ingested": 0,
   "assessment": [
-    "A genuinely new live Grok pass was processed, advancing completedAt from 2026-09-12T08:09:19.922Z to 2026-09-12T10:09:32.041Z.",
-    "The Justin Boone items involving Michael Mayer, Tetairoa McMillan, Quinshon Judkins and J.K. Dobbins are semantic repeats already evaluated in the prior consumer review.",
-    "Official Week 1 depth charts continue to list Judkins and Dobbins first at running back, and no JD bench player presents a sufficiently clear upgrade to change the authenticated Yahoo lineup.",
-    "The Malik Davis injury item repeats the already processed surgery/IR fact and only confirms the completed Davis-to-Demercado transaction.",
-    "The authenticated Yahoo Sparta roster, ownership, lineup, transactions and FAAB state remain unchanged. No ingestion hold or reconciliation conflict requires action.",
-    "No new ADD, DROP, FAAB, START/SIT, trade, IR, streaming, defense, injury-contingency or roster-construction decision was created.",
-    "The NFL Pulse cursor did not advance. The certified production-store path was unavailable in this runtime, and no sanctioned Sparta mirror exposed a new delta; NFL Pulse did not contribute to a decision."
+    "A genuinely new live Grok pass was processed, advancing completedAt from 2026-09-12T10:09:32.041Z to 2026-09-12T12:09:33.015Z.",
+    "All JD-relevant Grok items are semantic duplicates, confirmations of existing holds, or stale items superseded by later official reporting.",
+    "The authenticated Yahoo Sparta snapshot refreshed at 2026-09-12 08:15 ET with no new transaction or roster change; JD FAAB remains $100.",
+    "NFL Pulse 20260912-070200-davis-hip-surgery-ir materially upgraded Malik Davis to surgery/season-ending IR and supported the already-recorded HOLD Emari Demercado decision.",
+    "DallasCowboys.com independently confirmed surgery and season-ending injured reserve.",
+    "No acquisition or lineup change is recommended. Avoid $1 churn for Israel Abanikanda; keep Demercado benched for Week 1.",
+    "Append-only schema supplements completed the required decision-level and pulse-to-decision lineage fields without rewriting the original rationale."
   ],
   "ownership_changes": [],
   "transactions_recorded": [],
-  "actionability": "none",
-  "actionable_alert": false,
-  "grok_pulse_contributed": true,
-  "nfl_pulse_contributed": false,
-  "learning_decision_id": null,
+  "actionability": "material_hold_no_churn",
+  "actionable_alert": true,
+  "grok_pulse_contributed": false,
+  "nfl_pulse_contributed": true,
+  "learning_decision_id": "SPARTA-2026W1-DEMERCADO-HOLD-20260912-0815",
   "provenance": {
-    "source": "intelligence/grok_pulse_latest.json plus authenticated Yahoo Sparta snapshot, durable Sparta state, Cleveland Browns and Denver Broncos official depth charts",
-    "source_completedAt": "2026-09-12T10:09:32.041Z",
-    "source_sha": "33cf983023289eaa8f8e9be59ea7198e81c0269c",
-    "consumer_review": "intelligence/pulse/2026-09-12T0656ET-consumer-review.json",
-    "repository_base_commit": "0d057e795bd7a649e37884d96cfd161d1312f0e2"
+    "grok_source": "intelligence/grok_pulse_latest.json",
+    "source_completedAt": "2026-09-12T12:09:33.015Z",
+    "source_sha": "16ab535ede6fe11b4ebc852066652bbb8bb2e204",
+    "yahoo_snapshot_sha": "12236e63c032120193a0357d7c67ef9b8f890817",
+    "nfl_pulse_id": "20260912-070200-davis-hip-surgery-ir",
+    "consumer_review": "intelligence/pulse/2026-09-12T0843ET-consumer-review.json",
+    "repository_event_commit": "b23d92816d9bef3a7a367edac6821536e05bff58"
   }
 }
