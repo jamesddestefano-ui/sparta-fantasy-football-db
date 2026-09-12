@@ -1,0 +1,58 @@
+{
+  "system": "PRIME_SPARTA_FANTASY_WATCH",
+  "version": "learning_rules_v2",
+  "effective_date": "2026-09-12",
+  "supersedes": "learning_rules_v1",
+  "changes": [
+    {
+      "rule_id": "SPARTA-LR-006",
+      "date": "2026-09-12",
+      "old_rule": "NFL Pulse could be linked to Sparta recommendations without a required decision-level lineage schema.",
+      "new_rule": "Every material Sparta decision must carry explicit NFL Pulse lineage fields, with null lineage details when pulse_used=FALSE.",
+      "reason": "Make Pulse influence auditable and measurable at decision level without duplicating the full Pulse database.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "Traceable Pulse-to-decision causality and better post-outcome evaluation."
+    },
+    {
+      "rule_id": "SPARTA-LR-007",
+      "date": "2026-09-12",
+      "old_rule": "Repeated mentions of the same NFL fact could be counted as separate signals unless manually reconciled.",
+      "new_rule": "Treat one underlying NFL fact as one information event even when repeated by Pulse, web, beat reporters, fantasy analysts, or news aggregators; store multiple sources as corroboration rather than independent confidence votes.",
+      "reason": "Prevent artificial confidence inflation and signal double-counting.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "Cleaner confidence calibration and more accurate source-performance measurement."
+    },
+    {
+      "rule_id": "SPARTA-LR-008",
+      "date": "2026-09-12",
+      "old_rule": "Pulse usefulness was tracked only as a general aggregate.",
+      "new_rule": "Grade materially used Pulse intelligence as HIGHLY_USEFUL, USEFUL, ACCURATE_NOT_ACTIONABLE, DUPLICATIVE, TOO_LATE, MISLEADING, WRONG, or UNRESOLVED using accuracy, timeliness, decision impact, mistake prevention, roster value, false alarms, and redundancy—not fantasy result alone.",
+      "reason": "Separate information quality from downstream fantasy variance.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "Identify which Pulse categories and sources actually improve Sparta decisions."
+    },
+    {
+      "rule_id": "SPARTA-LR-009",
+      "date": "2026-09-12",
+      "old_rule": "Weekly learning reviews did not require a dedicated NFL Pulse performance section.",
+      "new_rule": "Every weekly Sparta learning review must include NFL Pulse performance metrics, including considered/used/rejected counts, actions changed, outcomes, lead time, usefulness grades, category performance, and source performance.",
+      "reason": "Make Pulse performance visible and comparable week over week.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "Cumulative evidence for whether Pulse is early, accurate, and decision-improving."
+    },
+    {
+      "rule_id": "SPARTA-LR-010",
+      "date": "2026-09-12",
+      "old_rule": "Pulse-derived rules followed the general repeated-evidence standard.",
+      "new_rule": "Do not promote a Pulse-derived signal into a permanent Sparta rule from one ordinary result; require repeated evidence unless a clear structural defect is exposed.",
+      "reason": "Avoid overfitting to isolated Pulse wins or failures.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "More stable and evidence-based Pulse learning."
+    }
+  ]
+}
