@@ -30,6 +30,12 @@ This repository is the durable source of truth for Billy's 2026 Sparta fantasy f
 23. The preferred consumer path is GitHub, not direct `grok.me` scraping: read `intelligence/grok_pulse_latest.json`, compare `completedAt`, then process only genuinely new items.
 24. User-facing Watch output must be ownership-filtered: elevate only JD-owned players, players with confirmed Sparta availability, or an opponent-owned player whose change directly creates a meaningful JD waiver, lineup, trade, or matchup decision. Do not surface incidental names merely because they appear in a feed or article.
 
+## Yahoo live snapshot
+
+25. `data/yahoo_live_snapshot_latest.json` is the canonical **current** authenticated Yahoo Sparta live-state artifact (league `sparta`, Yahoo league ID `102586`). It is the CURRENT LIVE VIEW for ownership/availability handoff to Prime Sparta Fantasy Watch when `completed` is true, `observed_at` is recent, `yahoo_league_id` is `102586`, and `source` is authenticated Yahoo Agent Computer. Otherwise treat availability as UNKNOWN.
+26. Durable structured history/state remains in `data/current_roster_jd.json`, `data/transactions.json`, `data/faab.json`, `data/waiver_state.json`, `data/lineups/`, `data/reconciliation.json`, and related files. The snapshot does **not** replace those files.
+27. On each successful Yahoo live check, refresh `yahoo_live_snapshot_latest.json` even when no new transaction occurred. Update durable transaction/roster/FAAB files only when authoritative Yahoo state changed, using semantic dedupe. Never invent transactions or double-count FAAB/fees. Never import Mongo/DFS/props.
+
 ## Required operational loop
 
 USER UPDATE → READ CURRENT REPOSITORY STATE → ANALYZE → VALIDATE LEAGUE + DATA INTEGRITY → WRITE DATABASE CHANGE → COMMIT TO GITHUB → READ BACK / VERIFY → REPORT RESULT.
