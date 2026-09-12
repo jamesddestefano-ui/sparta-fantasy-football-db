@@ -1,47 +1,57 @@
 {
+  "system": "PRIME_SPARTA_FANTASY_WATCH",
   "version": "learning_rules_v1",
-  "effective_at_et": "2026-09-11T23:37:00-04:00",
-  "system": "PRIME SPARTA FANTASY WATCH / SPARTA REPOSITORY",
+  "effective_date": "2026-09-12",
   "rules": [
     {
-      "rule_id": "LR1",
-      "date": "2026-09-11",
+      "rule_id": "SPARTA-LR-001",
+      "date": "2026-09-12",
       "old_rule": null,
-      "new_rule": "Record every material recommendation in the durable decision ledger before outcome grading.",
-      "reason": "Create a measurable recommendation-to-outcome feedback loop independent of conversational memory.",
+      "new_rule": "Freeze every material recommendation in the append-only decision ledger before the deadline; append outcomes later.",
+      "reason": "Prevent hindsight rewriting and preserve decision-time evidence.",
       "supporting_decisions": [],
       "sample_size": 0,
-      "expected_effect": "Improved auditability, calibration, and learning discipline."
+      "expected_effect": "Auditable recommendation and outcome history."
     },
     {
-      "rule_id": "LR2",
-      "date": "2026-09-11",
+      "rule_id": "SPARTA-LR-002",
+      "date": "2026-09-12",
       "old_rule": null,
-      "new_rule": "Grade outcome and process separately using A-F scales; preserve decision-time reasoning without hindsight edits.",
-      "reason": "Separate variance from reasoning quality.",
+      "new_rule": "Validate the authenticated Yahoo Sparta snapshot before any ownership-dependent recommendation; otherwise classify availability UNKNOWN.",
+      "reason": "Eliminate ownership and cross-league errors.",
       "supporting_decisions": [],
       "sample_size": 0,
-      "expected_effect": "Reduce hindsight bias and improve rule updates."
+      "expected_effect": "Fewer invalid acquisition recommendations."
     },
     {
-      "rule_id": "LR3",
-      "date": "2026-09-11",
+      "rule_id": "SPARTA-LR-003",
+      "date": "2026-09-12",
       "old_rule": null,
-      "new_rule": "Track signal performance and confidence calibration over repeated decisions; do not reweight signals from a single outcome unless a structural defect is exposed.",
-      "reason": "Avoid overfitting and recency bias.",
+      "new_rule": "Evaluate waiver value using winning FAAB, $1 transaction fee, points above replacement, weeks held, and value per FAAB dollar.",
+      "reason": "Sparta FAAB and pickup fees are real money.",
       "supporting_decisions": [],
       "sample_size": 0,
-      "expected_effect": "More stable, evidence-based signal weighting."
+      "expected_effect": "More disciplined spending and less marginal churn."
     },
     {
-      "rule_id": "LR4",
-      "date": "2026-09-11",
+      "rule_id": "SPARTA-LR-004",
+      "date": "2026-09-12",
       "old_rule": null,
-      "new_rule": "For Sparta acquisitions, evaluate real-money efficiency using the $1 transaction fee plus FAAB when applicable, including value per FAAB dollar and churn cost.",
-      "reason": "Sparta transaction economics are real-dollar constrained.",
+      "new_rule": "Grade outcome and process separately using information available at decision time.",
+      "reason": "Good process can lose and bad process can win through variance.",
       "supporting_decisions": [],
       "sample_size": 0,
-      "expected_effect": "Fewer low-value churn moves and better FAAB discipline."
+      "expected_effect": "Better calibration and fewer hindsight-driven changes."
+    },
+    {
+      "rule_id": "SPARTA-LR-005",
+      "date": "2026-09-12",
+      "old_rule": null,
+      "new_rule": "Do not change signal weights or operating rules from one ordinary result; require repeated evidence unless a structural safety defect is exposed.",
+      "reason": "Avoid recency bias and overfitting.",
+      "supporting_decisions": [],
+      "sample_size": 0,
+      "expected_effect": "More stable and evidence-based learning."
     }
   ]
 }

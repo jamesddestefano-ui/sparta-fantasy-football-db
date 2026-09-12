@@ -1,0 +1,346 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/jamesddestefano-ui/sparta-fantasy-football-db/learning/schema/decision_event.schema.json",
+  "title": "Prime Sparta decision learning event",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "event_type",
+    "record_version",
+    "decision_id",
+    "system",
+    "timestamp_et",
+    "week",
+    "decision_type",
+    "subject",
+    "recommendation",
+    "confidence",
+    "urgency",
+    "decision_deadline",
+    "information_available_at_decision",
+    "key_supporting_signals",
+    "key_risk_factors",
+    "alternative_considered",
+    "actual_user_action",
+    "final_pre_deadline_state",
+    "outcome",
+    "outcome_grade",
+    "process_grade",
+    "result_notes",
+    "error_category",
+    "lesson",
+    "future_rule_adjustment",
+    "reviewed_at"
+  ],
+  "properties": {
+    "event_type": {
+      "enum": [
+        "DECISION",
+        "OUTCOME_REVIEW"
+      ]
+    },
+    "record_version": {
+      "const": 1
+    },
+    "decision_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "system": {
+      "const": "PRIME_SPARTA_FANTASY_WATCH"
+    },
+    "timestamp_et": {
+      "type": "string",
+      "minLength": 1
+    },
+    "week": {
+      "type": [
+        "integer",
+        "string"
+      ]
+    },
+    "decision_type": {
+      "enum": [
+        "ADD",
+        "DROP",
+        "FAAB",
+        "START_SIT",
+        "TRADE",
+        "IR",
+        "STREAMING",
+        "DEFENSE",
+        "INJURY_CONTINGENCY",
+        "ROSTER_CONSTRUCTION",
+        "OTHER"
+      ]
+    },
+    "subject": {
+      "type": [
+        "string",
+        "object",
+        "array"
+      ]
+    },
+    "recommendation": {
+      "type": [
+        "string",
+        "object",
+        "array"
+      ]
+    },
+    "confidence": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "urgency": {
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH",
+        "IMMEDIATE"
+      ]
+    },
+    "decision_deadline": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "information_available_at_decision": {
+      "type": [
+        "object",
+        "array",
+        "string"
+      ]
+    },
+    "key_supporting_signals": {
+      "type": "array"
+    },
+    "key_risk_factors": {
+      "type": "array"
+    },
+    "alternative_considered": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "null"
+      ]
+    },
+    "actual_user_action": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "null"
+      ]
+    },
+    "final_pre_deadline_state": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "null"
+      ]
+    },
+    "outcome": {
+      "type": [
+        "object",
+        "array",
+        "string",
+        "null"
+      ]
+    },
+    "outcome_grade": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        null
+      ]
+    },
+    "process_grade": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "F",
+        null
+      ]
+    },
+    "result_notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "error_category": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "STALE_DATA",
+          "OWNERSHIP_ERROR",
+          "ROSTER_STATE_ERROR",
+          "INJURY_MISREAD",
+          "DEPTH_CHART_MISREAD",
+          "ROLE_PROJECTION_ERROR",
+          "MATCHUP_OVERWEIGHTED",
+          "MATCHUP_UNDERWEIGHTED",
+          "VOLUME_PROJECTION_ERROR",
+          "EFFICIENCY_PROJECTION_ERROR",
+          "GAME_SCRIPT_ERROR",
+          "WEATHER_ERROR",
+          "NEWS_REACTION_TOO_SLOW",
+          "NEWS_REACTION_TOO_AGGRESSIVE",
+          "RECENCY_BIAS",
+          "SMALL_SAMPLE_ERROR",
+          "MARKET_PRICE_IGNORED",
+          "LINE_MOVEMENT_IGNORED",
+          "CORRELATION_ERROR",
+          "CONTEST_SELECTION_ERROR",
+          "FAAB_OVERPAY",
+          "FAAB_UNDERBID",
+          "DROP_ERROR",
+          "START_SIT_ERROR",
+          "PLAYER_EVALUATION_ERROR",
+          "RISK_NOT_PRICED",
+          "PROCESS_GOOD_VARIANCE_BAD",
+          "OTHER"
+        ]
+      }
+    },
+    "lesson": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "future_rule_adjustment": {
+      "type": [
+        "string",
+        "object",
+        "null"
+      ]
+    },
+    "reviewed_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sparta_metrics": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "availability_verified": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "actual_ownership_status": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "recommended_faab": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "actual_bid": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "winning_bid": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "next_highest_bid": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "transaction_fee": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "weeks_held": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "points_generated": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "replacement_player_points": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "starter_bench_differential": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "roster_value_created": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "value_per_faab_dollar": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "drop_regret": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "pickup_regret": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "missed_breakout": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "successful_early_add": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

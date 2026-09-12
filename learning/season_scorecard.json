@@ -1,31 +1,58 @@
 {
-  "system": "PRIME SPARTA FANTASY WATCH / SPARTA REPOSITORY",
+  "system": "PRIME_SPARTA_FANTASY_WATCH",
   "season": 2026,
-  "activated_at_et": "2026-09-11T23:37:00-04:00",
+  "updated_at": null,
   "total_decisions": 0,
   "wins": 0,
   "losses": 0,
   "neutral": 0,
-  "outcome_grade_distribution": {"A":0,"B":0,"C":0,"D":0,"F":0},
-  "process_grade_distribution": {"A":0,"B":0,"C":0,"D":0,"F":0},
-  "confidence_calibration": {},
+  "outcome_grade_distribution": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "F": 0
+  },
+  "process_grade_distribution": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0,
+    "F": 0
+  },
   "decision_type_performance": {},
-  "signal_performance": {},
   "major_error_counts": {},
   "timing_failures": 0,
   "data_quality_failures": 0,
-  "user_overrode_recommendation_outcomes": {"count":0},
-  "system_recommendation_followed_outcomes": {"count":0},
-  "system_recommendation_ignored_outcomes": {"count":0},
-  "sparta_specific": {
-    "total_transaction_fees_usd": 0,
-    "total_faab_spent_usd": 0,
-    "faab_saved_usd": 0,
-    "faab_overspent_usd": 0,
-    "pickup_regret_count": 0,
+  "user_overrode_recommendation_outcomes": {
+    "count": 0,
+    "wins": 0,
+    "losses": 0,
+    "neutral": 0
+  },
+  "system_recommendation_followed_outcomes": {
+    "count": 0,
+    "wins": 0,
+    "losses": 0,
+    "neutral": 0
+  },
+  "system_recommendation_ignored_outcomes": {
+    "count": 0,
+    "wins": 0,
+    "losses": 0,
+    "neutral": 0
+  },
+  "sparta": {
+    "faab_spent": 0,
+    "transaction_fees": 0,
+    "faab_saved": 0,
+    "faab_overspent": 0,
+    "points_above_replacement": 0,
+    "value_per_faab_dollar": null,
     "drop_regret_count": 0,
+    "pickup_regret_count": 0,
     "missed_breakout_count": 0,
-    "successful_early_add_count": 0,
-    "value_per_faab_dollar": null
-  }
+    "successful_early_add_count": 0
+  },
+  "note": "Counts begin prospectively. No historical recommendation is invented or backfilled without reliable decision-time evidence."
 }
