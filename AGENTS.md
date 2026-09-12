@@ -33,3 +33,12 @@ This repository is the durable source of truth for Billy's 2026 Sparta fantasy f
 ## Required operational loop
 
 USER UPDATE → READ CURRENT REPOSITORY STATE → ANALYZE → VALIDATE LEAGUE + DATA INTEGRITY → WRITE DATABASE CHANGE → COMMIT TO GITHUB → READ BACK / VERIFY → REPORT RESULT.
+
+## Yahoo live-feed authority
+
+25. Before ownership-dependent analysis, inspect latest `main` for current Yahoo Sparta live-feed or snapshot artifacts, including newly added repository paths not named in older prompts.
+26. A current, successfully completed Yahoo artifact is ownership-authoritative only when it explicitly identifies Billy's 2026 Sparta league and includes a valid completion or observation timestamp.
+27. Valid newer Yahoo Sparta evidence may update roster, ownership, free-agent/waiver classification, transactions, FAAB, waiver priority, and lineup state through the required validation, commit, and read-back loop.
+28. Never consume Mongo, unscoped Yahoo, failed, partial, stale, or ambiguous feed artifacts. If current Sparta availability is not established, use `UNKNOWN`.
+29. Preserve provenance and conflicts. Yahoo ownership truth supersedes Grok Pulse and external fantasy/news intelligence.
+30. A Yahoo-confirmed transaction may be recorded as completed only by appending immutable transaction history and updating derived state; recommendations and watchlist entries remain non-transactions.
