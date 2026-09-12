@@ -1,0 +1,88 @@
+{
+  "league": "sparta",
+  "consumer": "Prime Sparta Fantasy Watch",
+  "review_type": "grok_pulse_consumer_review",
+  "processed_at": "2026-09-12T08:20:22Z",
+  "pulse": {
+    "status": "live",
+    "completedAt": "2026-09-12T08:09:19.922Z",
+    "source_sha": "522f17d46fc57feb37c8721a95a282de84296f6e",
+    "prior_processed_completedAt": "2026-09-12T06:09:40.160Z",
+    "new_completed_pass": true
+  },
+  "yahoo_state_check": {
+    "repository_head": "52eaf22ab7ea86c8087f7dc0d593346a1c5c275d",
+    "snapshot_path": "data/yahoo_live_snapshot_latest.json",
+    "snapshot_sha": "c4326e8243eef72fb43bc08ced0903b37cca63ff",
+    "observed_at": "2026-09-11T22:56:59-04:00",
+    "league": "sparta",
+    "yahoo_league_id": "102586",
+    "completed": true,
+    "source": "authenticated Yahoo Agent Computer",
+    "team_code": "JD",
+    "team_name": "TB12 of Ass/Cousin Fucker",
+    "authoritative_state_changed": false,
+    "transaction_count": 21,
+    "latest_transaction": {
+      "timestamp_et": "2026-09-11 19:23",
+      "team": "JD",
+      "action": "ADD_DROP",
+      "added": "Emari Demercado",
+      "dropped": "Malik Davis",
+      "transaction_fee_usd": 1,
+      "faab_bid": 0
+    },
+    "note": "Yahoo roster, ownership, lineup and transaction state are unchanged. Demercado remains on JD's bench; Davis remains dropped."
+  },
+  "grok_delta_assessment": [
+    {
+      "players": [
+        "Malik Davis",
+        "Emari Demercado"
+      ],
+      "signal": "Jared Smola reports that Davis will undergo hip surgery and move to IR, with Demercado elevated behind Javonte Williams.",
+      "source_url": "https://www.draftsharks.com/fantasy-football-news/82558/malik-davis-hip-injury-pretty-serious",
+      "corroboration": {
+        "source": "Dallas Cowboys",
+        "url": "https://www.dallascowboys.com/news/malik-davis-out-with-pretty-serious-injury",
+        "fact": "Dallas reports Davis is expected to miss Week 1 and several more games; Demercado is positioned for added work."
+      },
+      "disposition": "CONFIRMS_ALREADY_COMPLETED_YAHOO_TRANSACTION_AND_EXISTING_HOLD_THESIS",
+      "actionability": "No new move. The Davis-to-Demercado transaction is already immutable history and must not be duplicated."
+    },
+    {
+      "players": [
+        "Michael Mayer",
+        "Tetairoa McMillan",
+        "Quinshon Judkins",
+        "J.K. Dobbins"
+      ],
+      "signal": "The remaining JD-player items repeat previously processed Week 1 start/sit and Mayer ceiling signals.",
+      "source_url": "https://sports.yahoo.com/fantasy/article/fantasy-football-start-em-sit-em-justin-boones-week-1-lineup-picks-142129166.html",
+      "disposition": "SEMANTIC_DUPLICATE"
+    }
+  ],
+  "nfl_pulse_check": {
+    "cursor_sha": "226b2181c64def089558d073bfe534d44773cd0c",
+    "last_sparta_pulse_consumed_at": "2026-09-12T00:15:00-04:00",
+    "last_sparta_pulse_id": "AT002-20260912-001505-cle-jac-weather-sat",
+    "cursor_changed": false,
+    "production_store_path": "/workspace/prime-nfl-pulse",
+    "production_store_available_in_runtime": false,
+    "new_pulse_used": false,
+    "note": "No cursor advance or sanctioned Sparta mirror showed a new production-eligible NFL Pulse delta. No NFL Pulse lineage record was created."
+  },
+  "ownership_reconciliation": {
+    "Emari Demercado": "OWNED by JD; BENCH",
+    "Malik Davis": "DROPPED by JD in the authoritative 2026-09-11 19:23 ET Yahoo transaction",
+    "availability_changes": []
+  },
+  "decisions": [],
+  "acquisitions_recommended": [],
+  "transactions_recorded": [],
+  "transaction_cost_assessment": "No new transaction. The completed Demercado pickup already carries its recorded $1 fee and $0 FAAB bid; JD FAAB remains $100.",
+  "learning_ledger_write": false,
+  "learning_ledger_reason": "No new material recommendation was issued. The new Grok item confirms the rationale for a completed Yahoo transaction and unchanged hold state, so no duplicate decision record is appropriate.",
+  "actionable_alert": false,
+  "user_notification": "suppressed because the only new relevant intelligence confirms an already completed move and creates no new JD action"
+}
