@@ -8,7 +8,7 @@ LEARNING = ROOT / "learning"
 LEDGER = LEARNING / "decision_ledger.jsonl"
 
 REQUIRED = ["decision_id","system","timestamp_et","week","decision_type","subject","recommendation","confidence","urgency","decision_deadline","information_available_at_decision","key_supporting_signals","key_risk_factors","alternative_considered","actual_user_action","final_pre_deadline_state","outcome","outcome_grade","process_grade","result_notes","error_category","lesson","future_rule_adjustment","reviewed_at"]
-EVENT_TYPES = {"DECISION", "OUTCOME_REVIEW"}
+EVENT_TYPES = {"DECISION", "DECISION_SCHEMA_SUPPLEMENT", "OUTCOME_REVIEW"}
 URGENCY = {"LOW", "MEDIUM", "HIGH", "IMMEDIATE"}
 GRADES = {"A", "B", "C", "D", "F", None}
 
@@ -61,7 +61,7 @@ def main() -> None:
                     errors.append(f"ledger line {line_number}: duplicate DECISION id")
                 decisions.add(decision_id)
             elif decision_id not in decisions:
-                errors.append(f"ledger line {line_number}: review precedes DECISION")
+                errors.append(f"ledger line {line_number}: review/supplement precedes DECISION")
 
     for name in ["signal_performance.json", "confidence_calibration.json", "season_scorecard.json"]:
         path = LEARNING / name
