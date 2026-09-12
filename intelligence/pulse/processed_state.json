@@ -1,17 +1,20 @@
 {
   "league": "sparta",
   "consumer": "Prime Sparta Fantasy Watch",
-  "last_processed_completedAt": "2026-09-12T14:09:33.919Z",
-  "processed_at": "2026-09-12T14:52:19Z",
+  "last_processed_completedAt": "2026-09-12T18:51:14.740Z",
+  "processed_at": "2026-09-12T19:22:01Z",
   "pulse_status": "live",
-  "pulse_item_count": 12,
+  "pulse_item_count": 14,
   "new_material_items_ingested": 0,
+  "jd_relevant_items_reviewed": 5,
   "assessment": [
-    "A new live Grok pass was processed, advancing completedAt from 2026-09-12T12:09:33.015Z to 2026-09-12T14:09:33.919Z.",
-    "All 12 Grok items are unchanged from the prior pass; JD-relevant items are semantic duplicates or stale items superseded by official reporting.",
-    "Authenticated Yahoo Sparta state is unchanged: no new transaction, roster, lineup, ownership, waiver, or FAAB change; JD FAAB remains $100.",
-    "No new production-eligible NFL Pulse development appeared after cursor 20260912-070200-davis-hip-surgery-ir.",
-    "Current official/team and reliable fantasy reporting confirms existing Mayer/Chase status without creating a new action.",
+    "Processed the new live Grok pass and advanced completedAt from 2026-09-12T14:09:33.919Z to 2026-09-12T18:51:14.740Z.",
+    "Verified the richer item schema and named monitoring for Establish The Run, Adam Levitan, and Matthew Berry.",
+    "Brock Bowers OUT and Ja'Marr Chase IN confirm existing Week 1 starts for JD-owned Michael Mayer and Chase; no lineup change.",
+    "Malik Nabers QUESTIONABLE creates only a bench watch for JD-owned Malachi Fields; evidence does not justify replacing a current starter.",
+    "Malik Davis IR/Israel Abanikanda active-roster news duplicates the already-consumed NFL Pulse development and does not create a second Demercado decision.",
+    "Authenticated Yahoo Sparta state has no newer transaction, roster, lineup, ownership, waiver, or FAAB change; JD FAAB remains $100.",
+    "One Levitan item groups several distinct player developments under one eventId; preserved as a producer schema-quality finding.",
     "No acquisition, drop, FAAB, trade, or lineup change is recommended; avoid marginal $1 churn."
   ],
   "ownership_changes": [],
@@ -23,11 +26,11 @@
   "learning_decision_id": null,
   "provenance": {
     "grok_source": "intelligence/grok_pulse_latest.json",
-    "source_completedAt": "2026-09-12T14:09:33.919Z",
-    "source_sha": "848902f8ff46c34e3dacd3bdfd3562ff2305d5b6",
-    "yahoo_snapshot_sha": "12236e63c032120193a0357d7c67ef9b8f890817",
-    "nfl_pulse_cursor_sha": "8b78e8ee1fbd469a8f2bd5b64692765b0917ae01",
-    "consumer_review": "intelligence/pulse/2026-09-12T1052ET-consumer-review.json",
-    "consumer_review_commit": "61b61f34e3382111703fd9485dccf54fb8c41046"
+    "source_completedAt": "2026-09-12T18:51:14.740Z",
+    "source_sha": "cece242563f6f7ebebb24a11b12124f09181e558",
+    "yahoo_snapshot_sha": "4c46f4cc9ff2958722ae9879df4236ee6c250535",
+    "nfl_pulse_cursor_sha": "1666f13e70057befe9b1824f7cbb72c85904b237",
+    "consumer_review": "intelligence/pulse/2026-09-12T1522ET-consumer-review.json",
+    "consumer_review_commit": "60fdea568b9cb584b4361760a53e7ccc6d22d9de"
   }
 }
