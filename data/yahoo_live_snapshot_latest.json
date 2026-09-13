@@ -11,7 +11,7 @@
   "opponent_team_name": "AMON A ROLL",
   "opponent_team_code": "ANT",
   "record": "0-0-0",
-  "observed_at": "2026-09-13T12:38:14-04:00",
+  "observed_at": "2026-09-13T13:05:00-04:00",
   "completed": true,
   "roster": [
     {
@@ -57,10 +57,16 @@
       "slot": "W/R/T"
     },
     {
+      "player": "Devaughn Vele",
+      "position": "WR",
+      "nfl_team": "NO",
+      "slot": "W/R/T"
+    },
+    {
       "player": "J.K. Dobbins",
       "position": "RB",
       "nfl_team": "Den",
-      "slot": "W/R/T"
+      "slot": "BN"
     },
     {
       "player": "Xavier Worthy",
@@ -78,12 +84,6 @@
       "player": "Dontayvion Wicks",
       "position": "WR",
       "nfl_team": "Phi",
-      "slot": "BN"
-    },
-    {
-      "player": "Devaughn Vele",
-      "position": "WR",
-      "nfl_team": "NO",
       "slot": "BN"
     },
     {
@@ -162,9 +162,9 @@
     },
     {
       "slot": "W/R/T",
-      "player": "J.K. Dobbins",
-      "nfl_team": "Den",
-      "position": "RB"
+      "player": "Devaughn Vele",
+      "nfl_team": "NO",
+      "position": "WR"
     },
     {
       "slot": "K",
@@ -182,6 +182,12 @@
   "bench": [
     {
       "slot": "BN",
+      "player": "J.K. Dobbins",
+      "nfl_team": "Den",
+      "position": "RB"
+    },
+    {
+      "slot": "BN",
       "player": "Xavier Worthy",
       "nfl_team": "KC",
       "position": "WR"
@@ -196,12 +202,6 @@
       "slot": "BN",
       "player": "Dontayvion Wicks",
       "nfl_team": "Phi",
-      "position": "WR"
-    },
-    {
-      "slot": "BN",
-      "player": "Devaughn Vele",
-      "nfl_team": "NO",
       "position": "WR"
     },
     {
@@ -429,33 +429,38 @@
     "Jashaun Corbin": "FREE_AGENT",
     "Dalen Cambre": "FREE_AGENT",
     "Braxton Berrios": "FREE_AGENT",
-    "Alvin Kamara": "JP"
+    "Alvin Kamara": "JP",
+    "Travis Etienne": "JP",
+    "CJ Donaldson": "WAIVERS"
   },
   "availability_checked": true,
   "availability_notes": {
-    "players_page_filter": "targeted DAL RB / NYG WR depth / Kamara / Zaccheaus / named candidates",
+    "players_page_filter": "targeted FA + Kamara beneficiary tree (Etienne/Miller/Donaldson)",
     "fa_label": "FA",
     "waiver_label": "W (date)",
     "yahoo_note": "Free agents move to waivers when their game starts",
     "targeted_scan": true,
-    "fa_scan_status": "LIMITED",
-    "fa_scan_limited_reason": "Olamide Zaccheaus player-search returned Yahoo Request denied/HTTP 999; all other targeted FA checks succeeded",
+    "fa_scan_status": "OK",
+    "fa_scan_limited_reason": null,
     "fa_scan_detail": {
       "Israel Abanikanda": "FA \u2014 Dallas RB",
-      "Malik Davis": "FA \u2014 Dallas RB; IR mark on Yahoo (do not claim per prior HOLD)",
+      "Malik Davis": "FA \u2014 Dallas RB; IR mark (do not claim per prior HOLD)",
       "Emari Demercado": "Rostered by TB12 of Ass/Cousin Fucker (JD)",
       "Jaydon Blue": "FA \u2014 PHI RB; NA mark",
       "Javonte Williams": "Rostered by Pablo Pledgescobars (MM)",
       "Dalen Cambre": "FA \u2014 NYG WR",
       "Braxton Berrios": "FA \u2014 NYG WR",
       "Alvin Kamara": "Rostered by X-Factor (JP); O mark (inactive)",
-      "Olamide Zaccheaus": "UNKNOWN \u2014 Yahoo HTTP 999 / Request denied"
+      "Travis Etienne": "Rostered by X-Factor (JP)",
+      "Kendre Miller": "Rostered by X-Factor (JP)",
+      "CJ Donaldson": "WAIVERS Sep 16 \u2014 not immediate FA (game started)",
+      "Olamide Zaccheaus": "NOT_RECHECKED this pass (prior HTTP 999)"
     }
   },
   "player_aliases": {
     "Andy Borregales": "Andres Borregales"
   },
-  "durable_files_note": "This snapshot is CURRENT LIVE VIEW only. Durable history remains in current_roster_jd.json, transactions.json, faab.json, waiver_state.json, lineups/, reconciliation.json. No durable writes this check (roster match; 0 new txs). Ownership map updated for live FA scan (Davis FREE_AGENT after waiver clear; Berrios FREE_AGENT).",
+  "durable_files_note": "Snapshot CURRENT LIVE VIEW only. No new txs. Lineup slot refresh: Vele flex / Dobbins BN (already FOLLOWED in decision ledger). Ownership map adds Etienne=JP, Donaldson=WAIVERS.",
   "source": "authenticated Yahoo Agent Computer",
   "isolation": {
     "mongo": "IGNORED",
@@ -471,18 +476,21 @@
     "Dalen Cambre": "FREE_AGENT",
     "Braxton Berrios": "FREE_AGENT",
     "Alvin Kamara": "JP",
-    "Olamide Zaccheaus": "UNKNOWN",
-    "waiver_note": "Malik Davis remains FA with IR mark; prior HOLD do-not-claim stands. Zaccheaus availability UNKNOWN (Yahoo HTTP 999)."
+    "Travis Etienne": "JP",
+    "Kendre Miller": "JP",
+    "CJ Donaldson": "WAIVERS",
+    "Olamide Zaccheaus": "NOT_RECHECKED",
+    "waiver_note": "Donaldson on waivers until Sep 16; Davis FA+IR HOLD stands; Kamara/Etienne/Miller all JP."
   },
   "check_meta": {
-    "check_id": "sparta-live-check-20260913-1623",
-    "routine": "Sparta Live Check",
-    "pull_dir": "/workspace/sparta-yahoo-live-20260913-1623",
-    "pull_completed_flag": false,
-    "pull_partial_reason": "Yahoo returned Request denied/HTTP 999 for the Olamide Zaccheaus player-search after reasonable attempts using the existing authenticated session; all other requested live pulls completed. No transaction or lineup mutation was performed.",
+    "check_id": "sparta-live-check-20260913-1648",
+    "routine": "Sparta Sunday Game-Day Check",
+    "pull_dir": "/workspace/sparta-yahoo-live-20260913-1648",
+    "pull_completed_flag": true,
+    "pull_partial_reason": "Zaccheaus not rechecked; core + beneficiary FA tree complete",
     "core_yahoo_ok": true,
     "new_transactions": 0,
     "newest_visible_tx": "Sep 11, 4:23 pm Demercado add / Davis drop",
-    "live_score_note": "My Team showed in-progress Week 1 scoreboard at pull time; ownership/roster unchanged"
+    "live_score_note": "Week 1 in progress TB12 leading; Stevenson/JSN final; Vele started over Dobbins"
   }
 }
