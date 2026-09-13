@@ -11,7 +11,7 @@
   "opponent_team_name": "AMON A ROLL",
   "opponent_team_code": "ANT",
   "record": "0-0-0",
-  "observed_at": "2026-09-13T08:17:51-04:00",
+  "observed_at": "2026-09-13T12:38:14-04:00",
   "completed": true,
   "roster": [
     {
@@ -428,23 +428,28 @@
     "Miles Sanders": "FREE_AGENT",
     "Jashaun Corbin": "FREE_AGENT",
     "Dalen Cambre": "FREE_AGENT",
-    "Braxton Berrios": "FREE_AGENT"
+    "Braxton Berrios": "FREE_AGENT",
+    "Alvin Kamara": "JP"
   },
   "availability_checked": true,
   "availability_notes": {
-    "players_page_filter": "targeted DAL RB / NYG WR depth / named candidates",
+    "players_page_filter": "targeted DAL RB / NYG WR depth / Kamara / Zaccheaus / named candidates",
     "fa_label": "FA",
     "waiver_label": "W (date)",
     "yahoo_note": "Free agents move to waivers when their game starts",
     "targeted_scan": true,
+    "fa_scan_status": "LIMITED",
+    "fa_scan_limited_reason": "Olamide Zaccheaus player-search returned Yahoo Request denied/HTTP 999; all other targeted FA checks succeeded",
     "fa_scan_detail": {
       "Israel Abanikanda": "FA \u2014 Dallas RB",
-      "Malik Davis": "FA \u2014 Dallas RB; IR mark on Yahoo (waivers cleared; season-ending IR; do not claim per prior HOLD)",
+      "Malik Davis": "FA \u2014 Dallas RB; IR mark on Yahoo (do not claim per prior HOLD)",
       "Emari Demercado": "Rostered by TB12 of Ass/Cousin Fucker (JD)",
       "Jaydon Blue": "FA \u2014 PHI RB; NA mark",
       "Javonte Williams": "Rostered by Pablo Pledgescobars (MM)",
       "Dalen Cambre": "FA \u2014 NYG WR",
-      "Braxton Berrios": "FA \u2014 NYG WR (resolved from prior UNKNOWN HTTP 999)"
+      "Braxton Berrios": "FA \u2014 NYG WR",
+      "Alvin Kamara": "Rostered by X-Factor (JP); O mark (inactive)",
+      "Olamide Zaccheaus": "UNKNOWN \u2014 Yahoo HTTP 999 / Request denied"
     }
   },
   "player_aliases": {
@@ -452,7 +457,11 @@
   },
   "durable_files_note": "This snapshot is CURRENT LIVE VIEW only. Durable history remains in current_roster_jd.json, transactions.json, faab.json, waiver_state.json, lineups/, reconciliation.json. No durable writes this check (roster match; 0 new txs). Ownership map updated for live FA scan (Davis FREE_AGENT after waiver clear; Berrios FREE_AGENT).",
   "source": "authenticated Yahoo Agent Computer",
-  "isolation": "Sparta only \u2014 no Mongo/DFS/props",
+  "isolation": {
+    "mongo": "IGNORED",
+    "dfs": "IGNORED",
+    "props": "IGNORED"
+  },
   "fa_scan_targets": {
     "Israel Abanikanda": "FREE_AGENT",
     "Jaydon Blue": "FREE_AGENT",
@@ -461,20 +470,19 @@
     "Emari Demercado": "JD",
     "Dalen Cambre": "FREE_AGENT",
     "Braxton Berrios": "FREE_AGENT",
-    "waiver_note": "Malik Davis cleared waivers \u2192 FA with IR mark as of 2026-09-13"
+    "Alvin Kamara": "JP",
+    "Olamide Zaccheaus": "UNKNOWN",
+    "waiver_note": "Malik Davis remains FA with IR mark; prior HOLD do-not-claim stands. Zaccheaus availability UNKNOWN (Yahoo HTTP 999)."
   },
   "check_meta": {
+    "check_id": "sparta-live-check-20260913-1623",
     "routine": "Sparta Live Check",
-    "pull_dir": "/workspace/sparta-yahoo-live-20260913-1208",
-    "pull_observed_at": "2026-09-13T08:17:51-04:00",
-    "provenance": "Authenticated Yahoo Agent Computer pull artifact sparta-yahoo-live-20260913-1208 (pull_summary.json + screenshots); 8am ET Live Check ~08:17 ET",
-    "new_transactions_ingested": 0,
-    "durable_tx_writes": false,
-    "roster_changed": false,
-    "roster_matches_prior_17": true,
-    "yahoo_fa_scan": "OK (all 7 resolved; Davis FA+IR; Berrios FA)",
-    "semantic_dedupe": "0 durable tx writes; latest still Sep 11 4:23 pm Demercado add / Davis drop",
-    "timestamp_policy": "Yahoo UI display treated as Pacific \u2192 ET (matches prior verified 19:23 ET Demercado txn); semantic dedupe only",
-    "pulse_delta": "quiet \u2014 0 new active pulses since cursor 20260912-172333; scans 1800\u20132300 Sat + 0700 Sun quiet; no 0800+ Sunday scans in store yet"
+    "pull_dir": "/workspace/sparta-yahoo-live-20260913-1623",
+    "pull_completed_flag": false,
+    "pull_partial_reason": "Yahoo returned Request denied/HTTP 999 for the Olamide Zaccheaus player-search after reasonable attempts using the existing authenticated session; all other requested live pulls completed. No transaction or lineup mutation was performed.",
+    "core_yahoo_ok": true,
+    "new_transactions": 0,
+    "newest_visible_tx": "Sep 11, 4:23 pm Demercado add / Davis drop",
+    "live_score_note": "My Team showed in-progress Week 1 scoreboard at pull time; ownership/roster unchanged"
   }
 }
