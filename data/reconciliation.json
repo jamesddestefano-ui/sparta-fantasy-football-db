@@ -38,6 +38,12 @@
     {
       "category": "SPARTA_PICKUP_COST_RULE_2026_09_11",
       "resolution": "User confirmed every player pickup costs $1 real money. Waiver acquisitions cost the $1 pickup fee plus the winning FAAB bid. Week 1 may be FAAB-bid-free but is not transaction-fee-free."
+    },
+    {
+      "category": "WEEK1_VELE_DOBBINS_LINEUP_SNAPSHOT_LAG_2026_09_13",
+      "resolution": "The authenticated Yahoo live snapshot observed at 12:38:14 ET still showed J.K. Dobbins in JD's second W/R/T slot, but the user's later Yahoo roster screenshot explicitly showed Devaughn Vele in that W/R/T slot with Dobbins benched. Treat the later user Yahoo screenshot as the newer authoritative lineup evidence. Current Week 1 lineup is Vele START and Dobbins BENCH. Do not let the stale 12:38 snapshot overwrite data/lineups/week_01_jd.json; require a later authenticated Yahoo refresh before superseding this state.",
+      "source": "User Yahoo roster screenshot in Sparta Brain plus data/lineups/week_01_jd.json",
+      "status": "RESOLVED_BY_NEWER_USER_YAHOO_EVIDENCE"
     }
   ]
 }
