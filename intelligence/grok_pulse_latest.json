@@ -1,12 +1,12 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-09-13T21:09:48.469Z",
+  "generatedAt": "2026-09-13T21:10:04.061Z",
   "status": "live",
-  "completedAt": "2026-09-13T21:09:48.424Z",
-  "nextAtLabel": "6:09 PM ET",
+  "completedAt": "2026-09-13T21:10:04.014Z",
+  "nextAtLabel": "6:10 PM ET",
   "inWindow": true,
-  "itemCount": 16,
+  "itemCount": 18,
   "items": [
     {
       "id": "love-active-w1",
@@ -15,7 +15,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Cardinals RB Jeremiyah Love (ankle) is ACTIVE. Risk/reward RB2 but starting everywhere; wouldn't activate if worried about injury though Cardinals risk remains.",
+      "text": "Cardinals RB Jeremiyah Love (ankle) is ACTIVE. Risk/reward RB2 but starting everywhere; team wouldn't activate if worried about injury.",
       "playerIds": [
         "jeremiyah-love"
       ],
@@ -26,19 +26,20 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-love-week1",
       "signal": "ACTIVE",
-      "priorStatus": "QUESTIONABLE/EXPECTED",
+      "priorStatus": "QUESTIONABLE",
       "newStatus": "ACTIVE",
-      "why": "Expected to play per reports; official active list.",
-      "implication": "Unquestioned lead back; start in all formats with risk.",
-      "opportunity": "Primary carries/routes as rookie RB1",
+      "why": "Expected to play per sources; officially active",
+      "implication": "Start as RB2 with risk; limited practice but cleared",
+      "opportunity": "RB2 role on depth chart; goal-line/third-down upside if healthy",
       "corroboration": [
         "@RapSheet",
         "@EstablishTheRun",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-09-13/jeremiyah-love-ankle-active-for-week-1"
+        "Darren Urban"
       ],
       "supportingSources": [
         "ian-rapoport",
-        "establish-the-run"
+        "establish-the-run",
+        "adam-schefter"
       ],
       "priority": "IMMEDIATE"
     },
@@ -49,7 +50,7 @@
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Bears WR Rome Odunze (calf) officially ACTIVE vs Panthers. Expected to play after limited practices; plans to go.",
+      "text": "Bears WR Rome Odunze (calf) is officially ACTIVE vs Panthers.",
       "playerIds": [
         "rome-odunze"
       ],
@@ -60,11 +61,11 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-odunze-week1",
       "signal": "ACTIVE",
-      "priorStatus": "QUESTIONABLE/EXPECTED",
+      "priorStatus": "QUESTIONABLE",
       "newStatus": "ACTIVE",
-      "why": "Looked good; self-reported ready.",
-      "implication": "Full WR1 role with Burden; monitor snap share.",
-      "opportunity": "Primary targets in Bears offense",
+      "why": "Expected to go per sources; not on inactive list",
+      "implication": "Full WR1/2 role with Caleb Williams; start confidently",
+      "opportunity": "Routes/targets alongside other Bears WRs",
       "corroboration": [
         "@RapSheet",
         "@EstablishTheRun"
@@ -76,37 +77,42 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "nabers-gtd-snf",
-      "at": "2026-09-13T11:59:22Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
+      "id": "etr-status-summary-w1",
+      "at": "2026-09-13T11:49:17Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Malik Nabers (knee) murky/up-to-him for SNF; main slate locked otherwise. Giants elevated Berrios and Cambre from PS. Projections updating only for this.",
+      "text": "Weekend reports summary: Love and Odunze expected to play; Kamara not expected; Josh Williams activated (Sean Tucker doubtful); Nabers no news yet.",
       "playerIds": [
+        "jeremiyah-love",
+        "rome-odunze",
+        "alvin-kamara",
         "malik-nabers"
       ],
       "players": [
+        "Jeremiyah Love",
+        "Rome Odunze",
+        "Alvin Kamara",
         "Malik Nabers"
       ],
-      "url": "https://x.com/adamlevitan/status/2099105654413636095",
+      "url": "https://x.com/EstablishTheRun/status/2099103118017626522",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-nabers-week1",
-      "signal": "GAME-TIME",
-      "priorStatus": "QUESTIONABLE",
-      "newStatus": "GAME-TIME DECISION",
-      "why": "Practiced fully but status personal decision; elevations signal caution.",
-      "implication": "If out, Berrios/Cambre upside; if in, full WR1.",
-      "opportunity": "Monitor for confirmation; reverse beneficiaries if active",
+      "eventId": "etr-sunday-am-status-w1",
+      "signal": "STATUS_UPDATE",
+      "why": "Compiled weekend beat/practice reports",
+      "implication": "Core inactive window guidance; Kamara impacts Etienne proj",
+      "opportunity": "Etienne workload spike; Love/Odunze startable",
+      "beneficiaries": [
+        "travis-etienne"
+      ],
       "corroboration": [
-        "@RapSheet",
-        "@AdamSchefter",
-        "@EstablishTheRun"
+        "@adamlevitan",
+        "@RapSheet"
       ],
       "supportingSources": [
-        "ian-rapoport",
-        "adam-schefter",
-        "establish-the-run"
+        "adam-levitan",
+        "ian-rapoport"
       ],
       "priority": "IMMEDIATE"
     },
@@ -117,7 +123,7 @@
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Saints RB Alvin Kamara (knee/MCL) is not expected to play and officially inactive vs Lions. Full participant late week but not ready; progressed faster than expected but held out.",
+      "text": "Saints RB Alvin Kamara (knee/MCL sprain) is not expected to play and officially inactive vs Lions. Was full participant late week but not ready.",
       "playerIds": [
         "alvin-kamara"
       ],
@@ -130,17 +136,17 @@
       "signal": "INACTIVE",
       "priorStatus": "QUESTIONABLE",
       "newStatus": "INACTIVE",
-      "why": "MCL sprain; sources confirm not ready despite full practice Friday.",
-      "implication": "Etienne unchallenged lead back; Miller RB2.",
-      "opportunity": "Full backfield opportunity for Etienne",
+      "why": "MCL sprain; not quite ready despite full participation",
+      "implication": "Full workload shift to backup RBs; Etienne top-10 upside",
+      "opportunity": "Unchallenged carries/targets for Etienne; Kendre Miller RB2",
       "beneficiaries": [
         "travis-etienne",
         "kendre-miller"
       ],
       "corroboration": [
-        "@EstablishTheRun",
         "@AdamSchefter",
-        "https://www.nfl.com/news/inactive-reports-sunday-week-1-2026-nfl-season"
+        "https://www.nytimes.com/athletic/7589550/2026/09/13/fantasy-football-key-actives-and-inactives-for-week-1/",
+        "NFL.com inactives"
       ],
       "supportingSources": [
         "establish-the-run",
@@ -168,12 +174,8 @@
       "signal": "OUT",
       "priorStatus": "UNKNOWN",
       "newStatus": "OUT",
-      "why": "Wrist injury.",
-      "implication": "BAL WR depth chart shift; Flowers/others more targets.",
-      "opportunity": "Increased snaps for remaining Ravens WRs",
-      "beneficiaries": [
-        "zay-flowers"
-      ],
+      "why": "Wrist injury",
+      "implication": "Rookie out; snaps/targets to other BAL WRs like Flowers",
       "corroboration": [
         "@RapSheet"
       ],
@@ -189,7 +191,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Start Jeremiyah Love everywhere as risk/reward RB2 now that ACTIVE.",
+      "text": "Jeremiyah Love ACTIVE: risk/reward RB2 but starting him everywhere I have him.",
       "playerIds": [
         "jeremiyah-love"
       ],
@@ -198,21 +200,20 @@
       ],
       "url": "https://x.com/MatthewBerryTMR/status/2099212485022658653",
       "kind": "ANALYST_OPINION",
-      "eventId": "startsit-love-week1",
+      "eventId": "injury-love-week1",
       "signal": "LOVE",
-      "why": "Active confirmation reduces injury worry; lead role.",
-      "implication": "Must-start despite matchup/Cardinals volatility.",
-      "opportunity": "RB1 volume",
+      "why": "Active despite ankle; Cardinals cleared him",
+      "implication": "Must-start in most formats with upside",
       "priority": "HIGH"
     },
     {
-      "id": "ajbrown-out-46wks",
+      "id": "ajbrown-out-46w",
       "at": "2026-09-13T15:58:10Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Patriots WR AJ Brown high ankle sprain: no surgery needed but sidelined 4-6 weeks.",
+      "text": "Patriots WR AJ Brown will not need surgery on high ankle sprain but sidelined 4-6 weeks.",
       "playerIds": [
         "aj-brown"
       ],
@@ -224,20 +225,25 @@
       "eventId": "injury-ajbrown-week1",
       "signal": "OUT",
       "priorStatus": "INJURED",
-      "newStatus": "OUT 4-6 weeks",
-      "why": "High ankle; conservative timeline no surgery.",
-      "implication": "NE WR depth elevated long-term; sit/IR candidate.",
-      "opportunity": "Other NE pass-catchers role expansion",
+      "newStatus": "OUT 4-6 WEEKS",
+      "why": "High ankle sprain; no surgery",
+      "implication": "Long-term bench/IR candidate; targets to other NE WRs",
+      "corroboration": [
+        "@RapSheet"
+      ],
+      "supportingSources": [
+        "ian-rapoport"
+      ],
       "priority": "HIGH"
     },
     {
-      "id": "bowers-out-w1-return",
+      "id": "bowers-out-w1",
       "at": "2026-09-13T14:38:06Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Raiders TE Brock Bowers OUT after meniscus trim Tuesday; realistic chance miss only one game and return Week 2 at Chargers. Team to monitor feeling this week.",
+      "text": "Raiders TE Brock Bowers OUT after meniscus trim Tuesday; realistic chance miss only one game and return Week 2 at Chargers. Team will monitor this week.",
       "playerIds": [
         "brock-bowers"
       ],
@@ -248,16 +254,17 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-bowers-week1",
       "signal": "OUT",
-      "priorStatus": "OUT short-term",
-      "newStatus": "OUT (possible W2)",
-      "why": "Meniscus procedure; optimistic short absence.",
-      "implication": "Mayer elevated TE1 role Week 1; Bowers stash for quick return.",
-      "opportunity": "Michael Mayer targets/snaps spike",
+      "priorStatus": "OUT",
+      "newStatus": "OUT",
+      "why": "Meniscus trim; short absence expected",
+      "implication": "Sit Week 1; stash for potential Week 2 return",
+      "opportunity": "Michael Mayer elevated role/targets as primary TE",
       "beneficiaries": [
         "michael-mayer"
       ],
       "corroboration": [
-        "@RapSheet"
+        "@RapSheet",
+        "RotoWire"
       ],
       "supportingSources": [
         "ian-rapoport"
@@ -265,37 +272,90 @@
       "priority": "HIGH"
     },
     {
-      "id": "etienne-kamara-impact",
+      "id": "kamara-etienne-proj",
       "at": "2026-09-13T13:21:31Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Kamara's inactive status boosts projection for Travis Etienne and Saints RBs.",
+      "text": "Kamara's status affects the projection of guys like Travis Etienne.",
       "playerIds": [
-        "travis-etienne",
-        "alvin-kamara"
+        "alvin-kamara",
+        "travis-etienne"
       ],
       "players": [
-        "Travis Etienne Jr.",
-        "Alvin Kamara"
+        "Alvin Kamara",
+        "Travis Etienne Jr."
       ],
       "url": "https://x.com/EstablishTheRun/status/2099126328541024660",
       "kind": "ANALYST_PROJECTION",
-      "eventId": "usage-etienne-week1",
+      "eventId": "injury-kamara-week1",
       "signal": "UPGRADE",
-      "why": "Kamara out opens full opportunity.",
-      "implication": "Etienne clear lead; strong start.",
-      "opportunity": "Uncontested carries/targets/redzone",
+      "why": "Kamara inactive opens full role",
+      "implication": "Boost Etienne fantasy outlook significantly",
+      "opportunity": "Carries, targets, red-zone for Etienne",
       "beneficiaries": [
         "travis-etienne"
       ],
+      "supportingSources": [
+        "adam-levitan"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "nabers-gtd-w1",
+      "at": "2026-09-13T11:59:22Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Giants WR Malik Nabers (knee) situation murky for SNF; up to him. Elevated Berrios and Cambre from PS. Main slate news locked otherwise; only major proj change possible.",
+      "playerIds": [
+        "malik-nabers"
+      ],
+      "players": [
+        "Malik Nabers"
+      ],
+      "url": "https://x.com/adamlevitan/status/2099105654413636095",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-nabers-week1",
+      "signal": "GAME-TIME DECISION",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "QUESTIONABLE",
+      "why": "Practiced fully but personal decision; PS elevations signal caution",
+      "implication": "Monitor closely; if out, targets to other Giants WRs",
+      "opportunity": "If active, high-upside WR1; if out reverse beneficiaries",
       "corroboration": [
-        "@RapSheet"
+        "@RapSheet",
+        "@AdamSchefter",
+        "The Athletic"
       ],
       "supportingSources": [
+        "establish-the-run",
         "ian-rapoport"
       ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "levitan-main-slate-locked",
+      "at": "2026-09-13T11:59:22Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Roughly all news for today's main slate is in. Nabers murky for SNF (up to him). Projections updating live; no major changes expected else.",
+      "playerIds": [
+        "malik-nabers"
+      ],
+      "players": [
+        "Malik Nabers"
+      ],
+      "url": "https://x.com/adamlevitan/status/2099105654413636095",
+      "kind": "ANALYST_PROJECTION",
+      "eventId": "levitan-projections-w1",
+      "signal": "STATUS_UPDATE",
+      "why": "Inactive window largely settled except Nabers",
+      "implication": "Lock lineups on early slate; monitor Nabers",
       "priority": "HIGH"
     },
     {
@@ -305,7 +365,7 @@
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Bucs activated Josh Williams; Sean Tucker doubtful. Impacts TB RB shares with Irving/Gainwell.",
+      "text": "Josh Williams activated; Sean Tucker doubtful (impacts TB backfield with Irving/Gainwell).",
       "playerIds": [
         "bucky-irving",
         "kenny-gainwell"
@@ -316,109 +376,35 @@
       ],
       "url": "https://x.com/EstablishTheRun/status/2099103118017626522",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-tucker-week1",
-      "signal": "DOUBTFUL",
-      "priorStatus": "UNKNOWN",
-      "newStatus": "DOUBTFUL (Williams elevated)",
-      "why": "Hamstring; PS elevation for depth.",
-      "implication": "Irving/Gainwell split elevated without Tucker.",
-      "opportunity": "Higher snap/carry share for Irving and Gainwell",
+      "eventId": "tb-rb-status-w1",
+      "signal": "DEPTH_CHART",
+      "why": "Tucker doubtful, Williams elevated",
+      "implication": "Irving/Gainwell split primary carries",
+      "opportunity": "Enhanced snaps for Bucky Irving and Kenny Gainwell",
       "beneficiaries": [
         "bucky-irving",
         "kenny-gainwell"
       ],
-      "corroboration": [
-        "@AdamSchefter"
-      ],
-      "supportingSources": [
-        "adam-schefter"
-      ],
       "priority": "HIGH"
     },
     {
-      "id": "etr-status-summary",
-      "at": "2026-09-13T11:49:17Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "Sunday AM summary: Love/Odunze expected (now active), Kamara not (inactive), Nabers no news (murky), Josh Williams activated (Tucker doubtful).",
-      "playerIds": [
-        "jeremiyah-love",
-        "rome-odunze",
-        "alvin-kamara",
-        "malik-nabers"
-      ],
-      "players": [
-        "Jeremiyah Love",
-        "Rome Odunze",
-        "Alvin Kamara",
-        "Malik Nabers"
-      ],
-      "url": "https://x.com/EstablishTheRun/status/2099103118017626522",
-      "kind": "INJURY_STATUS",
-      "eventId": "status-summary-etr-week1",
-      "signal": "SUMMARY",
-      "why": "Aggregated weekend reports for inactive window.",
-      "implication": "Core Sunday monitoring complete for main slate.",
-      "opportunity": "Act on confirmed statuses for lineups",
-      "beneficiaries": [
-        "travis-etienne"
-      ],
-      "corroboration": [
-        "@adamlevitan",
-        "@RapSheet"
-      ],
-      "supportingSources": [
-        "adam-levitan",
-        "ian-rapoport"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "garrett-ir",
-      "at": "2026-09-13T15:45:51Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Rams DE Myles Garrett arthroscopic knee surgery, placed on IR; misses min 4 games (Giants, Broncos, Eagles, Bills). Possible Aaron Donald return next.",
-      "playerIds": [],
-      "players": [],
-      "url": "https://x.com/AdamSchefter/status/2099162651804705198",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-garrett-week1",
-      "signal": "IR",
-      "priorStatus": "INJURED",
-      "newStatus": "IR min 4",
-      "why": "Knee surgery.",
-      "implication": "LAR DL weakened short-term.",
-      "corroboration": [
-        "@RapSheet"
-      ],
-      "supportingSources": [
-        "ian-rapoport"
-      ],
-      "priority": "NORMAL"
-    },
-    {
-      "id": "porter-inactive",
+      "id": "porter-inactive-w1",
       "at": "2026-09-13T15:33:57Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Steelers CB Joey Porter Jr. officially inactive (back) vs Falcons; trade possibility remains amid contract dispute.",
+      "text": "Steelers CB Joey Porter Jr. officially inactive (back); trade possibility remains amid contract dispute.",
       "playerIds": [],
       "players": [],
       "url": "https://x.com/AdamSchefter/status/2099159658510348465",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-porter-week1",
+      "eventId": "porter-inactive-w1",
       "signal": "INACTIVE",
       "priorStatus": "UNLIKELY",
       "newStatus": "INACTIVE",
-      "why": "Back injury + contract issues.",
-      "implication": "Secondary impact; limited fantasy unless IDP.",
+      "why": "Back injury + ramp-up",
+      "implication": "Defensive impact vs ATL; limited fantasy",
       "corroboration": [
         "@RapSheet"
       ],
@@ -428,13 +414,36 @@
       "priority": "NORMAL"
     },
     {
-      "id": "levitan-projs-locked",
+      "id": "garrett-ir-w1",
+      "at": "2026-09-13T15:20:54Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Rams DE Myles Garrett to undergo arthroscopic knee surgery, placed on IR (min 4 games). Could have Aaron Donald back next week.",
+      "playerIds": [],
+      "players": [],
+      "url": "https://x.com/AdamSchefter/status/2099156373044883709",
+      "kind": "INJURY_STATUS",
+      "eventId": "garrett-ir-w1",
+      "signal": "OUT",
+      "newStatus": "IR",
+      "why": "Arthroscopic knee surgery",
+      "implication": "Misses next 4; defensive depth chart shift",
+      "corroboration": [
+        "@RapSheet",
+        "Tom Pelissero"
+      ],
+      "priority": "NORMAL"
+    },
+    {
+      "id": "levitan-no-major-proj-changes",
       "at": "2026-09-13T14:51:06Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Main-slate news largely locked; no major projection changes expected beyond Nabers. Projections live and updating.",
+      "text": "Not expecting any major changes to projections other than Malik Nabers (Q, knee) news. Full projections live.",
       "playerIds": [
         "malik-nabers"
       ],
@@ -443,16 +452,28 @@
       ],
       "url": "https://x.com/adamlevitan/status/2099148874036506896",
       "kind": "ANALYST_PROJECTION",
-      "eventId": "proj-update-week1",
-      "signal": "STABLE",
-      "why": "Statuses settled for 1pm; only SNF variable.",
-      "implication": "Trust current ETR numbers except Nabers contingency.",
-      "corroboration": [
-        "@EstablishTheRun"
-      ],
-      "supportingSources": [
-        "establish-the-run"
-      ],
+      "eventId": "levitan-projections-w1",
+      "signal": "RANKING_SIGNAL",
+      "why": "Statuses largely settled",
+      "implication": "Stable rankings except Nabers contingency",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "etr-shows-live",
+      "at": "2026-09-13T13:31:42Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Sunday shows: Wake and Rake 10am ET, FanDuel Exam 10:35am, Last Minute Livestream 11:45am with Levitan & Silva for final updates.",
+      "playerIds": [],
+      "players": [],
+      "url": "https://x.com/EstablishTheRun/status/2099128890807714160",
+      "kind": "ANALYST_OPINION",
+      "eventId": "etr-sunday-content-w1",
+      "signal": "UPDATE",
+      "why": "In-season subscriber live content for inactive window",
+      "implication": "Real-time status/projection adjustments pre-lock",
       "priority": "NORMAL"
     },
     {
@@ -462,7 +483,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Chuba Hubbard viable flex; keeping open this week.",
+      "text": "Chuba Hubbard is a viable flex play this week; keeping it open on The Chubbler.",
       "playerIds": [
         "chuba-hubbard"
       ],
@@ -471,11 +492,11 @@
       ],
       "url": "https://x.com/MatthewBerryTMR/status/2098923738724970529",
       "kind": "ANALYST_OPINION",
-      "eventId": "startsit-hubbard-week1",
-      "signal": "FLEX",
-      "why": "Viable option amid CAR RB committee.",
-      "implication": "Flex consideration depending on other statuses.",
-      "opportunity": "Committee carries with upside",
+      "eventId": "berry-hubbard-w1",
+      "signal": "LOVE",
+      "why": "Viable flex despite committee risks",
+      "implication": "Startable flex option in CAR backfield",
+      "opportunity": "RB snaps/carries in potential split",
       "priority": "NORMAL"
     },
     {
@@ -485,19 +506,16 @@
       "expert": "Patrick Thorman",
       "handle": "Pat_Thorman",
       "outlet": "Establish the Run",
-      "text": "Week 1 pace: NO@DET up-tempo; MIA@LV slow slog. Full snaps/pace available.",
+      "text": "Up in pace: NO @ DET. Slow paced slogs: MIA @ LV. Full Week 1 snaps & pace available.",
       "playerIds": [],
       "players": [],
       "url": "https://x.com/EstablishTheRun/status/2098797734517977234",
       "kind": "USAGE_DATA",
-      "eventId": "pace-thorman-week1",
-      "signal": "PACE",
-      "why": "Pre-game pace projections from Thorman.",
-      "implication": "Higher play volume NO-DET favors skill players; lower MIA-LV.",
-      "opportunity": "Volume edge in up-tempo games",
-      "corroboration": [
-        "@EstablishTheRun"
-      ],
+      "eventId": "pace-thorman-w1",
+      "signal": "UPGRADE",
+      "why": "Projected game scripts/pace",
+      "implication": "Higher volume for NO-DET players; lower for MIA-LV",
+      "opportunity": "Snap/route share boosts in up-tempo games",
       "supportingSources": [
         "establish-the-run"
       ],
@@ -510,7 +528,7 @@
       "sourceId": "establish-the-run",
       "source": "Establish The Run",
       "grade": "USEFUL",
-      "note": "Sunday AM status summary (Love/Odunze expected now confirmed active, Kamara not/inactive, Nabers pending, Williams elevated); Kamara impacts Etienne proj; Thorman pace (NO-DET up, MIA-LV slow); projections/shows live. Core opportunity + ina",
+      "note": "Sunday AM status summary (Love/Odunze expected, Kamara not, Nabers pending, Williams elevated); Kamara impacts Etienne proj; Thorman pace (NO-DET up, MIA-LV slow); projections/shows live. Core opportunity + inactive window.",
       "at": "2026-09-13T13:31:42Z"
     },
     {
@@ -531,15 +549,15 @@
       "sourceId": "adam-schefter",
       "source": "Adam Schefter",
       "grade": "USEFUL",
-      "note": "Odunze active; Porter inactive; Bowers OUT realistic W2 return; AJ Brown 4-6 wks no surgery; Garrett IR surgery; Lane OUT; multiple corroborations.",
-      "at": "2026-09-13T21:04:09Z"
+      "note": "Odunze active; Porter inactive; Bowers OUT realistic W2 return; Jacobs exempt/suspension context; AJ Brown 4-6 wks no surgery; Garrett IR surgery; Lane OUT; multiple corroborations.",
+      "at": "2026-09-13T19:07:23Z"
     },
     {
       "sourceId": "ian-rapoport",
       "source": "Ian Rapoport",
       "grade": "USEFUL",
       "note": "Sunday AM: Kamara not expected/inactive, Love expected, Odunze expected; Nabers up in air; Porter inactive; Garrett surgery/IR; Bowers short absence; Lane OUT. Strong beat pairing for inactive window.",
-      "at": "2026-09-13T19:40:07Z"
+      "at": "2026-09-13T19:08:22Z"
     },
     {
       "sourceId": "establish-the-run",
@@ -675,8 +693,8 @@
       "at": "2026-09-13T16:47:16Z"
     }
   ],
-  "mirroredAt": "2026-09-13T21:09:48.902Z",
+  "mirroredAt": "2026-09-13T21:10:04.477Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-09-13T21:09:48.424Z",
+  "sourceCompletedAt": "2026-09-13T21:10:04.014Z",
   "sourceStatus": "live"
 }
