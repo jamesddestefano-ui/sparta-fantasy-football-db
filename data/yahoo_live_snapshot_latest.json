@@ -11,7 +11,7 @@
   "opponent_team_name": "AMON A ROLL",
   "opponent_team_code": "ANT",
   "record": "0-0-0",
-  "observed_at": "2026-09-13T13:05:00-04:00",
+  "observed_at": "2026-09-13T16:07:43-04:00",
   "completed": true,
   "roster": [
     {
@@ -78,7 +78,10 @@
       "player": "Ja'Kobi Lane",
       "position": "WR",
       "nfl_team": "Bal",
-      "slot": "BN"
+      "slot": "BN",
+      "status_marks": [
+        "O"
+      ]
     },
     {
       "player": "Dontayvion Wicks",
@@ -196,7 +199,10 @@
       "slot": "BN",
       "player": "Ja'Kobi Lane",
       "nfl_team": "Bal",
-      "position": "WR"
+      "position": "WR",
+      "status_marks": [
+        "O"
+      ]
     },
     {
       "slot": "BN",
@@ -233,6 +239,15 @@
     "note": "Yahoo My Team Waiver Budget $100 confirmed live"
   },
   "transactions": [
+    {
+      "timestamp_et": "2026-09-13 09:54",
+      "team": "JU",
+      "team_name": "The U",
+      "action": "ADD_DROP",
+      "added": "Ravens D/ST",
+      "dropped": "George Holani",
+      "yahoo_status": "FA/to waivers"
+    },
     {
       "timestamp_et": "2026-09-11 19:23",
       "team": "JD",
@@ -431,11 +446,21 @@
     "Braxton Berrios": "FREE_AGENT",
     "Alvin Kamara": "JP",
     "Travis Etienne": "JP",
-    "CJ Donaldson": "WAIVERS"
+    "CJ Donaldson": "WAIVERS",
+    "Jeremiyah Love": "ANT",
+    "Zay Flowers": "JP",
+    "Rashod Bateman": "WAIVERS",
+    "Brian Thomas Jr.": "MC",
+    "Dylan Sampson": "VV",
+    "Jakobi Meyers": "MC",
+    "Raheim Sanders": "WAIVERS",
+    "Olamide Zaccheaus": "WAIVERS",
+    "Ravens D/ST": "JU",
+    "George Holani": "WAIVERS"
   },
   "availability_checked": true,
   "availability_notes": {
-    "players_page_filter": "targeted FA + Kamara beneficiary tree (Etienne/Miller/Donaldson)",
+    "players_page_filter": "full targeted FA scan for this Game-Day pass (Love/Flowers/Bateman/Lane/BTJ/Sampson/Demercado/Davis/Abanikanda/Donaldson/Kamara/Etienne/Miller/Meyers/Sanders/Zaccheaus)",
     "fa_label": "FA",
     "waiver_label": "W (date)",
     "yahoo_note": "Free agents move to waivers when their game starts",
@@ -443,24 +468,30 @@
     "fa_scan_status": "OK",
     "fa_scan_limited_reason": null,
     "fa_scan_detail": {
-      "Israel Abanikanda": "FA \u2014 Dallas RB",
+      "Jeremiyah Love": "Rostered by AMON A ROLL (ANT) \u2014 FA watch CLOSED",
+      "Zay Flowers": "Rostered by X-Factor (JP); O mark",
+      "Rashod Bateman": "WAIVERS Sep 16",
+      "Ja'Kobi Lane": "Rostered by TB12 of Ass/Cousin Fucker (JD); BN; O mark; game-locked",
+      "Brian Thomas Jr.": "Rostered by CLIN-TON POR-TIS (MC)",
+      "Dylan Sampson": "Rostered by FOCUS (VV); O mark",
+      "Emari Demercado": "Rostered by TB12 of Ass/Cousin Fucker (JD); BN",
       "Malik Davis": "FA \u2014 Dallas RB; IR mark (do not claim per prior HOLD)",
-      "Emari Demercado": "Rostered by TB12 of Ass/Cousin Fucker (JD)",
-      "Jaydon Blue": "FA \u2014 PHI RB; NA mark",
-      "Javonte Williams": "Rostered by Pablo Pledgescobars (MM)",
-      "Dalen Cambre": "FA \u2014 NYG WR",
-      "Braxton Berrios": "FA \u2014 NYG WR",
-      "Alvin Kamara": "Rostered by X-Factor (JP); O mark (inactive)",
-      "Travis Etienne": "Rostered by X-Factor (JP)",
+      "Israel Abanikanda": "FA \u2014 Dallas RB",
+      "CJ Donaldson": "WAIVERS Sep 16",
+      "Alvin Kamara": "Rostered by X-Factor (JP); O mark",
+      "Travis Etienne": "Rostered by X-Factor (JP); Yahoo labels Travis Etienne Jr.",
       "Kendre Miller": "Rostered by X-Factor (JP)",
-      "CJ Donaldson": "WAIVERS Sep 16 \u2014 not immediate FA (game started)",
-      "Olamide Zaccheaus": "NOT_RECHECKED this pass (prior HTTP 999)"
+      "Jakobi Meyers": "Rostered by CLIN-TON POR-TIS (MC)",
+      "Raheim Sanders": "WAIVERS Sep 16",
+      "Olamide Zaccheaus": "WAIVERS Sep 16",
+      "Ravens D/ST": "Rostered by The U (JU) \u2014 added Sep 13 09:54",
+      "George Holani": "WAIVERS \u2014 dropped by The U Sep 13 09:54"
     }
   },
   "player_aliases": {
     "Andy Borregales": "Andres Borregales"
   },
-  "durable_files_note": "Snapshot CURRENT LIVE VIEW only. No new txs. Lineup slot refresh: Vele flex / Dobbins BN (already FOLLOWED in decision ledger). Ownership map adds Etienne=JP, Donaldson=WAIVERS.",
+  "durable_files_note": "snapshot + cursor refresh; ingested 1 non-JD tx (JU Ravens/Holani); no JD roster/FAAB/ledger changes; Pulse 6 consumed no material JD action",
   "source": "authenticated Yahoo Agent Computer",
   "isolation": {
     "mongo": "IGNORED",
@@ -468,29 +499,35 @@
     "props": "IGNORED"
   },
   "fa_scan_targets": {
-    "Israel Abanikanda": "FREE_AGENT",
-    "Jaydon Blue": "FREE_AGENT",
-    "Javonte Williams": "MM",
-    "Malik Davis": "FREE_AGENT",
+    "Jeremiyah Love": "ANT",
+    "Zay Flowers": "JP",
+    "Rashod Bateman": "WAIVERS",
+    "Ja'Kobi Lane": "JD",
+    "Brian Thomas Jr.": "MC",
+    "Dylan Sampson": "VV",
     "Emari Demercado": "JD",
-    "Dalen Cambre": "FREE_AGENT",
-    "Braxton Berrios": "FREE_AGENT",
+    "Malik Davis": "FREE_AGENT",
+    "Israel Abanikanda": "FREE_AGENT",
+    "CJ Donaldson": "WAIVERS",
     "Alvin Kamara": "JP",
     "Travis Etienne": "JP",
     "Kendre Miller": "JP",
-    "CJ Donaldson": "WAIVERS",
-    "Olamide Zaccheaus": "NOT_RECHECKED",
-    "waiver_note": "Donaldson on waivers until Sep 16; Davis FA+IR HOLD stands; Kamara/Etienne/Miller all JP."
+    "Jakobi Meyers": "MC",
+    "Raheim Sanders": "WAIVERS",
+    "Olamide Zaccheaus": "WAIVERS",
+    "Ravens D/ST": "JU",
+    "George Holani": "WAIVERS",
+    "waiver_note": "Love=ANT closes FA watch; Bateman/Donaldson/Sanders/Zaccheaus/Holani on waivers; Davis FA+IR HOLD stands; Kamara/Etienne/Miller=JP; Lane O+BN locked."
   },
   "check_meta": {
-    "check_id": "sparta-live-check-20260913-1648",
+    "check_id": "sparta-live-check-20260913-1952",
     "routine": "Sparta Sunday Game-Day Check",
-    "pull_dir": "/workspace/sparta-yahoo-live-20260913-1648",
+    "pull_dir": "/workspace/sparta-yahoo-live-20260913-1952",
     "pull_completed_flag": true,
-    "pull_partial_reason": "Zaccheaus not rechecked; core + beneficiary FA tree complete",
+    "pull_partial_reason": null,
     "core_yahoo_ok": true,
-    "new_transactions": 0,
-    "newest_visible_tx": "Sep 11, 4:23 pm Demercado add / Davis drop",
-    "live_score_note": "Week 1 in progress TB12 leading; Stevenson/JSN final; Vele started over Dobbins"
+    "new_transactions": 1,
+    "newest_visible_tx": "Sep 13, 9:54 am The U Ravens D/ST add / George Holani drop",
+    "live_score_note": "TB12 104.70 vs AMON A ROLL 88.50 (proj 142.93-140.40); Lane O on BN"
   }
 }
