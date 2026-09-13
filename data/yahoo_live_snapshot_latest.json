@@ -11,7 +11,7 @@
   "opponent_team_name": "AMON A ROLL",
   "opponent_team_code": "ANT",
   "record": "0-0-0",
-  "observed_at": "2026-09-12T16:14:28-04:00",
+  "observed_at": "2026-09-12T20:21:02-04:00",
   "completed": true,
   "roster": [
     {
@@ -63,18 +63,6 @@
       "slot": "W/R/T"
     },
     {
-      "player": "Evan McPherson",
-      "position": "K",
-      "nfl_team": "Cin",
-      "slot": "K"
-    },
-    {
-      "player": "Jets D/ST",
-      "position": "D/ST",
-      "nfl_team": "NYJ",
-      "slot": "DEF"
-    },
-    {
       "player": "Xavier Worthy",
       "position": "WR",
       "nfl_team": "KC",
@@ -115,6 +103,18 @@
       "position": "RB",
       "nfl_team": "Dal",
       "slot": "BN"
+    },
+    {
+      "player": "Evan McPherson",
+      "position": "K",
+      "nfl_team": "Cin",
+      "slot": "K"
+    },
+    {
+      "player": "Jets D/ST",
+      "position": "D/ST",
+      "nfl_team": "NYJ",
+      "slot": "DEF"
     }
   ],
   "starters": [
@@ -426,21 +426,24 @@
     "Hunter Luepke": "FREE_AGENT",
     "Phil Mafah": "FREE_AGENT",
     "Miles Sanders": "FREE_AGENT",
-    "Jashaun Corbin": "FREE_AGENT"
+    "Jashaun Corbin": "FREE_AGENT",
+    "Dalen Cambre": "FREE_AGENT"
   },
   "availability_checked": true,
   "availability_notes": {
-    "players_page_filter": "targeted DAL RB / named candidates",
+    "players_page_filter": "targeted DAL RB / NYG WR depth / named candidates",
     "fa_label": "FA",
     "waiver_label": "W (date)",
     "yahoo_note": "Free agents move to waivers when their game starts",
     "targeted_scan": true,
     "fa_scan_detail": {
       "Israel Abanikanda": "FA \u2014 Dallas RB; Add Player shown",
-      "Malik Davis": "Waivers (Sep 13) \u2014 Dallas RB",
+      "Malik Davis": "Waivers (Sep 13) \u2014 Dallas RB; IR mark on Yahoo",
       "Emari Demercado": "Rostered by TB12 of Ass/Cousin Fucker (JD)",
       "Jaydon Blue": "FA \u2014 PHI RB; Add Player shown",
-      "Javonte Williams": "Rostered by Pablo Pledgescobars (team 8 / MM)"
+      "Javonte Williams": "Rostered by Pablo Pledgescobars (team 8 / MM)",
+      "Dalen Cambre": "FA \u2014 NYG WR; Add Player shown",
+      "Braxton Berrios": "AVAILABILITY \u2014 UNKNOWN (Yahoo HTTP 999 on player search)"
     }
   },
   "player_aliases": {
@@ -455,19 +458,22 @@
     "Javonte Williams": "MM",
     "Malik Davis": "WAIVERS",
     "Emari Demercado": "JD",
+    "Dalen Cambre": "FREE_AGENT",
+    "Braxton Berrios": "UNKNOWN",
     "waiver_note": "Malik Davis W (Sep 13)"
   },
   "check_meta": {
     "routine": "Sparta Live Check",
-    "pull_dir": "/workspace/sparta-yahoo-live-20260912-1606",
-    "pull_observed_at": "2026-09-12T16:14:28-04:00",
-    "provenance": "Authenticated Yahoo Agent Computer pull artifact sparta-yahoo-live-20260912-1606 (pull_summary.json + screenshots); 4pm Live Check ~16:14 ET",
+    "pull_dir": "/workspace/sparta-yahoo-live-20260912-2014",
+    "pull_observed_at": "2026-09-12T20:21:02-04:00",
+    "provenance": "Authenticated Yahoo Agent Computer pull artifact sparta-yahoo-live-20260912-2014 (pull_summary.json + screenshots); 8pm Live Check ~20:21 ET",
     "new_transactions_ingested": 0,
     "durable_tx_writes": false,
     "roster_changed": false,
     "roster_matches_prior_17": true,
-    "yahoo_fa_scan": "OK",
+    "yahoo_fa_scan": "OK (Berrios UNKNOWN \u2014 HTTP 999)",
     "semantic_dedupe": "0 durable tx writes; latest still Sep 11 4:23 pm Demercado add / Davis drop",
-    "timestamp_policy": "Yahoo UI display treated as Pacific \u2192 ET (matches prior verified 19:23 ET Demercado txn); semantic dedupe only"
+    "timestamp_policy": "Yahoo UI display treated as Pacific \u2192 ET (matches prior verified 19:23 ET Demercado txn); semantic dedupe only",
+    "pulse_delta": "1 active POSSIBLE (Cambre/Berrios elev) \u2014 NO MATERIAL SPARTA CHANGE for JD"
   }
 }
