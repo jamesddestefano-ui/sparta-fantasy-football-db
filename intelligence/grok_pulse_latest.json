@@ -1,52 +1,57 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-09-13T06:10:22.496Z",
+  "generatedAt": "2026-09-13T08:09:55.670Z",
   "status": "live",
-  "completedAt": "2026-09-13T06:10:22.487Z",
-  "nextAtLabel": "4:00 AM ET",
+  "completedAt": "2026-09-13T08:09:55.633Z",
+  "nextAtLabel": "6:00 AM ET",
   "inWindow": true,
   "itemCount": 18,
   "items": [
     {
-      "id": "ajbrown-ir-w1",
-      "at": "2026-09-12T20:16:57Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Patriots officially placed WR A.J. Brown on injured reserve and signed DT DaQuan Jones.",
+      "id": "nabers-q-elevations",
+      "at": "2026-09-12T20:35:35Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Malik Nabers (knee) listed QUESTIONABLE for SNF vs DAL despite full practices; Giants elevated Braxton Berrios and signed Dalen Cambre as depth.",
       "playerIds": [
-        "aj-brown"
+        "malik-nabers"
       ],
       "players": [
-        "A.J. Brown"
+        "Malik Nabers"
       ],
-      "url": "https://x.com/AdamSchefter/status/2098868490555769157",
+      "url": "https://x.com/RapSheet/status/2098873178219249708",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-ajbrown-week1",
-      "signal": "OUT",
-      "priorStatus": "INJURED",
-      "newStatus": "IR",
-      "why": "Official team move reported by Schefter.",
-      "implication": "Season-start absence; Drake Maye WR targets redistribute (Doubs etc).",
-      "opportunity": "Zero snaps for Brown Week 1+; NE WR committee opens.",
+      "eventId": "injury-nabers-week1",
+      "signal": "QUESTIONABLE",
+      "priorStatus": "full practice",
+      "newStatus": "QUESTIONABLE",
+      "why": "Returning from ACL; full practice but official Q designation and contingency elevations.",
+      "implication": "Game-time; if OUT or limited, Fields/Mooney/Berrios rise; Likely TE upside if Nabers limited.",
+      "opportunity": "If active, heavy target share; monitor pregame.",
+      "beneficiaries": [
+        "isaiah-likely"
+      ],
       "corroboration": [
-        "@RapSheet"
+        "@AdamSchefter",
+        "Berry 10 Facts"
       ],
       "supportingSources": [
-        "ian-rapoport"
+        "adam-schefter",
+        "matthew-berry"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "rush-start-spasms",
+      "id": "rush-start-tua-out",
       "at": "2026-09-12T20:03:16Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Falcons starting QB Cooper Rush experienced back spasms Saturday but team said he still will start Sunday at Pittsburgh (Tua already OUT).",
+      "text": "Falcons QB Cooper Rush experienced back spasms Saturday but will still start Sunday at PIT; Tua Tagovailoa (oblique) OUT.",
       "playerIds": [
         "bijan-robinson",
         "drake-london",
@@ -58,19 +63,17 @@
         "Kyle Pitts Sr."
       ],
       "url": "https://x.com/AdamSchefter/status/2098865045513875787",
-      "kind": "NFL_FACT",
-      "eventId": "qb-rush-start-week1",
+      "kind": "INJURY_STATUS",
+      "eventId": "qb-falcons-week1",
       "signal": "ACTIVE",
-      "priorStatus": "SPASMS CONCERN",
-      "newStatus": "WILL START",
-      "why": "Official team confirmation via Schefter/Rapoport.",
-      "implication": "Lower pass efficiency/volume possible but Bijan/London/Pitts still must-starts; reduced ATL pass rate.",
-      "opportunity": "Rushing game (Bijan) elevated; Pitts still viable vs PIT TE defense.",
-      "beneficiaries": [
-        "bijan-robinson"
-      ],
+      "priorStatus": "Tua starter then OUT",
+      "newStatus": "Rush START",
+      "why": "Tua oblique from practice; Rush spasms but team confirms start.",
+      "implication": "Still start Bijan/London/Pitts; Rush game-manager limits ceiling slightly but volume intact.",
+      "opportunity": "RB/WR/TE usage stable under Rush.",
       "corroboration": [
-        "@RapSheet"
+        "@RapSheet",
+        "ESPN"
       ],
       "supportingSources": [
         "ian-rapoport",
@@ -80,12 +83,12 @@
     },
     {
       "id": "bowers-out-w1",
-      "at": "2026-09-12T20:00:00Z",
+      "at": "2026-09-12T00:00:00Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Raiders TE Brock Bowers officially ruled OUT for Week 1 after meniscus trim procedure; expected to miss 1-2 weeks. Michael Mayer becomes primary TE option and saw contract extension.",
+      "text": "Raiders TE Brock Bowers is OUT for Week 1 (and expected 1-2 games) after meniscus trim procedure; Michael Mayer steps into expanded TE1 role.",
       "playerIds": [
         "brock-bowers",
         "michael-mayer"
@@ -98,18 +101,18 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-bowers-week1",
       "signal": "OUT",
-      "priorStatus": "QUESTIONABLE",
+      "priorStatus": "uncertain",
       "newStatus": "OUT",
-      "why": "Meniscus procedure confirmed by multiple reports including Schefter/Rapoport/ETR context.",
-      "implication": "Major TE downgrade; Mayer TE1/streamer upgrade with target bump in LV offense.",
-      "opportunity": "Primary TE targets/routes shift to Mayer; Jeanty remains focal point with Bowers out.",
+      "why": "Meniscus trim this week; confirmed by coach and multiple reports.",
+      "implication": "Mayer becomes must-start TE streamer/upside play; targets shift to Mayer and WRs.",
+      "opportunity": "Mayer target share spike, routes, red-zone.",
       "beneficiaries": [
         "michael-mayer"
       ],
       "corroboration": [
         "@RapSheet",
-        "PlayerProfiler",
-        "CBS"
+        "CBS",
+        "ETR notes"
       ],
       "supportingSources": [
         "ian-rapoport",
@@ -118,155 +121,41 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "jeanty-active-w1",
-      "at": "2026-09-11T16:00:00Z",
+      "id": "ajbrown-ir",
+      "at": "2026-09-12T20:16:57Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Raiders RB Ashton Jeanty off injury report, full participant all week, good-to-go and will play vs MIA after ankle sprain. Schefter confirmed clearance.",
+      "text": "Patriots officially placed WR A.J. Brown on injured reserve (high ankle); signed DT DaQuan Jones.",
       "playerIds": [
-        "ashton-jeanty"
+        "aj-brown"
       ],
       "players": [
-        "Ashton Jeanty"
+        "A.J. Brown"
       ],
-      "url": "https://x.com/AdamSchefter",
+      "url": "https://x.com/AdamSchefter/status/2098868490555769157",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-jeanty-week1",
-      "signal": "ACTIVE",
-      "priorStatus": "QUESTIONABLE",
-      "newStatus": "ACTIVE",
-      "why": "Full practices, no designation, player/coach comments of feeling really good.",
-      "implication": "RB1/2 lock with workhorse potential; possible slight early management but lead role.",
-      "opportunity": "Vast majority of RB touches; backups like Washington limited.",
-      "corroboration": [
-        "@RapSheet",
-        "ETR notes",
-        "NFL.com"
-      ],
-      "supportingSources": [
-        "establish-the-run",
-        "adam-levitan"
-      ],
-      "priority": "IMMEDIATE"
-    },
-    {
-      "id": "love-gtd-ari",
-      "at": "2026-09-12T23:00:00Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "Jeremiyah Love (high ankle) game-time decision / expected to play limited for ARI; Allgeier interesting if inactive.",
-      "playerIds": [
-        "jeremiyah-love"
-      ],
-      "players": [
-        "Jeremiyah Love"
-      ],
-      "url": "https://www.playerprofiler.com/article/nfl-injury-report-fantasy-football-week-1-2026/",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-love-week1",
-      "signal": "GAME-TIME DECISION",
-      "priorStatus": "LIMITED",
-      "newStatus": "GTD",
-      "why": "Limited practice; coach no limits earlier, source expects play.",
-      "implication": "Monitor inactive; tandem with Allgeier if plays, or Allgeier lead if out.",
-      "opportunity": "If OUT, Allgeier carries/routes expand significantly.",
-      "corroboration": [
-        "Weinfuss reports"
-      ],
-      "supportingSources": [
-        "adam-levitan"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "nabers-q-elevations",
-      "at": "2026-09-12T20:35:35Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "With Malik Nabers questionable (knee), Giants elevated WR Braxton Berrios and signed WR Dalen Cambre from PS.",
-      "playerIds": [
-        "malik-nabers"
-      ],
-      "players": [
-        "Malik Nabers"
-      ],
-      "url": "https://x.com/RapSheet/status/2098873178219249708",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-nabers-week1",
-      "signal": "QUESTIONABLE",
-      "priorStatus": "FULL PRACTICE",
-      "newStatus": "QUESTIONABLE",
-      "why": "Despite full practices, still Q; depth elevated as precaution.",
-      "implication": "Monitor inactive; if limited/out, targets to Likely/Fields/Mooney.",
-      "opportunity": "If OUT/limited, Isaiah Likely and other WRs see route/target spike.",
-      "beneficiaries": [
-        "isaiah-likely",
-        "malachi-fields"
-      ],
-      "corroboration": [
-        "@AdamSchefter",
-        "Berry 10 Facts"
-      ],
-      "supportingSources": [
-        "adam-schefter",
-        "matthew-berry"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "tua-out-falcons",
-      "at": "2026-09-12T20:05:00Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Tua Tagovailoa (oblique) OUT for Falcons Week 1; Cooper Rush starts. Penix also OUT.",
-      "playerIds": [
-        "bijan-robinson",
-        "drake-london",
-        "kyle-pitts"
-      ],
-      "players": [
-        "Bijan Robinson",
-        "Drake London",
-        "Kyle Pitts Sr."
-      ],
-      "url": "https://x.com/RapSheet",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-tua-week1",
+      "eventId": "injury-ajbrown-ir-week1",
       "signal": "OUT",
-      "priorStatus": "LIMITED",
-      "newStatus": "OUT",
-      "why": "Oblique strain; day-to-day but ruled out Week 1.",
-      "implication": "Pass game efficiency down; still start skill players but lower ceilings.",
-      "opportunity": "Run-heavy lean helps Bijan; Pitts matchup still solid.",
-      "beneficiaries": [
-        "bijan-robinson"
-      ],
+      "priorStatus": "injured",
+      "newStatus": "IR",
+      "why": "High ankle sprain; IR placement confirmed.",
+      "implication": "Out multiple weeks minimum; NE WR room thins, Maye targets to others.",
+      "opportunity": "Handcuff/waiver NE WRs.",
       "corroboration": [
-        "@AdamSchefter",
-        "injury reports"
-      ],
-      "supportingSources": [
-        "adam-schefter",
-        "matthew-berry"
+        "USA Today"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "davis-ir-cowboys",
+      "id": "malikdavis-ir",
       "at": "2026-09-12T18:15:18Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Cowboys placed RB Malik Davis on injured reserve and signed RB Israel Abanikanda from PS.",
+      "text": "Cowboys placed RB Malik Davis on IR after hip surgery (season-ending); signed Israel Abanikanda from PS.",
       "playerIds": [
         "malik-davis",
         "javonte-williams"
@@ -277,69 +166,70 @@
       ],
       "url": "https://x.com/AdamSchefter/status/2098837873449435534",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-davis-week1",
+      "eventId": "injury-davis-ir-week1",
       "signal": "OUT",
-      "priorStatus": "HIP INJURY",
+      "priorStatus": "RB2",
       "newStatus": "IR",
-      "why": "Hip injury Friday practice; surgery/IR move.",
-      "implication": "Handcuff loss; Javonte Williams clearer lead with Abanikanda depth.",
-      "opportunity": "Javonte snap/carry share locked higher; no Davis change-of-pace.",
+      "why": "Hip injury Friday practice, surgery Saturday, no return designation.",
+      "implication": "Javonte Williams unchallenged lead; Demercado/Abanikanda depth; lose handcuff value.",
+      "opportunity": "Williams snap/carry monopoly.",
       "beneficiaries": [
         "javonte-williams"
       ],
       "corroboration": [
-        "ETR notes"
+        "@RapSheet notes",
+        "SI"
       ],
       "supportingSources": [
-        "establish-the-run",
-        "adam-levitan"
+        "ian-rapoport"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "egbuka-clear-chase",
-      "at": "2026-09-12T18:00:00Z",
+      "id": "etr-pace-no-det",
+      "at": "2026-09-12T15:35:48Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Key clearances per ETR/context: Emeka Egbuka full-go (toe), Ja'Marr Chase and Tee Higgins expected to play after camp issues. Jeanty/Love notes align.",
+      "text": "ETR/Pat Thorman Week 1 snaps & pace: NO @ DET up in pace (fast expected); MIA @ LV slow-paced slog.",
       "playerIds": [
-        "emeka-egbuka",
-        "jamarr-chase",
-        "tee-higgins"
+        "jahmyr-gibbs",
+        "alvin-kamara",
+        "travis-etienne",
+        "devon-achane",
+        "ashton-jeanty"
       ],
       "players": [
-        "Emeka Egbuka",
-        "Ja'Marr Chase",
-        "Tee Higgins"
+        "Jahmyr Gibbs",
+        "Alvin Kamara",
+        "Travis Etienne Jr.",
+        "De'Von Achane",
+        "Ashton Jeanty"
       ],
-      "url": "https://www.covers.com/nfl/week-1-injury-updates-2026",
-      "kind": "INJURY_STATUS",
-      "eventId": "clearance-wr-week1",
-      "signal": "ACTIVE",
-      "priorStatus": "LIMITED/INJURY",
-      "newStatus": "EXPECTED TO PLAY",
-      "why": "Full practices and coach comments; no designations of concern.",
-      "implication": "WR1/2 locks for CIN/TB; no beneficiary shifts.",
-      "opportunity": "Full route shares expected.",
+      "url": "https://establishtherun.com/thormans-snaps-and-pace-week-1-8/",
+      "kind": "USAGE_DATA",
+      "eventId": "pace-week1-etr",
+      "signal": "UPGRADE",
+      "why": "Historical + projected neutral pace/PROE factors; Saints/Lions high volume.",
+      "implication": "Prefer DET/NO skill players for volume; fade MIA/LV pace-dependent.",
+      "opportunity": "Higher snap/play totals NO-DET.",
       "corroboration": [
-        "Schefter/Rapoport patterns",
-        "Berry notes"
+        "@Pat_Thorman"
       ],
       "supportingSources": [
-        "adam-levitan"
+        "patrick-thorman"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "mayer-boost-extension",
-      "at": "2026-09-12T15:21:07Z",
+      "id": "mayer-extension-boost",
+      "at": "2026-09-12T15:21:00Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Raiders TE Michael Mayer agreed to 3-year $45M extension ($30M guar, 4th APY among TEs). With Bowers OUT, immediate TE1 role.",
+      "text": "Raiders TE Michael Mayer agreed to 3-year $45M extension ($30M gtd, ~$15M APY 4th among TEs); first Raiders rookie-deal extension since Renfrow. With Bowers OUT, immediate role expansion.",
       "playerIds": [
         "michael-mayer",
         "brock-bowers"
@@ -348,16 +238,13 @@
         "Michael Mayer",
         "Brock Bowers"
       ],
-      "url": "https://x.com/RapSheet/status/2098794042071056747",
+      "url": "https://x.com/RapSheet",
       "kind": "NFL_FACT",
       "eventId": "contract-mayer-week1",
       "signal": "UPGRADE",
-      "why": "Official extension + Bowers absence creates vacuum.",
-      "implication": "Strong streamer/TE1 play Week 1 vs MIA; long-term secured.",
-      "opportunity": "Primary TE targets/routes/red-zone with Bowers out.",
-      "beneficiaries": [
-        "michael-mayer"
-      ],
+      "why": "Extension + Bowers absence creates clear path.",
+      "implication": "Strong TE streamer/start; long-term lock.",
+      "opportunity": "Targets, routes, red-zone in Bowers void.",
       "corroboration": [
         "@AdamSchefter"
       ],
@@ -368,76 +255,85 @@
       "priority": "HIGH"
     },
     {
-      "id": "cmc-buy-low-berry",
-      "at": "2026-09-12T14:12:33Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Contrarian take on Christian McCaffrey: people freaking out over usage and Kaelon Black looks; banged up preseason, long flight, weird game — CMC is a BUY LOW. Not worried.",
-      "playerIds": [
-        "christian-mccaffrey"
-      ],
-      "players": [
-        "Christian McCaffrey"
-      ],
-      "url": "https://x.com/MatthewBerryTMR/status/2098776786498654411",
-      "kind": "ANALYST_OPINION",
-      "eventId": "opinion-cmc-week1",
-      "signal": "UPGRADE",
-      "why": "Preseason issues and travel explain soft usage; talent/role intact.",
-      "implication": "Hold/start confidently; buy if panicked owners sell low post-Week 1.",
-      "opportunity": "Expect rebound in snaps/routes/carries as primary back.",
-      "conflict": "Conflicts with early usage panic narratives.",
-      "priority": "HIGH"
-    },
-    {
-      "id": "tucker-doubtful-tb",
-      "at": "2026-09-12T11:00:00Z",
+      "id": "jeanty-cleared-w1",
+      "at": "2026-09-12T15:00:00Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Buccaneers RB Sean Tucker (hamstring) doubtful for Week 1 vs CIN; Bucky Irving and Kenny Gainwell expected to handle backfield with GL boost potential.",
+      "text": "Ashton Jeanty (ankle) fully practiced and cleared/expected to play Week 1 vs MIA with no designation after earlier scare; ADP boost noted.",
       "playerIds": [
-        "bucky-irving",
-        "kenny-gainwell"
+        "ashton-jeanty"
       ],
       "players": [
-        "Bucky Irving",
-        "Kenny Gainwell"
+        "Ashton Jeanty"
       ],
-      "url": "https://athlonsports.com/nfl/tampa-bay-buccaneers/sean-tucker-injury-update-tampa-bay-week-one",
+      "url": "https://establishtherun.com",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-tucker-week1",
-      "signal": "DOUBTFUL",
-      "priorStatus": "LIMITED",
-      "newStatus": "DOUBTFUL",
-      "why": "Hamstring; limited practices, coach confirmation.",
-      "implication": "Irving RB2 upside, Gainwell passing-down/GL share increase.",
-      "opportunity": "Goal-line and short-yardage to Irving/Gainwell; Egbuka full go confirmed.",
-      "beneficiaries": [
-        "bucky-irving",
-        "kenny-gainwell"
-      ],
+      "eventId": "injury-jeanty-week1",
+      "signal": "ACTIVE",
+      "priorStatus": "QUESTIONABLE/limited",
+      "newStatus": "ACTIVE/IN",
+      "why": "Full practices mid-week; team hopeful and no game designation.",
+      "implication": "Start as RB1; monitor early workload management possible with missed camp.",
+      "opportunity": "Lead back carries/routes vs soft MIA run D.",
       "corroboration": [
-        "@AdamSchefter elevations",
-        "DraftSharks"
+        "@adamlevitan",
+        "RotoWire",
+        "CBS"
       ],
       "supportingSources": [
         "adam-levitan",
-        "jared-smola"
+        "adam-schefter"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "saquon-love-berry",
+      "id": "egbuka-chase-clear",
+      "at": "2026-09-12T12:00:00Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "ETR context: Emeka Egbuka (toe) and Ja'Marr Chase clearances/expected IN for Week 1 after limited/rest; Jeanty/Love also positive signals.",
+      "playerIds": [
+        "emeka-egbuka",
+        "jamarr-chase",
+        "ashton-jeanty",
+        "jeremiyah-love"
+      ],
+      "players": [
+        "Emeka Egbuka",
+        "Ja'Marr Chase",
+        "Ashton Jeanty",
+        "Jeremiyah Love"
+      ],
+      "url": "https://establishtherun.com",
+      "kind": "INJURY_STATUS",
+      "eventId": "clearances-etr-week1",
+      "signal": "ACTIVE",
+      "priorStatus": "limited/Q",
+      "newStatus": "IN/EXPECTED",
+      "why": "Practice progression and no OUT designations.",
+      "implication": "Start confidently; full roles.",
+      "opportunity": "Standard high usage.",
+      "corroboration": [
+        "CBS",
+        "FantasyPros"
+      ],
+      "supportingSources": [
+        "adam-levitan"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "berry-saquon-love",
       "at": "2026-09-10T16:00:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Saquon Barkley Love signal via history vs Washington: since joining Eagles, 136.5 rush yds and 6.0 YPC in 4 games vs WAS (incl playoffs), 21+ PPR all four. Front seven still below avg.",
+      "text": "Berry Love on Saquon Barkley: since joining PHI, 136.5 rush yds/6.0 YPC and 21+ PPR in all 4 games vs WAS (incl playoffs); WAS front still projects below avg.",
       "playerIds": [
         "saquon-barkley"
       ],
@@ -446,21 +342,21 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/matthew-berrys-10-facts-for-week-1-of-the-2026-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "opinion-saquon-week1",
+      "eventId": "berry-barkley-week1",
       "signal": "LOVE",
-      "why": "Elite historical production vs this matchup; defensive changes insufficient.",
-      "implication": "Strong RB1 start; high floor/ceiling Week 1.",
-      "opportunity": "Heavy carries/red-zone vs weak front.",
+      "why": "Historical dominance vs this opponent.",
+      "implication": "Strong RB1 start.",
+      "opportunity": "High carry/YPC upside.",
       "priority": "HIGH"
     },
     {
-      "id": "likely-nabers-berry",
+      "id": "berry-likely-nabers",
       "at": "2026-09-10T16:00:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Isaiah Likely ranks 4th in fantasy PPG per target last 3 yrs; 8/9 games with 6+ targets = 12.5+ PPR. Nabers won't be 100%; Giants WR2 is Fields or Mooney. Gimme all the Likely.",
+      "text": "Berry Fact: Isaiah Likely 4th in TE FPP target last 3 yrs; 8/9 games with 6+ targets = 12.5+ PPR. Nabers won't be 100%; Giants WR2 is Fields or Mooney. Gimme all the Likely.",
       "playerIds": [
         "isaiah-likely",
         "malik-nabers"
@@ -471,16 +367,13 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/matthew-berrys-10-facts-for-week-1-of-the-2026-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "opinion-likely-week1",
+      "eventId": "berry-likely-week1",
       "signal": "LOVE",
-      "why": "Efficiency + Nabers uncertainty creates target vacuum.",
-      "implication": "TE streamer/upside start if Nabers limited/Q inactive.",
-      "opportunity": "Elevated targets/routes if Nabers not full.",
-      "beneficiaries": [
-        "isaiah-likely"
-      ],
+      "why": "Efficiency + Nabers limitation creates target vacuum.",
+      "implication": "TE streamer/upside start.",
+      "opportunity": "Targets if Nabers limited/OUT.",
       "corroboration": [
-        "@RapSheet elevations"
+        "Rapoport elevations"
       ],
       "supportingSources": [
         "ian-rapoport"
@@ -488,78 +381,149 @@
       "priority": "HIGH"
     },
     {
-      "id": "chuba-flex-berry",
+      "id": "berry-chuba-flex",
       "at": "2026-09-12T23:56:30Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Chuba Hubbard is a flex play this week but viable; 'keeping it open' on The Chubbler amid Brooks groin notes.",
+      "text": "Berry keeping Chuba Hubbard 'open' as viable flex this week (The Chubbler); not locked but playable.",
       "playerIds": [
-        "chuba-hubbard",
-        "jonathon-brooks"
+        "chuba-hubbard"
       ],
       "players": [
-        "Chuba Hubbard",
-        "Jonathon Brooks"
+        "Chuba Hubbard"
       ],
       "url": "https://x.com/MatthewBerryTMR/status/2098923738724970529",
       "kind": "ANALYST_OPINION",
-      "eventId": "opinion-chuba-week1",
-      "signal": "FLEX",
-      "why": "Hubbard 100% after full practices; Brooks limited/groin but expected play.",
-      "implication": "Viable flex if needed; monitor Brooks snaps for split.",
-      "opportunity": "If Brooks limited, Hubbard lead back upside.",
-      "corroboration": [
-        "injury reports"
-      ],
+      "eventId": "berry-chuba-week1",
+      "signal": "LOVE",
+      "why": "Matchup/role viable despite committee noise.",
+      "implication": "Flex consideration if needed.",
+      "opportunity": "Carries in CAR backfield.",
       "priority": "NORMAL"
     },
     {
-      "id": "etr-pace-no-det",
-      "at": "2026-09-12T15:35:48Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "ETR/Pat Thorman Week 1 Snaps & Pace: Up in pace NO @ DET; slow-paced slog MIA @ LV. Updated for Tua/Bowers news.",
+      "id": "parker-no-ext",
+      "at": "2026-09-12T23:49:49Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Unlikely Jaguars & WR Parker Washington agree to extension by season start; explored Michael Wilson-range deal (3yr/$75M) but no deal; betting on himself.",
       "playerIds": [
-        "jahmyr-gibbs",
-        "chris-olave",
-        "ashton-jeanty"
+        "parker-washington"
       ],
       "players": [
-        "Jahmyr Gibbs",
-        "Chris Olave",
-        "Ashton Jeanty"
+        "Parker Washington"
       ],
-      "url": "https://establishtherun.com/thormans-snaps-and-pace-week-1-8/",
-      "kind": "USAGE_DATA",
-      "eventId": "pace-week1-etr",
-      "signal": "UPGRADE",
-      "why": "Neutral pace projections and game environment factors.",
-      "implication": "Higher snap/volume ceiling for DET/NO skill; lower for MIA/LV.",
-      "opportunity": "More plays = more Gibbs/Olave opportunities; Jeanty in slow game but featured.",
-      "beneficiaries": [
-        "jahmyr-gibbs"
-      ],
+      "url": "https://x.com/AdamSchefter/status/2098922060395245683",
+      "kind": "NFL_FACT",
+      "eventId": "contract-parker-week1",
+      "signal": "N/A",
+      "why": "Sources confirm no agreement.",
+      "implication": "Motivated for big year; startable WR.",
+      "opportunity": "Route/target share in JAC.",
       "corroboration": [
-        "@Pat_Thorman"
+        "@RapSheet",
+        "Cameron Wolfe"
       ],
       "supportingSources": [
-        "patrick-thorman",
-        "adam-levitan"
+        "ian-rapoport",
+        "matthew-berry"
       ],
       "priority": "NORMAL"
     },
     {
-      "id": "olave-shough-berry",
+      "id": "lamar-no-deal",
+      "at": "2026-09-12T23:21:04Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "No last-minute contract extension for Ravens QB Lamar Jackson before opener (unlike Dak 2 yrs ago); deal on hold likely until 2027. Reluctant talks.",
+      "playerIds": [
+        "lamar-jackson"
+      ],
+      "players": [
+        "Lamar Jackson"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2098914824847516022",
+      "kind": "NFL_FACT",
+      "eventId": "contract-lamar-week1",
+      "signal": "N/A",
+      "why": "Sources: no buzzer-beater deal.",
+      "implication": "No distraction; focus on field. All eyes on play.",
+      "opportunity": "Unaffected usage.",
+      "corroboration": [
+        "@RapSheet"
+      ],
+      "supportingSources": [
+        "ian-rapoport"
+      ],
+      "priority": "NORMAL"
+    },
+    {
+      "id": "kraft-extension",
+      "at": "2026-09-12T15:21:07Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Packers TE Tucker Kraft agreed to 4-year extension base ~$75M one day before opener.",
+      "playerIds": [
+        "tucker-kraft"
+      ],
+      "players": [
+        "Tucker Kraft"
+      ],
+      "url": "https://x.com/RapSheet/status/2098794042071056747",
+      "kind": "NFL_FACT",
+      "eventId": "contract-kraft-week1",
+      "signal": "UPGRADE",
+      "why": "Long-term deal locks in core TE.",
+      "implication": "Stable TE1 fantasy asset ROS.",
+      "opportunity": "Continued high usage.",
+      "corroboration": [
+        "@AdamSchefter",
+        "Rob Demovsky"
+      ],
+      "supportingSources": [
+        "adam-schefter"
+      ],
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-cmc-buylow",
+      "at": "2026-09-12T14:12:33Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Matthew Berry contrarian: not worried about CMC usage/preseason or Kaelon Black looks; banged-up preseason + long flight + weird game = BUY LOW on Christian McCaffrey.",
+      "playerIds": [
+        "christian-mccaffrey"
+      ],
+      "players": [
+        "Christian McCaffrey"
+      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2098776786498654411",
+      "kind": "ANALYST_OPINION",
+      "eventId": "berry-cmc-week1",
+      "signal": "LOVE",
+      "why": "Context of limited prep/travel; historical resilience.",
+      "implication": "Hold/start confidently; ignore early noise.",
+      "opportunity": "Full workload expected.",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-olave-shough",
       "at": "2026-09-10T16:00:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Chris Olave averaged 29% target share and 14.7+ PPR in 75% of games with Tyler Shough last year. Saints/Lions high O/U; Lions safeties on IR.",
+      "text": "Berry: In games with Tyler Shough, Chris Olave 29% target share and 14.7+ PPR in 75%; Lions safeties on IR; high O/U. Shough waiver available widely.",
       "playerIds": [
         "chris-olave"
       ],
@@ -568,50 +532,74 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/matthew-berrys-10-facts-for-week-1-of-the-2026-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "opinion-olave-week1",
-      "signal": "LOVE",
-      "why": "Proven chemistry + matchup factors (IR safeties, high total).",
-      "implication": "WR2/flex upside in potentially high-scoring game.",
-      "opportunity": "High target share expected with Shough.",
-      "corroboration": [
-        "ETR pace up NO@DET"
-      ],
-      "supportingSources": [
-        "establish-the-run"
-      ],
+      "eventId": "berry-olave-week1",
+      "signal": "UPGRADE",
+      "why": "Chemistry + matchup factors.",
+      "implication": "Strong WR start vs DET.",
+      "opportunity": "High target share.",
       "priority": "NORMAL"
     },
     {
-      "id": "herbert-alt-berry",
+      "id": "berry-herbert-alt",
       "at": "2026-09-10T16:00:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Justin Herbert fantasy PPG per pass attempt 52% higher with Joe Alt on field last year. Alt healthy; ARI DL/secondary ranked poorly (31st/26th PFF, 27th pressure).",
+      "text": "Berry Fact: Justin Herbert fantasy PPG/attempt 52% higher with Joe Alt on field last year; Alt healthy for Week 1 vs ARI (weak DL/secondary).",
       "playerIds": [
-        "justin-herbert",
-        "ladd-mcconkey"
+        "justin-herbert"
       ],
       "players": [
-        "Justin Herbert",
-        "Ladd McConkey"
+        "Justin Herbert"
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/matthew-berrys-10-facts-for-week-1-of-the-2026-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "opinion-herbert-week1",
-      "signal": "LOVE",
-      "why": "OL health boost + soft ARI pass rush/secondary.",
-      "implication": "QB1/WR upside for Herbert/McConkey stack.",
-      "opportunity": "Higher efficiency, more dropbacks/targets.",
-      "beneficiaries": [
-        "ladd-mcconkey"
-      ],
+      "eventId": "berry-herbert-week1",
+      "signal": "UPGRADE",
+      "why": "OL health boosts efficiency.",
+      "implication": "QB1 confidence.",
+      "opportunity": "Passing volume/efficiency.",
       "priority": "NORMAL"
     }
   ],
   "sundayMode": true,
   "sourceNotes": [
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Snaps/pace (NO-DET up, MIA-LV slow); clearances Jeanty/Chase/Egbuka/Love; OUT framework Bowers/Davis/Tua. Primary Sunday injury/pace source.",
+      "at": "2026-09-13T08:00:00Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Slack/pre-lock discussions; player-specific via ETR (Jeanty ADP, Mayer/Bowers, handcuffs). Limited public posts last 24h but tied to ETR intel.",
+      "at": "2026-09-13T08:00:00Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "CMC buy-low; Chuba keep-open flex; 10 Facts (Likely/Nabers, Barkley vs WAS, Herbert/Alt, Olave/Shough, Parker Washington); Happy Hour noon ET. Love/Hate split actionable.",
+      "at": "2026-09-13T08:00:00Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "Official OUTs/IRs (Bowers, AJ Brown IR, Davis IR, Nwangwu, Simmons); Jeanty context; Rush will start; elevations; Lamar/Stroud/Parker contract holds. High volume Saturday.",
+      "at": "2026-09-13T08:00:00Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Nabers Q + elevations; Rush start despite spasms; Saturday moves (Stowers IR, elevations); Mayer/Kraft extensions; Jeanty/Bowers corroboration. Strong corroborator.",
+      "at": "2026-09-13T08:00:00Z"
+    },
     {
       "sourceId": "establish-the-run",
       "source": "Establish The Run",
@@ -744,17 +732,10 @@
       "grade": "USEFUL",
       "note": "Official OUT lists, Jeanty clearance, Nabers Q, Davis IR, Bowers OUT, AJ Brown IR, Mayer/Kraft extensions. Strong factual corroboration.",
       "at": "2026-09-12T18:15:18Z"
-    },
-    {
-      "sourceId": "ian-rapoport",
-      "source": "Ian Rapoport",
-      "grade": "USEFUL",
-      "note": "Jeanty good-to-go, Nabers Q, Mayer/Kraft deal details and history notes. Corroborates Schefter/ETR on key statuses.",
-      "at": "2026-09-12T14:55:17Z"
     }
   ],
-  "mirroredAt": "2026-09-13T06:10:22.929Z",
+  "mirroredAt": "2026-09-13T08:09:56.078Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-09-13T06:10:22.487Z",
+  "sourceCompletedAt": "2026-09-13T08:09:55.633Z",
   "sourceStatus": "live"
 }
