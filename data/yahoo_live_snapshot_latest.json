@@ -587,8 +587,8 @@
     "lineup_note": "Week 2 pregame vs FOCUS; Vele in W/R/T; Ja'Kobi Lane BN with marks=['D']; Yahoo showed 0 of 1 IR used; FAAB $100; Record 0-1-0 (W1 loss vs AMON A ROLL). PENDING WAIVERS: (1) Bid $11 Raheim Sanders / Drop Lane; (2) Bid $8 Braelon Allen / Drop Lane \u2014 both Sep 16.",
     "live_score_note": "Week 2 pregame TB12 0.00 vs FOCUS 0.00 (proj 120.29-125.31)",
     "matchup_state": "Week 2 vs FOCUS (9th); W1 loss vs AMON A ROLL (153.22 total pts, 5th); record 0-1-0 8th",
-    "lane_status_note": "Ja'Kobi Lane still BN D; IR 0/1 free; open recommend SPARTA-2026W1-LANE-IR stands. NEW: Yahoo shows 2 pending TB12 waiver claims that DROP Lane (Sanders $11 / Allen $8, Sep 16) \u2014 CONFLICT with do-not-drop IR recommend; recommend CANCEL those claims and IR Lane if eligible.",
-    "pending_waivers_note": "Waiver 1 Sep 16 Bid $11 Raheim Sanders Drop Lane; Waiver 2 Sep 16 Bid $8 Braelon Allen Drop Lane",
+    "lane_status_note": "Ja'Kobi Lane still BN D; IR 0/1 free BUT Brain/user confirmed Yahoo IR-eligible=false. Open Watch IR recommend SPARTA-2026W1-LANE-IR is BLOCKED. Yahoo pending: Bid $11 Sanders / Drop Lane; Bid $8 Allen / Drop Lane (Sep 16) \u2014 aligns with Brain DROP-Lane waiver path (SPARTA-2026W2-WAIVER-LADDER-MARKET $12/$11/$7). Live bids differ from ladder; Holani not pending. Do NOT cancel claims.",
+    "pending_waivers_note": "Waiver1 Sep16 Bid $11 Raheim Sanders Drop Lane; Waiver2 Sep16 Bid $8 Braelon Allen Drop Lane. Brain ladder was Sanders $12 > Allen $11 > Holani $7. Intentional DROP-Lane path; IR blocked.",
     "flowers_note": "Zay Flowers OWNED by X-Factor; Bateman still WAIVERS Sep 16",
     "bowers_note": "Brock Bowers OWNED by King Kong (O) \u2014 NO MATERIAL JD waiver",
     "mcconkey_note": "Ladd McConkey OWNED by Dynamic Duo of Ladd & Stribs (Q) \u2014 NO MATERIAL JD",
@@ -599,7 +599,7 @@
   "player_aliases": {
     "Andy Borregales": "Andres Borregales"
   },
-  "durable_files_note": "Snapshot refresh only; no new durable txs (newest still SR Bryant/Saylors Sep 14); roster/faab/waiver_state unchanged; pending Lane-drop waivers noted in snapshot (not completed txs)",
+  "durable_files_note": "Snapshot refresh; no new durable txs; roster/faab/waiver_state unchanged; decision_ledger append SPARTA-2026W2-LANE-IR-BLOCKED-RECONCILE-20260915-0800",
   "source": "authenticated Yahoo Agent Computer",
   "isolation": {
     "mongo": "IGNORED",
@@ -630,7 +630,8 @@
     "new_txs": 0,
     "alert": true,
     "prior_live_check_id": "sparta-live-check-20260914-2004",
-    "prior_observed_at": "2026-09-14T20:20:50-04:00"
+    "prior_observed_at": "2026-09-14T20:20:50-04:00",
+    "alert_reason": "Lane IR blocked; pending Lane-drop waivers live; bid variance vs Brain ladder"
   },
   "live_score": {
     "team": 0.0,
