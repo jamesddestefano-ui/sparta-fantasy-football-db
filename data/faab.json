@@ -3,27 +3,124 @@
   "starting_budget": 100,
   "real_money": true,
   "balances": [
-    {"team":"BE","balance":100},{"team":"MC","balance":100},{"team":"VV","balance":100},{"team":"TM","balance":100},{"team":"SR","balance":100},{"team":"MN","balance":100},{"team":"ANT","balance":100},{"team":"MM","balance":100},{"team":"ME","balance":100},{"team":"JD","balance":86},{"team":"JU","balance":100},{"team":"JP","balance":100}
+    {
+      "team": "BE",
+      "balance": 100
+    },
+    {
+      "team": "MC",
+      "balance": 100
+    },
+    {
+      "team": "VV",
+      "balance": 100
+    },
+    {
+      "team": "TM",
+      "balance": 100
+    },
+    {
+      "team": "SR",
+      "balance": 100
+    },
+    {
+      "team": "MN",
+      "balance": 100
+    },
+    {
+      "team": "ANT",
+      "balance": 100
+    },
+    {
+      "team": "MM",
+      "balance": 100
+    },
+    {
+      "team": "ME",
+      "balance": 100
+    },
+    {
+      "team": "JD",
+      "balance": 86
+    },
+    {
+      "team": "JU",
+      "balance": 100
+    },
+    {
+      "team": "JP",
+      "balance": 100
+    }
   ],
   "source": "Yahoo Sparta standings screenshots, explicit user confirmations, and Billy Enright league-chat rule clarification; JD updated 2026-09-16 from explicit user confirmation of Sanders $12 waiver win, Allen $1 post-waiver add, and Buccaneers D/ST $1 post-waiver add",
-  "observed_at": "2026-09-16 user-confirmed; exact transaction times not supplied",
+  "observed_at": "2026-09-16T08:15:19-04:00",
   "pickup_transaction_fee_usd": 0,
   "pickup_transaction_fee_is_separate_from_faab": false,
   "minimum_faab_bid_usd_after_transition": 1,
   "minimum_faab_effective_after": "2026-09-15 Week 2 FAAB processing",
   "faab_bid_free_pickups_through_week": 1,
   "cost_rule": "FAAB dollars are real dollars. There is no separate $1 pickup fee. After the Sep. 15 Week 2 FAAB run, every pickup going forward requires a minimum $1 FAAB bid; waiver acquisitions cost only the winning FAAB bid.",
-  "rule_correction": {"confirmed_at_et":"2026-09-15 21:07","source":"Billy Enright league-chat screenshot supplied by user","supersedes":"Prior repository interpretation that every add carried a separate $1 transaction fee"},
+  "rule_correction": {
+    "confirmed_at_et": "2026-09-15 21:07",
+    "source": "Billy Enright league-chat screenshot supplied by user",
+    "supersedes": "Prior repository interpretation that every add carried a separate $1 transaction fee"
+  },
   "last_confirmed_activity": {
-    "date_et":"2026-09-16",
-    "team":"JD",
-    "actions":[
-      {"player":"Raheim Sanders","action":"ADD_DROP","dropped":"Ja'Kobi Lane","faab_bid":12,"total_real_money_cost_usd":12},
-      {"player":"Braelon Allen","action":"ADD_DROP","dropped":"Emari Demercado","faab_bid":1,"total_real_money_cost_usd":1},
-      {"player":"Buccaneers D/ST","action":"ADD_DROP","dropped":"Jets D/ST","faab_bid":1,"total_real_money_cost_usd":1}
+    "date_et": "2026-09-16",
+    "team": "JD",
+    "actions": [
+      {
+        "player": "Raheim Sanders",
+        "action": "ADD_DROP",
+        "dropped": "Ja'Kobi Lane",
+        "faab_bid": 12,
+        "total_real_money_cost_usd": 12
+      },
+      {
+        "player": "Braelon Allen",
+        "action": "ADD_DROP",
+        "dropped": "Emari Demercado",
+        "faab_bid": 1,
+        "total_real_money_cost_usd": 1
+      },
+      {
+        "player": "Buccaneers D/ST",
+        "action": "ADD_DROP",
+        "dropped": "Jets D/ST",
+        "faab_bid": 1,
+        "total_real_money_cost_usd": 1
+      }
     ],
-    "total_faab_spent":14,
-    "faab_balance_after":86,
-    "source":"Explicit user confirmations 2026-09-16"
-  }
+    "total_faab_spent": 14,
+    "faab_balance_after": 86,
+    "source": "Explicit user confirmations 2026-09-16",
+    "yahoo_exact_times_from_live_pull": [
+      {
+        "player": "Raheim Sanders",
+        "timestamp_et": "2026-09-16 01:31",
+        "faab_bid": 12,
+        "yahoo_label": "$12 Waiver"
+      },
+      {
+        "player": "Buccaneers D/ST",
+        "timestamp_et": "2026-09-16 04:04",
+        "faab_bid": 1,
+        "yahoo_label": "Free Agent (user-confirmed $1 min FAAB)"
+      },
+      {
+        "player": "Braelon Allen",
+        "timestamp_et": "2026-09-16 04:30",
+        "faab_bid": 1,
+        "yahoo_label": "Free Agent (user-confirmed $1 min FAAB)"
+      }
+    ]
+  },
+  "yahoo_my_team_displayed_at_pull": {
+    "observed_at": "2026-09-16T08:15:19-04:00",
+    "displayed_waiver_budget": 88,
+    "discrepancy_vs_user_confirmed": true,
+    "note": "Yahoo My Team showed Waiver Budget $88 at 08:15 ET pull, but user-confirmed FAAB after Sanders $12 + Allen $1 + Bucs DEF $1 = $86. Prefer user-confirmed $86 + Billy Enright min-$1 FAAB rule until Yahoo re-check confirms. Possible Yahoo display lag or Free Agent label without showing $1 FAAB."
+  },
+  "jd_authoritative_balance": 86,
+  "live_check_note": "Other-team Sep 16 FAAB spends visible on Yahoo transactions but not yet applied to non-JD balances (still 100) \u2014 INGESTION HELD for non-JD FAAB until standings scrape."
 }
