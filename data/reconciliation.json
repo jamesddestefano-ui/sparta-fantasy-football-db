@@ -15,6 +15,10 @@
     {
       "category": "CURRENT_LEAGUE_OWNERSHIP_COMPLETENESS",
       "details": "Draft results plus captured transactions establish substantial ownership history, but absence from current files is never sufficient to label a player a confirmed free agent. Use UNKNOWN unless Yahoo/user evidence confirms availability."
+    },
+    {
+      "category": "YAHOO_KENDRE_MILLER_STATUS_MAP_LAG_2026_09_16",
+      "details": "Authenticated Yahoo live pull at 08:15 ET contains an internally stale ownership map entry showing Kendre Miller as JP, but the same authenticated pull records JP dropping Miller to waivers at 01:31 ET in the Mack Hollins $3 waiver transaction. Transaction chronology controls current classification: WAIVERS_CONFIRMED. Exact waiver-clear date still requires a later Yahoo status check."
     }
   ],
   "resolved_issues": [
@@ -24,7 +28,12 @@
     },
     {
       "category": "KENDRE_MILLER_CURRENT_OWNER",
-      "resolution": "JP/X-Factor added Kendre Miller on 2026-09-08 22:27 ET per Yahoo transaction screenshot."
+      "resolution": "JP/X-Factor added Kendre Miller on 2026-09-08 22:27 ET per Yahoo transaction screenshot. This ownership was later superseded on Sep. 16 when JP dropped Miller to waivers."
+    },
+    {
+      "category": "KENDRE_MILLER_AVAILABILITY_CLASSIFICATION_2026_09_16",
+      "resolution": "User stated Miller was 'available,' which established that he was a candidate but did not precisely distinguish free agent from waivers. The authenticated Yahoo Sep. 16 01:31 transaction explicitly says JP dropped Kendre Miller 'To Waivers.' Current exact classification is therefore WAIVERS_CONFIRMED, not FREE_AGENT_CONFIRMED, until later Yahoo evidence supersedes it.",
+      "source": "Authenticated Yahoo Agent Computer live pull 2026-09-16T08:15:19-04:00"
     },
     {
       "category": "MONGO_CONTAMINATION_REMOVED_2026_09_11",
