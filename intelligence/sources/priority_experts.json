@@ -1,12 +1,12 @@
 {
   "league": "sparta",
   "product": "Sparta permanent expert-source set",
-  "updated_at_et": "2026-09-15T20:09:00-04:00",
+  "updated_at_et": "2026-09-15T20:45:00-04:00",
   "discipline": {
     "intelligence_only": true,
     "never_establishes_ownership_or_availability": true,
     "authoritative_ownership": "authenticated Yahoo / repository",
-    "architecture": "GROK → GROK PULSE → SPARTA REPOSITORY → SPARTA BRAIN",
+    "architecture": "GROK \u2192 GROK PULSE \u2192 SPARTA REPOSITORY \u2192 SPARTA BRAIN",
     "brain_is_final_synthesis_authority": true,
     "no_separate_expert_databases": true
   },
@@ -68,12 +68,91 @@
         "expert": "Dwain McFarland",
         "handle": "dwainmcfarland",
         "outlet": "Fantasy Life",
-        "kinds": ["USAGE_DATA", "ANALYST_OPINION"],
-        "signals": ["UPGRADE", "DOWNGRADE", "ROLE_CHANGE", "HOLD", "WATCH"],
+        "kinds": [
+          "USAGE_DATA",
+          "ANALYST_OPINION"
+        ],
+        "signals": [
+          "UPGRADE",
+          "DOWNGRADE",
+          "ROLE_CHANGE",
+          "HOLD",
+          "WATCH"
+        ],
         "include_url_when_available": true
       },
       "status": "ACTIVE_MONITORED",
       "added_at_et": "2026-09-15T20:09:00-04:00"
+    },
+    {
+      "expertId": "fantasy-points-data",
+      "expert": "Fantasy Points Data",
+      "handle": "FantasyPtsData",
+      "outlet": "Fantasy Points Data",
+      "specialty": "Advanced receiving/rushing metrics: ASS, TPRR, routes, target/first-read/air-yard share, YPRR, catchable/designed/RZ targets, explosive plays, RB util, pass-down/3rd-down, WoW role, regression/breakout charts",
+      "priority": "HIGH",
+      "primary_content": [
+        "Fantasy Points Data Suite charts and tables",
+        "@FantasyPtsData ASS vs TPRR and related metric posts on X",
+        "Fantasy Points Weekly Reports / Advanced Receiving"
+      ],
+      "monitor_for": [
+        "Average Separation Score (ASS)",
+        "TPRR and targets per route",
+        "route participation and route share",
+        "target share, first-read share, air-yard share",
+        "YPRR",
+        "catchable targets, designed targets, red-zone targets",
+        "explosive play rates",
+        "RB utilization and pass-down / 3rd-down splits",
+        "week-over-week role changes (esp Weeks 1\u20134+)",
+        "regression and breakout charts (GOOD DATA/BAD RESULT vs BAD DATA/GOOD RESULT)"
+      ],
+      "elevate_when": [
+        "JD-owned player",
+        "player confirmed available in Sparta",
+        "metric pattern affecting JD start/sit",
+        "breakout/downgrade signal with role corroboration",
+        "disagreement with McFarland / Late-Round / ETR / beat \u2192 escalate to Brain",
+        "injury/role waiver driver with metric support"
+      ],
+      "do_not_flood": true,
+      "analytical_rules": {
+        "never_one_metric_alone": true,
+        "combine_with_role_and_utilization": true,
+        "flag_good_data_bad_result": "HOLD / BUY-LOW / POSITIVE_REGRESSION / START-WATCH",
+        "flag_bad_data_good_result": "SELL-HIGH / BENCH-WATCH / NEGATIVE_REGRESSION",
+        "both_improving": "BREAKOUT",
+        "both_declining": "DOWNGRADE",
+        "wow_emphasis_weeks": "1-4+",
+        "cross_validate_vs": [
+          "Dwain McFarland",
+          "Late Round Fantasy",
+          "Establish The Run",
+          "team beat reporters"
+        ],
+        "disagreement_routing": "Sparta Brain",
+        "never_establishes_ownership": true,
+        "injury_roster_decisions_override_metrics": true
+      },
+      "pulse_item_defaults": {
+        "expertId": "fantasy-points-data",
+        "expert": "Fantasy Points Data",
+        "handle": "FantasyPtsData",
+        "outlet": "Fantasy Points Data",
+        "kind": "USAGE_DATA",
+        "signals": [
+          "UPGRADE",
+          "DOWNGRADE",
+          "REGRESSION",
+          "BREAKOUT",
+          "HOLD",
+          "WATCH"
+        ],
+        "include_url_when_available": true
+      },
+      "status": "ACTIVE_MONITORED",
+      "added_at_et": "2026-09-15T20:45:00-04:00"
     }
   ]
 }
