@@ -1,0 +1,110 @@
+{
+  "league": "sparta",
+  "consumer": "Sparta FF Bot",
+  "reviewed_at_et": "2026-09-15T20:09:00-04:00",
+  "trigger": "ADD DWAIN MCFARLAND AS PRIORITY UTILIZATION SOURCE + initial Week 1/2 test",
+  "ownership_changes": [],
+  "transactions_recorded": [],
+  "roster_lineup_faab_waiver_state_altered": false,
+  "grok_pulse": {
+    "named_source_monitoring_verified": [
+      "Dwain McFarland",
+      "Establish The Run",
+      "Adam Levitan",
+      "Matthew Berry",
+      "Adam Schefter",
+      "Ian Rapoport"
+    ],
+    "mcfarland_status": "ACTIVE_MONITORED",
+    "source_registry": "intelligence/sources/priority_experts.json",
+    "routines_updated": [
+      "sparta-live-check",
+      "sparta-sunday-game-day-check",
+      "sparta-sunday-night-check"
+    ]
+  },
+  "authoritative_state": {
+    "yahoo_snapshot_observed_at": "2026-09-15T16:18:05-04:00",
+    "jd_faab": 100,
+    "jd_dobbins": {
+      "availability": "OWNED_JD",
+      "slot": "BN",
+      "nfl_team": "Den"
+    },
+    "rj_harvey_ownership": "UNKNOWN_NOT_IN_SNAPSHOT_FA_SCAN",
+    "note": "McFarland/Fantasy Life never establishes ownership or availability."
+  },
+  "pulse_items_surfaced": [
+    {
+      "id": "mcfarland-den-rb-split-w1",
+      "at": "2026-09-15T00:00:00Z",
+      "expertId": "dwain-mcfarland",
+      "expert": "Dwain McFarland",
+      "handle": "dwainmcfarland",
+      "outlet": "Fantasy Life",
+      "kind": "USAGE_DATA",
+      "signal": "ROLE_CHANGE",
+      "players": ["J.K. Dobbins", "RJ Harvey"],
+      "playerIds": ["jk-dobbins", "rj-harvey"],
+      "text": "Denver RB split after Week 1: Dobbins early-down leader (~62% rush-attempt share) with limited passing-down involvement; Harvey passing-down leader (~48% route participation, ~16% target share) with dominant LDD and two-minute usage.",
+      "why": "McFarland/Fantasy Life utilization framing of DEN backfield roles. Independent corroboration: SI snaps Dobbins 22 (43%) / Harvey 26 (51%) / Coleman 3; Dobbins 8-36 rushing, 0 targets; Harvey 3-18 rushing and outpaced targets/RZ; Fantasy Nerds notes Dobbins early-down vs Harvey third-down/two-minute. Negative game script suppressed early-down volume.",
+      "implication": "JD-owned J.K. Dobbins has meaningful full-PPR game-script sensitivity: early-down rush share is real, but capped receiving floor when DEN trails. Harvey is the PPR/pass-down share thief — not a Yahoo ownership claim.",
+      "opportunity": "START/SIT: treat Dobbins as script-dependent flex/BN vs pure PPR studs in trailing environments. No ADD on Harvey until Yahoo ownership/availability confirmed. No roster mutation from this intel.",
+      "priority": "HIGH",
+      "url": "https://www.fantasylife.com/articles/fantasy/fantasy-football-takeaways-week-2-utilization-report",
+      "corroboration": [
+        "https://www.si.com/nfl/broncos/onsi/broncos-snap-count-analysis-who-played-more-and-less-than-expected",
+        "https://www.fantasynerds.com/news/story/2026/09/14/broncos-vs-chiefs-week-1-fantasy-football-usage-analysis-1623658",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-09-15/just-eight-touches-for-j-k-dobbins-in-loss-to-kc"
+      ],
+      "analytical_flags": [
+        "UTILIZATION_LEADING_INDICATOR",
+        "GOOD_UTIL_CONTEXT_BAD_BOX_FOR_DOBBINS_VOLUME: early-down rush lead but only 8 carries / 0 targets in blowout → HOLD / START-WATCH with script caveat",
+        "ROLE_SPLIT_CONFIRMED"
+      ]
+    },
+    {
+      "id": "mcfarland-holani-sea-committee-w1",
+      "at": "2026-09-15T03:30:00Z",
+      "expertId": "dwain-mcfarland",
+      "expert": "Dwain McFarland",
+      "handle": "dwainmcfarland",
+      "outlet": "Fantasy Life",
+      "kind": "ANALYST_OPINION",
+      "signal": "WATCH",
+      "players": ["Jadarian Price", "George Holani"],
+      "playerIds": ["jadarian-price", "george-holani"],
+      "text": "McFarland Week 2 Utilization Report (Week 1 data): Jadarian Price led SEA committee (50% snaps, 41% routes, 8% targets) but Holani forced a timeshare; Price mid-range RB3 near-term with low-end RB2 upside until Charbonnet returns.",
+      "why": "Direct from Fantasy Life Utilization Report by Dwain McFarland covering murky backfields.",
+      "implication": "Supports Holani as committee/handcuff contingency, not clear lead.",
+      "opportunity": "JD already has pending waiver #3 Holani $7 (drop Lane) clearing Sep 16 — do not cancel/rebid from this alone; no escalation. Ownership/availability already Yahoo-confirmed WAIVERS.",
+      "priority": "NORMAL",
+      "url": "https://www.fantasylife.com/articles/fantasy/fantasy-football-takeaways-week-2-utilization-report"
+    }
+  ],
+  "sparta_review": [
+    {
+      "underlying_event": "Dwain McFarland added as permanent HIGH utilization source",
+      "jd_effect": "Future Live/Game-Day/Sunday-Night checks elevate McFarland util only when Sparta-actionable.",
+      "action": "SOURCE_ADDED_NO_ROSTER_CHANGE"
+    },
+    {
+      "underlying_event": "DEN RB utilization split Dobbins early-down vs Harvey pass-down",
+      "jd_effect": "JD owns Dobbins (BN). Full-PPR script sensitivity recognized. Harvey ownership unknown in snapshot — no ADD.",
+      "action": "HOLD_DOBBINS_SCRIPT_WATCH",
+      "deduplication": "Does not change pending waiver ladder or lineup state."
+    },
+    {
+      "underlying_event": "SEA Price/Holani committee in McFarland Util Report",
+      "jd_effect": "Aligns with existing Holani $7 pending claim as depth/contingency.",
+      "action": "NO_CHANGE_PENDING_WAIVERS"
+    }
+  ],
+  "other_mcfarland_w1_notes_not_jd_elevated": [
+    "Jeanty RB1 upgrade — not JD-owned; suppressed from Pulse flood",
+    "Irving/Gainwell, Etienne/Kamara, Lloyd/Brooks, Montgomery/Marks, Love/Allgeier, Tuten, Skattebo, Warren/Dowdle, Croskey-Merritt — no JD start/sit or confirmed waiver driver without additional ownership check"
+  ],
+  "actionability": "material_intelligence_no_yahoo_mutation",
+  "actionable_alert": true,
+  "note": "Confirmed @dwainmcfarland monitored. Dobbins/Harvey DEN utilization item recognized for JD full-PPR script sensitivity. No ownership/roster/tx/FAAB/waiver/lineup state altered."
+}

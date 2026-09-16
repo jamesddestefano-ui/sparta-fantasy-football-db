@@ -1,0 +1,79 @@
+{
+  "league": "sparta",
+  "product": "Sparta permanent expert-source set",
+  "updated_at_et": "2026-09-15T20:09:00-04:00",
+  "discipline": {
+    "intelligence_only": true,
+    "never_establishes_ownership_or_availability": true,
+    "authoritative_ownership": "authenticated Yahoo / repository",
+    "architecture": "GROK → GROK PULSE → SPARTA REPOSITORY → SPARTA BRAIN",
+    "brain_is_final_synthesis_authority": true,
+    "no_separate_expert_databases": true
+  },
+  "experts": [
+    {
+      "expertId": "dwain-mcfarland",
+      "expert": "Dwain McFarland",
+      "handle": "dwainmcfarland",
+      "outlet": "Fantasy Life",
+      "specialty": "NFL player utilization, role analysis, snap/route/target/rush data",
+      "priority": "HIGH",
+      "primary_content": [
+        "Fantasy Life Utilization Report",
+        "McFarland utilization/role posts on X"
+      ],
+      "monitor_for": [
+        "weekly Fantasy Life Utilization Reports",
+        "postgame and weekly utilization threads",
+        "material changes in snap share, route participation, target share, TPRR, rush-attempt share, backfield opportunity share, third-down, SDD, LDD, two-minute, goal-line/red-zone, personnel/package deployment",
+        "players gaining or losing meaningful roles",
+        "rookie utilization changes",
+        "injury-driven opportunity changes",
+        "backfield committee changes",
+        "WR/TE route and target-hierarchy changes",
+        "box-score vs utilization disagreements"
+      ],
+      "elevate_when": [
+        "JD-owned player",
+        "player confirmed available in Sparta",
+        "injury/role change creating meaningful Sparta waiver opportunity",
+        "utilization affecting JD start/sit",
+        "changing value affecting Sparta trade decision",
+        "opponent-owned only when development creates meaningful JD decision"
+      ],
+      "do_not_flood": true,
+      "analytical_rules": {
+        "utilization_is_leading_indicator": true,
+        "flag_good_util_bad_result": "HOLD / BUY-LOW / START-WATCH",
+        "flag_bad_util_good_result": "SELL-HIGH / BENCH-WATCH / regression risk",
+        "flag_material_role_change_immediately": true,
+        "rb_role_distinctions": [
+          "early-down",
+          "passing-down",
+          "third-down",
+          "two-minute",
+          "short-yardage/goal-line"
+        ],
+        "wr_te_role_distinctions": [
+          "route participation",
+          "target share",
+          "targets per route run",
+          "air-yard involvement",
+          "red-zone involvement",
+          "two-WR/three-WR personnel participation"
+        ]
+      },
+      "pulse_item_defaults": {
+        "expertId": "dwain-mcfarland",
+        "expert": "Dwain McFarland",
+        "handle": "dwainmcfarland",
+        "outlet": "Fantasy Life",
+        "kinds": ["USAGE_DATA", "ANALYST_OPINION"],
+        "signals": ["UPGRADE", "DOWNGRADE", "ROLE_CHANGE", "HOLD", "WATCH"],
+        "include_url_when_available": true
+      },
+      "status": "ACTIVE_MONITORED",
+      "added_at_et": "2026-09-15T20:09:00-04:00"
+    }
+  ]
+}
