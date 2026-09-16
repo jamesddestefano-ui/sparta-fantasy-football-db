@@ -1,0 +1,21 @@
+{
+  "system": "SPARTA_BRAIN_CONTROL_ROOM",
+  "version": "learning_rules_v3",
+  "effective_date": "2026-09-15",
+  "supersedes": "learning_rules_v2",
+  "changes": [
+    {
+      "rule_id": "SPARTA-LR-011",
+      "date": "2026-09-15",
+      "old_rule": "Every completed player add was treated as carrying a separate $1 real-money transaction fee, with waiver acquisitions costing that fee plus the winning FAAB bid.",
+      "new_rule": "There is no separate pickup transaction fee. Sparta FAAB dollars themselves are real dollars. After the Sep. 15 Week 2 FAAB run, every pickup going forward requires a minimum $1 FAAB bid; a waiver acquisition costs only its winning FAAB bid. Pre-transition Week 1 pickups may have $0 FAAB cost.",
+      "reason": "Billy Enright's league-chat clarification supplied by the user showed that the prior repository interpretation double-counted the $1 minimum as an extra fee. This is a structural league-rules/data-integrity correction, so it is adopted immediately rather than waiting for repeated fantasy outcomes.",
+      "supporting_decisions": [
+        "SPARTA-2026W2-WAIVER-LADDER-MARKET-20260915-0758",
+        "SPARTA-2026W2-WAIVER-LADDER-ALIGNED-20260915-1200"
+      ],
+      "sample_size": 1,
+      "expected_effect": "Correct real-money accounting, eliminate systematic $1 overstatement of every future acquisition, and improve FAAB/churn learning metrics without changing the existing $12/$11/$7 waiver ladder."
+    }
+  ]
+}
