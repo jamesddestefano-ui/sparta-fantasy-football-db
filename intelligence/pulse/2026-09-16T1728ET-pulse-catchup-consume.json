@@ -1,0 +1,57 @@
+{
+  "league": "sparta",
+  "consumer": "Sparta FF Bot",
+  "reviewed_at_et": "2026-09-16T17:28:00-04:00",
+  "trigger": "NFL Pulse CATCH-UP HIGH 2026-09-16-1700 (noon Live Check failed; mid-day parent consume)",
+  "ownership_changes": [],
+  "transactions_recorded": [],
+  "roster_lineup_faab_waiver_state_altered": false,
+  "authoritative_state_note": "yahoo_live_snapshot_latest still 2026-09-16T08:15:19-04:00 (noon Live Check failed). Morning: Lane dropped for Sanders; Allen+Bucs FA. FAAB $86. IR 0/1.",
+  "pulse_items": [
+    {
+      "pulse_id": "20260916-170003-darnold-out-w2",
+      "sparta_relevance": "YES",
+      "jd_effect": "JD owns JSN (WR starter). Lock starts W2 vs ARI \u2014 continue START JSN; W1 Lock game already elite.",
+      "action": "START_JSN_LOCK_CONTEXT",
+      "priority": "HIGH"
+    },
+    {
+      "pulse_id": "20260916-170004-lane-ir-wrist",
+      "sparta_relevance": "YES",
+      "jd_effect": "Lane already dropped Wed AM for Sanders. Official IR (wrist surgery, min 4, earliest W6) confirms drop path; do not reclaim unless Brain wants IR stash (JD IR 0/1 open). Bateman/Moore BAL WR beneficiaries \u2014 ownership TBD on next Yahoo refresh.",
+      "action": "NO_RECLAIM_LANE_DEFAULT; BENEFICIARY_WATCH",
+      "priority": "HIGH"
+    },
+    {
+      "pulse_id": "20260916-170002-mason-ir-thumb",
+      "sparta_relevance": "YES",
+      "jd_effect": "Mason not JD-owned. MIN RB IR \u2192 committee/FA watch (Dallas from PS). No ADD without Yahoo availability.",
+      "action": "WAIVER_WATCH_ONLY",
+      "priority": "NORMAL"
+    },
+    {
+      "pulse_id": "20260916-170005-stribling-surgery-10w",
+      "sparta_relevance": "POSSIBLE",
+      "jd_effect": "Not JD-owned; SF WR depth. Suppress.",
+      "action": "NO_JD_ACTION",
+      "priority": "LOW"
+    },
+    {
+      "pulse_id": "20260916-170000-delane-mri-neg-fp",
+      "sparta_relevance": "POSSIBLE",
+      "jd_effect": "KC CB \u2014 no JD action",
+      "action": "SUPPRESS",
+      "priority": "LOW"
+    },
+    {
+      "pulse_id": "20260916-170001-mcdonald-ir-knee",
+      "sparta_relevance": "POSSIBLE",
+      "jd_effect": "KC LB \u2014 no JD action",
+      "action": "SUPPRESS",
+      "priority": "LOW"
+    }
+  ],
+  "actionability": "material_intelligence_no_yahoo_mutation",
+  "actionable_alert": true,
+  "noon_live_check": "FAILED \u2014 parent catch-up consume"
+}
