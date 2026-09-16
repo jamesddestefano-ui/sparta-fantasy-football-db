@@ -8,20 +8,17 @@
   "roster_lineup_faab_waiver_state_altered": false,
   "chart_ingest_status": {
     "target": "Fantasy Points Data Week 1 ASS vs TPRR scatter (@FantasyPtsData)",
-    "status": "ASS_SCATTER_NOT_RETRIEVED_PUBLICLY",
-    "blocked_by": [
-      "x.com/FantasyPtsData 403",
-      "nitter/xcancel unavailable",
-      "Data Suite paywall/login",
-      "no public Week 1 2026 ASS vs TPRR image indexed"
-    ],
-    "discipline": "Do not invent ASS coordinates. Evaluate JD WRs with corroborated TPRR/route/target/air-yard/role evidence; tag ASS axis PENDING_CHART. Re-ingest chart when accessible.",
-    "cross_ref_sources": [
-      "RotoWire NFL Box Score Breakdown Week 1 (Next Gen Stats)",
-      "NBC Sports waiver wire Week 1 (Douglas/Vele/Wicks)",
-      "Adam Levitan Pulse (Worthy routes vs Rice)",
-      "Stealing Signals / public Chase Week 1 notes"
-    ]
+    "status": "INGESTED_FROM_SCREENSHOT",
+    "season_week": "2026 Season Week 1 | Min. 15 routes",
+    "artifact": "intelligence/pulse/artifacts/2026-w1-ass-vs-tprr-fantasyptsdata.png",
+    "axes": {
+      "x": "ASS",
+      "y": "TPRR",
+      "avg_ass_approx": 0.02,
+      "avg_tprr_approx": 0.2
+    },
+    "placement_method": "OCR label positions calibrated to RotoWire TPRR anchors (Chase 0.11, JSN 0.423) and chart Diggs/Rice ASS anchors; ASS\u00b10.03 TPRR\u00b10.02",
+    "discipline": "Never one metric alone; combine with role/utilization; cross-validate McFarland/ETR/Levitan/beat"
   },
   "grok_pulse": {
     "named_source_monitoring_verified": [
@@ -68,21 +65,23 @@
       "players": [
         "Ja'Marr Chase"
       ],
-      "text": "Week 1: Chase 94% snaps / 95% routes / 4 targets / 11% TPRR / 2-12-0. Healthy role + poor box. ASS axis PENDING_CHART.",
+      "text": "FPD W1 ASS vs TPRR: Chase in Great ASS / Low TPRR (~ASS +0.10, TPRR 0.11) with 95% routes / 2-12-0. Classic GOOD DATA + BAD RESULT \u2192 positive regression / HOLD.",
       "why": "FPD rule: GOOD DATA/ROLE + BAD RESULT \u2192 positive regression / HOLD. Bucs took him away; Gesicki inflated TPRR on fewer routes. Cross-ref RotoWire Bengals W1.",
       "implication": "Do not panic-sell Chase on 12 yards. Start as WR1 with regression watch if ASS on chart is healthy.",
       "opportunity": "START/SIT: HOLD / POSITIVE_REGRESSION. No roster mutation.",
       "priority": "HIGH",
       "url": "https://www.rotowire.com/football/article/nfl-box-score-breakdown-week-1-recap-usage-stats-134247",
       "analytical_flags": [
-        "GOOD_ROLE_BAD_BOX",
-        "ASS_PENDING_CHART",
+        "GOOD_DATA_BAD_RESULT",
+        "GREAT_ASS_LOW_TPRR",
+        "POSITIVE_REGRESSION",
         "NEVER_ONE_METRIC_ALONE"
       ],
-      "ass_chart_placement": "PENDING_CHART",
+      "ass_chart_placement": "Great ASS / Low TPRR",
       "tprr_week1": 0.11,
       "routes_week1": 35,
-      "route_share_week1": 0.95
+      "route_share_week1": 0.95,
+      "ass_week1_approx": 0.1
     },
     {
       "id": "fpd-w1-ass-tprr-jsn",
@@ -95,7 +94,7 @@
       "players": [
         "Jaxon Smith-Njigba"
       ],
-      "text": "Week 1: JSN 92% snaps / 96% routes / 45.8% target share / 42.3% TPRR / 54.5% AY share / 8-122-1. Elite production AND elite underlying. ASS PENDING_CHART.",
+      "text": "FPD W1 ASS vs TPRR: JSN in Great ASS / High TPRR (~ASS +0.15, TPRR 0.42) with 8-122-1. Elite data + elite result \u2192 BREAKOUT / HOLD (not fade).",
       "why": "FPD rule: both improving / elite data + elite result \u2192 BREAKOUT / HOLD (not fade).",
       "implication": "No regression fade from box alone. Elite WR1 profile Week 1.",
       "opportunity": "START: HOLD/BREAKOUT. No mutation.",
@@ -103,12 +102,14 @@
       "url": "https://www.rotowire.com/football/article/nfl-box-score-breakdown-week-1-recap-usage-stats-134247",
       "analytical_flags": [
         "ELITE_DATA_ELITE_RESULT",
-        "ASS_PENDING_CHART"
+        "GREAT_ASS_HIGH_TPRR",
+        "BREAKOUT"
       ],
-      "ass_chart_placement": "PENDING_CHART",
+      "ass_chart_placement": "Great ASS / High TPRR",
       "tprr_week1": 0.423,
       "routes_week1": 26,
-      "route_share_week1": 0.96
+      "route_share_week1": 0.96,
+      "ass_week1_approx": 0.15
     },
     {
       "id": "fpd-w1-ass-tprr-mcmillan",
@@ -121,20 +122,22 @@
       "players": [
         "Tetairoa McMillan"
       ],
-      "text": "Week 1: McMillan 85% snaps / 84% routes / 23.5% target share / 22% TPRR / 33.6% AY share / 5-75-0. Quiet box, solid peripherals; Coker stole production.",
+      "text": "FPD W1 ASS vs TPRR: McMillan Low ASS / High TPRR (~ASS -0.08, TPRR 0.22) with 84% routes / 5-75-0. Targets without separation \u2014 HOLD/WATCH; not an ASS-driven upgrade. Coker stole box production.",
       "why": "Role+TPRR/AY healthy enough for HOLD; ASS alone insufficient.",
       "implication": "FLEX/WR2 with WoW watch Weeks 1\u20134.",
       "opportunity": "HOLD / WATCH. No mutation.",
       "priority": "NORMAL",
       "url": "https://www.rotowire.com/football/article/nfl-box-score-breakdown-week-1-recap-usage-stats-134247",
       "analytical_flags": [
+        "LOW_ASS_HIGH_TPRR",
         "ROLE_PLUS_TPRR_NOT_ASS_ALONE",
-        "ASS_PENDING_CHART"
+        "WOW_WATCH"
       ],
-      "ass_chart_placement": "PENDING_CHART",
+      "ass_chart_placement": "Low ASS / High TPRR",
       "tprr_week1": 0.22,
       "routes_week1": 36,
-      "route_share_week1": 0.84
+      "route_share_week1": 0.84,
+      "ass_week1_approx": -0.08
     },
     {
       "id": "fpd-w1-ass-tprr-worthy",
@@ -143,24 +146,28 @@
       "handle": "FantasyPtsData",
       "outlet": "Fantasy Points Data",
       "kind": "USAGE_DATA",
-      "signal": "REGRESSION",
+      "signal": "WATCH",
       "players": [
         "Xavier Worthy"
       ],
-      "text": "Week 1 MNF: Levitan \u2014 Worthy 30 routes on 33 Mahomes dropbacks (Rice 29). High route involvement; fantasy box muted in run-heavy KC win. ASS/TPRR chart PENDING.",
+      "text": "FPD W1 ASS vs TPRR: Worthy Low ASS / ~High-avg TPRR (~ASS -0.12, TPRR ~0.22) with Levitan 30/33 Mahomes routes. Soft fantasy is NOT classic Great-ASS positive regression \u2014 getting looks without separation. Cross-ref Rice (very Low ASS/Low TPRR). HOLD BN / WATCH efficiency.",
       "why": "GOOD ROLE (routes) vs soft fantasy \u2192 positive regression candidate if ASS/TPRR chart confirms separation+target earning.",
-      "implication": "BN with BUY-LOW / positive regression watch \u2014 not drop.",
+      "implication": "Routes real; ASS weak \u2192 do not treat as pure buy-low on separation. Monitor YPRR/catchable targets WoW.",
       "opportunity": "HOLD / POSITIVE_REGRESSION watch. No mutation.",
       "priority": "HIGH",
       "url": null,
       "pulse_cross_ref": "Adam Levitan Rice/Worthy routes item in grok_pulse_latest",
       "analytical_flags": [
-        "GOOD_ROLE_SOFT_BOX",
-        "ASS_PENDING_CHART"
+        "LOW_ASS_HIGH_TPRR",
+        "NOT_CLASSIC_POSITIVE_REGRESSION",
+        "HIGH_ROUTES",
+        "BRAIN_IF_DISAGREE_WITH_BUYLOW_NARRATIVE"
       ],
-      "ass_chart_placement": "PENDING_CHART",
+      "ass_chart_placement": "Low ASS / High TPRR (near avg TPRR)",
       "routes_week1": 30,
-      "mahoms_dropbacks_week1": 33
+      "mahoms_dropbacks_week1": 33,
+      "ass_week1_approx": -0.12,
+      "tprr_week1_approx": 0.22
     },
     {
       "id": "fpd-w1-ass-tprr-vele",
@@ -173,21 +180,22 @@
       "players": [
         "Devaughn Vele"
       ],
-      "text": "Week 1: Vele 91% snaps / 81% routes / 17.6% tgt share / 17% TPRR / 7-69-1. Strong role; Saints 86-play OT volume inflates counting stats. ASS PENDING \u2014 do not use ASS alone.",
+      "text": "FPD W1 ASS vs TPRR: Vele Great ASS / Low TPRR (~ASS +0.10, TPRR 0.17) with 81% routes / 7-69-1. Separating but below-avg target rate; role strong \u2014 combine role+ASS/TPRR (not ASS alone). Discount OT/volume environment.",
       "why": "User test: Vele needs role+ASS/TPRR together. Role confirmed; ASS pending.",
       "implication": "FLEX viable near-term; discount raw totals for pace/OT.",
       "opportunity": "HOLD. No mutation.",
       "priority": "NORMAL",
       "url": "https://www.nbcsports.com/fantasy/football/news/fantasy-football-waiver-wire-week-1-target-caleb-douglas-and-kaelon-black",
       "analytical_flags": [
+        "GREAT_ASS_LOW_TPRR",
         "ROLE_PLUS_METRICS",
-        "VOLUME_ENVIRONMENT_CAVEAT",
-        "ASS_PENDING_CHART"
+        "VOLUME_ENVIRONMENT_CAVEAT"
       ],
-      "ass_chart_placement": "PENDING_CHART",
+      "ass_chart_placement": "Great ASS / Low TPRR",
       "tprr_week1": 0.17,
       "routes_week1": 52,
-      "route_share_week1": 0.81
+      "route_share_week1": 0.81,
+      "ass_week1_approx": 0.1
     },
     {
       "id": "fpd-w1-ass-tprr-wicks",
@@ -200,19 +208,21 @@
       "players": [
         "Dontayvion Wicks"
       ],
-      "text": "Week 1: Wicks ~91% routes as PHI WR2 but ~13% TPRR, aDOT ~21.8, TD-dependent. Role strong; target earning weak. ASS alone insufficient.",
+      "text": "FPD W1 ASS vs TPRR: Wicks Great ASS / Low TPRR (~ASS +0.15, TPRR ~0.13) with ~91% routes, deep aDOT, TD-dependent. Separates but low target earning \u2014 boom/bust WATCH.",
       "why": "User test: need role+ASS/TPRR not ASS/TPRR alone. High routes + low TPRR = boom/bust WATCH.",
       "implication": "BN depth / TD-dependent flex.",
       "opportunity": "WATCH. No mutation.",
       "priority": "NORMAL",
       "url": "https://www.nbcsports.com/fantasy/football/news/fantasy-football-waiver-wire-week-1-target-caleb-douglas-and-kaelon-black",
       "analytical_flags": [
+        "GREAT_ASS_LOW_TPRR",
         "HIGH_ROUTE_LOW_TPRR",
-        "ASS_PENDING_CHART"
+        "TD_DEPENDENT"
       ],
-      "ass_chart_placement": "PENDING_CHART",
+      "ass_chart_placement": "Great ASS / Low TPRR",
       "tprr_week1": 0.13,
-      "route_share_week1": 0.91
+      "route_share_week1": 0.91,
+      "ass_week1_approx": 0.15
     },
     {
       "id": "fpd-w1-ass-tprr-douglas",
@@ -225,7 +235,7 @@
       "players": [
         "Caleb Douglas"
       ],
-      "text": "Week 1: Douglas 90% snaps / 86% routes / 26% target share / ~40% first-read share / 23% TPRR / 5-94-0. Emerging-role metrics strong. ASS PENDING_CHART.",
+      "text": "FPD W1 ASS vs TPRR: Caleb Douglas Great ASS / near-avg TPRR (~ASS +0.11; chart label near 0.20 band; RotoWire/NBC TPRR 0.23) with 86% routes / 40% first-read / 5-94-0. Emerging-role metrics + separation \u2192 UPGRADE/BREAKOUT watch.",
       "why": "User test: Douglas emerging-role metrics. NBC #1 FAAB priority; RotoWire Dolphins table corroborates.",
       "implication": "JD already owns \u2014 UPGRADE/BREAKOUT watch on bench; Miami pass volume risk remains.",
       "opportunity": "HOLD/UPGRADE on roster \u2014 no ADD needed. No mutation.",
@@ -233,14 +243,16 @@
       "url": "https://www.nbcsports.com/fantasy/football/news/fantasy-football-waiver-wire-week-1-target-caleb-douglas-and-kaelon-black",
       "analytical_flags": [
         "EMERGING_ROLE",
+        "GREAT_ASS",
         "FIRST_READ_SHARE_ELITE",
-        "ASS_PENDING_CHART"
+        "UPGRADE"
       ],
-      "ass_chart_placement": "PENDING_CHART",
+      "ass_chart_placement": "Great ASS / ~Avg TPRR",
       "tprr_week1": 0.23,
       "routes_week1": 31,
       "route_share_week1": 0.86,
-      "first_read_share_week1": 0.4
+      "first_read_share_week1": 0.4,
+      "ass_week1_approx": 0.11
     },
     {
       "id": "fpd-w1-ass-tprr-fields",
@@ -253,22 +265,23 @@
       "players": [
         "Malachi Fields"
       ],
-      "text": "Week 1: Fields led NYG skill snaps 72% but only 50% routes (blocking); 4 targets / 22% TPRR / 2-25-0. Target-earning OK when routed; modest fantasy.",
+      "text": "FPD W1 ASS vs TPRR: Fields Low ASS / High TPRR (~ASS -0.13, TPRR 0.22) with 72% snaps but only 50% routes (blocking). Target-earning when routed without separation; modest fantasy \u2192 BN WATCH / Nabers contingency.",
       "why": "User test: target-earning vs modest fantasy. Aligns with SPARTA-2026W1-FIELDS-BENCH-WATCH (Nabers contingency).",
       "implication": "BN WATCH / Nabers contingency \u2014 not a start on ASS/TPRR alone.",
       "opportunity": "HOLD BN. No mutation.",
       "priority": "NORMAL",
       "url": "https://www.rotowire.com/football/article/nfl-box-score-breakdowngiants-cowboys-recap-usage-stats-134207",
       "analytical_flags": [
+        "LOW_ASS_HIGH_TPRR",
         "SNAP_GT_ROUTE_BLOCKING_ROLE",
-        "ASS_PENDING_CHART",
         "NABERS_CONTINGENCY"
       ],
-      "ass_chart_placement": "PENDING_CHART",
+      "ass_chart_placement": "Low ASS / High TPRR",
       "tprr_week1": 0.22,
       "routes_week1": 18,
       "route_share_week1": 0.5,
-      "snap_share_week1": 0.72
+      "snap_share_week1": 0.72,
+      "ass_week1_approx": -0.13
     },
     {
       "id": "fpd-w1-ass-tprr-lane",
@@ -281,7 +294,7 @@
       "players": [
         "Ja'Kobi Lane"
       ],
-      "text": "Week 1 pre-injury: Lane 38% snaps / 48% routes / 3 tgts / 20% TPRR before wrist. ASS/TPRR MUST NOT override injury-driven roster decision.",
+      "text": "FPD W1 ASS vs TPRR: Lane not clearly labeled on chart (15 routes = min threshold; wrist injury / second-half DNP). Pre-injury RotoWire: 48% routes / 20% TPRR. ASS/TPRR MUST NOT override pending DROP Lane waivers.",
       "why": "User test: metrics must not override pending DROP Lane waivers (Sanders $12 / Allen $11 / Holani $7), BN D, IR-blocked.",
       "implication": "Injury + IR eligibility = roster path locked. FPD metrics informational only.",
       "opportunity": "NO_CHANGE pending waivers. Do not re-stash on ASS/TPRR.",
@@ -291,9 +304,9 @@
         "INJURY_OVERRIDES_METRICS",
         "IR_BLOCKED",
         "PENDING_DROP_WAIVERS_MATCH_BRAIN",
-        "ASS_PENDING_CHART"
+        "CHART_LABEL_UNCLEAR"
       ],
-      "ass_chart_placement": "PENDING_CHART_DO_NOT_OVERRIDE_ROSTER",
+      "ass_chart_placement": "NOT_CLEARLY_LABELED_ON_CHART",
       "tprr_week1": 0.2,
       "routes_week1": 15,
       "route_share_week1": 0.48
@@ -306,21 +319,27 @@
       "action": "SOURCE_ADDED_NO_ROSTER_CHANGE"
     },
     {
-      "underlying_event": "Week 1 ASS vs TPRR chart public retrieval blocked; JD WR eval via corroborated TPRR/routes/targets",
-      "jd_effect": "Chase/Worthy tagged positive regression (GOOD ROLE/BAD BOX); JSN BREAKOUT; Douglas UPGRADE; Vele/McMillan HOLD; Wicks/Fields WATCH; Lane metrics suppressed vs injury waiver path",
-      "action": "INTELLIGENCE_ONLY_ASS_CHART_REINGEST_QUEUED"
+      "underlying_event": "Week 1 ASS vs TPRR chart ingested from Fantasy Points screenshot",
+      "jd_effect": "Chase Great ASS/Low TPRR positive regression; JSN Great ASS/High TPRR BREAKOUT; Worthy Low ASS/~High TPRR (not classic buy-low); Douglas Great ASS UPGRADE; Vele/Wicks Great ASS/Low TPRR; McMillan/Fields Low ASS/High TPRR; Lane chart unclear + injury overrides",
+      "action": "INTELLIGENCE_ONLY_CHART_INGESTED"
     },
     {
       "underlying_event": "Lane ASS/TPRR vs pending DROP waivers",
       "jd_effect": "Metrics must not cancel Sanders $12 / Allen $11 / Holani $7 Drop Lane",
       "action": "NO_CHANGE_PENDING_WAIVERS"
+    },
+    {
+      "underlying_event": "Worthy FPD placement vs common positive-regression narrative",
+      "jd_effect": "Low ASS with targets \u2192 flag for Brain if buy-low thesis assumes elite separation",
+      "action": "BRAIN_FLAG_WORTHY_ASS_DISAGREEMENT_RISK"
     }
   ],
   "brain_flags": [
-    "ASS vs TPRR scatter still needs Data Suite / @FantasyPtsData chart ingest for true ASS axis placements",
-    "If FPD chart later contradicts McFarland/ETR/Levitan on Chase or Worthy \u2192 escalate disagreement to Brain"
+    "Worthy on chart is Low ASS / ~High TPRR \u2014 disagrees with 'poor fantasy but elite separation' buy-low framing; escalate if other sources claim Great ASS",
+    "Chase Great ASS / Low TPRR aligns with positive regression thesis",
+    "Cross-validate Douglas/Vele WoW Weeks 1\u20134 vs McFarland utilization"
   ],
   "actionability": "material_intelligence_no_yahoo_mutation",
   "actionable_alert": true,
-  "note": "Confirmed @FantasyPtsData monitored. Week 1 JD WR ASS/TPRR validation completed with ASS axis PENDING_CHART (honest). No ownership/roster/tx/FAAB/waiver/lineup state altered."
+  "note": "Confirmed @FantasyPtsData monitored. Week 1 ASS vs TPRR chart ingested. JD WR placements recorded. No ownership/roster/tx/FAAB/waiver/lineup state altered."
 }
