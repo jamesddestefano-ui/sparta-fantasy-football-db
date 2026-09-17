@@ -1,21 +1,21 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-09-17T17:10:08.009Z",
+  "generatedAt": "2026-09-17T18:10:22.034Z",
   "status": "live",
-  "completedAt": "2026-09-17T17:10:08.002Z",
-  "nextAtLabel": "2:10 PM ET",
+  "completedAt": "2026-09-17T18:10:21.981Z",
+  "nextAtLabel": "3:10 PM ET",
   "inWindow": true,
   "itemCount": 14,
   "items": [
     {
-      "id": "zay-flowers-dnp-thursday",
+      "id": "zay-flowers-dnp-thu-hamstring",
       "at": "2026-09-17T17:04:13Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "No Zay Flowers again at today’s (Thursday) practice. Hamstring aggravated in Week 1; day-to-day previously, DNP Wednesday too.",
+      "text": "No Zay Flowers again at Thursday’s practice (hamstring); second straight DNP. Ravens play Saints Sunday.",
       "playerIds": [
         "zay-flowers"
       ],
@@ -25,28 +25,32 @@
       "url": "https://x.com/AdamSchefter/status/2100631925253624011",
       "kind": "INJURY_STATUS",
       "eventId": "injury-zay-flowers-week2",
-      "signal": "DNP",
-      "priorStatus": "DAY-TO-DAY",
-      "newStatus": "DNP",
-      "why": "Hamstring; missed practice Wednesday and Thursday",
-      "implication": "Uncertain for Week 2 vs Saints; thin WR room with Lane on IR",
-      "opportunity": "Bateman/others elevated if out",
+      "signal": "DOUBTFUL",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "DOUBTFUL",
+      "why": "Hamstring; consecutive DNPs midweek.",
+      "implication": "Elevated miss risk for Week 2; monitor Friday.",
+      "opportunity": "If out, Bateman primary; depth Devontez Walker, LaJohntay Wester etc.",
       "beneficiaries": [
         "jakobi-lane"
       ],
       "corroboration": [
-        "@RapSheet"
+        "https://x.com/adamlevitan/status/2100633741848948751",
+        "Jamison Hensley"
+      ],
+      "supportingSources": [
+        "adam-levitan"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "nico-collins-hamstring-jeopardy-w2",
+      "id": "nico-collins-hamstring-w2-jeopardy",
       "at": "2026-09-17T10:29:02Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Texans WR Nico Collins injured his hamstring at Wednesday’s practice; doctors don’t believe it’s serious, but his status for Sunday vs. Bengals is in jeopardy. Listed limited Wednesday; history of missing 5 games on hammy in 2024.",
+      "text": "Texans WR Nico Collins injured his hamstring at Wednesday’s practice; doctors don’t believe it’s serious (Grade 1 strain per later reports), but his status for Sunday vs. Bengals is in jeopardy. Not spotted at Thursday practice.",
       "playerIds": [
         "nico-collins"
       ],
@@ -57,28 +61,96 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-nico-collins-week2",
       "signal": "QUESTIONABLE",
-      "priorStatus": "LIMITED",
-      "newStatus": "JEOPARDY",
-      "why": "Hamstring strain (Grade 1 per later reports); MRI/tests; not serious but availability uncertain",
-      "implication": "Major target share loss if out; monitor Friday practice",
-      "opportunity": "Routes last week: Collins 37/42 dropbacks; Hutchinson 29, Boutte 27 next",
+      "priorStatus": "HEALTHY",
+      "newStatus": "QUESTIONABLE",
+      "why": "Hamstring suffered in practice; history of hamstring issues including 5-game IR in 2024; limited Wed, DNP/not spotted Thu.",
+      "implication": "High risk of missing Week 2; plan bench. Long-term outlook better if Grade 1.",
+      "opportunity": "If out, routes/targets to Xavier Hutchinson (29 routes W1), Kayshon Boutte, Jaylin Noel.",
       "corroboration": [
         "https://x.com/adamlevitan/status/2100432820619620473",
-        "@RapSheet"
+        "@RapSheet",
+        "Aaron Wilson"
       ],
       "supportingSources": [
-        "adam-levitan"
+        "adam-levitan",
+        "establish-the-run"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "berry-walker-love-rb1-range",
+      "id": "aj-brown-ir-high-ankle",
+      "at": "2026-09-16T00:00:00Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "A.J. Brown placed on IR with high-ankle sprain; expected miss ~4-6 weeks (earliest Week 6).",
+      "playerIds": [
+        "aj-brown"
+      ],
+      "players": [
+        "A.J. Brown"
+      ],
+      "url": "https://www.nytimes.com/athletic/7600775/2026/09/17/fantasy-football-injury-report-weather-week-2/",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-aj-brown-ir",
+      "signal": "OUT",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "OUT",
+      "why": "High-ankle sprain confirmed; IR designation.",
+      "implication": "Out multiple weeks; free up roster spot after IR stash rules.",
+      "opportunity": "Patriots WR targets to Doubs, Douglas, others.",
+      "corroboration": [
+        "ETR waivers",
+        "Schefter notes"
+      ],
+      "supportingSources": [
+        "establish-the-run",
+        "adam-schefter"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "levitan-flowers-out-wr-depth",
+      "at": "2026-09-17T17:11:26Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Ja'Kobi Lane (fractured wrist) on IR/return. If Zay Flowers (hamstring) can't go, Ravens WRs: 1. Rashod Bateman 2. Devontez Walker 3. LaJohntay Wester 4. Elijah Sarratt 5. Chris Moore.",
+      "playerIds": [
+        "zay-flowers",
+        "jakobi-lane"
+      ],
+      "players": [
+        "Zay Flowers",
+        "Ja'Kobi Lane"
+      ],
+      "url": "https://x.com/adamlevitan/status/2100633741848948751",
+      "kind": "ANALYST_OPINION",
+      "eventId": "injury-zay-flowers-week2",
+      "signal": "UPGRADE",
+      "why": "Lane already IR; Flowers consecutive DNPs create clear hierarchy.",
+      "implication": "Bateman becomes must-start/flex if Flowers sits; stash depth in deep leagues.",
+      "opportunity": "Bateman routes/targets spike; Walker/Wester as lottery tickets.",
+      "corroboration": [
+        "@AdamSchefter",
+        "Jamison Hensley"
+      ],
+      "supportingSources": [
+        "adam-schefter",
+        "establish-the-run"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "berry-kenneth-walker-love-rb1-range",
       "at": "2026-09-17T12:00:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Kenneth Walker: not saying likely but #1 RB overall in fantasy is within range of outcomes. Week 1 24% target share (tied team lead, 2nd-highest career). Massive season if healthy.",
+      "text": "Kenneth Walker saw 24% target share (tied team lead, 2nd-highest career) in Chiefs debut. As long as healthy, massive season; #1 RB overall in range of outcomes (not likely but possible). Love for Week 2 vs IND after 21/24 RB touches, 40% route targets.",
       "playerIds": [
         "kenneth-walker"
       ],
@@ -87,17 +159,51 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/matthew-berrys-10-facts-you-need-to-know-before-week-2",
       "kind": "ANALYST_OPINION",
-      "eventId": "usage-kenneth-walker-w1",
+      "eventId": "usage-kenneth-walker-week1-w2",
       "signal": "LOVE",
-      "why": "Elite target share + rushing volume in new offense",
-      "implication": "Start every week; RB1 upside",
-      "opportunity": "24% target share + workhorse carries",
+      "why": "Elite target share + touches in debut; Indy just allowed 163 yds/3 TDs to Henry.",
+      "implication": "Must-start every week; RB1 upside ROS.",
+      "opportunity": "24% targets + high snap/touch share; receiving work expands ceiling.",
       "corroboration": [
-        "@adamlevitan"
+        "ETR ROS notes",
+        "FFHappyHour"
       ],
       "supportingSources": [
         "adam-levitan",
         "establish-the-run"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "treveyon-henderson-full-practice",
+      "at": "2026-09-16T20:32:28Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Patriots RB TreVeyon Henderson (ankle) was a full participant in Wednesday’s practice, indication he could return Sunday. Later: “I’m ready to go.”",
+      "playerIds": [
+        "treveyon-henderson"
+      ],
+      "players": [
+        "TreVeyon Henderson"
+      ],
+      "url": "https://x.com/RapSheet/status/2100321945996660930",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-treveyon-henderson-week2",
+      "signal": "ACTIVE",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "EXPECTED TO PLAY",
+      "why": "Full practice after ankle issue; self-reported ready.",
+      "implication": "Likely active Week 2; monitor snaps vs. Rhamondre.",
+      "opportunity": "Goal-line/change-of-pace upside if fully healthy; reverse any stale handcuff beneficiaries.",
+      "corroboration": [
+        "@AdamSchefter",
+        "Mike Reiss",
+        "@RapSheet quote"
+      ],
+      "supportingSources": [
+        "adam-schefter"
       ],
       "priority": "HIGH"
     },
@@ -118,22 +224,22 @@
       "url": "https://x.com/AdamSchefter/status/2100321456194244761",
       "kind": "INJURY_STATUS",
       "eventId": "injury-rj-harvey-week2",
-      "signal": "DNP",
+      "signal": "QUESTIONABLE",
       "priorStatus": "HEALTHY",
-      "newStatus": "DNP",
-      "why": "Hamstring",
-      "implication": "Monitor for Week 2 role; potential snap loss",
-      "opportunity": "Backfield opportunity shift if limited",
+      "newStatus": "QUESTIONABLE",
+      "why": "Hamstring DNP midweek.",
+      "implication": "Monitor practice; potential limited role or sit vs. competition.",
+      "opportunity": "If limited/out, more work for other Broncos RBs.",
       "priority": "HIGH"
     },
     {
-      "id": "joe-burrow-expects-play",
+      "id": "burrow-back-tightness-expects-play",
       "at": "2026-09-16T19:37:37Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Bengals QB Joe Burrow dealing with back tightness, didn’t practice Wednesday but got mental reps and expects to play Sunday. Status worth watching.",
+      "text": "Bengals QB Joe Burrow dealing with back tightness, didn’t practice Wednesday; got mental reps and expects to play Sunday. Status worth watching.",
       "playerIds": [
         "joe-burrow"
       ],
@@ -143,69 +249,14 @@
       "url": "https://x.com/RapSheet/status/2100308143355949218",
       "kind": "INJURY_STATUS",
       "eventId": "injury-joe-burrow-week2",
-      "signal": "EXPECTED_TO_PLAY",
-      "priorStatus": "DNP",
-      "newStatus": "EXPECTED_TO_PLAY",
-      "why": "Back tightness",
-      "implication": "Likely active; monitor practice progression",
-      "opportunity": "Full offense if plays",
+      "signal": "EXPECTED TO PLAY",
+      "priorStatus": "HEALTHY",
+      "newStatus": "QUESTIONABLE",
+      "why": "Back tightness; self-expects play after DNP.",
+      "implication": "Likely active but monitor Friday practice/game-time; Chase/Higgins slightly tempered if limited.",
       "corroboration": [
-        "@AdamSchefter GMFB"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "sam-darnold-out-week2",
-      "at": "2026-09-16T19:18:34Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Seahawks ruled out QB Sam Darnold for Sunday vs Cardinals due to glute injury; no plans to place on IR.",
-      "playerIds": [],
-      "players": [],
-      "url": "https://x.com/AdamSchefter/status/2100303345827151934",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-sam-darnold-week2",
-      "signal": "OUT",
-      "priorStatus": "QUESTIONABLE",
-      "newStatus": "OUT",
-      "why": "Glute",
-      "implication": "Backup QB starts; no IR means quicker potential return",
-      "opportunity": "Drew Lock or other elevated",
-      "corroboration": [
-        "@RapSheet"
-      ],
-      "supportingSources": [
-        "ian-rapoport"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "jakobi-lane-ir",
-      "at": "2026-09-16T18:55:28Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Ravens placing WR Ja’Kobi Lane on IR after wrist surgery to quicken recovery; out four games.",
-      "playerIds": [
-        "jakobi-lane"
-      ],
-      "players": [
-        "Ja'Kobi Lane"
-      ],
-      "url": "https://x.com/RapSheet/status/2100297533931086045",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-jakobi-lane-ir",
-      "signal": "IR",
-      "priorStatus": "INJURED",
-      "newStatus": "IR",
-      "why": "Wrist surgery",
-      "implication": "Out minimum 4 games; Flowers already banged up",
-      "opportunity": "Bateman, Moore elevated",
-      "corroboration": [
-        "@AdamSchefter"
+        "GMFB",
+        "@AdamSchefter context"
       ],
       "supportingSources": [
         "adam-schefter"
@@ -213,136 +264,86 @@
       "priority": "HIGH"
     },
     {
-      "id": "aj-brown-ir-beneficiaries",
-      "at": "2026-09-15T17:14:17Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "A.J. Brown hit IR (high-ankle sprain, ~4-6 weeks); ETR flags Romeo Doubs and DeMario Douglas as beneficiaries.",
-      "playerIds": [
-        "aj-brown"
-      ],
-      "players": [
-        "A.J. Brown"
-      ],
-      "url": "https://establishtherun.com/waiver-wire-analysis-week-2-8/",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-aj-brown-ir-week2",
-      "signal": "IR",
-      "priorStatus": "INJURED",
-      "newStatus": "IR",
-      "why": "High-ankle sprain",
-      "implication": "NE WR targets open; Doubs upgrade",
-      "opportunity": "Increased role for remaining WRs",
-      "corroboration": [
-        "@RapSheet"
-      ],
-      "supportingSources": [
-        "ian-rapoport"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "stribbling-ir-deebo-beneficiary",
-      "at": "2026-09-15T17:14:17Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "De’Zhaun Stribling to IR (ankle); ETR waiver flags Deebo Samuel as primary beneficiary along with Demarcus Robinson. Shanahan expects ~10 weeks.",
+      "id": "berry-deebo-waiver-love",
+      "at": "2026-09-16T01:24:21Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Deebo Samuel is a waiver wire target this week (aligns with Stribling IR opening 49ers WR work).",
       "playerIds": [
         "deebo-samuel"
       ],
       "players": [
         "Deebo Samuel"
       ],
+      "url": "https://x.com/MatthewBerryTMR/status/2100033013002158546",
+      "kind": "WAIVER_SIGNAL",
+      "eventId": "waiver-deebo-samuel-week2",
+      "signal": "LOVE",
+      "why": "Stribling season-impacting ankle (surgery, back late Nov/early Dec); Deebo proven.",
+      "implication": "Top waiver add for WR depth/flex.",
+      "opportunity": "Increased targets/snaps in 49ers offense with Stribling out.",
+      "corroboration": [
+        "ETR waivers",
+        "@RapSheet"
+      ],
+      "supportingSources": [
+        "establish-the-run",
+        "ian-rapoport"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "etr-waiver-beneficiaries-deebo-etc",
+      "at": "2026-09-15T21:40:00Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Week 2 waiver injury beneficiaries: Ladd McConkey=Tre Harris; Ja’Kobi Lane=Rashod Bateman/Chris Moore; A.J. Brown=Romeo Doubs/DeMario Douglas; De’Zhaun Stribling=Deebo Samuel/Demarcus Robinson; Alvin Kamara=Kendre Miller. Top WRs include Deebo, Devaughn Vele, Rashod Bateman.",
+      "playerIds": [
+        "deebo-samuel",
+        "ladd-mcconkey",
+        "aj-brown",
+        "alvin-kamara",
+        "jakobi-lane"
+      ],
+      "players": [
+        "Deebo Samuel",
+        "Ladd McConkey",
+        "A.J. Brown",
+        "Alvin Kamara",
+        "Ja'Kobi Lane"
+      ],
       "url": "https://establishtherun.com/waiver-wire-analysis-week-2-8/",
       "kind": "WAIVER_SIGNAL",
-      "eventId": "injury-stribbling-ir-week2",
-      "signal": "UPGRADE",
-      "priorStatus": "ACTIVE",
-      "newStatus": "IR",
-      "why": "Ankle injury/surgery, IR placement",
-      "implication": "Deebo top waiver target for SF targets/snaps",
-      "opportunity": "Increased routes/targets for Deebo",
+      "eventId": "waiver-etr-week2-injuries",
+      "signal": "WAIVER",
+      "why": "Precise injury fallout mapping available players to elevated roles.",
+      "implication": "Prioritize Deebo (Stribling out ~10 wks), Bateman (Lane IR + Flowers risk), Miller (Kamara), Doubs (Brown IR).",
+      "opportunity": "Immediate target/snap shares for listed beneficiaries.",
       "beneficiaries": [
         "deebo-samuel"
       ],
       "corroboration": [
-        "@AdamSchefter",
-        "@RapSheet"
-      ],
-      "supportingSources": [
-        "adam-schefter",
-        "ian-rapoport",
-        "matthew-berry"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "kenneth-walker-workhorse-usage",
-      "at": "2026-09-15T14:06:38Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
-      "outlet": "Establish The Run",
-      "text": "Kenneth Walker true workhorse in KC debut: 29 of first 32 RB opps, 19 routes/33 dropbacks, tied team-high 6 targets (22% share), 23-173-1 rush + 3-18-1 rec.",
-      "playerIds": [
-        "kenneth-walker"
-      ],
-      "players": [
-        "Kenneth Walker III"
-      ],
-      "url": "https://x.com/adamlevitan/status/2099862457846202875",
-      "kind": "USAGE_DATA",
-      "eventId": "usage-kenneth-walker-w1",
-      "signal": "UPGRADE",
-      "why": "Dominant early-down and receiving role as expected in KC",
-      "implication": "Elite RB1 weekly floor/ceiling if healthy",
-      "opportunity": "29/32 opps + high route/target share",
-      "corroboration": [
-        "@MatthewBerryTMR"
+        "Matthew Berry Deebo love",
+        "@RapSheet Stribling"
       ],
       "supportingSources": [
         "matthew-berry",
-        "establish-the-run"
+        "ian-rapoport"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "etr-projections-live-w2",
-      "at": "2026-09-17T13:51:31Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
-      "outlet": "Establish The Run",
-      "text": "First run of Week 2 fantasy point projections LIVE for every player/game. Purdy 2.5 pts clear in one noted spot.",
-      "playerIds": [
-        "brock-purdy"
-      ],
-      "players": [
-        "Brock Purdy"
-      ],
-      "url": "https://establishtherun.com/fantasy-point-projections/",
-      "kind": "ANALYST_PROJECTION",
-      "eventId": "projections-etr-week2",
-      "signal": "RANKING_SIGNAL",
-      "why": "Updated for Week 1 usage/injuries",
-      "implication": "Use for start/sit and DFS baselines",
-      "supportingSources": [
-        "establish-the-run"
-      ],
-      "priority": "NORMAL"
-    },
-    {
-      "id": "ashton-jeanty-util-berry",
+      "id": "berry-ashton-jeanty-util-99",
       "at": "2026-09-17T12:00:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Ashton Jeanty Utilization Score of 99 in first game under Kubiak (only Bijan higher). May have overreacted to injury scare.",
+      "text": "In first game under Klint Kubiak, Ashton Jeanty had Utilization Score of 99 (only Bijan higher in W1). May have overreacted to injury scare.",
       "playerIds": [
         "ashton-jeanty"
       ],
@@ -351,78 +352,115 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/matthew-berrys-10-facts-you-need-to-know-before-week-2",
       "kind": "USAGE_DATA",
-      "eventId": "usage-ashton-jeanty-w1",
+      "eventId": "usage-ashton-jeanty-week1",
       "signal": "UPGRADE",
-      "why": "Elite utilization post-injury concern",
-      "implication": "Strong ROS starter",
-      "opportunity": "High snap/touch share",
+      "why": "Elite util score post-injury concern under new OC.",
+      "implication": "Strong start/sit confidence; ROS buy if discounted.",
+      "opportunity": "Near-max utilization; volume locked in.",
       "corroboration": [
-        "@adamlevitan ROS ranks"
+        "ETR ROS rankings"
       ],
       "supportingSources": [
-        "adam-levitan",
-        "establish-the-run"
+        "establish-the-run",
+        "adam-levitan"
       ],
       "priority": "NORMAL"
     },
     {
-      "id": "treveyon-henderson-full-practice",
-      "at": "2026-09-16T20:32:28Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Patriots RB TreVeyon Henderson (ankle) full participant in Wednesday practice; indication he could return Sunday.",
+      "id": "berry-dalton-kincaid-snap-route-up",
+      "at": "2026-09-17T12:00:00Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Dalton Kincaid 69% route participation (higher than any 2025 game) and 77% snaps (highest since W9 2024) in W1. Efficient per-target; if healthy, breakout season possible.",
       "playerIds": [
-        "treveyon-henderson"
+        "dalton-kincaid"
       ],
       "players": [
-        "TreVeyon Henderson"
+        "Dalton Kincaid"
       ],
-      "url": "https://x.com/RapSheet/status/2100321945996660930",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-treveyon-henderson-week2",
-      "signal": "FULL",
-      "priorStatus": "LIMITED/OUT",
-      "newStatus": "FULL",
-      "why": "Ankle; full practice return",
-      "implication": "Likely active and involved Week 2",
-      "opportunity": "Carries/routes bounce-back",
+      "url": "https://www.fantasylife.com/articles/fantasy/matthew-berrys-10-facts-you-need-to-know-before-week-2",
+      "kind": "USAGE_DATA",
+      "eventId": "usage-dalton-kincaid-week1",
+      "signal": "UPGRADE",
+      "why": "Career-high recent involvement signaling full health.",
+      "implication": "TE starter confidence rising; monitor for sustained role.",
+      "opportunity": "Increased snaps/routes = more targets in Bills offense.",
       "priority": "NORMAL"
     },
     {
-      "id": "jake-tonges-season-mcl",
-      "at": "2026-09-16T19:41:58Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "49ers TE Jake Tonges out for the season after surgery for torn MCL.",
+      "id": "berry-colston-loveland-routes-buy",
+      "at": "2026-09-17T12:00:00Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "No TE higher route participation than Colston Loveland’s 89% in W1. 0 points/2 targets frustrating but missed throws (incl. end zone); if someone selling low, buy immediately.",
+      "playerIds": [
+        "colston-loveland"
+      ],
+      "players": [
+        "Colston Loveland"
+      ],
+      "url": "https://www.fantasylife.com/articles/fantasy/matthew-berrys-10-facts-you-need-to-know-before-week-2",
+      "kind": "ANALYST_OPINION",
+      "eventId": "usage-colston-loveland-week1",
+      "signal": "LOVE",
+      "why": "Elite route % in high-scoring Bears game; volume coming.",
+      "implication": "Hold/buy-low TE1 upside; ignore one-game zero.",
+      "opportunity": "89% routes; red-zone/volume pending better QB play.",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "levitan-sadiq-goal-line-intent",
+      "at": "2026-09-17T03:32:38Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Sneaky optimistic NFL debut for Kenyon Sadiq (16th overall): 28 snaps despite missing OTAs/camp mostly (hernia). Schemed goal-line carry, screen, two other targets. Clear intention to get him the ball.",
       "playerIds": [],
       "players": [],
-      "url": "https://x.com/AdamSchefter/status/2100309238312546437",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-jake-tonges-season",
-      "signal": "OUT",
-      "priorStatus": "INJURED",
-      "newStatus": "SEASON_OUT",
-      "why": "Torn MCL requiring surgery",
-      "implication": "TE depth hit; Kittle primary",
-      "opportunity": "Other TEs/WRs slight bump",
-      "beneficiaries": [
-        "george-kittle"
-      ],
+      "url": "https://x.com/adamlevitan/status/2100427683985510899",
+      "kind": "USAGE_DATA",
+      "eventId": "usage-kenyon-sadiq-week1",
+      "signal": "UPGRADE",
+      "why": "Designed touches/goal-line work on limited practice history.",
+      "implication": "Stash in deeper/TE-needy leagues; handcuff/goal-line threat.",
+      "opportunity": "Goal-line/red-zone intent + early snaps/routes/targets.",
       "corroboration": [
-        "@RapSheet"
+        "ETR waivers note Sadiq"
       ],
       "supportingSources": [
-        "ian-rapoport"
+        "establish-the-run"
       ],
       "priority": "NORMAL"
     }
   ],
   "sundayMode": false,
   "sourceNotes": [
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific: Collins W1 routes (37/42), Flowers depth chart if out, Sadiq goal-line/screen intent + 28 snaps, projections live. Hammy history flags. Aligns Schefter on Collins/Flowers.",
+      "at": "2026-09-17T17:11:26Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Week 2 Waiver excellent with precise injury beneficiaries (McConkey=Tre Harris, Lane=Bateman, Stribling=Deebo, Kamara=Miller, AJ Brown=Doubs). ROS rankings/projections CMC/Etienne/Rice/Jeanty adjustments. Thorman rankings/matchups. Injury p",
+      "at": "2026-09-15T21:40:00Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "10 Facts live (Walker 24% targets/RB1 range, Jeanty util 99, Loveland 89% routes buy-low, Kincaid snaps/routes up). Love/Hate + Deebo waiver love aligns ETR. Per-player MNF/usage. FFHH Love/Hate episode out.",
+      "at": "2026-09-17T17:54:39Z"
+    },
     {
       "sourceId": "adam-levitan",
       "source": "Adam Levitan",
@@ -569,31 +607,10 @@
       "grade": "USEFUL",
       "note": "Player-specific Week 1 usage (Walker 29/32 opps+routes/targets; Jameson xFP 8th horrific finish; Collins routes+hammy history; Hunter specialized package; Sadiq goal-line intent). ROS Top-150 show with opportunity adjustments (CMC/Etienne/R",
       "at": "2026-09-17T03:53:03Z"
-    },
-    {
-      "sourceId": "establish-the-run",
-      "source": "Establish The Run",
-      "grade": "USEFUL",
-      "note": "Week 2 Waiver live with precise injury beneficiaries (McConkey=Tre Harris, Lane=Bateman, Stribling=Deebo, Kamara=Miller, AJ Brown=Doubs). ROS rankings CMC/Etienne/Rice/Jeanty. Injury parsing excellent; Thorman Week 2 ranks live.",
-      "at": "2026-09-17T03:17:34Z"
-    },
-    {
-      "sourceId": "matthew-berry",
-      "source": "Matthew Berry",
-      "grade": "USEFUL",
-      "note": "Deebo top waiver on FFHH; Walker MNF full-grown-man love; per-player waiver/MNF. Aligns ETR/Levitan on roles. Utilization report (Jeanty upgrade etc) via Fantasy Life endorsement.",
-      "at": "2026-09-17T12:29:12Z"
-    },
-    {
-      "sourceId": "adam-schefter",
-      "source": "Adam Schefter",
-      "grade": "USEFUL",
-      "note": "Key injury facts: Collins limited then jeopardy (not serious), Harvey DNP hamstring, Darnold out no IR, Tonges season, Delane expected play.",
-      "at": "2026-09-17T10:29:02Z"
     }
   ],
-  "mirroredAt": "2026-09-17T17:10:08.460Z",
+  "mirroredAt": "2026-09-17T18:10:22.517Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-09-17T17:10:08.002Z",
+  "sourceCompletedAt": "2026-09-17T18:10:21.981Z",
   "sourceStatus": "live"
 }
