@@ -19,10 +19,6 @@
     {
       "category": "YAHOO_KENDRE_MILLER_STATUS_MAP_LAG_2026_09_16",
       "details": "Authenticated Yahoo live pull at 08:15 ET contains an internally stale ownership map entry showing Kendre Miller as JP, but the same authenticated pull records JP dropping Miller to waivers at 01:31 ET in the Mack Hollins $3 waiver transaction. Transaction chronology controls current classification: WAIVERS_CONFIRMED. Exact waiver-clear date still requires a later Yahoo status check."
-    },
-    {
-      "category": "YAHOO_HOLANI_TRANSACTION_SNAPSHOT_LAG_2026_09_16",
-      "details": "The latest authenticated Yahoo Sparta snapshot observed at 20:21:47 ET still shows Malachi Fields on JD and George Holani on waivers, but the user later explicitly confirmed around 21:51 ET: 'I dropped fields for Holani.' Under AGENTS.md completed user language is ownership-authoritative. Current durable state is therefore Holani ACTIVE on JD, Fields DROPPED, and JD FAAB $85 after the $1 pickup. Preserve the 20:21 snapshot as pre-transaction provenance and require the next Yahoo refresh to re-verify rather than overwrite the later user-confirmed state with stale data."
     }
   ],
   "resolved_issues": [
@@ -64,6 +60,12 @@
       "resolution": "The authenticated Yahoo live snapshot observed at 12:38:14 ET still showed J.K. Dobbins in JD's second W/R/T slot, but the user's later Yahoo roster screenshot explicitly showed Devaughn Vele in that W/R/T slot with Dobbins benched. Treat the later user Yahoo screenshot as the newer authoritative lineup evidence. Current Week 1 lineup is Vele START and Dobbins BENCH. Do not let the stale 12:38 snapshot overwrite data/lineups/week_01_jd.json; require a later authenticated Yahoo refresh before superseding this state.",
       "source": "User Yahoo roster screenshot in Sparta Brain plus data/lineups/week_01_jd.json",
       "status": "RESOLVED_BY_NEWER_USER_YAHOO_EVIDENCE"
+    },
+    {
+      "category": "YAHOO_HOLANI_TRANSACTION_SNAPSHOT_LAG_2026_09_16",
+      "resolution": "RESOLVED 2026-09-17T08:23:05-04:00. The authenticated Yahoo Sparta live pull re-verified George Holani on JD's roster and Malachi Fields on waivers after the user's Sep. 16 ~21:51 ET completed transaction. The prior Sep. 16 20:21 snapshot remains preserved as pre-transaction provenance and no longer represents an open reconciliation conflict.",
+      "source": "Authenticated Yahoo Agent Computer live pull 2026-09-17T08:23:05-04:00",
+      "status": "RESOLVED_BY_NEWER_YAHOO_EVIDENCE"
     }
   ]
 }
