@@ -3,21 +3,57 @@
   "starting_budget": 100,
   "real_money": true,
   "balances": [
-    {"team": "BE", "balance": 100},
-    {"team": "MC", "balance": 100},
-    {"team": "VV", "balance": 100},
-    {"team": "TM", "balance": 100},
-    {"team": "SR", "balance": 100},
-    {"team": "MN", "balance": 100},
-    {"team": "ANT", "balance": 100},
-    {"team": "MM", "balance": 100},
-    {"team": "ME", "balance": 100},
-    {"team": "JD", "balance": 85},
-    {"team": "JU", "balance": 100},
-    {"team": "JP", "balance": 100}
+    {
+      "team": "BE",
+      "balance": 100
+    },
+    {
+      "team": "MC",
+      "balance": 100
+    },
+    {
+      "team": "VV",
+      "balance": 100
+    },
+    {
+      "team": "TM",
+      "balance": 100
+    },
+    {
+      "team": "SR",
+      "balance": 100
+    },
+    {
+      "team": "MN",
+      "balance": 100
+    },
+    {
+      "team": "ANT",
+      "balance": 100
+    },
+    {
+      "team": "MM",
+      "balance": 100
+    },
+    {
+      "team": "ME",
+      "balance": 100
+    },
+    {
+      "team": "JD",
+      "balance": 85
+    },
+    {
+      "team": "JU",
+      "balance": 100
+    },
+    {
+      "team": "JP",
+      "balance": 100
+    }
   ],
-  "source": "Yahoo Sparta standings/screenshots, explicit user confirmations, and Billy Enright league-chat rule clarification; JD updated 2026-09-16 through explicit user confirmation of George Holani $1 post-waiver add for Malachi Fields.",
-  "observed_at": "2026-09-16T21:51:00-04:00",
+  "source": "Yahoo Sparta + Billy Enright min-$1; JD auth $85 after Sanders $12 + Allen $1 + Bucs DEF $1 + Holani $1. User-confirmed Holani 2026-09-16 ~21:51 ET; Yahoo-reverified 2026-09-17T08:23:05-04:00.",
+  "observed_at": "2026-09-17T08:23:05-04:00",
   "pickup_transaction_fee_usd": 0,
   "pickup_transaction_fee_is_separate_from_faab": false,
   "minimum_faab_bid_usd_after_transition": 1,
@@ -33,21 +69,66 @@
     "date_et": "2026-09-16",
     "team": "JD",
     "actions": [
-      {"player": "Raheim Sanders", "action": "ADD_DROP", "dropped": "Ja'Kobi Lane", "faab_bid": 12, "total_real_money_cost_usd": 12},
-      {"player": "Braelon Allen", "action": "ADD_DROP", "dropped": "Emari Demercado", "faab_bid": 1, "total_real_money_cost_usd": 1},
-      {"player": "Buccaneers D/ST", "action": "ADD_DROP", "dropped": "Jets D/ST", "faab_bid": 1, "total_real_money_cost_usd": 1},
-      {"player": "George Holani", "action": "ADD_DROP", "dropped": "Malachi Fields", "faab_bid": 1, "total_real_money_cost_usd": 1}
+      {
+        "player": "Raheim Sanders",
+        "action": "ADD_DROP",
+        "dropped": "Ja'Kobi Lane",
+        "faab_bid": 12,
+        "total_real_money_cost_usd": 12
+      },
+      {
+        "player": "Braelon Allen",
+        "action": "ADD_DROP",
+        "dropped": "Emari Demercado",
+        "faab_bid": 1,
+        "total_real_money_cost_usd": 1
+      },
+      {
+        "player": "Buccaneers D/ST",
+        "action": "ADD_DROP",
+        "dropped": "Jets D/ST",
+        "faab_bid": 1,
+        "total_real_money_cost_usd": 1
+      },
+      {
+        "player": "George Holani",
+        "action": "ADD_DROP",
+        "dropped": "Malachi Fields",
+        "faab_bid": 1,
+        "total_real_money_cost_usd": 1
+      }
     ],
     "total_faab_spent": 15,
     "faab_balance_after": 85,
     "source": "Explicit user confirmations 2026-09-16; Holani transaction post-dates latest authenticated Yahoo snapshot and is pending Yahoo re-verification.",
     "yahoo_exact_times_from_live_pull": [
-      {"player": "Raheim Sanders", "timestamp_et": "2026-09-16 01:31", "faab_bid": 12, "yahoo_label": "$12 Waiver"},
-      {"player": "Buccaneers D/ST", "timestamp_et": "2026-09-16 04:04", "faab_bid": 1, "yahoo_label": "Free Agent (user-confirmed $1 min FAAB)"},
-      {"player": "Braelon Allen", "timestamp_et": "2026-09-16 04:30", "faab_bid": 1, "yahoo_label": "Free Agent (user-confirmed $1 min FAAB)"}
+      {
+        "player": "Raheim Sanders",
+        "timestamp_et": "2026-09-16 01:31",
+        "faab_bid": 12,
+        "yahoo_label": "$12 Waiver"
+      },
+      {
+        "player": "Buccaneers D/ST",
+        "timestamp_et": "2026-09-16 04:04",
+        "faab_bid": 1,
+        "yahoo_label": "Free Agent (user-confirmed $1 min FAAB)"
+      },
+      {
+        "player": "Braelon Allen",
+        "timestamp_et": "2026-09-16 04:30",
+        "faab_bid": 1,
+        "yahoo_label": "Free Agent (user-confirmed $1 min FAAB)"
+      }
     ],
     "post_snapshot_user_confirmed": [
-      {"player": "George Holani", "timestamp_et": "2026-09-16 21:51", "faab_bid": 1, "dropped": "Malachi Fields", "source": "Explicit user confirmation"}
+      {
+        "player": "George Holani",
+        "timestamp_et": "2026-09-16 21:51",
+        "faab_bid": 1,
+        "dropped": "Malachi Fields",
+        "source": "Explicit user confirmation"
+      }
     ]
   },
   "yahoo_my_team_displayed_at_pull": {
@@ -64,7 +145,15 @@
     "resolution": "The later authenticated Yahoo snapshot showed JD FAAB at $86, resolving the earlier 08:15 Yahoo $88 display discrepancy. This was before the later user-confirmed $1 Holani transaction."
   },
   "jd_authoritative_balance": 85,
-  "pending_yahoo_reverification": true,
-  "pending_yahoo_reverification_reason": "Latest authenticated Yahoo snapshot is 2026-09-16T20:21:47-04:00 and predates user-confirmed George Holani for Malachi Fields transaction at approximately 21:51 ET.",
-  "live_check_note": "Other-team Sep 16 FAAB spends visible on Yahoo transactions but not yet applied to non-JD balances (still 100) — INGESTION HELD for non-JD FAAB until standings scrape."
+  "pending_yahoo_reverification": false,
+  "pending_yahoo_reverification_reason": "CLEARED 2026-09-17T08:23:05-04:00 \u2014 Yahoo live pull confirmed Holani roster + Fields waivers",
+  "live_check_note": "0800 2026-09-17: Yahoo re-verified JD Holani/$85. Non-JD Claiborne FA enrichment in transactions; non-JD FAAB balances still held pending standings.",
+  "yahoo_live_reverification": {
+    "observed_at": "2026-09-17T08:23:05-04:00",
+    "displayed_waiver_budget": 88,
+    "authoritative_balance": 85,
+    "holani_on_roster": true,
+    "fields_on_waivers": true,
+    "resolution": "0800 Live Check Yahoo confirms Holani on TB12 roster and Fields on waivers. Yahoo still displays $88 (lag) vs auth $85 after Holani $1. Prefer auth $85. Closes pending_yahoo_reverification from user confirmation."
+  }
 }
