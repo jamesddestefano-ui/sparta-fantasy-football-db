@@ -53,7 +53,8 @@ def main() -> None:
     if faab.get("starting_budget") != 100 or not faab.get("real_money"):
         errors.append("Sparta FAAB rules incorrect")
     balances = {r["team"]: r["balance"] for r in faab.get("balances", [])}
-    if len(balances) != 12 or balances.get("JD") != 100:
+    jd_expected = faab.get("jd_authoritative_balance", 100)
+    if len(balances) != 12 or balances.get("JD") != jd_expected:
         errors.append("FAAB balance snapshot incomplete or JD balance incorrect")
 
     priorities = sorted(r["priority"] for r in waiver.get("priority_order", []))
