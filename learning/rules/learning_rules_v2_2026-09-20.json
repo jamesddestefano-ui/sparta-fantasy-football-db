@@ -1,0 +1,49 @@
+{
+  "system": "SPARTA_BRAIN_CONTROL_ROOM",
+  "version": "learning_rules_v2_2026-09-20",
+  "effective_date": "2026-09-20",
+  "scope": "Billy's 2026 Sparta league only",
+  "rules": [
+    {
+      "rule_id": "SPARTA-LR-006",
+      "date": "2026-09-20",
+      "old_rule": "Weekly start/sit analysis could implicitly favor nominal NFL starters or projected RB volume in FLEX decisions.",
+      "new_rule": "Treat JD as a deliberately WR-driven roster. Fill the two mandatory RB slots with the best two evidence-based RB plays each week, then compare FLEX candidates across positions without an RB preference. Strong WR depth should be exploited when full-PPR route/target/air-yard evidence beats an RB's role.",
+      "reason": "User clarified intended auction construction after Week 2 and the Dobbins-over-Vele miss exposed that the prior process did not sufficiently account for roster construction and full-PPR WR strength.",
+      "supporting_decisions": ["SPARTA-2026W2-DOBBINS-OVER-VELE-20260920-0802", "SPARTA-2026W1-VELE-START-OVER-DOBBINS-20260913-1227"],
+      "sample_size": 2,
+      "expected_effect": "Better use of Chase/JSN/McMillan plus Wicks/Vele/Douglas/Worthy depth; fewer low-receiving-floor RB FLEX starts."
+    },
+    {
+      "rule_id": "SPARTA-LR-007",
+      "date": "2026-09-20",
+      "old_rule": "Injury-created available backfield touches could materially elevate an early-down RB even when the replacement distribution and receiving role were uncertain.",
+      "new_rule": "Do not convert an injury to another RB into assumed consolidated workload. Re-price the whole backfield using snaps, routes, targets, carries, goal-line/red-zone work, two-minute/third-down work, offensive environment and replacement candidates. In full PPR, demonstrated receiving participation can outweigh speculative carry volume.",
+      "reason": "R.J. Harvey's Week 2 absence did not consolidate Denver around Dobbins; Jonah Coleman remained heavily involved and scored, while Dobbins' receiving floor stayed minimal.",
+      "supporting_decisions": ["SPARTA-2026W2-DOBBINS-OVER-VELE-20260920-0802"],
+      "sample_size": 1,
+      "expected_effect": "Lower overreaction to injury news and more accurate distributional workload analysis."
+    },
+    {
+      "rule_id": "SPARTA-LR-008",
+      "date": "2026-09-20",
+      "old_rule": "Nominal depth-chart status and generic consensus RB ranking could retain excessive weight despite poor offensive environment or weak receiving role.",
+      "new_rule": "For every RB start decision, explicitly score offensive environment and quarterback quality alongside workload. Do not treat touches as equal-quality opportunities. Compare the RB directly with all viable roster alternatives using user-supplied advanced data, current beat/Twitter intelligence, expert consensus, matchup and full-PPR role.",
+      "reason": "User repeatedly flagged Cleveland/Deshaun Watson as a negative Judkins environment and questioned Dobbins; the Brain did not weight those warnings strongly enough before Week 2.",
+      "supporting_decisions": ["SPARTA-2026W2-DOBBINS-OVER-VELE-20260920-0802"],
+      "sample_size": 1,
+      "expected_effect": "More complete compare/contrast analysis and fewer starts driven by generic rank or nominal RB1 labels."
+    },
+    {
+      "rule_id": "SPARTA-LR-009",
+      "date": "2026-09-20",
+      "old_rule": "Dobbins and Judkins remained normal weekly starting candidates absent a specific downgrade.",
+      "new_rule": "Beginning Week 3, J.K. Dobbins and Quinshon Judkins are BENCH by default. Either may be reconsidered only when new role/usage/environment evidence materially changes the thesis. Braelon Allen receives serious weekly RB2 consideration, but the two RB starters remain evidence-based rather than hard-coded.",
+      "reason": "Explicit user correction after Week 2; Dobbins' split/receiving limitations and Judkins' Cleveland environment require a reset rather than continuation bias.",
+      "supporting_decisions": ["SPARTA-2026W2-DOBBINS-OVER-VELE-20260920-0802"],
+      "sample_size": 1,
+      "expected_effect": "Force fresh weekly RB comparison and prevent continuation bias while preserving flexibility if roles change."
+    }
+  ],
+  "adoption_note": "These are user-directed structural/process corrections, not hindsight edits to prior decision records. Historical reasoning remains immutable. Formal Week 2 outcome/process grading remains append-only in the decision-learning review path."
+}
