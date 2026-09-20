@@ -1,55 +1,110 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-09-20T17:10:29.388Z",
+  "generatedAt": "2026-09-20T18:09:51.242Z",
   "status": "live",
-  "completedAt": "2026-09-20T17:10:29.356Z",
-  "nextAtLabel": "2:10 PM ET",
+  "completedAt": "2026-09-20T18:09:51.188Z",
+  "nextAtLabel": "3:09 PM ET",
   "inWindow": true,
   "itemCount": 18,
   "items": [
     {
-      "id": "olave-active-w2",
+      "id": "rap-reed-out",
+      "at": "2026-09-20T17:28:28Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Packers ruled out WR Jayden Reed (neck) and RT Zach Bako-Bewele (knee). Reed carted off.",
+      "playerIds": [
+        "jayden-reed"
+      ],
+      "players": [
+        "Jayden Reed"
+      ],
+      "url": "https://x.com/RapSheet/status/2101725190342541475",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-jayden-reed-ingame-week2",
+      "signal": "OUT",
+      "priorStatus": "ACTIVE",
+      "newStatus": "OUT",
+      "why": "In-game injury, carted, ruled out",
+      "implication": "Done for day; Christian Watson/others more volume",
+      "opportunity": "Christian Watson and other Packers WRs elevated",
+      "beneficiaries": [
+        "christian-watson"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "schefter-barkley-stinger",
+      "at": "2026-09-20T17:19:33Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Eagles say RB Saquon Barkley (stinger) is questionable to return today.",
+      "playerIds": [
+        "saquon-barkley"
+      ],
+      "players": [
+        "Saquon Barkley"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2101722947060695489",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-saquon-barkley-ingame-week2",
+      "signal": "QUESTIONABLE_RETURN",
+      "priorStatus": "ACTIVE",
+      "newStatus": "Q_TO_RETURN",
+      "why": "In-game stinger update from team",
+      "implication": "Monitor return; potential limited or out rest of game; handcuff ready",
+      "opportunity": "Kenny Gainwell or other backs if sits",
+      "beneficiaries": [
+        "kenny-gainwell"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "schefter-olave-active",
       "at": "2026-09-20T15:33:28Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Saints WR Chris Olave (hamstring), listed questionable, is active and expected to play vs. Ravens. Confirmed on inactive report.",
+      "text": "Chris Olave active (hamstring). Also McMillan and Hendrickson active; Tua inactive.",
       "playerIds": [
         "chris-olave"
       ],
       "players": [
         "Chris Olave"
       ],
-      "url": "https://x.com/AdamSchefter/status/2101613227649990896",
+      "url": "https://x.com/AdamSchefter/status/2101696250240282667",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-olave-week2",
+      "eventId": "injury-chris-olave-week2",
       "signal": "ACTIVE",
-      "priorStatus": "QUESTIONABLE",
+      "priorStatus": "QUESTIONABLE/EXPECTED",
       "newStatus": "ACTIVE",
-      "why": "Schefter expected-to-play AM report followed by active confirmation; Levitan notes clean, no docks.",
-      "implication": "WR1 start; Saints high-volume passing script intact.",
-      "opportunity": "Full routes/targets expected; no real limitation projected.",
+      "why": "Official confirmation; Levitan noted clean no docks",
+      "implication": "Start without major limitation expected",
       "corroboration": [
-        "https://x.com/RapSheet/status/2101613307300110368",
-        "https://x.com/EstablishTheRun/status/2101650443772543042"
+        "@RapSheet",
+        "@adamlevitan"
       ],
       "supportingSources": [
         "ian-rapoport",
-        "establish-the-run",
-        "adam-levitan"
+        "adam-levitan",
+        "establish-the-run"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "burrow-active-w2",
+      "id": "schefter-burrow-active",
       "at": "2026-09-20T15:31:53Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Bengals QB Joe Burrow, listed as questionable (back), is officially active vs. the Texans. Rapoport confirmed he will play and is active.",
+      "text": "Joe Burrow officially active vs Texans after being listed questionable (back).",
       "playerIds": [
         "joe-burrow"
       ],
@@ -58,124 +113,29 @@
       ],
       "url": "https://x.com/AdamSchefter/status/2101695851068309529",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-burrow-week2",
+      "eventId": "injury-joe-burrow-week2",
       "signal": "ACTIVE",
       "priorStatus": "QUESTIONABLE",
       "newStatus": "ACTIVE",
-      "why": "Official inactive list and Schefter/Rapoport confirmation after expected-to-play reports.",
-      "implication": "Burrow is a locked-in fantasy QB1 start; no backup elevation impact.",
-      "opportunity": "Full snap expectation; elevates Chase/Higgins/Brown usage certainty.",
+      "why": "Official active list confirmation",
+      "implication": "Full go expected; start confidently",
       "corroboration": [
-        "https://x.com/RapSheet/status/2101695943003484374",
-        "https://x.com/AdamSchefter/status/2101696250240282667"
+        "@RapSheet"
       ],
       "supportingSources": [
         "ian-rapoport",
-        "establish-the-run",
-        "adam-levitan"
+        "establish-the-run"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "flowers-out-w2",
-      "at": "2026-09-19T20:17:42Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Ravens WR Zay Flowers (hamstring) downgraded to OUT. Opens door for Bateman and elevates TE usage.",
-      "playerIds": [
-        "zay-flowers"
-      ],
-      "players": [
-        "Zay Flowers"
-      ],
-      "url": "https://x.com/RapSheet/status/2101405392572231708",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-flowers-week2",
-      "signal": "OUT",
-      "priorStatus": "DOUBTFUL/QUESTIONABLE",
-      "newStatus": "OUT",
-      "why": "Saturday downgrade confirmed on inactives; ETR/Schefter align.",
-      "implication": "Remove from all lineups; target share redistributes.",
-      "opportunity": "Increased routes/targets for remaining WRs and Mark Andrews/Isaiah Likely.",
-      "beneficiaries": [
-        "mark-andrews",
-        "isaiah-likely"
-      ],
-      "corroboration": [
-        "https://x.com/EstablishTheRun/status/2101650443772543042",
-        "https://x.com/AdamSchefter"
-      ],
-      "supportingSources": [
-        "adam-schefter",
-        "establish-the-run",
-        "matthew-berry"
-      ],
-      "priority": "IMMEDIATE"
-    },
-    {
-      "id": "pittman-out-w2",
-      "at": "2026-09-19T17:06:33Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Steelers WR Michael Pittman Jr. (foot) downgraded to OUT. ETR/Levitan flag Germie Bernard for increased look.",
-      "playerIds": [
-        "michael-pittman"
-      ],
-      "players": [
-        "Michael Pittman Jr."
-      ],
-      "url": "https://x.com/RapSheet/status/2101357286954254581",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-pittman-week2",
-      "signal": "OUT",
-      "priorStatus": "QUESTIONABLE",
-      "newStatus": "OUT",
-      "why": "Saturday official downgrade; confirmed inactives.",
-      "implication": "Sit Pittman; pivot to other Steelers pass-catchers or streamers.",
-      "opportunity": "Slot/YAC role expansion for backups; Berry/Levitan like Bernard fit.",
-      "corroboration": [
-        "https://x.com/EstablishTheRun/status/2101650443772543042",
-        "https://x.com/adamlevitan/status/2101653888512528853"
-      ],
-      "supportingSources": [
-        "establish-the-run",
-        "adam-levitan",
-        "matthew-berry"
-      ],
-      "priority": "IMMEDIATE"
-    },
-    {
-      "id": "tua-inactive-w2",
-      "at": "2026-09-20T15:33:28Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Dolphins QB Tua Tagovailoa inactive. Confirmed on Schefter list alongside other early inactives.",
-      "playerIds": [],
-      "players": [],
-      "url": "https://x.com/AdamSchefter/status/2101696250240282667",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-tua-week2",
-      "signal": "INACTIVE",
-      "priorStatus": "DOUBTFUL",
-      "newStatus": "INACTIVE",
-      "why": "Official inactive report.",
-      "implication": "Dolphins offense downgraded; impacts Waddle/Achane script.",
-      "priority": "HIGH"
-    },
-    {
-      "id": "mcconkey-gtd-optimism-w2",
+      "id": "levitan-mcconkey-proj",
       "at": "2026-09-20T12:45:08Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Projecting Ladd McConkey (cracked rib) in with decent injury docks. Rapoport bullish/optimism he plays (flak jacket); status likely until ~2:30pm ET inactives. True GTD but trending positive.",
+      "text": "Projecting Ladd McConkey in with decent injury docks; official status likely ~2:30pm ET. RapSheet tone bullish. Would wear flak if plays.",
       "playerIds": [
         "ladd-mcconkey"
       ],
@@ -183,76 +143,150 @@
         "Ladd McConkey"
       ],
       "url": "https://x.com/adamlevitan/status/2101653888512528853",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-mcconkey-week2",
-      "signal": "EXPECTED_TO_PLAY",
+      "kind": "ANALYST_PROJECTION",
+      "eventId": "injury-ladd-mcconkey-week2",
+      "signal": "PROJECTED_IN|DOCKS",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "GTD_OPTIMISM",
-      "why": "Practiced Friday, team did not elevate WR, Rap tone bullish, Schefter flak jacket note; Levitan docks for limitation risk.",
-      "implication": "Start if active as WR2/flex but have pivot ready; partial snaps possible.",
-      "opportunity": "If out/limited, Quentin Johnston role expands significantly.",
-      "conflict": "Docks vs full-target expectation if fully cleared.",
+      "newStatus": "EXPECTED_WITH_DOCKS",
+      "why": "Practiced Friday, improved steadily, no WR elevated, Rap bullish",
+      "implication": "Startable with risk of limitation or late scratch; monitor inactive",
+      "opportunity": "If out, Quentin Johnston and others elevate",
       "beneficiaries": [
         "quentin-johnston"
       ],
       "corroboration": [
-        "https://x.com/RapSheet/status/2101613739653074949",
-        "https://x.com/AdamSchefter/status/2101616213839270198",
-        "https://x.com/EstablishTheRun/status/2101650443772543042"
+        "@RapSheet",
+        "@AdamSchefter"
       ],
       "supportingSources": [
+        "establish-the-run",
         "ian-rapoport",
+        "adam-schefter"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "etr-summary-w2-status",
+      "at": "2026-09-20T12:31:27Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "ETR Sunday AM summary: McConkey GTD with optimism/flak jacket possible; Nacua GTD (hip); Harvey not expected (hamstring); Olave/Burrow/Black/McMillan expected (McMillan snap count); Flowers and Pittman OUT.",
+      "playerIds": [
+        "ladd-mcconkey",
+        "puka-nacua",
+        "rj-harvey",
+        "chris-olave",
+        "joe-burrow",
+        "zay-flowers",
+        "michael-pittman"
+      ],
+      "players": [
+        "Ladd McConkey",
+        "Puka Nacua",
+        "RJ Harvey",
+        "Chris Olave",
+        "Joe Burrow",
+        "Zay Flowers",
+        "Michael Pittman Jr."
+      ],
+      "url": "https://x.com/EstablishTheRun/status/2101650443772543042",
+      "kind": "INJURY_STATUS",
+      "eventId": "weekend-injury-summary-week2",
+      "signal": "GTD|NOT_EXPECTED|EXPECTED|OUT",
+      "priorStatus": "various Q",
+      "newStatus": "GTD/EXPECTED/OUT",
+      "why": "Compiled weekend reports and beat notes",
+      "implication": "Immediate lineup and projection updates needed for GTDs and OUTs",
+      "opportunity": "Beneficiaries for OUTs and limited roles",
+      "corroboration": [
+        "@adamlevitan",
+        "@AdamSchefter",
+        "@RapSheet"
+      ],
+      "supportingSources": [
+        "adam-levitan",
+        "adam-schefter",
+        "ian-rapoport"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "levitan-olave-clean",
+      "at": "2026-09-20T12:45:08Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Chris Olave (hamstring) sounds fine, no real docks for us. Projecting clean.",
+      "playerIds": [
+        "chris-olave"
+      ],
+      "players": [
+        "Chris Olave"
+      ],
+      "url": "https://x.com/adamlevitan/status/2101653888512528853",
+      "kind": "ANALYST_PROJECTION",
+      "eventId": "injury-chris-olave-week2",
+      "signal": "CLEAN|NO_DOCKS",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "EXPECTED_FULL",
+      "why": "Reports indicate fine",
+      "implication": "Full projection, strong start",
+      "corroboration": [
+        "@AdamSchefter"
+      ],
+      "supportingSources": [
         "adam-schefter",
         "establish-the-run"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "nacua-gtd-mnf-w2",
-      "at": "2026-09-20T12:45:08Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
-      "outlet": "Establish The Run",
-      "text": "Puka Nacua (hip) is a true game-time decision for MNF vs Giants. Rams consider it pre-game decision; no practice Saturday.",
+      "id": "schefter-nacua-gtd",
+      "at": "2026-09-20T10:17:49Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Rams consider Puka Nacua (hip) a pre-game decision for Monday night vs Giants.",
       "playerIds": [
         "puka-nacua"
       ],
       "players": [
         "Puka Nacua"
       ],
-      "url": "https://x.com/adamlevitan/status/2101653888512528853",
+      "url": "https://x.com/AdamSchefter/status/2101616814723661946",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-nacua-week2",
-      "signal": "GTD",
+      "eventId": "injury-puka-nacua-week2",
+      "signal": "GTD|PREGAME",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "GTD",
-      "why": "Schefter: pre-game decision; ETR lists GTD; different injury from camp psoas.",
-      "implication": "Hold/start with pivot ready for MNF; high variance.",
-      "opportunity": "If out, heavier TE usage and bump to secondary WRs (Mumpfield noted by Berry).",
+      "newStatus": "PREGAME_DECISION",
+      "why": "Team considers true GTD",
+      "implication": "Hold/monitor warmups; true uncertainty for MNF",
+      "opportunity": "If out, other Rams WRs/TEs elevate (e.g. Adams if applicable)",
       "beneficiaries": [
         "davante-adams"
       ],
       "corroboration": [
-        "https://x.com/AdamSchefter/status/2101616814723661946",
-        "https://x.com/EstablishTheRun/status/2101650443772543042",
-        "https://x.com/MatthewBerryTMR/status/2101387472009613428"
+        "@adamlevitan",
+        "@EstablishTheRun"
       ],
       "supportingSources": [
-        "adam-schefter",
-        "establish-the-run",
-        "matthew-berry"
+        "adam-levitan",
+        "establish-the-run"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "harvey-unlikely-w2",
+      "id": "schefter-harvey-unlikely",
       "at": "2026-09-20T10:09:29Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Broncos RB RJ Harvey (hamstring) unlikely to play vs Jaguars. ETR: not expected; Levitan expects decent look at Jonah Coleman.",
+      "text": "Broncos RB RJ Harvey (hamstring) unlikely to play vs Jaguars.",
       "playerIds": [
         "rj-harvey"
       ],
@@ -261,16 +295,16 @@
       ],
       "url": "https://x.com/AdamSchefter/status/2101614717185757533",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-harvey-week2",
-      "signal": "UNLIKELY",
+      "eventId": "injury-rj-harvey-week2",
+      "signal": "UNLIKELY|NOT_EXPECTED",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "NOT_EXPECTED",
-      "why": "Schefter source unlikely; ETR summary not expected.",
-      "implication": "Sit Harvey; monitor Broncos backfield shares.",
-      "opportunity": "Increased carries/routes for backup RBs (Coleman look per Levitan).",
+      "newStatus": "UNLIKELY",
+      "why": "Source report",
+      "implication": "Sit; monitor for official inactive",
+      "opportunity": "Jonah Coleman expected decent look/role expansion",
       "corroboration": [
-        "https://x.com/EstablishTheRun/status/2101650443772543042",
-        "https://x.com/adamlevitan/status/2101653888512528853"
+        "@EstablishTheRun",
+        "@adamlevitan"
       ],
       "supportingSources": [
         "establish-the-run",
@@ -279,85 +313,172 @@
       "priority": "HIGH"
     },
     {
-      "id": "mcmillan-expected-snapcount-w2",
-      "at": "2026-09-20T10:05:53Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Bucs WR Jalen McMillan (knee) expected to play but not full-time role/snap count yet. Active confirmation.",
+      "id": "rap-mcconkey-optimism",
+      "at": "2026-09-20T10:05:36Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Ladd McConkey (cracked rib) practiced Friday, improved more than anticipated, pushing to play; optimism he can go barring setback. No WR elevated.",
       "playerIds": [
-        "emeka-egbuka"
+        "ladd-mcconkey"
       ],
       "players": [
-        "Emeka Egbuka"
+        "Ladd McConkey"
       ],
-      "url": "https://x.com/AdamSchefter/status/2101613810297589770",
+      "url": "https://x.com/RapSheet/status/2101613739653074949",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-mcmillan-week2",
-      "signal": "EXPECTED_LIMITED",
+      "eventId": "injury-ladd-mcconkey-week2",
+      "signal": "OPTIMISM|PUSHING",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "ACTIVE_LIMITED",
-      "why": "Schefter source: expected but not full-time; ETR snap count note; active list.",
-      "implication": "Flex risk; monitor actual snaps. Egbuka/Godwin more secure volume.",
-      "opportunity": "If limited, boost to other Bucs WRs.",
-      "beneficiaries": [
-        "chris-godwin",
-        "mike-evans"
-      ],
+      "newStatus": "OPTIMISTIC",
+      "why": "Sources on practice and intent",
+      "implication": "Likely active with possible flak/limitation",
       "corroboration": [
-        "https://x.com/EstablishTheRun/status/2101650443772543042",
-        "https://x.com/AdamSchefter/status/2101696250240282667"
+        "@AdamSchefter",
+        "@adamlevitan"
       ],
       "supportingSources": [
-        "establish-the-run"
+        "adam-schefter",
+        "adam-levitan"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "bowers-doubtful-w2",
+      "id": "rap-flowers-out",
       "at": "2026-09-19T20:17:42Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Raiders TE Brock Bowers (knee) doubtful; elevated Myarick. Could return next week. Mayer saw volume in absence.",
+      "text": "Ravens WR Zay Flowers (hamstring) downgraded to OUT. Opens door for Bateman and others.",
       "playerIds": [
-        "brock-bowers",
-        "michael-mayer"
+        "zay-flowers"
       ],
       "players": [
-        "Brock Bowers",
-        "Michael Mayer"
+        "Zay Flowers"
       ],
       "url": "https://x.com/RapSheet/status/2101405392572231708",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-bowers-week2",
-      "signal": "DOUBTFUL",
-      "priorStatus": "DOUBTFUL",
-      "newStatus": "DOUBTFUL",
-      "why": "Saturday elevation and reports; Rap notes possible next-week return.",
-      "implication": "Sit Bowers; start Mayer or stream TE if needed.",
-      "opportunity": "Michael Mayer elevated targets/routes as primary TE.",
+      "eventId": "injury-zay-flowers-week2",
+      "signal": "OUT",
+      "priorStatus": "DOUBTFUL/QUESTIONABLE",
+      "newStatus": "OUT",
+      "why": "Saturday downgrade confirmation",
+      "implication": "Remove from lineups; target share to Bateman/Andrews/etc",
+      "opportunity": "Rashod Bateman and Mark Andrews elevated roles",
       "beneficiaries": [
-        "michael-mayer"
+        "mark-andrews"
       ],
       "corroboration": [
-        "https://x.com/RapSheet/status/2101660866802294912"
+        "@AdamSchefter",
+        "@EstablishTheRun"
       ],
       "supportingSources": [
-        "adam-schefter"
+        "adam-schefter",
+        "establish-the-run"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "berry-love-walker-w2",
+      "id": "rap-bowers-doubtful",
+      "at": "2026-09-19T20:17:42Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Raiders elevated TE with Brock Bowers doubtful (knee); could return next week.",
+      "playerIds": [
+        "brock-bowers"
+      ],
+      "players": [
+        "Brock Bowers"
+      ],
+      "url": "https://x.com/RapSheet/status/2101405392572231708",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-brock-bowers-week2",
+      "signal": "DOUBTFUL",
+      "priorStatus": "QUESTIONABLE/DOUBTFUL",
+      "newStatus": "DOUBTFUL",
+      "why": "Elevation and reports; next week possible",
+      "implication": "Likely sit this week; stash for return",
+      "opportunity": "Other Raiders TEs short-term",
+      "priority": "HIGH"
+    },
+    {
+      "id": "rap-pittman-out",
+      "at": "2026-09-19T17:06:33Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Steelers WR Michael Pittman Jr. downgraded to OUT (foot).",
+      "playerIds": [
+        "michael-pittman"
+      ],
+      "players": [
+        "Michael Pittman Jr."
+      ],
+      "url": "https://x.com/RapSheet/status/2101357286954254581",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-michael-pittman-week2",
+      "signal": "OUT",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "OUT",
+      "why": "Saturday official downgrade",
+      "implication": "Remove; look to Roman Wilson/Germie Bernard",
+      "opportunity": "Germie Bernard and Roman Wilson increased targets/snaps",
+      "corroboration": [
+        "@EstablishTheRun",
+        "@adamlevitan",
+        "@MatthewBerryTMR"
+      ],
+      "supportingSources": [
+        "establish-the-run",
+        "adam-levitan",
+        "matthew-berry"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "berry-bernard-stash",
+      "at": "2026-09-20T13:21:50Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Agrees on Germie Bernard as deep-league stash/YAC fit with McCarthy; Pittman out opens opportunity. Especially loves the fit.",
+      "playerIds": [
+        "michael-pittman"
+      ],
+      "players": [
+        "Michael Pittman Jr."
+      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2101663124663259636",
+      "kind": "WAIVER_SIGNAL",
+      "eventId": "pittman-out-bernard-opp-week2",
+      "signal": "STASH|LOVE",
+      "why": "Pittman OUT + scheme fit",
+      "implication": "Add in deep leagues for upside",
+      "opportunity": "Increased targets/snaps with Pittman absent",
+      "corroboration": [
+        "@adamlevitan",
+        "@EstablishTheRun"
+      ],
+      "supportingSources": [
+        "adam-levitan",
+        "establish-the-run"
+      ],
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-love-walker",
       "at": "2026-09-17T16:55:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Loves Kenneth Walker vs IND: 74% snaps, 40% target rate on routes (tied team lead) in Wk1; IND gave up 163 yds/3 TDs to Henry. Elite utilization.",
+      "text": "Loves Kenneth Walker vs IND: 74% snaps, high target share on routes, Indy just gave up big to Henry. Smash RB spot.",
       "playerIds": [
         "kenneth-walker"
       ],
@@ -366,21 +487,21 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-2-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-walker-week2",
-      "signal": "LOVE",
-      "why": "Heavy early-down + receiving usage; soft run matchup.",
-      "implication": "Strong RB1/2 start; upside to finish as overall RB1.",
-      "opportunity": "High snap/touch/target share continuation.",
+      "eventId": "berry-love-kenneth-walker-week2",
+      "signal": "LOVE|UPGRADE",
+      "why": "Heavy usage Week 1 + soft matchup",
+      "implication": "Must-start RB1/2",
+      "opportunity": "High snap/touch/target share continues",
       "priority": "NORMAL"
     },
     {
-      "id": "berry-love-jeanty-w2",
+      "id": "berry-love-jeanty",
       "at": "2026-09-17T16:55:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Loves Ashton Jeanty @ LAC: 99 utilization score (tied Bijan lead) Wk1; 19% target share recent; high touch volume.",
+      "text": "Loves Ashton Jeanty @ LAC: 99 utilization Week 1, high target share, 25+ touches recent. Elite volume.",
       "playerIds": [
         "ashton-jeanty"
       ],
@@ -389,44 +510,21 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-2-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-jeanty-week2",
+      "eventId": "berry-love-ashton-jeanty-week2",
       "signal": "LOVE",
-      "why": "Elite utilization and passing-game involvement vs amenable Chargers D.",
-      "implication": "RB1 upside start.",
-      "opportunity": "Sustained high touch + target share.",
+      "why": "League-leading util + consistent volume",
+      "implication": "Strong RB start",
+      "opportunity": "Workhorse role locked",
       "priority": "NORMAL"
     },
     {
-      "id": "berry-love-irving-w2",
+      "id": "berry-love-jefferson",
       "at": "2026-09-17T16:55:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Loves Bucky Irving vs CLE: 26% target share, all RB red-zone touches Wk1; CLE soft vs run; out-routed Gainwell.",
-      "playerIds": [
-        "bucky-irving"
-      ],
-      "players": [
-        "Bucky Irving"
-      ],
-      "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-2-fantasy-football",
-      "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-irving-week2",
-      "signal": "LOVE",
-      "why": "Passing + goal-line monopoly + matchup.",
-      "implication": "Strong RB2/flex with TD upside.",
-      "opportunity": "Red-zone and third-down work locked.",
-      "priority": "NORMAL"
-    },
-    {
-      "id": "berry-love-jefferson-w2",
-      "at": "2026-09-17T16:55:00Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Loves Justin Jefferson @ CHI: 37% target share from Wentz Wk1; career 93 yds/18 PPG with Wentz; Bears D soft vs WRs recently.",
+      "text": "Loves Justin Jefferson @ CHI: 37% target share from Wentz Week 1; strong history with Wentz (18 PPG avg). Volume play.",
       "playerIds": [
         "justin-jefferson"
       ],
@@ -435,132 +533,77 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-2-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-jefferson-week2",
+      "eventId": "berry-love-justin-jefferson-week2",
       "signal": "LOVE",
-      "why": "Volume with Wentz + favorable matchup (weather noted separately by others).",
-      "implication": "Elite WR1 start.",
-      "opportunity": "Massive target share continuation.",
-      "conflict": "Weather (rain) could suppress overall passing somewhat per Fitz.",
-      "corroboration": [
-        "https://x.com/Fitz_FF/status/2101656478826238170"
-      ],
-      "supportingSources": [
-        "pat-fitzmaurice"
-      ],
+      "why": "High share + Wentz chemistry + matchup",
+      "implication": "WR1 start",
+      "opportunity": "Target volume with Wentz",
       "priority": "NORMAL"
     },
     {
-      "id": "berry-love-dak-w2",
+      "id": "berry-hate-etienne",
       "at": "2026-09-17T16:55:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Loves Dak Prescott vs WAS: smash spot, home, high implied total (27), WAS torched for 14.5 YPC and 3 pass TDs Wk1.",
+      "text": "Hates Travis Etienne @ BAL: Kamara expected back squeezes role; Week 1 points mostly receiving, underdog script bad for rushes.",
       "playerIds": [
-        "dak-prescott"
+        "travis-etienne"
       ],
       "players": [
-        "Dak Prescott"
+        "Travis Etienne Jr."
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-2-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-dak-week2",
-      "signal": "LOVE",
-      "why": "Game script and matchup scream pass volume/TDs.",
-      "implication": "Top QB play.",
-      "opportunity": "High pass attempts and scoring environment.",
+      "eventId": "berry-hate-travis-etienne-week2",
+      "signal": "HATE|DOWNGRADE",
+      "why": "Kamara return + split + script",
+      "implication": "Fade/sit in most formats",
+      "opportunity": "Kamara reclaims work",
       "beneficiaries": [
-        "ceedee-lamb",
-        "george-pickens"
-      ],
-      "priority": "NORMAL"
-    },
-    {
-      "id": "berry-hate-etienne-w2",
-      "at": "2026-09-17T16:55:00Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Hates Travis Etienne @ BAL: Wk1 usage concerning (matched Miller rushes, air-dependent); Kamara expected back squeezes role further; tough script as underdogs.",
-      "playerIds": [
-        "travis-etienne",
         "alvin-kamara"
       ],
-      "players": [
-        "Travis Etienne Jr.",
-        "Alvin Kamara"
-      ],
-      "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-2-fantasy-football",
-      "kind": "ANALYST_OPINION",
-      "eventId": "berry-hate-etienne-week2",
-      "signal": "HATE",
-      "why": "Committee risk with Kamara return + poor early-down share.",
-      "implication": "Sit or heavy fade; volatile RB3/flex at best.",
-      "opportunity": "Kamara reclaims passing downs; Miller early work.",
-      "beneficiaries": [
-        "alvin-kamara",
-        "kendre-miller"
-      ],
-      "corroboration": [
-        "https://x.com/MatthewBerryTMR/status/2101391577960550771"
-      ],
-      "priority": "NORMAL"
-    },
-    {
-      "id": "berry-hate-mhj-w2",
-      "at": "2026-09-17T16:55:00Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Hates Marvin Harrison Jr. vs SEA: only 8% target share Wk1 (5th on team), zero RZ looks; SEA tough vs WRs.",
-      "playerIds": [
-        "marvin-harrison"
-      ],
-      "players": [
-        "Marvin Harrison Jr."
-      ],
-      "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-2-fantasy-football",
-      "kind": "ANALYST_OPINION",
-      "eventId": "berry-hate-mhj-week2",
-      "signal": "HATE",
-      "why": "Low involvement + difficult matchup.",
-      "implication": "Fade/sit in most formats.",
-      "opportunity": "Low target share risk continues.",
-      "priority": "NORMAL"
-    },
-    {
-      "id": "berry-love-kincaid-evans-smith",
-      "at": "2026-09-17T16:55:00Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Loves Dalton Kincaid (high route rate, DET soft vs TEs), Mike Evans (MIA soft secondary, RZ share), DeVonta Smith (27% share, TEN soft vs WRs).",
-      "playerIds": [
-        "dalton-kincaid",
-        "mike-evans",
-        "devonta-smith"
-      ],
-      "players": [
-        "Dalton Kincaid",
-        "Mike Evans",
-        "DeVonta Smith"
-      ],
-      "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-2-fantasy-football",
-      "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-passcatchers-week2",
-      "signal": "LOVE",
-      "why": "Utilization spikes + matchup advantages.",
-      "implication": "Strong starts at TE/WR.",
-      "opportunity": "Route/target/RZ edges.",
       "priority": "NORMAL"
     }
   ],
   "sundayMode": true,
   "sourceNotes": [
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Sunday AM GTD/expected/out summary (McConkey optimism+flak, Nacua GTD, Harvey not expected, Olave/Burrow/Black/McMillan expected, Flowers/Pittman OUT) + Levitan player-specific. High value for status windows.",
+      "at": "2026-09-20T12:31:27Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific: projecting McConkey in w/ docks (Rap bullish), Puka true GTD, Olave clean no docks, Harvey->Coleman look, Pittman->Bernard. Projections updating; weather secondary.",
+      "at": "2026-09-20T12:45:08Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Love/Hate: Loves Walker (util/tgts), Jeanty (99 util), Irving (tgt/RZ), Jefferson (Wentz vol), Dak (smash), Kincaid, Evans/Smith; Hates Etienne (Kamara squeeze), MHJ (low share), BTJ, Fannin. Agrees Bernard stash on Pittman out.",
+      "at": "2026-09-17T16:55:00Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "Primary Sunday AM expected/unlikely/GTD (Olave expected, McConkey flak, Harvey unlikely, Nacua pregame, Black expected, McMillan snap count) + active confirmations (Burrow/Olave/McMillan) + Tua inactive + Barkley Q return. Core factual sour",
+      "at": "2026-09-20T15:33:28Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Strong corroboration + original (McConkey optimism, Olave/Young expected, Flowers OUT, Bowers doubtful+next week, Burrow will play/active, Pittman OUT, Reed OUT in-game). Beat/secondary notes.",
+      "at": "2026-09-20T10:05:36Z"
+    },
     {
       "sourceId": "establish-the-run",
       "source": "Establish The Run",
@@ -693,45 +736,10 @@
       "grade": "USEFUL",
       "note": "Primary Sunday AM expected/unlikely/GTD (Olave expected, McConkey flak, Harvey unlikely, Nacua pregame, Black expected, McMillan snap count) + Saturday OUT/Q (Flowers OUT, Burrow elev/expected, Nacua Q, Pittman OUT, Collins OUT, Bowers). Hi",
       "at": "2026-09-20T14:00:00Z"
-    },
-    {
-      "sourceId": "ian-rapoport",
-      "source": "Ian Rapoport",
-      "grade": "USEFUL",
-      "note": "Strong corroboration + original Sunday AM (McConkey optimism, Olave/Young expected, Black expected, Falcons healthy, Flowers OUT, Bowers doubtful+next week elev, Burrow expected, Pittman OUT, Collins context, Chris Jones/Hendrickson). Beat ",
-      "at": "2026-09-20T13:59:01Z"
-    },
-    {
-      "sourceId": "establish-the-run",
-      "source": "Establish The Run",
-      "grade": "USEFUL",
-      "note": "Sunday AM summary of GTD/expected/out (McConkey optimism+flak, Nacua GTD, Harvey not expected, Olave/Burrow/Black/McMillan expected, Flowers/Pittman OUT); Rundown live; Cheap WR volume. High value for status/beneficiaries.",
-      "at": "2026-09-20T12:31:27Z"
-    },
-    {
-      "sourceId": "adam-levitan",
-      "source": "Adam Levitan",
-      "grade": "USEFUL",
-      "note": "Player-specific: projecting McConkey in w/ docks (RapSheet bullish, status ~2:30pm); Puka true GTD; Olave clean; Harvey -> Jonah Coleman look; Pittman -> Germie Bernard. DFS projs updating.",
-      "at": "2026-09-20T12:45:08Z"
-    },
-    {
-      "sourceId": "matthew-berry",
-      "source": "Matthew Berry",
-      "grade": "USEFUL",
-      "note": "Love/Hate split cleanly: Loves Walker (util/tgts), Jeanty (99 util), Irving (tgt/RZ), Jefferson (Wentz vol), Dak (smash), Kincaid, Evans/Smith; Hates Etienne (Kamara squeeze), MHJ (low share), BTJ, Fannin. Nacua pivot note (TEs/Mumpfield/Fi",
-      "at": "2026-09-17T16:55:00Z"
-    },
-    {
-      "sourceId": "adam-schefter",
-      "source": "Adam Schefter",
-      "grade": "USEFUL",
-      "note": "Primary Sunday AM expected/unlikely/GTD (Olave expected, McConkey flak, Harvey unlikely, Nacua pregame, Black expected, McMillan snap count) + Saturday OUT/Q (Flowers OUT, Burrow elev/expected, Nacua Q, Pittman OUT, Collins OUT, Bowers). Hi",
-      "at": "2026-09-20T10:17:49Z"
     }
   ],
-  "mirroredAt": "2026-09-20T17:10:29.778Z",
+  "mirroredAt": "2026-09-20T18:09:51.657Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-09-20T17:10:29.356Z",
+  "sourceCompletedAt": "2026-09-20T18:09:51.188Z",
   "sourceStatus": "live"
 }
