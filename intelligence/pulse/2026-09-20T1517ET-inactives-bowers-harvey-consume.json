@@ -1,0 +1,33 @@
+{
+  "league": "sparta",
+  "consumer": "Sparta FF Bot",
+  "reviewed_at_et": "2026-09-20T15:17:00-04:00",
+  "trigger": "NFL Pulse HIGH 2026-09-20-1500 Bowers/Harvey inactive + McConkey active",
+  "roster_lineup_faab_waiver_state_altered": false,
+  "yahoo_lineup_observed": {
+    "Mayer": "TE",
+    "Dobbins": "W/R/T FLEX",
+    "Vele": "BN"
+  },
+  "pulse_items": [
+    {
+      "pulse_id": "20260920-151400-brock-bowers-inactive-official",
+      "jd_effect": "Bowers INACTIVE \u2014 Mayer TE confirmed START",
+      "action": "CONFIRM_MAYER_START",
+      "priority": "HIGH"
+    },
+    {
+      "pulse_id": "20260920-151400-rj-harvey-inactive-official",
+      "jd_effect": "Harvey INACTIVE \u2014 Dobbins FLEX confirmed (user already started)",
+      "action": "CONFIRM_DOBBINS_FLEX",
+      "priority": "HIGH"
+    },
+    {
+      "pulse_id": "20260920-151400-ladd-mcconkey-active-official",
+      "jd_effect": "not JD",
+      "action": "SUPPRESS"
+    }
+  ],
+  "actionability": "material_intelligence_no_yahoo_mutation",
+  "actionable_alert": true
+}
