@@ -1,7 +1,7 @@
 {
   "league": "sparta",
-  "source": "Authenticated Yahoo Agent Computer live pull 2026-09-16T08:15:19-04:00",
-  "observed_at": "2026-09-16T08:15:19-04:00",
+  "source": "Authenticated Yahoo Agent Computer live pull 2026-09-21T16:25:00-04:00",
+  "observed_at": "2026-09-21T16:25:00-04:00",
   "priority_order": [
     {
       "priority": 1,
@@ -52,7 +52,36 @@
       "team": "BE"
     }
   ],
-  "pending_claims_jd": [],
-  "pending_cleared_et": "2026-09-16",
-  "note": "Sep 16 waiver clear processed; JD pending Sanders/Allen/Holani Drop Lane CLEARED. Won Sanders $12. Allen+Holani claims failed (Lane already gone). Priority order not re-verified this pull \u2014 prior order retained pending next standings scrape."
+  "pending_claims_jd": [
+    {
+      "priority": 1,
+      "clears": "Sep 23",
+      "process_date": "Sep 23",
+      "bid": 5,
+      "add": "Emanuel Wilson",
+      "drop": "George Holani",
+      "raw": "Waiver 1 (Sep 23): Bid $5 for Emanuel Wilson, Drop George Holani"
+    },
+    {
+      "priority": 2,
+      "clears": "Sep 23",
+      "process_date": "Sep 23",
+      "bid": 3,
+      "add": "Tank Bigsby",
+      "drop": "George Holani",
+      "raw": "Waiver 2 (Sep 23): Bid $3 for Tank Bigsby, Drop George Holani"
+    },
+    {
+      "priority": 3,
+      "clears": "Sep 23",
+      "process_date": "Sep 23",
+      "bid": 1,
+      "add": "Will Shipley",
+      "drop": "George Holani",
+      "raw": "Waiver 3 (Sep 23): Bid $1 for Will Shipley, Drop George Holani"
+    }
+  ],
+  "note": "Mon 1600 Live Check FIRST detection: JD has 3 PENDING Sep 23 Week 3 waivers (Wilson $5 / Bigsby $3 / Shipley $1 all Drop Holani). Noon was CLEARED — pending_cleared_et superseded. Claims are PENDING only — do NOT invent completed txs. Only one can clear (same drop). Priority order not re-verified this pull — prior order retained. Wilson/Bigsby/Shipley ownership remains UNKNOWN beyond claimable-on-Yahoo; do not mark FREE_AGENT_CONFIRMED from pending claims alone.",
+  "pending_cleared_et_superseded": "2026-09-16",
+  "pending_cleared_et": null
 }

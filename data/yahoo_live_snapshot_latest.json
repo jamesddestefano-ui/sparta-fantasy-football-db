@@ -1,15 +1,15 @@
 {
-  "observed_at": "2026-09-21T12:34:15-04:00",
-  "pull_completed_at": "2026-09-21T12:34:21-04:00",
+  "observed_at": "2026-09-21T16:25:00-04:00",
+  "pull_completed_at": "2026-09-21T16:25:00-04:00",
   "timezone_note": "observed_at is America/New_York. Yahoo game times/transaction clocks display PDT.",
   "cdp_port": 9225,
-  "source": "authenticated Yahoo Agent Computer CDP :9225",
-  "check_id": "sparta-live-check-20260921-1200",
+  "source": "authenticated Yahoo Agent Computer",
+  "check_id": "sparta-live-check-20260921-1600",
   "completed": true,
-  "mutations": "NONE \u2014 read-only",
+  "mutations": "NONE — read-only",
   "waf_note": null,
   "fa_spot_checks_skipped": true,
-  "fa_spot_checks_skip_reason": "WAF risk \u2014 skip extra FA spot-checks per Monday noon brief (WAF risk)",
+  "fa_spot_checks_skip_reason": "WAF risk — skip extra FA spot-checks per Monday 1600 brief",
   "league": {
     "name": "PV Class of 2003 (plus 3)",
     "id": "102586",
@@ -36,11 +36,39 @@
   "faab_budget_remaining": 88,
   "faab_yahoo_display": 88,
   "faab_auth": 85,
-  "faab_note": "Yahoo display Waiver Budget $88. Auth $85 under Billy Enright min-$1 rule (unchanged vs 0800).",
+  "faab_note": "Yahoo display Waiver Budget $88. Auth $85 under Billy Enright min-$1 rule (unchanged vs 1200).",
   "ir_used": 0,
   "ir_total": 1,
-  "pending_waivers": [],
-  "pending_waivers_status": "CLEARED",
+  "pending_waivers": [
+    {
+      "priority": 1,
+      "clears": "Sep 23",
+      "process_date": "Sep 23",
+      "bid": 5,
+      "add": "Emanuel Wilson",
+      "drop": "George Holani",
+      "raw": "Waiver 1 (Sep 23): Bid $5 for Emanuel Wilson, Drop George Holani"
+    },
+    {
+      "priority": 2,
+      "clears": "Sep 23",
+      "process_date": "Sep 23",
+      "bid": 3,
+      "add": "Tank Bigsby",
+      "drop": "George Holani",
+      "raw": "Waiver 2 (Sep 23): Bid $3 for Tank Bigsby, Drop George Holani"
+    },
+    {
+      "priority": 3,
+      "clears": "Sep 23",
+      "process_date": "Sep 23",
+      "bid": 1,
+      "add": "Will Shipley",
+      "drop": "George Holani",
+      "raw": "Waiver 3 (Sep 23): Bid $1 for Will Shipley, Drop George Holani"
+    }
+  ],
+  "pending_waivers_status": "PENDING (3) — Sep 23 Wilson $5 / Bigsby $3 / Shipley $1 all drop Holani",
   "roster_count": 17,
   "full_roster": [
     {
@@ -51,7 +79,7 @@
       "status": null,
       "proj": 22.42,
       "fan_pts_week": 20.16,
-      "game_time_shown": "Final W 24-20 @\u00a0Ten"
+      "game_time_shown": "Final W 24-20 @ Ten"
     },
     {
       "slot": "RB",
@@ -61,7 +89,7 @@
       "status": null,
       "proj": 12.89,
       "fan_pts_week": 3.6,
-      "game_time_shown": "Final W 20-3 vs\u00a0Pit"
+      "game_time_shown": "Final W 20-3 vs Pit"
     },
     {
       "slot": "RB",
@@ -71,7 +99,7 @@
       "status": null,
       "proj": 12.6,
       "fan_pts_week": 9.8,
-      "game_time_shown": "Final W 23-19 @\u00a0TB"
+      "game_time_shown": "Final W 23-19 @ TB"
     },
     {
       "slot": "WR",
@@ -81,7 +109,7 @@
       "status": null,
       "proj": 18.91,
       "fan_pts_week": 26.5,
-      "game_time_shown": "Final W 20-6 @\u00a0Hou"
+      "game_time_shown": "Final W 20-6 @ Hou"
     },
     {
       "slot": "WR",
@@ -91,7 +119,7 @@
       "status": null,
       "proj": 13.47,
       "fan_pts_week": 15.1,
-      "game_time_shown": "Final W 34-3 @\u00a0Atl"
+      "game_time_shown": "Final W 34-3 @ Atl"
     },
     {
       "slot": "TE",
@@ -101,7 +129,7 @@
       "status": null,
       "proj": 8.94,
       "fan_pts_week": 5.3,
-      "game_time_shown": "Final W 26-14 @\u00a0LAC"
+      "game_time_shown": "Final W 26-14 @ LAC"
     },
     {
       "slot": "W/R/T",
@@ -111,7 +139,7 @@
       "status": null,
       "proj": 19.77,
       "fan_pts_week": 42.5,
-      "game_time_shown": "Final W 31-7 @\u00a0Ari"
+      "game_time_shown": "Final W 31-7 @ Ari"
     },
     {
       "slot": "W/R/T",
@@ -121,7 +149,7 @@
       "status": "Q",
       "proj": 11.79,
       "fan_pts_week": 3.6,
-      "game_time_shown": "Final W 20-13 vs\u00a0Jax"
+      "game_time_shown": "Final W 20-13 vs Jax"
     },
     {
       "slot": "BN",
@@ -131,7 +159,7 @@
       "status": null,
       "proj": 9.73,
       "fan_pts_week": 11.4,
-      "game_time_shown": "Final W 24-17 @\u00a0Bal"
+      "game_time_shown": "Final W 24-17 @ Bal"
     },
     {
       "slot": "BN",
@@ -141,7 +169,7 @@
       "status": null,
       "proj": 9.58,
       "fan_pts_week": 13.5,
-      "game_time_shown": "Final W 33-30 vs\u00a0Ind"
+      "game_time_shown": "Final W 33-30 vs Ind"
     },
     {
       "slot": "BN",
@@ -151,7 +179,7 @@
       "status": null,
       "proj": 8.37,
       "fan_pts_week": 12.4,
-      "game_time_shown": "Final W 24-20 @\u00a0Ten"
+      "game_time_shown": "Final W 24-20 @ Ten"
     },
     {
       "slot": "BN",
@@ -161,7 +189,7 @@
       "status": "Q",
       "proj": 9.14,
       "fan_pts_week": 3.9,
-      "game_time_shown": "Final L 13-35 @\u00a0SF"
+      "game_time_shown": "Final L 13-35 @ SF"
     },
     {
       "slot": "BN",
@@ -171,7 +199,7 @@
       "status": null,
       "proj": 4.74,
       "fan_pts_week": 4.1,
-      "game_time_shown": "Final W 23-19 @\u00a0TB"
+      "game_time_shown": "Final W 23-19 @ TB"
     },
     {
       "slot": "BN",
@@ -181,7 +209,7 @@
       "status": null,
       "proj": 5.95,
       "fan_pts_week": 8.5,
-      "game_time_shown": "Final L 17-20 vs\u00a0GB"
+      "game_time_shown": "Final L 17-20 vs GB"
     },
     {
       "slot": "BN",
@@ -191,7 +219,7 @@
       "status": null,
       "proj": 7.04,
       "fan_pts_week": 2.5,
-      "game_time_shown": "Final W 31-7 @\u00a0Ari"
+      "game_time_shown": "Final W 31-7 @ Ari"
     },
     {
       "slot": "K",
@@ -199,9 +227,9 @@
       "nfl_team": "Cin",
       "position": "K",
       "status": null,
-      "proj": 6.58,
+      "proj": 7.18,
       "fan_pts_week": 12.0,
-      "game_time_shown": "Final W 20-6 @\u00a0Hou"
+      "game_time_shown": "Final W 20-6 @ Hou"
     },
     {
       "slot": "DEF",
@@ -211,7 +239,7 @@
       "status": null,
       "proj": 11.74,
       "fan_pts_week": 4.0,
-      "game_time_shown": "Final L 19-23 vs\u00a0Cle"
+      "game_time_shown": "Final L 19-23 vs Cle"
     }
   ],
   "status_marks_on_roster": {
@@ -228,7 +256,7 @@
       "status": null,
       "proj": 22.42,
       "fan_pts_week": 20.16,
-      "game_time_shown": "Final W 24-20 @\u00a0Ten"
+      "game_time_shown": "Final W 24-20 @ Ten"
     },
     "stevenson_slot": "RB",
     "stevenson": {
@@ -239,7 +267,7 @@
       "status": null,
       "proj": 12.89,
       "fan_pts_week": 3.6,
-      "game_time_shown": "Final W 20-3 vs\u00a0Pit"
+      "game_time_shown": "Final W 20-3 vs Pit"
     },
     "judkins_slot": "RB",
     "judkins": {
@@ -250,7 +278,7 @@
       "status": null,
       "proj": 12.6,
       "fan_pts_week": 9.8,
-      "game_time_shown": "Final W 23-19 @\u00a0TB"
+      "game_time_shown": "Final W 23-19 @ TB"
     },
     "chase_slot": "WR",
     "chase": {
@@ -261,7 +289,7 @@
       "status": null,
       "proj": 18.91,
       "fan_pts_week": 26.5,
-      "game_time_shown": "Final W 20-6 @\u00a0Hou"
+      "game_time_shown": "Final W 20-6 @ Hou"
     },
     "mayer_slot": "TE",
     "mayer": {
@@ -272,7 +300,7 @@
       "status": null,
       "proj": 8.94,
       "fan_pts_week": 5.3,
-      "game_time_shown": "Final W 26-14 @\u00a0LAC"
+      "game_time_shown": "Final W 26-14 @ LAC"
     },
     "jsn_slot": "W/R/T",
     "jsn": {
@@ -283,7 +311,7 @@
       "status": null,
       "proj": 19.77,
       "fan_pts_week": 42.5,
-      "game_time_shown": "Final W 31-7 @\u00a0Ari"
+      "game_time_shown": "Final W 31-7 @ Ari"
     },
     "dobbins_slot": "W/R/T",
     "dobbins": {
@@ -294,7 +322,7 @@
       "status": "Q",
       "proj": 11.79,
       "fan_pts_week": 3.6,
-      "game_time_shown": "Final W 20-13 vs\u00a0Jax"
+      "game_time_shown": "Final W 20-13 vs Jax"
     },
     "vele_slot": "BN",
     "vele": {
@@ -305,7 +333,7 @@
       "status": null,
       "proj": 9.73,
       "fan_pts_week": 11.4,
-      "game_time_shown": "Final W 24-17 @\u00a0Bal"
+      "game_time_shown": "Final W 24-17 @ Bal"
     },
     "worthy_slot": "BN",
     "worthy": {
@@ -316,7 +344,7 @@
       "status": null,
       "proj": 9.58,
       "fan_pts_week": 13.5,
-      "game_time_shown": "Final W 33-30 vs\u00a0Ind"
+      "game_time_shown": "Final W 33-30 vs Ind"
     },
     "douglas_slot": "BN",
     "douglas": {
@@ -327,7 +355,7 @@
       "status": "Q",
       "proj": 9.14,
       "fan_pts_week": 3.9,
-      "game_time_shown": "Final L 13-35 @\u00a0SF"
+      "game_time_shown": "Final L 13-35 @ SF"
     },
     "holani_slot": "BN",
     "holani": {
@@ -338,7 +366,7 @@
       "status": null,
       "proj": 7.04,
       "fan_pts_week": 2.5,
-      "game_time_shown": "Final W 31-7 @\u00a0Ari"
+      "game_time_shown": "Final W 31-7 @ Ari"
     }
   },
   "transactions_recent": [
@@ -349,8 +377,8 @@
         "",
         "",
         "",
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "",
         "Jacoby Brissett Ari - QB",
         "Free Agent",
@@ -368,8 +396,8 @@
         "",
         "",
         "",
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "",
         "Harrison Mevis LAR - K",
         "Free Agent",
@@ -387,8 +415,8 @@
         "",
         "",
         "",
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "",
         "Vikings Min - DEF",
         "$4 Waiver",
@@ -406,8 +434,8 @@
         "",
         "",
         "",
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "",
         "Pat Freiermuth Pit - TE",
         "Free Agent",
@@ -425,8 +453,8 @@
         "",
         "",
         "",
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "",
         "Jaylin Noel Hou - WR",
         "Free Agent",
@@ -444,8 +472,8 @@
         "",
         "",
         "",
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "",
         "Rashod Bateman Bal - WR",
         "Free Agent",
@@ -463,8 +491,8 @@
         "",
         "",
         "",
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "",
         "Devin Singletary NYG - RB",
         "Free Agent",
@@ -482,8 +510,8 @@
         "",
         "",
         "",
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "",
         "Chargers LAC - DEF",
         "$0 Waiver",
@@ -501,7 +529,7 @@
         "",
         "",
         "",
-        "\ue035",
+        "",
         "",
         "Demond Claiborne Min - RB",
         "Free Agent",
@@ -520,8 +548,8 @@
         "",
         "",
         "",
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "",
         "George Holani Sea - RB",
         "Free Agent",
@@ -539,8 +567,8 @@
         "",
         "",
         "",
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "",
         "Xavier Hutchinson Hou - WR",
         "Free Agent",
@@ -558,8 +586,8 @@
         "",
         "",
         "",
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "",
         "Braelon Allen NYJ - RB",
         "Free Agent",
@@ -577,8 +605,8 @@
         "",
         "",
         "",
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "",
         "Buccaneers TB - DEF",
         "Free Agent",
@@ -596,8 +624,8 @@
         "",
         "",
         "",
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "",
         "Chris Brooks GB - RB",
         "$1 Waiver",
@@ -615,8 +643,8 @@
         "",
         "",
         "",
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "",
         "Tre' Harris LAC - WR",
         "$2 Waiver",
@@ -636,8 +664,8 @@
       "added": "Terrance Ferguson LAR - TE",
       "dropped": "Devin Singletary NYG - RB",
       "chunk": [
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "Terrance Ferguson LAR - TE",
         "Free Agent",
         "Devin Singletary NYG - RB",
@@ -650,8 +678,8 @@
       "added": "Jacoby Brissett Ari - QB",
       "dropped": "Tre Tucker LV - WR",
       "chunk": [
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "Jacoby Brissett Ari - QB",
         "Free Agent",
         "Tre Tucker LV - WR",
@@ -664,8 +692,8 @@
       "added": "Harrison Mevis LAR - K",
       "dropped": "Will Reichard Min - K",
       "chunk": [
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "Harrison Mevis LAR - K",
         "Free Agent",
         "Will Reichard Min - K",
@@ -678,8 +706,8 @@
       "added": null,
       "dropped": "Lions Det - DEF",
       "chunk": [
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "Vikings Min - DEF",
         "$4 Waiver",
         "Lions Det - DEF",
@@ -692,8 +720,8 @@
       "added": "Pat Freiermuth Pit - TE",
       "dropped": "Oronde Gadsden LAC - TE",
       "chunk": [
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "Pat Freiermuth Pit - TE",
         "Free Agent",
         "Oronde Gadsden LAC - TE",
@@ -706,8 +734,8 @@
       "added": "Jaylin Noel Hou - WR",
       "dropped": "Dylan Sampson Cle - RB IR",
       "chunk": [
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "Jaylin Noel Hou - WR",
         "Free Agent",
         "Dylan Sampson Cle - RB IR",
@@ -720,8 +748,8 @@
       "added": "Rashod Bateman Bal - WR",
       "dropped": "Pat Bryant Den - WR",
       "chunk": [
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "Rashod Bateman Bal - WR",
         "Free Agent",
         "Pat Bryant Den - WR",
@@ -734,8 +762,8 @@
       "added": "Devin Singletary NYG - RB",
       "dropped": "Rachaad White Was - RB",
       "chunk": [
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "Devin Singletary NYG - RB",
         "Free Agent",
         "Rachaad White Was - RB",
@@ -748,8 +776,8 @@
       "added": null,
       "dropped": "Vikings Min - DEF",
       "chunk": [
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "Chargers LAC - DEF",
         "$0 Waiver",
         "Vikings Min - DEF",
@@ -762,7 +790,7 @@
       "added": "Demond Claiborne Min - RB",
       "dropped": null,
       "chunk": [
-        "\ue035",
+        "",
         "Demond Claiborne Min - RB",
         "Free Agent"
       ]
@@ -773,8 +801,8 @@
       "added": "George Holani Sea - RB",
       "dropped": "Malachi Fields NYG - WR",
       "chunk": [
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "George Holani Sea - RB",
         "Free Agent",
         "Malachi Fields NYG - WR",
@@ -787,8 +815,8 @@
       "added": "Xavier Hutchinson Hou - WR",
       "dropped": "Jaguars Jax - DEF",
       "chunk": [
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "Xavier Hutchinson Hou - WR",
         "Free Agent",
         "Jaguars Jax - DEF",
@@ -803,8 +831,8 @@
       "added": "Terrance Ferguson LAR - TE",
       "dropped": "Devin Singletary NYG - RB",
       "chunk": [
-        "\ue035",
-        "\ue033",
+        "",
+        "",
         "Terrance Ferguson LAR - TE",
         "Free Agent",
         "Devin Singletary NYG - RB",
@@ -823,7 +851,19 @@
       "date_yahoo_display": "Sep 21, 9:02 am",
       "timestamp_et": "2026-09-21 12:02",
       "jd_material": false,
-      "note": "non-JD; Singletary to waivers \u2014 ACKNOWLEDGE FA pool only; not actionable wake"
+      "note": "non-JD; Singletary to waivers — ACKNOWLEDGE FA pool only; not actionable wake"
     }
-  ]
+  ],
+  "yahoo_league_id": "102586",
+  "new_since_1200": [],
+  "new_transactions_since_1200": [],
+  "deltas_vs_1200": {
+    "faab": "UNCHANGED: Yahoo $88 (auth baseline $85)",
+    "ir": "UNCHANGED: 0/1",
+    "pending": "CHANGED from CLEARED to 3 pending Sep 23 waivers (Wilson $5 / Bigsby $3 / Shipley $1 all drop Holani)",
+    "lineup": "UNCHANGED for supplied critical slots",
+    "status_marks": "UNCHANGED: Q on Dobbins and Douglas; no Q-to-O/OUT/IR upgrade",
+    "scores": "UNCHANGED 142.56–182.34 FINAL",
+    "new_txs": "0 — MattyBAD Ferguson/Singletary already in noon baseline"
+  }
 }
