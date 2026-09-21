@@ -1,52 +1,60 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-09-21T20:09:59.383Z",
+  "generatedAt": "2026-09-21T20:10:22.291Z",
   "status": "live",
-  "completedAt": "2026-09-21T20:09:59.346Z",
-  "nextAtLabel": "5:09 PM ET",
+  "completedAt": "2026-09-21T20:10:22.256Z",
+  "nextAtLabel": "5:10 PM ET",
   "inWindow": true,
   "itemCount": 14,
   "items": [
     {
-      "id": "jd-elbow-mariota-0921",
-      "at": "2026-09-21T19:06:05Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Commanders QB Jayden Daniels underwent imaging Monday and will consult experts over next few days per team protocol. Marcus Mariota expected to start Sunday vs Seattle.",
+      "id": "jd-inj-0921",
+      "at": "2026-09-21T19:06:17Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Commanders QB Jayden Daniels underwent imaging on dislocated left elbow; will consult experts. Marcus Mariota expected to start Sunday vs Seattle. Last similar injury cost ~4 weeks/month.",
       "playerIds": [
         "jayden-daniels"
       ],
       "players": [
         "Jayden Daniels"
       ],
-      "url": "https://x.com/RapSheet/status/2102112143881519176",
+      "url": "https://x.com/AdamSchefter/status/2102112197673361820",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-jayden-daniels-week2-elbow",
-      "signal": "OUT-SHORT-TERM",
+      "eventId": "injury-jayden-daniels-week2",
+      "signal": "OUT",
       "priorStatus": "DISLOCATED-IN-GAME",
-      "newStatus": "IMAGING-CONSULT-MARIOTA-START",
-      "why": "Dislocated left elbow (recurring); no fracture initially, more tests.",
-      "implication": "Daniels likely out multiple weeks given history; Mariota starts, Commanders pass game and run threat downgraded significantly.",
+      "newStatus": "OUT-WEEK3-MARIOTA-START",
+      "why": "Dislocated left elbow (recurrence); X-rays negative for fracture; further testing/protocol.",
+      "implication": "Mariota starts; WAS offense less dynamic, impacts all pass catchers.",
+      "opportunity": "Potential short-term boost or change for McLaurin/Samuel/Diggs usage under Mariota.",
+      "beneficiaries": [
+        "terry-mclaurin",
+        "deebo-samuel",
+        "stefon-diggs"
+      ],
       "corroboration": [
-        "https://x.com/AdamSchefter/status/2102112197673361820",
-        "@AdamSchefter"
+        "https://x.com/RapSheet/status/2102112143881519176",
+        "https://www.nytimes.com/athletic/7617818/2026/09/21/jayden-daniels-injury-update-commanders/"
       ],
       "supportingSources": [
-        "adam-schefter"
+        "ian-rapoport",
+        "matthew-berry",
+        "establish-the-run"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "cw-ham-w2w-0921",
+      "id": "cw-inj-0921",
       "at": "2026-09-21T16:31:26Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Bears HC Ben Johnson said Caleb Williams is week-to-week with a hamstring pull after MRI; expectation he will likely miss some time. Same left hamstring he injured in college vs Utah Dec 2022. Tyson Bagent is the backup.",
+      "text": "Bears HC Ben Johnson expects Caleb Williams to be week-to-week with left hamstring injury after MRI; will likely miss some time. Same hamstring injured in college. Tyson Bagent is the backup.",
       "playerIds": [
         "caleb-williams"
       ],
@@ -55,29 +63,37 @@
       ],
       "url": "https://x.com/AdamSchefter/status/2102073225639305601",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-caleb-williams-week2-hamstring",
+      "eventId": "injury-caleb-williams-week2",
       "signal": "WEEK-TO-WEEK",
       "priorStatus": "INJURED-IN-GAME",
       "newStatus": "WEEK-TO-WEEK-MISS-TIME",
-      "why": "Coach comments post-MRI; history of same injury.",
-      "implication": "Likely out at least Week 3 MNF vs PHI; Bagent starts, pass-catchers (Moore, Odunze, Loveland, Burden) remain viable but ceiling capped.",
+      "why": "Hamstring pull on scramble; MRI Monday; coach comments on ESPN1000.",
+      "implication": "Bagent starts upcoming games; monitor CHI pass catchers/RBs for volume shifts.",
+      "opportunity": "Backup QB opportunity; potential boost to Swift/Odunze/Burden/Loveland targets/carries.",
+      "beneficiaries": [
+        "dandre-swift",
+        "rome-odunze",
+        "luther-burden",
+        "colston-loveland"
+      ],
       "corroboration": [
         "https://x.com/RapSheet/status/2102074018182402139",
-        "@RapSheet"
+        "https://www.nytimes.com/athletic/7617440/2026/09/21/bears-caleb-williams-injury-update/"
       ],
       "supportingSources": [
-        "ian-rapoport"
+        "ian-rapoport",
+        "establish-the-run"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "lm-active-rh-inact-0920",
+      "id": "lm-active-0920",
       "at": "2026-09-20T18:39:05Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Ladd McConkey officially ACTIVE. RJ Harvey inactive. If you ignored me in preseason, grab Jonah Coleman now.",
+      "text": "Ladd McConkey officially ACTIVE (cracked rib, flak jacket possible). RJ Harvey inactive (hamstring); grab Jonah Coleman if available.",
       "playerIds": [
         "ladd-mcconkey",
         "rj-harvey"
@@ -90,13 +106,14 @@
       "kind": "INJURY_STATUS",
       "eventId": "status-mcconkey-harvey-week2",
       "signal": "ACTIVE",
-      "priorStatus": "GTD-OPTIMISM / NOT-EXPECTED",
-      "newStatus": "ACTIVE / INACTIVE",
-      "why": "Official inactive list confirmation; ETR projected McConkey in with docks, Harvey doubtful.",
-      "implication": "McConkey start with injury risk (flak jacket); Harvey out opens Coleman/backfield work. Reverse any Harvey beneficiaries.",
+      "priorStatus": "GTD-OPTIMISM",
+      "newStatus": "ACTIVE",
+      "why": "Official active list confirmation; prior ETR/Rap optimism.",
+      "implication": "McConkey plays with possible docks; Harvey out opens DEN RB snaps.",
+      "opportunity": "Coleman (handcuff) elevated role; McConkey still startable with injury risk.",
       "corroboration": [
-        "@EstablishTheRun",
-        "@adamlevitan"
+        "https://x.com/EstablishTheRun/status/2101650443772543042",
+        "https://x.com/adamlevitan/status/2101653888512528853"
       ],
       "supportingSources": [
         "establish-the-run",
@@ -105,13 +122,61 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "jr-back-eval-0921",
+      "id": "pn-gtd-0920",
+      "at": "2026-09-20T12:31:27Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Puka Nacua (hip) true game-time decision for MNF. McConkey optimism (projected in with docks); Harvey not expected; Olave/Burrow expected; Flowers/Pittman OUT.",
+      "playerIds": [
+        "puka-nacua",
+        "ladd-mcconkey",
+        "rj-harvey",
+        "chris-olave",
+        "joe-burrow",
+        "zay-flowers",
+        "michael-pittman"
+      ],
+      "players": [
+        "Puka Nacua",
+        "Ladd McConkey",
+        "RJ Harvey",
+        "Chris Olave",
+        "Joe Burrow",
+        "Zay Flowers",
+        "Michael Pittman Jr."
+      ],
+      "url": "https://x.com/EstablishTheRun/status/2101650443772543042",
+      "kind": "INJURY_STATUS",
+      "eventId": "status-summary-week2-sun",
+      "signal": "GTD",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "GTD",
+      "why": "Weekend reports summary; Levitan notes Rap bullish on McConkey.",
+      "implication": "Nacua uncertain (trending wrong per later reports); Flowers out boosts others.",
+      "opportunity": "If Nacua out: Adams/others; Flowers out: Bateman etc.",
+      "beneficiaries": [
+        "davante-adams"
+      ],
+      "corroboration": [
+        "https://x.com/adamlevitan/status/2101653888512528853",
+        "https://www.cbssports.com/nfl/news/is-puka-nacua-playing-on-mnf-rams-wrs-status-against-giants/"
+      ],
+      "supportingSources": [
+        "adam-levitan",
+        "ian-rapoport"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "jr-back-0921",
       "at": "2026-09-21T19:30:41Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Packers WR Jayden Reed injured his back Sunday. Spent night in NJ, returning to GB; team evaluating best treatment and recovery timeframe.",
+      "text": "Packers WR Jayden Reed injured his back Sunday; spent night in NJ, returning to GB; team evaluating treatment/recovery timeframe. Earlier ruled out (neck).",
       "playerIds": [
         "jayden-reed"
       ],
@@ -120,25 +185,34 @@
       ],
       "url": "https://x.com/AdamSchefter/status/2102118336859402331",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-jayden-reed-week2-back",
-      "signal": "EVALUATING",
-      "priorStatus": "INJURED-IN-GAME",
-      "newStatus": "BACK-INJURY-EVAL",
-      "why": "Source report on back injury severity TBD.",
-      "implication": "Potential multi-week absence; elevates Christian Watson and other GB WRs short-term.",
+      "eventId": "injury-jayden-reed-week2",
+      "signal": "OUT",
+      "priorStatus": "NECK-OUT",
+      "newStatus": "BACK-EVAL",
+      "why": "Source report on back injury post-neck ruling.",
+      "implication": "Miss time possible; GB WR committee shifts (Watson/Wicks).",
+      "opportunity": "Boost to Christian Watson/Dontayvion Wicks targets.",
       "beneficiaries": [
-        "christian-watson"
+        "christian-watson",
+        "dontayvion-wicks"
+      ],
+      "corroboration": [
+        "https://x.com/RapSheet/status/2101725190342541475"
+      ],
+      "supportingSources": [
+        "ian-rapoport",
+        "establish-the-run"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "bi-sep-gainwell-0921",
+      "id": "bi-usage-0921",
       "at": "2026-09-21T15:06:34Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Bucky Irving separating from Kenny Gainwell nicely. Out-snapped 51-23, carries 17-2, routes 22-12 yesterday. Through two weeks opportunities Bucky 36 vs Gainwell 12. Sean Tucker active but 0 offensive snaps.",
+      "text": "Bucky Irving separating from Kenny Gainwell: 51-23 snaps, 17-2 carries, 22-12 routes yesterday. Through 2 weeks opportunities 36-12. Tucker active but 0 snaps.",
       "playerIds": [
         "bucky-irving",
         "kenny-gainwell"
@@ -149,52 +223,62 @@
       ],
       "url": "https://x.com/adamlevitan/status/2102051869770297555",
       "kind": "USAGE_DATA",
-      "eventId": "usage-bucky-irving-week2-separation",
+      "eventId": "usage-bucky-irving-week2",
       "signal": "UPGRADE",
-      "why": "Clear snap/carry/route dominance post-Week 2.",
-      "implication": "Irving locked as lead back; strong RB2/flex with every-down role. Fade Gainwell.",
-      "opportunity": "Snaps 51, carries 17, routes 22; 36 opp thru 2 wks",
+      "newStatus": "CLEAR-LEAD",
+      "why": "Snap/carry/route separation data post-Week 2.",
+      "implication": "Irving emerging as clear lead back in TB; Gainwell diminished.",
+      "opportunity": "High snap/route share; strong RB2/flex with goal-line upside.",
       "beneficiaries": [
         "bucky-irving"
+      ],
+      "supportingSources": [
+        "establish-the-run"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "rs-fumble-th-need-0921",
+      "id": "rs-th-0921",
       "at": "2026-09-21T14:38:39Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Rhamondre Stevenson lost another fumble (7th in last 31 games) and was punished with playing time. NE weapon-deficient offense needs TreVeyon Henderson’s explosiveness often, even without fumbles, especially with AJ Brown out.",
+      "text": "Rhamondre Stevenson lost another fumble (7th in 31 games) and was punished with playing time. NE needs TreVeyon Henderson explosiveness often, especially with AJ Brown out.",
       "playerIds": [
         "rhamondre-stevenson",
-        "treveyon-henderson"
+        "treveyon-henderson",
+        "aj-brown"
       ],
       "players": [
         "Rhamondre Stevenson",
-        "TreVeyon Henderson"
+        "TreVeyon Henderson",
+        "A.J. Brown"
       ],
       "url": "https://x.com/adamlevitan/status/2102044845712052385",
       "kind": "USAGE_DATA",
-      "eventId": "usage-stevenson-henderson-week2",
-      "signal": "UPGRADE-HENDERSON",
-      "why": "Fumble punishment + team need for explosiveness while Brown out.",
-      "implication": "Henderson role expansion likely; Stevenson less secure. Henderson stash/start candidate.",
-      "opportunity": "Increased snaps/carries for Henderson expected",
+      "eventId": "usage-ne-rbs-week2",
+      "signal": "UPGRADE",
+      "newStatus": "HENDERSON-EXPANDED",
+      "why": "Fumble punishment + weapon-deficient offense + Brown absence.",
+      "implication": "Henderson role expansion even without more Stevenson fumbles.",
+      "opportunity": "Henderson snaps/routes/carries increase; startable upside.",
       "beneficiaries": [
         "treveyon-henderson"
+      ],
+      "supportingSources": [
+        "establish-the-run"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "ds-ride-die-0921",
+      "id": "ds-love-0921",
       "at": "2026-09-21T14:00:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "DeVonta Smith target shares 27% and 38% first two games; leading all WRs in expected PPR points. RIDE. OR. DIE.",
+      "text": "DeVonta Smith RIDE OR DIE. Target shares 27%/38% first two games; leading all WRs in expected PPR points per model.",
       "playerIds": [
         "devonta-smith"
       ],
@@ -203,24 +287,21 @@
       ],
       "url": "https://x.com/MatthewBerryTMR/status/2102035117434655201",
       "kind": "ANALYST_OPINION",
-      "eventId": "opinion-devonta-smith-week2-targets",
+      "eventId": "opinion-devonta-smith-week2",
       "signal": "LOVE",
-      "why": "Elite target share and expected points model lead.",
-      "implication": "Must-start WR1/2; high floor/ceiling while volume persists.",
-      "opportunity": "27-38% target share",
-      "corroboration": [
-        "@LateRoundQB"
-      ],
+      "why": "High target share + expected points leadership.",
+      "implication": "Must-start WR1/2; heavy usage in PHI offense.",
+      "opportunity": "Elite target share/routes; strong weekly floor/ceiling.",
       "priority": "HIGH"
     },
     {
-      "id": "sb-stinger-mri-0921",
+      "id": "sb-inj-0921",
       "at": "2026-09-21T12:58:34Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Eagles RB Saquon Barkley will have MRI today after stinger; hope it is minor. He did play through it.",
+      "text": "Eagles RB Saquon Barkley will have MRI after stinger; hope it is minor. He played through it after early exit and return with neck roll.",
       "playerIds": [
         "saquon-barkley"
       ],
@@ -229,29 +310,30 @@
       ],
       "url": "https://x.com/RapSheet/status/2102019656382898490",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-saquon-barkley-week2-stinger",
-      "signal": "MRI-HOPE-MINOR",
-      "priorStatus": "LEFT-RETURNED-LIMITED",
-      "newStatus": "MRI-PENDING-OPTIMISTIC",
-      "why": "Stinger, played through, postgame 'I'm alright'; MRI precautionary.",
-      "implication": "Likely available Week 3; monitor volume if limited. Handcuffs Bigsby/Shipley saw work but temporary.",
+      "eventId": "injury-saquon-barkley-week2",
+      "signal": "QUESTIONABLE",
+      "priorStatus": "STINGER-IN-GAME",
+      "newStatus": "MRI-HOPE-MINOR",
+      "why": "Stinger on first play; returned and played; MRI for caution.",
+      "implication": "Likely available soon; monitor for Week 3.",
+      "opportunity": "If limited, Bigsby/Shipley (not listed) get work; Goedert also knee MRI concern.",
       "corroboration": [
-        "@AdamSchefter",
-        "The Athletic"
+        "https://www.nytimes.com/athletic/7613997/2026/09/20/saquon-barkley-injury-update-eagles-titans/"
       ],
       "supportingSources": [
+        "establish-the-run",
         "adam-schefter"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "me-hip-not-serious-0921",
+      "id": "me-hip-0921",
       "at": "2026-09-21T10:25:31Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "49ers HC Kyle Shanahan said he did not believe WR Mike Evans’ hip injury was serious; could have returned in Q4 if needed. Demarcus Robinson suffered high ankle sprain.",
+      "text": "49ers WR Mike Evans hip injury not believed serious by HC Shanahan; could have returned in 4th if needed. Demarcus Robinson high ankle sprain.",
       "playerIds": [
         "mike-evans"
       ],
@@ -260,14 +342,14 @@
       ],
       "url": "https://x.com/AdamSchefter/status/2101981139304878325",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-mike-evans-week2-hip",
+      "eventId": "injury-mike-evans-week2",
       "signal": "NOT-SERIOUS",
-      "priorStatus": "EXITED",
-      "newStatus": "EXPECTED-OK",
-      "why": "Coach comments; not expected serious per ETR watchlist too.",
-      "implication": "Evans should be fine ROS/Week 3; Robinson out longer creates more targets for Evans/Kittle/others.",
+      "priorStatus": "HIP-IN-GAME",
+      "newStatus": "MINOR",
+      "why": "Coach comment postgame.",
+      "implication": "Evans expected back soon; SF WR depth hit by Robinson.",
       "corroboration": [
-        "@EstablishTheRun"
+        "https://x.com/EstablishTheRun/status/2101835945779585093"
       ],
       "supportingSources": [
         "establish-the-run"
@@ -275,174 +357,138 @@
       "priority": "HIGH"
     },
     {
-      "id": "etr-sun-inj-list-0921",
+      "id": "etr-watch-0921",
       "at": "2026-09-21T00:48:34Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Sunday FantasyFootball injuries watching: Caleb Williams (ham), Jayden Daniels (dislocated L elbow), Saquon Barkley (stinger), Jadarian Price (chest), Jayden Reed (head), Jonathon Brooks (groin), Rico Dowdle (toe), Aaron Jones (knee), JK Dobbins (ham), Dallas Goedert (knee), Mike Evans (hip not serious), David Njoku (knee)/Charlie Kolar (forearm), others.",
+      "text": "Sunday injuries watching: Caleb Williams (ham), Jayden Daniels (elbow), Saquon Barkley (stinger), Jayden Reed (head), Mike Evans (hip not serious), Dallas Goedert (knee), JK Dobbins (ham), Jonathon Brooks (groin), others.",
       "playerIds": [
         "caleb-williams",
         "jayden-daniels",
         "saquon-barkley",
-        "jadarian-price",
         "jayden-reed",
-        "jonathon-brooks",
-        "rico-dowdle",
-        "jk-dobbins",
+        "mike-evans",
         "dallas-goedert",
-        "mike-evans"
+        "jk-dobbins",
+        "jonathon-brooks"
       ],
       "players": [
         "Caleb Williams",
         "Jayden Daniels",
         "Saquon Barkley",
-        "Jadarian Price",
         "Jayden Reed",
-        "Jonathon Brooks",
-        "Rico Dowdle",
-        "J.K. Dobbins",
+        "Mike Evans",
         "Dallas Goedert",
-        "Mike Evans"
+        "J.K. Dobbins",
+        "Jonathon Brooks"
       ],
       "url": "https://x.com/EstablishTheRun/status/2101835945779585093",
       "kind": "INJURY_STATUS",
-      "eventId": "etr-injury-watchlist-week2-sunday",
-      "signal": "WATCHLIST",
+      "eventId": "injury-watchlist-week2",
+      "signal": "WATCH",
       "newStatus": "MULTIPLE-INJURED",
-      "why": "Comprehensive postgame injury monitor from ETR.",
-      "implication": "Prioritize monitoring these for Week 3 status; beneficiaries for outs (e.g. if Goedert out, Eagles TE depth; Njoku/Kolar -> Gadsden routes).",
+      "why": "Postgame long injury list.",
+      "implication": "Multiple key players status TBD via MRI/imaging Monday.",
+      "opportunity": "Handcuffs/backups elevated short-term (e.g. for Dobbins, Brooks, Goedert).",
       "corroboration": [
-        "@adamlevitan"
+        "https://x.com/adamlevitan/status/2101836177385173366"
       ],
       "supportingSources": [
-        "adam-levitan"
+        "adam-levitan",
+        "adam-schefter",
+        "ian-rapoport"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "etr-pregame-status-0920",
+      "id": "zf-out-0920",
       "at": "2026-09-20T12:31:27Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Weekend reports summary: GTD Ladd McConkey (cracked rib, optimism, flak jacket) and Puka Nacua (hip). Not expected RJ Harvey (ham). Expected Chris Olave (ham), Joe Burrow (back). OUT Zay Flowers (ham), Michael Pittman (foot).",
+      "text": "Zay Flowers (hamstring) OUT; Michael Pittman (foot) OUT. Expect look at Germie Bernard with Pittman out.",
       "playerIds": [
-        "ladd-mcconkey",
-        "puka-nacua",
-        "rj-harvey",
-        "chris-olave",
-        "joe-burrow",
         "zay-flowers",
         "michael-pittman"
       ],
       "players": [
-        "Ladd McConkey",
-        "Puka Nacua",
-        "RJ Harvey",
-        "Chris Olave",
-        "Joe Burrow",
         "Zay Flowers",
         "Michael Pittman Jr."
       ],
       "url": "https://x.com/EstablishTheRun/status/2101650443772543042",
       "kind": "INJURY_STATUS",
-      "eventId": "etr-pregame-statuses-week2",
-      "signal": "GTD-OUT-EXPECTED",
-      "priorStatus": "VARIOUS",
-      "newStatus": "AS-LISTED",
-      "why": "ETR weekend report aggregation; Levitan notes McConkey projected in w/ docks, Nacua true GTD, Harvey look at Coleman, Pittman out look at Bernard.",
-      "implication": "McConkey/Nacua monitor to kickoff; Flowers/Pittman confirmed out creates WR opportunities; Olave/Burrow clear.",
+      "eventId": "injury-flowers-pittman-week2",
+      "signal": "OUT",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "OUT",
+      "why": "Weekend reports confirmed OUT.",
+      "implication": "BAL/IND WR targets redistribute.",
+      "opportunity": "Bateman/others for Flowers; Bernard for Pittman.",
       "corroboration": [
-        "@adamlevitan",
-        "@MatthewBerryTMR"
+        "https://x.com/RapSheet/status/2101405392572231708"
       ],
       "supportingSources": [
-        "adam-levitan",
-        "matthew-berry"
+        "ian-rapoport",
+        "adam-levitan"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "pn-gtd-berry-0919",
-      "at": "2026-09-19T19:06:29Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Puka Nacua won’t practice second straight day (groin, different from camp psoas), questionable MNF vs Giants. Backup Whittington doubtful (quad). If Puka misses expect heavier TE (Ferguson/Parkinson) and biggest WR bump Konata Mumpfield (or Malachi Fields).",
-      "playerIds": [
-        "puka-nacua",
-        "malachi-fields"
-      ],
-      "players": [
-        "Puka Nacua",
-        "Malachi Fields"
-      ],
-      "url": "https://x.com/MatthewBerryTMR/status/2101387472009613428",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-puka-nacua-week2-gtd",
-      "signal": "QUESTIONABLE-GTD",
-      "priorStatus": "LIMITED",
-      "newStatus": "QUESTIONABLE",
-      "why": "No practice 2 days; beat report.",
-      "implication": "Have pivot ready for MNF; TE stream/upside if out. ETR also flagged true GTD.",
-      "opportunity": "TE snaps/routes up if out",
-      "beneficiaries": [
-        "malachi-fields"
-      ],
-      "corroboration": [
-        "@EstablishTheRun",
-        "@NateAtkins_"
-      ],
-      "supportingSources": [
-        "establish-the-run"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "aj-full-work-0921",
-      "at": "2026-09-21T13:42:14Z",
+      "id": "njoku-gadsden-0921",
+      "at": "2026-09-21T15:50:23Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "With Jordan Mason (thumb) on IR, Vikings went full Aaron Jones: snaps 42, DeeJay Dallas 8, Demond Clairborne 2. Faces TB, MIA, NO before Mason expected return.",
+      "text": "Charlie Kolar (arm) left after 42 snaps; David Njoku (knee) after 11. Allowed Orande Gadsden 29/67 snaps and 15 routes on 31 Herbert dropbacks.",
       "playerIds": [],
       "players": [],
-      "url": "https://x.com/adamlevitan/status/2102030644607844708",
+      "url": "https://x.com/adamlevitan/status/2102062895593046362",
       "kind": "USAGE_DATA",
-      "eventId": "usage-aaron-jones-week2-full",
+      "eventId": "usage-chargers-te-week2",
       "signal": "UPGRADE",
-      "newStatus": "FEATURE-BACK",
-      "why": "Mason IR clears path to near-every-down role short-term.",
-      "implication": "Jones strong RB2 next 3 weeks; handcuff value high until Mason returns.",
-      "opportunity": "42 snaps dominant share",
+      "newStatus": "GADSDEN-EXPANDED",
+      "why": "Teammate injuries opened snaps/routes.",
+      "implication": "Gadsden (not listed) temporary TE opportunity in LAC.",
+      "opportunity": "Routes on dropbacks if Njoku/Kolar miss time.",
+      "supportingSources": [
+        "establish-the-run"
+      ],
       "priority": "NORMAL"
     },
     {
-      "id": "mhj-low-yprr-0921",
+      "id": "mh-yprr-0921",
       "at": "2026-09-21T13:07:44Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Marvin Harrison Jr down to 0.53 yards per route run this season. Only a few WRs worse (Johnston, Dyami Brown, Addison, etc).",
+      "text": "Marvin Harrison Jr. down to 0.53 yards per route run this season. Only a few WRs worse (incl. Quentin Johnston at 0.48).",
       "playerIds": [
-        "marvin-harrison"
+        "marvin-harrison",
+        "quentin-johnston"
       ],
       "players": [
-        "Marvin Harrison Jr."
+        "Marvin Harrison Jr.",
+        "Quentin Johnston"
       ],
       "url": "https://x.com/adamlevitan/status/2102021964311515601",
       "kind": "USAGE_DATA",
-      "eventId": "usage-marvin-harrison-yprr-week2",
+      "eventId": "usage-marv-qj-week2",
       "signal": "DOWNGRADE",
-      "why": "Extremely poor efficiency on routes through 2 weeks.",
-      "implication": "Concern for ceiling despite draft capital; monitor role/targets but efficiency red flag for start/sit and trade value.",
-      "opportunity": "Low YPRR 0.53",
+      "newStatus": "LOW-EFFICIENCY",
+      "why": "YPRR data through two weeks.",
+      "implication": "Efficiency concerns despite targets; monitor role/volume.",
+      "opportunity": "Low YPRR signals limited upside unless volume spikes.",
+      "corroboration": [
+        "https://x.com/adamlevitan/status/2102068731010855145"
+      ],
+      "supportingSources": [
+        "establish-the-run"
+      ],
       "priority": "NORMAL"
     }
   ],
@@ -452,35 +498,35 @@
       "sourceId": "establish-the-run",
       "source": "Establish The Run",
       "grade": "USEFUL",
-      "note": "Sunday AM GTD/expected/out summary (McConkey optimism, Nacua GTD, Harvey not expected, Olave/Burrow expected, Flowers/Pittman OUT) + postgame long injury watchlist (Daniels, Williams, Barkley, Evans, Reed, Price, Goedert, Njoku etc). High v",
+      "note": "Sunday AM GTD/expected/out summary (McConkey optimism, Nacua GTD, Harvey not expected, Olave/Burrow expected, Flowers/Pittman OUT) + postgame long injury watchlist (Daniels, Williams, Barkley, Evans, Reed, Goedert, etc). High value status.",
       "at": "2026-09-21T00:48:34Z"
     },
     {
       "sourceId": "adam-levitan",
       "source": "Adam Levitan",
       "grade": "USEFUL",
-      "note": "Player-specific usage: Bucky Irving snap/carry/route separation vs Gainwell; Stevenson fumble punishment + Henderson need (Brown out); Marv low YPRR; Njoku/Kolar snaps to Gadsden; Aaron Jones full work. High usage data.",
+      "note": "Player-specific usage: Bucky Irving snap/carry/route separation vs Gainwell; Stevenson fumble punishment + Henderson need (Brown out); Marv low YPRR; Njoku/Kolar snaps to Gadsden; McConkey docks/Rap bullish, Puka true GTD. High usage data.",
       "at": "2026-09-21T15:50:23Z"
     },
     {
       "sourceId": "matthew-berry",
       "source": "Matthew Berry",
       "grade": "USEFUL",
-      "note": "Confirms McConkey ACTIVE/Harvey inactive + grab Coleman; DeVonta Smith RIDE OR DIE on targets/expected points. Nacua GTD pivot notes. Strong status/stashes/opinions.",
+      "note": "Confirms McConkey ACTIVE/Harvey inactive + grab Coleman; DeVonta Smith RIDE OR DIE on targets/expected points. Live reactions (Daniels). Strong status/stashes/opinions.",
       "at": "2026-09-21T14:00:00Z"
     },
     {
       "sourceId": "adam-schefter",
       "source": "Adam Schefter",
       "grade": "USEFUL",
-      "note": "Primary: Williams week-to-week/miss time + MRI/history; Daniels imaging/Mariota start; Evans hip not serious; Reed back eval. Essential IMMEDIATE facts.",
+      "note": "Primary: Williams week-to-week/miss time + MRI/history; Daniels imaging/Mariota start; Evans hip not serious; Reed back. Essential IMMEDIATE facts.",
       "at": "2026-09-21T19:30:41Z"
     },
     {
       "sourceId": "ian-rapoport",
       "source": "Ian Rapoport",
       "grade": "USEFUL",
-      "note": "Strong corroboration + original: Daniels imaging; Williams week-to-week/Bagent; Barkley MRI hope minor played through. Beat notes critical.",
+      "note": "Strong corroboration + original: Daniels imaging; Williams week-to-week/Bagent; Barkley MRI hope minor played through; Banks surgery. Beat notes critical.",
       "at": "2026-09-21T19:06:05Z"
     },
     {
@@ -617,8 +663,8 @@
       "at": "2026-09-21T10:00:00Z"
     }
   ],
-  "mirroredAt": "2026-09-21T20:09:59.823Z",
+  "mirroredAt": "2026-09-21T20:10:22.838Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-09-21T20:09:59.346Z",
+  "sourceCompletedAt": "2026-09-21T20:10:22.256Z",
   "sourceStatus": "live"
 }
