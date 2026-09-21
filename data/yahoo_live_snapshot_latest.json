@@ -1,23 +1,16 @@
 {
-  "league": "sparta",
-  "platform": "yahoo",
-  "yahoo_league_id": "102586",
-  "league_name": "PV Class of 2003 (plus 3)",
-  "team_code": "JD",
-  "team_name": "TB12 of Ass/Cousin Fucker",
-  "manager_display": "James",
-  "season": 2026,
-  "week": 2,
-  "opponent_team_name": "FOCUS",
-  "opponent_team_code": "VV",
-  "record": "0-1-0",
-  "place": "8th Place",
-  "observed_at": "2026-09-20T20:21:16-04:00",
+  "check_id": "sparta-live-check-20260921-0800",
+  "observed_at": "2026-09-21T08:34:14-04:00",
   "completed": true,
-  "check_id": "sparta-live-check-20260920-2000",
-  "check_type": "Sunday 2000 ET Live Check",
-  "source_pull": "/workspace/sparta-yahoo-live-20260920-2000",
-  "cdp_port": 9225,
+  "source": "authenticated Yahoo Agent Computer CDP :9225",
+  "league_id": "102586",
+  "team_name": "TB12 of Ass/Cousin Fucker",
+  "team_path": "/f1/102586/10",
+  "manager": "James",
+  "record": "0-1-0",
+  "standing": "8th Place",
+  "week": 2,
+  "opponent": "FOCUS",
   "scores": {
     "jd_live": 142.56,
     "jd_proj": 142.56,
@@ -25,15 +18,168 @@
     "opp_proj": 182.34,
     "opp_name": "FOCUS"
   },
-  "faab_yahoo_display": 88,
+  "week2_status": "FINAL",
   "faab_auth": 85,
+  "faab_yahoo_display": 88,
   "ir": "0/1",
   "pending_waivers": "CLEARED",
   "roster_count": 17,
+  "status_marks_on_roster": {
+    "J.K. Dobbins": "Q",
+    "Caleb Douglas": "Q"
+  },
   "critical_lineup": {
     "dobbins_slot": "W/R/T",
     "vele_slot": "BN",
+    "mayer_slot": "TE",
+    "jsn_slot": "W/R/T",
+    "worthy_slot": "BN",
     "dobbins": {
+      "slot": "W/R/T",
+      "name": "J.K. Dobbins",
+      "status": "Q",
+      "fan_pts_week": 3.6,
+      "proj": 11.79,
+      "game_time_shown": "Final",
+      "nfl_team": "Den",
+      "position": "RB"
+    },
+    "vele": {
+      "slot": "BN",
+      "name": "Devaughn Vele",
+      "status": null,
+      "fan_pts_week": 11.4,
+      "proj": 9.73,
+      "game_time_shown": "Final",
+      "nfl_team": "NO",
+      "position": "WR"
+    },
+    "mayer": {
+      "slot": "TE",
+      "name": "Michael Mayer",
+      "status": null,
+      "fan_pts_week": 5.3,
+      "proj": 8.94,
+      "game_time_shown": "Final",
+      "nfl_team": "LV",
+      "position": "TE"
+    },
+    "jsn": {
+      "slot": "W/R/T",
+      "name": "Jaxon Smith-Njigba",
+      "status": null,
+      "fan_pts_week": 42.5,
+      "proj": 19.77,
+      "game_time_shown": "Final",
+      "nfl_team": "Sea",
+      "position": "WR"
+    },
+    "worthy": {
+      "slot": "BN",
+      "name": "Xavier Worthy",
+      "status": null,
+      "fan_pts_week": 13.5,
+      "proj": 9.58,
+      "game_time_shown": "Final",
+      "nfl_team": "KC",
+      "position": "WR"
+    },
+    "douglas": {
+      "slot": "BN",
+      "name": "Caleb Douglas",
+      "status": "Q",
+      "fan_pts_week": 3.9,
+      "proj": 9.14,
+      "game_time_shown": "Final",
+      "nfl_team": "Mia",
+      "position": "WR"
+    },
+    "lineup_vs_2000": "UNCHANGED",
+    "soft_q_watch": {
+      "J.K. Dobbins": {
+        "slot": "W/R/T",
+        "mark": "Q",
+        "nuance": "Final 3.60 \u2014 ACKNOWLEDGE soft only; NOT O/OUT/IR"
+      },
+      "Caleb Douglas": {
+        "slot": "BN",
+        "mark": "Q",
+        "nuance": "Final 3.90 \u2014 ACKNOWLEDGE soft only; NOT O/OUT/IR"
+      }
+    }
+  },
+  "full_roster": [
+    {
+      "slot": "QB",
+      "name": "Jalen Hurts",
+      "nfl_team": "Phi",
+      "position": "QB",
+      "status": null,
+      "proj": 22.42,
+      "fan_pts_week": 20.16,
+      "game_time_shown": "Final W 24-20 @\u00a0Ten"
+    },
+    {
+      "slot": "RB",
+      "name": "Rhamondre Stevenson",
+      "nfl_team": "NE",
+      "position": "RB",
+      "status": null,
+      "proj": 12.89,
+      "fan_pts_week": 3.6,
+      "game_time_shown": "Final W 20-3 vs\u00a0Pit"
+    },
+    {
+      "slot": "RB",
+      "name": "Quinshon Judkins",
+      "nfl_team": "Cle",
+      "position": "RB",
+      "status": null,
+      "proj": 12.6,
+      "fan_pts_week": 9.8,
+      "game_time_shown": "Final W 23-19 @\u00a0TB"
+    },
+    {
+      "slot": "WR",
+      "name": "Ja'Marr Chase",
+      "nfl_team": "Cin",
+      "position": "WR",
+      "status": null,
+      "proj": 18.91,
+      "fan_pts_week": 26.5,
+      "game_time_shown": "Final W 20-6 @\u00a0Hou"
+    },
+    {
+      "slot": "WR",
+      "name": "Tetairoa McMillan",
+      "nfl_team": "Car",
+      "position": "WR",
+      "status": null,
+      "proj": 13.47,
+      "fan_pts_week": 15.1,
+      "game_time_shown": "Final W 34-3 @\u00a0Atl"
+    },
+    {
+      "slot": "TE",
+      "name": "Michael Mayer",
+      "nfl_team": "LV",
+      "position": "TE",
+      "status": null,
+      "proj": 8.94,
+      "fan_pts_week": 5.3,
+      "game_time_shown": "Final W 26-14 @\u00a0LAC"
+    },
+    {
+      "slot": "W/R/T",
+      "name": "Jaxon Smith-Njigba",
+      "nfl_team": "Sea",
+      "position": "WR",
+      "status": null,
+      "proj": 19.77,
+      "fan_pts_week": 42.5,
+      "game_time_shown": "Final W 31-7 @\u00a0Ari"
+    },
+    {
       "slot": "W/R/T",
       "name": "J.K. Dobbins",
       "nfl_team": "Den",
@@ -41,247 +187,99 @@
       "status": "Q",
       "proj": 11.79,
       "fan_pts_week": 3.6,
-      "game_time_shown": "Final W 20-13 vs Jax"
+      "game_time_shown": "Final W 20-13 vs\u00a0Jax"
     },
-    "vele": {
+    {
       "slot": "BN",
       "name": "Devaughn Vele",
       "nfl_team": "NO",
       "position": "WR",
       "status": null,
-      "proj": 9.72,
+      "proj": 9.73,
       "fan_pts_week": 11.4,
-      "game_time_shown": null
-    },
-    "user_acted_on_0800_recommend": true,
-    "still_actionable_dobbins_flex": false,
-    "mayer_slot": "TE",
-    "jsn_slot": "W/R/T",
-    "worthy_slot": "BN",
-    "worthy_game": "Sun 5:20 pm vs Ind (SNF)",
-    "dobbins_yahoo_status_mark": "Q",
-    "douglas_yahoo_status_mark": "Q",
-    "dobbins_pts_final": 3.6,
-    "douglas_pts_final": 3.9,
-    "jsn_pts_final": 42.5,
-    "mayer_pts_final": 5.3,
-    "vele_pts_final": 11.4,
-    "worthy_pts_live": null,
-    "worthy_proj": 9.61,
-    "lineup_vs_1948": "UNCHANGED",
-    "lineup_vs_1600": "UNCHANGED",
-    "soft_q_watch": {
-      "J.K. Dobbins": {
-        "slot": "W/R/T",
-        "mark": "Q",
-        "severity": "Final 3.60 \u2014 ACKNOWLEDGE soft only; NOT O/OUT/IR"
-      },
-      "Caleb Douglas": {
-        "slot": "BN",
-        "mark": "Q",
-        "severity": "Final 3.90 \u2014 ACKNOWLEDGE soft only; NOT O/OUT/IR"
-      }
-    }
-  },
-  "status_marks_on_roster": {
-    "J.K. Dobbins": "Q",
-    "Caleb Douglas": "Q"
-  },
-  "o_out_ir_marks": {},
-  "roster": [
-    {
-      "player": "Jalen Hurts",
-      "position": "QB",
-      "nfl_team": "Phi",
-      "slot": "QB",
-      "points": 20.16,
-      "projected_points": 22.43,
-      "status_marks": [],
-      "game_time_shown": null,
-      "game_state": null
+      "game_time_shown": "Final W 24-17 @\u00a0Bal"
     },
     {
-      "player": "Rhamondre Stevenson",
-      "position": "RB",
-      "nfl_team": "NE",
-      "slot": "RB",
-      "points": 3.6,
-      "projected_points": 12.86,
-      "status_marks": [],
-      "game_time_shown": null,
-      "game_state": null
-    },
-    {
-      "player": "Quinshon Judkins",
-      "position": "RB",
-      "nfl_team": "Cle",
-      "slot": "RB",
-      "points": 9.8,
-      "projected_points": 12.61,
-      "status_marks": [],
-      "game_time_shown": null,
-      "game_state": null
-    },
-    {
-      "player": "Ja'Marr Chase",
-      "position": "WR",
-      "nfl_team": "Cin",
-      "slot": "WR",
-      "points": 26.5,
-      "projected_points": 18.91,
-      "status_marks": [],
-      "game_time_shown": null,
-      "game_state": null
-    },
-    {
-      "player": "Tetairoa McMillan",
-      "position": "WR",
-      "nfl_team": "Car",
-      "slot": "WR",
-      "points": 15.1,
-      "projected_points": 13.44,
-      "status_marks": [],
-      "game_time_shown": null,
-      "game_state": null
-    },
-    {
-      "player": "Michael Mayer",
-      "position": "TE",
-      "nfl_team": "LV",
-      "slot": "TE",
-      "points": 5.3,
-      "projected_points": 8.95,
-      "status_marks": [],
-      "game_time_shown": null,
-      "game_state": null
-    },
-    {
-      "player": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "nfl_team": "Sea",
-      "slot": "W/R/T",
-      "points": 42.5,
-      "projected_points": 19.74,
-      "status_marks": [],
-      "game_time_shown": null,
-      "game_state": null
-    },
-    {
-      "player": "J.K. Dobbins",
-      "position": "RB",
-      "nfl_team": "Den",
-      "slot": "W/R/T",
-      "points": 3.6,
-      "projected_points": 11.79,
-      "status_marks": [
-        "Q"
-      ],
-      "game_time_shown": "Final W 20-13 vs Jax",
-      "game_state": null
-    },
-    {
-      "player": "Devaughn Vele",
-      "position": "WR",
-      "nfl_team": "NO",
       "slot": "BN",
-      "points": 11.4,
-      "projected_points": 9.72,
-      "status_marks": [],
-      "game_time_shown": null,
-      "game_state": null
-    },
-    {
-      "player": "Xavier Worthy",
-      "position": "WR",
+      "name": "Xavier Worthy",
       "nfl_team": "KC",
-      "slot": "BN",
-      "points": null,
-      "projected_points": 9.61,
-      "status_marks": [],
-      "game_time_shown": "Sun 5:20 pm vs Ind",
-      "game_state": "SNF IND@KC kick/underway ~8:20 PM ET; BN Fan Pts still \u2013"
+      "position": "WR",
+      "status": null,
+      "proj": 9.58,
+      "fan_pts_week": 13.5,
+      "game_time_shown": "Final W 33-30 vs\u00a0Ind"
     },
     {
-      "player": "Dontayvion Wicks",
-      "position": "WR",
+      "slot": "BN",
+      "name": "Dontayvion Wicks",
       "nfl_team": "Phi",
-      "slot": "BN",
-      "points": 12.4,
-      "projected_points": 8.4,
-      "status_marks": [],
-      "game_time_shown": null,
-      "game_state": null
-    },
-    {
-      "player": "Caleb Douglas",
       "position": "WR",
+      "status": null,
+      "proj": 8.37,
+      "fan_pts_week": 12.4,
+      "game_time_shown": "Final W 24-20 @\u00a0Ten"
+    },
+    {
+      "slot": "BN",
+      "name": "Caleb Douglas",
       "nfl_team": "Mia",
-      "slot": "BN",
-      "points": 3.9,
-      "projected_points": 9.12,
-      "status_marks": [
-        "Q"
-      ],
-      "game_time_shown": "Final L 13-35 @ SF",
-      "game_state": null
+      "position": "WR",
+      "status": "Q",
+      "proj": 9.14,
+      "fan_pts_week": 3.9,
+      "game_time_shown": "Final L 13-35 @\u00a0SF"
     },
     {
-      "player": "Raheim Sanders",
-      "position": "RB",
+      "slot": "BN",
+      "name": "Raheim Sanders",
       "nfl_team": "Cle",
-      "slot": "BN",
-      "points": 4.1,
-      "projected_points": 4.75,
-      "status_marks": [],
-      "game_time_shown": null,
-      "game_state": null
+      "position": "RB",
+      "status": null,
+      "proj": 4.74,
+      "fan_pts_week": 4.1,
+      "game_time_shown": "Final W 23-19 @\u00a0TB"
     },
     {
-      "player": "Braelon Allen",
-      "position": "RB",
+      "slot": "BN",
+      "name": "Braelon Allen",
       "nfl_team": "NYJ",
-      "slot": "BN",
-      "points": 8.5,
-      "projected_points": 5.95,
-      "status_marks": [],
-      "game_time_shown": null,
-      "game_state": null
-    },
-    {
-      "player": "George Holani",
       "position": "RB",
-      "nfl_team": "Sea",
+      "status": null,
+      "proj": 5.95,
+      "fan_pts_week": 9.5,
+      "game_time_shown": "Final L 17-20 vs\u00a0GB"
+    },
+    {
       "slot": "BN",
-      "points": 2.5,
-      "projected_points": 7.05,
-      "status_marks": [],
-      "game_time_shown": null,
-      "game_state": null
+      "name": "George Holani",
+      "nfl_team": "Sea",
+      "position": "RB",
+      "status": null,
+      "proj": 7.04,
+      "fan_pts_week": 2.5,
+      "game_time_shown": "Final W 31-7 @\u00a0Ari"
     },
     {
-      "player": "Evan McPherson",
-      "position": "K",
-      "nfl_team": "Cin",
       "slot": "K",
-      "points": 12.0,
-      "projected_points": 6.58,
-      "status_marks": [],
-      "game_time_shown": null,
-      "game_state": null
+      "name": "Evan McPherson",
+      "nfl_team": "Cin",
+      "position": "K",
+      "status": null,
+      "proj": 6.58,
+      "fan_pts_week": 12.0,
+      "game_time_shown": "Final W 20-6 @\u00a0Hou"
     },
     {
-      "player": "Buccaneers",
-      "position": "DEF",
-      "nfl_team": "TB",
       "slot": "DEF",
-      "points": 4.0,
-      "projected_points": 11.75,
-      "status_marks": [],
-      "game_time_shown": null,
-      "game_state": null
+      "name": "Buccaneers",
+      "nfl_team": "TB",
+      "position": "DEF",
+      "status": null,
+      "proj": 11.74,
+      "fan_pts_week": 4.0,
+      "game_time_shown": "Final L 19-23 vs\u00a0Cle"
     }
   ],
-  "new_transactions_since_1948": [],
-  "mutations": "NONE \u2014 Yahoo read-only",
-  "waf_note": "Initial pull hit Yahoo 999 Request denied; recovered after cooldown + tab cleanup; successful goto status 200."
+  "new_transactions_since_baseline_2000": [],
+  "mutations": "NONE \u2014 read-only"
 }
