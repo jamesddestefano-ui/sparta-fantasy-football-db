@@ -1,642 +1,138 @@
 {
-  "product": "LOCK Pulse",
+  "product": "Grok Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-09-22T16:11:50.395Z",
+  "generatedAt": "2026-09-22T16:40:00Z",
   "status": "live",
-  "completedAt": "2026-09-22T16:11:50.298Z",
-  "nextAtLabel": "1:11 PM ET",
-  "inWindow": true,
-  "itemCount": 14,
+  "completedAt": "2026-09-22T16:40:00Z",
+  "pulse_id": "pulse-2026-09-22T1640Z-w3-tue-pm-01",
+  "slateDate": "2026-09-27",
+  "scope": "NFL Sunday classic DFS intelligence only",
+  "decisionTimeCheckpoint": "OPENING_SLATE",
+  "sourcesChecked": [
+    "@AdamSchefter",
+    "@RapSheet",
+    "@MikeGarafolo",
+    "@TomPelissero",
+    "@JordanRaanan",
+    "@32BeatWriters",
+    "@EstablishTheRun",
+    "@adamlevitan",
+    "@evansilva",
+    "@KevinRothWx",
+    "@oneweekseason",
+    "@HilowFF",
+    "@playerqDFS",
+    "@BrandonThornNFL",
+    "@Pat_Thorman",
+    "@2Hats1Mike",
+    "team/official accounts and beat corroboration",
+    "web/X corroboration pass 2026-09-22 ~16:20Z-16:40Z"
+  ],
+  "summary": "TUE PM PASS ~2026-09-22T16:40:00Z (12:40 PM ET Tue) Week 3 Sunday Classic prep. No brand-new Tier A injury diagnoses, official practice reports, inactives, or transactions after the 15:25Z midday pulse. Giants QB Jaxson Dart MRI remains pending later Tuesday (initial MCL sprain; Garafolo/GMFB notes injuries to Dart/Burns/Nabers not as bad as initially appeared). Cardinals CB Will Johnson (neck) season-long concern holds from Schefter/LaFleur. Prior signals hold: Pierce several weeks rehab/hoping midseason + Slayton signed IND; Darnold planned Wed practice/chance Week 3; etc. New Tier C analyst notes from @adamlevitan on Saints RB opportunity distribution (Kamara vs Etienne/Miller), Panthers elevated PROE under Idzik, Rams route distribution with Nacua out, and Giants RB snap/opportunity splits. No weather flags or ownership/leverage model updates requiring items. Quiet overall. Research only; no invented ownership/salaries; no contest entry.",
+  "hardening": {
+    "priorLatestPulseId": "pulse-2026-09-22T1525Z-w3-tue-mid-01",
+    "priorCompletedAt": "2026-09-22T15:25:00Z",
+    "writeBoundary": "intelligence/ only"
+  },
+  "itemCount": 4,
   "items": [
     {
-      "id": "dart-mcl-sprain",
-      "at": "2026-09-22T03:10:58Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Giants QB Jaxson Dart suffered sprained MCL on MNF; X-rays negative, MRI Tuesday; expected to miss some time, positive overall. Ruled out mid-game.",
-      "playerIds": [
-        "jaxson-dart"
+      "id": "item-2026-09-22-levitan-saints-rb",
+      "observedAt": "2026-09-22T15:04:10Z",
+      "category": "backfield_role",
+      "player": "Alvin Kamara / Travis Etienne / Kendre Miller",
+      "team": "NO",
+      "opponent": null,
+      "claim": "Saints signed Etienne to 4-year/$48M ($28M guaranteed) on first day of free agency; Week 1 even split with Miller; Week 2 Miller healthy scratch and Kamara (31) received 15 opportunities vs Etienne 11. Kamara one of worst RBs by metrics last year and 1.7 YPC / 1.4 YPR in Week 2.",
+      "classification": "analyst_opinion",
+      "sourceTier": "C",
+      "sourceAccount": "@adamlevitan",
+      "sourceUrl": "https://x.com/adamlevitan/status/2102413654859878536",
+      "sourceTimestamp": "2026-09-22T15:04:10Z",
+      "corroboration": [],
+      "confidence": "medium",
+      "dfsImpact": "Backfield role uncertainty and potential inefficiency for NO RBs; monitor for continued Kamara volume vs Etienne efficiency and any Miller reactivation. Relevant for classic DFS salary/value and GPP leverage decisions.",
+      "platforms": [
+        "DK",
+        "FD"
       ],
-      "players": [
-        "Jaxson Dart"
+      "recommendedFollowup": "Track Week 3 practice reports and any coach comments on NO backfield hierarchy; reassess opportunity share after next game."
+    },
+    {
+      "id": "item-2026-09-22-levitan-panthers-proe",
+      "observedAt": "2026-09-22T14:48:30Z",
+      "category": "pace",
+      "player": "Bryce Young",
+      "team": "CAR",
+      "opponent": null,
+      "claim": "Panthers never trailed, dominated, won 34-3 yet Bryce Young still dropped back 39 times vs 17 called runs. Under new playcaller Brad Idzik, Panthers 4th in Pass Rate Over Expectation (only DAL, BUF, SF higher).",
+      "classification": "analyst_opinion",
+      "sourceTier": "C",
+      "sourceAccount": "@adamlevitan",
+      "sourceUrl": "https://x.com/adamlevitan/status/2102409710586700020",
+      "sourceTimestamp": "2026-09-22T14:48:30Z",
+      "corroboration": [],
+      "confidence": "medium",
+      "dfsImpact": "Elevated pass volume/PROE supports higher team pass attempts and upside for CAR pass catchers/QB even in positive game scripts. Useful for stacking and game-environment modeling.",
+      "platforms": [
+        "DK",
+        "FD"
       ],
-      "url": "https://x.com/RapSheet/status/2102234170088996973",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-dart-week2",
-      "signal": "OUT",
-      "priorStatus": "ACTIVE",
-      "newStatus": "SPRAINED_MCL_MISS_TIME",
-      "why": "Knee injury during game vs Rams; initial exams confirm MCL sprain.",
-      "implication": "Jameis Winston elevated; Giants offense limited short-term.",
-      "opportunity": "Backup QB snaps; potential RB/pass-catcher volume shifts if scheme changes",
+      "recommendedFollowup": "Monitor whether elevated PROE persists in Week 3 and against different opponent scripts."
+    },
+    {
+      "id": "item-2026-09-22-levitan-rams-routes",
+      "observedAt": "2026-09-22T13:17:24Z",
+      "category": "route_role",
+      "player": "Terrance Ferguson / Davante Adams / others",
+      "team": "LAR",
+      "opponent": null,
+      "claim": "With Puka Nacua (hip) out, Terrance Ferguson ran the 2nd-most routes on the team. On 33 Matthew Stafford dropbacks: Adams 27, Ferguson 23, Mumpfield 21, Smith 19, Atwell 10, Parkinson 10, Allen 5, Higbee 4.",
+      "classification": "analyst_opinion",
+      "sourceTier": "C",
+      "sourceAccount": "@adamlevitan",
+      "sourceUrl": "https://x.com/adamlevitan/status/2102386782411292813",
+      "sourceTimestamp": "2026-09-22T13:17:24Z",
+      "corroboration": [],
+      "confidence": "medium",
+      "dfsImpact": "Route share insight for LAR WR depth if Nacua limited or out Week 3; Ferguson and Mumpfield saw elevated opportunity. Relevant for late-swap and ownership if Nacua status changes.",
+      "platforms": [
+        "DK",
+        "FD"
+      ],
+      "recommendedFollowup": "Monitor Nacua practice participation and official injury report; track route participation if he sits or is limited."
+    },
+    {
+      "id": "item-2026-09-22-levitan-giants-rb",
+      "observedAt": "2026-09-22T13:07:43Z",
+      "category": "backfield_role",
+      "player": "Cam Skattebo / Devin Singletary / Najee Harris / Tyrone Tracy",
+      "team": "NYG",
+      "opponent": null,
+      "claim": "Giants had all four RBs active; Tyrone Tracy special-teamer only (1 offensive snap). Snaps/opportunities: Skattebo 34 snaps / 16 opportunities; Singletary 15 / 4; Harris 8 / 4.",
+      "classification": "analyst_opinion",
+      "sourceTier": "C",
+      "sourceAccount": "@adamlevitan",
+      "sourceUrl": "https://x.com/adamlevitan/status/2102384348272201964",
+      "sourceTimestamp": "2026-09-22T13:07:43Z",
       "corroboration": [
-        "@AdamSchefter",
-        "https://www.espn.com/nfl/story/_/id/50001578/giants-qb-jaxson-dart-exits-mnf-game-vs-rams-knee-injury"
+        "Jordan Raanan snap counts"
       ],
-      "supportingSources": [
-        "adam-schefter"
+      "confidence": "medium",
+      "dfsImpact": "Skattebo clear lead back in this game; committee elements remain. Useful baseline for NYG RB roles with Dart status uncertain and Winston potentially starting.",
+      "platforms": [
+        "DK",
+        "FD"
       ],
-      "priority": "IMMEDIATE"
-    },
-    {
-      "id": "nacua-inactive-w2",
-      "at": "2026-09-21T22:57:20Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "Puka Nacua (hip) officially inactive for MNF vs Giants. Najee Harris active for Giants debut.",
-      "playerIds": [
-        "puka-nacua"
-      ],
-      "players": [
-        "Puka Nacua"
-      ],
-      "url": "https://x.com/EstablishTheRun/status/2102170339539341748",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-nacua-week2",
-      "signal": "INACTIVE",
-      "priorStatus": "GTD",
-      "newStatus": "INACTIVE",
-      "why": "Hip injury; confirmed inactive pre-MNF.",
-      "implication": "Rams WR targets redistribute; Adams primary, depth WRs/TEs elevated.",
-      "opportunity": "Routes/targets to Adams, Ferguson, Mumpfield, Parkinson",
-      "beneficiaries": [
-        "davante-adams"
-      ],
-      "corroboration": [
-        "@AdamSchefter",
-        "https://x.com/MatthewBerryTMR/status/2102186114479960376"
-      ],
-      "supportingSources": [
-        "matthew-berry",
-        "adam-schefter"
-      ],
-      "priority": "IMMEDIATE"
-    },
-    {
-      "id": "pierce-heel-several-weeks",
-      "at": "2026-09-22T00:25:01Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Colts WR Alec Pierce out several weeks rehabbing aggravated heel (prior surgery); IR likely, midseason return possible if no further surgery.",
-      "playerIds": [
-        "alec-pierce"
-      ],
-      "players": [
-        "Alec Pierce"
-      ],
-      "url": "https://x.com/RapSheet/status/2102192408511320237",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-pierce-week2",
-      "signal": "OUT",
-      "priorStatus": "INJURED",
-      "newStatus": "SEVERAL_WEEKS_IR_LIKELY",
-      "why": "Aggravated surgically repaired heel; rehab preferred over immediate surgery.",
-      "implication": "WR depth chart opens; Keenan Allen or others benefit.",
-      "opportunity": "Targets/routes to remaining Colts WRs",
-      "corroboration": [
-        "https://www.espn.com/nfl/story/_/id/50001573/sources-colts-pierce-weeks-hoping-return-midseason"
-      ],
-      "supportingSources": [
-        "establish-the-run"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "goedert-mcl-few-weeks",
-      "at": "2026-09-21T23:18:49Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Eagles TE Dallas Goedert suffered MCL sprain; likely out few weeks. Team re-signed Zach Ertz to PS with intent to promote.",
-      "playerIds": [
-        "dallas-goedert"
-      ],
-      "players": [
-        "Dallas Goedert"
-      ],
-      "url": "https://x.com/AdamSchefter/status/2102175747272065333",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-goedert-week2",
-      "signal": "OUT",
-      "priorStatus": "QUESTIONABLE",
-      "newStatus": "MCL_FEW_WEEKS",
-      "why": "Knee injury Week 2 vs Titans; confirmed sprain.",
-      "implication": "TE targets open; Ertz/Mundt/Wicks elevated short-term.",
-      "opportunity": "TE snaps/routes/red-zone to backups",
-      "beneficiaries": [
-        "dontayvion-wicks"
-      ],
-      "corroboration": [
-        "@RapSheet",
-        "https://www.espn.com/nfl/story/_/id/50000641/sources-eagles-te-dallas-goedert-mcl-sprain"
-      ],
-      "supportingSources": [
-        "ian-rapoport",
-        "establish-the-run"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "williams-hamstring-w2w",
-      "at": "2026-09-21T20:13:00Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Bears QB Caleb Williams week-to-week right hamstring; avoided major injury per MRI, won't practice this week but not ruled out for Week 3 MNF vs Eagles. Bagent backup.",
-      "playerIds": [
-        "caleb-williams"
-      ],
-      "players": [
-        "Caleb Williams"
-      ],
-      "url": "https://www.foxsports.com/articles/nfl/bears-qb-caleb-williams-is-week-to-week-with-hamstring-injury-coach-ben-johnson-says",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-caleb-week2",
-      "signal": "QUESTIONABLE",
-      "priorStatus": "OUT_GAME",
-      "newStatus": "WEEK_TO_WEEK",
-      "why": "Non-contact scramble pull; positive MRI, coach optimistic on recovery speed.",
-      "implication": "Monitor practice; possible sit Week 3 precaution.",
-      "opportunity": "Bagent if out; Bears skill players docked if backup",
-      "corroboration": [
-        "https://www.cbssports.com/nfl/news/caleb-williams-hamstring-injury-bears/"
-      ],
-      "supportingSources": [
-        "establish-the-run",
-        "matthew-berry"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "daniels-elbow-miss-time",
-      "at": "2026-09-21T16:55:00Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Commanders QB Jayden Daniels dislocated left elbow (repeat); X-rays negative, imaging/specialists ongoing; miss significant/Week 3+ time, Mariota starts. Surgery possible.",
-      "playerIds": [
-        "jayden-daniels"
-      ],
-      "players": [
-        "Jayden Daniels"
-      ],
-      "url": "https://www.cbssports.com/nfl/news/caleb-williams-jayden-daniels-injured-week-2-outlook/",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-daniels-week2",
-      "signal": "OUT",
-      "priorStatus": "ACTIVE",
-      "newStatus": "DISLOCATED_ELBOW_MISS_TIME",
-      "why": "Freak stumble/brace fall vs Cowboys; same elbow as prior dislocation.",
-      "implication": "Mariota QB1 short-term; Commanders offense downgraded.",
-      "opportunity": "Backup QB; potential skill player volume if more pass-heavy or checkdowns",
-      "corroboration": [
-        "@RapSheet",
-        "https://www.nytimes.com/athletic/7617818/2026/09/21/jayden-daniels-injury-update-commanders/"
-      ],
-      "supportingSources": [
-        "ian-rapoport",
-        "establish-the-run",
-        "matthew-berry"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "mcconkey-active-harvey-inactive",
-      "at": "2026-09-20T18:39:05Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Ladd McConkey officially ACTIVE (cracked rib, flak jacket). RJ Harvey inactive (hamstring); grab Jonah Coleman.",
-      "playerIds": [
-        "ladd-mcconkey",
-        "rj-harvey"
-      ],
-      "players": [
-        "Ladd McConkey",
-        "RJ Harvey"
-      ],
-      "url": "https://x.com/MatthewBerryTMR/status/2101742964590411872",
-      "kind": "INJURY_STATUS",
-      "eventId": "status-mcconkey-harvey-week2",
-      "signal": "ACTIVE",
-      "priorStatus": "GTD/NOT_EXPECTED",
-      "newStatus": "ACTIVE/INACTIVE",
-      "why": "Optimism confirmed for McConkey; Harvey not expected/out.",
-      "implication": "McConkey playable with docks; Coleman stash/handcuff elevated.",
-      "opportunity": "McConkey routes; Coleman carries/snaps behind Harvey",
-      "corroboration": [
-        "@EstablishTheRun",
-        "https://x.com/EstablishTheRun/status/2101650443772543042"
-      ],
-      "supportingSources": [
-        "establish-the-run",
-        "adam-levitan"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "etr-sunday-statuses",
-      "at": "2026-09-20T12:31:27Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "Week 2 GTD/OUT summary: McConkey optimism (flak), Nacua GTD, Harvey not expected, Olave/Burrow expected, Flowers/Pittman OUT. Later Nacua inactive confirmed.",
-      "playerIds": [
-        "ladd-mcconkey",
-        "puka-nacua",
-        "rj-harvey",
-        "chris-olave",
-        "joe-burrow",
-        "zay-flowers",
-        "michael-pittman"
-      ],
-      "players": [
-        "Ladd McConkey",
-        "Puka Nacua",
-        "RJ Harvey",
-        "Chris Olave",
-        "Joe Burrow",
-        "Zay Flowers",
-        "Michael Pittman Jr."
-      ],
-      "url": "https://x.com/EstablishTheRun/status/2101650443772543042",
-      "kind": "INJURY_STATUS",
-      "eventId": "status-summary-week2-sunday",
-      "signal": "MIXED",
-      "priorStatus": "VARIOUS",
-      "newStatus": "UPDATED",
-      "why": "Aggregated beat/practice reports pre-Sunday games.",
-      "implication": "Clear start/sit signals; Flowers/Pittman handcuffs up.",
-      "opportunity": "Bateman etc for Flowers; Bernard for Pittman",
-      "corroboration": [
-        "@adamlevitan"
-      ],
-      "supportingSources": [
-        "adam-levitan",
-        "matthew-berry"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "levitan-saints-rb-usage",
-      "at": "2026-09-22T15:04:10Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
-      "outlet": "Establish The Run",
-      "text": "Saints: Etienne big FA deal but Week 2 Kendre Miller healthy scratch; Kamara 15 opps vs Etienne 11. Kamara inefficient (1.7 YPC, 1.4 YPR).",
-      "playerIds": [
-        "alvin-kamara",
-        "travis-etienne",
-        "kendre-miller"
-      ],
-      "players": [
-        "Alvin Kamara",
-        "Travis Etienne Jr.",
-        "Kendre Miller"
-      ],
-      "url": "https://x.com/adamlevitan/status/2102413654859878536",
-      "kind": "USAGE_DATA",
-      "eventId": "usage-saints-rb-week2",
-      "signal": "DOWNGRADE",
-      "why": "Despite contract, Etienne secondary; Miller scratched.",
-      "implication": "Kamara lead back short-term despite poor efficiency; Etienne stash only.",
-      "opportunity": "Kamara carries/targets lead; Etienne committee",
-      "conflict": "Contract implied bigger role for Etienne",
-      "beneficiaries": [
-        "alvin-kamara"
-      ],
-      "supportingSources": [
-        "establish-the-run"
-      ],
-      "priority": "NORMAL"
-    },
-    {
-      "id": "levitan-kyren-rz",
-      "at": "2026-09-22T13:25:54Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
-      "outlet": "Establish The Run",
-      "text": "Kyren Williams 7 inside-20 opps this season, Blake Corum 0 (vs 60-27 last year). Clear RZ/goal-line monopoly.",
-      "playerIds": [
-        "kyren-williams"
-      ],
-      "players": [
-        "Kyren Williams"
-      ],
-      "url": "https://x.com/adamlevitan/status/2102388923825893765",
-      "kind": "USAGE_DATA",
-      "eventId": "usage-kyren-rz-2026",
-      "signal": "UPGRADE",
-      "why": "Early season red-zone data shows total control.",
-      "implication": "Kyren locked as every-down/RZ back; Corum irrelevant.",
-      "opportunity": "Inside-20/goal-line carries monopoly",
-      "priority": "NORMAL"
-    },
-    {
-      "id": "levitan-nacua-out-routes",
-      "at": "2026-09-22T13:17:24Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
-      "outlet": "Establish The Run",
-      "text": "With Nacua out MNF: on 33 Stafford dropbacks - Adams 27 routes, Terrance Ferguson 23, Konata Mumpfield 21, Xavier Smith 19, Parkinson/Atwell 10.",
-      "playerIds": [
-        "puka-nacua",
-        "davante-adams"
-      ],
-      "players": [
-        "Puka Nacua",
-        "Davante Adams"
-      ],
-      "url": "https://x.com/adamlevitan/status/2102386782411292813",
-      "kind": "USAGE_DATA",
-      "eventId": "usage-rams-wr-nacua-out",
-      "signal": "UPGRADE",
-      "why": "Route tree data post-Nacua inactive.",
-      "implication": "Adams WR1 locked; depth pieces (Ferguson/Mumpfield/Parkinson) viable pivots/flex.",
-      "opportunity": "Routes/targets redistribution",
-      "beneficiaries": [
-        "davante-adams"
-      ],
-      "corroboration": [
-        "https://x.com/MatthewBerryTMR/status/2102186114479960376"
-      ],
-      "supportingSources": [
-        "matthew-berry"
-      ],
-      "priority": "NORMAL"
-    },
-    {
-      "id": "levitan-skattebo-snaps",
-      "at": "2026-09-22T13:07:43Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
-      "outlet": "Establish The Run",
-      "text": "Giants RBs MNF (Nacua out context): Cam Skattebo 34 snaps/16 opps lead; Singletary 15/4; Najee Harris 8/4. Tracy ST only.",
-      "playerIds": [
-        "cam-skattebo"
-      ],
-      "players": [
-        "Cam Skattebo"
-      ],
-      "url": "https://x.com/adamlevitan/status/2102384348272201964",
-      "kind": "USAGE_DATA",
-      "eventId": "usage-giants-rb-mnf",
-      "signal": "UPGRADE",
-      "why": "Clear snap/opportunity lead with all RBs active.",
-      "implication": "Skattebo emerging lead back; roster priority.",
-      "opportunity": "Snaps, carries, opportunities dominant",
-      "beneficiaries": [
-        "cam-skattebo"
-      ],
-      "priority": "NORMAL"
-    },
-    {
-      "id": "berry-puka-pivots",
-      "at": "2026-09-22T00:00:01Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Puka out: anyone's guess attack. Prefer Parkinson flex pivot; else Malachi Fields then Konata Mumpfield at WR.",
-      "playerIds": [
-        "puka-nacua",
-        "davante-adams"
-      ],
-      "players": [
-        "Puka Nacua",
-        "Davante Adams"
-      ],
-      "url": "https://x.com/MatthewBerryTMR/status/2102186114479960376",
-      "kind": "ANALYST_OPINION",
-      "eventId": "opinion-puka-pivots-mnf",
-      "signal": "UPGRADE",
-      "why": "Nacua inactive creates open routes.",
-      "implication": "Stream depth Rams pass-catchers in flex.",
-      "opportunity": "Potential routes/targets to listed",
-      "conflict": "Levitan data favors Ferguson over some named",
-      "beneficiaries": [
-        "davante-adams"
-      ],
-      "corroboration": [
-        "@adamlevitan"
-      ],
-      "supportingSources": [
-        "adam-levitan"
-      ],
-      "priority": "NORMAL"
-    },
-    {
-      "id": "berry-devonta-love",
-      "at": "2026-09-21T14:00:00Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "DeVonta Smith ride-or-die: 27%/38% target shares first two games; leads WRs in expected PPR points per Late Round model.",
-      "playerIds": [
-        "devonta-smith"
-      ],
-      "players": [
-        "DeVonta Smith"
-      ],
-      "url": "https://x.com/MatthewBerryTMR/status/2102035117434655201",
-      "kind": "ANALYST_OPINION",
-      "eventId": "opinion-devonta-week2",
-      "signal": "LOVE",
-      "why": "Elite target share and expected points early.",
-      "implication": "Must-start WR1/2; hold through any noise.",
-      "opportunity": "High target share",
-      "priority": "NORMAL"
+      "recommendedFollowup": "Reassess after Dart MRI and any Week 3 practice/injury report clarity on backfield usage with backup QB."
     }
   ],
-  "sundayMode": false,
-  "sourceNotes": [
-    {
-      "sourceId": "establish-the-run",
-      "source": "Establish The Run",
-      "grade": "USEFUL",
-      "note": "Strong Sunday AM GTD/expected/OUT aggregation (McConkey optimism, Nacua GTD, Harvey not expected, Olave/Burrow expected, Flowers/Pittman OUT) + Nacua inactive confirmation + postgame injury watchlist + Week 3 waiver injury beneficiaries. Hi",
-      "at": "2026-09-22T16:00:00Z"
-    },
-    {
-      "sourceId": "adam-levitan",
-      "source": "Adam Levitan",
-      "grade": "USEFUL",
-      "note": "Player-specific post-MNF usage: Skattebo snap/opp lead; Nacua-out route tree (Adams/Ferguson/Mumpfield); Kyren RZ monopoly; Saints RB (Kamara>Etienne, Miller scratch); Johnston horrific YPRR. High opportunity focus.",
-      "at": "2026-09-22T16:00:00Z"
-    },
-    {
-      "sourceId": "matthew-berry",
-      "source": "Matthew Berry",
-      "grade": "USEFUL",
-      "note": "Confirms McConkey ACTIVE/Harvey inactive + Coleman grab; Puka out pivots (Parkinson/Fields/Mumpfield); DeVonta Smith love/ride-or-die; Happy Hour injury/recap/waivers (Caleb/Jayden/Saquon/Loveland). Strong status/opinions/stashes.",
-      "at": "2026-09-22T16:00:00Z"
-    },
-    {
-      "sourceId": "adam-schefter",
-      "source": "Adam Schefter",
-      "grade": "USEFUL",
-      "note": "Primary facts: Dart MCL; Goedert few weeks MCL + Ertz PS; Nacua inactive; Daniels/Mariota; Caleb Williams week-to-week hamstring. Essential IMMEDIATE injury sourcing.",
-      "at": "2026-09-22T16:00:00Z"
-    },
-    {
-      "sourceId": "ian-rapoport",
-      "source": "Ian Rapoport",
-      "grade": "USEFUL",
-      "note": "Strong corroboration + original: Dart MCL details/MRI; Pierce several weeks heel + rehab/IR likely; Goedert MCL few weeks; Daniels imaging/specialists + Mariota; Nacua/Nabers notes; Caleb week-to-week. Beat notes critical.",
-      "at": "2026-09-22T16:00:00Z"
-    },
-    {
-      "sourceId": "establish-the-run",
-      "source": "Establish The Run",
-      "grade": "USEFUL",
-      "note": "Strong Sunday AM GTD/expected/OUT aggregation (McConkey optimism, Nacua GTD, Harvey not expected, Olave/Burrow expected, Flowers/Pittman OUT) + Nacua inactive confirmation + postgame injury watchlist (Daniels, Williams, Barkley, Goedert, Nj",
-      "at": "2026-09-22T15:00:00Z"
-    },
-    {
-      "sourceId": "adam-levitan",
-      "source": "Adam Levitan",
-      "grade": "USEFUL",
-      "note": "Player-specific post-MNF usage: Skattebo snap/opp lead; Nacua-out route tree (Adams/Ferguson/Mumpfield); Kyren RZ monopoly; Johnston horrific YPRR; Saints RB (Kamara>Etienne, Miller scratch); prior McConkey docks/Harvey Coleman look. High o",
-      "at": "2026-09-22T15:00:00Z"
-    },
-    {
-      "sourceId": "matthew-berry",
-      "source": "Matthew Berry",
-      "grade": "USEFUL",
-      "note": "Confirms McConkey ACTIVE/Harvey inactive + Coleman grab; Puka out pivots (Parkinson/Fields/Mumpfield); DeVonta Smith love/ride-or-die; Happy Hour injury/recap/waivers (Caleb/Jayden/Saquon/Loveland). Strong status/opinions/stashes.",
-      "at": "2026-09-22T15:00:00Z"
-    },
-    {
-      "sourceId": "adam-schefter",
-      "source": "Adam Schefter",
-      "grade": "USEFUL",
-      "note": "Primary facts: Dart MCL; Goedert few weeks MCL + Ertz PS; Nacua inactive; Daniels/Mariota; Caleb Williams week-to-week hamstring. Essential IMMEDIATE injury sourcing.",
-      "at": "2026-09-22T15:00:00Z"
-    },
-    {
-      "sourceId": "ian-rapoport",
-      "source": "Ian Rapoport",
-      "grade": "USEFUL",
-      "note": "Strong corroboration + original: Dart MCL details/MRI; Pierce several weeks heel + rehab/IR likely; Goedert MCL few weeks; Daniels imaging/specialists + Mariota; Nacua/Nabers notes; Caleb week-to-week. Beat notes critical.",
-      "at": "2026-09-22T15:00:00Z"
-    },
-    {
-      "sourceId": "establish-the-run",
-      "source": "Establish The Run",
-      "grade": "USEFUL",
-      "note": "Sunday AM GTD/expected/out summary (McConkey optimism, Nacua GTD, Harvey not expected, Olave/Burrow expected, Flowers/Pittman OUT) + Nacua inactive + projections. Strong status aggregation.",
-      "at": "2026-09-22T14:00:00Z"
-    },
-    {
-      "sourceId": "adam-levitan",
-      "source": "Adam Levitan",
-      "grade": "USEFUL",
-      "note": "Player-specific usage post-MNF: Skattebo snap/opp lead; Nacua-out route tree (Adams/Ferguson/Mumpfield); Kyren RZ monopoly; Johnston horrific YPRR; prior Njoku/Kolar to Gadsden. High opportunity focus.",
-      "at": "2026-09-22T14:00:00Z"
-    },
-    {
-      "sourceId": "matthew-berry",
-      "source": "Matthew Berry",
-      "grade": "USEFUL",
-      "note": "Confirms McConkey ACTIVE/Harvey inactive + Coleman grab; Puka out pivots (Parkinson/Fields/Mumpfield); DeVonta Smith love/ride-or-die; Bernard stash; Happy Hour injury/recap/waivers focus. Strong status/opinions.",
-      "at": "2026-09-22T14:00:00Z"
-    },
-    {
-      "sourceId": "adam-schefter",
-      "source": "Adam Schefter",
-      "grade": "USEFUL",
-      "note": "Primary facts: Dart MCL; Goedert few weeks MCL + Ertz PS; Nacua inactive context; Njoku/Kolar IR; Daniels/Mariota. Essential IMMEDIATE injury sourcing.",
-      "at": "2026-09-22T14:00:00Z"
-    },
-    {
-      "sourceId": "ian-rapoport",
-      "source": "Ian Rapoport",
-      "grade": "USEFUL",
-      "note": "Strong corroboration + original: Dart MCL details/MRI; Pierce several weeks heel + rehab; Goedert MCL few weeks; Daniels imaging/specialists + Mariota; Nacua inactive; Nabers return. Beat notes critical.",
-      "at": "2026-09-22T14:00:00Z"
-    },
-    {
-      "sourceId": "establish-the-run",
-      "source": "Establish The Run",
-      "grade": "USEFUL",
-      "note": "Sunday AM GTD/expected/out summary (McConkey optimism, Nacua GTD, Harvey not expected, Olave/Burrow expected, Flowers/Pittman OUT) + Nacua inactive + postgame injury watchlist (Daniels, Williams, Barkley, Goedert, Njoku etc).",
-      "at": "2026-09-22T12:00:00Z"
-    },
-    {
-      "sourceId": "adam-levitan",
-      "source": "Adam Levitan",
-      "grade": "USEFUL",
-      "note": "Player-specific usage: Bucky Irving snap/carry/route separation vs Gainwell; Stevenson fumble punishment + Henderson need (Brown out); Njoku/Kolar snaps to Gadsden; Johnston horrific YPRR; Skattebo lead; McConkey docks/Rap bullish, Puka tru",
-      "at": "2026-09-22T13:00:00Z"
-    },
-    {
-      "sourceId": "matthew-berry",
-      "source": "Matthew Berry",
-      "grade": "USEFUL",
-      "note": "Confirms McConkey ACTIVE/Harvey inactive + grab Coleman; Puka out pivots (Parkinson/Fields/Mumpford); DeVonta Smith love; Happy Hour injury/recap focus on Caleb/Jayden/Saquon/Loveland. Strong status/stashes/opinions.",
-      "at": "2026-09-22T13:00:00Z"
-    },
-    {
-      "sourceId": "adam-schefter",
-      "source": "Adam Schefter",
-      "grade": "USEFUL",
-      "note": "Primary facts: Nacua inactive; Goedert few weeks MCL + Ertz PS; Williams miss time; Dart/Nabers Q during MNF then Dart OUT/Nabers returned; Daniels/Mariota. Essential IMMEDIATE.",
-      "at": "2026-09-22T12:00:00Z"
-    },
-    {
-      "sourceId": "ian-rapoport",
-      "source": "Ian Rapoport",
-      "grade": "USEFUL",
-      "note": "Strong corroboration + original: Daniels imaging/specialists + Mariota; Goedert MCL few weeks; Nacua inactive; Nabers/Dart Q then updates; Pierce several weeks heel; Barkley notes. Beat notes critical.",
-      "at": "2026-09-22T12:00:00Z"
-    },
-    {
-      "sourceId": "establish-the-run",
-      "source": "Establish The Run",
-      "grade": "USEFUL",
-      "note": "Sunday AM GTD/expected/out summary (McConkey optimism, Nacua GTD, Harvey not expected, Olave/Burrow expected, Flowers/Pittman OUT) + Nacua inactive confirmation + postgame injury watchlist (Daniels, Williams, Barkley, Goedert, Njoku etc).",
-      "at": "2026-09-22T12:00:00Z"
-    },
-    {
-      "sourceId": "adam-levitan",
-      "source": "Adam Levitan",
-      "grade": "USEFUL",
-      "note": "Player-specific usage: Bucky Irving snap/carry/route separation vs Gainwell; Stevenson fumble punishment + Henderson need (Brown out); Njoku/Kolar snaps to Gadsden; Johnston horrific YPRR. High usage focus.",
-      "at": "2026-09-22T12:00:00Z"
-    },
-    {
-      "sourceId": "matthew-berry",
-      "source": "Matthew Berry",
-      "grade": "USEFUL",
-      "note": "Confirms McConkey ACTIVE/Harvey inactive + grab Coleman; Puka out pivots (Parkinson/Fields/Mumpford); Bernard stash love; Happy Hour injury/recap focus. Strong status/stashes/opinions.",
-      "at": "2026-09-22T12:00:00Z"
-    },
-    {
-      "sourceId": "establish-the-run",
-      "source": "Establish The Run",
-      "grade": "USEFUL",
-      "note": "Sunday AM GTD/expected/out summary (McConkey optimism, Nacua GTD, Harvey not expected, Olave/Burrow expected, Flowers/Pittman OUT) + postgame long injury watchlist (Daniels, Williams, Barkley, Goedert, Njoku etc) + Nacua inactive confirmati",
-      "at": "2026-09-22T12:00:00Z"
-    }
-  ],
-  "mirroredAt": "2026-09-22T16:11:50.886Z",
-  "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-09-22T16:11:50.298Z",
-  "sourceStatus": "live"
+  "schemaVersion": "1.0",
+  "startedAt": "2026-09-22T16:20:00Z",
+  "mirroredAt": "2026-09-22T16:26:51-04:00",
+  "sourceEndpoint": "/workspace/grok_pulse_latest.json",
+  "sourceCompletedAt": "2026-09-22T16:40:00Z",
+  "sourceStatus": "live",
+  "mirrored_by_check_id": "sparta-live-check-20260922-1600",
+  "jd_assessment": "QUIET \u2014 Tier C Levitan analyst notes (NO/CAR/LAR/NYG) none JD-owned material; no Tier A injury/txn for JD. Suppress."
 }
