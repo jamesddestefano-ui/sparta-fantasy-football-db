@@ -1,21 +1,23 @@
 {
-  "observed_at": "2026-09-21T16:25:00-04:00",
-  "pull_completed_at": "2026-09-21T16:25:00-04:00",
+  "observed_at": "2026-09-21T20:25:09-04:00",
+  "pull_completed_at": "2026-09-21T20:26:34-04:00",
   "timezone_note": "observed_at is America/New_York. Yahoo game times/transaction clocks display PDT.",
   "cdp_port": 9225,
-  "source": "authenticated Yahoo Agent Computer",
-  "check_id": "sparta-live-check-20260921-1600",
+  "source": "authenticated Yahoo Agent Computer CDP :9225",
+  "check_id": "sparta-live-check-20260921-2000",
   "completed": true,
-  "mutations": "NONE — read-only",
-  "waf_note": null,
+  "yahoo_ok": true,
+  "mutations": "NONE \u2014 read-only",
+  "waf_note": "; networkidle retry err: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://football.fantasysports.yahoo.com/f1/102586/10\", waiting until \"networkidle\"\n",
   "fa_spot_checks_skipped": true,
-  "fa_spot_checks_skip_reason": "WAF risk — skip extra FA spot-checks per Monday 1600 brief",
+  "fa_spot_checks_skip_reason": "WAF risk \u2014 skip extra FA spot-checks per Monday 2000 brief",
   "league": {
     "name": "PV Class of 2003 (plus 3)",
     "id": "102586",
     "url": "https://football.fantasysports.yahoo.com/f1/102586/10",
     "confirmed": true
   },
+  "yahoo_league_id": "102586",
   "team": {
     "name": "TB12 of Ass/Cousin Fucker",
     "path": "/f1/102586/10",
@@ -33,10 +35,11 @@
     "opp_proj": 182.34,
     "opp_name": "FOCUS"
   },
+  "week2_status": "FINAL",
   "faab_budget_remaining": 88,
   "faab_yahoo_display": 88,
   "faab_auth": 85,
-  "faab_note": "Yahoo display Waiver Budget $88. Auth $85 under Billy Enright min-$1 rule (unchanged vs 1200).",
+  "faab_note": "Yahoo display Waiver Budget. Auth baseline $85 when display $88 (Billy Enright min-$1).",
   "ir_used": 0,
   "ir_total": 1,
   "pending_waivers": [
@@ -68,7 +71,7 @@
       "raw": "Waiver 3 (Sep 23): Bid $1 for Will Shipley, Drop George Holani"
     }
   ],
-  "pending_waivers_status": "PENDING (3) — Sep 23 Wilson $5 / Bigsby $3 / Shipley $1 all drop Holani",
+  "pending_waivers_status": "PENDING (3)",
   "roster_count": 17,
   "full_roster": [
     {
@@ -247,623 +250,654 @@
     "Caleb Douglas": "Q"
   },
   "critical_lineup": {
-    "hurts_slot": "QB",
-    "hurts": {
-      "slot": "QB",
-      "name": "Jalen Hurts",
-      "nfl_team": "Phi",
-      "position": "QB",
-      "status": null,
-      "proj": 22.42,
-      "fan_pts_week": 20.16,
-      "game_time_shown": "Final W 24-20 @ Ten"
-    },
-    "stevenson_slot": "RB",
-    "stevenson": {
-      "slot": "RB",
-      "name": "Rhamondre Stevenson",
-      "nfl_team": "NE",
-      "position": "RB",
-      "status": null,
-      "proj": 12.89,
-      "fan_pts_week": 3.6,
-      "game_time_shown": "Final W 20-3 vs Pit"
-    },
-    "judkins_slot": "RB",
-    "judkins": {
-      "slot": "RB",
-      "name": "Quinshon Judkins",
-      "nfl_team": "Cle",
-      "position": "RB",
-      "status": null,
-      "proj": 12.6,
-      "fan_pts_week": 9.8,
-      "game_time_shown": "Final W 23-19 @ TB"
-    },
-    "chase_slot": "WR",
-    "chase": {
-      "slot": "WR",
-      "name": "Ja'Marr Chase",
-      "nfl_team": "Cin",
-      "position": "WR",
-      "status": null,
-      "proj": 18.91,
-      "fan_pts_week": 26.5,
-      "game_time_shown": "Final W 20-6 @ Hou"
-    },
-    "mayer_slot": "TE",
-    "mayer": {
-      "slot": "TE",
-      "name": "Michael Mayer",
-      "nfl_team": "LV",
-      "position": "TE",
-      "status": null,
-      "proj": 8.94,
-      "fan_pts_week": 5.3,
-      "game_time_shown": "Final W 26-14 @ LAC"
-    },
-    "jsn_slot": "W/R/T",
-    "jsn": {
-      "slot": "W/R/T",
-      "name": "Jaxon Smith-Njigba",
-      "nfl_team": "Sea",
-      "position": "WR",
-      "status": null,
-      "proj": 19.77,
-      "fan_pts_week": 42.5,
-      "game_time_shown": "Final W 31-7 @ Ari"
-    },
     "dobbins_slot": "W/R/T",
-    "dobbins": {
-      "slot": "W/R/T",
-      "name": "J.K. Dobbins",
-      "nfl_team": "Den",
-      "position": "RB",
-      "status": "Q",
-      "proj": 11.79,
-      "fan_pts_week": 3.6,
-      "game_time_shown": "Final W 20-13 vs Jax"
-    },
     "vele_slot": "BN",
-    "vele": {
-      "slot": "BN",
-      "name": "Devaughn Vele",
-      "nfl_team": "NO",
-      "position": "WR",
-      "status": null,
-      "proj": 9.73,
-      "fan_pts_week": 11.4,
-      "game_time_shown": "Final W 24-17 @ Bal"
-    },
+    "mayer_slot": "TE",
+    "jsn_slot": "W/R/T",
     "worthy_slot": "BN",
-    "worthy": {
-      "slot": "BN",
-      "name": "Xavier Worthy",
-      "nfl_team": "KC",
-      "position": "WR",
-      "status": null,
-      "proj": 9.58,
-      "fan_pts_week": 13.5,
-      "game_time_shown": "Final W 33-30 vs Ind"
-    },
-    "douglas_slot": "BN",
-    "douglas": {
-      "slot": "BN",
-      "name": "Caleb Douglas",
-      "nfl_team": "Mia",
-      "position": "WR",
-      "status": "Q",
-      "proj": 9.14,
-      "fan_pts_week": 3.9,
-      "game_time_shown": "Final L 13-35 @ SF"
-    },
     "holani_slot": "BN",
-    "holani": {
-      "slot": "BN",
-      "name": "George Holani",
-      "nfl_team": "Sea",
-      "position": "RB",
-      "status": null,
-      "proj": 7.04,
-      "fan_pts_week": 2.5,
-      "game_time_shown": "Final W 31-7 @ Ari"
-    }
+    "dobbins_mark": "Q",
+    "douglas_mark": "Q",
+    "dobbins_pts": 3.6,
+    "jsn_pts": 42.5,
+    "mayer_pts": 5.3,
+    "douglas_pts": 3.9,
+    "vele_pts": 11.4,
+    "worthy_pts": 13.5,
+    "holani_pts": 2.5,
+    "user_acted_on_0800_recommend": true,
+    "still_actionable_dobbins_flex": false,
+    "worthy_game": "Final (SNF complete)",
+    "soft_q_watch": {
+      "J.K. Dobbins": {
+        "slot": "W/R/T",
+        "mark": "Q",
+        "nuance": "Final \u2014 ACKNOWLEDGE soft only; NOT O/OUT/IR"
+      },
+      "Caleb Douglas": {
+        "slot": "BN",
+        "mark": "Q",
+        "nuance": "Final \u2014 ACKNOWLEDGE soft only; NOT O/OUT/IR"
+      }
+    },
+    "source": "screenshot + 1600 roster overlay (body text truncated header-only)"
   },
-  "transactions_recent": [
+  "transactions_parsed": [
     {
       "date_line": "Sep 21, 9:02 am",
+      "team": "MattyBAD",
+      "add": "Terrance Ferguson LAR - TE",
+      "drop": "Devin Singletary NYG - RB",
+      "fee": 0,
       "chunk": [
+        "Trades",
+        "FAB Offers",
+        "Previous 25 Next 25",
+        "\ue035",
+        "\ue033",
+        "Terrance Ferguson LAR - TE",
+        "Free Agent",
+        "Devin Singletary NYG - RB",
+        "To Waivers",
+        "MattyBAD",
+        "Sep 21, 9:02 am"
+      ]
+    },
+    {
+      "date_line": "Sep 20, 12:51 pm",
+      "team": "The U",
+      "add": "Jacoby Brissett Ari - QB",
+      "drop": "Tre Tucker LV - WR",
+      "fee": 0,
+      "chunk": [
+        "To Waivers",
+        "MattyBAD",
         "Sep 21, 9:02 am",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "\ue035",
+        "\ue033",
         "Jacoby Brissett Ari - QB",
         "Free Agent",
         "Tre Tucker LV - WR",
         "To Waivers",
-        "",
         "The U",
         "Sep 20, 12:51 pm"
       ]
     },
     {
-      "date_line": "Sep 20, 12:51 pm",
+      "date_line": "Sep 20, 4:44 am",
+      "team": "The U",
+      "add": "Harrison Mevis LAR - K",
+      "drop": "Will Reichard Min - K",
+      "fee": 0,
       "chunk": [
+        "To Waivers",
+        "The U",
         "Sep 20, 12:51 pm",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "\ue035",
+        "\ue033",
         "Harrison Mevis LAR - K",
         "Free Agent",
         "Will Reichard Min - K",
         "To Waivers",
-        "",
         "The U",
         "Sep 20, 4:44 am"
       ]
     },
     {
-      "date_line": "Sep 20, 4:44 am",
+      "date_line": "Sep 20, 12:24 am",
+      "team": "The U",
+      "add": "Minnesota Min - DEF",
+      "drop": "Detroit Det - DEF",
+      "fee": 4,
       "chunk": [
-        "Sep 20, 4:44 am",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Vikings Min - DEF",
-        "$4 Waiver",
-        "Lions Det - DEF",
         "To Waivers",
-        "",
+        "The U",
+        "Sep 20, 4:44 am",
+        "\ue035",
+        "\ue033",
+        "Minnesota Min - DEF",
+        "$4 Waiver",
+        "Detroit Det - DEF",
+        "To Waivers",
         "The U",
         "Sep 20, 12:24 am"
       ]
     },
     {
-      "date_line": "Sep 20, 12:24 am",
+      "date_line": "Sep 19, 11:41 pm",
+      "team": "FOCUS",
+      "add": "Pat Freiermuth Pit - TE",
+      "drop": "Oronde Gadsden LAC - TE",
+      "fee": 0,
       "chunk": [
+        "To Waivers",
+        "The U",
         "Sep 20, 12:24 am",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "\ue035",
+        "\ue033",
         "Pat Freiermuth Pit - TE",
         "Free Agent",
         "Oronde Gadsden LAC - TE",
         "To Waivers",
-        "",
         "FOCUS",
         "Sep 19, 11:41 pm"
       ]
     },
     {
-      "date_line": "Sep 19, 11:41 pm",
+      "date_line": "Sep 19, 11:39 pm",
+      "team": "FOCUS",
+      "add": "Jaylin Noel Hou - WR",
+      "drop": "Dylan Sampson Cle - RB IR",
+      "fee": 0,
       "chunk": [
+        "To Waivers",
+        "FOCUS",
         "Sep 19, 11:41 pm",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "\ue035",
+        "\ue033",
         "Jaylin Noel Hou - WR",
         "Free Agent",
         "Dylan Sampson Cle - RB IR",
         "To Waivers",
-        "",
         "FOCUS",
         "Sep 19, 11:39 pm"
       ]
     },
     {
-      "date_line": "Sep 19, 11:39 pm",
+      "date_line": "Sep 19, 8:55 pm",
+      "team": "King Kong",
+      "add": "Rashod Bateman Bal - WR",
+      "drop": "Pat Bryant Den - WR",
+      "fee": 0,
       "chunk": [
+        "To Waivers",
+        "FOCUS",
         "Sep 19, 11:39 pm",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "\ue035",
+        "\ue033",
         "Rashod Bateman Bal - WR",
         "Free Agent",
         "Pat Bryant Den - WR",
         "To Waivers",
-        "",
         "King Kong",
         "Sep 19, 8:55 pm"
       ]
     },
     {
-      "date_line": "Sep 19, 8:55 pm",
+      "date_line": "Sep 19, 12:52 pm",
+      "team": "MattyBAD",
+      "add": "Devin Singletary NYG - RB",
+      "drop": "Rachaad White Was - RB",
+      "fee": 0,
       "chunk": [
+        "To Waivers",
+        "King Kong",
         "Sep 19, 8:55 pm",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "\ue035",
+        "\ue033",
         "Devin Singletary NYG - RB",
         "Free Agent",
         "Rachaad White Was - RB",
         "To Waivers",
-        "",
         "MattyBAD",
         "Sep 19, 12:52 pm"
       ]
     },
     {
-      "date_line": "Sep 19, 12:52 pm",
+      "date_line": "Sep 18, 12:27 am",
+      "team": "CLIN-TON POR-TIS",
+      "add": "Los Angeles LAC - DEF",
+      "drop": "Minnesota Min - DEF",
+      "fee": 0,
       "chunk": [
-        "Sep 19, 12:52 pm",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Chargers LAC - DEF",
-        "$0 Waiver",
-        "Vikings Min - DEF",
         "To Waivers",
-        "",
+        "MattyBAD",
+        "Sep 19, 12:52 pm",
+        "\ue035",
+        "\ue033",
+        "Los Angeles LAC - DEF",
+        "$0 Waiver",
+        "Minnesota Min - DEF",
+        "To Waivers",
         "CLIN-TON POR-TIS",
         "Sep 18, 12:27 am"
       ]
     },
     {
-      "date_line": "Sep 18, 12:27 am",
-      "chunk": [
-        "Sep 18, 12:27 am",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Demond Claiborne Min - RB",
-        "Free Agent",
-        "",
-        "AMON A ROLL",
-        "Sep 17, 3:23 am",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "date_line": "Sep 17, 3:23 am",
-      "chunk": [
-        "Sep 17, 3:23 am",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "George Holani Sea - RB",
-        "Free Agent",
-        "Malachi Fields NYG - WR",
-        "To Waivers",
-        "",
-        "TB12 of Ass/Cousin Fucker",
-        "Sep 16, 6:51 pm"
-      ]
-    },
-    {
-      "date_line": "Sep 16, 6:51 pm",
-      "chunk": [
-        "Sep 16, 6:51 pm",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Xavier Hutchinson Hou - WR",
-        "Free Agent",
-        "Jaguars Jax - DEF",
-        "To Waivers",
-        "",
-        "Dynamic Duo of Ladd & Stribs",
-        "Sep 16, 4:33 pm"
-      ]
-    },
-    {
-      "date_line": "Sep 16, 4:33 pm",
-      "chunk": [
-        "Sep 16, 4:33 pm",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Braelon Allen NYJ - RB",
-        "Free Agent",
-        "Emari Demercado Dal - RB",
-        "To Waivers",
-        "",
-        "TB12 of Ass/Cousin Fucker",
-        "Sep 16, 4:30 am"
-      ]
-    },
-    {
-      "date_line": "Sep 16, 4:30 am",
-      "chunk": [
-        "Sep 16, 4:30 am",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Buccaneers TB - DEF",
-        "Free Agent",
-        "Jets NYJ - DEF",
-        "To Waivers",
-        "",
-        "TB12 of Ass/Cousin Fucker",
-        "Sep 16, 4:04 am"
-      ]
-    },
-    {
-      "date_line": "Sep 16, 4:04 am",
-      "chunk": [
-        "Sep 16, 4:04 am",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Chris Brooks GB - RB",
-        "$1 Waiver",
-        "Chris Bell Mia - WR",
-        "To Waivers",
-        "",
-        "CLIN-TON POR-TIS",
-        "Sep 16, 1:31 am"
-      ]
-    },
-    {
-      "date_line": "Sep 16, 1:31 am",
-      "chunk": [
-        "Sep 16, 1:31 am",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "Tre' Harris LAC - WR",
-        "$2 Waiver",
-        "Greg Dulcich Mia - TE",
-        "To Waivers",
-        "",
-        "Dynamic Duo of Ladd & Stribs",
-        "Sep 16, 1:31 am"
-      ]
-    }
-  ],
-  "goto_status": 200,
-  "transactions_parsed": [
-    {
-      "date_line": "Sep 21, 9:02 am",
-      "team": "MattyBAD",
-      "added": "Terrance Ferguson LAR - TE",
-      "dropped": "Devin Singletary NYG - RB",
-      "chunk": [
-        "",
-        "",
-        "Terrance Ferguson LAR - TE",
-        "Free Agent",
-        "Devin Singletary NYG - RB",
-        "To Waivers"
-      ]
-    },
-    {
-      "date_line": "Sep 20, 12:51 pm",
-      "team": "The U",
-      "added": "Jacoby Brissett Ari - QB",
-      "dropped": "Tre Tucker LV - WR",
-      "chunk": [
-        "",
-        "",
-        "Jacoby Brissett Ari - QB",
-        "Free Agent",
-        "Tre Tucker LV - WR",
-        "To Waivers"
-      ]
-    },
-    {
-      "date_line": "Sep 20, 4:44 am",
-      "team": "The U",
-      "added": "Harrison Mevis LAR - K",
-      "dropped": "Will Reichard Min - K",
-      "chunk": [
-        "",
-        "",
-        "Harrison Mevis LAR - K",
-        "Free Agent",
-        "Will Reichard Min - K",
-        "To Waivers"
-      ]
-    },
-    {
-      "date_line": "Sep 20, 12:24 am",
-      "team": "The U",
-      "added": null,
-      "dropped": "Lions Det - DEF",
-      "chunk": [
-        "",
-        "",
-        "Vikings Min - DEF",
-        "$4 Waiver",
-        "Lions Det - DEF",
-        "To Waivers"
-      ]
-    },
-    {
-      "date_line": "Sep 19, 11:41 pm",
-      "team": "FOCUS",
-      "added": "Pat Freiermuth Pit - TE",
-      "dropped": "Oronde Gadsden LAC - TE",
-      "chunk": [
-        "",
-        "",
-        "Pat Freiermuth Pit - TE",
-        "Free Agent",
-        "Oronde Gadsden LAC - TE",
-        "To Waivers"
-      ]
-    },
-    {
-      "date_line": "Sep 19, 11:39 pm",
-      "team": "FOCUS",
-      "added": "Jaylin Noel Hou - WR",
-      "dropped": "Dylan Sampson Cle - RB IR",
-      "chunk": [
-        "",
-        "",
-        "Jaylin Noel Hou - WR",
-        "Free Agent",
-        "Dylan Sampson Cle - RB IR",
-        "To Waivers"
-      ]
-    },
-    {
-      "date_line": "Sep 19, 8:55 pm",
-      "team": "King Kong",
-      "added": "Rashod Bateman Bal - WR",
-      "dropped": "Pat Bryant Den - WR",
-      "chunk": [
-        "",
-        "",
-        "Rashod Bateman Bal - WR",
-        "Free Agent",
-        "Pat Bryant Den - WR",
-        "To Waivers"
-      ]
-    },
-    {
-      "date_line": "Sep 19, 12:52 pm",
-      "team": "MattyBAD",
-      "added": "Devin Singletary NYG - RB",
-      "dropped": "Rachaad White Was - RB",
-      "chunk": [
-        "",
-        "",
-        "Devin Singletary NYG - RB",
-        "Free Agent",
-        "Rachaad White Was - RB",
-        "To Waivers"
-      ]
-    },
-    {
-      "date_line": "Sep 18, 12:27 am",
-      "team": "CLIN-TON POR-TIS",
-      "added": null,
-      "dropped": "Vikings Min - DEF",
-      "chunk": [
-        "",
-        "",
-        "Chargers LAC - DEF",
-        "$0 Waiver",
-        "Vikings Min - DEF",
-        "To Waivers"
-      ]
-    },
-    {
       "date_line": "Sep 17, 3:23 am",
       "team": "AMON A ROLL",
-      "added": "Demond Claiborne Min - RB",
-      "dropped": null,
+      "add": "Los Angeles LAC - DEF",
+      "drop": "Minnesota Min - DEF",
+      "fee": 0,
       "chunk": [
-        "",
+        "Los Angeles LAC - DEF",
+        "$0 Waiver",
+        "Minnesota Min - DEF",
+        "To Waivers",
+        "CLIN-TON POR-TIS",
+        "Sep 18, 12:27 am",
+        "\ue035",
         "Demond Claiborne Min - RB",
-        "Free Agent"
+        "Free Agent",
+        "AMON A ROLL",
+        "Sep 17, 3:23 am"
       ]
     },
     {
       "date_line": "Sep 16, 6:51 pm",
       "team": "TB12 of Ass/Cousin Fucker",
-      "added": "George Holani Sea - RB",
-      "dropped": "Malachi Fields NYG - WR",
+      "add": "George Holani Sea - RB",
+      "drop": "Malachi Fields NYG - WR",
+      "fee": 0,
       "chunk": [
-        "",
-        "",
+        "Free Agent",
+        "AMON A ROLL",
+        "Sep 17, 3:23 am",
+        "\ue035",
+        "\ue033",
         "George Holani Sea - RB",
         "Free Agent",
         "Malachi Fields NYG - WR",
-        "To Waivers"
+        "To Waivers",
+        "TB12 of Ass/Cousin Fucker",
+        "Sep 16, 6:51 pm"
       ]
     },
     {
       "date_line": "Sep 16, 4:33 pm",
       "team": "Dynamic Duo of Ladd & Stribs",
-      "added": "Xavier Hutchinson Hou - WR",
-      "dropped": "Jaguars Jax - DEF",
+      "add": "Xavier Hutchinson Hou - WR",
+      "drop": "Jacksonville Jax - DEF",
+      "fee": 0,
       "chunk": [
-        "",
-        "",
+        "To Waivers",
+        "TB12 of Ass/Cousin Fucker",
+        "Sep 16, 6:51 pm",
+        "\ue035",
+        "\ue033",
         "Xavier Hutchinson Hou - WR",
         "Free Agent",
-        "Jaguars Jax - DEF",
-        "To Waivers"
+        "Jacksonville Jax - DEF",
+        "To Waivers",
+        "Dynamic Duo of Ladd & Stribs",
+        "Sep 16, 4:33 pm"
+      ]
+    },
+    {
+      "date_line": "Sep 16, 4:30 am",
+      "team": "TB12 of Ass/Cousin Fucker",
+      "add": "Braelon Allen NYJ - RB",
+      "drop": "Emari Demercado Dal - RB",
+      "fee": 0,
+      "chunk": [
+        "To Waivers",
+        "Dynamic Duo of Ladd & Stribs",
+        "Sep 16, 4:33 pm",
+        "\ue035",
+        "\ue033",
+        "Braelon Allen NYJ - RB",
+        "Free Agent",
+        "Emari Demercado Dal - RB",
+        "To Waivers",
+        "TB12 of Ass/Cousin Fucker",
+        "Sep 16, 4:30 am"
+      ]
+    },
+    {
+      "date_line": "Sep 16, 4:04 am",
+      "team": "TB12 of Ass/Cousin Fucker",
+      "add": "Tampa Bay TB - DEF",
+      "drop": "New York NYJ - DEF",
+      "fee": 0,
+      "chunk": [
+        "To Waivers",
+        "TB12 of Ass/Cousin Fucker",
+        "Sep 16, 4:30 am",
+        "\ue035",
+        "\ue033",
+        "Tampa Bay TB - DEF",
+        "Free Agent",
+        "New York NYJ - DEF",
+        "To Waivers",
+        "TB12 of Ass/Cousin Fucker",
+        "Sep 16, 4:04 am"
+      ]
+    },
+    {
+      "date_line": "Sep 16, 1:31 am",
+      "team": "CLIN-TON POR-TIS",
+      "add": "Chris Brooks GB - RB",
+      "drop": "Chris Bell Mia - WR",
+      "fee": 1,
+      "chunk": [
+        "To Waivers",
+        "TB12 of Ass/Cousin Fucker",
+        "Sep 16, 4:04 am",
+        "\ue035",
+        "\ue033",
+        "Chris Brooks GB - RB",
+        "$1 Waiver",
+        "Chris Bell Mia - WR",
+        "To Waivers",
+        "CLIN-TON POR-TIS",
+        "Sep 16, 1:31 am"
       ]
     }
   ],
-  "new_since_0800": [
+  "transactions_recent": [
     {
       "date_line": "Sep 21, 9:02 am",
       "team": "MattyBAD",
-      "added": "Terrance Ferguson LAR - TE",
-      "dropped": "Devin Singletary NYG - RB",
+      "add": "Terrance Ferguson LAR - TE",
+      "drop": "Devin Singletary NYG - RB",
+      "fee": 0,
       "chunk": [
-        "",
-        "",
+        "Trades",
+        "FAB Offers",
+        "Previous 25 Next 25",
+        "\ue035",
+        "\ue033",
         "Terrance Ferguson LAR - TE",
         "Free Agent",
         "Devin Singletary NYG - RB",
-        "To Waivers"
+        "To Waivers",
+        "MattyBAD",
+        "Sep 21, 9:02 am"
+      ]
+    },
+    {
+      "date_line": "Sep 20, 12:51 pm",
+      "team": "The U",
+      "add": "Jacoby Brissett Ari - QB",
+      "drop": "Tre Tucker LV - WR",
+      "fee": 0,
+      "chunk": [
+        "To Waivers",
+        "MattyBAD",
+        "Sep 21, 9:02 am",
+        "\ue035",
+        "\ue033",
+        "Jacoby Brissett Ari - QB",
+        "Free Agent",
+        "Tre Tucker LV - WR",
+        "To Waivers",
+        "The U",
+        "Sep 20, 12:51 pm"
+      ]
+    },
+    {
+      "date_line": "Sep 20, 4:44 am",
+      "team": "The U",
+      "add": "Harrison Mevis LAR - K",
+      "drop": "Will Reichard Min - K",
+      "fee": 0,
+      "chunk": [
+        "To Waivers",
+        "The U",
+        "Sep 20, 12:51 pm",
+        "\ue035",
+        "\ue033",
+        "Harrison Mevis LAR - K",
+        "Free Agent",
+        "Will Reichard Min - K",
+        "To Waivers",
+        "The U",
+        "Sep 20, 4:44 am"
+      ]
+    },
+    {
+      "date_line": "Sep 20, 12:24 am",
+      "team": "The U",
+      "add": "Minnesota Min - DEF",
+      "drop": "Detroit Det - DEF",
+      "fee": 4,
+      "chunk": [
+        "To Waivers",
+        "The U",
+        "Sep 20, 4:44 am",
+        "\ue035",
+        "\ue033",
+        "Minnesota Min - DEF",
+        "$4 Waiver",
+        "Detroit Det - DEF",
+        "To Waivers",
+        "The U",
+        "Sep 20, 12:24 am"
+      ]
+    },
+    {
+      "date_line": "Sep 19, 11:41 pm",
+      "team": "FOCUS",
+      "add": "Pat Freiermuth Pit - TE",
+      "drop": "Oronde Gadsden LAC - TE",
+      "fee": 0,
+      "chunk": [
+        "To Waivers",
+        "The U",
+        "Sep 20, 12:24 am",
+        "\ue035",
+        "\ue033",
+        "Pat Freiermuth Pit - TE",
+        "Free Agent",
+        "Oronde Gadsden LAC - TE",
+        "To Waivers",
+        "FOCUS",
+        "Sep 19, 11:41 pm"
+      ]
+    },
+    {
+      "date_line": "Sep 19, 11:39 pm",
+      "team": "FOCUS",
+      "add": "Jaylin Noel Hou - WR",
+      "drop": "Dylan Sampson Cle - RB IR",
+      "fee": 0,
+      "chunk": [
+        "To Waivers",
+        "FOCUS",
+        "Sep 19, 11:41 pm",
+        "\ue035",
+        "\ue033",
+        "Jaylin Noel Hou - WR",
+        "Free Agent",
+        "Dylan Sampson Cle - RB IR",
+        "To Waivers",
+        "FOCUS",
+        "Sep 19, 11:39 pm"
+      ]
+    },
+    {
+      "date_line": "Sep 19, 8:55 pm",
+      "team": "King Kong",
+      "add": "Rashod Bateman Bal - WR",
+      "drop": "Pat Bryant Den - WR",
+      "fee": 0,
+      "chunk": [
+        "To Waivers",
+        "FOCUS",
+        "Sep 19, 11:39 pm",
+        "\ue035",
+        "\ue033",
+        "Rashod Bateman Bal - WR",
+        "Free Agent",
+        "Pat Bryant Den - WR",
+        "To Waivers",
+        "King Kong",
+        "Sep 19, 8:55 pm"
+      ]
+    },
+    {
+      "date_line": "Sep 19, 12:52 pm",
+      "team": "MattyBAD",
+      "add": "Devin Singletary NYG - RB",
+      "drop": "Rachaad White Was - RB",
+      "fee": 0,
+      "chunk": [
+        "To Waivers",
+        "King Kong",
+        "Sep 19, 8:55 pm",
+        "\ue035",
+        "\ue033",
+        "Devin Singletary NYG - RB",
+        "Free Agent",
+        "Rachaad White Was - RB",
+        "To Waivers",
+        "MattyBAD",
+        "Sep 19, 12:52 pm"
+      ]
+    },
+    {
+      "date_line": "Sep 18, 12:27 am",
+      "team": "CLIN-TON POR-TIS",
+      "add": "Los Angeles LAC - DEF",
+      "drop": "Minnesota Min - DEF",
+      "fee": 0,
+      "chunk": [
+        "To Waivers",
+        "MattyBAD",
+        "Sep 19, 12:52 pm",
+        "\ue035",
+        "\ue033",
+        "Los Angeles LAC - DEF",
+        "$0 Waiver",
+        "Minnesota Min - DEF",
+        "To Waivers",
+        "CLIN-TON POR-TIS",
+        "Sep 18, 12:27 am"
+      ]
+    },
+    {
+      "date_line": "Sep 17, 3:23 am",
+      "team": "AMON A ROLL",
+      "add": "Los Angeles LAC - DEF",
+      "drop": "Minnesota Min - DEF",
+      "fee": 0,
+      "chunk": [
+        "Los Angeles LAC - DEF",
+        "$0 Waiver",
+        "Minnesota Min - DEF",
+        "To Waivers",
+        "CLIN-TON POR-TIS",
+        "Sep 18, 12:27 am",
+        "\ue035",
+        "Demond Claiborne Min - RB",
+        "Free Agent",
+        "AMON A ROLL",
+        "Sep 17, 3:23 am"
+      ]
+    },
+    {
+      "date_line": "Sep 16, 6:51 pm",
+      "team": "TB12 of Ass/Cousin Fucker",
+      "add": "George Holani Sea - RB",
+      "drop": "Malachi Fields NYG - WR",
+      "fee": 0,
+      "chunk": [
+        "Free Agent",
+        "AMON A ROLL",
+        "Sep 17, 3:23 am",
+        "\ue035",
+        "\ue033",
+        "George Holani Sea - RB",
+        "Free Agent",
+        "Malachi Fields NYG - WR",
+        "To Waivers",
+        "TB12 of Ass/Cousin Fucker",
+        "Sep 16, 6:51 pm"
+      ]
+    },
+    {
+      "date_line": "Sep 16, 4:33 pm",
+      "team": "Dynamic Duo of Ladd & Stribs",
+      "add": "Xavier Hutchinson Hou - WR",
+      "drop": "Jacksonville Jax - DEF",
+      "fee": 0,
+      "chunk": [
+        "To Waivers",
+        "TB12 of Ass/Cousin Fucker",
+        "Sep 16, 6:51 pm",
+        "\ue035",
+        "\ue033",
+        "Xavier Hutchinson Hou - WR",
+        "Free Agent",
+        "Jacksonville Jax - DEF",
+        "To Waivers",
+        "Dynamic Duo of Ladd & Stribs",
+        "Sep 16, 4:33 pm"
+      ]
+    },
+    {
+      "date_line": "Sep 16, 4:30 am",
+      "team": "TB12 of Ass/Cousin Fucker",
+      "add": "Braelon Allen NYJ - RB",
+      "drop": "Emari Demercado Dal - RB",
+      "fee": 0,
+      "chunk": [
+        "To Waivers",
+        "Dynamic Duo of Ladd & Stribs",
+        "Sep 16, 4:33 pm",
+        "\ue035",
+        "\ue033",
+        "Braelon Allen NYJ - RB",
+        "Free Agent",
+        "Emari Demercado Dal - RB",
+        "To Waivers",
+        "TB12 of Ass/Cousin Fucker",
+        "Sep 16, 4:30 am"
+      ]
+    },
+    {
+      "date_line": "Sep 16, 4:04 am",
+      "team": "TB12 of Ass/Cousin Fucker",
+      "add": "Tampa Bay TB - DEF",
+      "drop": "New York NYJ - DEF",
+      "fee": 0,
+      "chunk": [
+        "To Waivers",
+        "TB12 of Ass/Cousin Fucker",
+        "Sep 16, 4:30 am",
+        "\ue035",
+        "\ue033",
+        "Tampa Bay TB - DEF",
+        "Free Agent",
+        "New York NYJ - DEF",
+        "To Waivers",
+        "TB12 of Ass/Cousin Fucker",
+        "Sep 16, 4:04 am"
+      ]
+    },
+    {
+      "date_line": "Sep 16, 1:31 am",
+      "team": "CLIN-TON POR-TIS",
+      "add": "Chris Brooks GB - RB",
+      "drop": "Chris Bell Mia - WR",
+      "fee": 1,
+      "chunk": [
+        "To Waivers",
+        "TB12 of Ass/Cousin Fucker",
+        "Sep 16, 4:04 am",
+        "\ue035",
+        "\ue033",
+        "Chris Brooks GB - RB",
+        "$1 Waiver",
+        "Chris Bell Mia - WR",
+        "To Waivers",
+        "CLIN-TON POR-TIS",
+        "Sep 16, 1:31 am"
       ]
     }
   ],
-  "week2_status": "FINAL (incl SNF Worthy; MNF NYG@LAR tonight not JD)",
-  "new_transactions_since_0800": [
-    {
-      "team": "MattyBAD",
-      "team_code": "MN",
-      "action": "ADD_DROP",
-      "added": "Terrance Ferguson LAR - TE",
-      "dropped": "Devin Singletary NYG - RB",
-      "date_yahoo_display": "Sep 21, 9:02 am",
-      "timestamp_et": "2026-09-21 12:02",
-      "jd_material": false,
-      "note": "non-JD; Singletary to waivers — ACKNOWLEDGE FA pool only; not actionable wake"
-    }
-  ],
-  "yahoo_league_id": "102586",
-  "new_since_1200": [],
-  "new_transactions_since_1200": [],
-  "deltas_vs_1200": {
-    "faab": "UNCHANGED: Yahoo $88 (auth baseline $85)",
-    "ir": "UNCHANGED: 0/1",
-    "pending": "CHANGED from CLEARED to 3 pending Sep 23 waivers (Wilson $5 / Bigsby $3 / Shipley $1 all drop Holani)",
-    "lineup": "UNCHANGED for supplied critical slots",
-    "status_marks": "UNCHANGED: Q on Dobbins and Douglas; no Q-to-O/OUT/IR upgrade",
-    "scores": "UNCHANGED 142.56–182.34 FINAL",
-    "new_txs": "0 — MattyBAD Ferguson/Singletary already in noon baseline"
+  "new_since_1600": [],
+  "new_transactions_since_1600": [],
+  "goto_status": 200,
+  "body_truncation_note": "my_team_body.txt was header-only (~1KB); roster/critical slots recovered from full-page screenshot + 1600 overlay. Scores/FAAB/IR/pending parsed from body text successfully.",
+  "deltas_vs_1600": {
+    "roster_lineup": "UNCHANGED",
+    "faab_auth": "UNCHANGED $85",
+    "faab_yahoo": "UNCHANGED $88",
+    "ir": "UNCHANGED 0/1",
+    "pending": "UNCHANGED 3 pending Sep 23 (Wilson $5 / Bigsby $3 / Shipley $1 all drop Holani)",
+    "scores": "UNCHANGED 142.56\u2013182.34 FINAL",
+    "new_txs": "0 since 1600 (MattyBAD Ferguson/Singletary still top / baseline)",
+    "status_marks": "UNCHANGED soft Q Dobbins+Douglas only"
   }
 }
