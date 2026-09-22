@@ -1,0 +1,44 @@
+{
+  "league": "sparta",
+  "consumer": "Sparta FF Bot",
+  "reviewed_at_et": "2026-09-22T15:24:00-04:00",
+  "trigger": "NFL Pulse HIGH 2026-09-22-1500 Dart knee worse / Bagent concussion / Bako-Bewele SE / Terrell IR",
+  "scan_id": "2026-09-22-1500",
+  "roster_lineup_faab_waiver_state_altered": false,
+  "jd_roster_source": "data/current_roster_jd.json",
+  "pulse_items": [
+    {
+      "pulse_id": "20260922-151500-jaxson-dart-nyg-qb-knee-worse-season-threat",
+      "supersedes": "20260922-070500-jaxson-dart-nyg-qb-mcl-sprain-prelim",
+      "jd_effect": "Dart knee worse / season-ending surgery possibility \u2014 not JD-owned (Hurts QB). No start/sit/FAAB. Suppress.",
+      "action": "SUPPRESS",
+      "followup": "surgery confirm / IR only if NYG skill FA becomes JD-relevant"
+    },
+    {
+      "pulse_id": "20260922-151600-tyson-bagent-chi-qb-concussion-protocol",
+      "jd_effect": "Bagent concussion protocol \u2014 not JD-owned; no CHI skill on JD. Suppress.",
+      "action": "SUPPRESS",
+      "followup": "none JD"
+    },
+    {
+      "pulse_id": "20260922-151700-zach-bako-bewele-gb-rt-season-ending",
+      "jd_effect": "GB RT season-ending \u2014 OL only; no JD GB skill. Suppress.",
+      "action": "SUPPRESS",
+      "followup": "none JD"
+    },
+    {
+      "pulse_id": "20260922-151800-aj-terrell-atl-cb-ir",
+      "jd_effect": "Terrell ATL CB IR \u2014 IDP/secondary; JD owns McMillan (CAR) not ATL/GB skill. No JD action. Suppress.",
+      "action": "SUPPRESS",
+      "followup": "none JD"
+    }
+  ],
+  "do_not_reemit": [
+    "Jaxson Dart knee (until official IR/surgery confirm step-change)",
+    "Tyson Bagent concussion (until OUT/cleared step-change)",
+    "A.J. Terrell IR (already official)"
+  ],
+  "actionability": "intelligence_only_no_jd_alert",
+  "actionable_alert": false,
+  "note": "None of four players on JD roster; pending waiver ladder unchanged by this pulse."
+}
