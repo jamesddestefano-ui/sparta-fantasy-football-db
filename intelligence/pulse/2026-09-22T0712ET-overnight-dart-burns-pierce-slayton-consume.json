@@ -1,0 +1,47 @@
+{
+  "league": "sparta",
+  "consumer": "Sparta FF Bot",
+  "reviewed_at_et": "2026-09-22T07:12:00-04:00",
+  "trigger": "NFL Pulse HIGH 2026-09-22-0700 overnight Dart MCL / Burns ankle / Pierce IR / Slayton Colts",
+  "scan_id": "2026-09-22-0700",
+  "roster_lineup_faab_waiver_state_altered": false,
+  "jd_roster_source": "data/current_roster_jd.json + yahoo_live_snapshot_latest.json observed_at 2026-09-21T20:25:09-04:00",
+  "pulse_items": [
+    {
+      "pulse_id": "20260922-070500-jaxson-dart-nyg-qb-mcl-sprain-prelim",
+      "supersedes": "20260921-221700-jaxson-dart-nyg-qb-knee-out-mnf",
+      "jd_effect": "Dart believed MCL sprain (MRI Tue) \u2014 not JD-owned; JD QB is Hurts. No start/sit/FAAB. Suppress.",
+      "action": "SUPPRESS",
+      "followup": "MRI/official timeline; still no JD unless NYG skill FA materializes (none owned)"
+    },
+    {
+      "pulse_id": "20260922-070600-brian-burns-nyg-edge-low-ankle-sprain",
+      "supersedes": "20260921-231500-brian-burns-nyg-edge-ankle-q4-mnf",
+      "jd_effect": "Burns low-ankle sprain W3 TBD \u2014 Sparta has no IDP EDGE for JD. Suppress.",
+      "action": "SUPPRESS",
+      "followup": "none JD"
+    },
+    {
+      "pulse_id": "20260922-070700-alec-pierce-ind-wr-weeks-likely-ir",
+      "supersedes": "20260920-230200-alec-pierce-out-heel-midgame",
+      "jd_effect": "Pierce miss weeks / likely IR \u2014 not JD-owned. JD WR depth already set; pending W3 claims are RB ladder (Wilson/Bigsby/Shipley drop Holani). Slayton Colts terms blunt speculative IND WR FA urgency. No JD alert.",
+      "action": "SUPPRESS",
+      "followup": "recheck only if authenticated Yahoo shows a clear IND WR FA JD would claim over pending RB ladder"
+    },
+    {
+      "pulse_id": "20260922-070800-darius-slayton-ind-wr-agrees-terms",
+      "jd_effect": "Slayton agrees terms with Colts \u2014 not JD-owned; depth add after Pierce. No claim path for JD. Suppress.",
+      "action": "SUPPRESS",
+      "followup": "none"
+    }
+  ],
+  "do_not_reemit": [
+    "Jaxson Dart OUT/MCL (until official IR or new severity step-change)",
+    "Brian Burns ankle (until Week 3 OUT/IR step-change)",
+    "Alec Pierce heel multi-week/IR (until return timeline change)"
+  ],
+  "actionability": "intelligence_only_no_jd_alert",
+  "actionable_alert": false,
+  "pending_waivers_unchanged": true,
+  "note": "Exception-based alert policy: none of four players on JD roster; no lineup/FAAB mutation recommended."
+}
