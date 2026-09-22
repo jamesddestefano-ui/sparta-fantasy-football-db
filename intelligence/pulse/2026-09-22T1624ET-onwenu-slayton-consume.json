@@ -1,0 +1,28 @@
+{
+  "league": "sparta",
+  "consumer": "Sparta FF Bot",
+  "reviewed_at_et": "2026-09-22T16:24:00-04:00",
+  "trigger": "NFL Pulse HIGH 2026-09-22-1600 Onwenu IR / Slayton official sign",
+  "scan_id": "2026-09-22-1600",
+  "roster_lineup_faab_waiver_state_altered": false,
+  "cursor_advance": "DEFERRED_TO_LIVE_CHECK",
+  "live_check_running": true,
+  "pulse_items": [
+    {
+      "pulse_id": "20260922-161500-mike-onwenu-ne-g-ir",
+      "jd_effect": "Onwenu NE RG IR (ankle) \u22654 \u2014 JD owns Stevenson (NE RB). OL depth color only; not start/sit/waiver. Suppress alert.",
+      "action": "SUPPRESS",
+      "followup": "none unless NE OL cascade materially changes Stevenson role"
+    },
+    {
+      "pulse_id": "20260922-161600-darius-slayton-ind-wr-official-sign",
+      "supersedes": "20260922-070800-darius-slayton-ind-wr-agrees-terms",
+      "jd_effect": "Slayton official Colts sign \u2014 not JD-owned; formalizes prior agrees-terms suppress. No claim path.",
+      "action": "SUPPRESS",
+      "followup": "none"
+    }
+  ],
+  "actionability": "intelligence_only_no_jd_alert",
+  "actionable_alert": false,
+  "note": "Live Check concurrent (Tue 1600) \u2014 parent wrote consume+ledger only; cursor left for Live Check."
+}
