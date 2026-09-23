@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-09-23T08:14:30-04:00",
-  "pull_completed_at": "2026-09-23T08:16:00-04:00",
-  "source": "authenticated Yahoo Chrome CDP :9225 (computerUse Task MCP unavailable; documented fallback)",
-  "check_id": "sparta-live-check-20260923-0800",
+  "observed_at": "2026-09-23T12:27:24-04:00",
+  "pull_completed_at": "2026-09-23T12:29:22-04:00",
+  "source": "authenticated Yahoo Agent Computer browser (computerUse read-only)",
+  "check_id": "sparta-live-check-20260923-1200",
   "yahoo_ok": true,
   "league_id": "102586",
   "yahoo_league_id": "102586",
@@ -15,9 +15,9 @@
   "opponent": "X-Factor",
   "scores": {
     "jd_live": 0.0,
-    "jd_proj": 134.94,
+    "jd_proj": 135.41,
     "opp_live": 0.0,
-    "opp_proj": 129.33,
+    "opp_proj": 129.35,
     "opp_name": "X-Factor"
   },
   "total_points": 295.78,
@@ -26,58 +26,11 @@
   "ir": "0/1",
   "roster_count": 17,
   "pending_waivers": [],
-  "pending_status": "PROCESSED",
+  "pending_status": "CLEARED",
   "waiver_results_jd": {
+    "note": "ACK only \u2014 processed ~04:39 ET; first-detect alerted at 0800; no re-alert",
     "processed_at_et": "2026-09-23 04:39",
-    "wins": [
-      {
-        "bid": 12,
-        "added": "Oronde Gadsden",
-        "dropped": "Michael Mayer",
-        "added_raw": "Oronde Gadsden LAC - TE",
-        "dropped_raw": "Michael Mayer LV - TE"
-      },
-      {
-        "bid": 8,
-        "added": "Emanuel Wilson",
-        "dropped": "George Holani",
-        "added_raw": "Emanuel Wilson Sea - RB",
-        "dropped_raw": "George Holani Sea - RB"
-      },
-      {
-        "bid": 3,
-        "added": "Packers D/ST",
-        "dropped": "Buccaneers D/ST",
-        "added_raw": "Packers GB - DEF",
-        "dropped_raw": "Buccaneers TB - DEF"
-      },
-      {
-        "bid": 3,
-        "added": "Tre Tucker",
-        "dropped": "Caleb Douglas",
-        "added_raw": "Tre Tucker LV - WR",
-        "dropped_raw": "Caleb Douglas Mia - WR Q"
-      }
-    ],
-    "faab_spent": 26,
-    "lost_or_superseded_vs_tue_2000_ladder": [
-      {
-        "claim": "Tank Bigsby $3 Drop Holani",
-        "result": "LOST \u2014 MattyBAD won Bigsby $6"
-      },
-      {
-        "claim": "Lions $2 Drop Buccaneers",
-        "result": "NOT PROCESSED AS BID \u2014 JD instead won Packers $3 Drop Buccaneers (post-2000 claim edit likely)"
-      },
-      {
-        "claim": "Will Shipley $1 Drop Holani",
-        "result": "NOT PROCESSED \u2014 Holani already dropped for Wilson; Shipley claim absent from results (post-2000 edit likely)"
-      },
-      {
-        "claim": "Gadsden $14 / Wilson $5",
-        "result": "WON at different $ amounts ($12 / $8) \u2014 Yahoo live authoritative; pending ladder amounts appear superseded overnight"
-      }
-    ]
+    "wins_summary": "Gadsden $12 / Wilson $8 / Packers $3 / Tucker $3"
   },
   "critical_lineup": {
     "QB": "Jalen Hurts",
@@ -113,18 +66,18 @@
     "O": [],
     "IR": []
   },
-  "vs_2000": {
-    "pending": "PROCESSED (was 5-claim Sep 23 ladder; now CLEARED)",
-    "roster": "CHANGED \u2014 ADD Gadsden/Wilson/Packers/Tucker; DROP Mayer/Holani/Bucs/Douglas",
-    "faab": "CHANGED $85\u2192$59 (\u2212$26)",
+  "vs_0800": {
+    "pending": "UNCHANGED CLEARED",
+    "roster": "UNCHANGED",
+    "faab": "UNCHANGED $59",
     "ir": "UNCHANGED 0/1",
-    "soft_q": "CHANGED \u2014 Dobbins BN Q remains; Douglas dropped (was BN Q)",
-    "lineup_starters": "CHANGED \u2014 TE Mayer\u2192Gadsden; DEF Bucs\u2192Packers",
-    "txs": "11 league-wide Sep 23 04:39 ET waiver txs (4 JD)",
-    "proj": "130.66\u2013127.94 \u2192 134.94\u2013129.33 drift only (not alert alone)"
+    "soft_q": "UNCHANGED Dobbins BN Q",
+    "lineup_starters": "UNCHANGED",
+    "txs": "2 new non-JD FA (TM Hockenson ADD; VV Coleman/Njoku) \u2014 durable ingested",
+    "proj": "134.94\u2013129.33 \u2192 135.41\u2013129.35 drift only (not alert)"
   },
-  "new_transactions_since_ferguson_baseline": true,
+  "new_transactions_since_0800": true,
   "mutations": "NONE",
-  "pull_dir": "/workspace/sparta-yahoo-live-20260923-0800",
+  "pull_dir": "/workspace/sparta-yahoo-live-20260923-1200",
   "completed": true
 }

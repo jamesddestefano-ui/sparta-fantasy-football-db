@@ -1,6 +1,6 @@
 {
   "league": "sparta",
-  "source": "Yahoo Sparta league-transactions screenshots and explicit user confirmations through 2026-09-16 21:51 ET; cost metadata follows Billy Enright clarification that there is no separate pickup fee; Live Check 2026-09-16 ~08:15 ET enriched JD timestamps + league-wide Sep 16 waiver txs; Live Check 2026-09-19 ~16:00 ET enriched MattyBAD Singletary ADD_DROP; Live Check 2026-09-20 ~08:00 ET enriched 5 non-JD overnight ADD_DROPs; Live Check 2026-09-20 ~16:14 ET enriched JU Brissett/Tucker ADD_DROP; Live Check 2026-09-21 ~12:00 ET enriched MattyBAD Ferguson ADD_DROP (Singletary to waivers).",
+  "source": "Yahoo live + durable ingest through sparta-live-check-20260923-1200 (2026-09-23T12:27:24-04:00)",
   "transactions": [
     {
       "timestamp_et": "2026-08-31 21:49",
@@ -686,6 +686,42 @@
       "semantic_key": "102586|MC|ADD_DROP|Rachaad White|Chris Brooks|2026-09-23",
       "calendar_day_et": "2026-09-23",
       "check_id": "sparta-live-check-20260923-0800"
+    },
+    {
+      "timestamp_et": "2026-09-23 09:36",
+      "team": "TM",
+      "team_name": "Dynamic Duo of Ladd & Stribs",
+      "action": "ADD",
+      "added": "T.J. Hockenson",
+      "dropped": null,
+      "faab_bid": 1,
+      "via": "free_agent",
+      "yahoo_raw": "T.J. Hockenson Min - TE Free Agent / Dynamic Duo of Ladd & Stribs / Sep 23, 6:36 am",
+      "source": "Authenticated Yahoo Agent Computer live pull 2026-09-23T12:27:24-04:00 (sparta-live-check-20260923-1200); Billy Enright min-$1 FA cost applied (non-JD league enrichment). Yahoo display times treated as Pacific \u2192 ET (6:36/6:57 am PDT \u2192 09:36/09:57 ET); computerUse pull_summary incorrectly labeled those as ET \u2014 corrected to match prior ingest convention.",
+      "transaction_fee_usd": 0,
+      "total_real_money_cost_usd": 1,
+      "live_pull_enriched_at": "2026-09-23T12:27:24-04:00",
+      "semantic_key": "102586|TM|ADD|T.J. Hockenson||2026-09-23",
+      "calendar_day_et": "2026-09-23",
+      "check_id": "sparta-live-check-20260923-1200"
+    },
+    {
+      "timestamp_et": "2026-09-23 09:57",
+      "team": "VV",
+      "team_name": "FOCUS",
+      "action": "ADD_DROP",
+      "added": "Keon Coleman",
+      "dropped": "David Njoku",
+      "faab_bid": 1,
+      "via": "free_agent",
+      "yahoo_raw": "Keon Coleman Buf - WR Free Agent / David Njoku LAC - TE O To Waivers / FOCUS / Sep 23, 6:57 am",
+      "source": "Authenticated Yahoo Agent Computer live pull 2026-09-23T12:27:24-04:00 (sparta-live-check-20260923-1200); Billy Enright min-$1 FA cost applied (non-JD league enrichment). Yahoo display times treated as Pacific \u2192 ET (6:36/6:57 am PDT \u2192 09:36/09:57 ET); computerUse pull_summary incorrectly labeled those as ET \u2014 corrected to match prior ingest convention.",
+      "transaction_fee_usd": 0,
+      "total_real_money_cost_usd": 1,
+      "live_pull_enriched_at": "2026-09-23T12:27:24-04:00",
+      "semantic_key": "102586|VV|ADD_DROP|Keon Coleman|David Njoku|2026-09-23",
+      "calendar_day_et": "2026-09-23",
+      "check_id": "sparta-live-check-20260923-1200"
     }
   ],
   "visible_draft_night_adds_pending_reconciliation": [
@@ -705,5 +741,5 @@
       "added": "D.J. Moore"
     }
   ],
-  "transaction_count": 57
+  "transaction_count": 59
 }
