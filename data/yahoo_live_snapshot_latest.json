@@ -1,10 +1,11 @@
 {
-  "observed_at": "2026-09-22T16:23:51-04:00",
-  "pull_completed_at": "2026-09-22T16:24:49-04:00",
-  "source": "Authenticated Yahoo Agent Computer CDP :9225 (Tue 1600 Live Check)",
-  "check_id": "sparta-live-check-20260922-1600",
+  "observed_at": "2026-09-22T20:20:14-04:00",
+  "pull_completed_at": "2026-09-22T20:22:38-04:00",
+  "source": "authenticated Yahoo Agent Computer browser (computerUse read-only)",
+  "check_id": "sparta-live-check-20260922-2000",
   "yahoo_ok": true,
   "league_id": "102586",
+  "yahoo_league_id": "102586",
   "team_path": "/f1/102586/10",
   "team_name": "TB12 of Ass/Cousin Fucker",
   "manager": "James",
@@ -14,13 +15,14 @@
   "opponent": "X-Factor",
   "scores": {
     "jd_live": 0.0,
-    "jd_proj": 130.75,
+    "jd_proj": 130.66,
     "opp_live": 0.0,
-    "opp_proj": 125.81
+    "opp_proj": 127.94,
+    "opp_name": "X-Factor"
   },
   "total_points": 295.78,
   "faab_auth": 85,
-  "faab_yahoo_displayed": 88,
+  "faab_yahoo_displayed": 85,
   "ir": "0/1",
   "roster_count": 17,
   "pending_waivers": [
@@ -71,39 +73,33 @@
     }
   ],
   "critical_lineup": {
-    "dobbins_slot": "BN",
-    "vele_slot": "W/R/T",
-    "mayer_slot": "TE",
-    "jsn_slot": "W/R/T",
-    "worthy_slot": "BN",
-    "holani_slot": "BN",
-    "douglas_slot": "BN",
-    "dobbins_mark": "Q",
-    "douglas_mark": "Q",
-    "week3_proj": {
-      "jd": 130.75,
-      "opp": 125.81,
-      "opp_name": "X-Factor"
-    },
-    "lineup_vs_1200": "UNCHANGED \u2014 Dobbins BN (Q); Vele W/R/T; Mayer TE; JSN W/R/T",
-    "soft_q_watch": {
-      "J.K. Dobbins": {
-        "slot": "BN",
-        "mark": "Q",
-        "nuance": "Week 3 soft Q \u2014 ACKNOWLEDGE only; NOT O/OUT/IR"
-      },
-      "Caleb Douglas": {
-        "slot": "BN",
-        "mark": "Q",
-        "nuance": "Week 3 soft Q \u2014 ACKNOWLEDGE only; NOT O/OUT/IR"
-      }
-    }
+    "QB": "Jalen Hurts",
+    "RB": [
+      "Rhamondre Stevenson",
+      "Quinshon Judkins"
+    ],
+    "WR": [
+      "Ja'Marr Chase",
+      "Tetairoa McMillan"
+    ],
+    "TE": "Michael Mayer",
+    "FLEX": [
+      "Jaxon Smith-Njigba",
+      "Devaughn Vele"
+    ],
+    "K": "Evan McPherson",
+    "DEF": "Buccaneers"
   },
   "status_marks": {
-    "J.K. Dobbins": "Q",
-    "Caleb Douglas": "Q"
+    "Q": [
+      "J.K. Dobbins",
+      "Caleb Douglas"
+    ],
+    "O": [],
+    "IR": []
   },
-  "new_transactions_since_ferguson_baseline": [],
-  "mutations": "NONE \u2014 read-only",
-  "pull_dir": "/workspace/sparta-yahoo-live-20260922-1600"
+  "new_transactions_since_ferguson_baseline": false,
+  "mutations": "NONE",
+  "pull_dir": "/workspace/sparta-yahoo-live-20260922-2000",
+  "completed": true
 }
