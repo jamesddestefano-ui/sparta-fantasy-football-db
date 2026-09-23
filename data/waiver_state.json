@@ -1,41 +1,58 @@
 {
   "league": "sparta",
-  "source": "User-provided Yahoo Sparta league-chat / waiver-result screenshots observed 2026-09-23T07:43:00-04:00, plus user-provided Yahoo My Team screenshots observed 2026-09-23T07:41:00-04:00. These supersede the Sep. 22 pending-claim state.",
-  "observed_at": "2026-09-23T07:43:00-04:00",
-  "priority_order_before_run": [
-    {"priority":1,"team":"JP"},
-    {"priority":2,"team":"JU"},
-    {"priority":3,"team":"JD"},
-    {"priority":4,"team":"ME"},
-    {"priority":5,"team":"MM"},
-    {"priority":6,"team":"ANT"},
-    {"priority":7,"team":"MN"},
-    {"priority":8,"team":"SR"},
-    {"priority":9,"team":"TM"},
-    {"priority":10,"team":"VV"},
-    {"priority":11,"team":"MC"},
-    {"priority":12,"team":"BE"}
-  ],
-  "priority_order_status": "PRE_RUN_ONLY; current post-waiver priority not inferred from screenshots",
+  "source": "Authenticated Yahoo CDP :9225 live pull 2026-09-23T08:14:30-04:00",
+  "observed_at": "2026-09-23T08:14:30-04:00",
+  "priority_order": [],
   "pending_claims_jd": [],
-  "pending_claims_user_confirmed_after_snapshot": [],
-  "completed_claims_jd": [
-    {"add":"Oronde Gadsden","drop":"Michael Mayer","winning_bid":12,"completion_status":"COMPLETED","ownership_after":"OWNED_JD"},
-    {"add":"Emanuel Wilson","drop":"George Holani","winning_bid":8,"completion_status":"COMPLETED","ownership_after":"OWNED_JD"},
-    {"add":"Tre Tucker","drop":"Caleb Douglas","winning_bid":3,"completion_status":"COMPLETED","ownership_after":"OWNED_JD"},
-    {"add":"Packers D/ST","drop":"Buccaneers D/ST","winning_bid":3,"completion_status":"COMPLETED","ownership_after":"OWNED_JD"}
-  ],
-  "week3_market_results_visible": [
-    {"player":"Oronde Gadsden","winner_team":"JD","winning_bid":12,"losing_offers":[{"team":"TM","bid":10}]},
-    {"player":"Tre Tucker","winner_team":"JD","winning_bid":3,"losing_offers":[{"team":"MC","bid":3,"note":"Yahoo explicitly labels lower waiver priority"},{"team":"ANT","bid":1}]},
-    {"player":"Tank Bigsby","winner_team":"MN","winning_bid":6,"other_offer_count":3,"note":"JD had previously submitted a $3 fallback claim, which did not win."},
-    {"player":"Rachaad White","winner_team":"MC","winning_bid":15,"losing_offers":[{"team":"ANT","bid":11},{"team":"SR","bid":11},{"team":"JU","bid":7}]}
-  ],
-  "superseded_pending_state": {
-    "note": "Before processing, repository pending state showed Gadsden $16, Wilson $5, Bigsby $3, Packers $3, Shipley $1 plus Tucker $3. Final Yahoo results control: the user reduced/changed bids before processing to Gadsden $12 and Wilson $8; Tucker and Packers remained $3. Bigsby was won by MN at $6. Shipley was a conditional fallback tied to dropping Holani and was not executed because Wilson won.",
-    "last_pending_observed_at": "2026-09-22T20:59:00-04:00"
+  "pending_cleared_et": "2026-09-23",
+  "pending_process_results_jd": {
+    "processed_at_et": "2026-09-23 04:39",
+    "wins": [
+      {
+        "bid": 12,
+        "added": "Oronde Gadsden",
+        "dropped": "Michael Mayer"
+      },
+      {
+        "bid": 8,
+        "added": "Emanuel Wilson",
+        "dropped": "George Holani"
+      },
+      {
+        "bid": 3,
+        "added": "Packers D/ST",
+        "dropped": "Buccaneers D/ST"
+      },
+      {
+        "bid": 3,
+        "added": "Tre Tucker",
+        "dropped": "Caleb Douglas"
+      }
+    ],
+    "faab_spent": 26,
+    "faab_after": 59,
+    "vs_tue_2000_pending_ladder": {
+      "note": "Processed claim set/amounts differ from Tue 2000 pending ladder (Gadsden $14/Wilson $5/Bigsby $3/Lions $2/Shipley $1). Yahoo live results authoritative \u2014 likely post-2000 claim edits by Billy.",
+      "lost_or_superseded": [
+        {
+          "claim": "Tank Bigsby $3 Drop Holani",
+          "result": "LOST \u2014 MattyBAD won Bigsby $6"
+        },
+        {
+          "claim": "Lions $2 Drop Buccaneers",
+          "result": "NOT PROCESSED AS BID \u2014 JD instead won Packers $3 Drop Buccaneers"
+        },
+        {
+          "claim": "Will Shipley $1 Drop Holani",
+          "result": "NOT PROCESSED \u2014 claim absent from results"
+        },
+        {
+          "claim": "Gadsden $14 / Wilson $5",
+          "result": "WON at $12 / $8 \u2014 Yahoo live authoritative"
+        }
+      ]
+    }
   },
-  "pending_cleared_et": "2026-09-23T07:43:00-04:00",
-  "pending_cleared_time_is_observation_time": true,
-  "note": "All four JD Week 3 acquisitions are completed by authoritative Yahoo user evidence. Do not treat the prior pending bids as completed prices. No separate transaction fee applies; each winning FAAB bid is the real-money cost."
+  "note": "PENDING CLEARED Sep 23 ~04:39 ET (CDP 0800 confirm). JD won Gadsden $12, Wilson $8, Packers $3, Tucker $3. FAAB $59. Prior 07:41 user-screenshot reconcile agrees on outcome.",
+  "prior_screenshot_reconcile_ack": "2026-09-23T07:41:00-04:00 user screenshots already recorded same 4 wins / $59 \u2014 Live Check is first formal vs Tue 2000 baseline with Transactions All Teams + durable txs ingest"
 }
