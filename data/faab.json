@@ -3,57 +3,21 @@
   "starting_budget": 100,
   "real_money": true,
   "balances": [
-    {
-      "team": "BE",
-      "balance": 100
-    },
-    {
-      "team": "MC",
-      "balance": 100
-    },
-    {
-      "team": "VV",
-      "balance": 100
-    },
-    {
-      "team": "TM",
-      "balance": 100
-    },
-    {
-      "team": "SR",
-      "balance": 100
-    },
-    {
-      "team": "MN",
-      "balance": 100
-    },
-    {
-      "team": "ANT",
-      "balance": 100
-    },
-    {
-      "team": "MM",
-      "balance": 100
-    },
-    {
-      "team": "ME",
-      "balance": 100
-    },
-    {
-      "team": "JD",
-      "balance": 85
-    },
-    {
-      "team": "JU",
-      "balance": 100
-    },
-    {
-      "team": "JP",
-      "balance": 100
-    }
+    {"team":"BE","balance":100},
+    {"team":"MC","balance":100},
+    {"team":"VV","balance":100},
+    {"team":"TM","balance":100},
+    {"team":"SR","balance":100},
+    {"team":"MN","balance":100},
+    {"team":"ANT","balance":100},
+    {"team":"MM","balance":100},
+    {"team":"ME","balance":100},
+    {"team":"JD","balance":59},
+    {"team":"JU","balance":100},
+    {"team":"JP","balance":100}
   ],
-  "source": "Yahoo Sparta + Billy Enright min-$1; JD auth $85 after Sanders $12 + Allen $1 + Bucs DEF $1 + Holani $1. 2000 Live Check confirms UNCHANGED (Yahoo display still $88).",
-  "observed_at": "2026-09-18T20:24:13-04:00",
+  "source": "Yahoo Sparta + Billy Enright min-$1 rule; JD user-provided Yahoo waiver-results screenshots 2026-09-23 07:43 ET confirm Week 3 winning bids Gadsden $12, Emanuel Wilson $8, Tre Tucker $3, Packers D/ST $3. Prior authoritative JD balance was $85; $26 spent leaves $59.",
+  "observed_at": "2026-09-23T07:43:00-04:00",
   "pickup_transaction_fee_usd": 0,
   "pickup_transaction_fee_is_separate_from_faab": false,
   "minimum_faab_bid_usd_after_transition": 1,
@@ -66,96 +30,51 @@
     "supersedes": "Prior repository interpretation that every add carried a separate $1 transaction fee"
   },
   "last_confirmed_activity": {
-    "date_et": "2026-09-16",
+    "date_et": "2026-09-23",
     "team": "JD",
     "actions": [
-      {
-        "player": "Raheim Sanders",
-        "action": "ADD_DROP",
-        "dropped": "Ja'Kobi Lane",
-        "faab_bid": 12,
-        "total_real_money_cost_usd": 12
-      },
-      {
-        "player": "Braelon Allen",
-        "action": "ADD_DROP",
-        "dropped": "Emari Demercado",
-        "faab_bid": 1,
-        "total_real_money_cost_usd": 1
-      },
-      {
-        "player": "Buccaneers D/ST",
-        "action": "ADD_DROP",
-        "dropped": "Jets D/ST",
-        "faab_bid": 1,
-        "total_real_money_cost_usd": 1
-      },
-      {
-        "player": "George Holani",
-        "action": "ADD_DROP",
-        "dropped": "Malachi Fields",
-        "faab_bid": 1,
-        "total_real_money_cost_usd": 1
-      }
+      {"player":"Oronde Gadsden","action":"ADD_DROP","dropped":"Michael Mayer","faab_bid":12,"total_real_money_cost_usd":12},
+      {"player":"Emanuel Wilson","action":"ADD_DROP","dropped":"George Holani","faab_bid":8,"total_real_money_cost_usd":8},
+      {"player":"Tre Tucker","action":"ADD_DROP","dropped":"Caleb Douglas","faab_bid":3,"total_real_money_cost_usd":3},
+      {"player":"Packers D/ST","action":"ADD_DROP","dropped":"Buccaneers D/ST","faab_bid":3,"total_real_money_cost_usd":3}
+    ],
+    "total_faab_spent": 26,
+    "faab_balance_before": 85,
+    "faab_balance_after": 59,
+    "source": "User-provided Yahoo Sparta league-chat / waiver-result screenshots observed 2026-09-23 07:43 ET"
+  },
+  "historical_week2_activity": {
+    "date_et": "2026-09-16",
+    "actions": [
+      {"player":"Raheim Sanders","faab_bid":12,"dropped":"Ja'Kobi Lane"},
+      {"player":"Braelon Allen","faab_bid":1,"dropped":"Emari Demercado"},
+      {"player":"Buccaneers D/ST","faab_bid":1,"dropped":"Jets D/ST"},
+      {"player":"George Holani","faab_bid":1,"dropped":"Malachi Fields"}
     ],
     "total_faab_spent": 15,
-    "faab_balance_after": 85,
-    "source": "Explicit user confirmations 2026-09-16; Holani transaction post-dates latest authenticated Yahoo snapshot and is pending Yahoo re-verification.",
-    "yahoo_exact_times_from_live_pull": [
-      {
-        "player": "Raheim Sanders",
-        "timestamp_et": "2026-09-16 01:31",
-        "faab_bid": 12,
-        "yahoo_label": "$12 Waiver"
-      },
-      {
-        "player": "Buccaneers D/ST",
-        "timestamp_et": "2026-09-16 04:04",
-        "faab_bid": 1,
-        "yahoo_label": "Free Agent (user-confirmed $1 min FAAB)"
-      },
-      {
-        "player": "Braelon Allen",
-        "timestamp_et": "2026-09-16 04:30",
-        "faab_bid": 1,
-        "yahoo_label": "Free Agent (user-confirmed $1 min FAAB)"
-      }
-    ],
-    "post_snapshot_user_confirmed": [
-      {
-        "player": "George Holani",
-        "timestamp_et": "2026-09-16 21:51",
-        "faab_bid": 1,
-        "dropped": "Malachi Fields",
-        "source": "Explicit user confirmation"
-      }
-    ]
+    "faab_balance_after": 85
   },
   "yahoo_my_team_displayed_at_pull": {
     "observed_at": "2026-09-16T08:15:19-04:00",
     "displayed_waiver_budget": 88,
     "discrepancy_vs_user_confirmed": true,
-    "note": "Yahoo My Team showed Waiver Budget $88 at 08:15 ET pull, but user-confirmed FAAB after Sanders $12 + Allen $1 + Bucs DEF $1 = $86. Prefer user-confirmed $86 + Billy Enright min-$1 FAAB rule until Yahoo re-check confirms. Possible Yahoo display lag or Free Agent label without showing $1 FAAB."
+    "note": "Historical display lag; later authenticated Yahoo evidence resolved the pre-Week-3 balance to $85."
   },
   "yahoo_faab_recheck_resolution": {
     "observed_at": "2026-09-16T17:39:40-04:00",
     "displayed_waiver_budget": 86,
     "matches_authoritative_balance": true,
     "source": "Authenticated Yahoo Sparta live snapshot",
-    "resolution": "The later authenticated Yahoo snapshot showed JD FAAB at $86, resolving the earlier 08:15 Yahoo $88 display discrepancy. This was before the later user-confirmed $1 Holani transaction."
+    "resolution": "The later authenticated Yahoo snapshot resolved the earlier display discrepancy before the Holani transaction."
   },
-  "jd_authoritative_balance": 85,
+  "jd_authoritative_balance": 59,
   "pending_yahoo_reverification": false,
-  "pending_yahoo_reverification_reason": "CLEARED 2026-09-17T08:23:05-04:00 \u2014 Yahoo live pull confirmed Holani roster + Fields waivers",
-  "live_check_note": "1600 2026-09-18: Yahoo re-verified JD Holani/$85 UNCHANGED vs noon. Yahoo display still $88 lag. Demercado/Fields/Lane still FA (DO_NOT_REEMIT).",
-  "yahoo_live_reverification": {
-    "observed_at": "2026-09-18T16:17:34-04:00",
-    "displayed_waiver_budget": 88,
-    "authoritative_balance": 85,
-    "holani_on_roster": true,
-    "fields_still_fa": true,
-    "demercado_still_fa": true,
-    "lane_still_fa": true,
-    "resolution": "1600 Live Check Yahoo confirms roster/FAAB UNCHANGED vs noon. Prefer auth $85."
+  "pending_yahoo_reverification_reason": "CLEARED by newer user-provided Yahoo waiver-result screenshots 2026-09-23 07:43 ET confirming all four completed JD Week 3 acquisitions and exact winning bids.",
+  "week3_waiver_resolution": {
+    "observed_at": "2026-09-23T07:43:00-04:00",
+    "winning_bids": {"Oronde Gadsden":12,"Emanuel Wilson":8,"Tre Tucker":3,"Packers D/ST":3},
+    "total_spent": 26,
+    "balance_after": 59,
+    "market_notes": "Gadsden beat a $10 bid; Tucker tied another $3 bid and won on higher waiver priority. Wilson had two other offers; amounts not visible in supplied screenshot."
   }
 }
