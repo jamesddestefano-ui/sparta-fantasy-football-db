@@ -1,108 +1,41 @@
 {
   "league": "sparta",
-  "source": "User-provided Yahoo Pending Transactions screenshot observed 2026-09-22T20:59:00-04:00; supersedes 20:20 authenticated Agent snapshot for pending JD claims only. Additional explicit user Yahoo confirmation recorded by Sparta Brain 2026-09-23T00:01:00-04:00 adds a pending Tre Tucker $3 claim dropping Caleb Douglas; exact claim priority/process date not yet Yahoo-reverified in repository.",
-  "observed_at": "2026-09-22T20:59:00-04:00",
-  "brain_recorded_at": "2026-09-23T00:01:00-04:00",
-  "priority_order": [
-    {
-      "priority": 1,
-      "team": "JP"
-    },
-    {
-      "priority": 2,
-      "team": "JU"
-    },
-    {
-      "priority": 3,
-      "team": "JD"
-    },
-    {
-      "priority": 4,
-      "team": "ME"
-    },
-    {
-      "priority": 5,
-      "team": "MM"
-    },
-    {
-      "priority": 6,
-      "team": "ANT"
-    },
-    {
-      "priority": 7,
-      "team": "MN"
-    },
-    {
-      "priority": 8,
-      "team": "SR"
-    },
-    {
-      "priority": 9,
-      "team": "TM"
-    },
-    {
-      "priority": 10,
-      "team": "VV"
-    },
-    {
-      "priority": 11,
-      "team": "MC"
-    },
-    {
-      "priority": 12,
-      "team": "BE"
-    }
+  "source": "User-provided Yahoo Sparta league-chat / waiver-result screenshots observed 2026-09-23T07:43:00-04:00, plus user-provided Yahoo My Team screenshots observed 2026-09-23T07:41:00-04:00. These supersede the Sep. 22 pending-claim state.",
+  "observed_at": "2026-09-23T07:43:00-04:00",
+  "priority_order_before_run": [
+    {"priority":1,"team":"JP"},
+    {"priority":2,"team":"JU"},
+    {"priority":3,"team":"JD"},
+    {"priority":4,"team":"ME"},
+    {"priority":5,"team":"MM"},
+    {"priority":6,"team":"ANT"},
+    {"priority":7,"team":"MN"},
+    {"priority":8,"team":"SR"},
+    {"priority":9,"team":"TM"},
+    {"priority":10,"team":"VV"},
+    {"priority":11,"team":"MC"},
+    {"priority":12,"team":"BE"}
   ],
-  "pending_claims_jd": [
-    {
-      "priority": 1,
-      "process_date": "Sep 23",
-      "bid": 16,
-      "add": "Oronde Gadsden",
-      "drop": "Michael Mayer"
-    },
-    {
-      "priority": 2,
-      "process_date": "Sep 23",
-      "bid": 5,
-      "add": "Emanuel Wilson",
-      "drop": "George Holani"
-    },
-    {
-      "priority": 3,
-      "process_date": "Sep 23",
-      "bid": 3,
-      "add": "Tank Bigsby",
-      "drop": "George Holani"
-    },
-    {
-      "priority": 4,
-      "process_date": "Sep 23",
-      "bid": 3,
-      "add": "Packers",
-      "drop": "Buccaneers"
-    },
-    {
-      "priority": 5,
-      "process_date": "Sep 23",
-      "bid": 1,
-      "add": "Will Shipley",
-      "drop": "George Holani"
-    }
+  "priority_order_status": "PRE_RUN_ONLY; current post-waiver priority not inferred from screenshots",
+  "pending_claims_jd": [],
+  "pending_claims_user_confirmed_after_snapshot": [],
+  "completed_claims_jd": [
+    {"add":"Oronde Gadsden","drop":"Michael Mayer","winning_bid":12,"completion_status":"COMPLETED","ownership_after":"OWNED_JD"},
+    {"add":"Emanuel Wilson","drop":"George Holani","winning_bid":8,"completion_status":"COMPLETED","ownership_after":"OWNED_JD"},
+    {"add":"Tre Tucker","drop":"Caleb Douglas","winning_bid":3,"completion_status":"COMPLETED","ownership_after":"OWNED_JD"},
+    {"add":"Packers D/ST","drop":"Buccaneers D/ST","winning_bid":3,"completion_status":"COMPLETED","ownership_after":"OWNED_JD"}
   ],
-  "pending_claims_user_confirmed_after_snapshot": [
-    {
-      "priority": null,
-      "process_date": null,
-      "bid": 3,
-      "add": "Tre Tucker",
-      "drop": "Caleb Douglas",
-      "availability": "FREE_AGENT_CONFIRMED_BY_USER_YAHOO_CHECK",
-      "ordering_status": "NOT_YET_YAHOO_REVERIFIED_IN_REPOSITORY",
-      "completion_status": "PENDING"
-    }
+  "week3_market_results_visible": [
+    {"player":"Oronde Gadsden","winner_team":"JD","winning_bid":12,"losing_offers":[{"team":"TM","bid":10}]},
+    {"player":"Tre Tucker","winner_team":"JD","winning_bid":3,"losing_offers":[{"team":"MC","bid":3,"note":"Yahoo explicitly labels lower waiver priority"},{"team":"ANT","bid":1}]},
+    {"player":"Tank Bigsby","winner_team":"MN","winning_bid":6,"other_offer_count":3,"note":"JD had previously submitted a $3 fallback claim, which did not win."},
+    {"player":"Rachaad White","winner_team":"MC","winning_bid":15,"losing_offers":[{"team":"ANT","bid":11},{"team":"SR","bid":11},{"team":"JU","bid":7}]}
   ],
-  "note": "Newer user Yahoo screenshot at 20:59 ET changes two pending Sep 23 claims vs the 20:20 Agent snapshot: Gadsden bid raised $14→$16; Lions $2 claim replaced by Packers $3. Wilson $5 / Bigsby $3 / Shipley $1 unchanged. After that screenshot, the user explicitly confirmed Tre Tucker was a Yahoo free agent and that he submitted a $3 claim dropping Caleb Douglas. Tucker's exact claim order/process date has not yet been captured by a newer Yahoo screenshot/authenticated snapshot. All entries are pending only; no acquisition or FAAB spend is recorded as completed. The user's later statement that he 'may reduce Gadsden to $10' is contemplated only and does not change the recorded $16 pending bid without confirmed execution.",
-  "pending_cleared_et_superseded": "2026-09-16",
-  "pending_cleared_et": null
+  "superseded_pending_state": {
+    "note": "Before processing, repository pending state showed Gadsden $16, Wilson $5, Bigsby $3, Packers $3, Shipley $1 plus Tucker $3. Final Yahoo results control: the user reduced/changed bids before processing to Gadsden $12 and Wilson $8; Tucker and Packers remained $3. Bigsby was won by MN at $6. Shipley was a conditional fallback tied to dropping Holani and was not executed because Wilson won.",
+    "last_pending_observed_at": "2026-09-22T20:59:00-04:00"
+  },
+  "pending_cleared_et": "2026-09-23T07:43:00-04:00",
+  "pending_cleared_time_is_observation_time": true,
+  "note": "All four JD Week 3 acquisitions are completed by authoritative Yahoo user evidence. Do not treat the prior pending bids as completed prices. No separate transaction fee applies; each winning FAAB bid is the real-money cost."
 }
