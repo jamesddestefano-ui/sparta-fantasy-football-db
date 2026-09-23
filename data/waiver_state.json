@@ -1,7 +1,8 @@
 {
   "league": "sparta",
-  "source": "User-provided Yahoo Pending Transactions screenshot observed 2026-09-22T20:59:00-04:00; supersedes 20:20 authenticated Agent snapshot for pending JD claims only",
+  "source": "User-provided Yahoo Pending Transactions screenshot observed 2026-09-22T20:59:00-04:00; supersedes 20:20 authenticated Agent snapshot for pending JD claims only. Additional explicit user Yahoo confirmation recorded by Sparta Brain 2026-09-23T00:01:00-04:00 adds a pending Tre Tucker $3 claim dropping Caleb Douglas; exact claim priority/process date not yet Yahoo-reverified in repository.",
   "observed_at": "2026-09-22T20:59:00-04:00",
+  "brain_recorded_at": "2026-09-23T00:01:00-04:00",
   "priority_order": [
     {
       "priority": 1,
@@ -89,7 +90,19 @@
       "drop": "George Holani"
     }
   ],
-  "note": "Newer user Yahoo screenshot at 20:59 ET changes two pending Sep 23 claims vs the 20:20 Agent snapshot: Gadsden bid raised $14→$16; Lions $2 claim replaced by Packers $3. Wilson $5 / Bigsby $3 / Shipley $1 unchanged. These are pending claims only; no acquisition or FAAB spend is recorded as completed.",
+  "pending_claims_user_confirmed_after_snapshot": [
+    {
+      "priority": null,
+      "process_date": null,
+      "bid": 3,
+      "add": "Tre Tucker",
+      "drop": "Caleb Douglas",
+      "availability": "FREE_AGENT_CONFIRMED_BY_USER_YAHOO_CHECK",
+      "ordering_status": "NOT_YET_YAHOO_REVERIFIED_IN_REPOSITORY",
+      "completion_status": "PENDING"
+    }
+  ],
+  "note": "Newer user Yahoo screenshot at 20:59 ET changes two pending Sep 23 claims vs the 20:20 Agent snapshot: Gadsden bid raised $14→$16; Lions $2 claim replaced by Packers $3. Wilson $5 / Bigsby $3 / Shipley $1 unchanged. After that screenshot, the user explicitly confirmed Tre Tucker was a Yahoo free agent and that he submitted a $3 claim dropping Caleb Douglas. Tucker's exact claim order/process date has not yet been captured by a newer Yahoo screenshot/authenticated snapshot. All entries are pending only; no acquisition or FAAB spend is recorded as completed. The user's later statement that he 'may reduce Gadsden to $10' is contemplated only and does not change the recorded $16 pending bid without confirmed execution.",
   "pending_cleared_et_superseded": "2026-09-16",
   "pending_cleared_et": null
 }
