@@ -1,0 +1,28 @@
+{
+  "league": "sparta",
+  "consumer": "Sparta FF Bot",
+  "reviewed_at_et": "2026-09-24T16:29:00-04:00",
+  "trigger": "NFL Pulse HIGH 2026-09-24-1622 Nabers Thu FP shoulder (+ Thomas DNP store-only)",
+  "scan_id": "2026-09-24-1622",
+  "roster_lineup_faab_waiver_state_altered": false,
+  "jd_roster_source": "data/current_roster_jd.json (Live Check Thu 1600: JD UNCHANGED post-waiver)",
+  "pulse_items": [
+    {
+      "pulse_id": "20260924-161600-malik-nabers-nyg-wr-thu-fp-shoulder",
+      "jd_effect": "Nabers Thu FP (shoulder) after Wed LP \u2014 not JD-owned. Do not infer ACTIVE from FP. No start/sit/FAAB. Suppress.",
+      "action": "SUPPRESS",
+      "followup": "Fri designation/MRI only if Nabers becomes JD-owned or FA-relevant"
+    },
+    {
+      "pulse_id": "20260924-161601-andrew-thomas-nyg-ot-thu-dnp-groin",
+      "jd_effect": "Thomas Thu DNP groin \u2014 OL only; not JD. Store-only MEDIUM. Suppress.",
+      "action": "SUPPRESS",
+      "followup": "none JD"
+    }
+  ],
+  "do_not_reemit": [
+    "Nabers practice status until Fri game designation / OUT step-change"
+  ],
+  "actionability": "intelligence_only_no_jd_alert",
+  "actionable_alert": false
+}
