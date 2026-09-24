@@ -1,8 +1,9 @@
 {
-  "observed_at": "2026-09-24T08:04:00-04:00",
-  "pull_completed_at": "2026-09-24T08:06:00.293816-04:00",
-  "source": "authenticated Yahoo Agent Computer browser (computerUse read-only)",
-  "check_id": "sparta-live-check-20260924-0800",
+  "observed_at": "2026-09-24T12:03:17-04:00",
+  "pull_completed_at": "2026-09-24T12:05:42-04:00",
+  "source": "authenticated Yahoo Agent Computer CDP :9225 (playwright connect_over_cdp read-only)",
+  "check_id": "sparta-live-check-20260924-1200",
+  "completed": true,
   "yahoo_ok": true,
   "league_id": "102586",
   "yahoo_league_id": "102586",
@@ -15,9 +16,9 @@
   "opponent": "X-Factor",
   "scores": {
     "jd_live": 0.0,
-    "jd_proj": 135.39,
+    "jd_proj": 136.1,
     "opp_live": 0.0,
-    "opp_proj": 128.12,
+    "opp_proj": 128.1,
     "opp_name": "X-Factor"
   },
   "total_points": 295.78,
@@ -64,17 +65,23 @@
       "J.K. Dobbins"
     ],
     "O": [],
-    "IR": []
+    "IR": [],
+    "D": []
   },
-  "vs_2000": {
+  "soft_q": [
+    "J.K. Dobbins BN Q"
+  ],
+  "vs_0800": {
     "pending": "UNCHANGED CLEARED",
     "roster": "UNCHANGED",
     "faab": "UNCHANGED $59",
     "ir": "UNCHANGED 0/1",
     "soft_q": "UNCHANGED Dobbins BN Q",
     "lineup_starters": "UNCHANGED",
-    "txs": "1 new non-JD (SR ADD DeeJay Dallas / DROP Eddy Pineiro Sep 23 21:50 ET)",
-    "proj": "135.56\u2013128.44 \u2192 135.39\u2013128.12 drift only (not alert)",
-    "packers_def_tnf": "SOFT continuity \u2014 Reed OUT already 2000 DO_NOT_REEMIT; Packers DEF still starting"
-  }
+    "txs": "0 new since 0800 (newest still SR Dallas/Pineiro Sep 23 6:50pm PT)",
+    "proj": "135.39\u2013128.12 \u2192 136.10\u2013128.10 drift only (not alert)",
+    "packers_def_tnf": "SOFT continuity \u2014 Reed OUT already DO_NOT_REEMIT; Packers DEF still starting"
+  },
+  "new_txs_since_0800_count": 0,
+  "transactions_newest": "Sep 23, 6:50 pm \u2014 King Kong ADD DeeJay Dallas / DROP Eddy Pineiro (already ingested 0800)"
 }
