@@ -1,21 +1,21 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-09-24T23:10:13.502Z",
+  "generatedAt": "2026-09-25T00:09:36.480Z",
   "status": "live",
-  "completedAt": "2026-09-24T23:10:13.466Z",
-  "nextAtLabel": "8:10 PM ET",
+  "completedAt": "2026-09-25T00:09:36.404Z",
+  "nextAtLabel": "9:09 PM ET",
   "inWindow": true,
   "itemCount": 14,
   "items": [
     {
-      "id": "nacua-dnp-thu-hip",
+      "id": "nacua-dnp-hip-w3",
       "at": "2026-09-24T22:59:47Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Rams WR Puka Nacua (hip) did not practice for the second straight day. McVay notes not making great progress and team being cautious though not long-term; status for Week 3 vs DEN highly uncertain/trending out.",
+      "text": "Rams WR Puka Nacua did not practice for the second straight day due to a hip injury; McVay says not making great progress and team being cautious though not long-term.",
       "playerIds": [
         "puka-nacua"
       ],
@@ -25,17 +25,17 @@
       "url": "https://x.com/AdamSchefter/status/2103258121087152372",
       "kind": "INJURY_STATUS",
       "eventId": "injury-nacua-week3",
-      "signal": "QUESTIONABLE",
-      "priorStatus": "OUT-week2",
-      "newStatus": "DNP-x2",
-      "why": "Second consecutive DNP; McVay 'we'll see... not making great progress'; cautious approach on soft-tissue.",
-      "implication": "High risk of second straight absence; monitor Fri report closely.",
-      "opportunity": "Full route/target monopoly shifts to Adams if out",
+      "signal": "DNP",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "DNP",
+      "why": "Hip/groin soreness; second DNP; McVay candid on lack of progress",
+      "implication": "Likely OUT Week 3 vs DEN; monitor Fri report",
+      "opportunity": "Route/target monopoly for Adams",
       "beneficiaries": [
         "davante-adams"
       ],
       "corroboration": [
-        "https://x.com/RapSheet",
+        "@RapSheet",
         "https://x.com/adamlevitan/status/2103130278965510258"
       ],
       "supportingSources": [
@@ -45,13 +45,13 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "collins-dnp-thu-hamstring",
+      "id": "collins-dnp-ham-w3",
       "at": "2026-09-24T20:46:43Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Texans WR Nico Collins (hamstring) did not practice for the second straight day. Trending toward missing Week 3 after sitting Week 2.",
+      "text": "Texans WR Nico Collins did not practice for the second straight day due to hamstring injury.",
       "playerIds": [
         "nico-collins"
       ],
@@ -61,46 +61,14 @@
       "url": "https://x.com/AdamSchefter/status/2103224634267087309",
       "kind": "INJURY_STATUS",
       "eventId": "injury-collins-week3",
-      "signal": "OUT",
-      "priorStatus": "OUT-week2",
-      "newStatus": "DNP-x2",
-      "why": "Consecutive DNPs on soft-tissue issue with prior history.",
-      "implication": "Schultz and other Texans pass-catchers elevated volume again.",
-      "opportunity": "TE target share spike without Collins",
+      "signal": "DNP",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "DNP",
+      "why": "Hamstring; consecutive DNPs",
+      "implication": "Elevated risk of missing Week 3; Schultz target bump if out",
+      "opportunity": "TE/WR volume for Schultz and others",
       "beneficiaries": [
         "dalton-schultz"
-      ],
-      "priority": "IMMEDIATE"
-    },
-    {
-      "id": "flowers-dnp-thu-hamstring",
-      "at": "2026-09-24T16:59:03Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Ravens WR Zay Flowers (hamstring) DNP for second straight day. Looking like he will miss a second consecutive game; Ravens travel to Brazil adds complication.",
-      "playerIds": [
-        "zay-flowers"
-      ],
-      "players": [
-        "Zay Flowers"
-      ],
-      "url": "https://x.com/AdamSchefter/status/2103167341009760732",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-flowers-week3",
-      "signal": "OUT",
-      "priorStatus": "OUT-week2",
-      "newStatus": "DNP-x2",
-      "why": "No practice Wed/Thu after aggravating prior hamstring; Brazil logistics.",
-      "implication": "Expect inactive; Ravens WR depth elevated short-term.",
-      "opportunity": "Increased targets for remaining Ravens pass-catchers",
-      "corroboration": [
-        "https://x.com/RapSheet",
-        "Jamison Hensley"
-      ],
-      "supportingSources": [
-        "ian-rapoport"
       ],
       "priority": "IMMEDIATE"
     },
@@ -111,7 +79,7 @@
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Giants QB Jaxson Dart officially placed on IR after expected knee surgery ending 2026 season (ACL intact but surgery required).",
+      "text": "Giants QB Jaxson Dart officially placed on IR after knee surgery (MCL/meniscus, ACL intact); season-ending, full recovery expected.",
       "playerIds": [
         "jaxson-dart"
       ],
@@ -120,19 +88,77 @@
       ],
       "url": "https://x.com/RapSheet/status/2103222892662071737",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-dart-season",
-      "signal": "OUT",
-      "priorStatus": "INJURED",
+      "eventId": "injury-dart-ir",
+      "signal": "IR",
+      "priorStatus": "OUT",
       "newStatus": "IR",
-      "why": "Surgery confirmed; season over.",
-      "implication": "Giants QB situation shifts fully to Winston/others; offense continuity hit.",
-      "opportunity": "Potential boost or change for Giants skill players under new QB",
+      "why": "Surgery confirmed; sources on full recovery but 2026 season over",
+      "implication": "Jameis Winston likely starter; Giants pass game chaos",
+      "opportunity": "Winston streamer; Nabers/others volume?",
       "corroboration": [
-        "Mike Garafolo"
+        "@MatthewBerryTMR"
       ],
       "supportingSources": [
         "matthew-berry"
       ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "flowers-dnp-ham-w3",
+      "at": "2026-09-24T16:59:03Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Ravens WR Zay Flowers DNP second straight day (hamstring); looking like missing second consecutive game, travel to Brazil complicates.",
+      "playerIds": [
+        "zay-flowers"
+      ],
+      "players": [
+        "Zay Flowers"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2103167341009760732",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-flowers-week3",
+      "signal": "DNP",
+      "priorStatus": "OUT",
+      "newStatus": "DNP",
+      "why": "Hamstring aggravated after Week 1 explosion; history from Aug 20 joint practice",
+      "implication": "Likely OUT again vs DAL in Brazil",
+      "opportunity": "Bateman/Lane upside",
+      "beneficiaries": [
+        "jakobi-lane"
+      ],
+      "corroboration": [
+        "@adamlevitan"
+      ],
+      "supportingSources": [
+        "adam-levitan"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "bagent-dnp-keenum",
+      "at": "2026-09-24T20:01:03Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Bears QB Tyson Bagent officially DNP first practice of week (concussion est.); all signs point to Case Keenum starting vs PHI.",
+      "playerIds": [
+        "caleb-williams"
+      ],
+      "players": [
+        "Caleb Williams"
+      ],
+      "url": "https://x.com/RapSheet/status/2103213141337489538",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-bears-qb-w3",
+      "signal": "DNP",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "DNP",
+      "why": "Bagent DNP; lean Keenum",
+      "implication": "Keenum start; Odunze/Moore downgrade?",
       "priority": "HIGH"
     },
     {
@@ -154,55 +180,55 @@
       "eventId": "injury-barkley-week3",
       "signal": "ACTIVE",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "PRACTICING-EXPECTED",
-      "why": "Positive MRI; suited and on field; self-expects to play.",
-      "implication": "Clear the deck for full workload Monday night.",
-      "opportunity": "Standard high snap/carry share if cleared",
-      "corroboration": [
-        "Jeff McLane"
-      ],
+      "newStatus": "PRACTICING",
+      "why": "Good MRI; suited up and expects to play",
+      "implication": "Clear for MNF; no major handcuff elevation",
       "priority": "HIGH"
     },
     {
-      "id": "berry-love-schultz",
+      "id": "berry-brooks-ir-hubbard",
       "at": "2026-09-24T16:55:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Loves Dalton Schultz @ IND: team-high 28% target share last week with Collins out; IND allows 4th-most yards to TEs.",
+      "text": "Jonathon Brooks expected IR (only 5 games across 3 seasons); pushes Chuba Hubbard firmly into lead role, AJ Dillon primary backup (Etienne also IR).",
       "playerIds": [
-        "dalton-schultz"
+        "jonathon-brooks",
+        "chuba-hubbard"
       ],
       "players": [
-        "Dalton Schultz"
+        "Jonathon Brooks",
+        "Chuba Hubbard"
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-3-fantasy-football",
-      "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-hate-week3-schultz",
-      "signal": "LOVE",
-      "why": "Proven target spike without Collins + soft TE matchup; Collins DNP again.",
-      "implication": "TE1 streaming/start option with volume.",
-      "opportunity": "28%+ target share if Collins sits",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-brooks-ir",
+      "signal": "IR",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "IR",
+      "why": "Reaggravated groin; limited career games",
+      "implication": "Hubbard clear lead back; Dillon handcuff",
+      "opportunity": "Hubbard carries/snaps expand",
       "beneficiaries": [
-        "dalton-schultz"
+        "chuba-hubbard"
       ],
       "corroboration": [
-        "https://x.com/AdamSchefter/status/2103224634267087309"
+        "establish-the-run"
       ],
       "supportingSources": [
-        "adam-schefter"
+        "establish-the-run"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "levitan-tnf-spots",
+      "id": "levitan-tnf-role-questions",
       "at": "2026-09-24T15:39:32Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "TNF questions: Has Marshawn Lloyd totally blown chance and ceded backfield to Kaleb Johnson? Is Penix healthy enough to revive Drake London and Kyle Pitts? Does Jayden Reed absence lead to more 2-TE sets? Can Packers OL hold for Christian Watson?",
+      "text": "TNF spots: Has Marshawn Lloyd totally blown chance/ceded backfield to Kaleb Johnson? Is Penix healthy enough to revive London and Pitts? Reed absence more 2TE sets? Packers OL hold for Watson/Golden?",
       "playerIds": [
         "marshawn-lloyd",
         "drake-london",
@@ -219,21 +245,18 @@
       ],
       "url": "https://x.com/adamlevitan/status/2103147330027561048",
       "kind": "ANALYST_OPINION",
-      "eventId": "tnf-role-questions-week3",
+      "eventId": "tnf-roles-w3",
       "signal": "UPGRADE",
-      "why": "Role/usage uncertainty on short week; Penix return, Reed OUT confirmed.",
-      "implication": "London/Pitts upside with Penix; Watson elevated without Reed; Lloyd downgrade risk.",
-      "opportunity": "Potential snap/target expansion for London, Pitts, Watson in 2TE",
+      "why": "Role questions post-injuries/usage shifts for TNF",
+      "implication": "Monitor Lloyd cede, Penix boost to ATL pass catchers, Watson in 2TE",
+      "opportunity": "London/Pitts revival; Watson routes",
       "beneficiaries": [
         "drake-london",
         "kyle-pitts",
         "christian-watson"
       ],
-      "corroboration": [
-        "https://x.com/RapSheet/status/2103170412372791645"
-      ],
       "supportingSources": [
-        "ian-rapoport"
+        "establish-the-run"
       ],
       "priority": "HIGH"
     },
@@ -244,7 +267,7 @@
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Davante Adams has run 142 routes without Puka Nacua as a Ram, targeted on 60 (42%). Results in two missed games: 5-35-3 and 8-195-2. With Nacua progress slow, Adams holds route/target monopoly.",
+      "text": "Davante Adams has run 142 routes without Puka Nacua as a Ram, targeted on 42% of them; results 5-35-3 and 8-195-2 in the two games missed.",
       "playerIds": [
         "davante-adams",
         "puka-nacua"
@@ -257,14 +280,14 @@
       "kind": "USAGE_DATA",
       "eventId": "usage-adams-sans-nacua",
       "signal": "UPGRADE",
-      "why": "Historical route/target data + recent explosion when Nacua absent; McVay progress comments.",
-      "implication": "Adams elite WR1/WR2 lock if Nacua sits again vs DEN.",
-      "opportunity": "42% target rate on routes; full tree access",
+      "why": "Route/target monopoly data when Nacua out; explosion results",
+      "implication": "Adams must-start/WR1 upside if Nacua sits again",
+      "opportunity": "High target share, red-zone implied",
       "beneficiaries": [
         "davante-adams"
       ],
       "corroboration": [
-        "https://x.com/AdamSchefter/status/2103258121087152372"
+        "@AdamSchefter"
       ],
       "supportingSources": [
         "adam-schefter"
@@ -272,13 +295,13 @@
       "priority": "HIGH"
     },
     {
-      "id": "levitan-flowers-hamstring-history",
+      "id": "levitan-flowers-ham-history",
       "at": "2026-09-23T17:15:52Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Zay Flowers first hurt hamstring Aug 20 joint practice; aggravated after 5-150-1 first half Week 1; hasn't practiced full since. Ravens to Brazil this week complicates return.",
+      "text": "Zay Flowers first hurt hamstring Aug 20 joint practice; seemed fine then exploded Week 1 (5-150-1 first half) before aggravating; hasn't practiced full since; Brazil travel.",
       "playerIds": [
         "zay-flowers"
       ],
@@ -287,12 +310,13 @@
       ],
       "url": "https://x.com/adamlevitan/status/2102809182265327790",
       "kind": "ANALYST_OPINION",
-      "eventId": "injury-flowers-week3",
-      "signal": "OUT",
-      "why": "Timeline of injury + lack of full practice + travel.",
-      "implication": "High likelihood miss Week 3; caution on any late return.",
+      "eventId": "injury-flowers-timeline",
+      "signal": "DOWNGRADE",
+      "why": "Injury origin and aggravation details + travel risk",
+      "implication": "High chance misses another; fade or handcuff",
+      "opportunity": "Ravens WR depth",
       "corroboration": [
-        "https://x.com/AdamSchefter"
+        "@AdamSchefter"
       ],
       "supportingSources": [
         "adam-schefter"
@@ -306,7 +330,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Loves Derrick Henry vs DAL (Brazil): highest RB rushing yards prop (88.5); Dallas ranks 30th in rush D allowing 173.5 ypg. Feed him.",
+      "text": "Loves Derrick Henry vs DAL (Brazil): highest rush yards prop 88.5; Dallas 30th rush D allowing 173.5 ypg.",
       "playerIds": [
         "derrick-henry"
       ],
@@ -315,11 +339,11 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-3-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-hate-week3-henry",
+      "eventId": "berry-love-henry-w3",
       "signal": "LOVE",
-      "why": "Elite prop + worst rush D matchup in Brazil game.",
-      "implication": "Must-start RB1 with smash volume/TD upside.",
-      "opportunity": "High carry share vs soft front",
+      "why": "Elite matchup vs soft Dallas run D + high prop",
+      "implication": "Strong start; smash spot",
+      "opportunity": "Carries/goal-line",
       "priority": "NORMAL"
     },
     {
@@ -329,7 +353,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Loves Chase Brown @ PIT: at least 20 touches + 15% target share both games; RB7 utilization; PIT allows 5th-most rush yds to RBs.",
+      "text": "Loves Chase Brown @ PIT: 20+ touches and 15% target share both games; RB7 utilization; PIT allows 5th-most rush yds to RBs.",
       "playerIds": [
         "chase-brown"
       ],
@@ -338,11 +362,11 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-3-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-hate-week3-brown",
+      "eventId": "berry-love-cbrown-w3",
       "signal": "LOVE",
-      "why": "Consistent high volume + favorable rush matchup.",
-      "implication": "Strong RB2/flex with dual-threat role locked.",
-      "opportunity": "20+ touches + receiving work",
+      "why": "Consistent volume + soft matchup",
+      "implication": "RB1/2 start",
+      "opportunity": "Touches + targets",
       "priority": "NORMAL"
     },
     {
@@ -352,7 +376,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Loves Chris Olave vs LV: double-digit targets both games, 14.8 aDOT, 53% air yards; LV allows league-high 18.7 YPR to WRs.",
+      "text": "Loves Chris Olave vs LV: double-digit targets both games, 14.8 aDOT, 53% air yards; LV allows league-high 18.7 ypr to WRs.",
       "playerIds": [
         "chris-olave"
       ],
@@ -361,40 +385,11 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-3-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-hate-week3-olave",
+      "eventId": "berry-love-olave-w3",
       "signal": "LOVE",
-      "why": "Dominant target/air yards share + soft deep coverage.",
-      "implication": "WR2/WR3 smash with volume and efficiency upside.",
-      "opportunity": "High aDOT target share",
-      "priority": "NORMAL"
-    },
-    {
-      "id": "berry-love-watson",
-      "at": "2026-09-24T16:55:00Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Loves Christian Watson vs ATL: WR8 utilization, 38% RZ target share; WR9 PPG since Week 11 last year. Reed OUT boosts further.",
-      "playerIds": [
-        "christian-watson"
-      ],
-      "players": [
-        "Christian Watson"
-      ],
-      "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-3-fantasy-football",
-      "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-hate-week3-watson",
-      "signal": "LOVE",
-      "why": "Strong utilization/RZ + Reed absence opens more.",
-      "implication": "Elevated WR3/flex with TD equity on TNF.",
-      "opportunity": "Increased routes/targets without Reed; RZ share",
-      "corroboration": [
-        "https://x.com/adamlevitan/status/2103147330027561048"
-      ],
-      "supportingSources": [
-        "adam-levitan"
-      ],
+      "why": "Volume + aDOT + soft secondary",
+      "implication": "WR2/3 smash",
+      "opportunity": "Targets/air yards",
       "priority": "NORMAL"
     },
     {
@@ -404,7 +399,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Hates Travis Etienne vs LV: only 49% RB touches, 38% third-down snaps even with Kamara active; role not there (RB37 utilization).",
+      "text": "Hates Travis Etienne vs LV: only 49% RB touches, 38% third-down snaps even with Kamara; role not there (RB37 util).",
       "playerIds": [
         "travis-etienne"
       ],
@@ -413,16 +408,51 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-3-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-hate-week3-etienne",
+      "eventId": "berry-hate-etienne-w3",
       "signal": "HATE",
-      "why": "Split backfield with low efficiency snaps; Kamara still primary.",
-      "implication": "Sit/flex fade; prefer other options.",
-      "opportunity": "Limited; reverse if Kamara sits",
+      "why": "Limited role/snap share despite opportunity",
+      "implication": "Sit/flex fade",
+      "conflict": "Usage low despite teammate presence",
       "priority": "NORMAL"
     }
   ],
   "sundayMode": false,
   "sourceNotes": [
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific usage (Adams routes/targets sans Nacua + results), Flowers hamstring timeline/aggravation/Brazil, TNF role questions (Lloyd cede, Penix revive London/Pitts, Reed 2TE/Watson). Strong opportunity focus.",
+      "at": "2026-09-24T23:22:59Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "ROS Top 150, Thorman Week 3 rankings/snaps & pace (CAR@CLE up), Buy Leone model, TNF projections/ownership, waiver beneficiaries (Flowers->Bateman, Brooks->Dillon, Dart->Winston). Limited free injury agg but strong roles.",
+      "at": "2026-09-24T18:46:01Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Full Week 3 Love/Hate per-player (Purdy/Mahomes/Henry/Chase Brown/Olave/Parker Washington/Watson/Schultz loves; Mayfield/Etienne/Stevenson/McLaurin/Odunze hates) + Brooks IR/Hubbard lead. Strong opinions/stats.",
+      "at": "2026-09-24T16:55:00Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "Primary facts: Collins DNP x2 hamstring; Flowers DNP x2; Nacua DNP x2/cautious progress; Cowboys multiple outs. Essential IMMEDIATE injury status.",
+      "at": "2026-09-24T22:59:47Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Dart IR official + surgery; Barkley practice/good MRI/expects play; Bagent DNP/Keenum lean; Penix/Nacua/Flowers notes. Strong corroboration + original status.",
+      "at": "2026-09-24T20:39:48Z"
+    },
     {
       "sourceId": "establish-the-run",
       "source": "Establish The Run",
@@ -555,45 +585,10 @@
       "grade": "USEFUL",
       "note": "Primary facts: Dart MCL; Goedert few weeks MCL + Ertz PS; Nacua inactive; Daniels/Mariota; Caleb Williams week-to-week hamstring. Essential IMMEDIATE injury sourcing.",
       "at": "2026-09-22T15:00:00Z"
-    },
-    {
-      "sourceId": "ian-rapoport",
-      "source": "Ian Rapoport",
-      "grade": "USEFUL",
-      "note": "Strong corroboration + original: Dart MCL details/MRI; Pierce several weeks heel + rehab/IR likely; Goedert MCL few weeks; Daniels imaging/specialists + Mariota; Nacua/Nabers notes; Caleb week-to-week. Beat notes critical.",
-      "at": "2026-09-22T15:00:00Z"
-    },
-    {
-      "sourceId": "establish-the-run",
-      "source": "Establish The Run",
-      "grade": "USEFUL",
-      "note": "Sunday AM GTD/expected/out summary (McConkey optimism, Nacua GTD, Harvey not expected, Olave/Burrow expected, Flowers/Pittman OUT) + Nacua inactive + projections. Strong status aggregation.",
-      "at": "2026-09-22T14:00:00Z"
-    },
-    {
-      "sourceId": "adam-levitan",
-      "source": "Adam Levitan",
-      "grade": "USEFUL",
-      "note": "Player-specific usage post-MNF: Skattebo snap/opp lead; Nacua-out route tree (Adams/Ferguson/Mumpfield); Kyren RZ monopoly; Johnston horrific YPRR; prior Njoku/Kolar to Gadsden. High opportunity focus.",
-      "at": "2026-09-22T14:00:00Z"
-    },
-    {
-      "sourceId": "matthew-berry",
-      "source": "Matthew Berry",
-      "grade": "USEFUL",
-      "note": "Confirms McConkey ACTIVE/Harvey inactive + Coleman grab; Puka out pivots (Parkinson/Fields/Mumpfield); DeVonta Smith love/ride-or-die; Bernard stash; Happy Hour injury/recap/waivers focus. Strong status/opinions.",
-      "at": "2026-09-22T14:00:00Z"
-    },
-    {
-      "sourceId": "adam-schefter",
-      "source": "Adam Schefter",
-      "grade": "USEFUL",
-      "note": "Primary facts: Dart MCL; Goedert few weeks MCL + Ertz PS; Nacua inactive context; Njoku/Kolar IR; Daniels/Mariota. Essential IMMEDIATE injury sourcing.",
-      "at": "2026-09-22T14:00:00Z"
     }
   ],
-  "mirroredAt": "2026-09-24T23:10:13.944Z",
+  "mirroredAt": "2026-09-25T00:09:36.947Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-09-24T23:10:13.466Z",
+  "sourceCompletedAt": "2026-09-25T00:09:36.404Z",
   "sourceStatus": "live"
 }
