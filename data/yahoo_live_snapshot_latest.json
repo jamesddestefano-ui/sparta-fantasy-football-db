@@ -1,10 +1,12 @@
 {
-  "observed_at": "2026-09-24T20:00:47-04:00",
-  "pull_completed_at": "2026-09-24T20:01:55-04:00",
-  "source": "authenticated Yahoo Agent Computer (computerUse/CDP :9225 playwright read-only)",
-  "check_id": "sparta-live-check-20260924-2000",
+  "observed_at": "2026-09-25T07:54:20-04:00",
+  "pull_completed_at": "2026-09-25T07:56:00-04:00",
+  "source": "authenticated Yahoo Agent Computer (computerUse read-only)",
+  "check_id": "sparta-live-check-20260925-0800",
   "completed": true,
   "yahoo_ok": true,
+  "mutations": "NONE \u2014 read-only",
+  "waf_note": null,
   "league_id": "102586",
   "yahoo_league_id": "102586",
   "team_path": "/f1/102586/10",
@@ -15,24 +17,21 @@
   "week": 3,
   "opponent": "X-Factor",
   "scores": {
-    "jd_live": 0.0,
-    "jd_proj": 136.0,
-    "opp_live": 0.0,
-    "opp_proj": 126.98,
+    "jd_live": 2.0,
+    "jd_proj": 128.39,
+    "opp_live": 22.6,
+    "opp_proj": 140.88,
     "opp_name": "X-Factor"
   },
   "total_points": 295.78,
   "faab_auth": 59,
   "faab_yahoo_displayed": 59,
   "ir": "0/1",
+  "ir_used": 0,
+  "ir_total": 1,
   "roster_count": 17,
   "pending_waivers": [],
   "pending_status": "CLEARED",
-  "waiver_results_jd": {
-    "note": "ACK only \u2014 processed ~04:39 ET Sep 23; first-detect alerted at 0800 Wed; no re-alert",
-    "processed_at_et": "2026-09-23 04:39",
-    "wins_summary": "Gadsden $12 / Wilson $8 / Packers $3 / Tucker $3"
-  },
   "critical_lineup": {
     "QB": "Jalen Hurts",
     "RB": [
@@ -60,28 +59,159 @@
     "Emanuel Wilson",
     "Tre Tucker"
   ],
+  "soft_q": [],
   "status_marks": {
-    "Q": [
-      "J.K. Dobbins"
-    ],
+    "Q": [],
     "O": [],
     "IR": [],
     "D": []
   },
-  "soft_q": [
-    "J.K. Dobbins BN Q"
+  "soft_q_note": "No Q/O badge explicitly rendered in a11y roster text this pull; prior 2000 had Dobbins BN Q \u2014 treat as continuity/unconfirmed-clear, not a NEW status flip.",
+  "roster": [
+    {
+      "slot": "QB",
+      "player": "Jalen Hurts",
+      "nfl_team": "Phi",
+      "status": "",
+      "projected_points": 21.17,
+      "live_points": null
+    },
+    {
+      "slot": "RB",
+      "player": "Rhamondre Stevenson",
+      "nfl_team": "NE",
+      "status": "",
+      "projected_points": 10.53
+    },
+    {
+      "slot": "RB",
+      "player": "Quinshon Judkins",
+      "nfl_team": "Cle",
+      "status": "",
+      "projected_points": 13.49
+    },
+    {
+      "slot": "WR",
+      "player": "Ja'Marr Chase",
+      "nfl_team": "Cin",
+      "status": "",
+      "projected_points": 19.77
+    },
+    {
+      "slot": "WR",
+      "player": "Tetairoa McMillan",
+      "nfl_team": "Car",
+      "status": "",
+      "projected_points": 14.02
+    },
+    {
+      "slot": "TE",
+      "player": "Oronde Gadsden",
+      "nfl_team": "LAC",
+      "status": "",
+      "projected_points": 8.2
+    },
+    {
+      "slot": "W/R/T",
+      "player": "Jaxon Smith-Njigba",
+      "nfl_team": "Sea",
+      "status": "",
+      "projected_points": 21.13
+    },
+    {
+      "slot": "W/R/T",
+      "player": "Devaughn Vele",
+      "nfl_team": "NO",
+      "status": "",
+      "projected_points": 10.57
+    },
+    {
+      "slot": "BN",
+      "player": "J.K. Dobbins",
+      "nfl_team": "Den",
+      "status": "",
+      "projected_points": 6.1
+    },
+    {
+      "slot": "BN",
+      "player": "Xavier Worthy",
+      "nfl_team": "KC",
+      "status": "",
+      "projected_points": 11.13
+    },
+    {
+      "slot": "BN",
+      "player": "Dontayvion Wicks",
+      "nfl_team": "Phi",
+      "status": "",
+      "projected_points": 8.9
+    },
+    {
+      "slot": "BN",
+      "player": "Raheim Sanders",
+      "nfl_team": "Cle",
+      "status": "",
+      "projected_points": 5.09
+    },
+    {
+      "slot": "BN",
+      "player": "Braelon Allen",
+      "nfl_team": "NYJ",
+      "status": "",
+      "projected_points": 5.81
+    },
+    {
+      "slot": "BN",
+      "player": "Emanuel Wilson",
+      "nfl_team": "Sea",
+      "status": "",
+      "projected_points": 5.41
+    },
+    {
+      "slot": "BN",
+      "player": "Tre Tucker",
+      "nfl_team": "LV",
+      "status": "",
+      "projected_points": 9.24
+    },
+    {
+      "slot": "K",
+      "player": "Evan McPherson",
+      "nfl_team": "Cin",
+      "status": "",
+      "projected_points": 7.51
+    },
+    {
+      "slot": "DEF",
+      "player": "Packers",
+      "nfl_team": "GB",
+      "status": "",
+      "projected_points": 9.83,
+      "live_points": 2.0,
+      "game_status": "Final L 14-35 vs Atl"
+    }
   ],
-  "vs_1600": {
-    "pending": "UNCHANGED CLEARED",
+  "transactions_newest": "Sep 25, 12:31 am \u2014 CLIN-TON POR-TIS ADD Cameron Dicker / DROP Tyler Loop ($0 Waiver)",
+  "new_txs_since_2000": [
+    "MC ADD Dicker / DROP Loop $0 Waiver",
+    "JU ADD Pineiro / DROP Badie $1 Waiver",
+    "JP ADD Mitchell / DROP Vidal $1 Waiver (JD Week 3 opponent \u2014 soft only)"
+  ],
+  "new_txs_since_2000_count": 3,
+  "vs_2000": {
+    "pending": "UNCHANGED CLEARED (waivers processed overnight Sep 25 03:31 ET)",
     "roster": "UNCHANGED",
     "faab": "UNCHANGED $59",
     "ir": "UNCHANGED 0/1",
-    "soft_q": "UNCHANGED Dobbins BN Q (screenshot-confirmed; a11y text missed badge)",
-    "lineup_starters": "UNCHANGED",
-    "txs": "0 new since 1600 (newest still SR Dallas/Pineiro Sep 23 6:50pm PT)",
-    "proj": "136.18\u2013127.28 \u2192 136.00\u2013126.98 drift only (not alert)",
-    "packers_def_tnf": "SOFT continuity \u2014 Reed inactive confirms prior OUT; Packers DEF still starting; DO_NOT_REEMIT"
+    "soft_q": "prior Dobbins BN Q not re-confirmed in a11y text \u2014 no NEW badge flip",
+    "lineup_starters": "UNCHANGED (Packers DEF still starting; TNF FINAL 2.00)",
+    "txs": "3 new non-JD waivers Sep 25 03:31 ET (MC/JU/JP)",
+    "proj": "136.00\u2013126.98 \u2192 128.39\u2013140.88 (Packers DEF final 2.00 + opp live 22.60 \u2014 score/proj drift, not alert)",
+    "packers_def_tnf": "TNF FINAL ATL 35\u2013GB 14; JD Packers DEF live 2.00 locked; DO_NOT_REEMIT Reed/inactive continuity"
   },
-  "new_txs_since_1600_count": 0,
-  "transactions_newest": "Sep 23, 6:50 pm \u2014 King Kong ADD DeeJay Dallas / DROP Eddy Pineiro (already ingested 0800 Wed)"
+  "waiver_results_overnight": {
+    "processed_at_et": "2026-09-25 03:31",
+    "jd_impact": "NONE \u2014 no JD claims",
+    "summary": "MC Dicker $0 / JU Pineiro $1 / JP Mitchell $1"
+  }
 }
