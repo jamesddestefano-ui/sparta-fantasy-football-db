@@ -1,21 +1,21 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-09-26T10:09:29.089Z",
+  "generatedAt": "2026-09-26T10:09:49.717Z",
   "status": "live",
-  "completedAt": "2026-09-26T10:09:29.029Z",
+  "completedAt": "2026-09-26T10:09:49.685Z",
   "nextAtLabel": "7:09 AM ET",
   "inWindow": true,
   "itemCount": 14,
   "items": [
     {
-      "id": "etr-inj-nacua-d",
+      "id": "etr-nacua-doubtful-w3",
       "at": "2026-09-25T21:53:56Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "ETR lists Puka Nacua DOUBTFUL for Sunday; Rapoport confirms not expected to play, with Davante Adams shown he can carry the load. Schefter: McVay says barring setback could return next week vs Eagles.",
+      "text": "Puka Nacua listed DOUBTFUL for Sunday vs DEN; Rapoport/Schefter confirm not expected to play, McVay notes possible return next week vs PHI. Davante Adams has shown he can carry the load (42% target rate on 142 routes without Nacua).",
       "playerIds": [
         "puka-nacua",
         "davante-adams"
@@ -30,9 +30,9 @@
       "signal": "DOUBTFUL",
       "priorStatus": "uncertain",
       "newStatus": "DOUBTFUL",
-      "why": "Hip; no practice, McVay comments",
-      "implication": "Adams primary target/route share bump",
-      "opportunity": "Adams high route/target rate historically without Nacua (42% target rate on 142 routes)",
+      "why": "Hip injury, limited progress per McVay; official doubtful listing",
+      "implication": "Adams primary WR1 opportunity boost in routes/targets",
+      "opportunity": "Adams 42% TPRR sans Nacua historically; high red-zone potential",
       "beneficiaries": [
         "davante-adams"
       ],
@@ -41,20 +41,20 @@
         "https://x.com/AdamSchefter/status/2103545950040109243"
       ],
       "supportingSources": [
-        "ian-rapoport",
         "adam-schefter",
+        "ian-rapoport",
         "adam-levitan"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "schefter-daniels-out",
+      "id": "schefter-daniels-out-w3",
       "at": "2026-09-25T20:41:12Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Commanders officially ruled out QB Jayden Daniels for Sunday. Rapoport: good longer-term news but Marcus Mariota starts this week. ETR lists OUT.",
+      "text": "Commanders officially ruled out QB Jayden Daniels for Sunday; Rapoport notes good longer-term news (no IR expected), Mariota starts. Positive elbow update.",
       "playerIds": [
         "jayden-daniels"
       ],
@@ -67,8 +67,8 @@
       "signal": "OUT",
       "priorStatus": "uncertain",
       "newStatus": "OUT",
-      "why": "Elbow",
-      "implication": "Mariota start; WAS offense downgrade short-term",
+      "why": "Dislocated elbow, official out but week-to-week positive",
+      "implication": "Mariota start; WAS pass game downgrade short-term, McLaurin etc impacted",
       "corroboration": [
         "https://x.com/RapSheet/status/2103627037114261681",
         "https://x.com/EstablishTheRun/status/2103603937006002264"
@@ -80,13 +80,13 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "schefter-collins-out",
+      "id": "schefter-collins-out-w3",
       "at": "2026-09-25T19:51:55Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Texans ruled out WR Nico Collins for Sunday at Indianapolis due to hamstring. Confirmed in Schefter's full OUT list and ETR OUT.",
+      "text": "Texans ruled out WR Nico Collins (hamstring) for Sunday at IND. Confirmed by Rapoport and ETR OUT list.",
       "playerIds": [
         "nico-collins"
       ],
@@ -99,29 +99,31 @@
       "signal": "OUT",
       "priorStatus": "questionable",
       "newStatus": "OUT",
-      "why": "Hamstring",
-      "implication": "Target vacuum in HOU passing game",
-      "opportunity": "Elevated target share for remaining pass-catchers especially TE",
+      "why": "Hamstring injury, official ruling",
+      "implication": "Target vacuum in HOU pass game; Schultz saw 28% share last time Collins out",
+      "opportunity": "Increased targets/routes for remaining HOU pass-catchers especially TE",
       "beneficiaries": [
         "dalton-schultz"
       ],
       "corroboration": [
-        "https://x.com/EstablishTheRun/status/2103603937006002264",
-        "https://x.com/AdamSchefter/status/2103655605479129489"
+        "https://x.com/RapSheet/status/2103572884577046758",
+        "https://x.com/EstablishTheRun/status/2103603937006002264"
       ],
       "supportingSources": [
-        "establish-the-run"
+        "ian-rapoport",
+        "establish-the-run",
+        "matthew-berry"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "schefter-dowdle-out",
+      "id": "schefter-dowdle-out-warren-q",
       "at": "2026-09-25T19:48:38Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Steelers ruled out RB Rico Dowdle (toe) for Sunday vs Bengals. Jaylen Warren questionable (shoulder). ETR OUT for Dowdle.",
+      "text": "Steelers ruled out RB Rico Dowdle (toe) vs CIN; Jaylen Warren questionable (shoulder) but projected IN by Levitan. Coach: Warren will lead the group.",
       "playerIds": [
         "rico-dowdle",
         "jaylen-warren"
@@ -134,50 +136,59 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-dowdle-week3",
       "signal": "OUT",
-      "priorStatus": "likely out",
+      "priorStatus": "limited",
       "newStatus": "OUT",
-      "why": "Toe",
-      "implication": "Warren clear lead back",
-      "opportunity": "Warren lead + checkdown volume; backups Homer/Heidenreich",
+      "why": "Toe injury, official out; Warren shoulder but LP and projected in",
+      "implication": "Warren lead back + checkdowns from Rodgers; Homer/Heidenreich backups",
+      "opportunity": "Warren 15+ carries + targets expected; high snap share lead role",
       "beneficiaries": [
         "jaylen-warren"
       ],
       "corroboration": [
+        "https://x.com/adamlevitan/status/2103577092302741523",
         "https://x.com/EstablishTheRun/status/2103603937006002264"
       ],
       "supportingSources": [
+        "adam-levitan",
         "establish-the-run",
-        "adam-levitan"
+        "ian-rapoport"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "levitan-qs-projected-in",
+      "id": "levitan-project-qs-in",
       "at": "2026-09-26T00:40:44Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Levitan/ETR projecting Jaylen Warren (shoulder), Mike Evans (hip), Brock Bowers (knee) IN despite QUESTIONABLE tags. Hoping early clarity on Flowers/Mitchell/DJ Moore.",
+      "text": "Projecting Jaylen Warren (shoulder), Mike Evans (hip), Brock Bowers (knee) IN despite QUESTIONABLE tags. Seeking early clarity on Zay Flowers (ham), AD Mitchell, DJ Moore. Big DFS main slate implications. Gibbs ceiling projection record 44.0.",
       "playerIds": [
         "jaylen-warren",
         "mike-evans",
-        "brock-bowers"
+        "brock-bowers",
+        "zay-flowers",
+        "jahmyr-gibbs"
       ],
       "players": [
         "Jaylen Warren",
         "Mike Evans",
-        "Brock Bowers"
+        "Brock Bowers",
+        "Zay Flowers",
+        "Jahmyr Gibbs"
       ],
       "url": "https://x.com/adamlevitan/status/2103645916184129969",
       "kind": "ANALYST_PROJECTION",
-      "eventId": "proj-qs-in-week3",
+      "eventId": "levitan-qs-week3",
       "signal": "ACTIVE",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "projected IN",
-      "why": "Practice/LP indicators and internal projections",
-      "implication": "Startable if active; DFS implications large",
-      "opportunity": "Warren lead role confirmed via coach; full snaps expected for others",
+      "newStatus": "projected-IN",
+      "why": "Practice/LP indicators and internal projections; Gibbs sim ceiling high",
+      "implication": "Start confidence for projected-ins; monitor Flowers etc for upgrades",
+      "opportunity": "Warren lead role; Bowers/Evans full routes if in; Gibbs elite ceiling",
+      "beneficiaries": [
+        "jaylen-warren"
+      ],
       "corroboration": [
         "https://x.com/EstablishTheRun/status/2103603937006002264"
       ],
@@ -187,13 +198,13 @@
       "priority": "HIGH"
     },
     {
-      "id": "schefter-dobbins-harvey-in",
+      "id": "schefter-dobbins-harvey-active",
       "at": "2026-09-25T20:34:57Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Broncos: J.K. Dobbins and RJ Harvey off injury report and good to go vs Rams. Jonah Coleman OUT (ankle). ETR lists both IN.",
+      "text": "Broncos RBs J.K. Dobbins and RJ Harvey off injury report and good to go vs Rams; Jonah Coleman OUT (ankle). ETR lists both IN.",
       "playerIds": [
         "jk-dobbins",
         "rj-harvey"
@@ -208,9 +219,9 @@
       "signal": "ACTIVE",
       "priorStatus": "questionable",
       "newStatus": "ACTIVE",
-      "why": "Cleared practice/report",
-      "implication": "DEN backfield full; Coleman out removes stash",
-      "opportunity": "Shared but healthy committee",
+      "why": "Cleared, off report; Coleman ankle out",
+      "implication": "Full DEN backfield available; committee continues but both playable",
+      "opportunity": "Snap/carry share for Dobbins/Harvey vs LAR",
       "corroboration": [
         "https://x.com/EstablishTheRun/status/2103603937006002264"
       ],
@@ -220,13 +231,13 @@
       "priority": "HIGH"
     },
     {
-      "id": "levitan-warren-lead",
+      "id": "levitan-warren-dowdle",
       "at": "2026-09-25T20:07:16Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "With Dowdle out, Steelers RB coach: Warren will lead the group and get breathers as needed. Levitan: vertical not working for Rodgers so expect zillion checkdowns to Warren; Homer + Heidenreich backups.",
+      "text": "With Dowdle out, Jaylen Warren will lead Steelers RBs; vertical pass not working for Rodgers so expect checkdowns. Backups Homer and Heidenreich.",
       "playerIds": [
         "jaylen-warren",
         "rico-dowdle"
@@ -236,18 +247,21 @@
         "Rico Dowdle"
       ],
       "url": "https://x.com/adamlevitan/status/2103577092302741523",
-      "kind": "COACH_REPORT",
-      "eventId": "usage-warren-week3",
+      "kind": "ANALYST_OPINION",
+      "eventId": "role-warren-week3",
       "signal": "UPGRADE",
-      "priorStatus": "committee",
-      "newStatus": "lead",
-      "why": "Coach comments + Dowdle OUT",
-      "implication": "High-volume RB2/flex with receiving upside",
-      "opportunity": "Lead carries + checkdowns; third-down/ dual-threat role",
+      "newStatus": "lead-RB",
+      "why": "Coach comments on Warren leading + Dowdle out + Rodgers checkdown tendency",
+      "implication": "Warren RB2/FLEX lock with volume spike",
+      "opportunity": "Lead carries + pass-game work, third-down/two-minute",
       "beneficiaries": [
         "jaylen-warren"
       ],
+      "corroboration": [
+        "https://x.com/AdamSchefter/status/2103572404408635804"
+      ],
       "supportingSources": [
+        "adam-schefter",
         "establish-the-run"
       ],
       "priority": "HIGH"
@@ -259,7 +273,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Berry: Jonathon Brooks expected IR (only 5 games in 3 seasons); pushes Chuba Hubbard firmly into lead role (RB14 util), AJ Dillon primary backup.",
+      "text": "Jonathon Brooks expected IR (core surgery, 6-8 weeks); Chuba Hubbard firmly lead RB (RB14 util), Dillon primary backup.",
       "playerIds": [
         "jonathon-brooks",
         "chuba-hubbard"
@@ -270,12 +284,13 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-3-fantasy-football",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-brooks-ir-week3",
+      "eventId": "injury-brooks-ir",
       "signal": "OUT",
+      "priorStatus": "out",
       "newStatus": "IR",
-      "why": "Injury history/placement",
-      "implication": "Hubbard every-down lead",
-      "opportunity": "Clear lead back role expansion for Hubbard",
+      "why": "Abdomen/groin surgery timeline 6-8 weeks",
+      "implication": "Hubbard clear lead back for CAR",
+      "opportunity": "Hubbard every-down role expansion",
       "beneficiaries": [
         "chuba-hubbard"
       ],
@@ -288,13 +303,45 @@
       "priority": "HIGH"
     },
     {
-      "id": "levitan-adams-sans-nacua",
+      "id": "berry-love-schultz",
+      "at": "2026-09-24T16:55:00Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Loves Dalton Schultz @ IND: team-high 28% target share last week with Collins out; IND allows 4th-most yds to TEs.",
+      "playerIds": [
+        "dalton-schultz"
+      ],
+      "players": [
+        "Dalton Schultz"
+      ],
+      "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-3-fantasy-football",
+      "kind": "ANALYST_OPINION",
+      "eventId": "berry-love-schultz-w3",
+      "signal": "LOVE",
+      "why": "Elevated role sans Collins + TE-friendly matchup",
+      "implication": "TE1 streaming upside",
+      "opportunity": "High target share in HOU offense",
+      "beneficiaries": [
+        "dalton-schultz"
+      ],
+      "corroboration": [
+        "https://x.com/AdamSchefter/status/2103573231278121246"
+      ],
+      "supportingSources": [
+        "adam-schefter"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "levitan-adams-nacua",
       "at": "2026-09-24T14:31:47Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Davante Adams has run 142 routes without Nacua as a Ram, targeted on 60 (42%). Results in two prior Nacua-missed games: 5-35-3 and 8-195-2.",
+      "text": "Davante Adams run 142 routes without Puka Nacua as Ram, targeted on 60 (42%). Prior misses: 5-35-3 and 8-195-2. High opportunity with Nacua doubtful.",
       "playerIds": [
         "davante-adams",
         "puka-nacua"
@@ -305,11 +352,11 @@
       ],
       "url": "https://x.com/adamlevitan/status/2103130278965510258",
       "kind": "USAGE_DATA",
-      "eventId": "usage-adams-nacua-out",
+      "eventId": "usage-adams-sans-nacua",
       "signal": "UPGRADE",
       "why": "Historical route/target data without Nacua",
       "implication": "Adams WR1 ceiling elevated this week",
-      "opportunity": "High target rate and aDOT/routes when Nacua sidelined",
+      "opportunity": "42% target rate, high volume routes expected",
       "beneficiaries": [
         "davante-adams"
       ],
@@ -317,35 +364,10 @@
         "https://x.com/RapSheet/status/2103634589227057624"
       ],
       "supportingSources": [
-        "ian-rapoport"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "levitan-gibbs-ceiling",
-      "at": "2026-09-25T21:24:42Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
-      "outlet": "Establish The Run",
-      "text": "ETR Week 3 projections live; Jahmyr Gibbs sets new record ceiling projection at 44.0 (avg of top 25th percentile sim outcomes).",
-      "playerIds": [
-        "jahmyr-gibbs"
-      ],
-      "players": [
-        "Jahmyr Gibbs"
-      ],
-      "url": "https://x.com/adamlevitan/status/2103596582289764414",
-      "kind": "ANALYST_PROJECTION",
-      "eventId": "proj-gibbs-ceiling-week3",
-      "signal": "UPGRADE",
-      "why": "Sim ceilings",
-      "implication": "Elite weekly upside play",
-      "opportunity": "High snap/touch ceiling in Lions offense",
-      "supportingSources": [
+        "ian-rapoport",
         "establish-the-run"
       ],
-      "priority": "NORMAL"
+      "priority": "HIGH"
     },
     {
       "id": "berry-love-henry",
@@ -354,7 +376,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Berry LOVES Derrick Henry vs DAL (Brazil): highest rush yards prop (88.5), Dallas 30th in rush D allowing 173.5 ypg.",
+      "text": "Loves Derrick Henry vs DAL (Brazil): highest RB rush yards prop 88.5; DAL 30th rush D allowing 173.5 ypg.",
       "playerIds": [
         "derrick-henry"
       ],
@@ -363,11 +385,11 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-3-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-henry-week3",
+      "eventId": "berry-love-henry-w3",
       "signal": "LOVE",
-      "why": "Elite matchup vs poor rush D + high prop",
-      "implication": "Strong start/RB1 play",
-      "opportunity": "Volume vs soft front",
+      "why": "Elite matchup vs weak DAL run D + high prop",
+      "implication": "Strong RB1 start",
+      "opportunity": "High carry volume expected in favorable rush matchup",
       "priority": "NORMAL"
     },
     {
@@ -377,7 +399,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Berry LOVES Chase Brown @ PIT: 20+ touches and 15% target share both games, RB7 utilization; PIT allows 5th-most rush ypg to RBs.",
+      "text": "Loves Chase Brown @ PIT: 20+ touches and 15% target share both games; RB7 utilization; PIT allows 5th-most rush yds to RBs.",
       "playerIds": [
         "chase-brown"
       ],
@@ -386,72 +408,58 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-3-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-brown-week3",
+      "eventId": "berry-love-brown-w3",
       "signal": "LOVE",
       "why": "Consistent high usage + favorable matchup",
-      "implication": "RB2/flex with upside",
-      "opportunity": "Touches + targets secure",
+      "implication": "RB2/FLEX with upside",
+      "opportunity": "Touches + targets, three-down role",
       "priority": "NORMAL"
     },
     {
-      "id": "berry-love-olave-schultz-watson",
+      "id": "berry-love-olave",
       "at": "2026-09-24T16:55:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Berry LOVES Chris Olave (double-digit tgts, 53% air yards vs LV high YPR allowed), Christian Watson (WR8 util, 38% RZ share), Dalton Schultz (28% tgt share last week sans Collins; IND soft vs TEs).",
+      "text": "Loves Chris Olave vs LV: double-digit targets both games, 14.8 aDOT, 53% air yards; LV allows league-high 18.7 YPR to WRs.",
       "playerIds": [
-        "chris-olave",
-        "christian-watson",
-        "dalton-schultz"
+        "chris-olave"
       ],
       "players": [
-        "Chris Olave",
-        "Christian Watson",
-        "Dalton Schultz"
+        "Chris Olave"
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-3-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-passcatchers-week3",
+      "eventId": "berry-love-olave-w3",
       "signal": "LOVE",
-      "why": "Usage + matchup data",
-      "implication": "Startable WR/TE options",
-      "opportunity": "Olave volume; Watson RZ; Schultz elevated with Collins OUT",
-      "beneficiaries": [
-        "dalton-schultz"
-      ],
+      "why": "High target/air yards share + soft matchup",
+      "implication": "WR2/3 smash potential",
+      "opportunity": "Volume + deep targets",
       "priority": "NORMAL"
     },
     {
-      "id": "berry-hate-stevenson-etienne",
+      "id": "berry-hate-etienne",
       "at": "2026-09-24T16:55:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Berry HATES Rhamondre Stevenson (@JAX: 31% snaps/5 touches post-fumble; JAX stout vs RBs) and Travis Etienne (vs LV: only 49% RB touches, 38% 3rd-down snaps even with Kamara).",
+      "text": "Hates Travis Etienne vs LV: only 49% RB touches, 38% third-down snaps even with Kamara; role not there (RB37 util).",
       "playerIds": [
-        "rhamondre-stevenson",
         "travis-etienne"
       ],
       "players": [
-        "Rhamondre Stevenson",
         "Travis Etienne Jr."
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-3-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-hate-rbs-week3",
+      "eventId": "berry-hate-etienne-w3",
       "signal": "HATE",
-      "why": "Reduced role/snaps + tough matchups",
-      "implication": "Sit/fade",
-      "opportunity": "Henderson saw 65% snaps post-Stevenson fumble (Berry 10 Facts)",
-      "beneficiaries": [
-        "treveyon-henderson"
-      ],
-      "corroboration": [
-        "https://www.fantasylife.com/articles/fantasy/matthew-berrys-10-facts-you-need-to-know-before-week-3-in-fantasy-football"
-      ],
+      "why": "Limited snap/touch share in committee",
+      "implication": "Sit/fade despite ETR IN listing",
+      "opportunity": "Low third-down/ dual-threat usage",
+      "conflict": "ETR lists Etienne IN but Berry sees diminished role",
       "priority": "NORMAL"
     }
   ],
@@ -462,35 +470,35 @@
       "source": "Establish The Run",
       "grade": "USEFUL",
       "note": "Comprehensive Sunday IN/Q/D/OUT list fully parsed; key statuses (Nacua D, Collins/Dowdle/Daniels OUT, Dobbins/Harvey/Nabers/Etienne IN) and beneficiaries clear. Projections context via Levitan.",
-      "at": "2026-09-26T02:00:00Z"
+      "at": "2026-09-26T01:00:00Z"
     },
     {
       "sourceId": "adam-levitan",
       "source": "Adam Levitan",
       "grade": "USEFUL",
       "note": "Player-specific: Warren lead+checkdowns Dowdle out; projecting Qs (Warren/Evans/Bowers) in; Adams routes/target rate sans Nacua; Gibbs record 44 ceiling. High usage/opportunity focus.",
-      "at": "2026-09-26T02:00:00Z"
+      "at": "2026-09-26T01:00:00Z"
     },
     {
       "sourceId": "matthew-berry",
       "source": "Matthew Berry",
       "grade": "USEFUL",
-      "note": "10 Facts (Henderson snaps post-Stevenson fumble, London-Penix, Schultz sans Collins) and Love/Hate split per-player (Henry/Chase Brown/Olave/Watson/Schultz loves; Stevenson/Etienne/McLaurin hates). Brooks IR=Hubbard lead.",
-      "at": "2026-09-26T02:00:00Z"
+      "note": "Love/Hate split per-player (Henry/Chase Brown/Olave/Watson/Schultz loves; Stevenson/Etienne/McLaurin hates). Brooks IR=Hubbard lead. 10 Facts style usage notes.",
+      "at": "2026-09-26T01:00:00Z"
     },
     {
       "sourceId": "adam-schefter",
       "source": "Adam Schefter",
       "grade": "USEFUL",
       "note": "Primary OUT/ACTIVE facts: Collins OUT, Daniels OUT, Dowdle OUT, Dobbins/Harvey ACTIVE, Nacua doubtful + possible return next. Essential IMMEDIATE corroboration.",
-      "at": "2026-09-26T02:00:00Z"
+      "at": "2026-09-26T01:00:00Z"
     },
     {
       "sourceId": "ian-rapoport",
       "source": "Ian Rapoport",
       "grade": "USEFUL",
-      "note": "Corroborated Daniels not IR/positive longer-term; Nacua doubtful/not expected + Adams carry load; Darnold play; Bosa few weeks. Strong original + Schefter alignment.",
-      "at": "2026-09-26T02:00:00Z"
+      "note": "Corroborated Daniels not IR/positive longer-term; Nacua doubtful/not expected + Adams carry load; Bosa few weeks. Strong original + Schefter alignment.",
+      "at": "2026-09-26T01:00:00Z"
     },
     {
       "sourceId": "establish-the-run",
@@ -626,8 +634,8 @@
       "at": "2026-09-26T01:19:15Z"
     }
   ],
-  "mirroredAt": "2026-09-26T10:09:29.494Z",
+  "mirroredAt": "2026-09-26T10:09:50.163Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-09-26T10:09:29.029Z",
+  "sourceCompletedAt": "2026-09-26T10:09:49.685Z",
   "sourceStatus": "live"
 }
