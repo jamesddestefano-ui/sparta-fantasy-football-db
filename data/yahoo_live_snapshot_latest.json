@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-09-26T15:55:58-04:00",
-  "pull_completed_at": "2026-09-26T15:56:04-04:00",
+  "observed_at": "2026-09-26T19:59:45-04:00",
+  "pull_completed_at": "2026-09-26T19:59:55-04:00",
   "source": "authenticated Yahoo Agent Computer CDP :9225 (playwright connect_over_cdp read-only)",
-  "check_id": "sparta-live-check-20260926-1600",
+  "check_id": "sparta-live-check-20260926-2000",
   "completed": true,
   "yahoo_ok": true,
   "mutations": "NONE \u2014 read-only",
@@ -18,9 +18,9 @@
   "opponent": "X-Factor",
   "scores": {
     "jd_live": 2.0,
-    "jd_proj": 127.78,
+    "jd_proj": 127.76,
     "opp_live": 22.6,
-    "opp_proj": 140.65,
+    "opp_proj": 140.61,
     "opp_name": "X-Factor"
   },
   "total_points": 295.78,
@@ -72,7 +72,7 @@
       "player": "Jalen Hurts",
       "nfl_team": "Phi",
       "status": "",
-      "projected_points": 21.44
+      "projected_points": 21.42
     },
     {
       "slot": "RB",
@@ -135,14 +135,14 @@
       "player": "Xavier Worthy",
       "nfl_team": "KC",
       "status": "",
-      "projected_points": 11.21
+      "projected_points": 11.24
     },
     {
       "slot": "BN",
       "player": "Dontayvion Wicks",
       "nfl_team": "Phi",
       "status": "",
-      "projected_points": 8.96
+      "projected_points": 8.93
     },
     {
       "slot": "BN",
@@ -187,26 +187,64 @@
       "projected_points": 9.84
     }
   ],
-  "transactions_newest": "Sep 26, 12:10 pm  |  |  | \ue035 | \ue033",
+  "transactions_newest": "Sep 26, 3:48 pm | Dynamic Duo of Ladd & Stribs | ADD Malachi Fields / DROP Tre' Harris",
   "new_txs_since_1200": [
     {
+      "date_line": "Sep 26, 3:48 pm",
+      "team": "Dynamic Duo of Ladd & Stribs",
+      "team_code": "TM",
+      "added": "Malachi Fields",
+      "dropped": "Tre' Harris",
+      "via": "free_agent"
+    },
+    {
+      "date_line": "Sep 26, 2:01 pm",
+      "team": "King Kong",
+      "team_code": "SR",
+      "added": "Will Reichard",
+      "dropped": "Jonah Coleman",
+      "via": "free_agent"
+    },
+    {
       "date_line": "Sep 26, 12:10 pm",
-      "chunk": [
-        "Sep 26, 12:10 pm",
-        "",
-        "",
-        "",
-        "\ue035",
-        "\ue033",
-        "",
-        "CJ Donaldson NO - RB"
-      ]
+      "team": "CLIN-TON POR-TIS",
+      "team_code": "MC",
+      "added": "Caleb Douglas",
+      "dropped": "Hunter Henry",
+      "via": "free_agent"
     }
   ],
-  "new_txs_since_1200_count": 1,
+  "new_txs_since_1200_count": 3,
   "goto_status": 200,
-  "new_txs_note": "Yahoo shows Sep 26 12:10 pm King Kong ADD CJ Donaldson / DROP Antonio Williams Free Agent. Same ADD_DROP already durable as semantic_key 102586|SR|ADD_DROP|CJ Donaldson|Antonio Williams|2026-09-25 (timestamp_et 2026-09-25 16:25 from 2000 check). INGESTION HELD \u2014 MANUAL REVIEW REQUIRED (likely Yahoo re-display/timestamp shift; do not invent duplicate fee). Non-JD \u2014 no alert.",
-  "new_txs_since_1200_count_raw": 1,
-  "new_txs_durable_appended": 0,
-  "new_txs_held_for_review": 1
+  "new_txs_since_1600": [
+    {
+      "date_line": "Sep 26, 3:48 pm",
+      "team": "Dynamic Duo of Ladd & Stribs",
+      "team_code": "TM",
+      "added": "Malachi Fields",
+      "dropped": "Tre' Harris",
+      "via": "free_agent"
+    },
+    {
+      "date_line": "Sep 26, 2:01 pm",
+      "team": "King Kong",
+      "team_code": "SR",
+      "added": "Will Reichard",
+      "dropped": "Jonah Coleman",
+      "via": "free_agent"
+    },
+    {
+      "date_line": "Sep 26, 12:10 pm",
+      "team": "CLIN-TON POR-TIS",
+      "team_code": "MC",
+      "added": "Caleb Douglas",
+      "dropped": "Hunter Henry",
+      "via": "free_agent"
+    }
+  ],
+  "new_txs_since_1600_count": 3,
+  "new_txs_durable_appended": 3,
+  "new_txs_held_for_review": 0,
+  "new_txs_note": "3 NEW non-JD Sep 26 FA ADD_DROP appended: TM Malachi Fields / Tre' Harris (3:48pm ET); SR Will Reichard / Jonah Coleman (2:01pm ET); MC Caleb Douglas / Hunter Henry (12:10pm ET). Donaldson/Williams correctly displayed Sep 25 4:25pm (already durable) \u2014 1600 Sep26 12:10 mis-association cleared; 0 hold. FA $0; no fee invent.",
+  "new_txs_since_1200_count_raw": 3
 }
