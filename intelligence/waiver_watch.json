@@ -1,5 +1,5 @@
 {
-  "updated_at_et": "2026-09-27T17:57:00-04:00",
+  "updated_at_et": "2026-09-27T20:05:00-04:00",
   "league": "sparta",
   "team": "JD",
   "watches": [
@@ -8,14 +8,73 @@
       "trigger": "Achane (MIA RB) knee \u2014 major injury feared, MRI Mon Sep 28",
       "candidate": "Ollie Gordon (MIA RB)",
       "todo": "Next Sunday Night/Live Check: verify Gordon Yahoo ownership (FA/W/owned). If available, include in waiver eval with FAAB bid range + drop candidate; alert Billy. Recommend only.",
-      "status": "OPEN"
+      "status": "OPEN_AVAILABLE_ON_WAIVERS",
+      "observed_at_et": "2026-09-27T20:00:05-04:00",
+      "source": "Yahoo league 102586 player list (eteam=Miami, pos=RB), authenticated CDP :9225, read-only",
+      "yahoo_status": {
+        "Ollie Gordon II": {
+          "status": "W (Sep 30)",
+          "owner": null,
+          "pct_rostered": "3%",
+          "w3_pts": 15.3,
+          "w3_line": "17-41-1 rush, 3/3-14 rec, 20 ret yds",
+          "w4_proj_yahoo": 1.76,
+          "ros_proj_yahoo": 34.75
+        },
+        "Jaylen Wright": {
+          "status": "W (Sep 30)",
+          "owner": null,
+          "pct_rostered": "1%",
+          "injury": "O",
+          "w4_proj_yahoo": 2.0,
+          "ros_proj_yahoo": 36.45
+        },
+        "De'Von Achane": {
+          "status": "owned",
+          "owner": "CLIN-TON POR-TIS",
+          "pct_rostered": "100%",
+          "injury": "D",
+          "w3_pts": 1.7
+        },
+        "other_MIA_RB_all_W_Sep30_0pct": [
+          "Donovan Edwards",
+          "Jarquez Hunter",
+          "Coleman Bennett",
+          "Le'Veon Moss",
+          "Alexander Mattison",
+          "Carlos Washington Jr."
+        ]
+      },
+      "waivers_clear": "Wed Sep 30 (Yahoo shows W (Sep 30) for all unowned players)",
+      "yahoo_projection_caveat": "Yahoo W4/ROS projections not yet adjusted for Achane injury (Achane still proj 15.26 W4)",
+      "faab": {
+        "remaining": 59,
+        "bid_range_if_mri_major": "$15-25",
+        "bid_range_if_achane_short_term": "$3-8",
+        "pivot": "Jaylen Wright $5-12 as cheaper/secondary claim (currently O; likely splits work when healthy)",
+        "caveat": "Achane MRI Mon Sep 28 pending; re-evaluate bid Tue before Wed processing"
+      },
+      "drop_candidates": [
+        {
+          "player": "Emanuel Wilson (SEA RB)",
+          "reason": "Weakest on roster: W3 1.40 pts, Yahoo W4 proj 2.11 (lowest), ROS proj 29.80 (lowest)"
+        },
+        {
+          "player": "Raheim Sanders (CLE RB)",
+          "reason": "W4 proj 4.31, ROS 49.57, 1% rostered; W3 10.98 was fluky; only a Judkins handcuff"
+        }
+      ],
+      "not_drop": "Braelon Allen (Hall Q/thigh handcuff, W4 proj 5.98)",
+      "recommendation": "Recommend only - no Yahoo action taken"
     },
     {
       "id": "w3-hall-allen",
       "trigger": "Breece Hall (NYJ RB) thigh OUT",
       "candidate": "JD BN Allen (already owned)",
       "todo": "Postgame severity; next-week start consideration only",
-      "status": "OPEN"
+      "status": "OPEN",
+      "yahoo_confirmed": "JD owns Braelon Allen (NYJ RB), 18% rostered, W3 4.70, W4 proj 5.98; Breece Hall shows Q on Yahoo, owned by CLIN-TON POR-TIS",
+      "observed_at_et": "2026-09-27T20:00:13-04:00"
     }
   ]
 }
