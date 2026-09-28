@@ -1,13 +1,78 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-09-28T11:09:27.809Z",
+  "generatedAt": "2026-09-28T11:09:50.926Z",
   "status": "live",
-  "completedAt": "2026-09-28T11:09:27.757Z",
+  "completedAt": "2026-09-28T11:09:50.894Z",
   "nextAtLabel": "8:09 AM ET",
   "inWindow": true,
   "itemCount": 14,
   "items": [
+    {
+      "id": "caleb-out-keenum-start",
+      "at": "2026-09-28T10:48:00Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Bears QB Caleb Williams Grade 2 hamstring, 3-4 week timeline (OUT already); Case Keenum expected to start MNF vs Eagles. Bagent cleared concussion but Keenum slated.",
+      "playerIds": [
+        "caleb-williams"
+      ],
+      "players": [
+        "Caleb Williams"
+      ],
+      "url": "https://x.com/RapSheet/status/2104523511729619106",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-caleb-week3",
+      "signal": "OUT",
+      "priorStatus": "OUT",
+      "newStatus": "OUT-3-4WKS",
+      "why": "Grade 2 hamstring confirmed by Schefter/Rapoport; Keenum start",
+      "implication": "CHI offense downgrade MNF and beyond; WRs/TEs/RBs volume/quality hit",
+      "opportunity": "Limited for Bears skill; monitor Keenum efficiency",
+      "corroboration": [
+        "@AdamSchefter"
+      ],
+      "supportingSources": [
+        "adam-schefter"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "achane-out-knee-w3",
+      "at": "2026-09-28T00:28:31Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "De'Von Achane (knee) ruled out vs Chiefs after early exit; Dolphins coach Jeff Hafley said injury 'does not sound optimistic' with further testing upcoming. High-impact fantasy loss for remaining weeks if multi-game absence.",
+      "playerIds": [
+        "devon-achane"
+      ],
+      "players": [
+        "De'Von Achane"
+      ],
+      "url": "https://x.com/EstablishTheRun/status/2104367615917629655",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-achane-week3",
+      "signal": "OUT",
+      "priorStatus": "ACTIVE",
+      "newStatus": "OUT",
+      "why": "Knee injury in Q1, coach major concern per Rapoport/Schefter corroboration",
+      "implication": "MIA RB committee opens; monitor handcuff/backup volume ROS",
+      "opportunity": "Increased carries/targets for remaining Dolphins RBs if multi-week",
+      "corroboration": [
+        "@RapSheet",
+        "@AdamSchefter",
+        "https://www.nfl.com/news/notable-injuries-news-from-sunday-week-3-games"
+      ],
+      "supportingSources": [
+        "ian-rapoport",
+        "adam-schefter"
+      ],
+      "priority": "IMMEDIATE"
+    },
     {
       "id": "jefferson-out-ankle-w3",
       "at": "2026-09-27T22:09:08Z",
@@ -15,7 +80,7 @@
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Vikings ruled out WR Justin Jefferson due to ankle injury sustained in first half vs Bucs.",
+      "text": "Vikings ruled out WR Justin Jefferson due to ankle injury mid-game vs Bucs after limited production (2/32). Immediate target vacuum in Minnesota offense.",
       "playerIds": [
         "justin-jefferson"
       ],
@@ -24,18 +89,19 @@
       ],
       "url": "https://x.com/AdamSchefter/status/2104332540270232004",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-justin-jefferson-week3",
+      "eventId": "injury-jefferson-week3",
       "signal": "OUT",
-      "priorStatus": "ACTIVE/IN-GAME",
+      "priorStatus": "ACTIVE",
       "newStatus": "OUT",
-      "why": "Ankle injury, ruled out mid-game.",
-      "implication": "Remove from lineups; check Week 4 status.",
-      "opportunity": "Jordan Addison and TE volume spike in MIN pass game.",
+      "why": "Ankle injury first half, ruled out",
+      "implication": "Addison/Hockenson surge in targets short-term; ROS concern if multi-week",
+      "opportunity": "Elevated routes/targets for Jordan Addison and T.J. Hockenson",
       "beneficiaries": [
         "jordan-addison"
       ],
       "corroboration": [
-        "@RapSheet"
+        "@RapSheet",
+        "@EstablishTheRun"
       ],
       "supportingSources": [
         "ian-rapoport",
@@ -44,13 +110,13 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "evans-out-ribs-w3",
+      "id": "evans-out-rib-w3",
       "at": "2026-09-27T21:55:52Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "49ers WR Mike Evans carted off and ruled out with rib injury/strain vs Cardinals; full eval Monday.",
+      "text": "49ers WR Mike Evans carted off and ruled out with rib/oblique strain vs Cardinals (after expected to play/hip Q). Full eval Monday; painful injury type.",
       "playerIds": [
         "mike-evans"
       ],
@@ -59,16 +125,20 @@
       ],
       "url": "https://x.com/AdamSchefter/status/2104329198181724347",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-mike-evans-week3",
+      "eventId": "injury-evans-week3",
       "signal": "OUT",
-      "priorStatus": "EXPECTED TO PLAY",
+      "priorStatus": "EXPECTED",
       "newStatus": "OUT",
-      "why": "Hard hit, carted, rib strain confirmed.",
-      "implication": "Remove; ribs can linger painfully.",
-      "opportunity": "Other SF WRs/TE elevate in remaining snaps.",
+      "why": "Rib injury Q2, carted, ruled out; Rapoport confirms strain",
+      "implication": "SF WR/TE target redistribution; Kittle/Samuel upside if multi-week",
+      "opportunity": "Routes/targets for Deebo Samuel, George Kittle, other SF WRs",
+      "beneficiaries": [
+        "george-kittle",
+        "deebo-samuel"
+      ],
       "corroboration": [
         "@RapSheet",
-        "https://x.com/EstablishTheRun/status/2104367615917629655"
+        "@EstablishTheRun"
       ],
       "supportingSources": [
         "ian-rapoport",
@@ -83,7 +153,7 @@
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Jets RB Breece Hall ruled out with thigh/quad injury late vs Lions.",
+      "text": "Jets RB Breece Hall ruled out with thigh/quad injury late vs Lions after 13/32 rush + 3/23 rec. Ends his day and raises multi-game questions.",
       "playerIds": [
         "breece-hall"
       ],
@@ -92,15 +162,16 @@
       ],
       "url": "https://x.com/AdamSchefter/status/2104292451766980778",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-breece-hall-week3",
+      "eventId": "injury-hall-week3",
       "signal": "OUT",
-      "priorStatus": "ACTIVE/IN-GAME",
+      "priorStatus": "ACTIVE",
       "newStatus": "OUT",
-      "why": "Thigh injury after tackle, ruled out.",
-      "implication": "Sit; handcuff elevation for remainder and possibly next week.",
-      "opportunity": "Backup RB carries/targets increase.",
+      "why": "Thigh injury on tackle, ruled out",
+      "implication": "Jets RB committee or backup lead next week; monitor practice reports",
+      "opportunity": "Snap/carry increase for Jets backup RBs",
       "corroboration": [
-        "@EstablishTheRun"
+        "@EstablishTheRun",
+        "NFL.com"
       ],
       "supportingSources": [
         "establish-the-run"
@@ -108,154 +179,108 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "achane-out-knee-w3",
-      "at": "2026-09-27T18:52:10Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Dolphins RB De'Von Achane ruled out vs Chiefs with knee injury; coach Jeff Hafley not optimistic, sounds like major concern per Rapoport.",
-      "playerIds": [
-        "devon-achane"
-      ],
-      "players": [
-        "De'Von Achane"
-      ],
-      "url": "https://x.com/AdamSchefter/status/2104282970203050450",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-devon-achane-week3",
-      "signal": "OUT",
-      "priorStatus": "QUESTIONABLE/IN-GAME",
-      "newStatus": "OUT",
-      "why": "Knee injury early, evaluated, shut down; coach major concern.",
-      "implication": "Sit immediately; monitor for multi-week absence.",
-      "opportunity": "MIA RB committee/backups elevate for residual work.",
-      "corroboration": [
-        "@RapSheet",
-        "https://x.com/EstablishTheRun/status/2104367615917629655"
-      ],
-      "supportingSources": [
-        "ian-rapoport",
-        "establish-the-run"
-      ],
-      "priority": "IMMEDIATE"
-    },
-    {
-      "id": "flowers-active-w3",
-      "at": "2026-09-27T18:47:31Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Ravens WR Zay Flowers is active today vs. the Cowboys after pregame workout looked good on hamstring; was true GTD with team not counting on him.",
+      "id": "flowers-active-gtd-w3",
+      "at": "2026-09-27T18:51:55Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Zay Flowers active vs Cowboys after GTD/hamstring (team not counting on him; Levitan initially projected OUT). Berry: risky but start over Bateman if active for BAL.",
       "playerIds": [
         "zay-flowers"
       ],
       "players": [
         "Zay Flowers"
       ],
-      "url": "https://x.com/AdamSchefter/status/2104281799329538223",
+      "url": "https://x.com/MatthewBerryTMR/status/2104282905904025761",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-zay-flowers-week3",
+      "eventId": "injury-flowers-week3",
       "signal": "ACTIVE",
-      "priorStatus": "GAME-TIME DECISION",
+      "priorStatus": "GTD",
       "newStatus": "ACTIVE",
-      "why": "Pregame workout successful; Schefter confirmed active.",
-      "implication": "Startable if rostered; targets may be managed/pitch count.",
-      "opportunity": "Primary WR roleopens; Bateman/Andrews volume decreases from OUT assumption.",
+      "why": "Pregame workout looked good; Schefter confirmed active",
+      "implication": "Full or limited snaps possible; Bateman/Andrews DFS pivot reverse",
+      "opportunity": "Primary WR role if healthy enough; reverse prior Bateman upgrade",
+      "conflict": "Levitan early OUT proj vs late ACTIVE",
       "corroboration": [
-        "@RapSheet",
-        "https://x.com/MatthewBerryTMR/status/2104282905904025761"
+        "@AdamSchefter",
+        "@EstablishTheRun",
+        "@adamlevitan"
       ],
       "supportingSources": [
-        "ian-rapoport",
-        "matthew-berry",
+        "adam-schefter",
         "establish-the-run",
         "adam-levitan"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "caleb-out-keenum-start-w3",
-      "at": "2026-09-28T10:48:00Z",
+      "id": "levitan-wilson-gibbs-cash",
+      "at": "2026-09-28T01:04:00Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Levitan cash review: Garrett Wilson massive opp (Mitchell out + others missing, 30%+ targets dome vs Lions) at value; Jahmyr Gibbs must-play absurd role/price vs Jets; Kenneth Walker elite role vs weak MIA. Strong slate start.",
+      "playerIds": [
+        "garrett-wilson",
+        "jahmyr-gibbs",
+        "kenneth-walker"
+      ],
+      "players": [
+        "Garrett Wilson",
+        "Jahmyr Gibbs",
+        "Kenneth Walker III"
+      ],
+      "url": "https://establishtherun.com/levitans-dfs-cash-lineup-review-week-3-5/",
+      "kind": "ANALYST_OPINION",
+      "eventId": "levitan-cash-w3",
+      "signal": "LOVE",
+      "why": "Usage/role + matchup + price; Wilson vacuum confirmed post-Mitchell inactive",
+      "implication": "Prioritize these in season-long/DFS residual; Wilson ROS boost if Mitchell lingers",
+      "opportunity": "High snap/route/target shares realized or projected",
+      "supportingSources": [
+        "establish-the-run"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "mayfield-thumb-out-risk",
+      "at": "2026-09-27T23:43:53Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Bears expected to start Case Keenum at QB vs Eagles; Caleb Williams ruled out with Grade 2 hamstring (3-4 week timeline).",
-      "playerIds": [
-        "caleb-williams"
-      ],
-      "players": [
-        "Caleb Williams"
-      ],
-      "url": "https://x.com/RapSheet/status/2104523511729619106",
+      "text": "Bucs QB Baker Mayfield dislocated right thumb on INT; coach Bowles says MRI Monday, likely to miss time. Jalen McMillan also out knee.",
+      "playerIds": [],
+      "players": [],
+      "url": "https://x.com/RapSheet/status/2104356383227306154",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-caleb-williams-week3",
+      "eventId": "injury-mayfield-week3",
       "signal": "OUT",
-      "priorStatus": "OUT",
-      "newStatus": "OUT",
-      "why": "Grade 2 hamstring, 3-4 weeks; Bagent limited practice, Keenum starts.",
-      "implication": "Williams stash only; CHI pass catchers downgrade with Keenum.",
-      "opportunity": "Limited for CHI skill players under backup QB.",
-      "corroboration": [
-        "@AdamSchefter"
-      ],
-      "supportingSources": [
-        "adam-schefter"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "etr-sunday-injuries-watch",
-      "at": "2026-09-28T00:28:31Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "Sunday injuries watching: Achane (knee), Jefferson (ankle), Hall (quad), Etienne (hamstring), Evans (rib), Mayfield (thumb), Coker (quad), Andrews (hand), Spears (ankle), Bech (broken forearm IR).",
-      "playerIds": [
-        "devon-achane",
-        "justin-jefferson",
-        "breece-hall",
-        "travis-etienne",
-        "mike-evans"
-      ],
-      "players": [
-        "De'Von Achane",
-        "Justin Jefferson",
-        "Breece Hall",
-        "Travis Etienne Jr.",
-        "Mike Evans"
-      ],
-      "url": "https://x.com/EstablishTheRun/status/2104367615917629655",
-      "kind": "INJURY_STATUS",
-      "eventId": "etr-injury-roundup-week3",
-      "signal": "OUT",
-      "priorStatus": "VARIOUS",
-      "newStatus": "OUT/WATCH",
-      "why": "Post-game comprehensive watch list aligning with Schefter/Rapoport.",
-      "implication": "Monitor all for Week 4; Bech to IR.",
-      "opportunity": "Handcuffs and depth chart risers for OUT players.",
+      "priorStatus": "ACTIVE",
+      "newStatus": "LIKELY_OUT",
+      "why": "Dislocated thumb late game; coach confirms likely miss time",
+      "implication": "TB backup QB next week(s); all Bucs pass-catchers downgrade short-term",
+      "opportunity": "Monitor backup QB and any RB script change",
       "corroboration": [
         "@AdamSchefter",
-        "@RapSheet"
+        "@EstablishTheRun"
       ],
       "supportingSources": [
         "adam-schefter",
-        "ian-rapoport",
-        "adam-levitan"
+        "establish-the-run"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "puka-inactive-snf-w3",
+      "id": "puka-inactive-snf",
       "at": "2026-09-27T23:16:43Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Rams WR Puka Nacua inactive for SNF vs Broncos.",
+      "text": "Rams WR Puka Nacua inactive for SNF vs Broncos (was doubtful/hip). Adams and other Rams WRs absorb targets.",
       "playerIds": [
         "puka-nacua"
       ],
@@ -264,90 +289,26 @@
       ],
       "url": "https://x.com/RapSheet/status/2104349547090874554",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-puka-nacua-week3",
+      "eventId": "injury-puka-week3",
       "signal": "INACTIVE",
       "priorStatus": "DOUBTFUL",
       "newStatus": "INACTIVE",
-      "why": "Inactive listing confirmed.",
-      "implication": "Sit; monitor return timeline.",
-      "opportunity": "LAR WR depth (Adams etc.) volume up.",
+      "why": "Hip issue; confirmed inactive",
+      "implication": "Davante Adams primary; short-term target boost",
+      "opportunity": "Routes/targets for davante-adams and Rams pass-catchers",
       "beneficiaries": [
         "davante-adams"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "bowers-active-debut-w3",
-      "at": "2026-09-27T19:00:00Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Raiders TE Brock Bowers is active and will make his 2026 season debut vs Saints.",
-      "playerIds": [
-        "brock-bowers"
-      ],
-      "players": [
-        "Brock Bowers"
-      ],
-      "url": "https://x.com/AdamSchefter/status/2104284941895057550",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-brock-bowers-week3",
-      "signal": "ACTIVE",
-      "priorStatus": "QUESTIONABLE/EXPECTED",
-      "newStatus": "ACTIVE",
-      "why": "Cleared for debut after knee issue.",
-      "implication": "Strong start candidate as featured TE.",
-      "opportunity": "High target share expected in LV offense.",
-      "corroboration": [
-        "@EstablishTheRun"
-      ],
-      "supportingSources": [
-        "establish-the-run",
-        "matthew-berry"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "berry-flowers-love-start",
-      "at": "2026-09-27T18:51:55Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Zay Flowers active: risky but if active for Baltimore he's active for me. Start him over Bateman.",
-      "playerIds": [
-        "zay-flowers"
-      ],
-      "players": [
-        "Zay Flowers"
-      ],
-      "url": "https://x.com/MatthewBerryTMR/status/2104282905904025761",
-      "kind": "ANALYST_OPINION",
-      "eventId": "injury-zay-flowers-week3",
-      "signal": "LOVE",
-      "priorStatus": "GAME-TIME DECISION",
-      "newStatus": "ACTIVE",
-      "why": "Active confirmation; prefer over Bateman.",
-      "implication": "Start Flowers in fantasy lineups.",
-      "opportunity": "WR1 role if healthy enough.",
-      "conflict": "Levitan initial projs had him OUT.",
-      "corroboration": [
-        "@AdamSchefter"
-      ],
-      "supportingSources": [
-        "adam-schefter"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "levitan-jets-wr-mitchell-out",
+      "id": "mitchell-inactive-wilson-opp",
       "at": "2026-09-27T15:27:24Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "AD Mitchell expected inactive (finger); Jets WR depth: Garrett Wilson clear WR1 then Isaiah Williams etc.; expect TE Kenyon Sadiq hybrid slot/wide snaps. High opportunity for Wilson.",
+      "text": "AD Mitchell (finger) expected inactive vs Lions (was GTD); Levitan: Jets WR depth chart Wilson #1, Isaiah Williams, etc. + TE Kenyon Sadiq hybrid slot/wide. Massive opportunity for Garrett Wilson (30%+ targets projected).",
       "playerIds": [
         "garrett-wilson"
       ],
@@ -355,22 +316,54 @@
         "Garrett Wilson"
       ],
       "url": "https://x.com/adamlevitan/status/2104231437797126592",
-      "kind": "ANALYST_OPINION",
-      "eventId": "usage-jets-wr-mitchell-week3",
+      "kind": "USAGE_DATA",
+      "eventId": "role-jets-wr-week3",
       "signal": "UPGRADE",
       "priorStatus": "QUESTIONABLE",
       "newStatus": "INACTIVE",
-      "why": "Mitchell GTD to inactive; Wilson top of thin depth chart.",
-      "implication": "Wilson massive target share boost vs DET.",
-      "opportunity": "Wilson routes/targets spike; Sadiq hybrid role.",
+      "why": "Mitchell inactive confirmed; prior high targets for Mitchell create vacuum",
+      "implication": "Wilson clear alpha; high floor/ceiling in dome vs weak Lions secondary",
+      "opportunity": "Elevated routes/targets/snaps for Wilson and secondary Jets WRs/TE",
       "beneficiaries": [
         "garrett-wilson"
       ],
       "corroboration": [
-        "@JFowlerESPN"
+        "@JFowlerESPN",
+        "ETR cash review"
       ],
       "supportingSources": [
         "establish-the-run"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "bowers-active-debut-w3",
+      "at": "2026-09-27T12:55:12Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Brock Bowers active and making 2026 season debut for Raiders (was Q/knee, ETR expected to play). Immediate TE1 opportunity in LV offense.",
+      "playerIds": [
+        "brock-bowers"
+      ],
+      "players": [
+        "Brock Bowers"
+      ],
+      "url": "https://x.com/EstablishTheRun/status/2104193135924666385",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-bowers-week3",
+      "signal": "ACTIVE",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "ACTIVE",
+      "why": "Expected and confirmed active by Schefter/Raiders inactives",
+      "implication": "High target share TE from snap 1; Mayer handcuff reverse",
+      "opportunity": "Routes/targets as primary pass-catcher",
+      "corroboration": [
+        "@AdamSchefter"
+      ],
+      "supportingSources": [
+        "adam-schefter"
       ],
       "priority": "HIGH"
     },
@@ -381,18 +374,18 @@
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Commanders expected to sign FA RB Austin Ekeler to 53-man roster pending physical; healed from Achilles, prior workout with Panthers.",
+      "text": "Commanders expected to sign FA RB Austin Ekeler (healed Achilles) to 53 pending physical; reunion after Panthers workout. Adds veteran depth behind current backs.",
       "playerIds": [],
       "players": [],
       "url": "https://x.com/RapSheet/status/2104497843579048132",
       "kind": "NFL_FACT",
-      "eventId": "sign-austin-ekeler-wsh-week3",
-      "signal": "UPGRADE",
+      "eventId": "sign-ekeler-wsh-week3",
+      "signal": "ADD",
       "priorStatus": "FA",
       "newStatus": "SIGNED",
-      "why": "Sources confirm pending physical reunion.",
-      "implication": "Potential WSH RB committee change; monitor snaps.",
-      "opportunity": "Pass-catching RB role possible behind or with current backs.",
+      "why": "Sources to Rapoport/Garafolo",
+      "implication": "WAS RB committee potential; handcuff or committee share if role expands",
+      "opportunity": "Possible third-down/pass-game work; monitor depth chart",
       "corroboration": [
         "@MatthewBerryTMR"
       ],
@@ -402,13 +395,43 @@
       "priority": "NORMAL"
     },
     {
-      "id": "berry-tuten-shoutout",
+      "id": "bech-ir-forearm",
+      "at": "2026-09-27T23:01:19Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Raiders WR Jack Bech broken forearm, headed to IR (ruled out game); should return later season. Removes young depth piece.",
+      "playerIds": [],
+      "players": [],
+      "url": "https://x.com/RapSheet/status/2104345671239340116",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-bech-week3",
+      "signal": "IR",
+      "priorStatus": "ACTIVE",
+      "newStatus": "IR",
+      "why": "Broken forearm confirmed",
+      "implication": "LV WR depth thinner behind primary options; Bowers even more central",
+      "opportunity": "Slight target consolidation for remaining Raiders pass-catchers",
+      "beneficiaries": [
+        "brock-bowers"
+      ],
+      "corroboration": [
+        "@EstablishTheRun"
+      ],
+      "supportingSources": [
+        "establish-the-run"
+      ],
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-tuten-shout",
       "at": "2026-09-27T20:40:35Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Trevor Lawrence knelt to set up Bhayshul Tuten rushing TD; Berry highlights #FantasyLife for Tuten support.",
+      "text": "Matthew Berry highlights Bhayshul Tuten fantasy support after Trevor Lawrence kneels to set up Tuten rushing TD. Positive usage/role signal for JAC RB.",
       "playerIds": [
         "bhayshul-tuten"
       ],
@@ -417,47 +440,16 @@
       ],
       "url": "https://x.com/MatthewBerryTMR/status/2104310254234386943",
       "kind": "ANALYST_OPINION",
-      "eventId": "usage-bhayshul-tuten-week3",
+      "eventId": "berry-tuten-w3",
       "signal": "LOVE",
-      "why": "Coach/QB intentional support for fantasy-relevant TD.",
-      "implication": "Tuten goal-line/short-yardage role emerging.",
-      "opportunity": "Increased carries near end zone in JAC.",
+      "why": "Coach/QB intentional set-up for TD; volume opportunity",
+      "implication": "Tuten gaining trust/carries in JAC backfield; waiver/ROS watch",
+      "opportunity": "Goal-line/red-zone and overall carries expansion",
       "beneficiaries": [
         "bhayshul-tuten"
       ],
-      "priority": "NORMAL"
-    },
-    {
-      "id": "levitan-flowers-projs-out-initial",
-      "at": "2026-09-27T13:03:45Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
-      "outlet": "Establish The Run",
-      "text": "ETR had Zay Flowers (hamstring) out in projections initially (late Bateman/Andrews DFS swap possible); Moore in but limited, Mitchell out. Updated with actives.",
-      "playerIds": [
-        "zay-flowers",
-        "dj-moore"
-      ],
-      "players": [
-        "Zay Flowers",
-        "DJ Moore"
-      ],
-      "url": "https://x.com/adamlevitan/status/2104195289070596507",
-      "kind": "ANALYST_PROJECTION",
-      "eventId": "injury-zay-flowers-week3",
-      "signal": "OUT",
-      "priorStatus": "GAME-TIME DECISION",
-      "newStatus": "PROJECTED OUT",
-      "why": "No early clarity; conservative OUT then late swap readiness.",
-      "implication": "DFS pivot to Bateman/Andrews if Flowers scratches.",
-      "opportunity": "Contingent volume to Ravens other pass-catchers.",
-      "conflict": "Later ACTIVE; Berry preferred start.",
       "corroboration": [
-        "@EstablishTheRun"
-      ],
-      "supportingSources": [
-        "establish-the-run"
+        "@NFLonCBS"
       ],
       "priority": "NORMAL"
     }
@@ -468,35 +460,35 @@
       "sourceId": "establish-the-run",
       "source": "Establish The Run",
       "grade": "USEFUL",
-      "note": "Sunday AM GTD/Expected/Q fully parsed (Flowers GTD; Warren/Pittman/Barkley/Smith/Bowers/Evans/Coker expected). Post-game injury watch comprehensive (Achane/Jefferson/Hall/Evans/Mayfield/Bech). Aligns Schefter/Rapoport. Projs notes on Flower",
+      "note": "Sunday AM GTD/Expected/Q fully parsed (Flowers GTD; Warren/Pittman/Barkley/Smith/Bowers/Evans/Coker expected). Post-game injury watch comprehensive (Achane/Jefferson/Hall/Evans/Mayfield/Bech/Etienne etc). Aligns Schefter/Rapoport. Cash/proj",
       "at": "2026-09-28T00:28:31Z"
     },
     {
       "sourceId": "adam-levitan",
       "source": "Adam Levitan",
       "grade": "USEFUL",
-      "note": "Player-specific: Flowers OUT initial projs (Bateman/Andrews swap); Moore limited/Mitchell out confirmed. Jets WR depth + Sadiq hybrid post-Mitchell inactive; high opp Wilson. Cash lineup review post-slate. Quoted ETR injury list.",
+      "note": "Player-specific: Flowers OUT initial projs (late Bateman/Andrews swap); Moore limited/Mitchell out confirmed. Jets WR depth + Sadiq hybrid post-Mitchell; high opp Wilson. Cash lineup review post-slate with Gibbs/Walker/Wilson emphasis and u",
       "at": "2026-09-28T01:17:03Z"
     },
     {
       "sourceId": "matthew-berry",
       "source": "Matthew Berry",
       "grade": "USEFUL",
-      "note": "Flowers LOVE/start over Bateman if active. Parkinson active note. Tuten shoutout via Lawrence kneel. Limited pure analysis beyond reactions/Happy Hour; Ekeler congrats.",
-      "at": "2026-09-28T10:55:37Z"
+      "note": "Flowers LOVE/start over Bateman if active. Parkinson active note. Tuten shoutout via Lawrence kneel. Limited pure analysis beyond reactions/Happy Hour/status; Ekeler congrats. Focus game-day.",
+      "at": "2026-09-27T18:51:55Z"
     },
     {
       "sourceId": "adam-schefter",
       "source": "Adam Schefter",
       "grade": "USEFUL",
-      "note": "Primary factual OUT/ACTIVE/GTD: Flowers workout then ACTIVE; Warren/Pittman/Moore/Coleman active; Mitchell inactive; Bowers active; Achane OUT; Hall OUT; Evans carted/OUT ribs; Jefferson OUT; Mayfield thumb; Caleb 3-4 wk Grade 2. Actives li",
+      "note": "Primary factual OUT/ACTIVE/GTD: Flowers workout then ACTIVE; Warren/Pittman/Moore/Coleman active; Mitchell inactive; Bowers active; Achane OUT; Hall OUT; Evans carted/OUT ribs; Jefferson OUT; Mayfield thumb; Caleb 3-4 wk Grade 2. Strong act",
       "at": "2026-09-27T22:09:08Z"
     },
     {
       "sourceId": "ian-rapoport",
       "source": "Ian Rapoport",
       "grade": "USEFUL",
-      "note": "Corroborated Flowers GTD/workout then ACTIVE limited; Achane Q-to-OUT + coach major concern; Bowers active; Evans rib strain; Jefferson OUT; Puka inactive SNF; Bech broken forearm IR; Mayfield thumb likely miss time; Caleb timeline + Keenum",
+      "note": "Corroborated Flowers GTD/workout then ACTIVE limited; Achane Q-to-OUT + coach major concern; Bowers active; Evans rib strain; Jefferson OUT; Puka inactive SNF; Bech broken forearm IR; Mayfield thumb likely miss; Caleb timeline + Keenum star",
       "at": "2026-09-28T10:48:00Z"
     },
     {
@@ -633,8 +625,8 @@
       "at": "2026-09-27T22:09:08Z"
     }
   ],
-  "mirroredAt": "2026-09-28T11:09:28.218Z",
+  "mirroredAt": "2026-09-28T11:09:51.344Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-09-28T11:09:27.757Z",
+  "sourceCompletedAt": "2026-09-28T11:09:50.894Z",
   "sourceStatus": "live"
 }
