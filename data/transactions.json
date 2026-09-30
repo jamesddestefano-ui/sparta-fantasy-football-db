@@ -1,6 +1,6 @@
 {
   "league": "sparta",
-  "source": "Yahoo live + durable ingest through sparta-live-check-20260930-0800 (2026-09-30T07:55:10-04:00)",
+  "source": "Yahoo live + durable ingest through sparta-live-check-20260930-1200 (2026-09-30T11:59:30-04:00)",
   "transactions": [
     {
       "timestamp_et": "2026-08-31 21:49",
@@ -1320,6 +1320,74 @@
       "notes": "non-JD FA DEF swap after waiver run",
       "league": "102586",
       "yahoo_league_id": "102586"
+    },
+    {
+      "timestamp_et": "2026-09-30 10:07",
+      "team": "JD",
+      "team_name": "TB12 of Ass/Cousin Fucker",
+      "action": "TRADE",
+      "added": "Breece Hall;Caleb Douglas;Kyle Pitts Sr.",
+      "dropped": "Rhamondre Stevenson;Quinshon Judkins;Xavier Worthy",
+      "faab_bid": 0,
+      "via": "trade",
+      "yahoo_raw": "Kyle Pitts Sr. Atl - TE / Breece Hall NYJ - RB Q / Caleb Douglas Mia - WR Q Traded to TB12 of Ass/Cousin Fucker; Xavier Worthy KC - WR / Rhamondre Stevenson NE - RB / Quinshon Judkins Cle - RB Traded to CLIN-TON POR-TIS / Sep 30, 7:07 am",
+      "source": "Authenticated Yahoo Agent Computer CDP :9225 live pull 2026-09-30T11:59:30-04:00 (sparta-live-check-20260930-1200); Yahoo 'Sep 30, 7:07 am' treated as Pacific \u2192 ET (trade process timestamp). No FAAB fee on trade; no invented fee.",
+      "transaction_fee_usd": 0,
+      "total_real_money_cost_usd": 0,
+      "live_pull_enriched_at": "2026-09-30T11:59:30-04:00",
+      "semantic_key": "102586|JD|TRADE|Breece Hall;Caleb Douglas;Kyle Pitts Sr.|Rhamondre Stevenson;Quinshon Judkins;Xavier Worthy|2026-09-30",
+      "calendar_day_et": "2026-09-30",
+      "check_id": "sparta-live-check-20260930-1200",
+      "notes": "trid=17 PROCESSED after Wed 0800 Protest-only continuity \u2014 JD receives Hall(Q)+Douglas(Q)+Pitts; sends Stevenson+Judkins+Worthy. Yahoo Error #242 on viewtrade?trid=17. Lineup auto-reshuffled WR JSN / FLEX McMillan.",
+      "league": "102586",
+      "yahoo_league_id": "102586",
+      "trid": "17",
+      "counterparty": "CLIN-TON POR-TIS",
+      "counterparty_code": "MC",
+      "players_in": [
+        "Breece Hall",
+        "Caleb Douglas",
+        "Kyle Pitts Sr."
+      ],
+      "players_out": [
+        "Rhamondre Stevenson",
+        "Quinshon Judkins",
+        "Xavier Worthy"
+      ]
+    },
+    {
+      "timestamp_et": "2026-09-30 10:07",
+      "team": "MC",
+      "team_name": "CLIN-TON POR-TIS",
+      "action": "TRADE",
+      "added": "Rhamondre Stevenson;Quinshon Judkins;Xavier Worthy",
+      "dropped": "Breece Hall;Caleb Douglas;Kyle Pitts Sr.",
+      "faab_bid": 0,
+      "via": "trade",
+      "yahoo_raw": "Kyle Pitts Sr. Atl - TE / Breece Hall NYJ - RB Q / Caleb Douglas Mia - WR Q Traded to TB12 of Ass/Cousin Fucker; Xavier Worthy KC - WR / Rhamondre Stevenson NE - RB / Quinshon Judkins Cle - RB Traded to CLIN-TON POR-TIS / Sep 30, 7:07 am",
+      "source": "Authenticated Yahoo Agent Computer CDP :9225 live pull 2026-09-30T11:59:30-04:00 (sparta-live-check-20260930-1200); Yahoo 'Sep 30, 7:07 am' treated as Pacific \u2192 ET (trade process timestamp). No FAAB fee on trade; no invented fee.",
+      "transaction_fee_usd": 0,
+      "total_real_money_cost_usd": 0,
+      "live_pull_enriched_at": "2026-09-30T11:59:30-04:00",
+      "semantic_key": "102586|MC|TRADE|Rhamondre Stevenson;Quinshon Judkins;Xavier Worthy|Breece Hall;Caleb Douglas;Kyle Pitts Sr.|2026-09-30",
+      "calendar_day_et": "2026-09-30",
+      "check_id": "sparta-live-check-20260930-1200",
+      "notes": "trid=17 counterpart of JD TRADE \u2014 MC receives Stevenson+Judkins+Worthy; sends Hall+Douglas+Pitts",
+      "league": "102586",
+      "yahoo_league_id": "102586",
+      "trid": "17",
+      "counterparty": "TB12 of Ass/Cousin Fucker",
+      "counterparty_code": "JD",
+      "players_in": [
+        "Rhamondre Stevenson",
+        "Quinshon Judkins",
+        "Xavier Worthy"
+      ],
+      "players_out": [
+        "Breece Hall",
+        "Caleb Douglas",
+        "Kyle Pitts Sr."
+      ]
     }
   ],
   "visible_draft_night_adds_pending_reconciliation": [
@@ -1339,5 +1407,5 @@
       "added": "D.J. Moore"
     }
   ],
-  "transaction_count": 89
+  "transaction_count": 91
 }
