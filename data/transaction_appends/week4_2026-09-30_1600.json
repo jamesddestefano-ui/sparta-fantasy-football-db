@@ -1,0 +1,51 @@
+{
+  "check_id": "sparta-live-check-20260930-1600",
+  "observed_at": "2026-09-30T16:01:08-04:00",
+  "appended": [
+    {
+      "timestamp_et": "2026-09-30 12:22",
+      "team": "JU",
+      "team_name": "The U",
+      "action": "DROP",
+      "added": "",
+      "dropped": "Jonathon Brooks",
+      "faab_bid": 0,
+      "via": "drop",
+      "yahoo_raw": "Jonathon Brooks Car - RB IR To Waivers / The U / Sep 30, 9:22 am",
+      "source": "Authenticated Yahoo Agent Computer CDP :9225 live pull 2026-09-30T16:01:08-04:00 (sparta-live-check-20260930-1600); Yahoo 'Sep 30, 9:22 am' treated as Pacific \u2192 ET. No invented FAAB fee.",
+      "transaction_fee_usd": 0,
+      "total_real_money_cost_usd": 0,
+      "live_pull_enriched_at": "2026-09-30T16:01:08-04:00",
+      "semantic_key": "102586|JU|DROP||Jonathon Brooks|2026-09-30",
+      "calendar_day_et": "2026-09-30",
+      "check_id": "sparta-live-check-20260930-1600",
+      "notes": "Non-JD; Brooks IR to waivers. Tip of Yahoo tx list vs 1200 (was trid=17).",
+      "league": "102586",
+      "yahoo_league_id": "102586"
+    },
+    {
+      "timestamp_et": "2026-09-30 12:22",
+      "team": "JU",
+      "team_name": "The U",
+      "action": "ADD_DROP",
+      "added": "Jonah Coleman",
+      "dropped": "Ryan Flournoy",
+      "faab_bid": 0,
+      "via": "free_agent",
+      "yahoo_raw": "Jonah Coleman Den - RB IR Free Agent / Ryan Flournoy Dal - WR To Waivers / The U / Sep 30, 9:22 am",
+      "source": "Authenticated Yahoo Agent Computer CDP :9225 live pull 2026-09-30T16:01:08-04:00 (sparta-live-check-20260930-1600); Yahoo 'Sep 30, 9:22 am' treated as Pacific \u2192 ET. FA add \u2014 no FAAB fee invented.",
+      "transaction_fee_usd": 0,
+      "total_real_money_cost_usd": 0,
+      "live_pull_enriched_at": "2026-09-30T16:01:08-04:00",
+      "semantic_key": "102586|JU|ADD_DROP|Jonah Coleman|Ryan Flournoy|2026-09-30",
+      "calendar_day_et": "2026-09-30",
+      "check_id": "sparta-live-check-20260930-1600",
+      "notes": "Non-JD FA add Coleman (IR) / drop Flournoy.",
+      "league": "102586",
+      "yahoo_league_id": "102586"
+    }
+  ],
+  "appended_count": 2,
+  "dedupe": "semantic_key league+team+type+added+dropped+calendar_day_ET",
+  "notes": "2 non-JD The U txs after 1200 tip (trid=17). No JD ownership change. No invented FAAB fees."
+}
