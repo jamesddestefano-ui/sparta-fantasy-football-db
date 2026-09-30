@@ -1,58 +1,41 @@
 {
   "league": "sparta",
-  "source": "Authenticated Yahoo CDP :9225 live pull 2026-09-23T08:14:30-04:00",
-  "observed_at": "2026-09-23T08:14:30-04:00",
+  "source": "Authenticated Yahoo CDP :9225 live pull 2026-09-30T07:55:10-04:00",
+  "observed_at": "2026-09-30T07:55:10-04:00",
   "priority_order": [],
   "pending_claims_jd": [],
-  "pending_cleared_et": "2026-09-23",
+  "pending_cleared_et": "2026-09-30",
   "pending_process_results_jd": {
-    "processed_at_et": "2026-09-23 04:39",
+    "processed_at_et": "2026-09-30 04:47",
     "wins": [
       {
-        "bid": 12,
-        "added": "Oronde Gadsden",
-        "dropped": "Michael Mayer"
-      },
-      {
-        "bid": 8,
-        "added": "Emanuel Wilson",
-        "dropped": "George Holani"
-      },
-      {
-        "bid": 3,
-        "added": "Packers D/ST",
-        "dropped": "Buccaneers D/ST"
-      },
-      {
-        "bid": 3,
-        "added": "Tre Tucker",
-        "dropped": "Caleb Douglas"
+        "bid": 4,
+        "added": "Darren Waller",
+        "dropped": "Tre Tucker",
+        "claim_id_was": "10_28592_40114"
       }
     ],
-    "faab_spent": 26,
-    "faab_after": 59,
+    "losses": [
+      {
+        "bid": 5,
+        "added": "Kendre Miller",
+        "dropped": "Tre Tucker",
+        "claim_id_was": "10_40108_40114",
+        "result": "LOST \u2014 King Kong won Miller $8 Drop Makai Lemon"
+      },
+      {
+        "bid": 1,
+        "added": "Michael Mayer",
+        "dropped": "Tre Tucker",
+        "claim_id_was": "10_40065_40114",
+        "result": "CLEARED unused cascade \u2014 Tucker already dropped; Mayer now FA"
+      }
+    ],
+    "faab_spent": 4,
+    "faab_after": 55,
     "vs_tue_2000_pending_ladder": {
-      "note": "Processed claim set/amounts differ from Tue 2000 pending ladder (Gadsden $14/Wilson $5/Bigsby $3/Lions $2/Shipley $1). Yahoo live results authoritative \u2014 likely post-2000 claim edits by Billy.",
-      "lost_or_superseded": [
-        {
-          "claim": "Tank Bigsby $3 Drop Holani",
-          "result": "LOST \u2014 MattyBAD won Bigsby $6"
-        },
-        {
-          "claim": "Lions $2 Drop Buccaneers",
-          "result": "NOT PROCESSED AS BID \u2014 JD instead won Packers $3 Drop Buccaneers"
-        },
-        {
-          "claim": "Will Shipley $1 Drop Holani",
-          "result": "NOT PROCESSED \u2014 claim absent from results"
-        },
-        {
-          "claim": "Gadsden $14 / Wilson $5",
-          "result": "WON at $12 / $8 \u2014 Yahoo live authoritative"
-        }
-      ]
+      "note": "Tue 2000 ladder $5 Miller / $4 Waller / $1 Mayer all drop Tucker. Processed: Miller LOST to SR $8; Waller WON $4; Mayer unused. Gordon was already CLEARED Tue night (FOCUS won Gordon $57)."
     }
   },
-  "note": "PENDING CLEARED Sep 23 ~04:39 ET (CDP 0800 confirm). JD won Gadsden $12, Wilson $8, Packers $3, Tucker $3. FAAB $59. Prior 07:41 user-screenshot reconcile agrees on outcome.",
-  "prior_screenshot_reconcile_ack": "2026-09-23T07:41:00-04:00 user screenshots already recorded same 4 wins / $59 \u2014 Live Check is first formal vs Tue 2000 baseline with Transactions All Teams + durable txs ingest"
+  "note": "PENDING CLEARED Sep 30 ~04:47 ET. JD won Waller $4 Drop Tucker. Miller lost to King Kong $8. Mayer cascade unused (FA). FAAB $55. viewwaiver Error #236 all three prior claim ids. pendingwaivers page not found (empty)."
 }
