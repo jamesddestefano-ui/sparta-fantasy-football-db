@@ -1,0 +1,33 @@
+{
+  "check_id": "sparta-live-check-20261001-1600",
+  "observed_at": "2026-10-01T15:58:35-04:00",
+  "appended": [],
+  "appended_count": 0,
+  "dedupe": "semantic_key league+team+type+added+dropped+calendar_day_ET",
+  "notes": "0 NEW completed ADD/DROP/TRADE ownership txs since 1200 tip (X-Factor Hill/Murray). League events only: trid=21 VETOED Oct 1 13:39 ET + NEW pending trid=22 MC\u2194MattyBAD Protest-only \u2014 NOT appended as completed TRADE (no ownership change). No invented FAAB fees.",
+  "league_events_noted": [
+    {
+      "type": "TRADE_VETOED",
+      "trid": "21",
+      "parties": [
+        "CLIN-TON POR-TIS",
+        "Dynamic Duo of Ladd & Stribs"
+      ],
+      "timestamp_et": "2026-10-01 13:39",
+      "yahoo_raw": "CMC/Herbert/Washington Vetoed Trade to Dynamic Duo; Lawrence/McConkey/Montgomery Vetoed Trade to CLIN-TON / Oct 1, 10:39 am (the_showstoppers)",
+      "jd_owned_change": false,
+      "notes": "Commissioner veto of previously Protest-only trid=21 \u2014 NON-JD; not appended as completed TRADE (no ownership change)"
+    },
+    {
+      "type": "PENDING_TRADE_NEW",
+      "trid": "22",
+      "parties": [
+        "CLIN-TON POR-TIS",
+        "MattyBAD"
+      ],
+      "process_note": "Friday Oct 9 / Week 5",
+      "jd_owned_change": false,
+      "notes": "NEW Protest-only pending MC sends CMC+Washington+Tate / MattyBAD sends Barkley+Odunze+Jamo \u2014 NON-JD soft"
+    }
+  ]
+}
