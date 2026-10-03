@@ -1,0 +1,53 @@
+{
+  "check_id": "sparta-live-check-20261003-1150",
+  "observed_at": "2026-10-03T12:01:42-04:00",
+  "calendar_day_et": "2026-10-03",
+  "new_completed_ownership_txs": [
+    {
+      "timestamp_et": "2026-10-03 09:53",
+      "team": "MC",
+      "team_name": "CLIN-TON POR-TIS",
+      "action": "TRADE",
+      "added": "Trevor Lawrence;David Montgomery;Ladd McConkey",
+      "dropped": "Justin Herbert;Saquon Barkley;Jakobi Meyers",
+      "faab_bid": 0,
+      "via": "trade",
+      "yahoo_raw": "Jakobi Meyers / Justin Herbert / Saquon Barkley Traded to Dynamic Duo of Ladd & Stribs; David Montgomery / Trevor Lawrence / Ladd McConkey Traded to CLIN-TON POR-TIS / Oct 3, 6:53 am (trid=23)",
+      "source": "Authenticated Yahoo Agent Computer CDP :9225 live pull 2026-10-03T12:01:42-04:00 (sparta-live-check-20261003-1150); Yahoo 'Oct 3, 6:53 am' treated as Pacific \u2192 ET. Trade trid=23 completed (was PENDING Oct 10/W5 Protest-available at Sat 0750).",
+      "transaction_fee_usd": 0,
+      "total_real_money_cost_usd": 0,
+      "live_pull_enriched_at": "2026-10-03T12:01:42-04:00",
+      "semantic_key": "102586|MC|TRADE|Trevor Lawrence;David Montgomery;Ladd McConkey|Justin Herbert;Saquon Barkley;Jakobi Meyers|2026-10-03",
+      "calendar_day_et": "2026-10-03",
+      "check_id": "sparta-live-check-20261003-1150",
+      "notes": "Non-JD trid=23 PROCESSED; MC receives Lawrence/Montgomery/McConkey, sends Herbert/Barkley/Meyers. Prior Sat 0750 had PENDING Oct 10/W5 \u2014 Yahoo now shows completed + viewtrade Error #242 (same pattern as trid=22).",
+      "league": "102586",
+      "yahoo_league_id": "102586",
+      "trid": "23"
+    },
+    {
+      "timestamp_et": "2026-10-03 09:53",
+      "team": "TM",
+      "team_name": "Dynamic Duo of Ladd & Stribs",
+      "action": "TRADE",
+      "added": "Justin Herbert;Saquon Barkley;Jakobi Meyers",
+      "dropped": "Trevor Lawrence;David Montgomery;Ladd McConkey",
+      "faab_bid": 0,
+      "via": "trade",
+      "yahoo_raw": "Herbert/Barkley/Meyers \u2192 Dynamic Duo; Lawrence/Montgomery/McConkey \u2192 CLIN-TON / Oct 3, 6:53 am (trid=23)",
+      "source": "Authenticated Yahoo Agent Computer CDP :9225 live pull 2026-10-03T12:01:42-04:00 (sparta-live-check-20261003-1150); Yahoo 'Oct 3, 6:53 am' treated as Pacific \u2192 ET.",
+      "transaction_fee_usd": 0,
+      "total_real_money_cost_usd": 0,
+      "live_pull_enriched_at": "2026-10-03T12:01:42-04:00",
+      "semantic_key": "102586|TM|TRADE|Justin Herbert;Saquon Barkley;Jakobi Meyers|Trevor Lawrence;David Montgomery;Ladd McConkey|2026-10-03",
+      "calendar_day_et": "2026-10-03",
+      "check_id": "sparta-live-check-20261003-1150",
+      "notes": "Non-JD trid=23 PROCESSED counterpart leg.",
+      "league": "102586",
+      "yahoo_league_id": "102586",
+      "trid": "23"
+    }
+  ],
+  "deduped_skipped": [],
+  "note": "2 NEW NON-JD trade legs (trid=23 MC\u2194TM PROCESSED) since Sat 0750 tip; Murray $1 already ingested at 0750"
+}
