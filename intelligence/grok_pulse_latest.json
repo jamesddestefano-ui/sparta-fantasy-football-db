@@ -1,10 +1,10 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-10-04T08:09:48.031Z",
+  "generatedAt": "2026-10-04T10:09:35.542Z",
   "status": "live",
-  "completedAt": "2026-10-04T08:09:48.024Z",
-  "nextAtLabel": "6:00 AM ET",
+  "completedAt": "2026-10-04T10:09:35.498Z",
+  "nextAtLabel": "7:09 AM ET",
   "inWindow": true,
   "itemCount": 17,
   "items": [
@@ -15,7 +15,7 @@
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Seahawks placing first-round RB Jadarian Price on IR due to chest injury aggravated in practice; misses minimum 4 weeks. Signed Velus Jones Jr. from PS.",
+      "text": "Seahawks placing first-round RB Jadarian Price on IR due to chest injury aggravated in practice; miss minimum 4 weeks. Signed Velus Jones Jr. from PS.",
       "playerIds": [
         "jadarian-price"
       ],
@@ -24,15 +24,14 @@
       ],
       "url": "https://x.com/AdamSchefter/status/2106472895392190588",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-jadarian-price-w4",
+      "eventId": "injury-price-ir-week4",
       "signal": "OUT",
-      "priorStatus": "QUESTIONABLE/INJURED",
       "newStatus": "IR",
-      "why": "Chest injury",
-      "implication": "Out multi-weeks; backfield shuffle",
+      "why": "Official transaction; chest.",
+      "implication": "Out multi weeks; SEA RB depth changes.",
       "corroboration": [
         "@RapSheet",
-        "ESPN"
+        "@EstablishTheRun"
       ],
       "supportingSources": [
         "ian-rapoport",
@@ -41,13 +40,44 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "etr-inj-jefferson-out",
+      "id": "rap-allen-out",
+      "at": "2026-10-03T14:36:01Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Colts WR Keenan Allen (groin) downgraded to OUT vs Commanders.",
+      "playerIds": [],
+      "players": [],
+      "url": "https://x.com/RapSheet/status/2106392834450305085",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-allen-week4",
+      "signal": "OUT",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "OUT",
+      "why": "Downgrade confirmed.",
+      "implication": "Sit; target bump for Downs/others.",
+      "beneficiaries": [
+        "josh-downs"
+      ],
+      "corroboration": [
+        "@AdamSchefter",
+        "@EstablishTheRun"
+      ],
+      "supportingSources": [
+        "adam-schefter",
+        "establish-the-run"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "etr-jefferson-out",
       "at": "2026-10-03T00:10:46Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Justin Jefferson OUT (ankle).",
+      "text": "Justin Jefferson listed OUT.",
       "playerIds": [
         "justin-jefferson"
       ],
@@ -56,18 +86,18 @@
       ],
       "url": "https://x.com/EstablishTheRun/status/2106175089993793799",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-justin-jefferson-w4",
+      "eventId": "injury-jefferson-week4",
       "signal": "OUT",
-      "priorStatus": "QUESTIONABLE",
+      "priorStatus": "Q",
       "newStatus": "OUT",
-      "why": "Ankle sprain",
-      "implication": "Sit; boost Addison",
+      "why": "ETR Sunday injuries; ankle.",
+      "implication": "Sit; massive target vacuum.",
       "beneficiaries": [
         "jordan-addison"
       ],
       "corroboration": [
         "@AdamSchefter",
-        "NFL.com"
+        "web"
       ],
       "supportingSources": [
         "adam-schefter"
@@ -75,13 +105,39 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "etr-inj-smith-goedert-out",
+      "id": "etr-hall-out",
       "at": "2026-10-03T00:10:46Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Devonta Smith and Dallas Goedert OUT for Eagles.",
+      "text": "Breece Hall listed OUT.",
+      "playerIds": [
+        "breece-hall"
+      ],
+      "players": [
+        "Breece Hall"
+      ],
+      "url": "https://x.com/EstablishTheRun/status/2106175089993793799",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-hall-week4",
+      "signal": "OUT",
+      "newStatus": "OUT",
+      "why": "ETR list; quad.",
+      "implication": "Sit; backfield opens.",
+      "corroboration": [
+        "web reports"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "etr-smith-out",
+      "at": "2026-10-03T00:10:46Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Devonta Smith listed OUT along with Dallas Goedert.",
       "playerIds": [
         "devonta-smith",
         "dallas-goedert"
@@ -92,21 +148,72 @@
       ],
       "url": "https://x.com/EstablishTheRun/status/2106175089993793799",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-eagles-passcatchers-w4",
+      "eventId": "injury-eagles-pass-week4",
       "signal": "OUT",
-      "priorStatus": "INJURED",
       "newStatus": "OUT",
-      "why": "Injuries",
-      "implication": "Eagles offense depleted vs Rams",
-      "opportunity": "Wicks/others targets up",
-      "beneficiaries": [
-        "dontayvion-wicks"
-      ],
+      "why": "ETR Sunday list.",
+      "implication": "Eagles pass game depleted.",
       "corroboration": [
         "@adamlevitan"
       ],
       "supportingSources": [
         "adam-levitan"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "etr-achane-out",
+      "at": "2026-10-03T00:10:46Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "De'Von Achane listed OUT.",
+      "playerIds": [
+        "devon-achane"
+      ],
+      "players": [
+        "De'Von Achane"
+      ],
+      "url": "https://x.com/EstablishTheRun/status/2106175089993793799",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-achane-week4",
+      "signal": "OUT",
+      "newStatus": "OUT",
+      "why": "ETR list; season-ending ACL per reports.",
+      "implication": "Sit ROS short-term; MIA RB committee.",
+      "corroboration": [
+        "web"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "etr-daniels-out",
+      "at": "2026-10-03T00:10:46Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Jayden Daniels listed OUT.",
+      "playerIds": [
+        "jayden-daniels"
+      ],
+      "players": [
+        "Jayden Daniels"
+      ],
+      "url": "https://x.com/EstablishTheRun/status/2106175089993793799",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-daniels-week4",
+      "signal": "OUT",
+      "newStatus": "OUT",
+      "why": "ETR; elbow. Mariota starts.",
+      "implication": "Sit QB; WAS offense limited.",
+      "corroboration": [
+        "web",
+        "@AdamSchefter"
+      ],
+      "supportingSources": [
+        "adam-schefter"
       ],
       "priority": "IMMEDIATE"
     },
@@ -117,7 +224,7 @@
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Ladd McConkey (foot) went LP-DNP-LP. Already dealt with cracked rib this season.",
+      "text": "Ladd McConkey (foot) went LP-DNP-LP; already dealt with cracked rib this season.",
       "playerIds": [
         "ladd-mcconkey"
       ],
@@ -125,16 +232,18 @@
         "Ladd McConkey"
       ],
       "url": "https://x.com/adamlevitan/status/2106179845453754466",
-      "kind": "USAGE_DATA",
-      "eventId": "injury-ladd-mcconkey-w4",
-      "signal": "CAUTION",
-      "why": "Practice pattern + history",
-      "implication": "Risky start; monitor inactive",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-mcconkey-week4",
+      "signal": "QUESTIONABLE",
+      "why": "Practice participation pattern.",
+      "implication": "Game-time risk; check inactives.",
+      "opportunity": "If out, Johnston/others rise.",
       "beneficiaries": [
         "quentin-johnston"
       ],
       "corroboration": [
-        "@adamlevitan"
+        "@adamlevitan",
+        "@EstablishTheRun"
       ],
       "supportingSources": [
         "adam-levitan",
@@ -143,13 +252,13 @@
       "priority": "HIGH"
     },
     {
-      "id": "levitan-puka-limits",
+      "id": "levitan-nacua-limits",
       "at": "2026-10-03T00:29:40Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Great to have Puka Nacua (hip) back. Some speculation he could have snaps limited; we'll see.",
+      "text": "Great to have Puka Nacua back from hip; some speculation on limited snaps.",
       "playerIds": [
         "puka-nacua"
       ],
@@ -158,11 +267,14 @@
       ],
       "url": "https://x.com/adamlevitan/status/2106179845453754466",
       "kind": "ANALYST_OPINION",
-      "eventId": "injury-puka-nacua-w4",
-      "signal": "CAUTION",
-      "why": "Hip recovery; prior limited returns noted",
-      "implication": "Monitor early snaps/usage",
-      "opportunity": "Full role if unrestricted",
+      "eventId": "injury-nacua-week4",
+      "signal": "LIMITED",
+      "why": "Practice/return context and speculation.",
+      "implication": "Temper expectations if snap count; still startable.",
+      "opportunity": "Monitor pregame for full role.",
+      "beneficiaries": [
+        "davante-adams"
+      ],
       "corroboration": [
         "@EstablishTheRun"
       ],
@@ -178,7 +290,7 @@
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Excellent spot for Nico Collins (hamstring) return. Cowboys inflate opposing WR scoring 7.3% (most in NFL); Texans implied 7th-most points.",
+      "text": "Excellent spot for Nico Collins return; Cowboys inflate opposing WR scoring 7.3% (most in NFL); Texans high implied points.",
       "playerIds": [
         "nico-collins"
       ],
@@ -187,11 +299,14 @@
       ],
       "url": "https://x.com/adamlevitan/status/2106179845453754466",
       "kind": "ANALYST_PROJECTION",
-      "eventId": "injury-nico-collins-w4",
+      "eventId": "injury-collins-week4",
       "signal": "UPGRADE",
-      "why": "Elite DvP + team total",
-      "implication": "WR1 upside lock",
-      "opportunity": "Volume + efficiency boost",
+      "why": "DvP data and game environment.",
+      "implication": "WR1 upside this week.",
+      "opportunity": "Targets volume vs soft secondary.",
+      "corroboration": [
+        "@EstablishTheRun"
+      ],
       "supportingSources": [
         "establish-the-run"
       ],
@@ -204,7 +319,7 @@
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "The moment Jordan Addison truthers have been waiting for. Home vs borderline NFL secondary with Justin Jefferson out.",
+      "text": "Jordan Addison truthers moment: home vs borderline secondary with Justin Jefferson out.",
       "playerIds": [
         "jordan-addison"
       ],
@@ -213,11 +328,11 @@
       ],
       "url": "https://x.com/adamlevitan/status/2106179845453754466",
       "kind": "ANALYST_OPINION",
-      "eventId": "injury-justin-jefferson-w4",
+      "eventId": "injury-jefferson-week4",
       "signal": "UPGRADE",
-      "why": "JJ absence + matchup",
-      "implication": "WR2/3 smash spot",
-      "opportunity": "Primary target earner",
+      "why": "Teammate absence and matchup.",
+      "implication": "WR2/flex smash spot.",
+      "opportunity": "Elevated targets/routes/redzone.",
       "corroboration": [
         "@MatthewBerryTMR"
       ],
@@ -233,35 +348,42 @@
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Eagles situation getting worse. Without three most important players vs Rams: DeVonta Smith, Dallas Goedert, Zack Baun.",
+      "text": "Eagles situation worse: without DeVonta Smith, Dallas Goedert, Zack Baun vs Rams.",
       "playerIds": [
         "devonta-smith",
-        "dallas-goedert"
+        "dallas-goedert",
+        "jalen-hurts"
       ],
       "players": [
         "DeVonta Smith",
-        "Dallas Goedert"
+        "Dallas Goedert",
+        "Jalen Hurts"
       ],
       "url": "https://x.com/adamlevitan/status/2106179845453754466",
       "kind": "ANALYST_OPINION",
-      "eventId": "injury-eagles-passcatchers-w4",
+      "eventId": "injury-eagles-pass-week4",
       "signal": "DOWNGRADE",
-      "why": "Key absences compound",
-      "implication": "Hurts/WR corps limited; sit fringe",
-      "opportunity": "Increased role for remaining pass-catchers",
+      "why": "Key absences impact offense.",
+      "implication": "Hurts/others less efficient; fade Eagles pass.",
+      "opportunity": "Elevated for remaining WRs/TEs if any.",
+      "corroboration": [
+        "@EstablishTheRun",
+        "@MatthewBerryTMR"
+      ],
       "supportingSources": [
-        "establish-the-run"
+        "establish-the-run",
+        "matthew-berry"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "etr-inj-puka-in",
+      "id": "etr-nacua-in-w4",
       "at": "2026-10-03T00:10:46Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Puka Nacua listed IN for Week 4 after hip injury. Speculation of possible snap limits but cleared to play.",
+      "text": "Puka Nacua listed IN for Week 4 return from hip injury.",
       "playerIds": [
         "puka-nacua"
       ],
@@ -270,15 +392,16 @@
       ],
       "url": "https://x.com/EstablishTheRun/status/2106175089993793799",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-puka-nacua-w4",
+      "eventId": "injury-nacua-week4",
       "signal": "IN",
-      "priorStatus": "OUT/INJURED",
+      "priorStatus": "OUT",
       "newStatus": "IN",
-      "why": "Hip; full clearance on final report",
-      "implication": "Start with possible volume caution",
-      "opportunity": "Primary WR role return vs Eagles",
+      "why": "ETR Sunday injury list; Levitan notes possible snap limits.",
+      "implication": "WR1/2 upside returns but monitor volume.",
+      "opportunity": "Routes/targets if unlimited; Adams/others may cede.",
       "corroboration": [
-        "@adamlevitan"
+        "@adamlevitan",
+        "web reports"
       ],
       "supportingSources": [
         "adam-levitan"
@@ -286,7 +409,7 @@
       "priority": "HIGH"
     },
     {
-      "id": "etr-inj-collins-in",
+      "id": "etr-collins-in-w4",
       "at": "2026-10-03T00:10:46Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
@@ -301,106 +424,18 @@
       ],
       "url": "https://x.com/EstablishTheRun/status/2106175089993793799",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-nico-collins-w4",
+      "eventId": "injury-collins-week4",
       "signal": "IN",
       "priorStatus": "OUT",
       "newStatus": "IN",
-      "why": "Hamstring cleared",
-      "implication": "Elite WR1 start",
-      "opportunity": "High target share vs DAL",
+      "why": "ETR Sunday list.",
+      "implication": "Elite WR return in strong spot.",
+      "opportunity": "High targets/routes vs weak DvP.",
       "corroboration": [
         "@adamlevitan"
       ],
       "supportingSources": [
         "adam-levitan"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "etr-inj-achane-out",
-      "at": "2026-10-03T00:10:46Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "De'Von Achane OUT (season-ending ACL).",
-      "playerIds": [
-        "devon-achane"
-      ],
-      "players": [
-        "De'Von Achane"
-      ],
-      "url": "https://x.com/EstablishTheRun/status/2106175089993793799",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-devon-achane-w4",
-      "signal": "OUT",
-      "priorStatus": "INJURED",
-      "newStatus": "OUT/IR",
-      "why": "Torn ACL Week 3",
-      "implication": "Season over; Wright/others elevate",
-      "corroboration": [
-        "NFL reports"
-      ],
-      "supportingSources": [
-        "adam-schefter"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "etr-inj-hall-out",
-      "at": "2026-10-03T00:10:46Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "Breece Hall OUT.",
-      "playerIds": [
-        "breece-hall"
-      ],
-      "players": [
-        "Breece Hall"
-      ],
-      "url": "https://x.com/EstablishTheRun/status/2106175089993793799",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-breece-hall-w4",
-      "signal": "OUT",
-      "priorStatus": "INJURED",
-      "newStatus": "OUT",
-      "why": "Thigh/quad",
-      "implication": "Sit; backup elevates",
-      "priority": "HIGH"
-    },
-    {
-      "id": "etr-inj-flowers-mclaurin-evans-q",
-      "at": "2026-10-03T00:10:46Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "Zay Flowers, Terry McLaurin, Mike Evans QUESTIONABLE.",
-      "playerIds": [
-        "zay-flowers",
-        "terry-mclaurin",
-        "mike-evans"
-      ],
-      "players": [
-        "Zay Flowers",
-        "Terry McLaurin",
-        "Mike Evans"
-      ],
-      "url": "https://x.com/EstablishTheRun/status/2106175089993793799",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-wrs-q-w4",
-      "signal": "QUESTIONABLE",
-      "newStatus": "QUESTIONABLE",
-      "why": "Hamstring/ribs/etc",
-      "implication": "GTDs; have backups ready",
-      "corroboration": [
-        "@RapSheet",
-        "beat reports"
-      ],
-      "supportingSources": [
-        "ian-rapoport"
       ],
       "priority": "HIGH"
     },
@@ -411,7 +446,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "LOVE Jaylen Warren: led RBs with 90% snap rate, 20/22 RB touches last week; Dowdle out again. Full workhorse vs CLE.",
+      "text": "LOVE Jaylen Warren: 90% snaps last week, 20/22 RB touches; Dowdle out; CLE allows 88+ rush yds every game.",
       "playerIds": [
         "jaylen-warren"
       ],
@@ -420,12 +455,12 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-4-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-warren-w4",
+      "eventId": "berry-lovehate-warren-w4",
       "signal": "LOVE",
-      "why": "90% snaps, high touches, Dowdle OUT",
-      "implication": "Top-10 RB play",
-      "opportunity": "Near-every-down + goal-line",
-      "priority": "NORMAL"
+      "why": "Usage data and matchup with teammate out.",
+      "implication": "RB1/2 smash; workhorse.",
+      "opportunity": "Snaps/carries/third-down/redzone.",
+      "priority": "HIGH"
     },
     {
       "id": "berry-love-london",
@@ -434,7 +469,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "LOVE Drake London: 35% target share/104 ypg career with Penix; 43.5% last week (9-194). NO allows 5th-most WR TDs.",
+      "text": "LOVE Drake London: 35% career target share/104 ypg with Penix; 43.5% last week; NO allows 5th-most WR TDs.",
       "playerIds": [
         "drake-london"
       ],
@@ -443,37 +478,11 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-4-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-london-w4",
+      "eventId": "berry-lovehate-london-w4",
       "signal": "LOVE",
-      "why": "Penix chemistry + matchup",
-      "implication": "WR1 upside",
-      "opportunity": "High target/volume share",
-      "priority": "NORMAL"
-    },
-    {
-      "id": "berry-love-wilson",
-      "at": "2026-10-01T18:00:00Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "LOVE Garrett Wilson: AD Mitchell likely out; 36% target share last time Mitchell sidelined. Strong efficiency vs CHI.",
-      "playerIds": [
-        "garrett-wilson"
-      ],
-      "players": [
-        "Garrett Wilson"
-      ],
-      "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-4-fantasy-football",
-      "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-wilson-w4",
-      "signal": "LOVE",
-      "why": "No Mitchell + efficiency",
-      "implication": "WR2 smash",
-      "opportunity": "Elevated target share",
-      "corroboration": [
-        "@MatthewBerryTMR parlay"
-      ],
+      "why": "QB chemistry and matchup.",
+      "implication": "WR1 upside.",
+      "opportunity": "High targets with Penix.",
       "priority": "NORMAL"
     },
     {
@@ -483,7 +492,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "HATE Omarion Hampton: RB27 utilization, 3.5% targets, 25% routes; snap rate down to 42%, only 13% 3rd downs. SEA allows 2.9 YPC.",
+      "text": "HATE Omarion Hampton: low utilization (RB27), 3.5% targets, 25% routes, snaps down to 42%; SEA tough vs RBs.",
       "playerIds": [
         "omarion-hampton"
       ],
@@ -492,15 +501,50 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recapping-matthew-berrys-love-hate-for-week-4-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-hate-hampton-w4",
+      "eventId": "berry-lovehate-hampton-w4",
       "signal": "HATE",
-      "why": "Low usage metrics + tough run D",
-      "implication": "Avoid/sit",
+      "why": "Poor usage metrics and tough matchup.",
+      "implication": "Fade/sit; low floor.",
       "priority": "NORMAL"
     }
   ],
   "sundayMode": true,
   "sourceNotes": [
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Comprehensive Sunday IN/Q/OUT list (Nacua/Collins/Swift/Irving/Pollard IN; McConkey/Flowers/McLaurin/Evans Q; Jefferson/Hall/Smith/Goedert/Price/Achane/Daniels etc OUT). Clear status events and beneficiaries. Aligns with Schefter/Rap. Core ",
+      "at": "2026-10-03T00:10:46Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific: Nacua possible limits; Collins elite DvP+implied; McConkey LP-DNP-LP; Eagles sans Smith/Goedert/Baun worse; Addison opp w/ JJ out. High-value projections context on ETR list.",
+      "at": "2026-10-03T00:29:40Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "W4 Love/Hate per-player: LOVE Warren (90% snaps/Dowdle out), Love (26 touches), London (Penix), Wilson (no Mitchell), Downs, Kittle; HATE Hampton (low usage), Herbert, Pitts, Egbuka, Worthy. Parlay lean Addison/Wilson. Reacted to Smith inju",
+      "at": "2026-10-01T18:00:00Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "Primary breaking: Price to IR (min 4 wks) + Velus Jones signed; Keenan Allen OUT; Braxton Jones/Legette/others IR; comprehensive OUTs. High-confidence factual. Corroborates ETR.",
+      "at": "2026-10-03T19:54:09Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Corroborated Collins context; Allen OUT; various IR; Packers Cooper cleared. Solid status alignment with Schefter/ETR.",
+      "at": "2026-10-03T14:36:01Z"
+    },
     {
       "sourceId": "establish-the-run",
       "source": "Establish The Run",
@@ -633,45 +677,10 @@
       "grade": "USEFUL",
       "note": "Primary breaking: Price to IR (min 4 wks) + Velus Jones signed; Keenan Allen OUT; Braxton Jones/Legette/others IR; comprehensive OUTs list (Daniels/Hall/Smith/Goedert/Jefferson/Price/Donald etc). High-confidence factual.",
       "at": "2026-10-03T19:54:09Z"
-    },
-    {
-      "sourceId": "ian-rapoport",
-      "source": "Ian Rapoport",
-      "grade": "USEFUL",
-      "note": "Corroborated Collins ACTIVE/good to go context; Evans intends play through ribs (GTD/Q); Allen OUT; Donald OUT; Jefferson OUT; Packers Cooper cleared; various IR. Solid status alignment.",
-      "at": "2026-10-03T14:36:01Z"
-    },
-    {
-      "sourceId": "establish-the-run",
-      "source": "Adam Levitan / Establish The Run",
-      "grade": "USEFUL",
-      "note": "Core comprehensive Sunday IN/Q/OUT list (Nacua/Collins/Swift/Irving/Pollard IN; McConkey/Flowers/McLaurin/Evans Q; Jefferson/Hall/Smith/Goedert/Price/Achane/Daniels etc OUT). Beneficiaries clear (Addison etc). Levitan player notes on limits",
-      "at": "2026-10-03T00:10:46Z"
-    },
-    {
-      "sourceId": "adam-levitan",
-      "source": "Adam Levitan",
-      "grade": "USEFUL",
-      "note": "Player-specific: Nacua possible limits; Collins elite DvP+implied; McConkey LP-DNP-LP; Eagles sans Smith/Goedert/Baun worse; Addison opp w/ JJ out; Price role erosion (GL/pass/fumbles/chest/Charbonnet) but long-term OK. Projections updated.",
-      "at": "2026-10-03T00:29:40Z"
-    },
-    {
-      "sourceId": "matthew-berry",
-      "source": "Matthew Berry",
-      "grade": "USEFUL",
-      "note": "W4 Love/Hate per-player: LOVE Warren (90% snaps/Dowdle out), Love (26 touches), London (Penix), Wilson (no Mitchell), Downs, Kittle; HATE Hampton (low usage), Herbert, Pitts, Egbuka, Worthy. Parlay lean Addison/Wilson. Reacted to Smith inju",
-      "at": "2026-10-01T18:00:00Z"
-    },
-    {
-      "sourceId": "adam-schefter",
-      "source": "Adam Schefter",
-      "grade": "USEFUL",
-      "note": "Primary breaking: Price to IR (min 4 wks) + Velus Jones signed; Keenan Allen OUT; Braxton Jones/Legette/others IR; comprehensive OUTs list (Daniels/Hall/Smith/Goedert/Jefferson/Price/Donald etc). High-confidence factual.",
-      "at": "2026-10-03T19:54:09Z"
     }
   ],
-  "mirroredAt": "2026-10-04T08:09:48.451Z",
+  "mirroredAt": "2026-10-04T10:09:35.987Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-10-04T08:09:48.024Z",
+  "sourceCompletedAt": "2026-10-04T10:09:35.498Z",
   "sourceStatus": "live"
 }
