@@ -1,6 +1,6 @@
 {
   "league": "sparta",
-  "pulses_considered": 36,
+  "pulses_considered": 48,
   "pulses_used": 3,
   "pulses_rejected": 0,
   "actions_changed_by_pulse": 2,
@@ -15,7 +15,7 @@
   "usefulness_grades": {
     "HIGHLY_USEFUL": 0,
     "USEFUL": 0,
-    "ACCURATE_NOT_ACTIONABLE": 19,
+    "ACCURATE_NOT_ACTIONABLE": 31,
     "DUPLICATIVE": 0,
     "TOO_LATE": 0,
     "MISLEADING": 0,
@@ -24,14 +24,14 @@
   },
   "double_count_protection": true,
   "ownership_authority": "authenticated Yahoo Sparta state and durable Sparta repository state only",
-  "updated_at_et": "2026-10-04T19:56:00-04:00",
+  "updated_at_et": "2026-10-05T12:10:00-04:00",
   "decision_ledger_path": "learning/decision_ledger.jsonl",
   "pulse_lineage_path": "learning/pulse_decision_lineage.jsonl",
-  "note": "NFL Pulse-specific aggregates only. 2026-09-15 12:00 Live Check: 2 active reviewed (Delane MRI POSSIBLE; Omar Cooper MRI sprain W2W YES), both NO MATERIAL JD; Yahoo pending ladder now matches Brain $12/$11/$7; no new decision_ledger from Pulse. | sparta-live-check-20260930-1600: +2 considered (Reed/Dowdle NON-JD suppress); JD wake Yahoo Hall Q\u2192D not Pulse. | sparta-live-check-20261001-2000: +3 considered (Etienne/Charbonnet-LP/Dowdle-inactive NON-JD soft suppress); quiet Yahoo continuity. | sparta-live-check-20261002-0750: +0 considered (overnight digests quiet delta 0); Yahoo wake = lineup Wicks FLEX not Pulse. | sparta-live-check-20261004-1945: +13 considered (1551\u20131851 McConkey/Evans/Lamar/Higgins/Bigsby/Rice/Coker/Pat Bryant/Nailor) all NON-JD suppress; Coker INACTIVE = positive context JD McMillan/Waller; no JD decision from Pulse.",
+  "note": "NFL Pulse-specific aggregates only. 2026-09-15 12:00 Live Check: 2 active reviewed (Delane MRI POSSIBLE; Omar Cooper MRI sprain W2W YES), both NO MATERIAL JD; Yahoo pending ladder now matches Brain $12/$11/$7; no new decision_ledger from Pulse. | sparta-live-check-20260930-1600: +2 considered (Reed/Dowdle NON-JD suppress); JD wake Yahoo Hall Q\u2192D not Pulse. | sparta-live-check-20261001-2000: +3 considered (Etienne/Charbonnet-LP/Dowdle-inactive NON-JD soft suppress); quiet Yahoo continuity. | sparta-live-check-20261002-0750: +0 considered (overnight digests quiet delta 0); Yahoo wake = lineup Wicks FLEX not Pulse. | sparta-live-check-20261004-1945: +13 considered (1551\u20131851 McConkey/Evans/Lamar/Higgins/Bigsby/Rice/Coker/Pat Bryant/Nailor) all NON-JD suppress; Coker INACTIVE = positive context JD McMillan/Waller; no JD decision from Pulse. | sparta-live-check-20261005-1150: +12 considered (1951\u20131124 Thornton/Juszczyk/DJ Moore/Lamar/Hill/Bryant/Swift/Rice/Tyson) 0 YES 1 POSSIBLE (Tyson IR \u2192 Vele context) \u2014 no JD decision from Pulse; Pulse REJECT_STAT_NOISE on McMillan 14-192-2 SNF correct per policy but W4 outcome JD-relevant.",
   "last_material_pulse_id": "20260914-170001-lane-wrist-fracture-weeks",
   "last_decision_id": "SPARTA-2026W2-WAIVER-LADDER-ALIGNED-20260915-1200",
-  "pulses_reviewed": 35,
-  "pulses_rejected_by_sparta": 33,
+  "pulses_reviewed": 47,
+  "pulses_rejected_by_sparta": 45,
   "events": [
     {
       "at_et": "2026-09-16T08:18:19-04:00",
@@ -66,10 +66,27 @@
       "delta_count": 13,
       "jd_elevate": false,
       "note": "All NON-JD; Coker inactive positive context McMillan/Waller; Higgins/Bigsby JD-adjacent soft (depth availability unconfirmed)"
+    },
+    {
+      "at_et": "2026-10-05T12:10:00-04:00",
+      "check_id": "sparta-live-check-20261005-1150",
+      "type": "quiet_consume",
+      "digests": [
+        "2026-10-04-1951",
+        "2026-10-04-2051",
+        "2026-10-04-2151",
+        "2026-10-05-0828",
+        "2026-10-05-0929",
+        "2026-10-05-1033",
+        "2026-10-05-1124"
+      ],
+      "delta_count": 12,
+      "jd_elevate": false,
+      "note": "All NON-JD except Tyson IR POSSIBLE context for Vele; McFarland W5 not yet published; FPD paywalled"
     }
   ],
-  "last_check_id": "sparta-live-check-20261004-1945",
-  "last_updated_et": "2026-10-04T19:56:00-04:00",
+  "last_check_id": "sparta-live-check-20261005-1150",
+  "last_updated_et": "2026-10-05T12:10:00-04:00",
   "recent_checks": [
     {
       "check_id": "sparta-live-check-20261002-1950",
@@ -86,6 +103,14 @@
       "pulse_tip": "20261004-185105-jalen-nailor-lv-wr-concussion-out",
       "last_scan": "2026-10-04-1851",
       "pulse_count": 284,
+      "jd_material_from_pulse": false,
+      "wake_driver": null
+    },
+    {
+      "check_id": "sparta-live-check-20261005-1150",
+      "at_et": "2026-10-05T12:10:00-04:00",
+      "delta_count": 12,
+      "pulse_count": 296,
       "jd_material_from_pulse": false,
       "wake_driver": null
     }
