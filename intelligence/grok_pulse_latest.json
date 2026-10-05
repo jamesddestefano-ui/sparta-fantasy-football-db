@@ -1,21 +1,21 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-10-05T03:09:46.518Z",
+  "generatedAt": "2026-10-05T03:10:01.049Z",
   "status": "live",
-  "completedAt": "2026-10-05T03:09:46.477Z",
+  "completedAt": "2026-10-05T03:10:01.014Z",
   "nextAtLabel": "2:00 AM ET",
   "inWindow": true,
   "itemCount": 18,
   "items": [
     {
-      "id": "lamar-ankle-dtd-boot-w4",
+      "id": "lamar-ankle-q-dtd-w4",
       "at": "2026-10-04T20:34:23Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Ravens QB Lamar Jackson day-to-day with ankle injury after exiting vs Titans; left stadium in protective boot. Questionable to return in-game then did not.",
+      "text": "Lamar Jackson (ankle) questionable to return, believed day-to-day; left stadium in protective boot. ETR watching.",
       "playerIds": [
         "lamar-jackson"
       ],
@@ -25,20 +25,86 @@
       "url": "https://x.com/RapSheet/status/2106845407552659503",
       "kind": "INJURY_STATUS",
       "eventId": "injury-lamar-jackson-week4",
-      "signal": "DAY-TO-DAY",
-      "priorStatus": "QUESTIONABLE-TO-RETURN",
-      "newStatus": "DAY-TO-DAY",
-      "why": "Ankle injury scrambling; boot post-game, monitored/treated this week.",
-      "implication": "Tyler Huntley relief; ROS uncertainty for BAL offense/Henry/Flowers.",
-      "opportunity": "Backup QB stream; check practice Wed",
+      "signal": "QUESTIONABLE",
+      "priorStatus": "ACTIVE",
+      "newStatus": "Q-RETURN/DAY-TO-DAY",
+      "why": "Ankle injury scrambling; boot post-game, monitored this week.",
+      "implication": "Possible miss or limited next; Huntley relief in-game. ROS watch.",
       "corroboration": [
         "https://x.com/AdamSchefter/status/2106852208323207645",
-        "https://x.com/AdamSchefter/status/2106819409562202302"
+        "https://x.com/EstablishTheRun/status/2106911695994253682"
       ],
       "supportingSources": [
         "adam-schefter",
         "establish-the-run",
         "matthew-berry"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "mcconkey-active-w4",
+      "at": "2026-10-04T18:58:42Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Chargers WR Ladd McConkey is active. ETR had him expected; Levitan noted bigger dock for foot/ribs. Post-game watching foot aggravation.",
+      "playerIds": [
+        "ladd-mcconkey"
+      ],
+      "players": [
+        "Ladd McConkey"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2106821330255691900",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-ladd-mcconkey-week4",
+      "signal": "ACTIVE",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "ACTIVE",
+      "why": "Official active confirmation after expected designation.",
+      "implication": "Plays through foot issue; monitor aggravation for ROS.",
+      "opportunity": "WR snaps/routes",
+      "conflict": "Some reports later listed issues/out during/after",
+      "corroboration": [
+        "https://x.com/RapSheet",
+        "https://x.com/EstablishTheRun/status/2106730301821215178"
+      ],
+      "supportingSources": [
+        "establish-the-run",
+        "adam-levitan",
+        "ian-rapoport"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "evans-active-gtd-w4",
+      "at": "2026-10-04T18:57:11Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Mike Evans officially active after GTD/optimistic designation (ribs); practiced late week and pushed to play.",
+      "playerIds": [
+        "mike-evans"
+      ],
+      "players": [
+        "Mike Evans"
+      ],
+      "url": "https://x.com/RapSheet/status/2106820947831296164",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-mike-evans-week4",
+      "signal": "ACTIVE",
+      "priorStatus": "GTD",
+      "newStatus": "ACTIVE",
+      "why": "Official active; team optimism despite fractured ribs note.",
+      "implication": "Removes shine from streamers; full or near role.",
+      "opportunity": "targets/red-zone",
+      "corroboration": [
+        "https://x.com/EstablishTheRun/status/2106730301821215178"
+      ],
+      "supportingSources": [
+        "establish-the-run",
+        "adam-levitan"
       ],
       "priority": "IMMEDIATE"
     },
@@ -49,28 +115,29 @@
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Bengals WR Ja'Marr Chase ruled OUT due to concussion after evaluation in first half vs Jaguars.",
+      "text": "WR Ja’Marr Chase is out due to a concussion. Evaluated after hit; ETR/Berry watching. Tee Higgins also adductor issue.",
       "playerIds": [
-        "jamarr-chase"
+        "jamarr-chase",
+        "tee-higgins"
       ],
       "players": [
-        "Ja'Marr Chase"
+        "Ja'Marr Chase",
+        "Tee Higgins"
       ],
       "url": "https://x.com/AdamSchefter/status/2106817456262234490",
       "kind": "INJURY_STATUS",
       "eventId": "injury-jamarr-chase-week4",
       "signal": "OUT",
-      "priorStatus": "EVALUATED",
+      "priorStatus": "ACTIVE",
       "newStatus": "OUT",
-      "why": "Possible concussion after hit; went to locker room without helmet.",
-      "implication": "Tee Higgins and other CIN WRs elevated targets; monitor protocol.",
-      "opportunity": "Increased routes/targets for Higgins/Brown",
+      "why": "Concussion evaluation led to ruled out.",
+      "implication": "No more snaps; CIN WR targets redistribute if Higgins limited. Protocol next.",
       "beneficiaries": [
         "tee-higgins"
       ],
       "corroboration": [
-        "https://www.nfl.com/news/notable-injuries-news-sunday-week-4-games",
-        "EstablishTheRun watch list"
+        "https://x.com/EstablishTheRun/status/2106911695994253682",
+        "https://x.com/MatthewBerryTMR"
       ],
       "supportingSources": [
         "establish-the-run",
@@ -86,7 +153,7 @@
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Eagles RB Saquon Barkley downgraded to OUT with hamstring injury after exiting early vs Rams; replaced by Tank Bigsby/Will Shipley.",
+      "text": "Eagles downgraded RB Saquon Barkley to out (hamstring). Left early; ETR watching post-game.",
       "playerIds": [
         "saquon-barkley"
       ],
@@ -97,47 +164,85 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-saquon-barkley-week4",
       "signal": "OUT",
-      "priorStatus": "QUESTIONABLE",
+      "priorStatus": "ACTIVE/QUESTIONABLE",
       "newStatus": "OUT",
-      "why": "Hamstring injury on early run; ruled out before halftime.",
-      "implication": "Immediate RB handcuff elevation; Eagles offense further depleted.",
-      "opportunity": "Backup RB snaps/carries/goal-line for Bigsby/Shipley",
+      "why": "Hamstring injury first half; ruled out.",
+      "implication": "Missed time; handcuff/backup opportunity elevated. Monitor severity ROS.",
+      "beneficiaries": [
+        "kenny-gainwell"
+      ],
       "corroboration": [
-        "https://x.com/AdamSchefter",
-        "https://www.nytimes.com/athletic/7659561/2026/10/04/saquon-barkley-injury-eagles-rams/"
+        "https://x.com/EstablishTheRun/status/2106911695994253682",
+        "NFL.com"
       ],
       "supportingSources": [
-        "adam-schefter",
         "establish-the-run",
+        "adam-schefter",
         "matthew-berry"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "thornton-dislocated-ankle-w4",
+      "id": "mclaurin-inactive-w4",
+      "at": "2026-10-04T12:03:17Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Commanders WR Terry McLaurin (hamstring) officially inactive vs Colts in London. ETR not expected.",
+      "playerIds": [
+        "terry-mclaurin"
+      ],
+      "players": [
+        "Terry McLaurin"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2106716786225733859",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-terry-mclaurin-week4",
+      "signal": "INACTIVE",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "INACTIVE/OUT",
+      "why": "Hamstring suffered late week practice; official inactive.",
+      "implication": "Out; targets to others in WAS offense.",
+      "beneficiaries": [
+        "deebo-samuel",
+        "stefon-diggs"
+      ],
+      "corroboration": [
+        "https://x.com/RapSheet/status/2106716470181077018",
+        "https://x.com/EstablishTheRun/status/2106730301821215178"
+      ],
+      "supportingSources": [
+        "ian-rapoport",
+        "establish-the-run"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "thornton-dislocated-ankle-out-indef",
       "at": "2026-10-05T01:47:42Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Chiefs WR Tyquan Thornton suffered dislocated ankle (put back in place), carted off after career-best 111 yds 2 TDs; out indefinitely, eval tomorrow, made plane, good spirits.",
+      "text": "Chiefs WR Tyquan Thornton suffered dislocated ankle (put back); carted off after career day (111 yds 2 TDs). Out indefinitely, eval tomorrow, good spirits. Made plane.",
       "playerIds": [],
       "players": [],
       "url": "https://x.com/RapSheet/status/2106924258366566766",
       "kind": "INJURY_STATUS",
       "eventId": "injury-tyquan-thornton-week4",
-      "signal": "OUT-INDEFINITELY",
+      "signal": "OUT",
       "priorStatus": "ACTIVE",
       "newStatus": "OUT-INDEFINITELY",
-      "why": "Gruesome lower leg/dislocated ankle during big game.",
-      "implication": "Long-term; further opens KC WR room with Rice doubtful.",
-      "opportunity": "Xavier Worthy and remaining WRs",
+      "why": "Gruesome lower leg/dislocated ankle mid-game.",
+      "implication": "Long-term absence; KC WR depth thinned further with Rice issues.",
       "beneficiaries": [
         "xavier-worthy",
         "rashee-rice"
       ],
       "corroboration": [
-        "https://x.com/AdamSchefter/status/2106885541929132084"
+        "https://x.com/AdamSchefter/status/2106885541929132084",
+        "https://x.com/EstablishTheRun/status/2106911695994253682"
       ],
       "supportingSources": [
         "adam-schefter",
@@ -146,13 +251,13 @@
       "priority": "HIGH"
     },
     {
-      "id": "etr-sunday-watchlist-w4",
+      "id": "etr-postgame-injury-watch-w4",
       "at": "2026-10-05T00:57:47Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "ETR post-Sunday injury watch: Lamar (ankle), Chase (concussion)/Higgins (adductor), Saquon (hamstring)/Bigsby, Rice (hamstring)/Thornton (ankle), McConkey (foot agg), DJ Moore (shoulder), Pat Bryant (ankle), Mariota (knee), others.",
+      "text": "Sunday FantasyFootball injuries watching: Lamar (ankle), Chase (concussion)/Higgins (adductor), Saquon (hamstring)/Bigsby, Rice (hamstring)/Thornton (ankle), McConkey (foot agg), DJ Moore (shoulder), Monangai (thumb), Pat Bryant (ankle), Nailor (concussion), others.",
       "playerIds": [
         "lamar-jackson",
         "jamarr-chase",
@@ -175,14 +280,15 @@
       ],
       "url": "https://x.com/EstablishTheRun/status/2106911695994253682",
       "kind": "INJURY_STATUS",
-      "eventId": "watchlist-etr-week4-post",
-      "signal": "MONITOR",
-      "newStatus": "WATCH",
-      "why": "Comprehensive Sunday injuries for fantasy monitoring into next week.",
-      "implication": "Key statuses for waivers/ROS; align with Schefter/Rap.",
-      "opportunity": "Handcuffs/backups for outs",
+      "eventId": "etr-sunday-injury-watch-week4",
+      "signal": "WATCH",
+      "newStatus": "POSTGAME-MONITOR",
+      "why": "Compiled post-Sunday key injuries for next week impact.",
+      "implication": "Multiple high-priority ROS status checks; beneficiaries and waivers next.",
+      "opportunity": "various role changes",
       "corroboration": [
-        "Schefter/Rap reports"
+        "Schefter",
+        "RapSheet"
       ],
       "supportingSources": [
         "adam-schefter",
@@ -192,13 +298,40 @@
       "priority": "HIGH"
     },
     {
-      "id": "djmoore-shoulder-agg-w4",
+      "id": "love-snap-management-berry-w4",
+      "at": "2026-10-05T00:43:01Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Jeremiyah Love frustrated with snap management (maintenance, not new injury); limited in crucial spots/2nd half. Coaches managing workload for long season. Berry sighs at mishandling.",
+      "playerIds": [
+        "jeremiyah-love"
+      ],
+      "players": [
+        "Jeremiyah Love"
+      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2106907980193038444",
+      "kind": "USAGE_DATA",
+      "eventId": "usage-jeremiyah-love-snaps-week4",
+      "signal": "DOWNGRADE",
+      "why": "Player comments on managed snaps for freshness/body; not hurt but limited goal-line/critical.",
+      "implication": "Cap on upside/role; committee or limited despite talent. Frustration signal.",
+      "opportunity": "snaps managed, goal-line others",
+      "conflict": "Talent vs coaching usage",
+      "corroboration": [
+        "beat report quotes"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "dj-moore-shoulder-agg-w4",
       "at": "2026-10-05T00:25:31Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Bills WR D.J. Moore aggravated shoulder injury in loss to Patriots; not considered long-term issue as of now.",
+      "text": "Bills WR D.J. Moore aggravated shoulder during loss; not considered long-term issue as of now. ETR watching.",
       "playerIds": [
         "dj-moore"
       ],
@@ -208,15 +341,14 @@
       "url": "https://x.com/AdamSchefter/status/2106903574538047584",
       "kind": "INJURY_STATUS",
       "eventId": "injury-dj-moore-week4",
-      "signal": "AGGRAVATED",
-      "priorStatus": "PLAYING",
+      "signal": "INJURY",
+      "priorStatus": "ACTIVE",
       "newStatus": "AGGRAVATED-NOT-LONGTERM",
-      "why": "Shoulder aggravated during game.",
-      "implication": "Monitor week; early exit noted by Berry.",
-      "opportunity": "BUF WR depth if limited next",
+      "why": "Aggravation in-game per source.",
+      "implication": "Short-term monitor; unlikely extended absence.",
       "corroboration": [
-        "ETR watch list",
-        "matthew-berry early exits"
+        "https://x.com/EstablishTheRun/status/2106911695994253682",
+        "https://x.com/MatthewBerryTMR"
       ],
       "supportingSources": [
         "establish-the-run",
@@ -225,117 +357,111 @@
       "priority": "HIGH"
     },
     {
-      "id": "rice-doubtful-w4",
-      "at": "2026-10-04T22:00:09Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Chiefs WR Rashee Rice downgraded to doubtful with hamstring.",
+      "id": "coker-inactive-w4",
+      "at": "2026-10-04T23:00:33Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Panthers WR Jalen Coker is inactive tonight. ETR not expected.",
+      "playerIds": [],
+      "players": [],
+      "url": "https://x.com/AdamSchefter/status/2106882191749730540",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-jalen-coker-week4",
+      "signal": "INACTIVE",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "INACTIVE",
+      "why": "Official inactive (quad).",
+      "implication": "Targets elsewhere in CAR; elevated practice squad options.",
+      "beneficiaries": [
+        "tetairoa-mcmillan"
+      ],
+      "corroboration": [
+        "https://x.com/EstablishTheRun/status/2106730301821215178"
+      ],
+      "supportingSources": [
+        "establish-the-run"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "pat-bryant-carted-ankle-w4",
+      "at": "2026-10-04T22:43:55Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Broncos WR Pat Bryant carted off due to leg/ankle injury. ETR watching.",
+      "playerIds": [
+        "pat-bryant"
+      ],
+      "players": [
+        "Pat Bryant"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2106878005717193098",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-pat-bryant-week4",
+      "signal": "OUT",
+      "priorStatus": "ACTIVE",
+      "newStatus": "INJURED-CARTED",
+      "why": "Carted with leg injury mid-game.",
+      "implication": "Immediate absence; DEN WR depth hit.",
+      "beneficiaries": [
+        "courtland-sutton",
+        "rj-harvey"
+      ],
+      "corroboration": [
+        "https://x.com/EstablishTheRun/status/2106911695994253682"
+      ],
+      "supportingSources": [
+        "establish-the-run"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "rice-doubtful-hamstring-w4",
+      "at": "2026-10-04T21:59:05Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Chiefs downgraded WR Rashee Rice to doubtful due to hamstring. ETR watching.",
       "playerIds": [
         "rashee-rice"
       ],
       "players": [
         "Rashee Rice"
       ],
-      "url": "https://x.com/RapSheet/status/2106866994918412556",
+      "url": "https://x.com/AdamSchefter/status/2106866723232313389",
       "kind": "INJURY_STATUS",
       "eventId": "injury-rashee-rice-week4",
       "signal": "DOUBTFUL",
       "priorStatus": "QUESTIONABLE",
       "newStatus": "DOUBTFUL",
-      "why": "Hamstring downgrade.",
-      "implication": "Likely out; Worthy/others up; Thornton also hurt later.",
-      "opportunity": "KC WR targets to Worthy/others",
+      "why": "Hamstring downgrade during/after game window.",
+      "implication": "Likely limited or out; targets to Worthy/others.",
       "beneficiaries": [
         "xavier-worthy"
       ],
       "corroboration": [
-        "https://x.com/AdamSchefter/status/2106866723232313389"
+        "https://x.com/RapSheet/status/2106866994918412556",
+        "https://x.com/EstablishTheRun/status/2106911695994253682"
       ],
       "supportingSources": [
-        "adam-schefter",
+        "ian-rapoport",
         "establish-the-run"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "mcconkey-active-w4",
-      "at": "2026-10-04T18:58:42Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Chargers WR Ladd McConkey is active (foot/ribs); ETR had bigger dock but expected to play.",
-      "playerIds": [
-        "ladd-mcconkey"
-      ],
-      "players": [
-        "Ladd McConkey"
-      ],
-      "url": "https://x.com/AdamSchefter/status/2106821330255691900",
-      "kind": "INJURY_STATUS",
-      "eventId": "status-ladd-mcconkey-week4",
-      "signal": "ACTIVE",
-      "priorStatus": "EXPECTED/QUESTIONABLE",
-      "newStatus": "ACTIVE",
-      "why": "Active despite foot aggravation/ribs; bigger projection dock per Levitan.",
-      "implication": "Playable but monitored for snaps; Derwin James inactive separately.",
-      "opportunity": "Primary WR targets if limited less than feared",
-      "conflict": "Bigger dock vs active confirmation",
-      "corroboration": [
-        "ETR expected",
-        "https://x.com/adamlevitan/status/2106735948268470641"
-      ],
-      "supportingSources": [
-        "establish-the-run",
-        "adam-levitan",
-        "ian-rapoport"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "evans-active-gtd-w4",
-      "at": "2026-10-04T18:57:11Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "49ers WR Mike Evans officially active after GTD/optimistic ribs status; pushed to play.",
-      "playerIds": [
-        "mike-evans"
-      ],
-      "players": [
-        "Mike Evans"
-      ],
-      "url": "https://x.com/RapSheet/status/2106820947831296164",
-      "kind": "INJURY_STATUS",
-      "eventId": "status-mike-evans-week4",
-      "signal": "ACTIVE",
-      "priorStatus": "GTD",
-      "newStatus": "ACTIVE",
-      "why": "Practiced late week; optimistic per team, Kittle noted fractured ribs suck but active.",
-      "implication": "Bigger dock per Levitan but cleared; startable.",
-      "opportunity": "WR snaps/targets with possible limit",
-      "conflict": "Bigger dock vs active",
-      "corroboration": [
-        "ETR GTD",
-        "https://x.com/adamlevitan/status/2106735948268470641"
-      ],
-      "supportingSources": [
-        "establish-the-run",
-        "adam-levitan"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "eagles-depletion-smith-goedert-w4",
+      "id": "eagles-depletion-levitan-w4",
       "at": "2026-10-04T15:06:19Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Eagles could be without four key players: DeVonta Smith (hamstring), Dallas Goedert (knee), Lane Johnson (personal), Zack Baun (concussion). Smith/Goedert out pregame.",
+      "text": "Eagles could be without four key players: RT Lane Johnson (personal), WR DeVonta Smith (hamstring), TE Dallas Goedert (knee), LB Zack Baun (concussion). Major offensive depletion.",
       "playerIds": [
         "devonta-smith",
         "dallas-goedert"
@@ -345,17 +471,17 @@
         "Dallas Goedert"
       ],
       "url": "https://x.com/adamlevitan/status/2106762850559832249",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-eagles-skill-week4",
-      "signal": "OUT",
-      "priorStatus": "QUESTIONABLE",
-      "newStatus": "OUT",
-      "why": "Hamstring/knee; Johnson personal late scratch.",
-      "implication": "Major PHI offense depletion with Saquon also out; Hurts/remaining elevated risk/reward.",
-      "opportunity": "Targets to remaining WRs/TEs; OL impact",
+      "kind": "ANALYST_OPINION",
+      "eventId": "eagles-injuries-depletion-week4",
+      "signal": "DOWNGRADE",
+      "why": "Multiple absences stacking including Johnson Q/personal.",
+      "implication": "Hurts offense efficiency; potential bumps to remaining pass-catchers/RBs if Saquon also limited.",
+      "opportunity": "role expansion for backups",
+      "beneficiaries": [
+        "dontayvion-wicks"
+      ],
       "corroboration": [
-        "Schefter Lane Johnson Q personal",
-        "web reports"
+        "https://x.com/AdamSchefter"
       ],
       "supportingSources": [
         "adam-schefter"
@@ -369,7 +495,7 @@
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Puka Nacua expected to play with only small dock on projections (groin); Rams do not intend to limit workload per Schefter. Officially active/return.",
+      "text": "Small dock only on Puka Nacua (groin); Rams do not intend to limit his workload per Schefter. Projecting him in fully after ETR expected-to-play designation.",
       "playerIds": [
         "puka-nacua"
       ],
@@ -377,99 +503,63 @@
         "Puka Nacua"
       ],
       "url": "https://x.com/adamlevitan/status/2106735948268470641",
-      "kind": "ANALYST_PROJECTION",
-      "eventId": "status-puka-nacua-week4",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-puka-nacua-week4",
       "signal": "ACTIVE",
-      "priorStatus": "LIMITED/EXPECTED",
-      "newStatus": "NO-LIMIT-ACTIVE",
-      "why": "Schefter sources: no workload limit; ETR small dock only.",
-      "implication": "Full WR1 usage expected vs Eagles; upgrade from prior absence.",
-      "opportunity": "Full routes/targets/snaps",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "EXPECTED/ACTIVE-NO-LIMIT",
+      "why": "Schefter report Rams will not limit snaps; aggregated reporting overblown.",
+      "implication": "Full WR1 workload/upgrade in projections vs prior uncertainty.",
+      "opportunity": "routes/targets/snaps unrestricted",
       "corroboration": [
-        "https://x.com/AdamSchefter/status/2106711274855829615",
+        "https://x.com/AdamSchefter",
         "https://x.com/EstablishTheRun/status/2106730301821215178"
       ],
       "supportingSources": [
-        "adam-schefter",
-        "establish-the-run"
+        "establish-the-run",
+        "adam-schefter"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "flowers-expected-w4",
-      "at": "2026-10-04T12:56:59Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
+      "id": "flowers-expected-tiny-dock-w4",
+      "at": "2026-10-04T13:19:25Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Zay Flowers expected to play (hamstring); Levitan tinier dock, no hard pitch count expected per beat.",
+      "text": "Tinier dock on Zay Flowers (hamstring); not expected to have hard pitch count per beat. ETR listed expected to play.",
       "playerIds": [
         "zay-flowers"
       ],
       "players": [
         "Zay Flowers"
       ],
-      "url": "https://x.com/EstablishTheRun/status/2106730301821215178",
+      "url": "https://x.com/adamlevitan/status/2106735948268470641",
       "kind": "INJURY_STATUS",
-      "eventId": "status-zay-flowers-week4",
+      "eventId": "injury-zay-flowers-week4",
       "signal": "EXPECTED",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "EXPECTED-NO-PITCHCOUNT",
-      "why": "ETR expected; Levitan tinier dock citing no hard limit.",
-      "implication": "Near-full usage with Lamar monitored.",
-      "opportunity": "Routes/targets as BAL WR1",
+      "newStatus": "EXPECTED-NO-HARD-LIMIT",
+      "why": "Beat report no pitch count; ETR expected.",
+      "implication": "Near-full usage, minor projection dock only.",
+      "opportunity": "routes/targets",
       "corroboration": [
-        "https://x.com/adamlevitan/status/2106735948268470641"
+        "https://x.com/EstablishTheRun/status/2106730301821215178"
       ],
       "supportingSources": [
-        "adam-levitan"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "mclaurin-inactive-w4",
-      "at": "2026-10-04T12:03:17Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Commanders WR Terry McLaurin officially inactive/out with hamstring for London game vs Colts.",
-      "playerIds": [
-        "terry-mclaurin"
-      ],
-      "players": [
-        "Terry McLaurin"
-      ],
-      "url": "https://x.com/AdamSchefter/status/2106716786225733859",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-terry-mclaurin-week4",
-      "signal": "INACTIVE",
-      "priorStatus": "QUESTIONABLE",
-      "newStatus": "INACTIVE",
-      "why": "Hamstring suffered late week in practice.",
-      "implication": "WAS WR depth up; Deebo/others targets.",
-      "opportunity": "Target share to remaining WAS WRs",
-      "beneficiaries": [
-        "deebo-samuel"
-      ],
-      "corroboration": [
-        "https://x.com/RapSheet/status/2106716470181077018",
-        "ETR not expected"
-      ],
-      "supportingSources": [
-        "ian-rapoport",
         "establish-the-run"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "berry-chuba-javonte-w4",
+      "id": "chuba-hubbard-berry-love-w4",
       "at": "2026-10-05T02:56:39Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Matthew Berry: This year's Javonte Williams (boring mid-round RB unsure talent/role who starts and crushes) was Chuba Hubbard.",
+      "text": "The answer to 'This year's Javonte Williams' (boring mid-round RB unsure talent/role who starts & crushes) was Chuba Hubbard.",
       "playerIds": [
         "chuba-hubbard"
       ],
@@ -478,116 +568,38 @@
       ],
       "url": "https://x.com/MatthewBerryTMR/status/2106941611405959200",
       "kind": "ANALYST_OPINION",
-      "eventId": "opinion-chuba-hubbard-breakout",
+      "eventId": "berry-love-chuba-hubbard-week4",
       "signal": "LOVE",
-      "why": "Mid-round RB who no one wanted due to uncertainty but is starting and crushing.",
-      "implication": "Strong endorsement for continued start/ROS value.",
-      "opportunity": "Featured RB role in CAR",
+      "why": "Emerged as reliable starter crushing despite preseason doubts.",
+      "implication": "Strong start/sit and ROS endorsement as RB value.",
+      "opportunity": "carries/snaps lead back",
       "priority": "NORMAL"
     },
     {
-      "id": "love-snap-management-w4",
-      "at": "2026-10-05T00:43:01Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Cardinals RB Jeremiyah Love frustrated with snap management (not injured, maintenance); limited in crucial situations/second half despite wanting more; coaches managing workload for long season.",
-      "playerIds": [
-        "jeremiyah-love"
-      ],
-      "players": [
-        "Jeremiyah Love"
-      ],
-      "url": "https://x.com/MatthewBerryTMR/status/2106907980193038444",
-      "kind": "USAGE_DATA",
-      "eventId": "usage-jeremiyah-love-snaps-week4",
-      "signal": "DOWNGRADE",
-      "newStatus": "MANAGED-SNAPS",
-      "why": "Post-game comments: snaps managed for freshness/body, not pure injury; honest with coaches on feel.",
-      "implication": "Committee/risk of limited high-leverage; frustration signal.",
-      "opportunity": "Backup RBs if managed continues",
-      "corroboration": [
-        "beat Josh Weinfuss quotes"
-      ],
-      "priority": "NORMAL"
-    },
-    {
-      "id": "coker-inactive-w4",
-      "at": "2026-10-04T23:00:33Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Panthers WR Jalen Coker inactive tonight (quad).",
-      "playerIds": [],
-      "players": [],
-      "url": "https://x.com/AdamSchefter/status/2106882191749730540",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-jalen-coker-week4",
-      "signal": "INACTIVE",
-      "priorStatus": "NOT-EXPECTED",
-      "newStatus": "INACTIVE",
-      "why": "Quad; ETR not expected.",
-      "implication": "Tetairoa McMillan and others full targets.",
-      "opportunity": "CAR WR snaps to McMillan",
-      "beneficiaries": [
-        "tetairoa-mcmillan"
-      ],
-      "corroboration": [
-        "ETR not expected",
-        "NFL.com inactives"
-      ],
-      "supportingSources": [
-        "establish-the-run",
-        "ian-rapoport"
-      ],
-      "priority": "NORMAL"
-    },
-    {
-      "id": "tuten-tds-calledback-w4",
-      "at": "2026-10-04T18:21:49Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Not one but two Bhayshul Tuten touchdowns called back due to penalty.",
-      "playerIds": [
-        "bhayshul-tuten"
-      ],
-      "players": [
-        "Bhayshul Tuten"
-      ],
-      "url": "https://x.com/MatthewBerryTMR/status/2106812048210559436",
-      "kind": "USAGE_DATA",
-      "eventId": "usage-bhayshul-tuten-tds-week4",
-      "signal": "OPPORTUNITY",
-      "why": "Two TDs nullified by penalties in-game.",
-      "implication": "Near-miss goal-line/redzone usage; positive underlying signal for JAC RB.",
-      "opportunity": "Goal-line/redzone carries",
-      "priority": "NORMAL"
-    },
-    {
-      "id": "levitan-sadiq-project-in-w4",
-      "at": "2026-10-04T13:19:25Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
+      "id": "keenan-allen-out-etr-w4",
+      "at": "2026-10-04T12:56:59Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Projecting Kenyon Sadiq (back) in with very little injury dock; Colby Parkinson (knee/shoulder) out. Waiting confirmation.",
+      "text": "Keenan Allen not expected to play (groin/rest changed); confirmed out context from reports.",
       "playerIds": [],
       "players": [],
-      "url": "https://x.com/adamlevitan/status/2106735948268470641",
-      "kind": "ANALYST_PROJECTION",
-      "eventId": "proj-sadiq-parkinson-week4",
-      "signal": "UPGRADE",
+      "url": "https://x.com/EstablishTheRun/status/2106730301821215178",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-keenan-allen-week4",
+      "signal": "OUT",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "PROJECTED-IN",
-      "why": "No reports but little dock; Parkinson out.",
-      "implication": "TE opportunity if confirmed; Jets context with Hall out.",
-      "opportunity": "TE snaps/routes",
-      "supportingSources": [
-        "establish-the-run"
+      "newStatus": "NOT-EXPECTED/OUT",
+      "why": "ETR summary not expected; injury report groin.",
+      "implication": "IND WR targets to Pittman/Downs/Pierce.",
+      "beneficiaries": [
+        "michael-pittman",
+        "josh-downs",
+        "alec-pierce"
+      ],
+      "corroboration": [
+        "USA Today injury report"
       ],
       "priority": "NORMAL"
     }
@@ -598,35 +610,35 @@
       "sourceId": "establish-the-run",
       "source": "Establish The Run",
       "grade": "USEFUL",
-      "note": "Core Sunday expected/GTD/not expected (Nacua/Flowers/McConkey/Spears expected; Evans GTD; McLaurin/Coker/Allen not) + post-game injury watch list; aligns Schefter/Rap. Critical for status parse/changes and IMMEDIATE windows.",
+      "note": "Core expected/GTD/not expected (Nacua/Flowers/McConkey/Spears expected; Evans GTD; McLaurin/Coker/Allen not) + comprehensive post-game injury watch list. Critical for status parse and IMMEDIATE windows; aligns Schefter/Rap.",
       "at": "2026-10-05T00:57:47Z"
     },
     {
       "sourceId": "adam-levitan",
       "source": "Adam Levitan",
       "grade": "USEFUL",
-      "note": "Player-specific docks: Nacua small no-limit upgrade per Schefter; Flowers tinier no pitch count; bigger McConkey/Evans; Eagles depletion (Smith/Goedert/Baun + Johnson); Sadiq project in. High-value projection notes.",
+      "note": "Player-specific: Nacua small no-limit upgrade per Schefter; Flowers tinier no pitch count; bigger docks McConkey/Evans; Eagles depletion (Smith/Goedert/Baun + Johnson); Sadiq project in. High-value projection notes and DFS review.",
       "at": "2026-10-04T13:19:25Z"
     },
     {
       "sourceId": "matthew-berry",
       "source": "Matthew Berry",
       "grade": "USEFUL",
-      "note": "Mostly live game chatter (early exits Lamar/Saquon/Chase/DJ Moore/Mariota; two Tuten TDs called back; Love snap management frustration) and promo; limited fresh pregame Love/Hate but useful in-game signals for beneficiaries/usage. Chuba as ",
+      "note": "Live chatter early exits (Lamar/Saquon/Chase/DJ Moore/Mariota); Tuten TDs called back; Love snap management frustration; Chuba as this year's Javonte love. Limited fresh pregame Love/Hate but strong in-game/ROS signals.",
       "at": "2026-10-05T02:56:39Z"
     },
     {
       "sourceId": "adam-schefter",
       "source": "Adam Schefter",
       "grade": "USEFUL",
-      "note": "Breaking Sunday: Nacua no-limit; McLaurin inactive; McConkey active; Saquon context; Chase out concussion; Lamar Q + boot; Rice doubtful; Coker inactive; DJ Moore agg; Thornton carted; Johnson personal. Primary factual source.",
+      "note": "Breaking: Nacua context/no-limit; McLaurin inactive; McConkey active; Saquon context; Chase out concussion; Lamar Q+boot; Rice doubtful; Coker inactive; DJ Moore agg; Thornton/Bryant carted; Johnson Q. Primary factual.",
       "at": "2026-10-05T00:25:31Z"
     },
     {
       "sourceId": "ian-rapoport",
       "source": "Ian Rapoport",
       "grade": "USEFUL",
-      "note": "Sunday expected-to-play/active: Spears/McConkey/Flowers/Evans; McLaurin out; Saquon out; Chase eval; Lamar Q/day-to-day; Rice doubtful; Coker context; Thornton details. Solid alignment on statuses with Schefter/ETR.",
+      "note": "Expected/active: Spears/McConkey/Flowers/Evans; McLaurin out; Saquon out; Chase eval; Lamar Q/day-to-day; Rice doubtful; Coker; Thornton details/out indef. Solid alignment on statuses.",
       "at": "2026-10-05T01:47:42Z"
     },
     {
@@ -763,8 +775,8 @@
       "at": "2026-10-04T23:00:33Z"
     }
   ],
-  "mirroredAt": "2026-10-05T03:09:46.936Z",
+  "mirroredAt": "2026-10-05T03:10:01.471Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-10-05T03:09:46.477Z",
+  "sourceCompletedAt": "2026-10-05T03:10:01.014Z",
   "sourceStatus": "live"
 }
