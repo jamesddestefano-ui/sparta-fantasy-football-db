@@ -1,41 +1,53 @@
 {
   "league": "sparta",
-  "source": "Authenticated Yahoo CDP :9225 live pull 2026-09-30T07:55:10-04:00",
-  "observed_at": "2026-09-30T07:55:10-04:00",
+  "source": "Authenticated Yahoo computerUse read-only pull 2026-10-07T07:53:00-04:00",
+  "observed_at": "2026-10-07T07:53:00-04:00",
   "priority_order": [],
   "pending_claims_jd": [],
-  "pending_cleared_et": "2026-09-30",
+  "pending_cleared_et": "2026-10-07",
   "pending_process_results_jd": {
-    "processed_at_et": "2026-09-30 04:47",
+    "processed_at_et": "2026-10-07 04:45",
     "wins": [
       {
-        "bid": 4,
-        "added": "Darren Waller",
-        "dropped": "Tre Tucker",
-        "claim_id_was": "10_28592_40114"
+        "order": 1,
+        "bid": 7,
+        "added": "Michael Penix Jr.",
+        "dropped": "Caleb Douglas",
+        "repo_pending_bid_was": 4,
+        "bid_discrepancy_flag": true
       }
     ],
     "losses": [
       {
-        "bid": 5,
-        "added": "Kendre Miller",
-        "dropped": "Tre Tucker",
-        "claim_id_was": "10_40108_40114",
-        "result": "LOST \u2014 King Kong won Miller $8 Drop Makai Lemon"
+        "order": 2,
+        "bid": 2,
+        "added": "Michael Mayer",
+        "dropped": "Oronde Gadsden",
+        "result": "NOT AWARDED \u2014 Mayer appears in no Oct 7 transaction; Gadsden still on JD BN; Yahoo reason not shown. Mayer current availability UNVERIFIED (likely FA \u2014 not confirmed on Yahoo)."
       },
       {
-        "bid": 1,
-        "added": "Michael Mayer",
-        "dropped": "Tre Tucker",
-        "claim_id_was": "10_40065_40114",
-        "result": "CLEARED unused cascade \u2014 Tucker already dropped; Mayer now FA"
+        "order": 3,
+        "bid": 2,
+        "added": "Kirk Cousins",
+        "dropped": "Caleb Douglas",
+        "result": "FAILED \u2014 Douglas already dropped by order-1 Penix win"
       }
     ],
-    "faab_spent": 4,
-    "faab_after": 55,
-    "vs_tue_2000_pending_ladder": {
-      "note": "Tue 2000 ladder $5 Miller / $4 Waller / $1 Mayer all drop Tucker. Processed: Miller LOST to SR $8; Waller WON $4; Mayer unused. Gordon was already CLEARED Tue night (FOCUS won Gordon $57)."
+    "faab_spent": 7,
+    "faab_after": 48,
+    "vs_tue_1950_pending_ladder": {
+      "note": "Tue 1950 showed 3 listed (header said 4): $4 Penix/Douglas, $2 Mayer/Gadsden, $2 Cousins/Douglas. Processed: Penix WON at $7 (not $4); Mayer not awarded; Cousins failed. No pending claims/trades remain."
     }
   },
-  "note": "PENDING CLEARED Sep 30 ~04:47 ET. JD won Waller $4 Drop Tucker. Miller lost to King Kong $8. Mayer cascade unused (FA). FAAB $55. viewwaiver Error #236 all three prior claim ids. pendingwaivers page not found (empty)."
+  "note": "PENDING CLEARED Oct 7 ~04:45 ET. JD won Penix $7 / drop Douglas (repo had $4 \u2014 Yahoo $7 authoritative). Mayer not awarded (Gadsden kept); Cousins failed (Douglas gone). FAAB $48. Shipley \u2192 King Kong $27. No pending claims/trades remain.",
+  "brain_item_resolutions": [
+    {
+      "decision_id": "SPARTA-2026W5-SHIPLEY-DEADLINE-ESCALATION-20261007-0156",
+      "item": "hidden 4th claim \u2014 Will Shipley $7 / drop Caleb Douglas",
+      "resolution": "RESOLVED \u2014 Will Shipley awarded to King Kong (SR) $27 / drop Isaiah Davis at 04:45 ET Oct 7. No JD Shipley claim was shown pre-process or processed in results; Douglas was released via Penix $7. Even a $7 JD claim would have lost to $27. Shipley NOT JD-owned.",
+      "recommended_bid": 7,
+      "winning_bid": 27,
+      "winner": "SR"
+    }
+  ]
 }

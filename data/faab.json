@@ -41,7 +41,7 @@
     },
     {
       "team": "JD",
-      "balance": 55
+      "balance": 48
     },
     {
       "team": "JU",
@@ -52,8 +52,8 @@
       "balance": 100
     }
   ],
-  "source": "Yahoo Sparta CDP live 2026-09-30T11:59:30-04:00 (sparta-live-check-20260930-1200) \u2014 JD $55 auth+display unchanged vs 0800",
-  "observed_at": "2026-09-30T07:55:10-04:00",
+  "source": "Yahoo Sparta computerUse live read 2026-10-07T07:53:00-04:00 (sparta-live-check-20261007-0750); JD FAAB $55\u2192$48 after Oct 7 Penix $7 win. Display $48 matches. League-wide non-JD balances not re-pulled \u2014 JD auth only.",
+  "observed_at": "2026-10-07T07:53:00-04:00",
   "pickup_transaction_fee_usd": 0,
   "pickup_transaction_fee_is_separate_from_faab": false,
   "minimum_faab_bid_usd_after_transition": 1,
@@ -66,15 +66,26 @@
     "supersedes": "Prior repository interpretation that every add carried a separate $1 transaction fee"
   },
   "last_confirmed_activity": {
-    "date_et": "2026-09-30",
+    "date_et": "2026-10-07",
     "team": "JD",
     "actions": [
       {
-        "player": "Darren Waller",
+        "player": "Michael Penix Jr.",
         "action": "ADD_DROP",
-        "dropped": "Tre Tucker",
-        "faab_bid": 4,
-        "total_real_money_cost_usd": 4
+        "dropped": "Caleb Douglas",
+        "faab_bid": 7,
+        "total_real_money_cost_usd": 7
+      }
+    ],
+    "total_faab_spent": 7,
+    "faab_balance_after": 48,
+    "source": "Authenticated Yahoo My Team + Transactions 2026-10-07T07:53:00-04:00",
+    "yahoo_exact_times_from_live_pull": [
+      {
+        "player": "Michael Penix Jr.",
+        "timestamp_et": "2026-10-07 04:45",
+        "faab_bid": 7,
+        "yahoo_label": "$7 Waiver"
       }
     ]
   },
@@ -105,7 +116,7 @@
     "total_faab_spent": 15,
     "faab_balance_after": 85
   },
-  "yahoo_my_team_displayed_at_pull": 55,
+  "yahoo_my_team_displayed_at_pull": 48,
   "yahoo_faab_recheck_resolution": {
     "observed_at": "2026-09-16T17:39:40-04:00",
     "displayed_waiver_budget": 86,
@@ -113,7 +124,7 @@
     "source": "Authenticated Yahoo Sparta live snapshot",
     "resolution": "The later authenticated Yahoo snapshot resolved the earlier display discrepancy before the Holani transaction."
   },
-  "jd_authoritative_balance": 55,
+  "jd_authoritative_balance": 48,
   "pending_yahoo_reverification": false,
   "pending_yahoo_reverification_reason": "CLEARED by newer user-provided Yahoo waiver-result screenshots 2026-09-23 07:43 ET confirming all four completed JD Week 3 acquisitions and exact winning bids.",
   "week3_waiver_resolution": {
@@ -128,12 +139,12 @@
     "balance_after": 59,
     "market_notes": "Gadsden beat a $10 bid; Tucker tied another $3 bid and won on higher waiver priority. Wilson had two other offers; amounts not visible in supplied screenshot."
   },
-  "live_check_note": "sparta-live-check-20260930-0800: pending CLEARED; JD Waller $4 win; Miller lost; FAAB $55.",
+  "live_check_note": "sparta-live-check-20261007-0750: pending CLEARED; JD Penix $7 win (drop Douglas); Mayer not awarded; Cousins failed (Douglas gone); FAAB $48.",
   "yahoo_live_reverification": {
-    "observed_at": "2026-09-23T08:14:30-04:00",
-    "displayed_waiver_budget": 59,
-    "authoritative_balance": 59,
-    "resolution": "Wed 0800 CDP confirms $59 after waiver processing"
+    "observed_at": "2026-10-07T07:53:00-04:00",
+    "displayed_waiver_budget": 48,
+    "authoritative_balance": 48,
+    "resolution": "Wed 0750 computerUse read confirms $48 after Oct 7 waiver processing"
   },
   "week4_waiver_resolution": {
     "processed_at_et": "2026-09-30 04:47",
@@ -156,5 +167,33 @@
     ],
     "faab_spent": 4,
     "faab_after": 55
+  },
+  "week5_waiver_resolution": {
+    "processed_at_et": "2026-10-07 04:45",
+    "wins": [
+      {
+        "bid": 7,
+        "added": "Michael Penix Jr.",
+        "dropped": "Caleb Douglas"
+      }
+    ],
+    "losses": [
+      {
+        "claim": "Michael Mayer $2 Drop Oronde Gadsden",
+        "result": "NOT AWARDED \u2014 Mayer in no Oct 7 transaction; Gadsden still JD BN; reason not shown by Yahoo"
+      },
+      {
+        "claim": "Kirk Cousins $2 Drop Caleb Douglas",
+        "result": "FAILED \u2014 drop player Douglas already released by order-1 Penix win"
+      }
+    ],
+    "faab_spent": 7,
+    "faab_after": 48,
+    "bid_discrepancy": {
+      "player": "Michael Penix Jr.",
+      "repo_recorded_pending_bid": 4,
+      "yahoo_winning_bid": 7,
+      "resolution": "Yahoo authoritative \u2014 $7 recorded; FAAB $55\u2192$48 corroborates. Pending bid was last observed $4 at 2026-10-06T19:55 ET; edit after that snapshot not observed."
+    }
   }
 }
