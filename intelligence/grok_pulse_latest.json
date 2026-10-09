@@ -1,39 +1,41 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-10-09T01:09:54.726Z",
+  "generatedAt": "2026-10-09T02:09:42.004Z",
   "status": "live",
-  "completedAt": "2026-10-09T01:09:54.693Z",
-  "nextAtLabel": "10:09 PM ET",
+  "completedAt": "2026-10-09T02:09:41.950Z",
+  "nextAtLabel": "11:09 PM ET",
   "inWindow": true,
   "itemCount": 14,
   "items": [
     {
-      "id": "barkley-dnp-thu-hamstring",
+      "id": "barkley-dnp-thu-w5",
       "at": "2026-10-08T20:46:34Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Eagles RB Saquon Barkley (hamstring) did not practice Thursday for a second straight day. Status remains week-to-week with no long-term concern reported.",
+      "text": "Eagles RB Saquon Barkley (hamstring) and WR DeVonta Smith (hamstring) did not practice again Thursday; consecutive DNPs after Week 4 injuries. Barkley week-to-week and not expected for Week 5 London game vs JAX per reports.",
       "playerIds": [
-        "saquon-barkley"
+        "saquon-barkley",
+        "devonta-smith"
       ],
       "players": [
-        "Saquon Barkley"
+        "Saquon Barkley",
+        "DeVonta Smith"
       ],
       "url": "https://x.com/AdamSchefter/status/2108298026389319886",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-barkley-week5",
+      "eventId": "injury-barkley-smith-week5",
       "signal": "DNP",
-      "priorStatus": "QUESTIONABLE/uncertain",
+      "priorStatus": "QUESTIONABLE/week-to-week",
       "newStatus": "DNP consecutive",
-      "why": "Hamstring injury from prior game; consecutive DNPs elevate miss risk for London game vs JAX.",
-      "implication": "High likelihood of missing or limited; elevates backup RB opportunity.",
-      "opportunity": "Lead back role and snaps/carries open if OUT",
+      "why": "Hamstring injuries; Barkley left Week 4 early, Smith missed prior.",
+      "implication": "Likely OUT or limited for PHI @ JAX; elevates remaining RBs/WRs.",
+      "opportunity": "Lead back and WR1 snaps/targets open if OUT.",
       "corroboration": [
-        "@RapSheet",
-        "https://x.com/AdamSchefter/status/2107959458173505759"
+        "https://x.com/RapSheet",
+        "Ian Rapoport week-to-week reports"
       ],
       "supportingSources": [
         "ian-rapoport",
@@ -42,41 +44,13 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "smith-dnp-thu-hamstring",
-      "at": "2026-10-08T20:46:34Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Eagles WR DeVonta Smith (hamstring) did not practice again Thursday, consecutive DNP with Barkley.",
-      "playerIds": [
-        "devonta-smith"
-      ],
-      "players": [
-        "DeVonta Smith"
-      ],
-      "url": "https://x.com/AdamSchefter/status/2108298026389319886",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-smith-week5",
-      "signal": "DNP",
-      "priorStatus": "uncertain",
-      "newStatus": "DNP consecutive",
-      "why": "Hamstring; second straight missed practice.",
-      "implication": "Elevated risk of OUT or limited for Week 5; target share redistribution possible.",
-      "opportunity": "Increased routes/targets for other Eagles WRs/TE if inactive",
-      "corroboration": [
-        "https://x.com/AdamSchefter/status/2107959458173505759"
-      ],
-      "priority": "IMMEDIATE"
-    },
-    {
-      "id": "lamar-dnp-ankle-friday-key",
+      "id": "lamar-dnp-ankle",
       "at": "2026-10-08T20:00:45Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Ravens QB Lamar Jackson did not practice Thursday due to ankle injury. Friday practice looms large for Sunday night availability vs ATL.",
+      "text": "Ravens QB Lamar Jackson did not practice Thursday due to ankle injury. Friday’s practice looms large for Sunday night availability vs ATL.",
       "playerIds": [
         "lamar-jackson"
       ],
@@ -87,15 +61,15 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-lamar-week5",
       "signal": "DNP",
-      "priorStatus": "ankle sprain uncertain",
-      "newStatus": "DNP; Friday decisive",
-      "why": "Ankle; no practice Thursday after prior issues.",
-      "implication": "Outside chance to play; backup likely if misses Friday or limited.",
-      "opportunity": "Ravens pass catchers/volume shift if Huntley starts; Flowers/Andrews/Likely impacted",
+      "priorStatus": "day-to-day/ankle",
+      "newStatus": "DNP Thursday",
+      "why": "Ankle; sat second half Week 4.",
+      "implication": "GTD or risk OUT; monitor Friday closely for SNF.",
+      "opportunity": "Backup QB/TE/WR usage if limited/out.",
       "beneficiaries": [
-        "zay-flowers",
         "mark-andrews",
-        "isaiah-likely"
+        "isaiah-likely",
+        "zay-flowers"
       ],
       "corroboration": [
         "@RapSheet"
@@ -106,47 +80,13 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "pittman-multiweek-foot",
-      "at": "2026-10-08T15:49:48Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Steelers WR Michael Pittman Jr. aggravated foot injury (plantar fasciitis); HC says will miss multiple weeks.",
-      "playerIds": [
-        "michael-pittman"
-      ],
-      "players": [
-        "Michael Pittman Jr."
-      ],
-      "url": "https://x.com/RapSheet/status/2108223343539171511",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-pittman-week5",
-      "signal": "OUT multi-week",
-      "priorStatus": "dealing with plantar",
-      "newStatus": "multi-week absence",
-      "why": "Re-aggravated foot; coach confirmation.",
-      "implication": "Extended absence opens PIT WR targets long-term.",
-      "opportunity": "DK Metcalf and others elevated snap/route/target share ROS",
-      "beneficiaries": [
-        "dk-metcalf"
-      ],
-      "corroboration": [
-        "@AdamSchefter"
-      ],
-      "supportingSources": [
-        "adam-schefter"
-      ],
-      "priority": "IMMEDIATE"
-    },
-    {
-      "id": "etr-shipley-lead-barkley-bigsby",
+      "id": "shipley-lead-etr",
       "at": "2026-10-08T02:04:24Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Adam Levitan and Evan Silva: 'I think it’s gonna be the Will Shipley show against Jacksonville' following Barkley hamstring and Bigsby IR/core surgery. Elevates Shipley as lead if Barkley misses.",
+      "text": "ETR/Levitan: With Barkley (hamstring, week-to-week) and Bigsby (abdomen, IR/core surgery) out, 'it's gonna be the Will Shipley show against Jacksonville.' Waiver elevation for lead role.",
       "playerIds": [
         "saquon-barkley"
       ],
@@ -154,21 +94,21 @@
         "Saquon Barkley"
       ],
       "url": "https://x.com/EstablishTheRun/status/2108015622307127365",
-      "kind": "ANALYST_OPINION",
-      "eventId": "injury-barkley-week5",
-      "signal": "WAIVER/UPGRADE backup",
-      "priorStatus": "Barkley starter",
-      "newStatus": "Shipley lead candidate",
-      "why": "Barkley week-to-week DNP; Bigsby on IR after core injury.",
-      "implication": "Shipley top waiver/priority add for volume if Barkley OUT; handcuff value.",
-      "opportunity": "Full backfield snaps/carries/routes in London if starter misses",
-      "conflict": "Some note tough JAX run D and Eagles OL issues limit upside",
+      "kind": "WAIVER_SIGNAL",
+      "eventId": "injury-barkley-bigsby-shipley-w5",
+      "signal": "UPGRADE",
+      "priorStatus": "backup",
+      "newStatus": "expected lead",
+      "why": "Only healthy primary RB left after injuries/IR.",
+      "implication": "High-priority waiver add for volume/flex in PHI backfield vs JAX.",
+      "opportunity": "Carries, snaps, possible GL/pass work expansion.",
       "corroboration": [
-        "@adamlevitan",
-        "waiver articles"
+        "https://establishtherun.com/waiver-wire-analysis-week-5-7/",
+        "@adamlevitan"
       ],
       "supportingSources": [
-        "adam-levitan"
+        "adam-levitan",
+        "adam-schefter"
       ],
       "priority": "IMMEDIATE"
     },
@@ -190,11 +130,11 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-djmoore-week5",
       "signal": "DNP",
-      "priorStatus": "shoulder",
+      "priorStatus": "shoulder (prior aggravation)",
       "newStatus": "DNP",
-      "why": "Shoulder injury limiting practice.",
-      "implication": "Availability concern for BUF offense; target share to others if limited/OUT.",
-      "opportunity": "Increased looks for other Bills WRs/TE",
+      "why": "Shoulder; left early previously, AC joint context.",
+      "implication": "Questionable trending; impacts BUF WR depth/targets.",
+      "opportunity": "Other Bills pass-catchers if limited/out.",
       "priority": "HIGH"
     },
     {
@@ -204,7 +144,7 @@
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Chargers WR Ladd McConkey no practice again Thursday (foot). Consecutive DNP on injury report vs DEN.",
+      "text": "Chargers WR Ladd McConkey no practice again Thursday (foot); second straight DNP after aggravating in Week 4.",
       "playerIds": [
         "ladd-mcconkey"
       ],
@@ -215,24 +155,25 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-mcconkey-week5",
       "signal": "DNP",
-      "priorStatus": "limited/prior DNP",
+      "priorStatus": "day-to-day",
       "newStatus": "DNP consecutive",
-      "why": "Foot injury; limited snaps prior week.",
-      "implication": "Questionable to OUT risk; reduces WR1 volume for LAC.",
-      "opportunity": "Quentin Johnston or others gain routes/targets if inactive",
+      "why": "Foot injury aggravated Week 4.",
+      "implication": "Trending doubtful/OUT vs DEN; monitor final report.",
+      "opportunity": "Increased targets to other LAC WRs/TE if out.",
       "beneficiaries": [
-        "quentin-johnston"
+        "quentin-johnston",
+        "omarion-hampton"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "swift-limited-monangai-dnp",
+      "id": "swift-monangai-practice",
       "at": "2026-10-08T19:19:21Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Bears RB D'Andre Swift limited (knee/hip); Kyle Monangai DNP second straight day (thumb/toe).",
+      "text": "Bears RB D'Andre Swift limited (knee/hip); Kyle Monangai DNP second straight (thumb/toe).",
       "playerIds": [
         "dandre-swift"
       ],
@@ -243,21 +184,21 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-bears-rbs-week5",
       "signal": "LIMITED/DNP",
-      "priorStatus": "injuries",
-      "newStatus": "Swift LP, Monangai DNP x2",
-      "why": "Multiple ailments limiting CHI RB room practice.",
-      "implication": "Workload uncertainty; Swift still likely lead but committee risk.",
-      "opportunity": "If both limited, other CHI backs elevate",
+      "priorStatus": "injured",
+      "newStatus": "Swift limited, Monangai DNP",
+      "why": "Knee/hip for Swift; thumb/toe Monangai.",
+      "implication": "CHI RB committee uncertainty; Swift still primary if available.",
+      "opportunity": "If both limited, other backs elevate.",
       "priority": "HIGH"
     },
     {
-      "id": "berry-love-nico-collins-wr8",
+      "id": "berry-love-nico",
       "at": "2026-10-08T19:02:55Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Matthew Berry loves Nico Collins vs Titans this week; ranks as WR8. Volume including red zone plus soft matchup.",
+      "text": "Matthew Berry loves Nico Collins vs Titans; ranks WR8. Strong volume/red-zone and matchup.",
       "playerIds": [
         "nico-collins"
       ],
@@ -266,24 +207,24 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-5-fantasy-football-as",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-lovehate-week5-nico",
+      "eventId": "berry-lovehate-w5-nico",
       "signal": "LOVE",
-      "why": "Target hog, red-zone volume, Titans struggle vs WRs.",
-      "implication": "Strong start candidate; high weekly rank.",
-      "opportunity": "Elevated targets/routes in favorable spot",
+      "why": "Target hog, RZ volume, Titans defense struggles vs WRs.",
+      "implication": "Strong Week 5 start; WR1 upside.",
+      "opportunity": "High targets/routes expected.",
       "corroboration": [
         "@MatthewBerryTMR"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "berry-love-chase-brown-rb5",
-      "at": "2026-10-08T19:02:55Z",
+      "id": "berry-love-chasebrown",
+      "at": "2026-10-08T18:01:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Berry loves Chase Brown @ MIA as RB5; workload and soft run defense, plus Bengals WR injury context potentially boosting checkdowns.",
+      "text": "Berry loves Chase Brown @ MIA as RB5; workload and matchup vs soft run D, plus Bengals WR injury context boosting checkdowns.",
       "playerIds": [
         "chase-brown"
       ],
@@ -292,22 +233,156 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-5-fantasy-football-as",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-lovehate-week5-brown",
+      "eventId": "berry-lovehate-w5-chasebrown",
       "signal": "LOVE",
-      "why": "Strong workload vs weak RB defense; possible pass-game bump from CIN WR issues.",
-      "implication": "Elite RB start this week.",
-      "opportunity": "Carries + targets/red-zone",
-      "conflict": "Levitan notes underperformance on xFP opportunities",
+      "why": "Solid workload; defenses carved by RBs; CIN pass injuries.",
+      "implication": "RB1/2 start Week 5.",
+      "opportunity": "Carries + receptions elevated.",
+      "conflict": "Levitan notes underperforming xFP so far.",
       "priority": "HIGH"
     },
     {
-      "id": "levitan-xfp-bijan-kyren-over-jeanty-brown-under",
+      "id": "pittman-multiweek",
+      "at": "2026-10-08T15:49:48Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Steelers WR Michael Pittman Jr. aggravated foot injury (plantar fasciitis); coach said he'll miss multiple weeks.",
+      "playerIds": [
+        "michael-pittman"
+      ],
+      "players": [
+        "Michael Pittman Jr."
+      ],
+      "url": "https://x.com/RapSheet/status/2108223343539171511",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-pittman-week5",
+      "signal": "OUT",
+      "priorStatus": "dealing with foot",
+      "newStatus": "multi-week OUT",
+      "why": "Re-aggravation of plantar fasciitis.",
+      "implication": "Extended absence; PIT WR targets shift.",
+      "opportunity": "More work for DK Metcalf and other PIT WRs.",
+      "beneficiaries": [
+        "dk-metcalf"
+      ],
+      "supportingSources": [
+        "adam-schefter"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "puka-return-usage",
+      "at": "2026-10-05T14:58:23Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Puka Nacua returned and played 76-of-84 snaps, ran 49 routes on 64 dropbacks, 12 targets + goal-line carry despite prior hip/groin hysteria.",
+      "playerIds": [
+        "puka-nacua"
+      ],
+      "players": [
+        "Puka Nacua"
+      ],
+      "url": "https://x.com/adamlevitan/status/2107123240879727099",
+      "kind": "USAGE_DATA",
+      "eventId": "usage-puka-return-w4",
+      "signal": "ACTIVE/full",
+      "priorStatus": "injury concern",
+      "newStatus": "full workload",
+      "why": "Post-return snap/route/target data shows no restriction.",
+      "implication": "Full WR1 role confirmed; strong ROS confidence.",
+      "opportunity": "High snaps, routes, targets, GL work intact.",
+      "supportingSources": [
+        "establish-the-run"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "tate-limited-back",
+      "at": "2026-10-08T21:57:28Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Titans WR Carnell Tate limited Thursday with back injury.",
+      "playerIds": [
+        "carnell-tate"
+      ],
+      "players": [
+        "Carnell Tate"
+      ],
+      "url": "https://x.com/RapSheet/status/2108315868996469034",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-tate-week5",
+      "signal": "LIMITED",
+      "priorStatus": "unknown",
+      "newStatus": "limited back",
+      "why": "Back injury on Titans IR.",
+      "implication": "Monitor for Week 5 vs HOU availability.",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-love-wilson-watson-likely",
+      "at": "2026-10-08T18:01:00Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Berry loves Michael Wilson (WR10 vs DET), Christian Watson (WR15 vs CHI), Isaiah Likely (TE5 @ WSH) for volume/matchup reasons.",
+      "playerIds": [
+        "michael-wilson",
+        "christian-watson",
+        "isaiah-likely"
+      ],
+      "players": [
+        "Michael Wilson",
+        "Christian Watson",
+        "Isaiah Likely"
+      ],
+      "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-5-fantasy-football-as",
+      "kind": "ANALYST_OPINION",
+      "eventId": "berry-lovehate-w5-pcs",
+      "signal": "LOVE",
+      "why": "Volume/RZ for Wilson; coverage/pos weaknesses for Watson/Likely.",
+      "implication": "Startable upside plays Week 5.",
+      "opportunity": "Target share and favorable schemes.",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-hate-addison-andrews",
+      "at": "2026-10-08T18:01:00Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Berry hates Jordan Addison (@ NO, WR41), Mark Andrews (@ ATL, TE17); also fades some others on tough matchups/thin roles/usage.",
+      "playerIds": [
+        "jordan-addison",
+        "mark-andrews"
+      ],
+      "players": [
+        "Jordan Addison",
+        "Mark Andrews"
+      ],
+      "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-5-fantasy-football-as",
+      "kind": "ANALYST_OPINION",
+      "eventId": "berry-lovehate-w5-hates",
+      "signal": "HATE",
+      "why": "Tough matchups, thin roles, usage numbers, Addison injury wrinkle.",
+      "implication": "Sit/fade Week 5.",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "levitan-xfp-overunder",
       "at": "2026-10-07T14:37:26Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Bijan Robinson and Kyren Williams performing well above expected fantasy points on opportunities; Ashton Jeanty and Chase Brown underperforming on theirs. xFP data available to subscribers.",
+      "text": "Bijan Robinson and Kyren Williams performing well above expected fantasy points on opportunities; Ashton Jeanty and Chase Brown underperforming theirs (xFP data).",
       "playerIds": [
         "bijan-robinson",
         "kyren-williams",
@@ -322,100 +397,57 @@
       ],
       "url": "https://x.com/adamlevitan/status/2107842744857264533",
       "kind": "USAGE_DATA",
-      "eventId": "xfp-early-season-efficiency",
-      "signal": "UPGRADE/DOWNGRADE",
-      "why": "Expected vs actual FP on opportunities through 4 weeks; efficiency outliers.",
-      "implication": "Sustain overperformance for Bijan/Kyren; regression risk or role concerns for Jeanty/Chase Brown.",
-      "opportunity": "Trust volume + efficiency for overperformers; monitor under for bounce or reduced role",
+      "eventId": "xfp-levitan-earlyseason",
+      "signal": "OVER/UNDER",
+      "why": "Expected vs actual FP on opportunities through ~4 weeks.",
+      "implication": "Bijan/Kyren efficiency sustain or regress watch; Jeanty/Chase Brown buy-low opportunity if volume holds.",
+      "opportunity": "Focus on underlying opportunities over raw points.",
       "corroboration": [
-        "establishtherun.com/expected-vs-actual-fantasy-points"
+        "https://establishtherun.com/expected-vs-actual-fantasy-points/"
       ],
       "supportingSources": [
         "establish-the-run"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "tate-limited-back",
-      "at": "2026-10-08T21:57:28Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Titans WR Carnell Tate limited Thursday with back injury on injury report ahead of vs HOU.",
-      "playerIds": [
-        "carnell-tate"
-      ],
-      "players": [
-        "Carnell Tate"
-      ],
-      "url": "https://x.com/RapSheet/status/2108315868996469034",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-tate-week5",
-      "signal": "LIMITED",
-      "priorStatus": "unknown",
-      "newStatus": "limited back",
-      "why": "Back injury; limited participation.",
-      "implication": "Monitor for game status; could affect TEN WR hierarchy.",
-      "opportunity": "If OUT, other Titans WRs gain",
-      "priority": "NORMAL"
-    },
-    {
-      "id": "berry-love-michael-wilson-wr10",
-      "at": "2026-10-08T19:02:55Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Berry loves Michael Wilson vs DET as WR10; volume and matchup drive the rank.",
-      "playerIds": [
-        "michael-wilson"
-      ],
-      "players": [
-        "Michael Wilson"
-      ],
-      "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-5-fantasy-football-as",
-      "kind": "ANALYST_OPINION",
-      "eventId": "berry-lovehate-week5-wilson",
-      "signal": "LOVE",
-      "why": "Target volume including RZ; DET secondary issues.",
-      "implication": "Startable WR2/flex with upside.",
-      "opportunity": "High route/target share in good spot",
-      "priority": "NORMAL"
-    },
-    {
-      "id": "berry-love-warren-if-dowdle-out",
-      "at": "2026-10-08T19:02:55Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Berry loves Jaylen Warren vs IND as RB12 if Rico Dowdle remains OUT; clear path to elevated workload.",
-      "playerIds": [
-        "jaylen-warren",
-        "rico-dowdle"
-      ],
-      "players": [
-        "Jaylen Warren",
-        "Rico Dowdle"
-      ],
-      "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-5-fantasy-football-as",
-      "kind": "ANALYST_OPINION",
-      "eventId": "berry-lovehate-week5-warren",
-      "signal": "LOVE",
-      "priorStatus": "committee",
-      "newStatus": "lead if Dowdle OUT",
-      "why": "Dowdle absence clears path; good matchup for volume.",
-      "implication": "RB2/flex upgrade contingent on Dowdle status.",
-      "opportunity": "Increased carries/snaps/third-down if solo lead",
-      "beneficiaries": [
-        "jaylen-warren"
       ],
       "priority": "NORMAL"
     }
   ],
   "sundayMode": false,
   "sourceNotes": [
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "Primary consecutive DNPs: Barkley/Smith hamstring, Lamar ankle (Friday key), McConkey foot, DJ Moore shoulder, Swift limited/Monangai DNP. Essential practice/status reporting.",
+      "at": "2026-10-09T00:00:00Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Pittman multi-week foot re-aggravation; Tate limited back; Porter OUT illness (TNF); Lamar context; solid coach/beat alignment on statuses. Barkley week-to-week.",
+      "at": "2026-10-09T00:00:00Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Shipley elevated as lead vs JAX on Barkley/Bigsby OUT/IR; Man vs Machine/projs context; xFP via Levitan; injury/waiver focus. Clear beneficiary call on Shipley.",
+      "at": "2026-10-09T00:00:00Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific: Puka full snaps/routes/targets/GL return; xFP Bijan/Kyren overperforming, Jeanty/Chase Brown under; injury variance list; Shipley discussion on pod.",
+      "at": "2026-10-09T00:00:00Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Love/Hate Week 5: Nico WR8, Wilson WR10, Watson WR15, Likely TE5, Chase Brown RB5, Aaron Jones, Warren (if Dowdle out); hates Addison/Andrews etc. Per-player splits from column/show.",
+      "at": "2026-10-09T00:00:00Z"
+    },
     {
       "sourceId": "adam-schefter",
       "source": "Adam Schefter",
@@ -548,45 +580,10 @@
       "grade": "USEFUL",
       "note": "Primary facts: Barkley/Smith consecutive DNPs hamstring; Lamar DNP ankle Friday key; Swift limited/Monangai DNP; Payton playcalling takeover; Pittman multi-week via corroboration. Essential status corroboration.",
       "at": "2026-10-08T20:46:34Z"
-    },
-    {
-      "sourceId": "ian-rapoport",
-      "source": "Ian Rapoport",
-      "grade": "USEFUL",
-      "note": "Pittman multi-week foot aggravation; Tate limited back; Payton playcalling confirmation; Barkley week-to-week earlier; Lamar context. Solid alignment on statuses and coach comments.",
-      "at": "2026-10-08T21:57:28Z"
-    },
-    {
-      "sourceId": "establish-the-run",
-      "source": "Establish The Run",
-      "grade": "USEFUL",
-      "note": "Critical comprehensive injury watch lists (pre/post Sunday) covering Lamar/Chase/Higgins/Saquon/Rice/Thornton/McConkey/DJ Moore/Bryant etc; expected/GTD/not-expected pregame (Nacua/Flowers/McConkey expected). High-value status parse and pro",
-      "at": "2026-10-05T00:57:47Z"
-    },
-    {
-      "sourceId": "adam-levitan",
-      "source": "Adam Levitan",
-      "grade": "USEFUL",
-      "note": "Player-specific: Nacua full snaps/routes/targets confirmed (no-limit upgrade per Schefter); Kincaid coach comments for more involvement; Eagles depletion; overall injury volume notes. High-value usage/implication signals over pure rankings.",
-      "at": "2026-10-05T15:56:38Z"
-    },
-    {
-      "sourceId": "matthew-berry",
-      "source": "Matthew Berry",
-      "grade": "USEFUL",
-      "note": "Chuba as this year's Javonte love; Love snap management frustration quotes; Tuten TDs called back; live early exits chatter (Lamar/Saquon/Chase/DJ Moore). Strong ROS/opinion and in-game signals.",
-      "at": "2026-10-05T02:56:39Z"
-    },
-    {
-      "sourceId": "adam-schefter",
-      "source": "Adam Schefter",
-      "grade": "USEFUL",
-      "note": "Breaking facts: Lamar boot/MRI/coach update not long-term; Chase protocol/Higgins DTD; Rice doubtful; Bryant few weeks; McConkey active; Bagent start; Tyreek talks; Juszczyk 2-3 wks. Primary corroboration.",
-      "at": "2026-10-05T19:05:08Z"
     }
   ],
-  "mirroredAt": "2026-10-09T01:09:55.222Z",
+  "mirroredAt": "2026-10-09T02:09:42.485Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-10-09T01:09:54.693Z",
+  "sourceCompletedAt": "2026-10-09T02:09:41.950Z",
   "sourceStatus": "live"
 }
