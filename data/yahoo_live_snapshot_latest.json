@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-10-10T11:53:24-04:00",
-  "pull_completed_at": "2026-10-10T11:55:34-04:00",
+  "observed_at": "2026-10-10T15:59:12-04:00",
+  "pull_completed_at": "2026-10-10T16:01:44-04:00",
   "source": "Playwright CDP read-only Yahoo UI (connect_over_cdp :9225)",
-  "check_id": "sparta-live-check-20261010-1150",
+  "check_id": "sparta-live-check-20261010-1550",
   "completed": true,
   "yahoo_ok": true,
   "mutations": false,
@@ -18,9 +18,9 @@
   "opponent": "CLIN-TON POR-TIS",
   "scores": {
     "jd_live": 2.0,
-    "jd_proj": 123.2,
+    "jd_proj": 123.06,
     "opp_live": 0.0,
-    "opp_proj": 120.24
+    "opp_proj": 121.06
   },
   "total_points": 552.98,
   "faab_auth": 48,
@@ -30,15 +30,15 @@
   "ir_total": 1,
   "roster_count": 17,
   "pending_waivers": [],
-  "pending_status": "none shown (pendingwaivers page Error #242 / document not found \u2014 empty)",
-  "pending_trade": "none shown (proposallist Error #242 / document not found \u2014 empty)",
+  "pending_status": "none shown (pendingwaivers page document not found \u2014 empty)",
+  "pending_trade": "none shown (proposallist document not found \u2014 empty)",
   "league_pending_trade_trid21": {
     "type": "TRADE_VETOED_NON_JD",
     "trid": "21",
     "status": "VETOED \u2014 Yahoo Error #242 (continuity)",
     "jd_party": false,
     "recommend": "NO JD ACTION",
-    "vs_prior_0750": "CONTINUITY \u2014 DO_NOT_REEMIT"
+    "vs_prior_1150": "CONTINUITY \u2014 DO_NOT_REEMIT"
   },
   "league_pending_trade_trid22": {
     "type": "TRADE_PROCESSED_NON_JD",
@@ -46,7 +46,7 @@
     "status": "PROCESSED \u2014 Error #242 continuity",
     "jd_party": false,
     "recommend": "NO JD ACTION",
-    "vs_prior_0750": "CONTINUITY \u2014 DO_NOT_REEMIT"
+    "vs_prior_1150": "CONTINUITY \u2014 DO_NOT_REEMIT"
   },
   "league_pending_trade_trid23": {
     "type": "TRADE_PROCESSED_NON_JD",
@@ -54,16 +54,16 @@
     "status": "PROCESSED \u2014 Yahoo Error #242 not pending",
     "jd_party": false,
     "recommend": "NO JD ACTION",
-    "vs_prior_0750": "CONTINUITY \u2014 DO_NOT_REEMIT"
+    "vs_prior_1150": "CONTINUITY \u2014 DO_NOT_REEMIT"
   },
   "king_kong_trade_trid6": {
     "trid": "6",
     "status": "CLEARED \u2014 Error #242 not pending",
     "recommend": "NO ACTION",
-    "vs_prior_0750": "CONTINUITY \u2014 DO_NOT_REEMIT"
+    "vs_prior_1150": "CONTINUITY \u2014 DO_NOT_REEMIT"
   },
   "critical_lineup": "QB Cousins; RB Allen, Wilson; WR Chase(Q), JSN; TE Mayer; W/R/T Vele, TeSlaa; K McPherson; DEF Cowboys (TNF FINAL 2.00); BN Hurts, Wicks, McMillan(bye), Dobbins, Gadsden, Hall(O), Penix",
-  "lineup_vs_0750": "UNCHANGED starters + bench; Hall still BN O; Chase still Q; Wicks still clear/BN",
+  "lineup_vs_1150": "UNCHANGED starters + bench; Hall still BN O; Chase still Q; Wicks still clear/BN",
   "roster": {
     "QB": "Kirk Cousins",
     "RB": [
@@ -102,7 +102,7 @@
     "ir_eligible": true,
     "ir_dropdown_enabled": true,
     "select_name": "33991",
-    "probe_observed_at": "2026-10-10T11:56:26-04:00"
+    "probe_observed_at": "2026-10-10T16:04:47-04:00"
   },
   "hall_ir_eligible": true,
   "hall_slot": "BN",
@@ -151,21 +151,54 @@
     "status": "O",
     "owner": "SHOWSTOPPERS",
     "jd_owned": false,
-    "pulse": "20261010-112401 \u2014 trade finalizing + W5 inactive; destination TBD",
+    "pulse": "20261010-112401 \u2014 trade finalizing + W5 inactive; destination TBD DUP continue",
     "elevate": false
   },
+  "pittman_yahoo": {
+    "player": "Michael Pittman Jr.",
+    "status": "IR",
+    "owner": "FOCUS",
+    "jd_owned": false,
+    "fa": false,
+    "pulse": "20261010-151701 HIGH short-term IR YES",
+    "elevate": false,
+    "note": "NON-JD FOCUS; Yahoo already IR; not FA/waiver-actionable for JD"
+  },
+  "obj_yahoo": {
+    "player": "Odell Beckham Jr.",
+    "status": "",
+    "owner": "FA",
+    "jd_owned": false,
+    "fa": true,
+    "pulse": "20261010-151702 MEDIUM PS elevate play TBD YES",
+    "elevate": false,
+    "note": "FA but play TBD / insurance only \u2014 store-only; no JD start/sit or urgent add"
+  },
   "pulse_ownership_checks": {
+    "Michael Pittman Jr.": {
+      "status": "IR",
+      "owner": "FOCUS",
+      "jd_owned": false,
+      "fa": false,
+      "note": "HIGH YES \u2014 NON-JD no wake"
+    },
+    "Odell Beckham Jr.": {
+      "status": "",
+      "owner": "FA",
+      "jd_owned": false,
+      "fa": true,
+      "note": "MEDIUM YES \u2014 FA store-only; play TBD"
+    },
     "Marvin Harrison Jr.": {
       "status": "O",
       "owner": "SHOWSTOPPERS",
       "jd_owned": false,
-      "note": "HIGH pulse YES \u2014 NON-JD no wake"
+      "note": "prior HIGH YES \u2014 NON-JD continuity"
     },
     "Michael Wilson": {
       "status": "",
       "owner": "Dynamic Duo of Ladd & Stribs",
-      "jd_owned": false,
-      "note": "ARI WR context \u2014 owned not FA"
+      "jd_owned": false
     },
     "CeeDee Lamb": {
       "status": "Q",
@@ -199,44 +232,19 @@
       "jd_owned": true
     }
   },
-  "newest_completed_tx": "The U add Roschon Johnson FA / drop Kenny Gainwell to waivers Oct 9 12:52 ET",
-  "newest_jd_tx": "TB12 add Kirk Cousins FA / drop Kyle Pitts Sr. to waivers Oct 9 09:43 ET",
-  "new_txs_since_0750": [],
-  "new_txs_since_0750_count": 0,
-  "delta_vs_0750": {
-    "baseline_check": "sparta-live-check-20261010-0750",
-    "baseline_observed_at": "2026-10-10T07:56:28-04:00",
+  "cowboys_def": {
+    "slot": "DEF",
+    "live": 2.0,
+    "proj": 10.62,
+    "note": "TNF FINAL L 16-24 vs TB \u2014 continuity"
+  },
+  "vs_prior_1150": {
     "faab": "UNCHANGED $48",
+    "ir": "UNCHANGED 0/1",
     "pending": "UNCHANGED none",
-    "ir": "UNCHANGED 0/1 (still free) \u2014 Hall still IR-eligible BN (not moved)",
-    "roster": "UNCHANGED players",
-    "lineup_starters": "UNCHANGED \u2014 Cousins QB / TeSlaa FLEX / Chase WR Q",
-    "status_marks": "Hall O continuity; Chase Q continuity; Wicks cleared continuity",
-    "hall": "Still BN O IR-eligible \u2014 DO_NOT_REEMIT alone (Fri 1150 wake pending Billy)",
-    "chase": "Official coach Q (123501) + Yahoo still Q \u2014 quiet continuity",
-    "wicks": "Yahoo still clear; still BN; soft LP \u2260 start flip",
-    "mhj": "NEW Pulse HIGH \u2014 Yahoo SHOWSTOPPERS NON-JD \u2014 no JD elevate",
-    "txs_new": [],
-    "matchup": "jd_live 2.00 unchanged; jd_proj 122.81\u2192123.2; opp_proj 119.88\u2192120.24",
-    "material": false,
-    "material_reason": "No NEW JD exception: Hall IR already woken; Chase/Wicks continuity; MHJ HIGH but NON-JD SHOWSTOPPERS; 0 new txs; proj drift only; McFarland+FPD QUIET"
-  },
-  "vs_prior_check": "sparta-live-check-20261010-0750",
-  "goto_status": "OK",
-  "tx_goto_status": "OK",
-  "cdp_restart": false,
-  "ingestion": {
-    "rows_ingested": 0,
-    "rows_deduped": 0,
-    "rows_held": 0,
-    "semantic_key_format": "league|team|type|added|dropped|calendar_day_ET",
-    "transaction_count_after": 124,
-    "note": "0 NEW txs since 0750 (newest still JU Roschon/Gainwell)"
-  },
-  "notes": [
-    "Sat 1150 midday window \u2014 quiet",
-    "Hall BN\u2192IR still waiting Billy \u2014 DO_NOT_REEMIT alone",
-    "Pulse 0824\u20131124 consumed; 1 HIGH MHJ YES but SHOWSTOPPERS NON-JD \u2192 no wake; JD tip Chase 123501 continuity",
-    "McFarland QUIET; FPD promo reject; Levitan opinion reject"
-  ]
+    "lineup": "UNCHANGED",
+    "status_marks": "UNCHANGED Chase Q / Wicks cleared / Hall O",
+    "scores": "jd_proj 123.20\u2192123.06; opp_proj 120.24\u2192121.06; live still 2.00\u20130.00",
+    "new_txs_visible": 3
+  }
 }
