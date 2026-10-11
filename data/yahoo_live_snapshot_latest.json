@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-10-11T12:51:12-04:00",
-  "pull_completed_at": "2026-10-11T12:53:51-04:00",
+  "observed_at": "2026-10-11T15:49:30-04:00",
+  "pull_completed_at": "2026-10-11T15:52:41-04:00",
   "source": "Playwright CDP read-only Yahoo UI (connect_over_cdp :9225)",
-  "check_id": "sparta-live-check-20261011-1245",
+  "check_id": "sparta-live-check-20261011-1545",
   "completed": true,
   "yahoo_ok": true,
   "mutations": false,
@@ -17,10 +17,11 @@
   "week": 5,
   "opponent": "CLIN-TON POR-TIS",
   "scores": {
-    "jd_live": 9.7,
-    "jd_proj": 125.2,
-    "opp_live": 2.0,
-    "opp_proj": 112.85
+    "jd_live": 70.22,
+    "jd_proj": 112.39,
+    "opp_live": 89.36,
+    "opp_proj": 118.83,
+    "note": "team page headline; matchup page ~112.06/118.28 \u2014 scoring progress / proj drift alone \u2260 wake"
   },
   "total_points": 552.98,
   "faab_auth": 48,
@@ -30,46 +31,10 @@
   "ir_total": 1,
   "roster_count": 17,
   "pending_waivers": [],
-  "pending_status": "none shown (pendingwaivers page document not found \u2014 empty)",
-  "pending_trade": "none shown (proposallist document not found \u2014 empty)",
-  "league_pending_trade_trid21": {
-    "type": "TRADE_VETOED_NON_JD",
-    "trid": "21",
-    "status": "VETOED \u2014 Yahoo Error #242 (continuity)",
-    "jd_party": false,
-    "recommend": "NO JD ACTION",
-    "vs_prior_1150": "CONTINUITY \u2014 DO_NOT_REEMIT"
-  },
-  "league_pending_trade_trid22": {
-    "type": "TRADE_PROCESSED_NON_JD",
-    "trid": "22",
-    "status": "PROCESSED \u2014 Error #242 continuity",
-    "jd_party": false,
-    "recommend": "NO JD ACTION",
-    "vs_prior_1150": "CONTINUITY \u2014 DO_NOT_REEMIT"
-  },
-  "league_pending_trade_trid23": {
-    "type": "TRADE_PROCESSED_NON_JD",
-    "trid": "23",
-    "status": "PROCESSED \u2014 Yahoo Error #242 not pending",
-    "jd_party": false,
-    "recommend": "NO JD ACTION",
-    "vs_prior_1150": "CONTINUITY \u2014 DO_NOT_REEMIT"
-  },
-  "king_kong_trade_trid6": {
-    "trid": "6",
-    "status": "CLEARED \u2014 Error #242 not pending",
-    "recommend": "NO ACTION",
-    "vs_prior_1150": "CONTINUITY \u2014 DO_NOT_REEMIT"
-  },
-  "mc_trade_trid17": {
-    "trid": "17",
-    "status": "CLEARED/not pending \u2014 continuity",
-    "recommend": "NO ACTION",
-    "vs_prior_1150": "CONTINUITY \u2014 DO_NOT_REEMIT"
-  },
-  "critical_lineup": "QB Cousins; RB Allen, Wilson; WR Chase(cleared), JSN; TE Mayer; W/R/T Vele, Wicks(live 7.70 London Q4); K McPherson; DEF Cowboys (TNF FINAL 2.00); BN TeSlaa, Hurts(live 13.24), McMillan(bye), Dobbins, Gadsden, Hall(O), Penix",
-  "lineup_vs_1150": "UNCHANGED \u2014 still Wicks W/R/T FLEX / TeSlaa BN / Cousins QB / Chase WR (0750+1150 continuity \u2014 DO_NOT_REEMIT alone)",
+  "pending_status": "none shown (pendingwaivers page empty)",
+  "pending_trade": "none shown (proposallist empty)",
+  "critical_lineup": "QB Cousins(live 15.72 Q4 LV@NE); RB Allen(live 9.70 Q4 NYJ vs Cle), Wilson(yet SEA vs SF ~4:25 ET); WR Chase(live 19.70 Q4 CIN@MIA cleared), JSN(yet SEA); TE Mayer(live 1.20 Q4); W/R/T Vele(live 6.60 Q4 NO vs Min), Wicks(FINAL 11.30 PHI@JAX London); K McPherson(live 4.00); DEF Cowboys(TNF FINAL 2.00); BN TeSlaa(yet DET@ARI), Hurts(FINAL 15.00), McMillan(bye), Dobbins(yet DEN@LAC), Gadsden(yet LAC vs Den), Hall(O 0.00), Penix(SNF)",
+  "lineup_vs_1245": "UNCHANGED \u2014 still Cousins QB / Chase WR cleared / Wicks FLEX FINAL / TeSlaa BN \u2014 DO_NOT_REEMIT 0750 flip alone",
   "roster": {
     "QB": "Kirk Cousins",
     "RB": [
@@ -90,7 +55,7 @@
   },
   "bench": [
     "Isaac TeSlaa",
-    "Jalen Hurts (live London 13.24 Q4)",
+    "Jalen Hurts (FINAL London 15.00)",
     "Tetairoa McMillan (bye)",
     "J.K. Dobbins",
     "Oronde Gadsden",
@@ -115,7 +80,7 @@
     "ir_eligible": true,
     "ir_dropdown_enabled": true,
     "select_name": "33991",
-    "probe_observed_at": "2026-10-11T12:54:00-04:00"
+    "probe_observed_at": "2026-10-11T15:53:57-04:00"
   },
   "hall_ir_eligible": true,
   "hall_slot": "BN",
@@ -131,295 +96,76 @@
     "status": "",
     "slot": "WR",
     "owner": "JD",
-    "note": "Yahoo still cleared; Pulse will-play 105101 continuity; still JD WR start CIN@MIA ~1pm ET \u2014 DO_NOT_REEMIT 1150 wake alone"
+    "live_pts": 19.7,
+    "game": "CIN@MIA Q4 2:47 28-18",
+    "note": "Yahoo still cleared; Pulse will-play 105101 continuity; live 19.70 (6/77/1) \u2014 DO_NOT_REEMIT 1150 wake alone"
   },
   "wicks_yahoo": {
     "status": "",
     "slot": "W/R/T",
     "owner": "JD",
-    "live_pts": 7.7,
-    "game": "PHI@JAX London Q4 3:20 14-16",
-    "note": "Pulse ACTIVE 080007 resolved; lineup UNCHANGED FLEX vs 1150/0750 \u2014 confirmatory / prefer quiet alone; dropdown locked mid-game (n_wicks=0)"
+    "live_pts": 11.3,
+    "game": "PHI@JAX London FINAL L 17-19",
+    "note": "FINAL 11.30 (5/63); FLEX continuity vs 1245/0750 \u2014 confirmatory / prefer quiet alone"
   },
   "cousins_yahoo": {
     "status": "",
     "slot": "QB",
-    "owner": "JD"
+    "owner": "JD",
+    "live_pts": 15.72
   },
   "teslaa_yahoo": {
     "status": "",
     "slot": "BN",
     "owner": "JD",
-    "note": "still BN (0750 flip continuity)"
-  },
-  "hurts_yahoo": {
-    "status": "",
-    "slot": "BN",
-    "owner": "JD",
-    "live_pts": 13.24,
-    "game": "PHI@JAX London Q4 3:20 14-16"
-  },
-  "allen_yahoo": {
-    "status": "",
-    "slot": "RB",
-    "owner": "JD",
-    "game": "NYJ vs Cle ~1pm ET"
-  },
-  "wilson_yahoo": {
-    "status": "",
-    "slot": "RB",
-    "owner": "JD",
-    "game": "Sea vs SF ~4:25pm ET"
-  },
-  "mayer_yahoo": {
-    "status": "",
-    "slot": "TE",
-    "owner": "JD",
-    "game": "LV @ NE ~1pm ET"
+    "game": "DET@ARI ~4:25 ET"
   },
   "vele_yahoo": {
     "status": "",
     "slot": "W/R/T",
     "owner": "JD",
-    "game": "NO vs Min ~1pm ET",
-    "soft": "Saints locker-room sickness soft (McFarland) \u2014 Yahoo CLEAR \u2260 wake"
+    "live_pts": 6.6,
+    "soft": "McFarland Saints sickness soft \u2014 Yahoo CLEAR; live 6.60 Q4 \u2014 prefer quiet"
   },
-  "mcpherson_yahoo": {
+  "wilson_yahoo": {
     "status": "",
-    "slot": "K",
+    "slot": "RB",
     "owner": "JD",
-    "game": "CIN @ Mia ~1pm ET"
+    "game": "SEA vs SF ~4:25 ET",
+    "soft": "Charbonnet PUP-R NON-JD \u2014 soft SEA RB boost; Wilson already START \u2014 confirmatory / prefer quiet"
   },
   "jsn_yahoo": {
     "status": "",
     "slot": "WR",
     "owner": "JD",
-    "game": "Sea vs SF ~4:25pm ET"
+    "game": "SEA vs SF ~4:25 ET"
   },
-  "douglas_yahoo": {
-    "yahoo_status": "O",
-    "owner": "FA",
-    "jd_owned": false
-  },
-  "parkinson_yahoo": {
-    "player": "Colby Parkinson",
+  "dobbins_yahoo": {
     "status": "",
-    "owner": "FA",
-    "jd_owned": false,
-    "fa": true,
-    "elevate": false
+    "slot": "BN",
+    "owner": "JD",
+    "game": "DEN@LAC ~4:05 ET"
   },
-  "mhj_yahoo": {
-    "player": "Marvin Harrison Jr.",
-    "status": "O",
-    "owner": "SHOWSTOPPERS",
-    "jd_owned": false,
-    "elevate": false
-  },
-  "pittman_yahoo": {
-    "player": "Michael Pittman Jr.",
-    "status": "IR",
-    "owner": "FOCUS",
-    "jd_owned": false,
-    "elevate": false
-  },
-  "obj_yahoo": {
-    "player": "Odell Beckham Jr.",
-    "status": "NA",
-    "owner": "FA",
-    "jd_owned": false,
-    "fa": true,
-    "elevate": false
-  },
-  "keenan_yahoo": {
-    "player": "Keenan Allen",
+  "gadsden_yahoo": {
     "status": "",
-    "owner": "Brown Rice & Kraft",
-    "jd_owned": false,
-    "pulse": "115107 ACTIVE",
-    "elevate": false
+    "slot": "BN",
+    "owner": "JD",
+    "game": "LAC vs DEN ~4:05 ET",
+    "soft": "Johnston INACTIVE NON-JD \u2014 soft TE target env; no BN\u2192start flip recommended mid-check"
   },
-  "flowers_yahoo": {
-    "player": "Zay Flowers",
-    "status": "Q",
-    "owner": "X-Factor",
-    "jd_owned": false,
-    "elevate": false
+  "opponent_pulse_note": {
+    "montgomery": "CLIN (opp) Yahoo O + Pulse OUT groin \u2014 Q4 nearly FINAL HOU@TEN \u2014 NO JD action",
+    "mcconkey": "CLIN (opp) ACTIVE limited vs DEN late slate \u2014 store only"
   },
-  "lamb_yahoo": {
-    "player": "CeeDee Lamb",
-    "status": "Q",
-    "owner": "FOCUS",
-    "jd_owned": false,
-    "elevate": false,
-    "note": "soft bruise \u2014 NON-JD; TNF FINAL"
-  },
-  "pulse_ownership_checks": {
-    "Breece Hall": {
-      "status": "O",
-      "owner": "JD",
-      "jd_owned": true,
-      "slot": "BN"
-    },
-    "Ja'Marr Chase": {
-      "status": "",
-      "owner": "JD",
-      "jd_owned": true,
-      "slot": "WR",
-      "note": "cleared continuity vs 1150 \u2014 DO_NOT_REEMIT alone"
-    },
-    "Dontayvion Wicks": {
-      "status": "",
-      "owner": "JD",
-      "jd_owned": true,
-      "slot": "W/R/T",
-      "live_pts": 7.7,
-      "game": "PHI@JAX London Q4 3:20 14-16"
-    },
-    "Isaac TeSlaa": {
-      "status": "",
-      "owner": "JD",
-      "jd_owned": true,
-      "slot": "BN"
-    },
-    "Braelon Allen": {
-      "status": "",
-      "owner": "JD",
-      "jd_owned": true,
-      "slot": "RB"
-    },
-    "Emanuel Wilson": {
-      "status": "",
-      "owner": "JD",
-      "jd_owned": true,
-      "slot": "RB"
-    },
-    "Kirk Cousins": {
-      "status": "",
-      "owner": "JD",
-      "jd_owned": true,
-      "slot": "QB"
-    },
-    "Michael Mayer": {
-      "status": "",
-      "owner": "JD",
-      "jd_owned": true,
-      "slot": "TE"
-    },
-    "Devaughn Vele": {
-      "status": "",
-      "owner": "JD",
-      "jd_owned": true,
-      "slot": "W/R/T",
-      "soft": "McFarland Saints sickness soft \u2014 Yahoo mark CLEAR; NO OUT/INACTIVE \u2014 prefer quiet"
-    },
-    "Evan McPherson": {
-      "status": "",
-      "owner": "JD",
-      "jd_owned": true,
-      "slot": "K"
-    },
-    "Jaxon Smith-Njigba": {
-      "status": "",
-      "owner": "JD",
-      "jd_owned": true,
-      "slot": "WR"
-    },
-    "CeeDee Lamb": {
-      "status": "Q",
-      "owner": "FOCUS",
-      "jd_owned": false
-    },
-    "Zay Flowers": {
-      "status": "Q",
-      "owner": "X-Factor",
-      "jd_owned": false
-    },
-    "Keenan Allen": {
-      "status": "",
-      "owner": "Brown Rice & Kraft",
-      "jd_owned": false,
-      "pulse": "115107 ACTIVE"
-    },
-    "Colby Parkinson": {
-      "status": "",
-      "owner": "FA",
-      "jd_owned": false,
-      "fa": true
-    },
-    "Michael Pittman Jr.": {
-      "status": "IR",
-      "owner": "FOCUS",
-      "jd_owned": false
-    },
-    "Odell Beckham Jr.": {
-      "status": "NA",
-      "owner": "FA",
-      "jd_owned": false,
-      "pulse": "115108 INACTIVE"
-    },
-    "Marvin Harrison Jr.": {
-      "status": "O",
-      "owner": "SHOWSTOPPERS",
-      "jd_owned": false
-    },
-    "Ashton Jeanty": {
-      "status": "",
-      "owner": "NON-JD",
-      "jd_owned": false,
-      "pulse": "115101 ACTIVE \u2014 store-only"
-    },
-    "Terry McLaurin": {
-      "status": "",
-      "owner": "NON-JD",
-      "jd_owned": false,
-      "pulse": "115102 ACTIVE \u2014 store-only"
-    },
-    "Justin Jefferson": {
-      "status": "",
-      "owner": "NON-JD",
-      "jd_owned": false,
-      "pulse": "115103 ACTIVE \u2014 store-only"
-    }
-  },
-  "cowboys_def": {
-    "status": "FINAL",
-    "pts": 2.0,
-    "note": "TNF FINAL continuity \u2014 DO_NOT_REEMIT"
-  },
-  "newest_transactions_tip": [
-    {
-      "team": "MC",
-      "added": "Kyle Pitts Sr.",
-      "dropped": "Brian Thomas Jr.",
-      "when_et": "2026-10-11 11:51"
-    },
-    {
-      "team": "JP",
-      "added": "Rashod Bateman",
-      "dropped": "Mack Hollins",
-      "when_et": "2026-10-11 09:25"
-    },
-    {
-      "team": "MM",
-      "added": "Aaron Rodgers",
-      "dropped": "Tyreek Hill",
-      "when_et": "2026-10-11 08:08"
-    }
-  ],
-  "new_txs_since_1150": 0,
-  "delta_vs_1150": {
-    "lineup": "UNCHANGED \u2014 Wicks still FLEX / TeSlaa still BN / Cousins QB \u2014 DO_NOT_REEMIT 0750 flip alone",
-    "hall": "still BN O IR-eligible IR 0/1 \u2014 DO_NOT_REEMIT alone (Fri 1150)",
-    "chase": "CONTINUITY \u2014 still cleared, still WR start CIN@MIA ~1pm \u2014 DO_NOT_REEMIT 1150 will-play wake alone",
-    "wicks_status": "CONTINUITY \u2014 still FLEX ACTIVE London live 7.70 now Q4 3:20 14-16 (was Q3); Hurts BN live 13.24 \u2014 prefer quiet alone",
-    "early_slate_jd_starters": "NO NEW O/Q/D/OUT/INACTIVE on Chase/Allen/Cousins/Mayer/Vele/McPherson (Yahoo marks clear; Chase New Player Note continuity). Soft Saints sickness (McFarland) on Vele \u2014 mark CLEAR \u2260 wake",
+  "newest_tx_tip": "JU The U Tyler Bass / Chris Rodriguez Jr. Oct 11 10:14am PDT = 13:14 ET",
+  "vs_prior_1245": {
+    "lineup": "UNCHANGED",
     "faab_pending_ir": "UNCHANGED $48 / none / 0/1",
-    "scores": "jd_live 9.70\u21929.70; jd_proj 127.57\u2192125.20; opp_live 2.00\u21922.00; opp_proj 112.86\u2192112.85 \u2014 proj drift alone \u2260 wake",
-    "txs": "0 NEW since 1150 \u2014 tip still MC Pitts/BTJ Oct 11 8:51am PDT; MM/JP/MC already ingested",
-    "pulse": "NO_NEW_SCAN_SINCE_1151 \u2014 tip still 105101 Chase will-play; last_scan 1151; cursor notes \u2192 1245"
-  },
-  "alert": false,
-  "wake_parent_warranted": false,
-  "alert_policy_note": "QUIET \u2014 no NEW material JD exception since 1150. Chase/Wicks/Hall/0750 flip continuity DO_NOT_REEMIT alone. Proj drift alone \u2260 wake. Soft Vele Saints sickness \u2260 wake without Yahoo mark/Pulse OUT."
+    "hall": "still BN O IR-eligible \u2014 DO_NOT_REEMIT alone",
+    "chase": "cleared WR live 19.70 \u2014 DO_NOT_REEMIT 1150 alone",
+    "wicks": "FINAL 11.30 FLEX \u2014 confirmatory",
+    "scores": "9.70\u219270.22 live / 2.00\u219289.36 opp \u2014 scoring progress alone \u2260 wake",
+    "txs": "1 NEW NON-JD (JU Bass/Rodriguez)",
+    "pulse": "1251+1351+1451 consumed \u2014 9 HIGH all NON-JD"
+  }
 }
