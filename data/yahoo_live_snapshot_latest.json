@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-10-11T16:00:00-04:00",
-  "pull_completed_at": "2026-10-11T16:03:18-04:00",
+  "observed_at": "2026-10-11T19:47:38-04:00",
+  "pull_completed_at": "2026-10-11T19:51:05-04:00",
   "source": "Playwright CDP read-only Yahoo UI (connect_over_cdp :9225)",
-  "check_id": "sparta-live-check-20261011-1550",
+  "check_id": "sparta-live-check-20261011-1945",
   "completed": true,
   "yahoo_ok": true,
   "mutations": false,
@@ -17,11 +17,11 @@
   "week": 5,
   "opponent": "CLIN-TON POR-TIS",
   "scores": {
-    "jd_live": 78.52,
-    "jd_proj": 116.78,
-    "opp_live": 95.96,
-    "opp_proj": 119.71,
-    "note": "team page headline; matchup page ~80.52/118.93 vs 95.96/119.60 \u2014 scoring progress / proj drift alone \u2260 wake"
+    "jd_live": 117.12,
+    "jd_proj": 117.12,
+    "opp_live": 138.66,
+    "opp_proj": 138.66,
+    "note": "team+matchup headline locked live=proj for finished starters; Penix BN SNF still in progress (\u2013) not in live total \u2014 late-slate FINAL + score lock-in alone \u2260 wake"
   },
   "total_points": 552.98,
   "faab_auth": 48,
@@ -33,8 +33,8 @@
   "pending_waivers": [],
   "pending_status": "none shown (pendingwaivers page not found / empty)",
   "pending_trade": "none shown (proposallist not found / empty)",
-  "critical_lineup": "QB Cousins(live 15.72 Q4 LV@NE); RB Allen(live 18.00 Q4 NYJ vs Cle), Wilson(yet SEA vs SF ~4:25 ET); WR Chase(live 19.70 Q4 CIN@MIA cleared), JSN(yet SEA); TE Mayer(live 1.20 Q4); W/R/T Vele(FINAL 6.60 NO vs Min), Wicks(FINAL 11.30 PHI@JAX London); K McPherson(live 4.00); DEF Cowboys(TNF FINAL 2.00); BN TeSlaa(yet DET@ARI), Hurts(FINAL 15.00), McMillan(bye), Dobbins(yet DEN@LAC), Gadsden(yet LAC vs Den), Hall(O 0.00), Penix(SNF)",
-  "lineup_vs_1545": "UNCHANGED \u2014 still Cousins QB / Chase WR cleared live / Wicks FLEX FINAL / TeSlaa BN \u2014 DO_NOT_REEMIT 0750 flip alone",
+  "critical_lineup": "QB Cousins(FINAL 15.72); RB Allen(FINAL 18.60), Wilson(FINAL 13.20); WR Chase(FINAL 19.70 cleared), JSN(FINAL 22.80); TE Mayer(FINAL 1.20); W/R/T Vele(FINAL 6.60), Wicks(FINAL 11.30); K McPherson(FINAL 6.00); DEF Cowboys(TNF FINAL 2.00); BN TeSlaa(FINAL 0.00), Hurts(FINAL 15.00), McMillan(bye), Dobbins(FINAL 15.40), Gadsden(FINAL 0.00), Hall(O 0.00), Penix(SNF live \u2013)",
+  "lineup_vs_1550": "UNCHANGED \u2014 still Cousins QB / Chase WR / Wicks FLEX / TeSlaa BN \u2014 DO_NOT_REEMIT 0750 flip alone",
   "roster": {
     "QB": "Kirk Cousins",
     "RB": [
@@ -54,13 +54,13 @@
     "DEF": "Cowboys"
   },
   "bench": [
-    "Isaac TeSlaa",
-    "Jalen Hurts (FINAL London 15.00)",
+    "Isaac TeSlaa (FINAL 0.00)",
+    "Jalen Hurts (FINAL 15.00)",
     "Tetairoa McMillan (bye)",
-    "J.K. Dobbins",
-    "Oronde Gadsden",
+    "J.K. Dobbins (FINAL 15.40)",
+    "Oronde Gadsden (FINAL 0.00)",
     "Breece Hall (O)",
-    "Michael Penix Jr."
+    "Michael Penix Jr. (SNF live)"
   ],
   "status_marks": {
     "Ja'Marr Chase": "",
@@ -80,7 +80,7 @@
     "ir_eligible": true,
     "ir_dropdown_enabled": true,
     "select_name": "33991",
-    "probe_observed_at": "2026-10-11T16:03:18-04:00"
+    "probe_observed_at": "2026-10-11T19:51:05-04:00"
   },
   "hall_ir_eligible": true,
   "hall_slot": "BN",
@@ -97,8 +97,8 @@
     "slot": "WR",
     "owner": "JD",
     "live_pts": 19.7,
-    "game": "CIN@MIA Q4 2:19 28-18",
-    "note": "Yahoo still cleared; Pulse will-play 105101 continuity; live 19.70 \u2014 DO_NOT_REEMIT 1150 wake alone"
+    "game": "CIN@MIA FINAL W 31-24",
+    "note": "Yahoo cleared FINAL 19.70; Pulse will-play 105101 continuity \u2014 DO_NOT_REEMIT 1150 wake alone"
   },
   "wicks_yahoo": {
     "status": "",
@@ -112,68 +112,116 @@
     "status": "",
     "slot": "QB",
     "owner": "JD",
-    "live_pts": 15.72
+    "live_pts": 15.72,
+    "game": "FINAL"
   },
-  "teslaa_yahoo": {
+  "jsn_yahoo": {
     "status": "",
-    "slot": "BN",
+    "slot": "WR",
     "owner": "JD",
-    "game": "DET@ARI yet ~4:25 ET"
+    "live_pts": 22.8,
+    "game": "SEA vs SF FINAL L 29-32"
+  },
+  "wilson_yahoo": {
+    "status": "",
+    "slot": "RB",
+    "owner": "JD",
+    "live_pts": 13.2,
+    "game": "SEA vs SF FINAL"
+  },
+  "allen_yahoo": {
+    "status": "",
+    "slot": "RB",
+    "owner": "JD",
+    "live_pts": 18.6,
+    "game": "FINAL"
   },
   "vele_yahoo": {
     "status": "",
     "slot": "W/R/T",
     "owner": "JD",
     "live_pts": 6.6,
-    "game": "NO vs Min FINAL"
-  },
-  "wilson_yahoo": {
-    "status": "",
-    "slot": "RB",
-    "owner": "JD",
-    "game": "SEA vs SF yet ~4:25 ET"
-  },
-  "jsn_yahoo": {
-    "status": "",
-    "slot": "WR",
-    "owner": "JD",
-    "game": "SEA vs SF yet ~4:25 ET"
+    "game": "FINAL"
   },
   "dobbins_yahoo": {
     "status": "",
     "slot": "BN",
     "owner": "JD",
-    "game": "DEN@LAC yet ~4:05 ET"
+    "live_pts": 15.4,
+    "game": "FINAL"
   },
   "gadsden_yahoo": {
     "status": "",
     "slot": "BN",
     "owner": "JD",
-    "game": "LAC vs Den yet ~4:05 ET"
+    "live_pts": 0.0,
+    "game": "FINAL"
   },
-  "henderson_yahoo": {
+  "teslaa_yahoo": {
+    "status": "",
+    "slot": "BN",
+    "owner": "JD",
+    "live_pts": 0.0,
+    "game": "DET@ARI FINAL"
+  },
+  "penix_yahoo": {
+    "status": "",
+    "slot": "BN",
+    "owner": "JD",
+    "live_pts": null,
+    "game": "SNF BAL@ATL in progress \u2014 BN pts alone \u2260 wake"
+  },
+  "mcpherson_yahoo": {
+    "status": "",
+    "slot": "K",
+    "owner": "JD",
+    "live_pts": 6.0
+  },
+  "flowers_yahoo": {
+    "status": "",
+    "owner": "X-Factor",
+    "jd_owned": false,
+    "pulse": "20261011-185101 ACTIVE foot SNF \u2014 NON-JD; no JD material",
+    "note": "Yahoo X-Factor \u2014 expect NON-JD confirmed"
+  },
+  "mhj_yahoo": {
     "status": "O",
     "owner": "SHOWSTOPPERS",
     "jd_owned": false,
-    "pulse": "20261011-155101 OUT ankle \u2014 NON-JD; no JD material",
-    "note": "Yahoo O + SHOWSTOPPERS \u2014 expect NON-JD confirmed"
+    "nfl_team_yahoo": "Hou",
+    "pulse": "20261011-165101 ARI\u2192HOU trade \u2014 NON-JD; no JD material",
+    "note": "Yahoo SHOWSTOPPERS Hou WR \u2014 NON-JD confirmed"
   },
-  "opponent_pulse_note": "CLIN: Montgomery O (Pulse OUT) + McConkey ACTIVE limited \u2014 NON-JD opp; late slate yet",
-  "newest_tx_tip": "The U: Tyler Bass FA / Chris Rodriguez Jr. to waivers \u2014 Oct 11 10:14am (already ingested 1545)",
-  "vs_prior_1545": {
+  "deebo_yahoo": {
+    "status": "O",
+    "owner": "SHOWSTOPPERS",
+    "jd_owned": false,
+    "pulse": "20261011-185102 OUT hamstring remainder \u2014 NON-JD; not FA",
+    "note": "Yahoo SHOWSTOPPERS O \u2014 NEW vs 1550 cache; NON-JD; Mon waiver N/A (owned)"
+  },
+  "henderson_yahoo": {
+    "status": "Q",
+    "owner": "SHOWSTOPPERS",
+    "jd_owned": false,
+    "pulse": "20261011-155101 OUT ankle \u2014 NON-JD; Yahoo mark now Q vs 1550 O \u2014 still NON-JD",
+    "note": "Yahoo SHOWSTOPPERS \u2014 expect NON-JD confirmed"
+  },
+  "newest_tx_tip": "The U: Tyler Bass FA / Chris Rodriguez Jr. to waivers \u2014 Oct 11 10:14am (already ingested)",
+  "vs_prior_1550": {
     "lineup": "UNCHANGED",
     "faab": "UNCHANGED $48",
     "pending": "UNCHANGED none",
     "hall": "UNCHANGED BN O IR-eligible",
-    "chase": "UNCHANGED cleared live WR",
+    "chase": "UNCHANGED cleared FINAL 19.70",
     "wicks": "UNCHANGED FLEX FINAL 11.30",
-    "scores": "70.22\u219278.52 / 89.36\u219295.96 (Allen 9.70\u219218.00; Vele FINAL) \u2014 scoring progress alone \u2260 wake",
-    "proj": "~112\u2192116.78 / ~119\u2192119.71 \u2014 drift alone \u2260 wake",
+    "scores": "78.52\u2192117.12 / 95.96\u2192138.66 (late slate FINAL: Wilson/JSN/Allen/McPherson lock-in) \u2014 scoring/FINAL alone \u2260 wake",
+    "proj": "live=proj locked 117.12 / 138.66 \u2014 drift/lock alone \u2260 wake",
     "txs": "0 NEW (tip still JU Bass)",
-    "henderson": "NEW Pulse OUT \u2014 Yahoo SHOWSTOPPERS NON-JD"
+    "pulse": "NEW 1651 MHJ\u2192HOU NON-JD SHOWSTOPPERS; 1851 Flowers ACTIVE NON-JD X-Factor; 1851 Deebo OUT NON-JD SHOWSTOPPERS",
+    "ownership_new": "Deebo SEARCHED \u2192 SHOWSTOPPERS NON-JD (was not in 1550 cache)"
   },
-  "delta_vs_1545": {
+  "delta_vs_1550": {
     "material_jd_exception": false,
-    "summary": "Scoring/proj progress only; lineup/FAAB/pending/Hall/Chase/Wicks continuity; 0 new txs; Henderson OUT NON-JD"
+    "summary": "Late-slate FINAL + score lock-in only; lineup/FAAB/pending/Hall/Chase/Wicks continuity; 0 new txs; 3 Pulse HIGHs all NON-JD"
   }
 }
