@@ -1,21 +1,21 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-10-11T13:09:45.832Z",
+  "generatedAt": "2026-10-11T13:10:13.969Z",
   "status": "live",
-  "completedAt": "2026-10-11T13:09:45.766Z",
-  "nextAtLabel": "10:09 AM ET",
+  "completedAt": "2026-10-11T13:10:13.920Z",
+  "nextAtLabel": "10:10 AM ET",
   "inWindow": true,
   "itemCount": 18,
   "items": [
     {
-      "id": "etr-summary-injuries-w5",
+      "id": "etr-summary-injuries-1011",
       "at": "2026-10-11T12:50:59Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Weekend FF reports summary: Not expected - McConkey, Caleb Williams, Dowdle, MHJ, Slayton, Palmer. GTD - Jefferson/Addison, Jeanty, McLaurin, DJ Moore. Expected - Flowers, Tate, Stevenson, Kamara, Keenan Allen. Messiest week; no Bengals WR info yet.",
+      "text": "ETR weekend summary: NOT EXPECTED - McConkey, Caleb Williams, Dowdle, MHJ, Slayton, Palmer. GTD - Jefferson/Addison, Jeanty, McLaurin, DJ Moore. EXPECTED - Flowers, Tate, Stevenson, Kamara, Keenan Allen. No Bengals WR word yet; messiest week.",
       "playerIds": [
         "ladd-mcconkey",
         "caleb-williams",
@@ -48,17 +48,11 @@
       ],
       "url": "https://x.com/EstablishTheRun/status/2109265506536698329",
       "kind": "INJURY_STATUS",
-      "eventId": "etr-injury-summary-week5",
-      "signal": "MULTI_STATUS",
-      "priorStatus": "VARIOUS",
-      "newStatus": "UPDATED_SUMMARY",
-      "why": "Aggregated weekend reports.",
-      "implication": "Prioritize monitoring GTDs and Bengals.",
-      "opportunity": "Beneficiaries for outs like Warren for Dowdle, Wilson for MHJ.",
-      "beneficiaries": [
-        "jaylen-warren",
-        "michael-wilson"
-      ],
+      "eventId": "etr-injury-roundup-week5",
+      "signal": "ROUNDUP",
+      "why": "Aggregated weekend reports and projections.",
+      "implication": "Core Sunday monitor list; projections docked for injury risks.",
+      "opportunity": "Beneficiaries already noted per player; Bengals WRs still fluid (Chase/Higgins Q).",
       "corroboration": [
         "@adamlevitan",
         "@AdamSchefter",
@@ -72,13 +66,13 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "jefferson-addison-gtd-w5",
+      "id": "jefferson-addison-gtd-1011",
       "at": "2026-10-11T11:06:54Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Vikings WRs Justin Jefferson (ankle) and Jordan Addison (hamstring) both questionable; will work out pregame. Jefferson determined for homecoming.",
+      "text": "Vikings WRs Justin Jefferson (ankle) and Jordan Addison (hamstring) both Q; will work out pregame. Jefferson determined for Louisiana homecoming.",
       "playerIds": [
         "justin-jefferson",
         "jordan-addison"
@@ -92,27 +86,27 @@
       "eventId": "injury-vikings-wrs-week5",
       "signal": "GTD",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "PREGAME_WORKOUT",
-      "why": "Injuries; status via warmups.",
-      "implication": "High uncertainty; have backups ready.",
-      "opportunity": "If both limited/out, other MIN pass catchers surge.",
+      "newStatus": "GAME_TIME_DECISION",
+      "why": "Pregame workouts to determine status.",
+      "implication": "High-stakes monitor; both in or one out swings MIN WR hierarchy and Kamara matchup.",
+      "opportunity": "If either out, remaining WR + TE volume up.",
       "corroboration": [
-        "@EstablishTheRun",
-        "@AdamSchefter"
+        "@EstablishTheRun"
       ],
       "supportingSources": [
-        "establish-the-run"
+        "establish-the-run",
+        "adam-schefter"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "mcconkey-not-expected-w5",
+      "id": "mcconkey-out-1011",
       "at": "2026-10-11T11:04:34Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Chargers WR Ladd McConkey (foot), no practice this week and questionable, is not expected to play vs Broncos.",
+      "text": "Chargers WR Ladd McConkey (foot), who didn’t practice, is not expected to play vs Broncos.",
       "playerIds": [
         "ladd-mcconkey"
       ],
@@ -126,8 +120,8 @@
       "priorStatus": "QUESTIONABLE",
       "newStatus": "NOT_EXPECTED",
       "why": "Did not practice all week with foot injury.",
-      "implication": "Sit in all formats; targets redistribute.",
-      "opportunity": "Quentin Johnston or other LAC WRs elevated targets/routes.",
+      "implication": "Sit in all formats; opens targets for other LAC WRs behind Herbert's struggling OL (4 rookies starting).",
+      "opportunity": "Increased routes/targets for Quentin Johnston and others.",
       "beneficiaries": [
         "quentin-johnston"
       ],
@@ -135,53 +129,19 @@
         "@EstablishTheRun"
       ],
       "supportingSources": [
-        "establish-the-run"
-      ],
-      "priority": "IMMEDIATE"
-    },
-    {
-      "id": "dowdle-unlikely-w5",
-      "at": "2026-10-11T11:03:36Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Steelers RB Rico Dowdle (toe/foot) unlikely to play vs Colts; final call in warmups but team cautious.",
-      "playerIds": [
-        "rico-dowdle"
-      ],
-      "players": [
-        "Rico Dowdle"
-      ],
-      "url": "https://x.com/AdamSchefter/status/2109238481356788145",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-rico-dowdle-week5",
-      "signal": "OUT",
-      "priorStatus": "QUESTIONABLE",
-      "newStatus": "UNLIKELY",
-      "why": "Toe injury; limited practice; risk of aggravation.",
-      "implication": "Jaylen Warren workhorse RB1 upside again.",
-      "opportunity": "Warren snaps/carries/goal-line fully elevated.",
-      "beneficiaries": [
-        "jaylen-warren"
-      ],
-      "corroboration": [
-        "@EstablishTheRun"
-      ],
-      "supportingSources": [
         "establish-the-run",
-        "matthew-berry"
+        "adam-levitan"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "jeanty-gtd-hopeful-w5",
+      "id": "jeanty-gtd-1011",
       "at": "2026-10-11T11:02:44Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Raiders RB Ashton Jeanty (plantar fasciitis/ankle) hopeful to play but not definite; will work out pregame. LV elevated RB in case.",
+      "text": "Raiders RB Ashton Jeanty (plantar fasciitis/ankle) hopeful to play but GTD; will work out pregame. Team elevated RB in case.",
       "playerIds": [
         "ashton-jeanty"
       ],
@@ -193,26 +153,28 @@
       "eventId": "injury-ashton-jeanty-week5",
       "signal": "GTD",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "HOPEFUL_GTD",
-      "why": "Missed late practice with flare-up.",
-      "implication": "Monitor warmups closely; high variance.",
-      "opportunity": "If out, elevated backup RB volume.",
+      "newStatus": "GAME_TIME_DECISION",
+      "why": "Missed late-week practice; flare-up. Hopeful but not definite.",
+      "implication": "Monitor warmups closely; if out, handcuff elevated RB becomes priority.",
+      "opportunity": "If active, full workload; if out, backup volume spike.",
       "corroboration": [
-        "@EstablishTheRun"
+        "@EstablishTheRun",
+        "@AdamSchefter"
       ],
       "supportingSources": [
-        "establish-the-run"
+        "establish-the-run",
+        "adam-schefter"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "mhj-inactive-trade-w5",
+      "id": "mhj-inactive-trade-1011",
       "at": "2026-10-10T15:02:29Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Cardinals finalizing trade of WR Marvin Harrison Jr.; he will be inactive vs Lions as details finalized. Texans remain team to watch.",
+      "text": "Cardinals finalizing trade of WR Marvin Harrison Jr.; he will be inactive vs DET as details completed. Texans primary team to watch.",
       "playerIds": [
         "marvin-harrison"
       ],
@@ -225,16 +187,15 @@
       "signal": "INACTIVE",
       "priorStatus": "QUESTIONABLE",
       "newStatus": "INACTIVE",
-      "why": "Trade imminent; team informed him morning of inactive.",
-      "implication": "No fantasy production Week 5; long-term value shift post-trade.",
-      "opportunity": "Michael Wilson role expansion in ARI offense.",
+      "why": "Trade being finalized; team informed him inactive this morning.",
+      "implication": "Zero fantasy production; permanent role change post-trade. Michael Wilson and others elevated in ARI WR room short-term.",
+      "opportunity": "Full targets/snaps to remaining ARI WRs (Wilson primary).",
       "beneficiaries": [
         "michael-wilson"
       ],
       "corroboration": [
         "@RapSheet",
-        "@EstablishTheRun",
-        "@adamlevitan"
+        "https://x.com/EstablishTheRun/status/2109265506536698329"
       ],
       "supportingSources": [
         "ian-rapoport",
@@ -245,67 +206,71 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "herbert-ol-rookies-w5",
-      "at": "2026-10-11T12:04:13Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Chargers QB Justin Herbert faces challenges with Slater and Alt out; expected to start four rookies on OL vs Broncos. Six straight games without more TDs than INTs.",
-      "playerIds": [
-        "justin-herbert"
-      ],
-      "players": [
-        "Justin Herbert"
-      ],
-      "url": "https://x.com/AdamSchefter/status/2109253738338660359",
-      "kind": "NFL_FACT",
-      "eventId": "ol-chargers-week5",
-      "signal": "DOWNGRADE",
-      "why": "Rookie OL starting.",
-      "implication": "Herbert and pass catchers capped; pressure risk high.",
-      "opportunity": "DEN defense upside; LAC RBs possibly more involved.",
-      "priority": "HIGH"
-    },
-    {
-      "id": "daniels-return-elbow-risk-w5",
-      "at": "2026-10-11T11:25:03Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Jayden Daniels returning from elbow injury but doctors around NFL believe it's when not if he hurts left elbow again.",
+      "id": "daniels-return-1011",
+      "at": "2026-10-11T12:32:05Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Commanders QB Jayden Daniels making return from elbow injury (brace); active vs Giants.",
       "playerIds": [
         "jayden-daniels"
       ],
       "players": [
         "Jayden Daniels"
       ],
-      "url": "https://x.com/AdamSchefter/status/2109243881984594094",
-      "kind": "NFL_FACT",
-      "eventId": "injury-jayden-daniels-elbow-week5",
-      "signal": "ACTIVE_RISK",
+      "url": "https://x.com/RapSheet/status/2109260750397092124",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-jayden-daniels-week5",
+      "signal": "ACTIVE",
       "priorStatus": "OUT",
       "newStatus": "ACTIVE",
-      "why": "Return confirmed; medical concern on recurrence.",
-      "implication": "Start but monitor; high reinjury risk.",
-      "opportunity": "Full snaps if healthy.",
+      "why": "Return after two games missed; non-throwing elbow, brace on.",
+      "implication": "Start with some risk (doctors note reinjury concern per Schefter); limited weapons (Diggs out, McLaurin Q).",
+      "opportunity": "Dual-threat upside restored.",
+      "conflict": "Schefter: doctors believe when-not-if further elbow injury.",
       "corroboration": [
-        "@RapSheet"
+        "@AdamSchefter"
       ],
       "supportingSources": [
-        "ian-rapoport"
+        "adam-schefter",
+        "matthew-berry"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "flowers-expected-w5",
+      "id": "herbert-ol-rookies-1011",
+      "at": "2026-10-11T12:04:13Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Chargers starting 4 rookies on OL (LT/LG/C/RT) vs DEN with Slater/Alt out; Herbert 6 straight games without more TDs than INTs.",
+      "playerIds": [
+        "justin-herbert",
+        "ladd-mcconkey"
+      ],
+      "players": [
+        "Justin Herbert",
+        "Ladd McConkey"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2109253738338660359",
+      "kind": "NFL_FACT",
+      "eventId": "chargers-ol-week5",
+      "signal": "DOWNGRADE",
+      "why": "Veteran tackles out; 4 rookies starting.",
+      "implication": "Major pressure risk for Herbert and remaining pass catchers (McConkey already out).",
+      "opportunity": "Negative for all LAC skill; possible short/checkdown increase.",
+      "priority": "HIGH"
+    },
+    {
+      "id": "flowers-expected-1011",
       "at": "2026-10-11T11:05:56Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Ravens WR Zay Flowers (foot), listed questionable, is expected to play vs Falcons SNF.",
+      "text": "Ravens WR Zay Flowers (foot, Q) is expected to play vs Falcons SNF.",
       "playerIds": [
         "zay-flowers"
       ],
@@ -315,12 +280,12 @@
       "url": "https://x.com/AdamSchefter/status/2109239069079146540",
       "kind": "INJURY_STATUS",
       "eventId": "injury-zay-flowers-week5",
-      "signal": "EXPECTED",
+      "signal": "EXPECTED_TO_PLAY",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "EXPECTED_TO_PLAY",
-      "why": "Limited practice but expected.",
-      "implication": "Startable WR2 even with Huntley at QB; volume remains.",
-      "opportunity": "Full routes/targets expected.",
+      "newStatus": "EXPECTED",
+      "why": "Sources confirm expected despite foot injury listing.",
+      "implication": "Start with confidence; primary WR with Lamar out (Huntley starting).",
+      "opportunity": "Full snap/route share expected.",
       "corroboration": [
         "@RapSheet",
         "@EstablishTheRun"
@@ -332,7 +297,7 @@
       "priority": "HIGH"
     },
     {
-      "id": "kamara-expected-w5",
+      "id": "kamara-expected-1011",
       "at": "2026-10-11T11:04:05Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
@@ -348,12 +313,12 @@
       "url": "https://x.com/RapSheet/status/2109238603364577484",
       "kind": "INJURY_STATUS",
       "eventId": "injury-alvin-kamara-week5",
-      "signal": "EXPECTED",
+      "signal": "EXPECTED_TO_PLAY",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "EXPECTED_TO_PLAY",
+      "newStatus": "EXPECTED",
       "why": "Source confirmation.",
-      "implication": "Full workload likely; strong start.",
-      "opportunity": "Carries/targets/red-zone secured.",
+      "implication": "Start as usual; no major dock.",
+      "opportunity": "Standard workload.",
       "corroboration": [
         "@EstablishTheRun"
       ],
@@ -363,13 +328,13 @@
       "priority": "HIGH"
     },
     {
-      "id": "stevenson-expected-w5",
+      "id": "stevenson-expected-1011",
       "at": "2026-10-11T11:03:48Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Patriots RB Rhamondre Stevenson (knee) expected to play vs Raiders.",
+      "text": "Patriots RB Rhamondre Stevenson (knee) expected to play.",
       "playerIds": [
         "rhamondre-stevenson"
       ],
@@ -379,12 +344,12 @@
       "url": "https://x.com/RapSheet/status/2109238530803167599",
       "kind": "INJURY_STATUS",
       "eventId": "injury-rhamondre-stevenson-week5",
-      "signal": "EXPECTED",
+      "signal": "EXPECTED_TO_PLAY",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "EXPECTED_TO_PLAY",
+      "newStatus": "EXPECTED",
       "why": "Source says expected.",
-      "implication": "Lead back role intact.",
-      "opportunity": "Snaps/carries primary.",
+      "implication": "Lock in as RB1; TreVeyon Henderson handcuff only.",
+      "opportunity": "Full role.",
       "corroboration": [
         "@EstablishTheRun"
       ],
@@ -394,30 +359,30 @@
       "priority": "HIGH"
     },
     {
-      "id": "levitan-mhj-wilson-w5",
-      "at": "2026-10-10T15:31:25Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
-      "outlet": "Establish The Run",
-      "text": "MHJ had only 5 catches in 4 games and wasn't a real factor in any Michael Wilson stuff. Post-inactive/trade: Kia Kendrick Bourne szn / Wilson season. Mazda Marv joke continues.",
+      "id": "dowdle-unlikely-1011",
+      "at": "2026-10-11T11:03:36Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Steelers RB Rico Dowdle (toe, Q) unlikely to play vs Colts; final determination in warmups.",
       "playerIds": [
-        "marvin-harrison",
-        "michael-wilson"
+        "rico-dowdle"
       ],
       "players": [
-        "Marvin Harrison Jr.",
-        "Michael Wilson"
+        "Rico Dowdle"
       ],
-      "url": "https://x.com/adamlevitan/status/2108943492168999278",
-      "kind": "ANALYST_OPINION",
-      "eventId": "usage-mhj-wilson-week5",
-      "signal": "UPGRADE",
-      "why": "Low production/impact data; trade opens door.",
-      "implication": "Wilson clear WR1 in ARI; target share surge.",
-      "opportunity": "Wilson routes/targets/red-zone fully unlocked.",
+      "url": "https://x.com/AdamSchefter/status/2109238481356788145",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-rico-dowdle-week5",
+      "signal": "UNLIKELY",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "UNLIKELY",
+      "why": "Toe injury.",
+      "implication": "Jaylen Warren elevated to lead back role.",
+      "opportunity": "Full carries/snaps for Warren if Dowdle inactive.",
       "beneficiaries": [
-        "michael-wilson"
+        "jaylen-warren"
       ],
       "corroboration": [
         "@EstablishTheRun"
@@ -429,13 +394,47 @@
       "priority": "HIGH"
     },
     {
-      "id": "berry-love-wilson-w5",
+      "id": "levitan-mhj-wilson-1010",
+      "at": "2026-10-10T15:31:25Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "MHJ had only 5 catches in 4 games and was never a real factor in Michael Wilson usage. Post-inactive/trade it is now Kia Kendrick Bourne / Wilson season.",
+      "playerIds": [
+        "marvin-harrison",
+        "michael-wilson"
+      ],
+      "players": [
+        "Marvin Harrison Jr.",
+        "Michael Wilson"
+      ],
+      "url": "https://x.com/adamlevitan/status/2108943492168999278",
+      "kind": "ANALYST_OPINION",
+      "eventId": "role-ari-wrs-post-mhj",
+      "signal": "UPGRADE",
+      "why": "Low prior production from MHJ; Wilson already earning independent role.",
+      "implication": "Wilson clear WR1 in ARI short-term and potentially longer; Bourne also rises.",
+      "opportunity": "Wilson snap/route/target share expands further without MHJ.",
+      "beneficiaries": [
+        "michael-wilson"
+      ],
+      "corroboration": [
+        "@MatthewBerryTMR"
+      ],
+      "supportingSources": [
+        "matthew-berry"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "berry-love-wilson-1011",
       "at": "2026-10-08T18:01:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Loves Michael Wilson vs DET as WR10; volume including red-zone with MHJ out/trade.",
+      "text": "Loves Michael Wilson as WR10 vs DET, amplified by MHJ inactive/trade.",
       "playerIds": [
         "michael-wilson"
       ],
@@ -446,9 +445,9 @@
       "kind": "ANALYST_OPINION",
       "eventId": "berry-love-wilson-week5",
       "signal": "LOVE",
-      "why": "Elevated role post-MHJ inactive.",
-      "implication": "WR2/flex with upside.",
-      "opportunity": "Primary target share.",
+      "why": "Volume already strong; MHJ absence cements alpha role vs DET secondary.",
+      "implication": "Must-start WR; cruel for MHJ owners but Wilson boom.",
+      "opportunity": "Expanded routes/targets/RZ.",
       "corroboration": [
         "@adamlevitan"
       ],
@@ -458,13 +457,36 @@
       "priority": "HIGH"
     },
     {
-      "id": "berry-love-nico-w5",
+      "id": "berry-love-chasebrown-1011",
+      "at": "2026-10-10T00:24:39Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Loves Chase Brown as RB5 @ MIA: gobbles targets, strong usage/matchup (Brown Gobbler).",
+      "playerIds": [
+        "chase-brown"
+      ],
+      "players": [
+        "Chase Brown"
+      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2108715296764903714",
+      "kind": "ANALYST_OPINION",
+      "eventId": "berry-love-chasebrown-week5",
+      "signal": "LOVE",
+      "why": "Target/fantasy point hog; MIA matchup favorable; Bengals WR injuries could funnel more.",
+      "implication": "Elite RB start this week.",
+      "opportunity": "High snap/target/carry share.",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-love-nico-1011",
       "at": "2026-10-08T18:01:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Loves Nico Collins @ TEN as WR8; volume/red-zone hog vs soft Titans secondary.",
+      "text": "Loves Nico Collins as WR8 vs TEN: volume/red-zone hog in great matchup.",
       "playerIds": [
         "nico-collins"
       ],
@@ -475,42 +497,42 @@
       "kind": "ANALYST_OPINION",
       "eventId": "berry-love-nico-week5",
       "signal": "LOVE",
-      "why": "Target hog and matchup gift.",
-      "implication": "Strong WR1/2 play.",
-      "opportunity": "High target/route share expected.",
+      "why": "Target volume including RZ; TEN struggles vs WRs.",
+      "implication": "Strong start; top WR play.",
+      "opportunity": "High target share expected.",
       "priority": "NORMAL"
     },
     {
-      "id": "berry-love-chasebrown-w5",
+      "id": "berry-hate-addison-1011",
       "at": "2026-10-08T18:01:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Loves Chase Brown @ MIA as RB5; gobbles targets/fantasy points, usage/matchup strong especially if CIN WRs limited.",
+      "text": "Hates Jordan Addison (WR41) @ NO: tough matchup, thin role, injury wrinkle.",
       "playerIds": [
-        "chase-brown"
+        "jordan-addison"
       ],
       "players": [
-        "Chase Brown"
+        "Jordan Addison"
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-5-fantasy-football-as",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-chasebrown-week5",
-      "signal": "LOVE",
-      "why": "Workload and soft run D; Bengals injury boost.",
-      "implication": "RB1/2 lock.",
-      "opportunity": "Carries + targets elevated.",
+      "eventId": "berry-hate-addison-week5",
+      "signal": "HATE",
+      "why": "Usage numbers + matchup + hamstring Q.",
+      "implication": "Fade even if active; prefer other options.",
+      "conflict": "GTD status could make him zero.",
       "priority": "NORMAL"
     },
     {
-      "id": "berry-hate-skattebo-w5",
+      "id": "berry-hate-skattebo-1011",
       "at": "2026-10-08T18:01:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Hates Cam Skattebo @ WSH as RB20; efficiency and game environment concerns.",
+      "text": "Hates Cam Skattebo (RB20) @ WSH: efficiency and game environment concerns. Rapoport notes expect LOT of volume though.",
       "playerIds": [
         "cam-skattebo"
       ],
@@ -521,19 +543,26 @@
       "kind": "ANALYST_OPINION",
       "eventId": "berry-hate-skattebo-week5",
       "signal": "HATE",
-      "why": "Poor efficiency/spot.",
-      "implication": "Fade or sit if better options.",
-      "conflict": "Rapoport notes expect LOT of Skattebo volume.",
+      "why": "Poor efficiency/game script risk.",
+      "implication": "Fade despite volume reports.",
+      "opportunity": "Rap Sheet: expect heavy Skattebo volume vs WAS.",
+      "conflict": "Volume expectation from Rapoport conflicts with Berry efficiency fade.",
+      "corroboration": [
+        "@RapSheet"
+      ],
+      "supportingSources": [
+        "ian-rapoport"
+      ],
       "priority": "NORMAL"
     },
     {
-      "id": "berry-hate-hurts-w5",
+      "id": "berry-hate-hurts-1011",
       "at": "2026-10-08T18:01:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Hates Jalen Hurts vs JAX (London) as QB15; rough stretch and banged-up line.",
+      "text": "Hates Jalen Hurts (QB15) vs JAX London: rough stretch, banged-up line/weapons (Barkley/Smith out).",
       "playerIds": [
         "jalen-hurts"
       ],
@@ -544,33 +573,12 @@
       "kind": "ANALYST_OPINION",
       "eventId": "berry-hate-hurts-week5",
       "signal": "HATE",
-      "why": "Recent form and OL issues.",
-      "implication": "QB2 territory or sit.",
-      "priority": "NORMAL"
-    },
-    {
-      "id": "berry-love-likely-watson-w5",
-      "at": "2026-10-08T18:01:00Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Loves Isaiah Likely TE5 and Christian Watson WR15; specific coverage/positional weaknesses and usage.",
-      "playerIds": [
-        "isaiah-likely",
-        "christian-watson"
+      "why": "Recent form + OL/WR injuries (Barkley, Smith, Brown out; Goedert active).",
+      "implication": "Downgrade/sit if better options; Goedert becomes top target.",
+      "opportunity": "Goedert target spike (possible 10+).",
+      "beneficiaries": [
+        "dallas-goedert"
       ],
-      "players": [
-        "Isaiah Likely",
-        "Christian Watson"
-      ],
-      "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-5-fantasy-football-as",
-      "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-likely-watson-week5",
-      "signal": "LOVE",
-      "why": "Matchup gifts and volume.",
-      "implication": "TE1/WR3 upside plays.",
-      "opportunity": "Routes/targets vs weak coverage.",
       "priority": "NORMAL"
     }
   ],
@@ -580,36 +588,36 @@
       "sourceId": "establish-the-run",
       "source": "Establish The Run",
       "grade": "USEFUL",
-      "note": "Critical Sunday AM injury summary post aggregating not expected/GTD/expected; aligns Schefter/Rap; live schedule/Wake Rake; limited free beyond that but high-signal status.",
-      "at": "2026-10-11T12:50:59Z"
+      "note": "Sunday AM injury summary post critical (NOT EXPECTED/GTD/EXPECTED lists); projections live; limited public beyond schedule/DFS. Aligns Schefter/Rap perfectly on statuses. Messiest week call + Bengals silence noted.",
+      "at": "2026-10-11T13:07:00Z"
     },
     {
       "sourceId": "adam-levitan",
       "source": "Adam Levitan",
       "grade": "USEFUL",
-      "note": "Player-specific MHJ low impact data + Wilson/Bourne szn post-trade/inactive; messiest injury week note + projections link; no full rankings dump.",
+      "note": "Player-specific on MHJ non-factor (5/4) and Wilson/Bourne elevation post-trade/inactive. Quotes ETR summary; notes messiest injury week + Bengals WR void + docks on playing-through. No full rankings dump.",
       "at": "2026-10-11T13:07:12Z"
     },
     {
       "sourceId": "matthew-berry",
       "source": "Matthew Berry",
       "grade": "USEFUL",
-      "note": "Week 5 Love/Hate fully parseable per-player (Nico/Wilson/Watson/Likely/Chase Brown loves; Addison/Andrews/Skattebo/Pollard/Hurts hates); MHJ cruel inactive; Lamar-Huntley downgrade; pregame content.",
-      "at": "2026-10-08T18:01:00Z"
+      "note": "Week 5 Love/Hate fully split: loves Nico WR8, Wilson WR10 (MHJ boost), Watson WR15, Likely TE5, Chase Brown RB5 (usage); hates Addison, Andrews, Skattebo, Pollard, Hurts. Lamar-Huntley downgrade; MHJ inactive cruel. Pregame/Roku content; so",
+      "at": "2026-10-11T03:15:00Z"
     },
     {
       "sourceId": "adam-schefter",
       "source": "Adam Schefter",
       "grade": "USEFUL",
-      "note": "Primary factual Sunday AM: Flowers expected, McConkey not, Dowdle unlikely, MHJ inactive/trade (HOU watch), Herbert 4-rookie OL, Daniels elbow risk recurrence. Excellent designations.",
-      "at": "2026-10-11T12:04:13Z"
+      "note": "Primary factual Sunday AM: Flowers expected, McConkey not, Dowdle unlikely, MHJ inactive/trade (HOU watch), Herbert 4-rookie OL, Daniels elbow risk (doctors when-not-if). Excellent early designations and consequential facts.",
+      "at": "2026-10-11T13:06:00Z"
     },
     {
       "sourceId": "ian-rapoport",
       "source": "Ian Rapoport",
       "grade": "USEFUL",
-      "note": "Tight corroboration/beat: Jeanty GTD hopeful+elevate, Jefferson/Addison pregame, Kamara/Stevenson expected, Skattebo volume expected, MHJ Texans watch, Lamar next-week chance, Daniels return. Strong pulse.",
-      "at": "2026-10-11T12:32:05Z"
+      "note": "Tight corroboration/beat: Jeanty GTD hopeful + elevate, Jefferson/Addison pregame, Kamara/Stevenson expected, Skattebo volume, MHJ Texans watch, Lamar next-week chance, Daniels return, Broncos playcaller. Strong Sunday morning pulse + GameD",
+      "at": "2026-10-11T12:32:00Z"
     },
     {
       "sourceId": "adam-schefter",
@@ -745,8 +753,8 @@
       "at": "2026-10-10T23:14:48Z"
     }
   ],
-  "mirroredAt": "2026-10-11T13:09:46.310Z",
+  "mirroredAt": "2026-10-11T13:10:14.423Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-10-11T13:09:45.766Z",
+  "sourceCompletedAt": "2026-10-11T13:10:13.920Z",
   "sourceStatus": "live"
 }
