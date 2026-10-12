@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-10-12T08:05:00-04:00",
-  "pull_completed_at": "2026-10-12T08:05:00-04:00",
-  "source": "Yahoo UI read-only via desktop browser (computerUse subagent)",
-  "check_id": "sparta-live-check-20261012-0750",
+  "observed_at": "2026-10-12T12:19:14-04:00",
+  "pull_completed_at": "2026-10-12T12:23:07-04:00",
+  "source": "Playwright CDP read-only Yahoo UI (connect_over_cdp :9225)",
+  "check_id": "sparta-live-check-20261012-1150",
   "completed": true,
   "yahoo_ok": true,
   "mutations": false,
@@ -18,10 +18,10 @@
   "opponent": "CLIN-TON POR-TIS",
   "scores": {
     "jd_live": 117.12,
+    "jd_proj": 117.12,
     "opp_live": 138.66,
-    "jd_proj_orig": 135.75,
-    "opp_proj_orig": 120.92,
-    "note": "Week 5 FINAL \u2014 0 players remaining both sides; MNF BUF@LAR not applicable. Yahoo record still shows 1-3-0 pending week rollover."
+    "opp_proj": 138.66,
+    "note": "Week 5 FINAL L 117.12\u2013138.66 UNCHANGED vs 0750; Yahoo still Week 5 / 1-3-0 10th pending rollover; league matchups page still shows Week 5 In progress due to other MNF-linked boards; JD side 0 players remaining."
   },
   "total_points": 552.98,
   "faab_auth": 48,
@@ -31,9 +31,10 @@
   "ir_total": 1,
   "roster_count": 17,
   "pending_waivers": [],
-  "pending_status": "none shown",
-  "pending_trade": "none shown",
-  "critical_lineup": "QB Cousins(FINAL 15.72); RB Allen(FINAL 18.60), Wilson(FINAL 13.20); WR Chase(FINAL 19.70 cleared), JSN(FINAL 22.80); TE Mayer(FINAL 1.20); W/R/T Vele(FINAL 6.60), Wicks(FINAL 11.30); K McPherson(FINAL 6.00); DEF Cowboys(TNF FINAL 2.00); BN TeSlaa(FINAL 0.00), Hurts(FINAL 15.00), McMillan(bye), Dobbins(FINAL 15.40), Gadsden(FINAL 0.00), Hall(O 0.00), Penix(SNF live \u2013)",
+  "pending_status": "none shown (pendingwaivers page not found / empty)",
+  "pending_trade": "none shown (proposallist not found / empty)",
+  "critical_lineup": "QB Cousins(FINAL 15.72); RB Allen(FINAL 18.60), Wilson(FINAL 13.20); WR Chase(FINAL 19.70 cleared), JSN(FINAL 22.80); TE Mayer(FINAL 1.20); W/R/T Vele(FINAL 6.60), Wicks(FINAL 11.30); K McPherson(FINAL 6.00); DEF Cowboys(TNF FINAL 2.00); BN TeSlaa(FINAL 0.00), Hurts(FINAL 15.00), McMillan(bye), Dobbins(FINAL 15.40), Gadsden(FINAL 0.00), Hall(O 0.00), Penix(Q FINAL 16.40)",
+  "lineup_vs_0750": "UNCHANGED \u2014 Cousins QB / Allen+Wilson RB / Chase+JSN WR / Mayer TE / Vele+Wicks FLEX / McPherson K / Cowboys DEF; BN TeSlaa/Hurts/McMillan/Dobbins/Gadsden/Hall/Penix",
   "roster": {
     "QB": "Kirk Cousins",
     "RB": [
@@ -59,7 +60,7 @@
     "J.K. Dobbins (FINAL 15.40)",
     "Oronde Gadsden (FINAL 0.00)",
     "Breece Hall (O)",
-    "Michael Penix Jr. (SNF live)"
+    "Michael Penix Jr. (Q FINAL 16.40)"
   ],
   "status_marks": {
     "Ja'Marr Chase": "",
@@ -80,7 +81,7 @@
     "ir_eligible": true,
     "ir_dropdown_enabled": true,
     "select_name": "33991",
-    "probe_observed_at": "2026-10-11T20:03:39-04:00"
+    "probe_observed_at": "2026-10-12T12:23:07-04:00"
   },
   "hall_ir_eligible": true,
   "hall_slot": "BN",
@@ -168,7 +169,7 @@
     "status": "Q",
     "slot": "BN",
     "week5_pts": 16.4,
-    "note": "NEW Q tag vs 1950 (ribs; Pulse 20261012-071901 imaging Monday). BN only; Cousins is JD QB \u2014 not a wake alone."
+    "note": "Q continuous vs 0750 (ribs; Pulse 20261012-071901). MRI/imaging RESULT still PENDING across Pulse 0838\u20131138. BN only; Cousins is JD QB \u2014 DO_NOT_REEMIT alone / not a wake."
   },
   "mcpherson_yahoo": {
     "status": "",
@@ -192,19 +193,49 @@
     "note": "Yahoo SHOWSTOPPERS Hou WR \u2014 NON-JD confirmed"
   },
   "deebo_yahoo": {
-    "status": "O",
+    "status": "Q",
     "owner": "SHOWSTOPPERS",
     "jd_owned": false,
-    "pulse": "DUP 185102 OUT hamstring \u2014 NON-JD; not FA",
-    "note": "Yahoo SHOWSTOPPERS O \u2014 NON-JD; not FA"
+    "pulse": "DUP 185102 OUT hamstring \u2014 NON-JD; not FA; Yahoo mark now Q (was O at 0750) soft continuity only \u2260 wake",
+    "note": "Yahoo SHOWSTOPPERS Q \u2014 NON-JD; not FA; mark O\u2192Q alone \u2260 wake"
   },
   "henderson_yahoo": {
     "status": "Q",
     "owner": "SHOWSTOPPERS",
     "jd_owned": false,
-    "pulse": "OUT ankle prior \u2014 NON-JD SHOWSTOPPERS",
+    "pulse": "OUT ankle prior / tests today soft \u2014 NON-JD SHOWSTOPPERS",
     "note": "Yahoo SHOWSTOPPERS \u2014 NON-JD confirmed"
   },
+  "montgomery_yahoo": {
+    "status": "Q",
+    "owner": "CLIN-TON POR-TIS",
+    "jd_owned": false,
+    "note": "NON-JD (Week 5 opp); soft groin watch only"
+  },
+  "hockenson_yahoo": {
+    "status": "Q",
+    "owner": "Dynamic Duo of Ladd & Stribs",
+    "jd_owned": false,
+    "note": "NON-JD; soft concussion watch only"
+  },
+  "waller_yahoo": {
+    "status": "",
+    "owner": "FA",
+    "jd_owned": false,
+    "note": "FA continuity"
+  },
+  "parkinson_yahoo": {
+    "status": "",
+    "owner": "FA",
+    "jd_owned": false,
+    "note": "FA; MNF LAR vs Buf Mon 5:15pm PDT displayed"
+  },
+  "lamb_yahoo": {
+    "status": "Q",
+    "owner": "FOCUS",
+    "jd_owned": false,
+    "note": "NON-JD FOCUS"
+  },
   "newest_tx_tip": "Oct 11 10:14am The U +Tyler Bass / -Chris Rodriguez Jr. (unchanged)",
-  "delta_vs_1950": "Penix BN Yahoo Q NEW (ribs, BN only); Week 5 FINAL loss 117.12\u2013138.66 confirmed; lineup/FAAB $48/pending none/IR 0-1/Hall BN O UNCHANGED; 0 new txs"
+  "delta_vs_0750": "Lineup/FAAB $48/pending none/IR 0-1/Hall BN O IR-eligible/Penix BN Q/scores 117.12\u2013138.66/Week 5 record 1-3-0 10th UNCHANGED; 0 new txs; Deebo Yahoo mark O\u2192Q NON-JD SHOWSTOPPERS soft only \u2260 wake; Pulse 0838\u20131138 QUIET 0 accepted (Penix MRI result still PENDING)"
 }
