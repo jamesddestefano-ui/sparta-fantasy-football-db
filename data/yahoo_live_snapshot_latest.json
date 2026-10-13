@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-10-13T08:00:19-04:00",
-  "pull_completed_at": "2026-10-13T08:02:20-04:00",
+  "observed_at": "2026-10-13T12:14:28-04:00",
+  "pull_completed_at": "2026-10-13T12:17:28-04:00",
   "source": "Playwright CDP read-only Yahoo UI (connect_over_cdp :9225)",
-  "check_id": "sparta-live-check-20261013-0750",
+  "check_id": "sparta-live-check-20261013-1150",
   "completed": true,
   "yahoo_ok": true,
   "mutations": false,
@@ -15,23 +15,23 @@
   "record": "1-4-0",
   "standing": "12th",
   "week": 6,
-  "week_note": "Week 6 live vs The U (11th) proj 90.37\u2013114.73; standings rolled after W5 FINAL L (1-3-0 10th \u2192 1-4-0 12th). Chase WR + McPherson K both BYE still in start slots \u2014 lineup hole.",
+  "week_note": "Week 6 vs The U (11th) proj 104.68\u2013135.45 (drift vs 0750 90.37\u2013114.73). WR bye hole FIXED since 0750 (McMillan\u2192WR, Chase\u2192BN). K bye hole STILL OPEN (McPherson BYE still started).",
   "opponent": "The U",
   "week6": {
     "opponent": "The U",
     "opp_standing": "11th",
-    "jd_proj": 90.37,
-    "opp_proj": 114.73,
+    "jd_proj": 104.68,
+    "opp_proj": 135.45,
     "status": "Not started yet",
     "jd_live": 0.0,
     "opp_live": 0.0
   },
   "scores": {
     "jd_live": 0.0,
-    "jd_proj": 90.37,
+    "jd_proj": 104.68,
     "opp_live": 0.0,
-    "opp_proj": 114.73,
-    "note": "Week 6 not started; prior Week 5 FINAL L 117.12\u2013138.66; total points now 670.10 (7th)"
+    "opp_proj": 135.45,
+    "note": "Week 6 not started; proj drift after McMillan into WR; K still empty on bye"
   },
   "total_points": 670.1,
   "faab_auth": 48,
@@ -43,8 +43,8 @@
   "pending_waivers": [],
   "pending_status": "none shown (pendingwaivers page not found / empty)",
   "pending_trade": "none shown (proposallist not found / empty)",
-  "critical_lineup": "QB Cousins; RB Allen, Wilson(TNF); WR Chase(BYE HOLE), JSN(Q TNF); TE Mayer; W/R/T Vele, Wicks; K McPherson(BYE HOLE); DEF Cowboys; BN TeSlaa(BYE), Hurts, McMillan, Dobbins(TNF), Gadsden, Hall(O), Penix(Q)",
-  "lineup_vs_1950": "Week rolled 5\u21926; same slot occupants. NEW: Chase BYE + McPherson BYE still started (empty WR+K projections). JSN still Q; Hall still BN O; Penix still BN Q.",
+  "critical_lineup": "QB Cousins; RB Allen, Wilson(TNF); WR JSN(Q TNF), McMillan; TE Mayer; W/R/T Vele, Wicks; K McPherson(BYE HOLE); DEF Cowboys; BN Chase(BYE), TeSlaa(BYE), Hurts, Dobbins(TNF), Gadsden, Hall(O), Penix(Q)",
+  "lineup_vs_0750": "MATERIAL: Chase moved WR\u2192BN; McMillan moved BN\u2192WR (WR bye hole FIXED per morning recommend). UNCHANGED: McPherson still K BYE hole; JSN WR Q; Hall BN O; Penix BN Q; FAAB/IR/pending; 0 new txs.",
   "roster": {
     "QB": "Kirk Cousins",
     "RB": [
@@ -52,8 +52,8 @@
       "Emanuel Wilson"
     ],
     "WR": [
-      "Ja'Marr Chase",
-      "Jaxon Smith-Njigba"
+      "Jaxon Smith-Njigba",
+      "Tetairoa McMillan"
     ],
     "TE": "Michael Mayer",
     "W/R/T": [
@@ -64,9 +64,9 @@
     "DEF": "Cowboys"
   },
   "bench": [
+    "Ja'Marr Chase (BYE)",
     "Isaac TeSlaa (BYE)",
     "Jalen Hurts",
-    "Tetairoa McMillan",
     "J.K. Dobbins (TNF)",
     "Oronde Gadsden",
     "Breece Hall (O)",
@@ -81,9 +81,10 @@
     "Isaac TeSlaa": "BYE"
   },
   "bye_holes": {
-    "WR": "Ja'Marr Chase (CIN bye W6) still started \u2014 recommend move McMillan (or other) into WR/FLEX; recommend-only",
-    "K": "Evan McPherson (CIN bye W6) still started \u2014 stream K needed; recommend-only",
+    "WR": "FIXED since 0750 \u2014 McMillan started at WR; Chase on BN",
+    "K": "Evan McPherson (CIN bye W6) still started \u2014 stream K needed; recommend-only (continuity of morning rec but hole remains after partial fix)",
     "alert": true,
+    "alert_reason": "partial_fix_wr_plus_remaining_k_hole",
     "execute": false
   },
   "hall_yahoo": {
@@ -91,29 +92,37 @@
     "slot": "BN",
     "ir_eligible": true,
     "ir_slot_used": "0/1",
-    "recommendation": "MOVE_TO_IR (already woken Fri 1150 \u2014 DO_NOT_REEMIT alone)",
+    "recommendation": "MOVE_TO_IR (Fri 1150 wake \u2014 DO_NOT_REEMIT alone)",
     "execute": false
   },
   "jsn_yahoo": {
     "status": "Q",
     "slot": "WR",
     "game": "Thu 5:15 pm @ Den (TNF)",
-    "note": "Continuity vs Mon 1950 wake \u2014 DO_NOT_REEMIT unless DNP/D/O or cleared/full",
-    "proj": 21.4
+    "note": "Q continuity + Pulse 113103 LIMITED Mon estimate \u2014 DO_NOT_REEMIT unless DNP/D/O or cleared/full",
+    "proj": 20.71
   },
   "penix_yahoo": {
     "status": "Q",
     "slot": "BN",
     "note": "UNCHANGED BN Q \u2014 DO_NOT_REEMIT"
   },
-  "new_transactions_ingested": [
-    "2026-10-12 JU +Chiefs DEF / -Seth McGowan",
-    "2026-10-12 SR +Harrison Butker / -Dohnte Meyers",
-    "2026-10-12 VV +Tyler Higbee / -Quentin Johnston"
-  ],
+  "new_transactions_ingested": [],
+  "txs_tip_unchanged": "FOCUS +Higbee/-Q.Johnston Oct 12 3:57 pm (same as 0750)",
   "pulse": {
-    "cursor_scan_id": "2026-10-13-0715",
+    "cursor_scan_id_from": "2026-10-13-0715",
+    "cursor_scan_id_to": "2026-10-13-1131",
+    "scans": [
+      "2026-10-13-0827",
+      "2026-10-13-0940",
+      "2026-10-13-1040",
+      "2026-10-13-1131"
+    ],
     "jd_material": 0,
-    "alert_worthy_pulse": false
-  }
+    "alert_worthy_pulse": false,
+    "notes": "JSN LIMITED Mon ankle (113103) continuity DO_NOT_REEMIT; Henderson multiweek (104001) NON-JD; Etienne/Harris/Kincaid/GB USAGE NON-JD; McFarland/FPD no new JD-actionable tables"
+  },
+  "alert": true,
+  "wake_parent_warranted": true,
+  "wake_reason": "MATERIAL lineup change vs 0750: WR bye hole FIXED (McMillan\u2192WR, Chase\u2192BN). Remaining: K bye hole (McPherson still started) \u2014 recommend-only stream K. No Yahoo mutations."
 }
