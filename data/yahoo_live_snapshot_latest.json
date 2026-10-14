@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-10-14T12:00:23-04:00",
-  "pull_completed_at": "2026-10-14T12:00:23-04:00",
+  "observed_at": "2026-10-14T15:53:58-04:00",
+  "pull_completed_at": "2026-10-14T15:53:58-04:00",
   "source": "read-only computerUse browser Yahoo UI (team page, transactions, matchup)",
-  "check_id": "sparta-live-check-20261014-1150",
+  "check_id": "sparta-live-check-20261014-1550",
   "completed": true,
   "yahoo_ok": true,
   "mutations": false,
@@ -15,23 +15,23 @@
   "record": "1-4-0",
   "standing": "12th",
   "week": 6,
-  "week_note": "Week 6 vs The U proj 122.98-141.24 (Orig Proj). JD FA moves 08:03-08:14 ET by manager; McLaughlin W/R/T, Wicks BN; pending $1 Washington/-Estime Oct 16.",
+  "week_note": "Week 6 vs The U proj 124.02-141.20. Roster/lineup unchanged vs 1150; Hall BN Q->D; pending $1 Washington/-Estime Oct 16.",
   "opponent": "The U",
   "week6": {
     "opponent": "The U",
     "opp_standing": "11th",
-    "jd_proj": 122.98,
-    "opp_proj": 141.24,
+    "jd_proj": 124.02,
+    "opp_proj": 141.2,
     "status": "Not started yet",
     "jd_live": 0.0,
     "opp_live": 0.0
   },
   "scores": {
     "jd_live": 0.0,
-    "jd_proj": 122.98,
+    "jd_proj": 124.02,
     "opp_live": 0.0,
-    "opp_proj": 141.24,
-    "note": "Orig Proj; The U 64% favorite"
+    "opp_proj": 141.2,
+    "note": "Orig Proj"
   },
   "total_points": 670.1,
   "points_against": 770.62,
@@ -58,7 +58,7 @@
   ],
   "pending_status": "1 pending: Waiver Oct 16 $1 Mike Washington Jr. / drop Audric Estime",
   "pending_trade": "none visible",
-  "critical_lineup": "QB Cousins; RB Allen, Wilson; WR JSN(Q), Vele; TE Waller; W/R/T McMillan, McLaughlin; K Grupe; DEF Ravens; BN Wicks, Hurts, Dobbins, Chase(BYE), Hall(Q), Strong, Estime",
+  "critical_lineup": "QB Cousins; RB Allen, Wilson; WR JSN(Q), Vele; TE Waller; W/R/T McMillan, McLaughlin; K Grupe; DEF Ravens; BN Wicks, Hurts, Dobbins, Chase(BYE), Hall(D), Strong, Estime",
   "lineup_vs_1950": null,
   "roster": {
     "QB": "Kirk Cousins",
@@ -83,13 +83,13 @@
     "Jalen Hurts",
     "J.K. Dobbins",
     "Ja'Marr Chase (BYE)",
-    "Breece Hall (Q)",
+    "Breece Hall (D)",
     "Pierre Strong Jr.",
     "Audric Estime"
   ],
   "status_marks": {
     "Jaxon Smith-Njigba": "Q",
-    "Breece Hall": "Q",
+    "Breece Hall": "D",
     "Ja'Marr Chase": "BYE"
   },
   "bye_holes": {
@@ -99,71 +99,70 @@
     "execute": false
   },
   "hall_yahoo": {
-    "status": "Q",
+    "status": "D",
     "slot": "BN",
-    "note": "UNCHANGED BN Q \u2014 DO_NOT_REEMIT"
+    "note": "Q->D on BN (Pulse soft: Wed DNP, week-to-week per Fowler). D not IR-eligible; already benched; no action."
   },
   "jsn_yahoo": {
     "status": "Q",
     "slot": "WR",
     "note": "UNCHANGED WR Q \u2014 DO_NOT_REEMIT"
   },
-  "new_transactions_ingested": [
-    "102586|JD|ADD_DROP|Jaleel McLaughlin|Isaac TeSlaa|2026-10-14",
-    "102586|JD|ADD_DROP|Pierre Strong Jr.|Michael Penix Jr.|2026-10-14",
-    "102586|JD|ADD_DROP|Audric Estime|Michael Mayer|2026-10-14"
-  ],
-  "txs_ingested_count": 3,
+  "new_transactions_ingested": [],
+  "txs_ingested_count": 0,
   "txs_held_count": 0,
-  "txs_tip_new": "JD +Estime/-Mayer 08:14 ET",
+  "txs_tip_new": "none newer than JD +Estime/-Mayer 08:14 ET",
   "faab_discrepancy": null,
-  "comparison_to_1950": {
-    "material": [
-      "JD waiver wins: Grupe K $2 (-McPherson), Ravens DEF $3 (-Cowboys), Waller TE $4 (-Gadsden)",
-      "K bye hole RESOLVED",
-      "FAAB $48\u2192$42 commissioner adjustment RESOLVED then -$9 \u2192 $33",
-      "lineup: TE Waller / Mayer BN; WR Vele; W/R/T McMillan+Wicks; DEF Ravens; K Grupe",
-      "13 new league txs ingested (3 JD)"
-    ],
-    "unchanged": [
-      "record 1-4-0 12th",
-      "IR 0/1",
-      "pending none",
-      "JSN WR Q",
-      "Hall BN Q",
-      "Penix BN Q",
-      "Chase/TeSlaa BYE on BN"
-    ],
-    "non_material": [
-      "proj drift 111.97\u2192124.37 vs 138.46\u2192141.31"
-    ]
-  },
   "pulse": {
     "consumed": [
-      "2026-10-14-0824",
-      "2026-10-14-0915",
-      "2026-10-14-1015",
-      "2026-10-14-1115"
+      "2026-10-14-1215",
+      "2026-10-14-1315",
+      "2026-10-14-1415",
+      "2026-10-14-1515"
     ],
-    "accepted": 0,
+    "accepted_upstream": 12,
     "jd_material": 0,
-    "soft": [
-      "JSN no Wed SEA designation yet (TNF)",
-      "Lamar realistic chance W6 @CLE (soft; Ravens DEF opp context only)",
-      "Rams K Mevis->Grupe DUP",
-      "McFarland/FPD no W6 USAGE_DATA"
-    ]
+    "jd_relevant_soft": [
+      "20261014-131503 Judkins (CLE) Wed DNP; McLaughlin+Estime top active CLE RBs at practice (Oyefusi) https://x.com/DanielOyefusi/status/2110417103660503120 \u2014 supports McLaughlin W/R/T start; bears on pending Estime drop",
+      "20261014-151503 Jeanty (LV) 'He's playing' (Kubiak) \u2014 narrows Washington contingency value",
+      "20261014-121503 Sampson CLE IR-return window, little participation",
+      "20261014-141501 Lamar Wed not practicing \u2014 Ravens DEF context only (own offense)",
+      "Hall Wed DNP week-to-week (soft) \u2014 matches Yahoo D",
+      "JSN SEA TNF designation still UNSPECIFIED"
+    ],
+    "mcf_fpd": "no W6 USAGE_DATA accepted (FPD third-party RTs / McFarland opinion REJECT)"
   },
   "alert": false,
   "wake_parent_warranted": false,
-  "wake_reason": "JD roster changes are manager's own Yahoo moves; no new injury/bye hole; Pulse 0 JD-material",
+  "wake_reason": "No new JD txs/FAAB/pending/lineup change; Hall Q->D already benched; Pulse 0 JD-material; Washington claim reassess trigger not fully met",
   "DO_NOT_REEMIT": [
     "JSN WR Q (TNF) unless DNP/D/O",
-    "Hall BN Q"
+    "Hall BN Q/D"
   ],
   "commit": null,
   "commit_live_check": null,
-  "lineup_vs_0750": "CHANGED by manager: -TeSlaa/-Penix/-Mayer, +McLaughlin(W/R/T)/+Strong/+Estime; Wicks to BN; no bye holes; no backup TE",
-  "comparison_to_0750": "JD manager FA moves only; no NON-JD txs after Colts DEF 06:51 ET; FAAB $33 unchanged; proj 124.37->122.98",
-  "prev_commit": "a298ef7"
+  "prev_commit": "6c45f50",
+  "comparison_to_1150": {
+    "material": [],
+    "soft": [
+      "Hall BN Q->D (benched, not IR-eligible)"
+    ],
+    "non_material": [
+      "proj 122.98->124.02 vs 141.24->141.20"
+    ],
+    "unchanged": [
+      "FAAB $33",
+      "IR 0/1",
+      "1-4-0 12th",
+      "all slots",
+      "pending $1 Washington/-Estime Oct 16",
+      "no pending trades",
+      "0 new txs"
+    ]
+  },
+  "claim_reassess_watch": {
+    "decision_id": "SPARTA-2026W6-WASHINGTON-PENDING-CLAIM-HOLD-20261014-1301",
+    "status": "PARTIAL_TRIGGER_WATCH",
+    "note": "Brain reassess condition = Washington opportunity substantially closes AND Estime confirmed lead usage. Jeanty 'He's playing' partial; Estime lead usage NOT confirmed (Wed practice obs only; Judkins day-to-day; Sampson window). Wake on Thu Judkins DNP/OUT or official Estime lead role before Oct 16 processing."
+  }
 }
