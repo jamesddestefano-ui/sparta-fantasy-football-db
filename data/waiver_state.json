@@ -1,7 +1,7 @@
 {
   "league": "sparta",
-  "source": "Authenticated Yahoo CDP read-only UI pull sparta-live-check-20261013-0750; priority_order restored from data/teams.json (was empty \u2014 validate fix); pending still cleared",
-  "observed_at": "2026-10-13T08:00:19-04:00",
+  "source": "Authenticated Yahoo read-only computerUse browser UI pull sparta-live-check-20261014-0750; JD waiver priority now 10 after W6 wins; pending none; full priority ladder not re-pulled \u2014 JD priority from team page only",
+  "observed_at": "2026-10-14T07:55:00-04:00",
   "priority_order": [
     {
       "priority": 1,
@@ -65,7 +65,7 @@
     }
   ],
   "pending_claims_jd": [],
-  "pending_cleared_et": "2026-10-07",
+  "pending_cleared_et": "2026-10-14",
   "pending_process_results_jd": {
     "processed_at_et": "2026-10-07 04:45",
     "wins": [
@@ -100,7 +100,7 @@
       "note": "Tue 1950 showed 3 listed (header said 4): $4 Penix/Douglas, $2 Mayer/Gadsden, $2 Cousins/Douglas. Processed: Penix WON at $7 (not $4); Mayer not awarded; Cousins failed. No pending claims/trades remain."
     }
   },
-  "note": "PENDING CLEARED Oct 7 ~04:45 ET. JD won Penix $7 / drop Douglas (repo had $4 \u2014 Yahoo $7 authoritative). Mayer not awarded (Gadsden kept); Cousins failed (Douglas gone). FAAB $48. Shipley \u2192 King Kong $27. No pending claims/trades remain.",
+  "note": "PENDING CLEARED after W6 process Oct 14 ~04:46 ET. JD won Grupe $2 / Ravens $3 / Waller $4. FAAB path $48\u2192$42 (commish)\u2192$33. Yahoo waiver priority JD=10. No pending claims/trades remain.",
   "brain_item_resolutions": [
     {
       "decision_id": "SPARTA-2026W5-SHIPLEY-DEADLINE-ESCALATION-20261007-0156",
@@ -110,5 +110,30 @@
       "winning_bid": 27,
       "winner": "SR"
     }
-  ]
+  ],
+  "jd_waiver_priority_yahoo": 10,
+  "week6_waiver_resolution_jd": {
+    "processed_at_et": "2026-10-14 04:46",
+    "wins": [
+      {
+        "bid": 2,
+        "added": "Blake Grupe",
+        "dropped": "Evan McPherson"
+      },
+      {
+        "bid": 3,
+        "added": "Ravens D/ST",
+        "dropped": "Cowboys D/ST"
+      },
+      {
+        "bid": 4,
+        "added": "Darren Waller",
+        "dropped": "Oronde Gadsden"
+      }
+    ],
+    "losses": [],
+    "faab_spent": 9,
+    "faab_after": 33,
+    "note": "K bye hole RESOLVED via Grupe; Waller re-acquired (previously dropped Gadsden kept until this win)."
+  }
 }
