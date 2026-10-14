@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-10-14T07:55:00-04:00",
-  "pull_completed_at": "2026-10-14T07:56:00-04:00",
-  "source": "read-only computerUse browser Yahoo UI (team page, league standings, transactions, commish log)",
-  "check_id": "sparta-live-check-20261014-0750",
+  "observed_at": "2026-10-14T12:00:23-04:00",
+  "pull_completed_at": "2026-10-14T12:00:23-04:00",
+  "source": "read-only computerUse browser Yahoo UI (team page, transactions, matchup)",
+  "check_id": "sparta-live-check-20261014-1150",
   "completed": true,
   "yahoo_ok": true,
   "mutations": false,
@@ -15,40 +15,51 @@
   "record": "1-4-0",
   "standing": "12th",
   "week": 6,
-  "week_note": "Week 6 vs The U (11th) proj 124.37\u2013141.31. K bye RESOLVED (Grupe). TE Waller started / Mayer BN. DEF Ravens. FAAB $33 after commish -$6 + waiver -$9.",
+  "week_note": "Week 6 vs The U proj 122.98-141.24 (Orig Proj). JD FA moves 08:03-08:14 ET by manager; McLaughlin W/R/T, Wicks BN; pending $1 Washington/-Estime Oct 16.",
   "opponent": "The U",
   "week6": {
     "opponent": "The U",
     "opp_standing": "11th",
-    "jd_proj": 124.37,
-    "opp_proj": 141.31,
+    "jd_proj": 122.98,
+    "opp_proj": 141.24,
     "status": "Not started yet",
     "jd_live": 0.0,
     "opp_live": 0.0
   },
   "scores": {
     "jd_live": 0.0,
-    "jd_proj": 124.37,
+    "jd_proj": 122.98,
     "opp_live": 0.0,
-    "opp_proj": 141.31,
-    "note": "proj after W6 waiver roster refresh"
+    "opp_proj": 141.24,
+    "note": "Orig Proj; The U 64% favorite"
   },
   "total_points": 670.1,
   "points_against": 770.62,
   "streak": "L-2",
   "faab_auth": 33,
   "faab_yahoo_displayed": 33,
-  "waiver_priority": 10,
+  "waiver_priority": null,
   "moves": 28,
   "ir": "0/1",
   "ir_used": 0,
   "ir_total": 1,
   "roster_count": 17,
-  "pending_waivers": [],
-  "pending_status": "none visible",
+  "pending_waivers": [
+    {
+      "order": 1,
+      "process_date": "2026-10-16",
+      "bid": 1,
+      "added": "Mike Washington Jr.",
+      "added_team": "LV RB",
+      "dropped": "Audric Estime",
+      "observed_at": "2026-10-14T12:00:23-04:00",
+      "check_id": "sparta-live-check-20261014-1150"
+    }
+  ],
+  "pending_status": "1 pending: Waiver Oct 16 $1 Mike Washington Jr. / drop Audric Estime",
   "pending_trade": "none visible",
-  "critical_lineup": "QB Cousins; RB Allen, Wilson; WR JSN(Q), Vele; TE Waller; W/R/T McMillan, Wicks; K Grupe; DEF Ravens; BN Hurts, Mayer, Dobbins, Chase(BYE), TeSlaa(BYE), Hall(Q), Penix(Q)",
-  "lineup_vs_1950": "MATERIAL: waiver wins Grupe/Ravens/Waller; K hole RESOLVED; TE Waller/Mayer BN; WR Vele; W/R/T McMillan+Wicks; DEF Ravens; FAAB $33; McPherson/Gadsden/Cowboys dropped.",
+  "critical_lineup": "QB Cousins; RB Allen, Wilson; WR JSN(Q), Vele; TE Waller; W/R/T McMillan, McLaughlin; K Grupe; DEF Ravens; BN Wicks, Hurts, Dobbins, Chase(BYE), Hall(Q), Strong, Estime",
+  "lineup_vs_1950": null,
   "roster": {
     "QB": "Kirk Cousins",
     "RB": [
@@ -62,38 +73,30 @@
     "TE": "Darren Waller",
     "W/R/T": [
       "Tetairoa McMillan",
-      "Dontayvion Wicks"
+      "Jaleel McLaughlin"
     ],
     "K": "Blake Grupe",
     "DEF": "Ravens"
   },
   "bench": [
+    "Dontayvion Wicks",
     "Jalen Hurts",
-    "Michael Mayer",
     "J.K. Dobbins",
     "Ja'Marr Chase (BYE)",
-    "Isaac TeSlaa (BYE)",
     "Breece Hall (Q)",
-    "Michael Penix Jr. (Q)"
+    "Pierre Strong Jr.",
+    "Audric Estime"
   ],
   "status_marks": {
     "Jaxon Smith-Njigba": "Q",
     "Breece Hall": "Q",
-    "Michael Penix Jr.": "Q",
-    "Ja'Marr Chase": "BYE",
-    "Isaac TeSlaa": "BYE"
+    "Ja'Marr Chase": "BYE"
   },
   "bye_holes": {
-    "WR": "FIXED (unchanged) \u2014 McMillan at W/R/T; Chase on BN",
-    "K": "RESOLVED \u2014 Blake Grupe started; McPherson dropped via $2 waiver",
+    "WR": "none (Chase BN)",
+    "K": "none (Grupe)",
     "alert": false,
-    "alert_reason": "k_hole_resolved_by_grupe_waiver; material = JD W6 waiver wins + FAAB path resolved",
     "execute": false
-  },
-  "penix_yahoo": {
-    "status": "Q",
-    "slot": "BN",
-    "note": "UNCHANGED BN Q \u2014 DO_NOT_REEMIT"
   },
   "hall_yahoo": {
     "status": "Q",
@@ -105,83 +108,15 @@
     "slot": "WR",
     "note": "UNCHANGED WR Q \u2014 DO_NOT_REEMIT"
   },
-  "mcpherson_yahoo": {
-    "status": "dropped",
-    "slot": null,
-    "note": "Dropped via $2 Grupe waiver; K hole closed"
-  },
-  "stream_k_yahoo_notes": {
-    "purpose": "K hole RESOLVED \u2014 Grupe acquired; remaining FA Ks are soft context only",
-    "candidates": [
-      {
-        "player": "Harrison Mevis",
-        "team": "LAR",
-        "yahoo": "W (Oct 16)",
-        "note": "dropped by MattyBAD; now FA"
-      },
-      {
-        "player": "Trey Smack",
-        "team": "GB",
-        "yahoo": "FA"
-      },
-      {
-        "player": "Cairo Santos",
-        "team": "CHI",
-        "yahoo": "FA"
-      },
-      {
-        "player": "Matt Gay",
-        "team": "LV",
-        "yahoo": "FA"
-      },
-      {
-        "player": "Andy Borregales",
-        "team": "NE",
-        "yahoo": "FA"
-      },
-      {
-        "player": "Nick Folk",
-        "team": "ATL",
-        "yahoo": "FA"
-      },
-      {
-        "player": "Daniel Carlson",
-        "team": "NO",
-        "yahoo": "FA"
-      },
-      {
-        "player": "Dominic Zvada",
-        "team": "NYG",
-        "yahoo": "FA"
-      }
-    ]
-  },
   "new_transactions_ingested": [
-    "TM +Colts D/ST/-Browns D/ST FA",
-    "SR +Cam Ward/-Will Shipley $1",
-    "MN +Eddy Pineiro/-Harrison Mevis $1",
-    "MN +Chig Okonkwo/-Mike Gesicki $1",
-    "JD +Blake Grupe/-Evan McPherson $2",
-    "JD +Ravens D/ST/-Cowboys D/ST $3",
-    "BE +Kenny Gainwell/-Roman Wilson $3",
-    "JD +Darren Waller/-Oronde Gadsden $4",
-    "MN +Ryan Flournoy/-Tre' Harris $5",
-    "ANT +Kimani Vidal/-Mike Washington Jr. $5",
-    "JP +Jameis Winston/-Adonai Mitchell $5",
-    "ME +Dameon Pierce/-Rashid Shaheed $13",
-    "TM +Germie Bernard/-Antonio Williams $20"
+    "102586|JD|ADD_DROP|Jaleel McLaughlin|Isaac TeSlaa|2026-10-14",
+    "102586|JD|ADD_DROP|Pierre Strong Jr.|Michael Penix Jr.|2026-10-14",
+    "102586|JD|ADD_DROP|Audric Estime|Michael Mayer|2026-10-14"
   ],
-  "txs_ingested_count": 13,
+  "txs_ingested_count": 3,
   "txs_held_count": 0,
-  "txs_tip_new": "Dynamic Duo +Colts DEF FA Oct 14 3:51am PDT",
-  "faab_discrepancy": {
-    "status": "RESOLVED",
-    "prior_1950_status": "INGESTION HELD \u2014 MANUAL REVIEW REQUIRED",
-    "resolution": "Yahoo commissioner log: 'TB12 acquisition budget changed from $48 to $42' (~Tue Oct 13 ~6pm ET / ~14h before this read). Then JD W6 waivers -$9 \u2192 display $33. Repo faab.json updated to 33; commissioner -$6 recorded in faab.commissioner_budget_adjustment.",
-    "yahoo_team_page": "$33",
-    "yahoo_standings_col": "$33",
-    "repo_faab_json": "$33"
-  },
+  "txs_tip_new": "JD +Estime/-Mayer 08:14 ET",
+  "faab_discrepancy": null,
   "comparison_to_1950": {
     "material": [
       "JD waiver wins: Grupe K $2 (-McPherson), Ravens DEF $3 (-Cowboys), Waller TE $4 (-Gadsden)",
@@ -204,30 +139,31 @@
     ]
   },
   "pulse": {
-    "cursor_scan_id_from": "2026-10-13-1924",
-    "cursor_scan_id_to": "2026-10-14-0715",
-    "scans": [
-      "2026-10-13-2023",
-      "2026-10-13-2120",
-      "2026-10-13-2223",
-      "2026-10-13-2315",
-      "2026-10-14-0715"
+    "consumed": [
+      "2026-10-14-0824",
+      "2026-10-14-0915",
+      "2026-10-14-1015",
+      "2026-10-14-1115"
     ],
+    "accepted": 0,
     "jd_material": 0,
-    "accepted_non_jd": [
-      "LOW 20261013-212001 Tyreek Hill FA civil verdict / NFL conduct review \u2014 SPARTA POSSIBLE context only"
-    ],
-    "notes": "0 JD-material; McFarland 0 items; FPD promo/RTs only (no JD metrics). Tyreek LOW accepted as POSSIBLE context."
+    "soft": [
+      "JSN no Wed SEA designation yet (TNF)",
+      "Lamar realistic chance W6 @CLE (soft; Ravens DEF opp context only)",
+      "Rams K Mevis->Grupe DUP",
+      "McFarland/FPD no W6 USAGE_DATA"
+    ]
   },
-  "alert": true,
-  "wake_parent_warranted": true,
-  "wake_reason": "JD W6 waiver wins (Grupe/Ravens/Waller); K bye hole RESOLVED; FAAB path $48\u2192$42 (commish)\u2192$33 cleared 1950 HELD; 13 txs ingested.",
+  "alert": false,
+  "wake_parent_warranted": false,
+  "wake_reason": "JD roster changes are manager's own Yahoo moves; no new injury/bye hole; Pulse 0 JD-material",
   "DO_NOT_REEMIT": [
-    "JSN WR Q",
-    "Hall BN Q",
-    "Penix BN Q",
-    "proj drift alone"
+    "JSN WR Q (TNF) unless DNP/D/O",
+    "Hall BN Q"
   ],
-  "commit": "a298ef7",
-  "commit_live_check": "a298ef7"
+  "commit": null,
+  "commit_live_check": null,
+  "lineup_vs_0750": "CHANGED by manager: -TeSlaa/-Penix/-Mayer, +McLaughlin(W/R/T)/+Strong/+Estime; Wicks to BN; no bye holes; no backup TE",
+  "comparison_to_0750": "JD manager FA moves only; no NON-JD txs after Colts DEF 06:51 ET; FAAB $33 unchanged; proj 124.37->122.98",
+  "prev_commit": "a298ef7"
 }
