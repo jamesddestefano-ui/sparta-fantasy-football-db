@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-10-15T15:55:00-04:00",
-  "pull_completed_at": "2026-10-15T15:53:00-04:00",
-  "source": "read-only computerUse Yahoo UI (team, transactions, 3 player searches)",
-  "check_id": "sparta-live-check-20261015-1550",
+  "observed_at": "2026-10-15T19:56:00-04:00",
+  "pull_completed_at": "2026-10-15T19:56:00-04:00",
+  "source": "read-only computerUse Yahoo UI (team page, transactions, 4 player searches)",
+  "check_id": "sparta-live-check-20261015-1950",
   "completed": true,
   "yahoo_ok": true,
   "mutations": false,
@@ -20,17 +20,17 @@
   "week6": {
     "opponent": "The U",
     "opp_standing": "11th",
-    "jd_proj": 129.79,
-    "opp_proj": 141.55,
-    "status": "Not started (TNF SEA@DEN 8:15 PM ET: Wilson, JSN, Dobbins)",
+    "jd_proj": 129.04,
+    "opp_proj": 140.75,
+    "status": "Not started at read (TNF SEA@DEN 8:15 PM ET: Wilson, JSN starting; Dobbins BN)",
     "jd_live": 0.0,
     "opp_live": 0.0
   },
   "scores": {
     "jd_live": 0.0,
-    "jd_proj": 129.79,
+    "jd_proj": 129.04,
     "opp_live": 0.0,
-    "opp_proj": 141.55,
+    "opp_proj": 140.75,
     "note": "Proj"
   },
   "total_points": 670.1,
@@ -44,21 +44,10 @@
   "ir_used": 0,
   "ir_total": 1,
   "roster_count": 17,
-  "pending_waivers": [
-    {
-      "order": 1,
-      "process_date": "2026-10-16",
-      "bid": 1,
-      "added": "Mike Washington Jr.",
-      "added_team": "LV RB",
-      "dropped": "Audric Estime",
-      "observed_at": "2026-10-14T12:00:23-04:00",
-      "check_id": "sparta-live-check-20261014-1150"
-    }
-  ],
-  "pending_status": "1 pending: Waiver 1 (Oct 16) $1 Mike Washington Jr. / drop Audric Estime (no processing time shown)",
+  "pending_waivers": [],
+  "pending_status": "none visible on team page; pendingtransactions URL returned not found. $1 Washington/-Estime Oct 16 claim presumed voided \u2014 drop player no longer rostered; not directly confirmed",
   "pending_trade": "none",
-  "critical_lineup": "QB Cousins; RB Allen, Wilson; WR JSN, Vele; TE Waller(Q); W/R/T McMillan, Dobbins; K Grupe; DEF Ravens; BN McLaughlin, Wicks(Q), Hurts(O), Chase(BYE), Hall(D), Estime, Sampson(IR-R)",
+  "critical_lineup": "QB Cousins; RB Allen, Wilson; WR JSN, McMillan; TE Waller(Q); W/R/T Vele, Cowing; K Grupe; DEF Ravens; BN Sampson(IR-R), Wicks(Q), Dobbins, McLaughlin, Hurts(O), Chase(BYE), Hall(D)",
   "lineup_vs_1950": null,
   "roster": {
     "QB": "Kirk Cousins",
@@ -79,13 +68,13 @@
     "DEF": "Ravens"
   },
   "bench": [
-    "Jaleel McLaughlin",
+    "Dylan Sampson (IR-R)",
     "Dontayvion Wicks (Q)",
+    "J.K. Dobbins",
+    "Jaleel McLaughlin",
     "Jalen Hurts (O)",
     "Ja'Marr Chase (BYE)",
-    "Breece Hall (D)",
-    "Audric Estime",
-    "Dylan Sampson (IR-R)"
+    "Breece Hall (D)"
   ],
   "status_marks": {
     "Darren Waller": "Q",
@@ -102,31 +91,30 @@
     "execute": false
   },
   "new_transactions_ingested": [
-    "102586|TM|ADD_DROP|Trey Smack|T.J. Hockenson|2026-10-15"
+    "102586|JD|ADD_DROP|Jacob Cowing|Audric Estime|2026-10-15"
   ],
   "txs_ingested_count": 1,
   "txs_held_count": 0,
-  "txs_tip_new": "TM +Trey Smack/-T.J. Hockenson Oct 15 14:22 ET",
+  "txs_tip_new": "JD +Jacob Cowing/-Audric Estime Oct 15 19:02 ET (only tx newer than TM Smack/Hockenson)",
   "faab_discrepancy": null,
   "pulse": {
     "consumed": [
-      "2026-10-15-1215",
-      "2026-10-15-1315",
-      "2026-10-15-1415",
-      "2026-10-15-1515"
+      "2026-10-15-1615",
+      "2026-10-15-1715",
+      "2026-10-15-1815",
+      "2026-10-15-1915"
     ],
-    "pulse_count": "563 -> 572",
+    "pulse_count": "572 -> 582",
     "jd_relevant": [
-      "131501 HIGH Hurts OUT W6 (JD BN; Cousins starts; parent already logged)",
-      "131504 LOW Judkins back-to-back DNP (claim trigger)",
-      "131505 LOW Sampson back at practice Thu (JD IR-R)",
-      "141502/151 DeVonta Smith not spotted Thu; Berman projected Wicks starting WR (speculation, soft for JD BN Wicks)"
+      "181504 LOW Wicks (hamstring) Wed LP -> Thu DNP (JD BN Q; no lineup impact)",
+      "181503 LOW DeVonta Smith upgraded to Thu limited (reduces Wicks path)",
+      "TNF official inactives: Wilson/JSN/Dobbins active; Charbonnet OUT (SEA backfield context)"
     ],
-    "mcf_fpd": "McFarland/FPD 0 new posts 11:00-15:50 ET; no W6 USAGE_DATA"
+    "mcf_fpd": "McFarland: Sampson 'borderline RB2' reply (opinion only); FPD RTs only, no JD USAGE_DATA"
   },
-  "alert": true,
-  "wake_parent_warranted": true,
-  "wake_reason": "CLAIM REASSESS TRIGGER: Judkins Thu 2nd straight DNP (preset wake condition before Oct 16 waiver processing). Context: Sampson (JD IR-R) back at practice Thu; Waller Thu LIMITED (not a trigger); Hurts Yahoo O (already handled by parent decision 6902f84).",
+  "alert": false,
+  "wake_parent_warranted": false,
+  "wake_reason": null,
   "DO_NOT_REEMIT": [
     "Hall BN D",
     "JSN cleared",
@@ -136,31 +124,72 @@
     "FAAB $33/IR 0/1/proj drift",
     "NON-JD txs ingested incl TM Smack/Hockenson",
     "Waller Thu LIMITED",
-    "Judkins Thu DNP claim trigger (woken 1550)"
+    "Judkins Thu DNP claim trigger (woken 1550)",
+    "JD +Cowing/-Estime own move",
+    "Washington claim voided by JD move",
+    "Dobbins benched TNF (JD choice)",
+    "Wicks Thu DNP BN"
   ],
   "commit": "ff76fe8",
   "commit_live_check": "ff76fe8",
-  "prev_commit": "6902f84",
+  "prev_commit": "4a28786",
   "claim_reassess_watch": {
     "decision_id": "SPARTA-2026W6-WASHINGTON-PENDING-CLAIM-HOLD-20261014-1301",
-    "status": "TRIGGERED",
-    "note": "Judkins Thu DNP x2; Sampson returned to practice; Estime role not confirmed as lead. Billy decides keep/cancel before Oct 16 processing."
+    "status": "RESOLVED/SUPERSEDED",
+    "note": "JD's own 19:02 ET move dropped Estime (the claim's drop player); claim presumed voided, not directly confirmed. Source Yahoo read 19:56 ET."
   },
   "waller_yahoo": {
     "status": "Q",
     "slot": "TE",
     "proj": 7.53,
-    "note": "Thu LIMITED (Joe Person 3:32 PM ET) \u2014 same as Wed estimate; not a DNP/D/O trigger. Fri report/designation next. Hockenson now on waivers (not FA) as possible TE backup."
+    "note": "Thu LIMITED (already known). Fri designation next; trigger Fri DNP / D / O. Hockenson MIN TE on waivers (Oct 17), Q, bye."
   },
   "claim_target_availability": {
-    "mike_washington_jr": "W (Oct 16), 34% ros",
-    "audric_estime": "JD BN",
-    "quinshon_judkins": "Yahoo Q, CLIN-TON POR-TIS; Thu 2nd straight DNP (Oyefusi 1:04 PM ET, PFT)",
-    "t_j_hockenson": "Dropped to waivers by TM 14:22 ET (Min TE, Q) \u2014 not FA"
+    "mike_washington_jr": "LV RB, W (Oct 16)",
+    "audric_estime": "Dropped by JD to waivers 19:02 ET",
+    "quinshon_judkins": "CLE RB, CLIN-TON POR-TIS, Yahoo Q",
+    "t_j_hockenson": "MIN TE, W (Oct 17), Q, bye",
+    "darren_waller": "CAR TE, JD, Q",
+    "dylan_sampson": "CLE RB, JD, IR-R"
   },
   "sampson_yahoo": {
     "status": "IR-R",
     "slot": "BN",
     "note": "Unchanged; IR 0/1 open (soft optimization only; DO_NOT_REEMIT)."
-  }
+  },
+  "delta_vs_1550": {
+    "transactions": [
+      "JD +Jacob Cowing (SF WR, FA, no FAAB) / -Audric Estime (CLE RB, to waivers) Oct 15 19:02 ET \u2014 JD-initiated"
+    ],
+    "lineup": [
+      "J.K. Dobbins W/R/T -> BN",
+      "Jacob Cowing new -> W/R/T",
+      "Tetairoa McMillan W/R/T -> WR",
+      "Devaughn Vele WR -> W/R/T"
+    ],
+    "roster_out": [
+      "Audric Estime"
+    ],
+    "roster_in": [
+      "Jacob Cowing"
+    ],
+    "pending": [
+      "$1 Washington/-Estime Oct 16: PENDING -> presumed voided (not directly confirmed)"
+    ],
+    "proj": {
+      "jd": "129.79 -> 129.04",
+      "opp": "141.55 -> 140.75"
+    },
+    "unchanged": [
+      "FAAB $33",
+      "IR 0/1",
+      "record 1-4-0, 12th",
+      "Waller Q",
+      "Wicks Q",
+      "Hall D",
+      "Hurts O",
+      "Sampson IR-R"
+    ]
+  },
+  "txs_duplicate_skipped": []
 }

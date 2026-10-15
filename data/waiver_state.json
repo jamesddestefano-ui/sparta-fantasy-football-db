@@ -1,7 +1,7 @@
 {
   "league": "sparta",
-  "source": "Authenticated Yahoo read-only computerUse browser UI pull sparta-live-check-20261015-0750; pending claim unchanged",
-  "observed_at": "2026-10-15T07:59:00-04:00",
+  "source": "Authenticated Yahoo read-only computerUse browser UI pull sparta-live-check-20261015-1950; no pending claims visible on team page; pendingtransactions URL returned not found",
+  "observed_at": "2026-10-15T19:56:00-04:00",
   "priority_order": [
     {
       "priority": 1,
@@ -64,18 +64,7 @@
       "team_name": "SHOWSTOPPERS"
     }
   ],
-  "pending_claims_jd": [
-    {
-      "order": 1,
-      "process_date": "2026-10-16",
-      "bid": 1,
-      "added": "Mike Washington Jr.",
-      "added_team": "LV RB",
-      "dropped": "Audric Estime",
-      "observed_at": "2026-10-14T12:00:23-04:00",
-      "check_id": "sparta-live-check-20261014-1150"
-    }
-  ],
+  "pending_claims_jd": [],
   "pending_cleared_et": "2026-10-14",
   "pending_process_results_jd": {
     "processed_at_et": "2026-10-07 04:45",
@@ -111,7 +100,7 @@
       "note": "Tue 1950 showed 3 listed (header said 4): $4 Penix/Douglas, $2 Mayer/Gadsden, $2 Cousins/Douglas. Processed: Penix WON at $7 (not $4); Mayer not awarded; Cousins failed. No pending claims/trades remain."
     }
   },
-  "note": "Pending: 1 JD claim (Oct 16) $1 Mike Washington Jr. / drop Audric Estime, placed by manager on Yahoo. FAAB $33. W6 Oct 14 process wins Grupe/Ravens/Waller unchanged.",
+  "note": "Pending: none visible. $1 Mike Washington Jr./drop Audric Estime (Oct 16) presumed voided \u2014 drop player no longer rostered; not directly confirmed (Yahoo pendingtransactions page not found). Washington still W (Oct 16) on Yahoo search. FAAB $33.",
   "brain_item_resolutions": [
     {
       "decision_id": "SPARTA-2026W5-SHIPLEY-DEADLINE-ESCALATION-20261007-0156",
@@ -146,5 +135,22 @@
     "faab_spent": 9,
     "faab_after": 33,
     "note": "K bye hole RESOLVED via Grupe; Waller re-acquired (previously dropped Gadsden kept until this win)."
-  }
+  },
+  "pending_claims_jd_voided": [
+    {
+      "order": 1,
+      "process_date": "2026-10-16",
+      "bid": 1,
+      "added": "Mike Washington Jr.",
+      "added_team": "LV RB",
+      "dropped": "Audric Estime",
+      "observed_at": "2026-10-14T12:00:23-04:00",
+      "check_id": "sparta-live-check-20261014-1150",
+      "status": "PRESUMED_VOIDED",
+      "voided_reason": "presumed voided \u2014 drop player no longer rostered; not directly confirmed",
+      "superseded_by": "102586|JD|ADD_DROP|Jacob Cowing|Audric Estime|2026-10-15 (JD own FA move 19:02 ET)",
+      "observed_at_void": "2026-10-15T19:56:00-04:00",
+      "check_id_void": "sparta-live-check-20261015-1950"
+    }
+  ]
 }
