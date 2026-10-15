@@ -1,8 +1,8 @@
 {
-  "observed_at": "2026-10-15T11:56:01-04:00",
-  "pull_completed_at": "2026-10-15T11:59:00-04:00",
-  "source": "read-only Playwright connect_over_cdp Yahoo UI (team, transactions, pendingwaivers, proposallist, matchup, 41 player searches)",
-  "check_id": "sparta-live-check-20261015-1150",
+  "observed_at": "2026-10-15T15:55:00-04:00",
+  "pull_completed_at": "2026-10-15T15:53:00-04:00",
+  "source": "read-only computerUse Yahoo UI (team, transactions, 3 player searches)",
+  "check_id": "sparta-live-check-20261015-1550",
   "completed": true,
   "yahoo_ok": true,
   "mutations": false,
@@ -20,17 +20,17 @@
   "week6": {
     "opponent": "The U",
     "opp_standing": "11th",
-    "jd_proj": 129.33,
-    "opp_proj": 141.51,
-    "status": "Not started yet (TNF SEA@DEN 8:15 PM ET: Wilson, JSN, Dobbins)",
+    "jd_proj": 129.79,
+    "opp_proj": 141.55,
+    "status": "Not started (TNF SEA@DEN 8:15 PM ET: Wilson, JSN, Dobbins)",
     "jd_live": 0.0,
     "opp_live": 0.0
   },
   "scores": {
     "jd_live": 0.0,
-    "jd_proj": 129.33,
+    "jd_proj": 129.79,
     "opp_live": 0.0,
-    "opp_proj": 141.51,
+    "opp_proj": 141.55,
     "note": "Proj"
   },
   "total_points": 670.1,
@@ -56,9 +56,9 @@
       "check_id": "sparta-live-check-20261014-1150"
     }
   ],
-  "pending_status": "1 pending: Waiver Oct 16 $1 Mike Washington Jr. / drop Audric Estime (re-verified 11:58 ET team page viewwaiver claim_id=10_42744_41019)",
-  "pending_trade": "none visible",
-  "critical_lineup": "QB Cousins; RB Allen, Wilson; WR JSN, Vele; TE Waller(Q); W/R/T McMillan, Dobbins; K Grupe; DEF Ravens; BN McLaughlin, Wicks(Q), Hurts, Chase(BYE), Hall(D), Estime, Sampson(IR-R)",
+  "pending_status": "1 pending: Waiver 1 (Oct 16) $1 Mike Washington Jr. / drop Audric Estime (no processing time shown)",
+  "pending_trade": "none",
+  "critical_lineup": "QB Cousins; RB Allen, Wilson; WR JSN, Vele; TE Waller(Q); W/R/T McMillan, Dobbins; K Grupe; DEF Ravens; BN McLaughlin, Wicks(Q), Hurts(O), Chase(BYE), Hall(D), Estime, Sampson(IR-R)",
   "lineup_vs_1950": null,
   "roster": {
     "QB": "Kirk Cousins",
@@ -81,7 +81,7 @@
   "bench": [
     "Jaleel McLaughlin",
     "Dontayvion Wicks (Q)",
-    "Jalen Hurts",
+    "Jalen Hurts (O)",
     "Ja'Marr Chase (BYE)",
     "Breece Hall (D)",
     "Audric Estime",
@@ -90,6 +90,7 @@
   "status_marks": {
     "Darren Waller": "Q",
     "Dontayvion Wicks": "Q",
+    "Jalen Hurts": "O",
     "Breece Hall": "D",
     "Ja'Marr Chase": "BYE",
     "Dylan Sampson": "IR-R"
@@ -100,91 +101,62 @@
     "alert": false,
     "execute": false
   },
-  "new_transactions_ingested": [],
-  "txs_ingested_count": 0,
+  "new_transactions_ingested": [
+    "102586|TM|ADD_DROP|Trey Smack|T.J. Hockenson|2026-10-15"
+  ],
+  "txs_ingested_count": 1,
   "txs_held_count": 0,
-  "txs_tip_new": "none \u2014 newest Yahoo tx still JD +Sampson/-Strong Oct 14 7:03pm PT (22:03 ET); 3 expected keys verified present",
+  "txs_tip_new": "TM +Trey Smack/-T.J. Hockenson Oct 15 14:22 ET",
   "faab_discrepancy": null,
   "pulse": {
     "consumed": [
-      "2026-10-15-0815",
-      "2026-10-15-0915",
-      "2026-10-15-1015",
-      "2026-10-15-1115"
+      "2026-10-15-1215",
+      "2026-10-15-1315",
+      "2026-10-15-1415",
+      "2026-10-15-1515"
     ],
-    "accepted_upstream": 0,
-    "pulse_count": "563 unchanged",
-    "new_pulse_files": 0,
-    "jd_material": 0,
-    "jd_relevant_soft": [
-      "Judkins/Sampson CLE RB room DHQ recap DUP (0815)",
-      "Hurts calf PFT commentary REJECT_NO_NEW_FACT (1015)",
-      "Emanuel Wilson/JSN/Dobbins prop spam REJECT",
-      "Judkins/E.Wilson start-sit opinion REJECT",
-      "TNF SEA@DEN official report unchanged (JSN FP/no desig; Charbonnet OUT); no Thu practice reports yet"
+    "pulse_count": "563 -> 572",
+    "jd_relevant": [
+      "131501 HIGH Hurts OUT W6 (JD BN; Cousins starts; parent already logged)",
+      "131504 LOW Judkins back-to-back DNP (claim trigger)",
+      "131505 LOW Sampson back at practice Thu (JD IR-R)",
+      "141502/151 DeVonta Smith not spotted Thu; Berman projected Wicks starting WR (speculation, soft for JD BN Wicks)"
     ],
-    "mcf_fpd": "McFarland RTs only REJECT; FPD RTs start-sit/opinion REJECT; Berry promo REJECT; no W6 USAGE_DATA tables yet"
+    "mcf_fpd": "McFarland/FPD 0 new posts 11:00-15:50 ET; no W6 USAGE_DATA"
   },
-  "alert": false,
-  "wake_parent_warranted": false,
-  "wake_reason": "QUIET: only delta is a lineup swap (Dobbins BN->W/R/T, McLaughlin W/R/T->BN, presumed JD-initiated, no hole, higher proj); 0 new txs; FAAB $33/IR 0/1/pending $1 Washington/-Estime unchanged; Waller still Q with no Thu practice data; Pulse 0815-1115 0 accepted, 0 JD-material",
+  "alert": true,
+  "wake_parent_warranted": true,
+  "wake_reason": "CLAIM REASSESS TRIGGER: Judkins Thu 2nd straight DNP (preset wake condition before Oct 16 waiver processing). Context: Sampson (JD IR-R) back at practice Thu; Waller Thu LIMITED (not a trigger); Hurts Yahoo O (already handled by parent decision 6902f84).",
   "DO_NOT_REEMIT": [
-    "Hall BN Q/D",
-    "JSN (cleared; TNF no designation)",
-    "Sampson IR-R BN (soft IR note)",
-    "JD's own Sampson/Strong move",
-    "Pending $1 Washington/-Estime unchanged alone",
-    "FAAB $33 / IR 0/1 / proj drift alone",
-    "NON-JD txs already ingested (MC Cooper/Wright, TM Bond/Sadiq)",
-    "Dobbins W/R/T / McLaughlin BN lineup swap (JD-presumed)",
-    "Pulse no-Thu-practice-yet continuity"
+    "Hall BN D",
+    "JSN cleared",
+    "Sampson IR-R BN soft IR note",
+    "Hurts O (parent decision 6902f84)",
+    "Dobbins W/R/T lineup",
+    "FAAB $33/IR 0/1/proj drift",
+    "NON-JD txs ingested incl TM Smack/Hockenson",
+    "Waller Thu LIMITED",
+    "Judkins Thu DNP claim trigger (woken 1550)"
   ],
   "commit": "ff76fe8",
   "commit_live_check": "ff76fe8",
-  "prev_commit": "0a1b5ac",
+  "prev_commit": "6902f84",
   "claim_reassess_watch": {
     "decision_id": "SPARTA-2026W6-WASHINGTON-PENDING-CLAIM-HOLD-20261014-1301",
-    "status": "PARTIAL_TRIGGER_WATCH_UPGRADED",
-    "note": "No Thu practice data yet at 11:56 ET (Pulse 1115 confirms). Washington still W (Oct 16); Estime JD BN; Judkins Yahoo Q (rostered MC). 15:50 Thu check: wake if Judkins Thu DNP/OUT/D or Estime lead role confirmed before Oct 16 processing."
+    "status": "TRIGGERED",
+    "note": "Judkins Thu DNP x2; Sampson returned to practice; Estime role not confirmed as lead. Billy decides keep/cancel before Oct 16 processing."
   },
   "waller_yahoo": {
     "status": "Q",
     "slot": "TE",
-    "proj": 7.58,
-    "note": "Q unchanged at 11:56 ET; no Thu practice data yet. No backup TE on JD roster. Sun @PHI 1:00 PM ET. WATCH Thu afternoon/Fri; wake if DNP/D/O."
+    "proj": 7.53,
+    "note": "Thu LIMITED (Joe Person 3:32 PM ET) \u2014 same as Wed estimate; not a DNP/D/O trigger. Fri report/designation next. Hockenson now on waivers (not FA) as possible TE backup."
   },
   "claim_target_availability": {
-    "mike_washington_jr": "W (Oct 16) \u2014 still on waivers, 35% ros",
-    "audric_estime": "JD (TB12) BN, 0% ros",
-    "quinshon_judkins": "Yahoo Q, rostered CLIN-TON POR-TIS (no prior Yahoo status captured; consistent with Wed DNP \u2014 not a Thu DNP/OUT/D trigger)"
-  },
-  "dobbins_yahoo": {
-    "status": "",
-    "slot": "W/R/T",
-    "proj": 8.19,
-    "note": "Moved BN->W/R/T since 0750 (JD-presumed lineup edit; no Yahoo tx). Plays TNF vs SEA 8:15 PM ET \u2014 locks tonight. Replaced McLaughlin (proj 4.50). Not a hole; soft note."
-  },
-  "comparison_to_0750": {
-    "material": [],
-    "soft": [
-      "Lineup: J.K. Dobbins BN->W/R/T, Jaleel McLaughlin W/R/T->BN (JD-presumed; no tx logged)"
-    ],
-    "non_material": [
-      "proj 125.43->129.33 vs 141.25->141.51"
-    ],
-    "unchanged": [
-      "FAAB $33",
-      "IR 0/1",
-      "1-4-0 12th",
-      "0 new txs",
-      "Waller Q",
-      "Wicks Q",
-      "Hall D",
-      "Sampson IR-R BN",
-      "pending $1 Washington/-Estime Oct 16",
-      "Washington still W (Oct 16)",
-      "no pending trades"
-    ]
+    "mike_washington_jr": "W (Oct 16), 34% ros",
+    "audric_estime": "JD BN",
+    "quinshon_judkins": "Yahoo Q, CLIN-TON POR-TIS; Thu 2nd straight DNP (Oyefusi 1:04 PM ET, PFT)",
+    "t_j_hockenson": "Dropped to waivers by TM 14:22 ET (Min TE, Q) \u2014 not FA"
   },
   "sampson_yahoo": {
     "status": "IR-R",
