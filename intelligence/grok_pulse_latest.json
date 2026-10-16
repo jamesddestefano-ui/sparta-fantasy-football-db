@@ -1,21 +1,21 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-10-16T06:10:24.844Z",
+  "generatedAt": "2026-10-16T06:11:11.499Z",
   "status": "live",
-  "completedAt": "2026-10-16T06:10:24.797Z",
+  "completedAt": "2026-10-16T06:11:11.471Z",
   "nextAtLabel": "4:00 AM ET",
   "inWindow": true,
   "itemCount": 14,
   "items": [
     {
-      "id": "montgomery-out-w6",
+      "id": "montgomery-out-london",
       "at": "2026-10-15T21:21:19Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Texans RB David Montgomery (groin) will not travel to London and is ruled out for Week 6 vs Jaguars; Pitre also out.",
+      "text": "Texans RB David Montgomery (groin) will not travel to London and is ruled OUT for Sunday vs Jaguars, along with Tank Dell (knee) and Jalen Pitre.",
       "playerIds": [
         "david-montgomery"
       ],
@@ -26,13 +26,13 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-david-montgomery-week6",
       "signal": "OUT",
-      "priorStatus": "DNP/WEEK-TO-WEEK",
+      "priorStatus": "QUESTIONABLE",
       "newStatus": "OUT",
-      "why": "Groin injury; no travel confirmed by Schefter/Rapoport.",
-      "implication": "Woody Marks expected workhorse role (98% snaps prior); RB2/FLEX despite tough JAC run D.",
-      "opportunity": "Full backfield snaps/carries/red-zone for Marks handcuff.",
+      "why": "Groin injury; no travel decision.",
+      "implication": "Full backfield to remaining RBs; Marks saw 98% snaps last week in his absence.",
+      "opportunity": "Goal-line/third-down work consolidates to backup RBs in London matchup.",
       "corroboration": [
-        "https://x.com/RapSheet/status/2110843772984512760"
+        "@RapSheet"
       ],
       "supportingSources": [
         "ian-rapoport",
@@ -42,30 +42,33 @@
     },
     {
       "id": "hurts-out-clot-w6",
-      "at": "2026-10-15T16:59:26Z",
+      "at": "2026-10-15T17:29:00Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Jalen Hurts is out for Week 6 (and indefinitely until medical situation resolved) after follow-up ultrasound showed movement in a superficial blood clot in his calf; Tanner McKee will start.",
+      "text": "Eagles QB Jalen Hurts ruled out for Week 6 (and indefinitely) due to superficial blood clot in calf that showed movement on follow-up ultrasound; Tanner McKee to start. Health priority, treatment course TBD (possible blood thinners).",
       "playerIds": [
         "jalen-hurts"
       ],
       "players": [
         "Jalen Hurts"
       ],
-      "url": "https://x.com/RapSheet/status/2110777583642009692",
+      "url": "https://www.nfl.com/news/eagles-qb-jalen-hurts-out-sunday-panthers-superficial-blood-clot",
       "kind": "INJURY_STATUS",
       "eventId": "injury-jalen-hurts-week6",
       "signal": "OUT",
-      "priorStatus": "FULL/PRACTICING",
+      "priorStatus": "FULL_PRACTICE",
       "newStatus": "OUT",
-      "why": "Blood clot moved; treatment course (likely blood thinners) TBD; health priority.",
-      "implication": "McKee starts vs CAR; Eagles pass game/rushing TDs shift; Hurts multi-week risk.",
-      "opportunity": "Backup QB volume; potential WR/TE target concentration without Hurts mobility.",
+      "why": "Movement in small superficial clot after initial clearance for London game; doctors prioritize safety.",
+      "implication": "Eagles offense shifts to McKee; Hurts fantasy value zero short-term, monitor multi-week absence risk.",
+      "opportunity": "Increased targets/snaps for Eagles pass-catchers like Goedert if volume holds; McKee streamer in 2QB.",
+      "beneficiaries": [
+        "dallas-goedert"
+      ],
       "corroboration": [
-        "https://x.com/AdamSchefter",
-        "Eagles statement"
+        "@AdamSchefter",
+        "https://www.cbssports.com/nfl/news/eagles-rule-out-jalen-hurts-for-week-6-vs-panthers/"
       ],
       "supportingSources": [
         "adam-schefter",
@@ -74,13 +77,69 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "dj-moore-dnp",
+      "id": "berry-henderson-stevenson",
+      "at": "2026-10-15T11:14:00Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Patriots announced TreVeyon Henderson will miss multiple weeks (high ankle). In Week 1 absence Rhamondre Stevenson played 85% snaps/23 touches; averages 16.3 PPG on 15+ touches since 2024. Borderline RB1 while Henderson out.",
+      "playerIds": [
+        "treveyon-henderson",
+        "rhamondre-stevenson"
+      ],
+      "players": [
+        "TreVeyon Henderson",
+        "Rhamondre Stevenson"
+      ],
+      "url": "https://www.fantasylife.com/articles/fantasy/matthew-berrys-10-facts-to-know-ahead-of-week-6-fantasy-football",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-treveyon-henderson-multi",
+      "signal": "OUT",
+      "priorStatus": "LIMITED",
+      "newStatus": "OUT",
+      "why": "High ankle sprain multi-week; clear volume precedent for Stevenson.",
+      "implication": "Stevenson massive upgrade to RB1 range; Henderson stash only.",
+      "opportunity": "Stevenson 80%+ snaps, 20+ touches, goal-line work vs NYJ.",
+      "beneficiaries": [
+        "rhamondre-stevenson"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "waddle-q-return-then-active",
+      "at": "2026-10-16T02:07:24Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Broncos WR Jaylen Waddle questionable to return with shoulder injury mid-TNF vs SEA, then returned to the game.",
+      "playerIds": [
+        "jaylen-waddle"
+      ],
+      "players": [
+        "Jaylen Waddle"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2110915483688116686",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-jaylen-waddle-tnf",
+      "signal": "ACTIVE",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "ACTIVE",
+      "why": "Shoulder issue but cleared to return same game.",
+      "implication": "Avoided multi-game absence; usage may be monitored post-game.",
+      "opportunity": "No immediate reverse of beneficiaries; full role retained if healthy.",
+      "conflict": "Berry hates Waddle for Week 6 due to matchup/volume issues.",
+      "priority": "HIGH"
+    },
+    {
+      "id": "dj-moore-dnp2",
       "at": "2026-10-16T00:01:36Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "For the second straight day, Bills WR DJ Moore did not practice due to his shoulder injury.",
+      "text": "Bills WR DJ Moore did not practice for the second straight day due to shoulder injury.",
       "playerIds": [
         "dj-moore"
       ],
@@ -93,250 +152,19 @@
       "signal": "DNP",
       "priorStatus": "DNP",
       "newStatus": "DNP",
-      "why": "Shoulder.",
-      "implication": "Questionable/out risk vs LV; other Bills WRs elevated.",
-      "opportunity": "Increased targets for remaining BUF receivers.",
+      "why": "Shoulder injury persisting.",
+      "implication": "Status for Sunday vs LV in doubt; monitor Friday report.",
+      "opportunity": "Increased targets to other Bills WRs if limited or out.",
       "priority": "HIGH"
     },
     {
-      "id": "barkley-dnp-smith-limited",
-      "at": "2026-10-15T21:57:08Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "No practice again for Saquon Barkley; DeVonta Smith upgraded to limited practice. Eagles injury report Thursday.",
-      "playerIds": [
-        "saquon-barkley",
-        "devonta-smith"
-      ],
-      "players": [
-        "Saquon Barkley",
-        "DeVonta Smith"
-      ],
-      "url": "https://x.com/AdamSchefter/status/2110852502396850339",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-saquon-devonta-week6",
-      "signal": "DNP",
-      "priorStatus": "DNP",
-      "newStatus": "DNP/LIMITED",
-      "why": "Barkley hamstring/sideline; Smith toe/hamstring upgrade.",
-      "implication": "Barkley game-time or limited; Smith progress but Q; Hurts already out compounds Eagles issues.",
-      "opportunity": "Gainwell or other backs if Barkley sits; WRs if Smith limited.",
-      "beneficiaries": [
-        "kenny-gainwell"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "dell-out-w6",
-      "at": "2026-10-15T21:22:27Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Texans WR Tank Dell (knee), RB David Montgomery (groin) and S Jalen Pitre (shoulder) will not travel and are ruled out vs Jaguars in London.",
-      "playerIds": [
-        "david-montgomery"
-      ],
-      "players": [
-        "David Montgomery"
-      ],
-      "url": "https://x.com/RapSheet/status/2110843772984512760",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-tank-dell-montgomery-week6",
-      "signal": "OUT",
-      "priorStatus": "QUESTIONABLE/DNP",
-      "newStatus": "OUT",
-      "why": "Injuries; no travel for London game.",
-      "implication": "Nico Collins and other Texans WRs elevated targets; Marks RB lead.",
-      "opportunity": "Increased target share for remaining HOU pass-catchers.",
-      "beneficiaries": [
-        "nico-collins"
-      ],
-      "corroboration": [
-        "https://x.com/AdamSchefter"
-      ],
-      "supportingSources": [
-        "adam-schefter"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "rice-dnp",
-      "at": "2026-10-15T20:39:46Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Chiefs WR Rashee Rice did not practice again today due to his hamstring injury.",
-      "playerIds": [
-        "rashee-rice"
-      ],
-      "players": [
-        "Rashee Rice"
-      ],
-      "url": "https://x.com/AdamSchefter/status/2110833029652348980",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-rashee-rice-week6",
-      "signal": "DNP",
-      "priorStatus": "DNP",
-      "newStatus": "DNP",
-      "why": "Hamstring post-bye.",
-      "implication": "Q or out risk; Worthy/Kelce targets up if sits.",
-      "opportunity": "Xavier Worthy route/target share expansion.",
-      "beneficiaries": [
-        "xavier-worthy",
-        "travis-kelce"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "lamar-dnp",
-      "at": "2026-10-15T20:26:06Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Lamar Jackson officially did not practice again today (ankle).",
-      "playerIds": [
-        "lamar-jackson"
-      ],
-      "players": [
-        "Lamar Jackson"
-      ],
-      "url": "https://x.com/AdamSchefter/status/2110829590918692946",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-lamar-jackson-week6",
-      "signal": "DNP",
-      "priorStatus": "DNP",
-      "newStatus": "DNP",
-      "why": "Ankle; consecutive DNPs but realistic chance noted earlier.",
-      "implication": "Game-time decision; rushing limited if plays; Ravens offense impacted.",
-      "opportunity": "If out, backup QB and Likely/Andrews elevated.",
-      "beneficiaries": [
-        "isaiah-likely",
-        "mark-andrews"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "berry-love-evans",
-      "at": "2026-10-15T17:30:00Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "LOVE Mike Evans vs Commanders secondary; WR4 for Week 6. Season-high 36% target share recently; Deebo out multi-week elevates him further (45%+ targets when Deebo off).",
-      "playerIds": [
-        "mike-evans"
-      ],
-      "players": [
-        "Mike Evans"
-      ],
-      "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-6-fantasy-football",
-      "kind": "ANALYST_OPINION",
-      "eventId": "love-mike-evans-week6",
-      "signal": "LOVE",
-      "why": "Elite matchup vs WSH; usage spike and depth chart clear with Samuel out.",
-      "implication": "Must-start WR1/2 upside; top-5 WR play.",
-      "opportunity": "High target share, red-zone in favorable spot.",
-      "priority": "HIGH"
-    },
-    {
-      "id": "berry-fact-henderson-stevenson",
-      "at": "2026-10-15T15:14:00Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "TreVeyon Henderson multi-week out (high ankle). In Week 1 absence Rhamondre Stevenson played 85% snaps/23 touches; >15 touches avg 16.3 PPG since 2024. Stevenson borderline RB1.",
-      "playerIds": [
-        "treveyon-henderson",
-        "rhamondre-stevenson"
-      ],
-      "players": [
-        "TreVeyon Henderson",
-        "Rhamondre Stevenson"
-      ],
-      "url": "https://www.fantasylife.com/articles/fantasy/matthew-berrys-10-facts-to-know-ahead-of-week-6-fantasy-football",
-      "kind": "USAGE_DATA",
-      "eventId": "usage-henderson-out-stevenson",
-      "signal": "UPGRADE",
-      "priorStatus": "OUT",
-      "newStatus": "OUT",
-      "why": "Confirmed multi-week; historical full-workload data for Stevenson.",
-      "implication": "Stevenson locked RB1/2 with volume; start confidently vs NYJ.",
-      "opportunity": "85%+ snaps, high carries/targets while Henderson sidelined.",
-      "beneficiaries": [
-        "rhamondre-stevenson"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "levitan-hall-snaps",
-      "at": "2026-10-14T19:53:41Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
-      "outlet": "Establish The Run",
-      "text": "RB snaps in the two full games since Breece Hall's injury: Braelon Allen 90, Isaiah Davis 12, Kene Nwangwu 0. Hall remains week-to-week, no practice.",
-      "playerIds": [
-        "breece-hall"
-      ],
-      "players": [
-        "Breece Hall"
-      ],
-      "url": "https://x.com/adamlevitan/status/2110459046524514798",
-      "kind": "USAGE_DATA",
-      "eventId": "usage-breece-hall-absence",
-      "signal": "UPGRADE",
-      "priorStatus": "WEEK-TO-WEEK",
-      "newStatus": "WEEK-TO-WEEK",
-      "why": "Clear hierarchy with Allen dominating snaps post-Hall injury.",
-      "implication": "Allen is the clear lead back/handcuff to roster/start while Hall out.",
-      "opportunity": "Allen near-every-down RB1 usage; high snap/carry share.",
-      "corroboration": [
-        "@Al_Iannazzone"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "waddle-q-return",
-      "at": "2026-10-16T02:01:05Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Broncos WR Jaylen Waddle questionable to return due to shoulder, then returned to the game (TNF).",
-      "playerIds": [
-        "jaylen-waddle"
-      ],
-      "players": [
-        "Jaylen Waddle"
-      ],
-      "url": "https://x.com/AdamSchefter/status/2110913890783465854",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-jaylen-waddle-tnf",
-      "signal": "ACTIVE",
-      "priorStatus": "QUESTIONABLE",
-      "newStatus": "ACTIVE",
-      "why": "Shoulder injury mid-game; returned.",
-      "implication": "Played through; monitor for lingering but available.",
-      "conflict": "Berry hates Waddle for week due to prior production.",
-      "corroboration": [
-        "https://x.com/AdamSchefter/status/2110915483688116686"
-      ],
-      "priority": "NORMAL"
-    },
-    {
-      "id": "love-dnp",
+      "id": "love-dnp2",
       "at": "2026-10-15T23:30:38Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "For the second straight day, Cardinals rookie RB Jeremiyah Love did not practice due to an ankle injury.",
+      "text": "Cardinals rookie RB Jeremiyah Love did not practice for the second straight day due to ankle injury.",
       "playerIds": [
         "jeremiyah-love"
       ],
@@ -349,34 +177,199 @@
       "signal": "DNP",
       "priorStatus": "DNP",
       "newStatus": "DNP",
-      "why": "Ankle management.",
-      "implication": "Out risk; other ARI RBs (Allgeier etc.) volume.",
-      "opportunity": "Backup RB carries/snaps.",
-      "priority": "NORMAL"
+      "why": "Ankle injury.",
+      "implication": "Questionable/GTD risk for Week 6; rookies often slow recoveries.",
+      "opportunity": "ARI RB depth chart shifts if out; monitor for handcuff elevation.",
+      "priority": "HIGH"
     },
     {
-      "id": "levitan-saquon-age",
-      "at": "2026-10-15T18:04:09Z",
+      "id": "barkley-dnp-smith-limited",
+      "at": "2026-10-15T21:57:08Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Eagles RB Saquon Barkley no practice again Thursday (hamstring context); DeVonta Smith upgraded to limited. Pair with Hurts out creates major PHI uncertainty vs CAR.",
+      "playerIds": [
+        "saquon-barkley",
+        "devonta-smith"
+      ],
+      "players": [
+        "Saquon Barkley",
+        "DeVonta Smith"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2110852502396850339",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-saquon-barkley-week6",
+      "signal": "DNP",
+      "priorStatus": "DNP",
+      "newStatus": "DNP",
+      "why": "Continued absence from practice; Smith progress to limited.",
+      "implication": "Barkley likely OUT or GTD; Smith trending better for availability.",
+      "opportunity": "If Barkley OUT, remaining PHI RBs and pass game (Goedert elevated) see role expansion under McKee.",
+      "beneficiaries": [
+        "dallas-goedert"
+      ],
+      "corroboration": [
+        "@RapSheet"
+      ],
+      "supportingSources": [
+        "ian-rapoport"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "rice-dnp-hamstring",
+      "at": "2026-10-15T20:39:46Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Chiefs WR Rashee Rice did not practice again Thursday due to hamstring injury.",
+      "playerIds": [
+        "rashee-rice"
+      ],
+      "players": [
+        "Rashee Rice"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2110833029652348980",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-rashee-rice-week6",
+      "signal": "DNP",
+      "priorStatus": "DNP",
+      "newStatus": "DNP",
+      "why": "Hamstring; consecutive DNPs post-bye.",
+      "implication": "Elevated risk of missing or limited vs LAC; GTD likely.",
+      "opportunity": "Worthy/others see target share bump if out or limited.",
+      "beneficiaries": [
+        "xavier-worthy"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "lamar-dnp",
+      "at": "2026-10-15T20:26:06Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Ravens QB Lamar Jackson officially did not practice again Thursday (ankle).",
+      "playerIds": [
+        "lamar-jackson"
+      ],
+      "players": [
+        "Lamar Jackson"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2110829590918692946",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-lamar-jackson-week6",
+      "signal": "DNP",
+      "priorStatus": "DNP",
+      "newStatus": "DNP",
+      "why": "Ankle sprain context; consecutive missed practices.",
+      "implication": "Shot to play but rushing limited if active; status key for BAL offense.",
+      "opportunity": "If out, Huntley/backup elevates; Henry/ Flowers still viable but ceiling down.",
+      "priority": "HIGH"
+    },
+    {
+      "id": "levitan-hall-snaps",
+      "at": "2026-10-14T19:53:41Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Eagles gold standard moving on from aging stars early (Dawkins, McNabb, McCoy, Ertz). Saquon Barkley turns 30 in February; Super Bowl contender with RB need should at least call.",
+      "text": "RB snaps in two full games since Breece Hall injury: Braelon Allen 90, Isaiah Davis 12, Kene Nwangwu 0. Hall remains week-to-week, no practice.",
       "playerIds": [
-        "saquon-barkley"
+        "breece-hall"
       ],
       "players": [
-        "Saquon Barkley"
+        "Breece Hall"
       ],
-      "url": "https://x.com/adamlevitan/status/2110793869210329124",
-      "kind": "ANALYST_OPINION",
-      "eventId": "opinion-saquon-trade-value",
-      "signal": "DOWNGRADE",
-      "why": "Age curve and Eagles precedent for early exits; risk of year-too-late.",
-      "implication": "Trade value may peak now; long-term dynasty caution despite current production.",
+      "url": "https://x.com/adamlevitan/status/2110459046524514798",
+      "kind": "USAGE_DATA",
+      "eventId": "usage-breece-hall-absence",
+      "signal": "UPGRADE",
+      "why": "Clear hierarchy with Allen dominating snaps/usage while Hall week-to-week.",
+      "implication": "Allen is the clear lead back and must-start while Hall out; Davis change-of-pace only.",
+      "opportunity": "Allen 90%+ snap share, high carries/routes; handcuff locked in.",
       "supportingSources": [
         "establish-the-run"
       ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "jeanty-positive",
+      "at": "2026-10-15T19:27:21Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Raiders RB Ashton Jeanty said he is feeling great and this is the best he’s felt this season; positive update ahead of Bills matchup.",
+      "playerIds": [
+        "ashton-jeanty"
+      ],
+      "players": [
+        "Ashton Jeanty"
+      ],
+      "url": "https://x.com/RapSheet/status/2110814807683452955",
+      "kind": "COACH_REPORT",
+      "eventId": "status-ashton-jeanty-week6",
+      "signal": "ACTIVE",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "EXPECTED",
+      "why": "Player comments on ankle/foot feeling best of season.",
+      "implication": "Likely full go; reverse any prior sit signals.",
+      "opportunity": "Full snap/carry share expected; no handcuff elevation needed.",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-evans-love",
+      "at": "2026-10-15T17:30:00Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Matthew Berry LOVES Mike Evans as WR4 this week vs Commanders secondary; season-high 36% target share last week, and with Deebo out multi-weeks the depth is thin (Cooks etc.).",
+      "playerIds": [
+        "mike-evans"
+      ],
+      "players": [
+        "Mike Evans"
+      ],
+      "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-6-fantasy-football",
+      "kind": "ANALYST_OPINION",
+      "eventId": "ranking-mike-evans-w6",
+      "signal": "LOVE",
+      "why": "Elite matchup vs WSH + elevated target share with Deebo sidelined multi-weeks; thin WR depth behind.",
+      "implication": "Strong WR1/2 start; volume locked in.",
+      "opportunity": "High target share, red-zone potential in favorable spot.",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-rbs-love",
+      "at": "2026-10-15T17:30:00Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Berry LOVES Kyren Williams (RB5 vs ARI, elite recent usage), Javonte Williams (RB8 @ GB, goal-line role), Rhamondre Stevenson (RB9 vs NYJ, volume). All face run-leaking defenses.",
+      "playerIds": [
+        "kyren-williams",
+        "javonte-williams",
+        "rhamondre-stevenson"
+      ],
+      "players": [
+        "Kyren Williams",
+        "Javonte Williams",
+        "Rhamondre Stevenson"
+      ],
+      "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-6-fantasy-football",
+      "kind": "ANALYST_OPINION",
+      "eventId": "ranking-berry-rbs-love-w6",
+      "signal": "LOVE",
+      "why": "Volume + matchup vs leaky run Ds; Kyren usage elite, Javonte GL, Stevenson post-Henderson.",
+      "implication": "Strong RB2/flex starts with upside.",
+      "opportunity": "Carries, red-zone, snap shares elevated in positive game scripts.",
       "priority": "NORMAL"
     },
     {
@@ -386,7 +379,7 @@
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Round 3 rookie Ja'Kobi Lane (wrist surgery) expected back to practice, shot to play weekend. Generated huge camp buzz, elite YPP offense (6.4) even without full Lamar snaps.",
+      "text": "Ravens WR Ja'Kobi Lane (rookie) expected back to practice 4 weeks post-wrist surgery; has shot to play this weekend. Elite 6.4 YPP offense even with Lamar missing snaps; camp buzz suggested Bateman ice potential.",
       "playerIds": [
         "jakobi-lane"
       ],
@@ -398,13 +391,16 @@
       "eventId": "role-jakobi-lane-return",
       "signal": "UPGRADE",
       "priorStatus": "OUT",
-      "newStatus": "EXPECTED TO PLAY",
-      "why": "Camp standout with path to big role; high-efficiency BAL offense.",
-      "implication": "Deep league stash/waiver; potential Bateman competition or upside if Lamar limited.",
-      "opportunity": "Routes/targets in elite offense; monitor practice participation.",
+      "newStatus": "PRACTICE",
+      "why": "Recovery timeline + HC comments + elite offense efficiency + pre-injury buzz.",
+      "implication": "Immediate roster/watch-list candidate; potential target share in high-YPP attack.",
+      "opportunity": "Routes/targets available if active; monitor practice-to-active progression.",
       "corroboration": [
-        "@MikeGarafolo",
-        "@RapSheet"
+        "@RapSheet",
+        "@MikeGarafolo"
+      ],
+      "supportingSources": [
+        "establish-the-run"
       ],
       "priority": "NORMAL"
     }
@@ -430,6 +426,20 @@
       "source": "Matthew Berry",
       "grade": "USEFUL",
       "note": "Week 6 Love/Hate fully split per-player: loves Evans(WR4)/London/Kittle/Kyren/Javonte/Rhamondre/Purdy etc.; hates Waddle/Egbuka/Pitts/Marks/Dobbins/Nix/Herbert. 10 Facts with Henderson multi-week out + Stevenson volume, Montgomery=Marks.",
+      "at": "2026-10-16T00:00:00Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "Primary facts: Hurts OUT clot; Montgomery/Dell/Pitre OUT no travel; Rice DNP; Jackson DNP; Barkley DNP/Smith limited; Love/DJ Moore DNP consecutive; Kirk window; Caleb full; Waddle shoulder Q then returned. Real-time corroboration.",
+      "at": "2026-10-16T00:00:00Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Hurts OUT indefinite/McKee; Montgomery/Dell/Pitre OUT; strong corroboration on key statuses and blood clot details; Jeanty positive; Moss active.",
       "at": "2026-10-16T00:00:00Z"
     },
     {
@@ -564,24 +574,10 @@
       "grade": "USEFUL",
       "note": "Primary facts: Hurts OUT clot; Montgomery/Dell/Pitre OUT no travel; Rice DNP; Jackson DNP; Barkley DNP/Smith limited; Caleb full; Kirk window; Love/DJ Moore DNP. Real-time.",
       "at": "2026-10-16T00:00:00Z"
-    },
-    {
-      "sourceId": "ian-rapoport",
-      "source": "Ian Rapoport",
-      "grade": "USEFUL",
-      "note": "Hurts OUT indefinite/McKee; Montgomery/Dell/Pitre OUT; Jeanty positive best of season; Caleb full; Jackson notes; Kirk window; Gonzalez full. Strong corroboration.",
-      "at": "2026-10-15T22:00:00Z"
-    },
-    {
-      "sourceId": "adam-levitan",
-      "source": "Adam Levitan",
-      "grade": "USEFUL",
-      "note": "Player-specific usage (Hall snaps/Allen workhorse), Saquon age/trade speculation with Eagles precedent, Ja'Kobi Lane return buzz + elite offense YPP data. Opportunity focus, no rankings dump.",
-      "at": "2026-10-15T22:57:00Z"
     }
   ],
-  "mirroredAt": "2026-10-16T06:10:25.305Z",
+  "mirroredAt": "2026-10-16T06:11:11.966Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-10-16T06:10:24.797Z",
+  "sourceCompletedAt": "2026-10-16T06:11:11.471Z",
   "sourceStatus": "live"
 }
