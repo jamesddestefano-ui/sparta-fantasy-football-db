@@ -27,7 +27,7 @@ class IngestionError(Exception):
 
 
 def request_spec(kind: str, season: int, week: int) -> tuple[str, dict[str, str], str]:
-    if season != 2026 or not 1 <= week <= 18:
+    if type(season) is not int or type(week) is not int or season != 2026 or not 1 <= week <= 18:
         raise ValueError("Sparta pilot is restricted to NFL season 2026, weeks 1–18")
     if kind == "consensus":
         return (f"/nfl/{season}/consensus-rankings",
@@ -71,6 +71,8 @@ def validate_payload(payload, kind, season, week, *, now=None):
             raise IngestionError(f"FantasyPros {kind}: returned wrong week")
         if str(payload.get("season", payload.get("year"))) != str(season):
             raise IngestionError(f"FantasyPros {kind}: returned wrong season")
+    if "scoring" in payload and payload["scoring"] != "PPR":
+        raise IngestionError("FantasyPros: conflicting scoring format")
     if kind == "consensus" and payload.get("scoring") != "PPR":
         raise IngestionError("FantasyPros consensus: PPR scoring not confirmed")
     if not payload[expected]:
@@ -186,6 +188,8 @@ def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, 
     for attempt in range(retries + 1):
         try:
             with opener(request, timeout=15) as response:
+                if getattr(response, "status", 200) != 200:
+                    raise IngestionError("FantasyPros: incomplete HTTP response")
                 raw = response.read(5_000_001)
             break
         except HTTPError as exc:
@@ -209,6 +213,7 @@ def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, 
     try:
         if contains_secret(payload, api_key):
             raise IngestionError("FantasyPros: credential echoed in response; rejected")
+        original_count = len(payload.get(expected, [])) if isinstance(payload, dict) and isinstance(payload.get(expected), list) else 0
         payload, flags, yahoo, stamps = validate_payload(payload, kind, season, week)
     except (ValueError, TypeError, RecursionError):
         raise IngestionError("FantasyPros: malformed response values") from None
@@ -221,6 +226,9 @@ def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, 
         "quality_flags": flags, "provider_timestamps": stamps,
         "yahoo_id_mapping": yahoo, "availability": "UNKNOWN",
         "scoring": "PPR" if kind == "consensus" else "UNVERIFIED",
+        "response_sha256": hashlib.sha256(raw).hexdigest(),
+        "received_record_count": original_count,
+        "duplicate_count": original_count - len(payload[expected]),
         "attempt_count": attempt + 1,
         "status": "unvalidated_for_decisions", "record_count": len(payload[expected]),
         "payload": payload,

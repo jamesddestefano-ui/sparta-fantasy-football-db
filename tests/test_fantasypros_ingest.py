@@ -166,6 +166,17 @@ class PipelineTests(unittest.TestCase):
             self.assertEqual(module.main(["--week","6","--output-dir","/tmp/pilot"]),2)
             fetched.assert_not_called()
 
+    def test_partial_http_response_is_rejected(self):
+        response=Response({"season":2026,"week":6,"scoring":"PPR","players":[{"player_id":"1","player_name":"Test","player_position":"WR"}]})
+        response.status=206
+        with self.assertRaises(IngestionError):
+            fetch("consensus",2026,6,"dummy-key",opener=lambda *a,**k:response)
+
+    def test_wrong_projection_scoring_rejected(self):
+        response=Response({"season":2026,"week":6,"scoring":"STD","players":[{"player_id":"1","player_name":"Test","player_position":"WR"}]})
+        with self.assertRaises(IngestionError):
+            fetch("projections",2026,6,"dummy-key",opener=lambda *a,**k:response)
+
     def test_deep_json_is_safe_error(self):
         class RawResponse(Response):
             def read(self,_max): return b"["*1500+b"0"+b"]"*1500
