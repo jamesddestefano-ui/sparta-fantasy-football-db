@@ -1,0 +1,96 @@
+{
+  "system": "SPARTA",
+  "season": 2026,
+  "week": 6,
+  "scoring": "PPR",
+  "status": "BLOCKED_FANTASYPROS_DATA_MISSING",
+  "authority": "RESEARCH_ONLY",
+  "new_recommendation": false,
+  "kickoff_verified": false,
+  "timing_note": "Historical decision-evidence comparison only; no fresh prediction or lineup instruction.",
+  "source": {
+    "path": "learning/decision_ledger.jsonl",
+    "sha256": "0a49972663d1b199bb71165c18193eaaa944f06971b27bf731de32dcc5c8a552"
+  },
+  "decision_evidence": [
+    {
+      "line": 158,
+      "decision_id": "SPARTA-2026W6-WICKS-COWING-FRIDAY-20261016-1655",
+      "timestamp_et": "2026-10-16T16:55:00-04:00",
+      "signals": [
+        "Wicks resumed full participation Friday after Thursday DNP, but DeVonta Smith also returns from two-game absence, reducing Wicks' target ceiling.",
+        "Hurts OUT means inexperienced backup Tanner McKee starts; Barkley OUT compounds Eagles offensive disruption and makes extrapolations from healthy full-strength offense unreliable.",
+        "Cowing remains the current Yahoo-authoritative FLEX; Evans still sidelined with rib/Achilles, creating available WR snaps in San Francisco.",
+        "Both Wicks and Cowing are already JD-owned, so roster churn incurs no benefit; preserve $33."
+      ],
+      "risks": [
+        "Cowing route share has never been established; Deebo absence does not imply high target share, with Brandin Cooks and Jordan Watkins also in receiver mix.",
+        "Christian Kirk can be activated Saturday, reducing Cowing routes/targets; Evans might recover by Monday, further reducing Cowing value.",
+        "Wicks may benefit from pass-heavy script with Eagles backup RBs or Smith on snap limit; not zero upside.",
+        "Current authenticated Yahoo lineup is stale after Thursday kickoff; do not claim Friday Yahoo confirmation."
+      ]
+    },
+    {
+      "line": 159,
+      "decision_id": "SPARTA-2026W6-WICKS-COWING-USAGE-REASSESS-20261017-0704",
+      "timestamp_et": "2026-10-17T07:04:00-04:00",
+      "signals": [
+        "Wicks has established 17% target share with Smith healthy across Weeks 1-3; Week 5 had 8 targets with Smith absent, so receiver is involved even when role changes.",
+        "Cowing logged only 2 targets and 50% route participation Week 5 despite 49ers WR attrition; 11-personnel-dependent deployment creates fragile floor.",
+        "Wicks fully cleared for Sunday; using Sunday player avoids losing the fallback before late Monday injuries/activations are confirmed.",
+        "Yahoo already owns both players; lineup switch carries no FAAB cost or transaction fee."
+      ],
+      "risks": [
+        "Tanner McKee replaces Hurts and Smith returns, so Wicks target volume may regress to 3rd option.",
+        "Cowing may get substantially higher Monday route share if Evans and/or Kirk cannot play and Samuel remains out; Saturday report pending.",
+        "A change is recommended only; latest authenticated Yahoo lineup is Oct 15 and newer user edits may exist.",
+        "Weekend news may supersede projections; avoid overconfidence from one partial Week 5 Cowing game."
+      ]
+    }
+  ],
+  "players": [
+    {
+      "name": "Dontayvion Wicks",
+      "fantasypros_id": null,
+      "availability": "UNKNOWN",
+      "fantasypros_ppr_rank": null,
+      "fantasypros_projection_ppr": null,
+      "supporting_signals": [
+        "Recorded 17% target share with Smith healthy in Weeks 1–3; 8 Week 5 targets.",
+        "Recorded full practice clearance before Sunday."
+      ],
+      "risks": [
+        "Smith return and McKee replacing Hurts weaken volume extrapolation."
+      ],
+      "uncertainty": "No verified forecast interval or FantasyPros data."
+    },
+    {
+      "name": "Jacob Cowing",
+      "fantasypros_id": null,
+      "availability": "UNKNOWN",
+      "fantasypros_ppr_rank": null,
+      "fantasypros_projection_ppr": null,
+      "supporting_signals": [
+        "Recorded SF receiver injuries could expand opportunity."
+      ],
+      "risks": [
+        "Recorded Week 5: 2 targets, 50% route participation; fragile role.",
+        "Monday injury/activation uncertainty arrives after Sunday fallback locks."
+      ],
+      "uncertainty": "No verified forecast interval or FantasyPros data."
+    }
+  ],
+  "evidence_limit": "Signals reproduce repository decision assertions, not freshly verified underlying NFL sources.",
+  "accounting_conflict": {
+    "current_directive": "$1 per completed pickup plus applicable FAAB",
+    "older_rules": "AGENTS.md rules 14/50 and learning_rules_v3: winning FAAB only",
+    "historical_accounting_changed": false
+  },
+  "missing": [
+    "Authoritative OpenAPI specification",
+    "Rotated API key and quota confirmation",
+    "FantasyPros rankings/projections",
+    "Independent route/target/injury verification",
+    "Matched actual full-PPR outcomes and pre-kickoff forecasts"
+  ]
+}
