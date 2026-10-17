@@ -167,6 +167,14 @@ def publish_batch(records, output_dir):
     return path
 
 
+def contains_secret(value, secret):
+    if isinstance(value, str): return secret in value
+    if isinstance(value, list): return any(contains_secret(v, secret) for v in value)
+    if isinstance(value, dict):
+        return any(contains_secret(k, secret) or contains_secret(v, secret) for k,v in value.items())
+    return False
+
+
 def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, retries=0, sleep=time.sleep) -> dict:
     if not api_key.strip():
         raise IngestionError("FANTASYPROS_API_KEY is not configured")
@@ -199,7 +207,7 @@ def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, 
     except (ValueError, UnicodeDecodeError, RecursionError):
         raise IngestionError(f"FantasyPros {kind}: invalid JSON response") from None
     try:
-        if api_key in canonical(payload):
+        if contains_secret(payload, api_key):
             raise IngestionError("FantasyPros: credential echoed in response; rejected")
         payload, flags, yahoo, stamps = validate_payload(payload, kind, season, week)
     except (ValueError, TypeError, RecursionError):
@@ -225,12 +233,17 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--week", type=int, required=True)
     parser.add_argument("--kind", choices=ALLOWED_KINDS + ("all",), default="all")
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--credential-rotated", action="store_true", help="Confirm key was rotated after chat exposure")
+    parser.add_argument("--request-budget", type=int, default=0, help="Confirmed quota allowance for this invocation, including retries")
     parser.add_argument("--retries", type=int, choices=range(3), default=0)
     args = parser.parse_args(argv)
     kinds = ALLOWED_KINDS if args.kind == "all" else (args.kind,)
     key = os.environ.get("FANTASYPROS_API_KEY", "")
     if not key.strip():
         print("FANTASYPROS_API_KEY missing; no requests sent", file=sys.stderr)
+        return 2
+    if not args.credential_rotated or args.request_budget < len(kinds) * (1 + args.retries):
+        print("Rotated credential and sufficient confirmed request budget required; no requests sent", file=sys.stderr)
         return 2
     try:
         validate_output_dir(args.output_dir)

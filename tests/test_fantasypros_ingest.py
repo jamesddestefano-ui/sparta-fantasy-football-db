@@ -139,19 +139,32 @@ class PipelineTests(unittest.TestCase):
         from unittest.mock import patch
         import fantasypros_ingest as module
         with tempfile.TemporaryDirectory() as tmp, patch.dict(module.os.environ, {"FANTASYPROS_API_KEY":"synthetic-key"}), patch.object(module,"fetch",side_effect=[{"kind":"consensus"},IngestionError("failed")]):
-            self.assertEqual(module.main(["--week","6","--output-dir",tmp]),1)
+            self.assertEqual(module.main(["--week","6","--output-dir",tmp,"--credential-rotated","--request-budget","3"]),1)
             self.assertEqual(list(Path(tmp).iterdir()),[])
 
     def test_reject_output_before_spending_requests(self):
         from unittest.mock import patch
         import fantasypros_ingest as module
         with patch.dict(module.os.environ,{"FANTASYPROS_API_KEY":"synthetic-key"}), patch.object(module,"fetch") as fetched:
-            self.assertEqual(module.main(["--week","6","--output-dir",str(Path(module.__file__).resolve().parents[1]/"data")]),1)
+            self.assertEqual(module.main(["--week","6","--output-dir",str(Path(module.__file__).resolve().parents[1]/"data"),"--credential-rotated","--request-budget","3"]),1)
             fetched.assert_not_called()
 
     def test_redirects_refused(self):
         from fantasypros_ingest import NoRedirect
         self.assertIsNone(NoRedirect().redirect_request(None,None,302,"redirect",{},"https://other.invalid"))
+
+    def test_escaped_secret_echo_is_rejected(self):
+        key='test-"-key'
+        payload={"season":2026,"week":6,"scoring":"PPR","players":[{"player_id":"1","player_name":"Test","player_position":"WR"}],"message":key}
+        with self.assertRaises(IngestionError):
+            fetch("consensus",2026,6,key,opener=lambda *a,**k:Response(payload))
+
+    def test_cli_requires_rotation_and_budget_acknowledgement(self):
+        from unittest.mock import patch
+        import fantasypros_ingest as module
+        with patch.dict(module.os.environ,{"FANTASYPROS_API_KEY":"synthetic-key"}), patch.object(module,"fetch") as fetched:
+            self.assertEqual(module.main(["--week","6","--output-dir","/tmp/pilot"]),2)
+            fetched.assert_not_called()
 
     def test_deep_json_is_safe_error(self):
         class RawResponse(Response):
