@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "record_type": "public_nfl_evidence_education",
+  "research_window_utc": {
+    "started_at": "2026-10-17T12:34:49Z",
+    "ended_at": "2026-10-17T12:35:30Z"
+  },
+  "coverage": "Public NFL source facts and educational methods only; no league holdings, budgets, authenticated provenance or actual actions.",
+  "weekly_continuity": {
+    "status": "SUPPORTING_EVIDENCE_ONLY",
+    "prior_report": "intelligence/news/2026-10-16T1223Z-friday-role-uncertainty-education.json",
+    "text": "Advances Friday morning participation uncertainty with final Friday reports and date-matched usage context. Historical forecasts remain intact; no matched forecast/outcome sample or calibration estimated. This is not a replacement weekly review.",
+    "rule_changes_adopted": [],
+    "calibration": "NOT_ESTIMATED",
+    "nfl_pulse_performance": "NOT_GRADED"
+  },
+  "preservation": {
+    "authoritative_state_write": false,
+    "transaction": false,
+    "rule_change": false,
+    "historical_forecast_backfill": false,
+    "private_state_republished": false
+  },
+  "record_id": "sparta-2026-10-17-saturday-availability-role-education",
+  "context": "SPARTA public NFL intelligence only",
+  "title": "Saturday availability is not workload: final Friday clearance and personnel-conditioned receiver roles",
+  "sources": [
+    {
+      "id": "CAR",
+      "creator": "Darin Gantt / Carolina Panthers",
+      "title": "Week 6 Friday Injury Report: AJ Dillon out, many questionables",
+      "url": "https://www.panthers.com/news/week-6-friday-injury-report-aj-dillon-out-many-questionables",
+      "publication_date": "2026-10-16 12:26 PM; displayed timezone unspecified",
+      "retrieved_at_utc": "2026-10-17T12:35:30Z",
+      "retrieval_time_note": "Upper bound of review from 12:34:49 to 12:35:30 UTC",
+      "access_medium": "Official article body reviewed",
+      "timestamp": null
+    },
+    {
+      "id": "CAR_TABLE",
+      "creator": "Carolina Panthers",
+      "title": "Injury Report",
+      "url": "https://www.panthers.com/team/injury-report/",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-17T12:35:30Z",
+      "retrieval_time_note": "Upper bound of review from 12:34:49 to 12:35:30 UTC",
+      "access_medium": "Official dynamic Friday table reviewed",
+      "timestamp": null
+    },
+    {
+      "id": "PHI",
+      "creator": "PhiladelphiaEagles.com",
+      "title": "Panthers vs. Eagles Injury Report",
+      "url": "https://www.philadelphiaeagles.com/news/panthers-vs-eagles-injury-report-2026-nfl-week-6-saquon-barkley-devonta-smith",
+      "publication_date": "2026-10-16 04:05 PM; displayed timezone unspecified",
+      "retrieved_at_utc": "2026-10-17T12:35:30Z",
+      "retrieval_time_note": "Upper bound of review from 12:34:49 to 12:35:30 UTC",
+      "access_medium": "Official Friday article body reviewed; older Thursday sections distinguished",
+      "timestamp": null
+    },
+    {
+      "id": "SF",
+      "creator": "San Francisco 49ers",
+      "title": "Injury Report",
+      "url": "https://www.49ers.com/team/injury-report/",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-17T12:35:30Z",
+      "retrieval_time_note": "Upper bound of review from 12:34:49 to 12:35:30 UTC",
+      "access_medium": "Official Week 6 Thursday/Friday table; Saturday blank at retrieval",
+      "timestamp": null
+    },
+    {
+      "id": "USAGE",
+      "creator": "Jerry Donabedian / RotoWire",
+      "title": "NFL Box Score Breakdown: Week 5 Recap & Usage Stats",
+      "url": "https://www.rotowire.com/football/article/nfl-box-score-breakdown-week-5-recap-usage-stats-140661",
+      "publication_date": "Updated October 13, 2026 1:22PM EST as displayed; timezone label not corrected",
+      "retrieved_at_utc": "2026-10-17T12:35:30Z",
+      "retrieval_time_note": "Upper bound of review from 12:34:49 to 12:35:30 UTC",
+      "access_medium": "Publicly accessible article methodology and SF table/personnel commentary reviewed; not full-site data reproduction",
+      "timestamp": null
+    },
+    {
+      "id": "FP",
+      "creator": "FantasyPros",
+      "title": "Week 6 Flex Position Notes",
+      "url": "https://www.fantasypros.com/nfl/notes/weekly-flex.php",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-17T12:35:30Z",
+      "retrieval_time_note": "Upper bound of review from 12:34:49 to 12:35:30 UTC",
+      "access_medium": "Original dynamic Wicks note reviewed; precise publication timestamp/individual author not exposed",
+      "timestamp": null
+    }
+  ],
+  "findings": [
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "Waller and Tremble practiced fully Friday and have no game designation. Team article and table agree; they represent one team report. Clearance does not establish either player's route share.",
+      "source_ids": [
+        "CAR",
+        "CAR_TABLE"
+      ],
+      "confidence": "HIGH for reported status; workload unknown"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "Wicks and DeVonta Smith cleared after full Friday practice; Tanner McKee starts with Hurts out. Use the Friday section, not the older Thursday DNP entries on the same page.",
+      "source_ids": [
+        "PHI"
+      ],
+      "confidence": "HIGH for reported status"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "SF table shows Cowing full Thursday/Friday, Evans and Samuel DNP both days, Kirk limited both days. Saturday and final designation fields are not populated; no final Evans/Kirk availability or activation inferred.",
+      "source_ids": [
+        "SF"
+      ],
+      "confidence": "HIGH for displayed participation; final status unavailable"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "RotoWire reports Week 5 Cowing 17 routes/50% of dropbacks and two targets; 92% of 11-personnel snaps but one of 25 in 12 personnel. Its last five table columns are season rates, distinct from the opening game-only columns. Counts are attributed to its NGS-based analysis, not independently recalculated.",
+      "source_ids": [
+        "USAGE"
+      ],
+      "confidence": "MEDIUM; attributed usage"
+    },
+    {
+      "classification": "ANALYST OPINION",
+      "text": "FantasyPros cites Wicks' 17% target share in Weeks 1–3 with Smith, but warns of a likely third-option role with McKee. That conditional sample is more relevant than simply extrapolating Smith-absent targets, yet three games do not establish a stable forecast.",
+      "source_ids": [
+        "FP"
+      ],
+      "confidence": "MEDIUM for attribution; predictive effect untested"
+    }
+  ],
+  "educational_lesson": {
+    "classification": "MODEL ASSUMPTION",
+    "central_method": "Model personnel-conditioned route access separately from health clearance and target propensity.",
+    "mathematics": "Expected routes = sum over personnel groups of expected dropbacks in that group times conditional route participation. Expected targets require route-specific target propensity; snap share within a package is not itself route participation.",
+    "synthetic_example": "Invented teaching inputs, not player forecasts: 36 dropbacks, 40% in package A at 90% route participation and 60% in package B at 10% imply 15.12 routes. Raising A to 70% gives 23.76 routes without changing within-package ability. At assumed constant 20% target propensity these imply 3.024 versus 4.752 targets.",
+    "limitations": [
+      "Real personnel selection and pass probability are dependent.",
+      "Injury replacement may change package mix and within-package role simultaneously.",
+      "One observed game or full practice cannot estimate stable conditional rates."
+    ]
+  },
+  "research_proposals": [
+    {
+      "classification": "UNTESTED HYPOTHESIS",
+      "name": "Personnel-conditioned role forecasts outperform unconditional last-game route share",
+      "testing_method": "Freeze both methods before kickoff on identical receiver candidates. Fit on earlier weeks, test later weeks, retain inactive/zero-route cases, and compare route MAE, target MAE and interval coverage with game-clustered uncertainty.",
+      "failure_condition": "Reject if held-out gains disappear after zero-route cases or injury-driven mix changes are retained.",
+      "status": "OPEN_UNRUN"
+    }
+  ],
+  "general_hub_application": {
+    "classification": "ANALYST OPINION",
+    "text": "Sparta Brain can review these public inputs at its own pre-lock decision cutoff. Compare Sunday options before they lock rather than assuming Monday uncertainty can be resolved later without cost. Current Yahoo ownership, eligible alternatives and actual lineup must be checked separately."
+  },
+  "source_access_limitations": [
+    "No video playback in this secondary pass.",
+    "No final Saturday SF report exposed as of retrieval.",
+    "No independently reproduced NGS export or injury-conditioned forecast.",
+    "No current authenticated Yahoo refresh performed."
+  ],
+  "missing_evidence": [
+    "Final SF designations and activation transactions",
+    "Current role-specific routes with package denominators",
+    "Fresh Yahoo lineup and availability before any recommendation",
+    "Preserved numerical forecasts and verified outcomes for calibration"
+  ]
+}
