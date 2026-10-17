@@ -37,7 +37,7 @@ class ContractTests(unittest.TestCase):
         def opener(req, timeout):
             self.assertEqual(req.get_header("X-api-key"), "dummy-secret")
             self.assertEqual(timeout, 15)
-            return Response({"sport": "NFL", "season": "2026", "week": "6", "players": [{"player_name": "Test"}]})
+            return Response({"sport": "NFL", "season": "2026", "week": "6", "scoring": "PPR", "players": [{"player_id": "1", "player_name": "Test", "player_position": "WR"}]})
         out = fetch("consensus", 2026, 6, "dummy-secret", opener=opener)
         self.assertEqual(out["record_count"], 1)
         self.assertEqual(out["authority"], "NFL_INTELLIGENCE_ONLY_NOT_YAHOO_OWNERSHIP")
@@ -59,6 +59,78 @@ class ContractTests(unittest.TestCase):
             fetch("injuries", 2026, 6, "secret", opener=opener)
         self.assertIn("401", str(ctx.exception))
         self.assertNotIn("secret", str(ctx.exception))
+
+
+class SafetyTests(unittest.TestCase):
+    def payload(self):
+        return {"season":2026,"week":6,"scoring":"PPR","players":[
+            {"player_id":"1","player_name":"Test","player_position":"WR"}]}
+
+    def get(self, data, **kwargs):
+        return fetch("consensus",2026,6,"dummy-secret",opener=lambda *a, **k: Response(data), **kwargs)
+
+    def test_reject_invalid_records(self):
+        for rows in ([], [None], [{}], [{"player_id":"1","player_name":"Test","player_position":"BOGUS"}]):
+            with self.subTest(rows=rows), self.assertRaises(IngestionError):
+                self.get(dict(self.payload(), players=rows))
+
+    def test_reject_wrong_or_missing_scoring(self):
+        for scoring in (None,"HALF","STD"):
+            with self.subTest(scoring=scoring), self.assertRaises(IngestionError):
+                self.get(dict(self.payload(),scoring=scoring))
+
+    def test_deduplicate_and_reject_conflicting_identity(self):
+        data=self.payload(); data["players"] *= 2
+        self.assertEqual(self.get(data)["record_count"],1)
+        data["players"][1]=dict(data["players"][0], player_name="Other")
+        with self.assertRaises(IngestionError): self.get(data)
+
+    def test_reject_record_scope_conflicts(self):
+        for fields in ({"week":5},{"season":2025},{"scoring":"STD"}):
+            data=self.payload(); data["players"][0].update(fields)
+            with self.subTest(fields=fields), self.assertRaises(IngestionError): self.get(data)
+
+    def test_reject_credential_echo(self):
+        data=self.payload(); data["message"]="dummy-secret"
+        with self.assertRaises(IngestionError) as ctx: self.get(data)
+        self.assertNotIn("dummy-secret",str(ctx.exception))
+
+    def test_missing_timestamps_and_contract_are_explicit(self):
+        out=self.get(self.payload())
+        self.assertIn("PROVIDER_TIMESTAMP_MISSING",out["quality_flags"])
+        self.assertEqual(out["contract_status"],"UNVERIFIED_OPENAPI_NOT_SUPPLIED")
+        self.assertEqual(out["availability"],"UNKNOWN")
+
+    def test_bounded_retry_and_no_auth_retry(self):
+        calls=[]; sleeps=[]
+        def opener(*a,**k):
+            calls.append(1)
+            if len(calls)==1: raise HTTPError("url",429,"limited",{"Retry-After":"2"},None)
+            return Response(self.payload())
+        out=fetch("consensus",2026,6,"dummy-secret",opener=opener,retries=1,sleep=sleeps.append)
+        self.assertEqual(out["attempt_count"],2); self.assertEqual(sleeps,[2])
+        calls.clear()
+        def denied(*a,**k):
+            calls.append(1); raise HTTPError("url",401,"secret",{},None)
+        with self.assertRaises(IngestionError): fetch("consensus",2026,6,"dummy-secret",opener=denied,retries=2,sleep=sleeps.append)
+        self.assertEqual(len(calls),1)
+
+    def test_timestamp_invalid_stale_future(self):
+        for stamp in ("nonsense","2000-01-01T00:00:00Z","2099-01-01T00:00:00Z"):
+            with self.subTest(stamp=stamp), self.assertRaises(IngestionError):
+                self.get(dict(self.payload(),updated_at=stamp))
+
+    def test_publish_immutable_deduplicated_batch_and_isolation(self):
+        import tempfile
+        from fantasypros_ingest import publish_batch
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            record=self.get(self.payload())
+            path=publish_batch([record],root)
+            self.assertEqual(path,publish_batch([record],root))
+            self.assertEqual(len(list(root.glob("*.json"))),1)
+            self.assertEqual(json.loads(path.read_text())["records"][0]["record_count"],1)
+        with self.assertRaises(IngestionError): publish_batch([record],Path(__file__).resolve().parents[1]/"data")
 
 
 if __name__ == "__main__":
