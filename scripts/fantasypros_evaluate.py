@@ -25,8 +25,8 @@ def evaluate(rows):
         seen.add(ident)
         for field in ('fantasypros','sparta','actual','lower','upper'):
             value = row.get(field)
-            if type(value) not in (int,float) or not math.isfinite(value):
-                raise ValueError('Missing or nonfinite paired observation')
+            if type(value) not in (int,float) or not math.isfinite(value) or abs(value) > 1000:
+                raise ValueError('Missing, nonfinite or implausible fantasy-point observation')
         if row['lower'] > row['upper']: raise ValueError('Inverted prediction interval')
     n = len(rows)
     result = {'status':'DESCRIPTIVE_ONLY' if n else 'INSUFFICIENT_DATA',

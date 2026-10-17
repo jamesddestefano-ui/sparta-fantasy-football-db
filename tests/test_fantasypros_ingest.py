@@ -133,5 +133,32 @@ class SafetyTests(unittest.TestCase):
         with self.assertRaises(IngestionError): publish_batch([record],Path(__file__).resolve().parents[1]/"data")
 
 
+class PipelineTests(unittest.TestCase):
+    def test_partial_batch_never_publishes(self):
+        import tempfile
+        from unittest.mock import patch
+        import fantasypros_ingest as module
+        with tempfile.TemporaryDirectory() as tmp, patch.dict(module.os.environ, {"FANTASYPROS_API_KEY":"synthetic-key"}), patch.object(module,"fetch",side_effect=[{"kind":"consensus"},IngestionError("failed")]):
+            self.assertEqual(module.main(["--week","6","--output-dir",tmp]),1)
+            self.assertEqual(list(Path(tmp).iterdir()),[])
+
+    def test_reject_output_before_spending_requests(self):
+        from unittest.mock import patch
+        import fantasypros_ingest as module
+        with patch.dict(module.os.environ,{"FANTASYPROS_API_KEY":"synthetic-key"}), patch.object(module,"fetch") as fetched:
+            self.assertEqual(module.main(["--week","6","--output-dir",str(Path(module.__file__).resolve().parents[1]/"data")]),1)
+            fetched.assert_not_called()
+
+    def test_redirects_refused(self):
+        from fantasypros_ingest import NoRedirect
+        self.assertIsNone(NoRedirect().redirect_request(None,None,302,"redirect",{},"https://other.invalid"))
+
+    def test_deep_json_is_safe_error(self):
+        class RawResponse(Response):
+            def read(self,_max): return b"["*1500+b"0"+b"]"*1500
+        with self.assertRaises(IngestionError):
+            fetch("consensus",2026,6,"dummy-key",opener=lambda *a,**k:RawResponse(None))
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -127,13 +127,19 @@ def validate_payload(payload, kind, season, week, *, now=None):
     return clean, flags, yahoo, stamps
 
 
-def publish_batch(records, output_dir):
-    """Publish one complete immutable batch; repeated observations share one file."""
+def validate_output_dir(output_dir):
+    """Reject writes into league state before consuming any API credits."""
     root = Path(__file__).resolve().parents[1]
     output_dir = Path(output_dir).resolve()
     allowed = root / "intelligence" / "fantasypros"
     if output_dir == root or (root in output_dir.parents and output_dir != allowed and allowed not in output_dir.parents):
         raise IngestionError("Output must be external or under intelligence/fantasypros")
+    return output_dir
+
+
+def publish_batch(records, output_dir):
+    """Publish one complete immutable batch; repeated observations share one file."""
+    output_dir = validate_output_dir(output_dir)
     if not records or any(r.get("system") != "SPARTA" or r.get("status") != "unvalidated_for_decisions" for r in records):
         raise IngestionError("Invalid or partial batch")
     # Retrieval times differ on a repeat; provider content determines identity.
@@ -190,7 +196,7 @@ def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, 
         raise IngestionError(f"FantasyPros {kind}: response too large")
     try:
         payload = json.loads(raw)
-    except (ValueError, UnicodeDecodeError):
+    except (ValueError, UnicodeDecodeError, RecursionError):
         raise IngestionError(f"FantasyPros {kind}: invalid JSON response") from None
     try:
         if api_key in canonical(payload):
@@ -227,6 +233,7 @@ def main(argv: list[str] | None = None) -> int:
         print("FANTASYPROS_API_KEY missing; no requests sent", file=sys.stderr)
         return 2
     try:
+        validate_output_dir(args.output_dir)
         records = [fetch(kind, args.season, args.week, key, retries=args.retries) for kind in kinds]
     except (IngestionError, ValueError) as exc:
         print(str(exc), file=sys.stderr)

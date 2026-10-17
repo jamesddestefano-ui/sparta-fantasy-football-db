@@ -22,7 +22,7 @@ class EvaluationTests(unittest.TestCase):
 
     def test_reject_invalid_cohort(self):
         from fantasypros_evaluate import evaluate
-        for changes in ({'scoring':'HALF'},{'fantasypros':None},{'actual':math.nan},{'week':19},{'lower':20},{'sparta':True}):
+        for changes in ({'scoring':'HALF'},{'fantasypros':None},{'actual':math.nan},{'week':19},{'lower':20},{'sparta':True},{'fantasypros':1e308}):
             with self.subTest(changes=changes),self.assertRaises(ValueError): evaluate([self.row(**changes)])
         with self.assertRaises(ValueError): evaluate([self.row(),self.row()])
 
