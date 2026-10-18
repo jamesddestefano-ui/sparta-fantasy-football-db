@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "record_type": "public_nfl_evidence_education",
+  "research_window_utc": {
+    "started_at": "2026-10-18T23:54:21Z",
+    "ended_at": "2026-10-18T23:55:11Z"
+  },
+  "coverage": "Initial completed-game public opportunity review only; partial Week 6 coverage.",
+  "prior_report": "intelligence/news/2026-10-18T1250Z-sunday-report-freshness-education.json",
+  "game_coverage": {
+    "SNF": "Not started at review cutoff; excluded from results",
+    "MNF": "Not played; excluded from results",
+    "advanced_usage": "No independently verified final snap/route dataset retrieved. Absence from this review does not establish that none has been published."
+  },
+  "weekly_continuity": {
+    "status": "INITIAL_REVIEW_NOT_WEEKLY_FINAL",
+    "calibration": "NOT_ESTIMATED",
+    "original_forecasts": "Original educational records retained; they contained qualitative scenario checks rather than numerical player forecasts. No retroactive numeric forecast or grade is created.",
+    "decision_boundary": "Logged advice, unpersisted advice and actual actions remain distinct. This educational review does not certify any fantasy action or amend a decision ledger.",
+    "rule_changes_adopted": []
+  },
+  "preservation": {
+    "authoritative_state_write": false,
+    "transaction": false,
+    "rule_change": false,
+    "historical_forecast_backfill": false,
+    "private_state_republished": false
+  },
+  "notification": "Routine repository handoff; existing reports may already carry these NFL facts.",
+  "record_id": "sparta-2026-10-18-evening-opportunity-initial",
+  "context": "SPARTA public intelligence",
+  "title": "Initial Sunday review: separate repeatable opportunity from touchdowns",
+  "sources": [
+    {
+      "creator": "Kassidy Hill / Carolina Panthers",
+      "title": "Chuba Hubbard and Tommy Tremble, together as usual, combine for a dominant day in Panthers' win",
+      "url": "https://www.panthers.com/news/chuba-hubbard-and-tommy-tremble-together-as-usual-combine-for-a-dominant-day-in-panthers-win",
+      "publication_date": "2026-10-18 06:27 PM, timezone unspecified",
+      "retrieved_at_utc": "2026-10-18T23:55:11Z",
+      "retrieval_time_note": "Upper bound of bounded review beginning 23:54:21 UTC",
+      "access_medium": "Substantial indexed official article text reviewed; direct open failed",
+      "video_timestamp": null
+    },
+    {
+      "creator": "Sean Koerner / Action Network",
+      "title": "Panthers vs Eagles expert analysis",
+      "url": "https://www.actionnetwork.com/nfl-game/panthers-eagles-score-odds-october-18-2026/290923",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-18T23:55:11Z",
+      "retrieval_time_note": "Upper bound of bounded review beginning 23:54:21 UTC",
+      "access_medium": "Original analyst text on game page reviewed; publication timestamp not exposed, retrieved postgame",
+      "video_timestamp": null
+    },
+    {
+      "creator": "Carolina Panthers",
+      "title": "Tetairoa McMillan game log",
+      "url": "https://www.panthers.com/team/players-roster/tetairoa-mcmillan/logs/",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-18T23:55:11Z",
+      "retrieval_time_note": "Upper bound of bounded review beginning 23:54:21 UTC",
+      "access_medium": "Indexed official game-log row reviewed",
+      "video_timestamp": null
+    }
+  ],
+  "findings": [
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "Carolina's official recap confirms a completed 25-14 victory. Tremble caught four passes for 46 yards and two touchdowns; Hubbard had 28 carries for 120 yards and a touchdown. McMillan had six receptions for 86 yards and Coker six for 97.",
+      "confidence": "HIGH for attributed completed results"
+    },
+    {
+      "classification": "ANALYST OPINION",
+      "text": "Koerner's original analysis distinguishes Waller's target propensity with Coker present from injury-absence samples, and separates red-zone scoring from between-the-20s volume. Its small conditional samples require shrinkage. Retrieved after the game, it cannot be credited here as a preserved pregame forecast or independently audited edge.",
+      "confidence": "MODERATE for methodology; not validated"
+    },
+    {
+      "classification": "MODEL ASSUMPTION",
+      "text": "Tremble's touchdowns do not establish a future lead receiving role. Hubbard's carries are an opportunity observation, but repeatability needs carry share, personnel and game-script denominators. McMillan/Coker catches warrant target-and-route review, not extrapolation from yards.",
+      "confidence": "HIGH principle; next-week role uncertain"
+    }
+  ],
+  "hypothesis": {
+    "classification": "UNTESTED HYPOTHESIS",
+    "text": "Model target propensity conditional on teammate availability using partial pooling rather than one-game touchdown ranking.",
+    "test": "Compare a shrinking conditional-usage model with an unconditional baseline on chronologically held-out weeks; judge target-count error and interval coverage, not touchdowns alone.",
+    "failure_condition": "Reject if apparent gains vanish after game-script and route denominators are included.",
+    "status": "OPEN_UNRUN"
+  },
+  "prior_expectation_review": "Saturday education warned that Waller/Tremble clearance does not establish route share. Today's scoring concentration does not resolve that missing denominator. Cowing's Monday performance remains unobserved; no Wicks/Cowing outcome comparison is complete.",
+  "general_hub_application": "Sparta Brain can prioritize the Carolina TE/receiver usage audit before later waiver or trade synthesis. No player availability, bid, roster move or start/sit action is inferred.",
+  "source_access_limitations": [
+    "Referenced NBC Waller postgame URL could not be opened; preliminary route/snap numbers are not adopted.",
+    "No video playback; official recap available through indexed article text.",
+    "No full weekly results or validated route dataset."
+  ],
+  "missing_evidence": [
+    "Official snap counts and independently sourced routes/targets",
+    "Game-script and personnel splits",
+    "Monday outcomes",
+    "Current league decision evidence before any actual recommendation"
+  ]
+}
