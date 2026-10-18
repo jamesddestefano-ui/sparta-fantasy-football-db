@@ -1,38 +1,44 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-10-18T13:09:41.377Z",
+  "generatedAt": "2026-10-18T13:09:53.408Z",
   "status": "live",
-  "completedAt": "2026-10-18T13:09:41.335Z",
+  "completedAt": "2026-10-18T13:09:53.377Z",
   "nextAtLabel": "10:09 AM ET",
   "inWindow": true,
-  "itemCount": 18,
+  "itemCount": 16,
   "items": [
     {
-      "id": "schefter-mhj-active-1018",
+      "id": "schefter-montgomery-inactive-1018",
       "at": "2026-10-18T13:02:42Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Marvin Harrison Jr. officially active for Texans debut in London vs JAX.",
+      "text": "David Montgomery inactive for Texans (groin) in London game; Marvin Harrison Jr active for debut.",
       "playerIds": [
+        "david-montgomery",
         "marvin-harrison"
       ],
       "players": [
+        "David Montgomery",
         "Marvin Harrison Jr."
       ],
       "url": "https://x.com/AdamSchefter/status/2111805171395342584",
       "kind": "INJURY_STATUS",
-      "eventId": "active-mhj-week6",
-      "signal": "ACTIVE",
-      "priorStatus": "UNCERTAIN",
-      "newStatus": "ACTIVE",
-      "why": "Rapoport confirms from Texans inactives; debut after move.",
-      "implication": "Immediate WR role in HOU offense alongside Nico Collins.",
-      "opportunity": "Targets/routes in new scheme; potential breakout spot.",
+      "eventId": "injury-montgomery-week6",
+      "signal": "INACTIVE",
+      "priorStatus": "OUT",
+      "newStatus": "INACTIVE",
+      "why": "Official inactives; Harrison active per Rapoport.",
+      "implication": "More RB work for others in HOU; Harrison debut targets.",
+      "opportunity": "Harrison routes/targets with Stroud.",
+      "beneficiaries": [
+        "marvin-harrison"
+      ],
       "corroboration": [
-        "https://x.com/RapSheet/status/2111792773414391825"
+        "https://x.com/RapSheet/status/2111792773414391825",
+        "NFL.com"
       ],
       "supportingSources": [
         "ian-rapoport"
@@ -40,13 +46,13 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "etr-judkins-gtd-1018",
+      "id": "etr-summary-judkins-gtd-1018",
       "at": "2026-10-18T12:12:59Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Quinshon Judkins listed as GAME-TIME DECISION; will workout pregame to determine status after limited practice this week.",
+      "text": "Quinshon Judkins listed as GAME-TIME DECISION in ETR weekend fantasy reports summary; will workout pregame per Rapoport to determine status after limited practice.",
       "playerIds": [
         "quinshon-judkins"
       ],
@@ -56,19 +62,21 @@
       "url": "https://x.com/EstablishTheRun/status/2111792658477883409",
       "kind": "INJURY_STATUS",
       "eventId": "injury-judkins-week6",
-      "signal": "GAME_TIME_DECISION",
+      "signal": "GAME-TIME-DECISION",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "GAME_TIME_DECISION",
-      "why": "Ankle injury; only one limited practice; pregame workout planned per Rapoport corroboration.",
-      "implication": "High uncertainty for Browns RB volume; monitor inactive list closely.",
-      "opportunity": "If OUT, backup RBs gain significant carries/snaps.",
+      "newStatus": "GTD",
+      "why": "Ankle; practiced once this week; pregame workout decisive.",
+      "implication": "If out, elevates Browns RB committee backups; monitor closely pre-kickoff.",
+      "opportunity": "Carries/snaps if active; reverse if inactive.",
       "corroboration": [
         "https://x.com/RapSheet/status/2111778050820243756",
-        "@AdamSchefter"
+        "@AdamSchefter",
+        "@EstablishTheRun"
       ],
       "supportingSources": [
         "ian-rapoport",
-        "adam-schefter"
+        "adam-schefter",
+        "establish-the-run"
       ],
       "priority": "IMMEDIATE"
     },
@@ -89,63 +97,140 @@
       "url": "https://x.com/EstablishTheRun/status/2111792658477883409",
       "kind": "INJURY_STATUS",
       "eventId": "injury-evans-week6",
-      "signal": "GAME_TIME_DECISION",
+      "signal": "GAME-TIME-DECISION",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "GAME_TIME_DECISION",
-      "why": "Weekend injury summary flags as GTD.",
-      "implication": "TB WR1 status uncertain; monitor warmups/inactives.",
-      "opportunity": "If OUT, elevated role for other Bucs WRs like Chris Godwin/Egbuka.",
+      "newStatus": "GTD",
+      "why": "Weekend summary.",
+      "implication": "If out, boosts Godwin/Egbuka; Berry loves him if active.",
+      "opportunity": "Targets if plays.",
       "beneficiaries": [
         "chris-godwin",
         "emeka-egbuka"
       ],
+      "supportingSources": [
+        "matthew-berry"
+      ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "rap-ajbrown-expected-1018",
+      "id": "rap-henderson-ajb-1018",
       "at": "2026-10-18T11:24:17Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Patriots WR A.J. Brown returning from IR and expected/likely to play vs Jets; team close to full health with Henderson also likely.",
+      "text": "Patriots RB TreVeyon Henderson (ankle) and LT Will Campbell likely to play; AJ Brown returning, NE close to full health.",
       "playerIds": [
-        "aj-brown",
-        "treveyon-henderson"
+        "treveyon-henderson",
+        "aj-brown"
       ],
       "players": [
-        "A.J. Brown",
-        "TreVeyon Henderson"
+        "TreVeyon Henderson",
+        "A.J. Brown"
       ],
       "url": "https://x.com/RapSheet/status/2111780402125807921",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-ajbrown-henderson-week6",
-      "signal": "EXPECTED_TO_PLAY",
-      "priorStatus": "IR/QUESTIONABLE",
-      "newStatus": "EXPECTED_TO_PLAY",
-      "why": "Activated/designated to return; limited practices but sources say likely active; high-ankle recovery ahead of schedule.",
-      "implication": "Major upgrade for NE passing attack and fantasy WR2 upside; Henderson retains RB role.",
-      "opportunity": "AJB targets/routes; full NE skill group available.",
+      "eventId": "injury-ajb-henderson-week6",
+      "signal": "LIKELY",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "LIKELY",
+      "why": "Sources; Brown activation.",
+      "implication": "Henderson start/sit lean start; Brown must-start.",
+      "opportunity": "RB snaps/carries; WR targets.",
       "corroboration": [
-        "@EstablishTheRun",
-        "@MatthewBerryTMR",
-        "@AdamSchefter"
+        "https://x.com/RapSheet/status/2111780402125807921",
+        "@AdamSchefter",
+        "@EstablishTheRun"
       ],
       "supportingSources": [
-        "establish-the-run",
+        "ian-rapoport",
+        "adam-schefter",
         "matthew-berry",
-        "adam-schefter"
+        "establish-the-run"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "schefter-giants-rb-1018",
+      "id": "schefter-hurts-ir-1017",
+      "at": "2026-10-17T20:06:16Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Eagles officially placed QB Jalen Hurts on IR (blood clot); signed RB Jaydon Blue; Tanner McKee starts.",
+      "playerIds": [
+        "jalen-hurts"
+      ],
+      "players": [
+        "Jalen Hurts"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2111549374048473190",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-hurts-week6",
+      "signal": "OUT-IR",
+      "priorStatus": "OUT",
+      "newStatus": "IR",
+      "why": "Official; superficial blood clot.",
+      "implication": "McKee QB streamer; Saquon also out boosts Pierce; skill players still viable per Berry.",
+      "opportunity": "Passing volume stable for Smith/Goedert/Wicks.",
+      "beneficiaries": [
+        "devonta-smith",
+        "dallas-goedert",
+        "dontayvion-wicks"
+      ],
+      "corroboration": [
+        "@RapSheet",
+        "@MatthewBerryTMR"
+      ],
+      "supportingSources": [
+        "ian-rapoport",
+        "matthew-berry"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "schefter-ajb-activate-1017",
+      "at": "2026-10-17T20:01:21Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Patriots officially activated WR A.J. Brown from IR; expected to play vs Jets.",
+      "playerIds": [
+        "aj-brown"
+      ],
+      "players": [
+        "A.J. Brown"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2111548139911922072",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-ajb-week6",
+      "signal": "ACTIVE-EXPECTED",
+      "priorStatus": "IR",
+      "newStatus": "ACTIVATED-EXPECTED",
+      "why": "Official activation.",
+      "implication": "Immediate high-end WR2; Berry starting as WR2.",
+      "opportunity": "Primary target share.",
+      "corroboration": [
+        "@RapSheet",
+        "@MatthewBerryTMR",
+        "@EstablishTheRun"
+      ],
+      "supportingSources": [
+        "ian-rapoport",
+        "matthew-berry",
+        "establish-the-run"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "schefter-giants-rb-rotation-1018",
       "at": "2026-10-18T13:07:13Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Giants expected to change RB rotation: Najee Harris larger role, Cam Skattebo downgraded after fumbles but still in mix; all four RBs active.",
+      "text": "Giants expected to change RB rotation: Najee Harris larger role, Cam Skattebo downgraded after fumbles but still mix; all 4 active.",
       "playerIds": [
         "cam-skattebo"
       ],
@@ -156,47 +241,10 @@
       "kind": "USAGE_DATA",
       "eventId": "usage-giants-rb-week6",
       "signal": "DOWNGRADE",
-      "priorStatus": "LEAD",
-      "newStatus": "COMMITTEE",
-      "why": "Sources indicate Harris expanded role post-fumbles by Skattebo.",
-      "implication": "Skattebo snap/carry share reduced; committee more even.",
-      "opportunity": "Najee upside; Skattebo less reliable for volume.",
-      "corroboration": [
-        "@JordanRaanan"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "etr-olave-kamara-expected-1018",
-      "at": "2026-10-18T12:12:59Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "Chris Olave (illness) and Alvin Kamara (back) both EXPECTED TO PLAY; listed questionable but sources confirm.",
-      "playerIds": [
-        "chris-olave",
-        "alvin-kamara"
-      ],
-      "players": [
-        "Chris Olave",
-        "Alvin Kamara"
-      ],
-      "url": "https://x.com/EstablishTheRun/status/2111792658477883409",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-olave-kamara-week6",
-      "signal": "EXPECTED_TO_PLAY",
-      "priorStatus": "QUESTIONABLE",
-      "newStatus": "EXPECTED_TO_PLAY",
-      "why": "Limited Friday practice; Rapoport sources say both expected despite tags.",
-      "implication": "Saints offense at near full strength; Olave WR1 volume, Kamara RB work secure.",
-      "opportunity": "Standard roles; reverse any prior backup hype.",
-      "corroboration": [
-        "https://x.com/RapSheet/status/2111780456417100113"
-      ],
-      "supportingSources": [
-        "ian-rapoport"
-      ],
+      "newStatus": "REDUCED-ROLE",
+      "why": "Sources per Raanan; fumbles.",
+      "implication": "Skattebo less reliable; Harris uptick.",
+      "opportunity": "Snap share shift to Harris.",
       "priority": "HIGH"
     },
     {
@@ -206,7 +254,7 @@
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Caleb Williams EXPECTED TO PLAY and planned to start for Bears after full practice week; listed questionable but starter reps taken.",
+      "text": "Caleb Williams EXPECTED TO PLAY/return from hamstring; full practices.",
       "playerIds": [
         "caleb-williams"
       ],
@@ -216,24 +264,26 @@
       "url": "https://x.com/EstablishTheRun/status/2111792658477883409",
       "kind": "INJURY_STATUS",
       "eventId": "injury-caleb-week6",
-      "signal": "EXPECTED_TO_PLAY",
+      "signal": "EXPECTED-TO-PLAY",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "ACTIVE_START",
-      "why": "Full practice; Rapoport/Schefter confirm Bears plan to start him.",
-      "implication": "Bears passing game fully operational; boost to CHI pass catchers.",
-      "opportunity": "Normal QB snaps/routes for receivers.",
+      "newStatus": "EXPECTED",
+      "why": "Full participant all week; Bears plan to start him.",
+      "implication": "Boosts Bears pass catchers vs Falcons; QB start viable.",
+      "opportunity": "Passing volume for Odunze/Moore/etc.",
+      "beneficiaries": [
+        "rome-odunze",
+        "luther-burden"
+      ],
       "corroboration": [
-        "@RapSheet",
         "@AdamSchefter"
       ],
       "supportingSources": [
-        "ian-rapoport",
         "adam-schefter"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "etr-deebo-not-1018",
+      "id": "etr-deebo-not-expected-1018",
       "at": "2026-10-18T12:12:59Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
@@ -249,12 +299,12 @@
       "url": "https://x.com/EstablishTheRun/status/2111792658477883409",
       "kind": "INJURY_STATUS",
       "eventId": "injury-deebo-week6",
-      "signal": "NOT_EXPECTED",
+      "signal": "OUT",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "NOT_EXPECTED_TO_PLAY",
-      "why": "Weekend reports summarize as not expected.",
-      "implication": "WAS WR depth chart elevates others; targets redistribute.",
-      "opportunity": "More routes/targets for Terry McLaurin, stefon-diggs if active.",
+      "newStatus": "NOT-EXPECTED",
+      "why": "Weekend reports.",
+      "implication": "Elevates other Commanders pass catchers.",
+      "opportunity": "Targets to McLaurin/others.",
       "beneficiaries": [
         "terry-mclaurin",
         "stefon-diggs"
@@ -262,126 +312,29 @@
       "priority": "HIGH"
     },
     {
-      "id": "etr-henderson-expected-1018",
+      "id": "etr-tucker-not-expected-1018",
       "at": "2026-10-18T12:12:59Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "TreVeyon Henderson EXPECTED TO PLAY (ankle); likely per sources despite earlier multi-week fears.",
-      "playerIds": [
-        "treveyon-henderson"
-      ],
-      "players": [
-        "TreVeyon Henderson"
-      ],
-      "url": "https://x.com/EstablishTheRun/status/2111792658477883409",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-henderson-week6",
-      "signal": "EXPECTED_TO_PLAY",
-      "priorStatus": "QUESTIONABLE",
-      "newStatus": "LIKELY",
-      "why": "Three limited practices; Rapoport sources say likely with AJB return.",
-      "implication": "NE RB committee intact; Henderson retains meaningful role.",
-      "opportunity": "Carries/snaps vs Jets; handcuff value if limited.",
-      "corroboration": [
-        "https://x.com/RapSheet/status/2111780402125807921"
-      ],
-      "supportingSources": [
-        "ian-rapoport"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "rap-tucker-not-1018",
-      "at": "2026-10-18T11:33:41Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Bucs RB Sean Tucker (quad) questionable and NOT EXPECTED to play today.",
+      "text": "Sean Tucker NOT EXPECTED TO PLAY (quad, questionable).",
       "playerIds": [],
       "players": [],
-      "url": "https://x.com/RapSheet/status/2111782769269633269",
+      "url": "https://x.com/EstablishTheRun/status/2111792658477883409",
       "kind": "INJURY_STATUS",
       "eventId": "injury-tucker-week6",
-      "signal": "NOT_EXPECTED",
+      "signal": "OUT",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "NOT_EXPECTED_TO_PLAY",
-      "why": "Quad injury; sources confirm unlikely.",
-      "implication": "TB backfield shifts to other options like Bucky Irving/Kenny Gainwell.",
-      "opportunity": "Increased snaps/carries for remaining Bucs RBs.",
+      "newStatus": "NOT-EXPECTED",
+      "why": "Rapoport sources confirm.",
+      "implication": "More work for Bucky Irving/others in TB backfield.",
+      "opportunity": "Carries for Irving.",
       "beneficiaries": [
-        "bucky-irving",
-        "kenny-gainwell"
+        "bucky-irving"
       ],
       "corroboration": [
-        "@EstablishTheRun"
-      ],
-      "supportingSources": [
-        "establish-the-run"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "berry-mckee-waiver-1017",
-      "at": "2026-10-17T20:03:32Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Pick up Tanner McKee in any league needing QB; will be better than expected. Not worried about Eagles skill players (Saquon etc.) with McKee starting after Hurts IR.",
-      "playerIds": [
-        "saquon-barkley"
-      ],
-      "players": [
-        "Saquon Barkley"
-      ],
-      "url": "https://x.com/MatthewBerryTMR/status/2111548689495863591",
-      "kind": "WAIVER_SIGNAL",
-      "eventId": "waiver-mckee-week6",
-      "signal": "UPGRADE",
-      "why": "Hurts on IR with blood clot; McKee can play and skill group healthy.",
-      "implication": "QB streamer and PHI skill players remain viable.",
-      "opportunity": "McKee volume; no major dock to Barkley/Goedert/Smith.",
-      "beneficiaries": [
-        "saquon-barkley",
-        "dallas-goedert",
-        "devonta-smith"
-      ],
-      "corroboration": [
-        "@AdamSchefter",
-        "@RapSheet"
-      ],
-      "supportingSources": [
-        "adam-schefter",
-        "ian-rapoport"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "berry-ajb-start-1017",
-      "at": "2026-10-17T14:34:39Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Assuming A.J. Brown active for Patriots, starting him as WR2 wherever rostered.",
-      "playerIds": [
-        "aj-brown"
-      ],
-      "players": [
-        "A.J. Brown"
-      ],
-      "url": "https://x.com/MatthewBerryTMR/status/2111465919923032556",
-      "kind": "ANALYST_OPINION",
-      "eventId": "opinion-berry-ajb-week6",
-      "signal": "LOVE",
-      "why": "Return from IR; expects immediate contribution in NE offense.",
-      "implication": "Strong start recommendation if cleared.",
-      "opportunity": "High target share potential vs Jets.",
-      "corroboration": [
-        "@RapSheet"
+        "https://x.com/RapSheet/status/2111782769269633269"
       ],
       "supportingSources": [
         "ian-rapoport"
@@ -389,173 +342,185 @@
       "priority": "HIGH"
     },
     {
-      "id": "levitan-projections-update-1018",
-      "at": "2026-10-18T12:24:38Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
-      "outlet": "Establish The Run",
-      "text": "No news yet on DJ Moore, Josh Palmer, Tyjae Spears; projections updated for all current news including expected players.",
-      "playerIds": [
-        "dj-moore"
-      ],
-      "players": [
-        "DJ Moore"
-      ],
-      "url": "https://x.com/adamlevitan/status/2111795588568359179",
-      "kind": "ANALYST_PROJECTION",
-      "eventId": "proj-levitan-week6",
-      "signal": "UPDATE",
-      "why": "Responding to ETR injury summary; site projections refreshed.",
-      "implication": "Use latest ETR numbers for DFS/season-long decisions on remaining uncertainties.",
-      "opportunity": "Data-driven adjustments for expected actives.",
-      "corroboration": [
-        "@EstablishTheRun"
-      ],
-      "supportingSources": [
-        "establish-the-run"
-      ],
-      "priority": "NORMAL"
-    },
-    {
-      "id": "rap-freiermuth-opt-1018",
+      "id": "rap-freiermuth-optimistic-1018",
       "at": "2026-10-18T11:34:01Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Steelers optimistic Pat Freiermuth (calf, added Sat) will play.",
+      "text": "Steelers optimistic TE Pat Freiermuth (calf, added Sat) will play.",
       "playerIds": [],
       "players": [],
       "url": "https://x.com/RapSheet/status/2111782850705932467",
       "kind": "INJURY_STATUS",
       "eventId": "injury-freiermuth-week6",
-      "signal": "EXPECTED_TO_PLAY",
+      "signal": "OPTIMISTIC",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "OPTIMISTIC",
-      "why": "Calf; sources say optimistic despite late addition to report.",
-      "implication": "PIT TE remains viable; no major dock.",
-      "opportunity": "Standard red-zone/target share.",
+      "newStatus": "EXPECTED",
+      "why": "Sources optimistic.",
+      "implication": "TE start viable vs TB; ETR expected.",
+      "opportunity": "Targets/routes.",
       "corroboration": [
         "@EstablishTheRun"
       ],
       "supportingSources": [
         "establish-the-run"
       ],
-      "priority": "NORMAL"
+      "priority": "HIGH"
     },
     {
-      "id": "schefter-shough-bones-1018",
-      "at": "2026-10-18T11:33:18Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Saints QB Tyler Shough has been playing with two broken bones in his left hand.",
-      "playerIds": [],
-      "players": [],
-      "url": "https://x.com/AdamSchefter/status/2111782671026426261",
-      "kind": "NFL_FACT",
-      "eventId": "injury-shough-hand-week6",
-      "signal": "PLAYING_THROUGH",
-      "newStatus": "INJURED_ACTIVE",
-      "why": "Sources to ESPN; ongoing issue.",
-      "implication": "Potential accuracy/volume impact on Saints pass catchers like Olave/Kamara.",
-      "opportunity": "Monitor efficiency; possible slight dock to passing game.",
-      "priority": "NORMAL"
-    },
-    {
-      "id": "schefter-graham-out-1018",
-      "at": "2026-10-18T11:13:10Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Browns DT Mason Graham (questionable) not expected to play vs Ravens.",
-      "playerIds": [],
-      "players": [],
-      "url": "https://x.com/AdamSchefter/status/2111777606022332792",
+      "id": "rap-kamara-olave-1018",
+      "at": "2026-10-18T11:24:30Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Saints RB Alvin Kamara (back) and WR Chris Olave (illness) both expected to play despite Q tags.",
+      "playerIds": [
+        "alvin-kamara",
+        "chris-olave"
+      ],
+      "players": [
+        "Alvin Kamara",
+        "Chris Olave"
+      ],
+      "url": "https://x.com/RapSheet/status/2111780456417100113",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-graham-week6",
-      "signal": "NOT_EXPECTED",
+      "eventId": "injury-olave-kamara-week6",
+      "signal": "EXPECTED-TO-PLAY",
       "priorStatus": "QUESTIONABLE",
-      "newStatus": "NOT_EXPECTED_TO_PLAY",
-      "why": "Sources confirm inactive likely.",
-      "implication": "Defensive impact; may affect run game slightly but secondary for fantasy.",
+      "newStatus": "EXPECTED",
+      "why": "Sources say both expected.",
+      "implication": "Reliable starts; no major role loss.",
+      "opportunity": "Standard usage.",
       "corroboration": [
-        "@RapSheet"
+        "https://x.com/RapSheet/status/2111780456417100113",
+        "@EstablishTheRun"
       ],
       "supportingSources": [
-        "ian-rapoport"
+        "ian-rapoport",
+        "establish-the-run"
       ],
-      "priority": "NORMAL"
+      "priority": "HIGH"
     },
     {
-      "id": "berry-love-evans-1016",
-      "at": "2026-10-16T00:00:00Z",
+      "id": "berry-mckee-pickup-ajb-start-1017",
+      "at": "2026-10-17T20:03:32Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Loves Mike Evans vs WSH (strong matchup for pass catchers); also Drake London, George Kittle, Kyren Williams, Javonte Williams, Rhamondre Stevenson, Brock Purdy.",
+      "text": "Pick up Tanner McKee if need QB; not worried about Eagles skill players with him. Start AJ Brown if active as WR2. Notes Hurts/Saquon out.",
+      "playerIds": [
+        "aj-brown",
+        "jalen-hurts",
+        "saquon-barkley",
+        "devonta-smith"
+      ],
+      "players": [
+        "A.J. Brown",
+        "Jalen Hurts",
+        "Saquon Barkley",
+        "DeVonta Smith"
+      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2111548689495863591",
+      "kind": "WAIVER_SIGNAL",
+      "eventId": "berry-mckee-ajb-week6",
+      "signal": "UPGRADE-PICKUP",
+      "why": "McKee can play; skill health top-4 pass catchers ok; AJB active start.",
+      "implication": "McKee stream; AJB must; Saquon out means Pierce lead.",
+      "opportunity": "Stable targets for Smith etc under McKee.",
+      "beneficiaries": [
+        "devonta-smith"
+      ],
+      "corroboration": [
+        "@AdamSchefter"
+      ],
+      "supportingSources": [
+        "adam-schefter"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "berry-love-evans-london-kittle-1015",
+      "at": "2026-10-15T17:30:00Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Loves Mike Evans (vs WSH WR4), Drake London (vs CHI WR6), George Kittle (vs WSH TE3) for soft matchups and usage.",
       "playerIds": [
         "mike-evans",
         "drake-london",
-        "george-kittle",
-        "kyren-williams",
-        "javonte-williams",
-        "rhamondre-stevenson",
-        "brock-purdy"
+        "george-kittle"
       ],
       "players": [
         "Mike Evans",
         "Drake London",
-        "George Kittle",
-        "Kyren Williams",
-        "Javonte Williams",
-        "Rhamondre Stevenson",
-        "Brock Purdy"
+        "George Kittle"
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-6-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "love-berry-week6",
+      "eventId": "berry-love-pc-week6",
       "signal": "LOVE",
-      "why": "Washington defense buffet for pass catchers; volume and leaking run Ds for RBs; high-scoring environments for QBs.",
-      "implication": "Prioritize these in start/sit; Evans GTD but high upside if active.",
-      "opportunity": "Elite matchups and roles.",
-      "priority": "NORMAL"
+      "why": "Washington D buffet for pass catchers; London usage bankable.",
+      "implication": "Strong starts; Evans GTD monitor.",
+      "opportunity": "Targets/redzone.",
+      "conflict": "Evans GTD status.",
+      "priority": "HIGH"
     },
     {
-      "id": "berry-hate-waddle-1016",
-      "at": "2026-10-16T00:00:00Z",
+      "id": "berry-love-rb-kyren-javonte-rhamondre-1015",
+      "at": "2026-10-15T17:30:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Hates Jaylen Waddle vs SEA, Emeka Egbuka vs PIT, Kyle Pitts vs CHI, J.K. Dobbins vs SEA, Bo Nix vs SEA, Justin Herbert @ KC.",
+      "text": "Loves Kyren Williams (vs ARI RB5), Javonte Williams (@GB RB8), Rhamondre Stevenson (vs NYJ RB9) for volume and leaky run Ds; Kyren elite usage, Javonte goal-line.",
+      "playerIds": [
+        "kyren-williams",
+        "javonte-williams",
+        "rhamondre-stevenson"
+      ],
+      "players": [
+        "Kyren Williams",
+        "Javonte Williams",
+        "Rhamondre Stevenson"
+      ],
+      "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-6-fantasy-football",
+      "kind": "ANALYST_OPINION",
+      "eventId": "berry-love-rb-week6",
+      "signal": "LOVE",
+      "why": "Volume + matchups.",
+      "implication": "RB2/flex locks.",
+      "opportunity": "Carries/goal-line.",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-hate-waddle-egbuka-pitts-1015",
+      "at": "2026-10-15T17:30:00Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Hates Jaylen Waddle (vs SEA), Emeka Egbuka (vs PIT), Kyle Pitts (vs CHI) due to matchups and shaky QB/feeding.",
       "playerIds": [
         "jaylen-waddle",
         "emeka-egbuka",
-        "kyle-pitts",
-        "jk-dobbins",
-        "bo-nix",
-        "justin-herbert"
+        "kyle-pitts"
       ],
       "players": [
         "Jaylen Waddle",
         "Emeka Egbuka",
-        "Kyle Pitts Sr.",
-        "J.K. Dobbins",
-        "Bo Nix",
-        "Justin Herbert"
+        "Kyle Pitts Sr."
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-6-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "hate-berry-week6",
+      "eventId": "berry-hate-pc-week6",
       "signal": "HATE",
-      "why": "Tough matchups (SEA pass D elite), shaky QB situations, low team totals, role/usage concerns.",
-      "implication": "Fade in start/sit; look elsewhere for volume.",
-      "opportunity": "Poor projected snaps/targets/carries relative to alternatives.",
+      "why": "Ugly matchups, limited targets recently.",
+      "implication": "Sit/fade in most formats.",
+      "opportunity": "Low projected targets.",
       "priority": "NORMAL"
     }
   ],
@@ -565,35 +530,35 @@
       "sourceId": "establish-the-run",
       "source": "Establish The Run",
       "grade": "USEFUL",
-      "note": "Comprehensive Sunday morning injury summary (GTD/Expected/Not Expected/Activated) is gold standard for last-minute status; projections updated; show schedule for live updates. Limited new player-specific analysis but status parsing complete",
+      "note": "Sunday AM injury summary gold: GTD Judkins/Warren/Evans; Expected Caleb/Olave/Kamara/AJB/Henderson/Metcalf/Freiermuth/Sadiq; Not Deebo/Croskey-Merritt/Tucker; Activated Blue. Show schedules for last-min. Projections updated.",
       "at": "2026-10-18T12:12:59Z"
     },
     {
       "sourceId": "adam-levitan",
       "source": "Adam Levitan",
       "grade": "USEFUL",
-      "note": "Quoted ETR summary and noted remaining unknowns (DJ Moore etc.); confirmed projections refreshed. Player-specific conclusions limited in last 24h but tied to status clarity.",
+      "note": "Quoted ETR summary; no news yet on DJ Moore/Josh Palmer/Tyjae Spears; projections updated for all news. Limited new player-specific beyond that this window.",
       "at": "2026-10-18T12:24:38Z"
     },
     {
       "sourceId": "matthew-berry",
       "source": "Matthew Berry",
       "grade": "USEFUL",
-      "note": "Week 6 Love/Hate fully parsed per-player (loves Evans/London/Kittle/Kyren/Javonte/Rhamondre/Purdy; hates Waddle/Egbuka/Pitts/Dobbins/Nix/Herbert); strong McKee waiver push and AJB start if active; Happy Hour live Sunday. Fresh and actionabl",
-      "at": "2026-10-17T20:25:00Z"
+      "note": "Week 6 Love/Hate per-player (loves Evans/London/Kittle/Kyren/Javonte/Rhamondre/Purdy; hates Waddle/Egbuka/Pitts/Dobbins/Nix/Herbert); McKee pickup, AJB start if active; Happy Hour Sunday noon ET live Qs. Notes Hurts IR/Saquon.",
+      "at": "2026-10-18T02:51:19Z"
     },
     {
       "sourceId": "adam-schefter",
       "source": "Adam Schefter",
       "grade": "USEFUL",
-      "note": "Real-time Sunday: MHJ active/debut, Giants RB rotation change (Skattebo downgrade), Mason Graham not expected, Shough broken hand bones, Caleb start context. Strong factual base for actives/inactives.",
+      "note": "Primary real-time: Hurts IR official + Blue signed; AJ Brown activate/expected; Caleb start plan; Ja'Kobi Lane activate; Montgomery inactive; Mason Graham not expected; Shough broken bones; Giants RB rotation change (Harris up, Skattebo dow",
       "at": "2026-10-18T13:07:13Z"
     },
     {
       "sourceId": "ian-rapoport",
       "source": "Ian Rapoport",
       "grade": "USEFUL",
-      "note": "Excellent early AM clarity: Kamara/Olave expected, Henderson/AJB likely, Judkins pregame workout, Tucker not expected, Freiermuth optimistic, Giants Thomas/Carter expected, MHJ active, Caleb start. Corroborates ETR heavily.",
+      "note": "Corroborated key statuses early AM: Kamara/Olave expected; Henderson/AJB likely; Judkins pregame workout; Tucker not expected; Freiermuth optimistic; Giants Thomas/Carter expected; Sadiq good; Marvin Harrison active; Joe Alt ramp-up positiv",
       "at": "2026-10-18T12:15:11Z"
     },
     {
@@ -730,8 +695,8 @@
       "at": "2026-10-18T03:00:00Z"
     }
   ],
-  "mirroredAt": "2026-10-18T13:09:41.823Z",
+  "mirroredAt": "2026-10-18T13:09:53.874Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-10-18T13:09:41.335Z",
+  "sourceCompletedAt": "2026-10-18T13:09:53.377Z",
   "sourceStatus": "live"
 }
