@@ -28,6 +28,9 @@ ALLOWED_KINDS = PILOT_KINDS + ("news", "compare", "points", "experts", "projecti
 
 class IngestionError(Exception):
     """Safe-to-display error that never includes credentials or response bodies."""
+    def __init__(self,message,*,http_status=None):
+        super().__init__(message)
+        self.http_status=http_status
 
 
 def request_spec(kind: str, season: int, week: int, *, player_ids=None) -> tuple[str, dict[str, str], str]:
@@ -248,7 +251,7 @@ def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, 
         try:
             with opener(request, timeout=15) as response:
                 if getattr(response, "status", 200) != 200:
-                    raise IngestionError("FantasyPros: incomplete HTTP response")
+                    raise IngestionError("FantasyPros: incomplete HTTP response",http_status=getattr(response,"status",None))
                 raw = response.read(5_000_001)
             break
         except HTTPError as exc:
@@ -258,25 +261,29 @@ def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, 
                 if delay > 30:
                     raise IngestionError("FantasyPros: rate limit requires deferred retry") from None
                 sleep(max(1, delay)); continue
-            raise IngestionError(f"FantasyPros {kind}: HTTP {exc.code}; no data accepted") from None
+            raise IngestionError(f"FantasyPros {kind}: HTTP {exc.code}; no data accepted",http_status=exc.code) from None
         except (URLError, TimeoutError, OSError, ValueError):
             if attempt < retries:
                 sleep(2 ** attempt); continue
             raise IngestionError(f"FantasyPros {kind}: network unavailable; no data accepted") from None
     if len(raw) > 5_000_000:
-        raise IngestionError(f"FantasyPros {kind}: response too large")
+        raise IngestionError(f"FantasyPros {kind}: response too large",http_status=200)
     try:
         payload = json.loads(raw,object_pairs_hook=strict_object,parse_constant=invalid_constant)
     except (ValueError, UnicodeDecodeError, RecursionError):
-        raise IngestionError(f"FantasyPros {kind}: invalid JSON response") from None
+        raise IngestionError(f"FantasyPros {kind}: invalid JSON response",http_status=200) from None
     try:
         if contains_secret(payload, api_key):
             raise IngestionError("FantasyPros: credential echoed in response; rejected")
         original_count = len(payload.get(expected, [])) if isinstance(payload, dict) and isinstance(payload.get(expected), list) else 0
         payload, flags, yahoo, stamps, normalized = validate_payload(payload, kind, season, week, player_ids=player_ids)
+    except IngestionError as exc:
+        exc.http_status=200
+        raise
     except (ValueError, TypeError, RecursionError):
-        raise IngestionError("FantasyPros: malformed response values") from None
+        raise IngestionError("FantasyPros: malformed response values",http_status=200) from None
     return {
+        "http_status":200,
         "system": "SPARTA", "league": "sparta", "season": season, "week": week,
         "provider": "FantasyPros Public API v2", "kind": kind,
         "source_url": url, "retrieved_at_utc": datetime.now(timezone.utc).isoformat(),
@@ -302,9 +309,10 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--week", type=int, required=True)
     parser.add_argument("--kind", choices=ALLOWED_KINDS + ("all",), default="all")
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--audit-summary",type=Path,help="Sanitized per-endpoint status file; no raw provider payloads")
     parser.add_argument("--player-ids", help="Two verified FantasyPros IDs, colon-delimited, for compare")
     parser.add_argument("--credential-rotated", action="store_true", help="Confirm key was rotated after chat exposure")
-    parser.add_argument("--request-budget", type=int, default=0, help="Confirmed quota allowance for this invocation, including retries")
+    parser.add_argument("--request-budget", type=int, default=0, help="Authorized request allowance for this invocation, including retries")
     parser.add_argument("--retries", type=int, choices=range(3), default=0)
     args = parser.parse_args(argv)
     kinds = PILOT_KINDS if args.kind == "all" else (args.kind,)
@@ -313,14 +321,50 @@ def main(argv: list[str] | None = None) -> int:
         print("FANTASYPROS_API_KEY missing; no requests sent", file=sys.stderr)
         return 2
     if not args.credential_rotated or args.request_budget < len(kinds) * (1 + args.retries):
-        print("Rotated credential and sufficient confirmed request budget required; no requests sent", file=sys.stderr)
+        print("Rotated credential and sufficient authorized request budget required; no requests sent", file=sys.stderr)
         return 2
+    audit={'api_requests':0,'endpoints':[],'status':'NOT_STARTED','production_intelligence_enabled':False}
     try:
         validate_output_dir(args.output_dir)
-        records = [fetch(kind, args.season, args.week, key, retries=args.retries, player_ids=args.player_ids) for kind in kinds]
-    except (IngestionError, ValueError) as exc:
-        print(str(exc), file=sys.stderr)
+        if args.audit_summary: validate_output_dir(args.audit_summary)
+        # Validate every request before the first network call.
+        for kind in kinds: request_spec(kind,args.season,args.week,player_ids=args.player_ids)
+    except (IngestionError,ValueError) as exc:
+        print(str(exc),file=sys.stderr)
         return 1
+    records=[]; failed=False; stopped=False
+    for kind in kinds:
+        row={'kind':kind,'http_status':None,'record_count':None,'schema_validation':'NOT_REACHED',
+             'status':'NOT_REQUESTED','request_started_at_utc':None}
+        audit['endpoints'].append(row)
+        if stopped: continue
+        row['request_started_at_utc']=datetime.now(timezone.utc).isoformat()
+        audit['api_requests']+=1
+        try:
+            record=fetch(kind,args.season,args.week,key,retries=args.retries,player_ids=args.player_ids)
+        except (IngestionError,ValueError) as exc:
+            failed=True
+            code=getattr(exc,'http_status',None)
+            row.update(http_status=code,status='FAILED',schema_validation='FAIL' if code==200 else 'NOT_REACHED')
+            # Only a successful HTTP response failing local validation may proceed.
+            # Auth, quota, rate-limit, redirect and network failures stop the pilot.
+            if code!=200: stopped=True
+            print(str(exc),file=sys.stderr)
+        else:
+            records.append(record)
+            row.update(http_status=200,record_count=record['record_count'],schema_validation='PASS',
+                       status='unvalidated_for_decisions',retrieved_at_utc=record['retrieved_at_utc'],
+                       quality_flags=record['quality_flags'])
+    audit['status']='FAILED_NO_BATCH_ACCEPTED' if failed else 'VALIDATED_UNPROMOTED'
+    print('SPARTA_FANTASYPROS_AUDIT '+json.dumps(audit,sort_keys=True))
+    if args.audit_summary:
+        try:
+            args.audit_summary.parent.mkdir(parents=True,exist_ok=True)
+            args.audit_summary.write_text(json.dumps(audit,indent=2)+'\n',encoding='utf-8')
+        except OSError:
+            print('Unable to write sanitized audit summary',file=sys.stderr)
+            return 1
+    if failed: return 1
     try:
         path = publish_batch(records, args.output_dir)
     except IngestionError as exc:

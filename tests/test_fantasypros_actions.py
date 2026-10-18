@@ -20,3 +20,12 @@ class ActionsPreflightTests(unittest.TestCase):
         self.assertFalse(preflight('','3','provider dashboard checked',True)['live_permitted'])
 
 if __name__=='__main__': unittest.main()
+
+class ExplicitAuthorizationTests(unittest.TestCase):
+    def test_user_authorization_permits_unknown_quota_without_claiming_verified(self):
+        from fantasypros_actions import preflight
+        result=preflight('synthetic-secret','3','',True,authorized_unknown_quota=True)
+        self.assertTrue(result['live_permitted'])
+        self.assertFalse(result['quota_confirmed'])
+        self.assertTrue(result['user_authorized_unknown_quota'])
+        self.assertFalse(preflight('synthetic-secret','0','',True,authorized_unknown_quota=True)['live_permitted'])

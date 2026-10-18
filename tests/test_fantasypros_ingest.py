@@ -138,7 +138,7 @@ class PipelineTests(unittest.TestCase):
         import tempfile
         from unittest.mock import patch
         import fantasypros_ingest as module
-        with tempfile.TemporaryDirectory() as tmp, patch.dict(module.os.environ, {"FANTASYPROS_API_KEY":"synthetic-key"}), patch.object(module,"fetch",side_effect=[{"kind":"consensus"},IngestionError("failed")]):
+        with tempfile.TemporaryDirectory() as tmp, patch.dict(module.os.environ, {"FANTASYPROS_API_KEY":"synthetic-key"}), patch.object(module,"fetch",side_effect=[{"kind":"consensus","record_count":1,"retrieved_at_utc":"2026-10-18T00:00:00Z","quality_flags":[]},IngestionError("failed")]):
             self.assertEqual(module.main(["--week","6","--output-dir",tmp,"--credential-rotated","--request-budget","3"]),1)
             self.assertEqual(list(Path(tmp).iterdir()),[])
 
@@ -186,3 +186,45 @@ class PipelineTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+class LiveAuditTests(unittest.TestCase):
+    def test_http_error_carries_status_without_response_body(self):
+        def opener(*a,**k): raise HTTPError('https://example.invalid',429,'limited',{},io.BytesIO(b'synthetic-secret'))
+        with self.assertRaises(IngestionError) as caught:
+            fetch('consensus',2026,6,'synthetic-secret',opener=opener)
+        self.assertEqual(caught.exception.http_status,429)
+        self.assertNotIn('synthetic-secret',str(caught.exception))
+
+    def test_schema_error_carries_successful_http_status(self):
+        with self.assertRaises(IngestionError) as caught:
+            fetch('consensus',2026,6,'synthetic-secret',opener=lambda *a,**k:Response({}))
+        self.assertEqual(caught.exception.http_status,200)
+
+class PilotStopTests(unittest.TestCase):
+    def test_rate_limit_stops_remaining_requests_and_records_status(self):
+        import tempfile
+        from unittest.mock import patch
+        import fantasypros_ingest as module
+        with tempfile.TemporaryDirectory() as tmp, patch.dict(module.os.environ,{'FANTASYPROS_API_KEY':'synthetic-secret'}), patch.object(module,'fetch',side_effect=IngestionError('rate limited',http_status=429)) as mocked:
+            audit=Path(tmp)/'audit.json'
+            result=module.main(['--week','6','--output-dir',tmp,'--credential-rotated','--request-budget','3','--audit-summary',str(audit)])
+            self.assertEqual(result,1)
+            self.assertEqual(mocked.call_count,1)
+            data=json.loads(audit.read_text())
+            self.assertEqual(data['api_requests'],1)
+            self.assertEqual(data['endpoints'][0]['http_status'],429)
+            self.assertEqual(data['endpoints'][1]['status'],'NOT_REQUESTED')
+            self.assertNotIn('synthetic-secret',audit.read_text())
+            self.assertEqual(list(Path(tmp).glob('fantasypros_batch_*.json')),[])
+
+    def test_schema_failures_attempt_three_without_publishing_partial_batch(self):
+        import tempfile
+        from unittest.mock import patch
+        import fantasypros_ingest as module
+        with tempfile.TemporaryDirectory() as tmp, patch.dict(module.os.environ,{'FANTASYPROS_API_KEY':'synthetic-secret'}), patch.object(module,'fetch',side_effect=IngestionError('schema rejected',http_status=200)) as mocked:
+            audit=Path(tmp)/'audit.json'
+            result=module.main(['--week','6','--output-dir',tmp,'--credential-rotated','--request-budget','3','--audit-summary',str(audit)])
+            self.assertEqual(result,1)
+            self.assertEqual(mocked.call_count,3)
+            self.assertEqual(json.loads(audit.read_text())['api_requests'],3)
+            self.assertEqual(list(Path(tmp).glob('fantasypros_batch_*.json')),[])

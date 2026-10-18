@@ -136,3 +136,13 @@ scoring=PPR, fantasypros, sparta, actual, lower and upper on a common cohort.
 Metrics are descriptive; pre-kickoff provenance and nominal interval coverage
 must be recorded by the caller. Empty/incomplete cohorts yield no accuracy claim.
 No weights are promoted. Deepnote artifacts remain analytical and have not run.
+
+## Explicit one-pilot authorization with unknown quota
+
+The owner superseded the quota-confirmation gate for one execution, maximum3
+requests, zero retries. user_authorized_unknown_quota=true is a separate manual
+input; it never claims quota_confirmed=true. Rotation remains USER_CONFIRMED.
+Authorization does not purchase credits, upgrade a plan, recur, or promote data.
+Sanitized per-endpoint audit records HTTP status, schema result, count and timing.
+Non200/network failures stop remaining calls; HTTP200 local validation failures may
+complete the remaining authorized endpoint tests, with no partial batch accepted.

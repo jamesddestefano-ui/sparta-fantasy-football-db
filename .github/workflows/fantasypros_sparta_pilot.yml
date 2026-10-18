@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       confirmed_request_budget:
-        description: 'Verified remaining quota for this pilot: 0 runs preflight only; 3 permits three calls'
+        description: 'Request cap: 0 for preflight; 3 for a quota-verified or explicitly user-authorized pilot'
         required: true
         default: '0'
         type: choice
@@ -13,6 +13,11 @@ on:
         required: false
         default: ''
         type: string
+      user_authorized_unknown_quota:
+        description: 'Explicit owner authorization for one pilot despite unknown remaining quota'
+        required: true
+        default: false
+        type: boolean
       credential_rotated:
         description: 'Confirm the repository key was rotated after chat exposure'
         required: true
@@ -51,6 +56,7 @@ jobs:
           CONFIRMED_REQUEST_BUDGET: ${{ inputs.confirmed_request_budget }}
           QUOTA_EVIDENCE: ${{ inputs.quota_evidence }}
           CREDENTIAL_ROTATED: ${{ inputs.credential_rotated }}
+          USER_AUTHORIZED_UNKNOWN_QUOTA: ${{ inputs.user_authorized_unknown_quota }}
           PREFLIGHT_SUMMARY: ${{ runner.temp }}/fantasypros-preflight.json
         run: python scripts/fantasypros_actions.py
       - name: Three-request read-only Week 6 pilot
@@ -62,6 +68,7 @@ jobs:
           python scripts/fantasypros_ingest.py --season 2026 --week 6
           --credential-rotated --request-budget 3 --retries 0
           --output-dir "$RUNNER_TEMP/fantasypros-pilot"
+          --audit-summary "$RUNNER_TEMP/fantasypros-audit.json"
       - name: Publish only sanitized counts and validation status
         if: always()
         env:
@@ -78,9 +85,9 @@ jobs:
           report['ingestion_status'] = os.environ['INGESTION_STATUS']
           report['api_requests'] = 3 if os.environ['INGESTION_STATUS'] == 'success' else 0 if os.environ['INGESTION_STATUS'] == 'skipped' else None
           report['endpoints'] = []
-          for path in (root / 'fantasypros-pilot').glob('fantasypros_batch_*.json'):
-              for record in json.loads(path.read_text())['records']:
-                  report['endpoints'].append({name: record[name] for name in ('kind', 'record_count', 'retrieved_at_utc', 'contract_status', 'quality_flags')})
+          audit = root / 'fantasypros-audit.json'
+          if audit.exists():
+              report.update(json.loads(audit.read_text()))
           target = root / 'fantasypros-summary'
           target.mkdir(exist_ok=True)
           (target / 'summary.json').write_text(json.dumps(report, indent=2) + '\n')
