@@ -8,6 +8,7 @@ from urllib.error import HTTPError
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 from fantasypros_ingest import fetch, request_spec, IngestionError
+from fantasypros_fixtures import fixture
 
 
 class Response:
@@ -37,7 +38,7 @@ class ContractTests(unittest.TestCase):
         def opener(req, timeout):
             self.assertEqual(req.get_header("X-api-key"), "dummy-secret")
             self.assertEqual(timeout, 15)
-            return Response({"sport": "NFL", "season": "2026", "week": "6", "scoring": "PPR", "players": [{"player_id": "1", "player_name": "Test", "player_position": "WR"}]})
+            return Response(fixture())
         out = fetch("consensus", 2026, 6, "dummy-secret", opener=opener)
         self.assertEqual(out["record_count"], 1)
         self.assertEqual(out["authority"], "NFL_INTELLIGENCE_ONLY_NOT_YAHOO_OWNERSHIP")
@@ -45,7 +46,7 @@ class ContractTests(unittest.TestCase):
 
     def test_reject_wrong_week(self):
         with self.assertRaisesRegex(IngestionError, "wrong week"):
-            fetch("projections", 2026, 6, "secret", opener=lambda *_args, **_kw: Response({"sport":"NFL", "season":"2026", "week":"5", "players":[]}))
+            fetch("projections", 2026, 6, "secret", opener=lambda *_args, **_kw: Response(dict(fixture("projections"),week="5")))
 
     def test_reject_wrong_sport_and_missing_list(self):
         for data in ({"sport":"NBA", "injuries":[]}, {"sport":"NFL", "injuries":{}}):
@@ -63,8 +64,7 @@ class ContractTests(unittest.TestCase):
 
 class SafetyTests(unittest.TestCase):
     def payload(self):
-        return {"season":2026,"week":6,"scoring":"PPR","players":[
-            {"player_id":"1","player_name":"Test","player_position":"WR"}]}
+        return fixture()
 
     def get(self, data, **kwargs):
         return fetch("consensus",2026,6,"dummy-secret",opener=lambda *a, **k: Response(data), **kwargs)
@@ -97,8 +97,8 @@ class SafetyTests(unittest.TestCase):
 
     def test_missing_timestamps_and_contract_are_explicit(self):
         out=self.get(self.payload())
-        self.assertIn("PROVIDER_TIMESTAMP_MISSING",out["quality_flags"])
-        self.assertEqual(out["contract_status"],"UNVERIFIED_OPENAPI_NOT_SUPPLIED")
+        self.assertTrue(out["provider_timestamps"])
+        self.assertEqual(out["contract_status"],"VALIDATED_SUPPLIED_OPENAPI")
         self.assertEqual(out["availability"],"UNKNOWN")
 
     def test_bounded_retry_and_no_auth_retry(self):
@@ -172,7 +172,7 @@ class PipelineTests(unittest.TestCase):
         with self.assertRaises(IngestionError):
             fetch("consensus",2026,6,"dummy-key",opener=lambda *a,**k:response)
 
-    def test_wrong_projection_scoring_rejected(self):
+    def test_malformed_projection_schema_rejected(self):
         response=Response({"season":2026,"week":6,"scoring":"STD","players":[{"player_id":"1","player_name":"Test","player_position":"WR"}]})
         with self.assertRaises(IngestionError):
             fetch("projections",2026,6,"dummy-key",opener=lambda *a,**k:response)

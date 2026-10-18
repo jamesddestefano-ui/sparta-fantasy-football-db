@@ -7,6 +7,8 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import math
+from fantasypros_contract import ARRAYS, validate_request, validate_response, document
 import tempfile
 import time
 from datetime import datetime, timezone
@@ -19,26 +21,36 @@ from urllib.parse import urlencode
 from urllib.request import Request, build_opener, HTTPRedirectHandler
 
 BASE = "https://api.fantasypros.com/public/v2/json"
-ALLOWED_KINDS = ("consensus", "projections", "injuries")
+PILOT_KINDS = ("consensus", "projections", "injuries")
+ALLOWED_KINDS = PILOT_KINDS + ("news", "compare", "points", "experts", "projections_ros")
+
 
 
 class IngestionError(Exception):
     """Safe-to-display error that never includes credentials or response bodies."""
 
 
-def request_spec(kind: str, season: int, week: int) -> tuple[str, dict[str, str], str]:
+def request_spec(kind: str, season: int, week: int, *, player_ids=None) -> tuple[str, dict[str, str], str]:
     if type(season) is not int or type(week) is not int or season != 2026 or not 1 <= week <= 18:
         raise ValueError("Sparta pilot is restricted to NFL season 2026, weeks 1–18")
+    contract_kind = "projections" if kind == "projections_ros" else kind
     if kind == "consensus":
-        return (f"/nfl/{season}/consensus-rankings",
-                {"position": "FLX", "scoring": "PPR", "week": str(week)}, "players")
-    if kind == "projections":
-        return (f"/nfl/{season}/projections",
-                {"positions": "QB:RB:WR:TE:K:DST", "week": str(week)}, "players")
-    if kind == "injuries":
-        return ("/nfl/injuries", {"year": str(season), "week": str(week),
-                                 "include_probabilities": "true"}, "injuries")
-    raise ValueError("Unsupported FantasyPros endpoint")
+        params = {"position":"FLX", "scoring":"PPR", "week":str(week), "type":"WW"}
+    elif kind in ("projections", "projections_ros"):
+        params = {"position":"WR", "positions":"WR", "week":str(week)}
+        if kind == "projections_ros": params["ros"]="true"
+    elif kind == "injuries":
+        params = {"year":str(season),"week":str(week),"include_probabilities":"true"}
+    elif kind == "news": params = {"limit":"10","order_by":"updated"}
+    elif kind == "compare":
+        if not isinstance(player_ids,str) or len(player_ids.split(":")) != 2 or not all(p.isdigit() and int(p)>0 for p in player_ids.split(":")) or len(set(player_ids.split(":"))) != 2:
+            raise ValueError("Comparison requires two distinct verified FantasyPros IDs")
+        params = {"year":str(season),"week":str(week),"players":player_ids,"position":"WR","ranking_type":"weekly","details":"players"}
+    elif kind == "points": params = {"start":str(week),"end":str(week),"position":"WR","scoring":"PPR","min":"false"}
+    elif kind == "experts": params = {"position":"WR","type":"WW","scoring":"PPR","include_overall":"true"}
+    else: raise ValueError("Unsupported FantasyPros endpoint")
+    path=validate_request(contract_kind,season,params)
+    return path,params,ARRAYS[contract_kind]
 
 
 class NoRedirect(HTTPRedirectHandler):
@@ -55,78 +67,106 @@ def canonical(value):
     return json.dumps(value, sort_keys=True, ensure_ascii=False, allow_nan=False, separators=(",", ":"))
 
 
-def validate_payload(payload, kind, season, week, *, now=None):
-    """Conservative local safety checks; not an OpenAPI contract validator."""
-    expected = "injuries" if kind == "injuries" else "players"
-    if not isinstance(payload, dict) or not isinstance(payload.get(expected), list):
-        raise IngestionError(f"FantasyPros {kind}: missing {expected} array")
-    if str(payload.get("sport", "NFL")).upper() != "NFL":
-        raise IngestionError(f"FantasyPros {kind}: returned wrong sport")
-    # Global injury reports cannot be asserted to describe a historical week.
-    for field, wanted in (("season", season), ("year", season), ("week", week)):
-        if field in payload and str(payload[field]) != str(wanted):
+def validate_payload(payload, kind, season, week, *, now=None, player_ids=None):
+    """Validate supplied NFL schema, request scope, identities and PPR semantics."""
+    contract_kind="projections" if kind=="projections_ros" else kind
+    try: validate_response(contract_kind,payload)
+    except ValueError:
+        raise IngestionError("FantasyPros: response violates supplied OpenAPI schema") from None
+    expected=ARRAYS[contract_kind]
+    if payload.get("sport","NFL") != "NFL": raise IngestionError("FantasyPros: returned wrong sport")
+    for field,wanted in (("season",season),("year",season),("week",week)):
+        if field in payload and str(payload[field])!=str(wanted):
             raise IngestionError(f"FantasyPros {kind}: returned wrong {field}")
-    if kind != "injuries":
-        if str(payload.get("week")) != str(week):
-            raise IngestionError(f"FantasyPros {kind}: returned wrong week")
-        if str(payload.get("season", payload.get("year"))) != str(season):
-            raise IngestionError(f"FantasyPros {kind}: returned wrong season")
-    if "scoring" in payload and payload["scoring"] != "PPR":
-        raise IngestionError("FantasyPros: conflicting scoring format")
-    if kind == "consensus" and payload.get("scoring") != "PPR":
-        raise IngestionError("FantasyPros consensus: PPR scoring not confirmed")
-    if not payload[expected]:
-        raise IngestionError(f"FantasyPros {kind}: empty result; no data accepted")
-    flags = ["OPENAPI_CONTRACT_UNVERIFIED"]
-    if kind == "projections" and payload.get("scoring") != "PPR":
-        flags.append("PPR_PROJECTION_POINTS_UNVERIFIED")
-    if kind == "injuries":
-        flags.append("INJURY_WEEK_SCOPE_UNVERIFIED")
-    now = now or datetime.now(timezone.utc)
-    stamps = []
-    def timestamp(value):
-        try:
-            dt = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
-            if dt.tzinfo is None: raise ValueError()
-        except (ValueError, TypeError):
-            raise IngestionError("FantasyPros: malformed provider timestamp") from None
-        age = (now - dt).total_seconds()
-        if age < -300 or age > 172800:
-            raise IngestionError("FantasyPros: stale or future provider timestamp")
-        stamps.append(value)
-    for field in ("updated_at", "updated_at_utc", "last_updated", "timestamp"):
-        if payload.get(field) is not None: timestamp(payload[field])
-    unique = {}; yahoo = {}
-    for row in payload[expected]:
-        if not isinstance(row, dict):
-            raise IngestionError("FantasyPros: malformed player record")
-        player_id = row.get("player_id")
-        name = row.get("player_name")
-        pos = row.get("player_position", row.get("position"))
-        if (isinstance(player_id, bool) or not isinstance(player_id, (str, int))
-                or not str(player_id).strip() or not isinstance(name, str) or not name.strip()
-                or pos not in {"QB", "RB", "WR", "TE", "K", "DST", "DST/DEF", "DEF"}):
-            raise IngestionError("FantasyPros: invalid player identity or position")
-        for field, wanted in (("season", season), ("year", season), ("week", week), ("scoring", "PPR")):
-            if field in row and str(row[field]) != str(wanted):
-                raise IngestionError("FantasyPros: contradictory record context")
-        for field in ("updated_at", "updated_at_utc", "last_updated", "timestamp"):
-            if row.get(field) is not None: timestamp(row[field])
-        ident = str(player_id)
-        if ident in unique and canonical(unique[ident]) != canonical(row):
-            raise IngestionError("FantasyPros: contradictory duplicate player identity")
-        yahoo_id = row.get("yahoo_id", row.get("player_yahoo_id"))
-        if yahoo_id is not None:
-            if isinstance(yahoo_id, bool) or not str(yahoo_id).isdigit():
-                raise IngestionError("FantasyPros: invalid Yahoo identifier")
-            if str(yahoo_id) in yahoo and yahoo[str(yahoo_id)] != ident:
-                raise IngestionError("FantasyPros: conflicting Yahoo identifiers")
-            yahoo[str(yahoo_id)] = ident
-        unique[ident] = row
-    if not stamps: flags.append("PROVIDER_TIMESTAMP_MISSING")
-    if not yahoo: flags.append("YAHOO_ID_MAPPING_MISSING")
-    clean = dict(payload, **{expected: list(unique.values())})
-    return clean, flags, yahoo, stamps
+    if kind in ("consensus","points") and payload.get("scoring")!="PPR":
+        raise IngestionError("FantasyPros: PPR scoring not confirmed")
+    if kind=="consensus" and (payload['ranking_type_name']!='WW' or payload['position_id']!='FLX'):
+        raise IngestionError("FantasyPros: ranking slice mismatch")
+    if kind=="compare" and (payload['ranking_type']!='weekly' or payload['position_id']!='WR'):
+        raise IngestionError("FantasyPros: comparison slice mismatch")
+    if kind in ("projections","projections_ros") and payload['positions']!='WR':
+        raise IngestionError("FantasyPros: projection position slice mismatch")
+    if not payload[expected]: raise IngestionError("FantasyPros: empty result; no data accepted")
+    flags=[]; stamps=[]; yahoo={}; normalized=[]; unique={}
+    if kind in ("news","injuries"): flags.append("PROVIDER_SEASON_WEEK_NOT_IN_SCHEMA_REQUEST_SCOPE_ONLY")
+    now=now or datetime.now(timezone.utc)
+    def check_time(dt):
+        age=(now-dt).total_seconds()
+        if age < -300 or age > 172800: raise IngestionError("FantasyPros: stale or future provider timestamp")
+    if kind=='consensus':
+        try: check_time(datetime.fromtimestamp(payload['last_updated_ts'],timezone.utc))
+        except (OverflowError,OSError,ValueError): raise IngestionError("FantasyPros: malformed provider timestamp") from None
+        stamps.extend([{'field':'last_updated_ts','value':payload['last_updated_ts']},{'field':'last_updated','value':payload['last_updated']}])
+    # Preserve explicit ISO fields when supplied in addition to documented fields.
+    for field in ('updated_at','updated_at_utc','timestamp'):
+        if payload.get(field) is not None:
+            try:
+                dt=datetime.fromisoformat(str(payload[field]).replace('Z','+00:00'))
+                if dt.tzinfo is None: raise ValueError()
+                check_time(dt)
+            except (ValueError,TypeError): raise IngestionError("FantasyPros: malformed provider timestamp") from None
+            stamps.append({'field':field,'value':payload[field]})
+    for field in ('expert_pub',):
+        if payload.get(field):
+            stamps.append({'field':field,'value':payload[field]})
+            flags.append('EXPERT_TIMESTAMP_TIMEZONE_REQUIRES_REVIEW')
+    if kind=='compare':
+        ranks=payload['rankings'].get('PPR')
+        if not isinstance(ranks,dict) or not isinstance(payload.get('players'),dict):
+            raise IngestionError('FantasyPros: PPR comparison or player details missing')
+        if player_ids is not None and set(ranks)!=set(player_ids.split(':')):
+            raise IngestionError('FantasyPros: comparison returned different identities')
+        rows=[dict(payload['players'].get(ident,{}),player_id=int(ident)) for ident in ranks if str(ident).isdigit()]
+        if len(rows)!=len(ranks): raise IngestionError('FantasyPros: malformed comparison identities')
+    else: rows=payload[expected]
+    for row in rows:
+        ident=row.get('fpid') if contract_kind=='projections' else row.get('expert_id') if kind=='experts' else row.get('player_id')
+        if isinstance(ident,bool) or not str(ident).isdigit() or int(ident)<=0:
+            raise IngestionError('FantasyPros: invalid player or expert identity')
+        ident=str(ident)
+        name=row.get('player_name',row.get('name'))
+        pos=row.get('player_position_id',row.get('position_id',row.get('player_position')))
+        if name is not None and (not isinstance(name,str) or not name.strip()): raise IngestionError('FantasyPros: invalid player name')
+        if pos is not None and pos not in document()[0]['components']['schemas']['NFLPositions']['enum']:
+            raise IngestionError('FantasyPros: invalid player position')
+        if not name and kind!='experts': flags.append('PLAYER_NAME_MISSING')
+        if not pos and kind!='experts': flags.append('PLAYER_POSITION_MISSING')
+        for field,wanted in (("season",season),("year",season),("week",week),("scoring","PPR")):
+            if field in row and str(row[field])!=str(wanted): raise IngestionError('FantasyPros: contradictory record context')
+        if kind=='news' and row['sport_id']!='NFL': raise IngestionError('FantasyPros: news sport mismatch')
+        key=str(row['id']) if kind=='news' else ident
+        if key in unique:
+            if canonical(unique[key])!=canonical(row): raise IngestionError('FantasyPros: contradictory duplicate identity')
+            continue
+        unique[key]=row
+        yid=row.get('player_yahoo_id',row.get('yahoo_id'))
+        if yid:
+            if not str(yid).isdigit() or int(yid)<=0 or (str(yid) in yahoo and yahoo[str(yid)]!=ident):
+                raise IngestionError('FantasyPros: conflicting Yahoo identifier')
+            yahoo[str(yid)]=ident
+        item={'fantasypros_id':ident,'name':name,'position':pos,'yahoo_id':str(yid) if yid else None}
+        if contract_kind=='projections':
+            values={stat['points_ppr'] for stat in row['stats']}
+            if len(values)!=1: raise IngestionError('FantasyPros: ambiguous projection rows')
+            value=next(iter(values))
+            if not math.isfinite(value) or abs(value)>10000: raise IngestionError('FantasyPros: invalid projection points')
+            item['projected_points_ppr']=value
+        if kind=='consensus':
+            try: rank=float(row['rank_ecr'])
+            except (ValueError,TypeError): raise IngestionError('FantasyPros: malformed PPR rank') from None
+            if not math.isfinite(rank) or rank<1: raise IngestionError('FantasyPros: invalid PPR rank')
+            item['rank_ppr']=rank
+        if kind=='points':
+            if set(row['weeks'])!={str(week)}: raise IngestionError('FantasyPros: actual scoring week missing or ambiguous')
+            item['actual_points_ppr']=row['weeks'][str(week)]
+        for field in ('injury_update_date','created'):
+            if row.get(field): stamps.append({'field':field,'value':row[field],'player_id':ident})
+        normalized.append(item)
+    if not stamps: flags.append('PROVIDER_TIMESTAMP_MISSING')
+    if not yahoo: flags.append('YAHOO_ID_MAPPING_MISSING')
+    clean=dict(payload)
+    if kind!='compare': clean[expected]=list(unique.values())
+    return clean,sorted(set(flags)),yahoo,stamps,normalized
 
 
 def validate_output_dir(output_dir):
@@ -177,10 +217,10 @@ def contains_secret(value, secret):
     return False
 
 
-def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, retries=0, sleep=time.sleep) -> dict:
+def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, retries=0, sleep=time.sleep, player_ids=None) -> dict:
     if not api_key.strip():
         raise IngestionError("FANTASYPROS_API_KEY is not configured")
-    path, params, expected = request_spec(kind, season, week)
+    path, params, expected = request_spec(kind, season, week, player_ids=player_ids)
     url = BASE + path + "?" + urlencode(params)
     request = Request(url, headers={"x-api-key": api_key, "Accept": "application/json"})
     if type(retries) is not int or not 0 <= retries <= 2:
@@ -214,7 +254,7 @@ def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, 
         if contains_secret(payload, api_key):
             raise IngestionError("FantasyPros: credential echoed in response; rejected")
         original_count = len(payload.get(expected, [])) if isinstance(payload, dict) and isinstance(payload.get(expected), list) else 0
-        payload, flags, yahoo, stamps = validate_payload(payload, kind, season, week)
+        payload, flags, yahoo, stamps, normalized = validate_payload(payload, kind, season, week, player_ids=player_ids)
     except (ValueError, TypeError, RecursionError):
         raise IngestionError("FantasyPros: malformed response values") from None
     return {
@@ -222,15 +262,17 @@ def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, 
         "provider": "FantasyPros Public API v2", "kind": kind,
         "source_url": url, "retrieved_at_utc": datetime.now(timezone.utc).isoformat(),
         "authority": "NFL_INTELLIGENCE_ONLY_NOT_YAHOO_OWNERSHIP",
-        "contract_status": "UNVERIFIED_OPENAPI_NOT_SUPPLIED",
+        "contract_status": "VALIDATED_SUPPLIED_OPENAPI",
+        "openapi_sha256": document()[1], "normalized_players": normalized,
         "quality_flags": flags, "provider_timestamps": stamps,
         "yahoo_id_mapping": yahoo, "availability": "UNKNOWN",
-        "scoring": "PPR" if kind == "consensus" else "UNVERIFIED",
+        "scoring": "PPR" if kind in ("consensus","projections","projections_ros","points","compare") else "NOT_APPLICABLE",
+        "scope": "rest_of_season" if kind == "projections_ros" else "weekly",
         "response_sha256": hashlib.sha256(raw).hexdigest(),
         "received_record_count": original_count,
-        "duplicate_count": original_count - len(payload[expected]),
+        "duplicate_count": max(0, original_count - len(normalized)),
         "attempt_count": attempt + 1,
-        "status": "unvalidated_for_decisions", "record_count": len(payload[expected]),
+        "status": "unvalidated_for_decisions", "record_count": len(normalized),
         "payload": payload,
     }
 
@@ -241,11 +283,12 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--week", type=int, required=True)
     parser.add_argument("--kind", choices=ALLOWED_KINDS + ("all",), default="all")
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--player-ids", help="Two verified FantasyPros IDs, colon-delimited, for compare")
     parser.add_argument("--credential-rotated", action="store_true", help="Confirm key was rotated after chat exposure")
     parser.add_argument("--request-budget", type=int, default=0, help="Confirmed quota allowance for this invocation, including retries")
     parser.add_argument("--retries", type=int, choices=range(3), default=0)
     args = parser.parse_args(argv)
-    kinds = ALLOWED_KINDS if args.kind == "all" else (args.kind,)
+    kinds = PILOT_KINDS if args.kind == "all" else (args.kind,)
     key = os.environ.get("FANTASYPROS_API_KEY", "")
     if not key.strip():
         print("FANTASYPROS_API_KEY missing; no requests sent", file=sys.stderr)
@@ -255,7 +298,7 @@ def main(argv: list[str] | None = None) -> int:
         return 2
     try:
         validate_output_dir(args.output_dir)
-        records = [fetch(kind, args.season, args.week, key, retries=args.retries) for kind in kinds]
+        records = [fetch(kind, args.season, args.week, key, retries=args.retries, player_ids=args.player_ids) for kind in kinds]
     except (IngestionError, ValueError) as exc:
         print(str(exc), file=sys.stderr)
         return 1
