@@ -8,7 +8,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import math
-from fantasypros_contract import ARRAYS, validate_request, validate_response, document
+from fantasypros_contract import ARRAYS, validate_request, validate_response, document, ResponseSchemaError
 import tempfile
 import time
 from datetime import datetime, timezone
@@ -28,9 +28,12 @@ ALLOWED_KINDS = PILOT_KINDS + ("news", "compare", "points", "experts", "projecti
 
 class IngestionError(Exception):
     """Safe-to-display error that never includes credentials or response bodies."""
-    def __init__(self,message,*,http_status=None):
+    def __init__(self,message,*,http_status=None,failure_category='RESPONSE_VALIDATION_FAILED',diagnostics=None,stop_pilot=False):
         super().__init__(message)
         self.http_status=http_status
+        self.failure_category=failure_category
+        self.diagnostics=diagnostics or []
+        self.stop_pilot=stop_pilot
 
 
 def request_spec(kind: str, season: int, week: int, *, player_ids=None) -> tuple[str, dict[str, str], str]:
@@ -74,8 +77,9 @@ def validate_payload(payload, kind, season, week, *, now=None, player_ids=None):
     """Validate supplied NFL schema, request scope, identities and PPR semantics."""
     contract_kind="projections" if kind=="projections_ros" else kind
     try: validate_response(contract_kind,payload)
-    except ValueError:
-        raise IngestionError("FantasyPros: response violates supplied OpenAPI schema") from None
+    except ResponseSchemaError as exc:
+        raise IngestionError("FantasyPros: response violates supplied OpenAPI schema",
+                             failure_category='OPENAPI_SCHEMA_MISMATCH',diagnostics=exc.diagnostics) from None
     expected=ARRAYS[contract_kind]
     if payload.get("sport","NFL") != "NFL": raise IngestionError("FantasyPros: returned wrong sport")
     for field,wanted in (("season",season),("year",season),("week",week)):
@@ -239,6 +243,32 @@ def invalid_constant(_):
     raise ValueError('Nonfinite JSON value')
 
 
+def provider_error_envelope(payload, expected):
+    """Fail closed on provider errors, including successful HTTP transports.
+
+    Arbitrary error text is never logged. An unrecognized envelope still stops;
+    no speculative subscription/quota interpretation is needed to protect budget.
+    """
+    if not isinstance(payload,dict): return False
+    if payload.get('error') or payload.get('errors'): return True
+    if payload.get('success') is False or payload.get('status') is False: return True
+    if str(payload.get('status','')).lower() in ('error','failed','failure','unauthorized','forbidden'): return True
+    if str(payload.get('code',payload.get('status_code',''))) in ('401','403','429'): return True
+    return expected not in payload and bool(payload.get('message'))
+
+
+def provider_error_type(payload):
+    """Classify only; never return provider-supplied strings or keys."""
+    text=canonical(payload).lower()
+    if any(word in text for word in ('quota','rate limit','limit reached','too many requests','429')):
+        return 'QUOTA_OR_RATE_LIMIT'
+    if any(word in text for word in ('subscription','entitle','permission','access denied','403')):
+        return 'ENTITLEMENT'
+    if any(word in text for word in ('api key','api_key','authentication','unauthorized','401')):
+        return 'AUTHENTICATION'
+    return 'UNCLASSIFIED_PROVIDER_ERROR'
+
+
 def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, retries=0, sleep=time.sleep, player_ids=None) -> dict:
     if not api_key.strip():
         raise IngestionError("FANTASYPROS_API_KEY is not configured")
@@ -274,7 +304,11 @@ def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, 
         raise IngestionError(f"FantasyPros {kind}: invalid JSON response",http_status=200) from None
     try:
         if contains_secret(payload, api_key):
-            raise IngestionError("FantasyPros: credential echoed in response; rejected")
+            raise IngestionError("FantasyPros: credential echoed in response; rejected",failure_category='CREDENTIAL_ECHO',stop_pilot=True)
+        if provider_error_envelope(payload,expected):
+            raise IngestionError('FantasyPros: provider error envelope; pilot stopped',
+                                 failure_category='PROVIDER_ERROR_ENVELOPE',stop_pilot=True,
+                                 diagnostics=[{'provider_error_type':provider_error_type(payload)}])
         original_count = len(payload.get(expected, [])) if isinstance(payload, dict) and isinstance(payload.get(expected), list) else 0
         payload, flags, yahoo, stamps, normalized = validate_payload(payload, kind, season, week, player_ids=player_ids)
     except IngestionError as exc:
@@ -346,9 +380,13 @@ def main(argv: list[str] | None = None) -> int:
             failed=True
             code=getattr(exc,'http_status',None)
             row.update(http_status=code,status='FAILED',schema_validation='FAIL' if code==200 else 'NOT_REACHED')
+            row['failure_category']=getattr(exc,'failure_category','REQUEST_VALIDATION_FAILED')
+            row['diagnostics']=getattr(exc,'diagnostics',[])
+            if row['failure_category'] in ('PROVIDER_ERROR_ENVELOPE','CREDENTIAL_ECHO'):
+                row['schema_validation']='NOT_REACHED'
             # Only a successful HTTP response failing local validation may proceed.
             # Auth, quota, rate-limit, redirect and network failures stop the pilot.
-            if code!=200: stopped=True
+            if code!=200 or getattr(exc,'stop_pilot',False): stopped=True
             print(str(exc),file=sys.stderr)
         else:
             records.append(record)

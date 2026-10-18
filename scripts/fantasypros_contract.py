@@ -51,13 +51,28 @@ def validator(schema):
     return Draft202012Validator(root)
 
 
+class ResponseSchemaError(ValueError):
+    def __init__(self, diagnostics):
+        super().__init__('FantasyPros response violates supplied OpenAPI schema')
+        self.diagnostics = diagnostics
+
+
 def validate_response(kind,payload):
     doc,digest=document()
     schema=({'$ref':'#/components/schemas/'+RESPONSES[kind]} if kind in RESPONSES else
             doc['paths'][PATHS[kind]]['get']['responses']['200']['content']['application/json']['schema'])
     # Do not stringify errors: they contain provider values, potentially secrets.
-    if next(validator(schema).iter_errors(payload),None) is not None:
-        raise ValueError('FantasyPros response violates supplied OpenAPI schema')
+    diagnostics=[]
+    for error in validator(schema).iter_errors(payload):
+        # Schema paths come from the pinned local contract, never provider keys.
+        # Do not include error.message, instance, or absolute_path.
+        diagnostic={'validator':error.validator,'schema_path':list(error.absolute_schema_path)}
+        if error.validator=='required' and isinstance(error.instance,dict):
+            diagnostic['missing_fields']=[key for key in error.validator_value if key not in error.instance]
+        diagnostics.append(diagnostic)
+        if len(diagnostics)>=12: break
+    if diagnostics:
+        raise ResponseSchemaError(diagnostics)
     return digest
 
 
