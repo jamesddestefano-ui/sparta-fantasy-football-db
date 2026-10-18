@@ -24,6 +24,9 @@ ARRAYS={'consensus':'players','projections':'players','injuries':'injuries',
 @lru_cache(maxsize=1)
 def document():
     raw=(ROOT/'contracts/fantasypros_public_v2.openapi.json').read_bytes()
+    manifest=json.loads((ROOT/'contracts/fantasypros_source.json').read_bytes())
+    if hashlib.sha256(raw).hexdigest()!=manifest['json_sha256']:
+        raise ValueError('Pinned contract hash mismatch')
     doc=json.loads(raw)
     # The supplied YAML uses null (not "null") in JSON Schema type arrays.
     # Also honor OpenAPI's nullable extension where present. Original is retained.
