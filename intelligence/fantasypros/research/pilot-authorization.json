@@ -21,13 +21,16 @@
     "user_override": "USER_AUTHORIZED_ONE_PILOT_WITH_UNKNOWN_QUOTA"
   },
   "pilot": {
-    "status": "AUTHORIZED_ONE_EXECUTION",
-    "new_live_requests": 0,
+    "status": "EXECUTED_AUTHORIZATION_CONSUMED",
+    "new_live_requests": 3,
     "authentication": "NOT_ATTEMPTED",
     "production_intelligence_enabled": false,
     "previous_preflight_url": "https://github.com/jamesddestefano-ui/sparta-fantasy-football-db/actions/runs/39082871937",
     "maximum_requests": 3,
-    "retries": 0
+    "retries": 0,
+    "workflow_run_id": 39084236479,
+    "executions": 1,
+    "remaining_authorized_requests": 0
   },
-  "next_step": "Execute once using explicit unknown-quota user authorization. Stop on auth, quota or rate-limit failure. No purchase or recurrence."
+  "next_step": "Review failed response validation offline. No rerun or further live requests are authorized by this one-pilot order."
 }

@@ -1,6 +1,6 @@
 # FantasyPros integration review report
 
-Status: **PARTIAL — workflow installed and preflight verified; live ingestion blocked by quota/rotation gates**.
+Status: **PARTIAL — one authorized live pilot executed; all three HTTP200 responses failed validation; production disabled**.
 Repository: jamesddestefano-ui/sparta-fantasy-football-db.
 Feature branch: feature/sparta-fantasypros-integration; deployment target: main,
 now explicitly requested by the repository owner for the manual Actions workflow.
@@ -179,3 +179,38 @@ were purchased or schedules enabled. Authorization and findings are recorded in
 intelligence/fantasypros/research/pilot-authorization.json. Obtain current provider
 quota evidence for at least three requests before dispatching once with rotation
 attested true. The existing workflow remains installed and unchanged.
+
+## Authorized live pilot — completed, validation failed
+
+Owner explicitly superseded the quota-confirmation gate for ONE execution,
+maximum3 requests, zero retries. Quota was truthfully recorded unverified;
+rotation USER_CONFIRMED and Actions secret presence true.
+
+[Run39084236479](https://github.com/jamesddestefano-ui/sparta-fantasy-football-db/actions/runs/39084236479)
+started2026-10-18T00:50:15Z and completed00:50:28Z, conclusion failure.
+Tested code commit: **763cda78ed1797c61936ecb9bdd781d4b7643486**.
+Actions offline tests: **43 passed**; Sparta validation passed. Existing learning
+validation still has653 baseline errors; no immutable records were changed.
+
+| Endpoint | HTTP | Schema/response validation | Validated records |
+| --- | --- | --- | --- |
+| NFL PPR FLEX consensus |200|FAIL|unavailable|
+| NFL WR PPR projections |200|FAIL|unavailable|
+| NFL injuries |200|FAIL|unavailable|
+
+Exactly3 calls completed, no retries, no further requests authorized. HTTP200
+shows transport success, but valid authenticated NFL data was NOT established.
+Season/week/identity correctness and usable PPR data remain unverified because
+validation failed. No batch accepted, no production promotion or league action.
+Sanitized diagnostics are recorded in live-pilot-2026-10-18.json. Raw provider
+bodies were not retained, so record counts and precise mismatching fields cannot
+be reconstructed from this run. Do not replace missing counts with zero.
+
+No HTTP429 or non200 quota/auth rejection was observed. Remaining credits/quota
+are unknown; a quota/error object inside a200 response cannot be excluded from
+these artifacts. No credits purchased, subscription upgraded, or schedule enabled.
+Sanitized artifact12119759162 expires2026-10-19T00:50:25Z; no raw provider payloads.
+
+Recommendation: keep production intelligence DISABLED. Review contract mismatch
+and add safe field-level diagnostics offline before any separately authorized
+rerun. This authorization is consumed; no additional live call is permitted.

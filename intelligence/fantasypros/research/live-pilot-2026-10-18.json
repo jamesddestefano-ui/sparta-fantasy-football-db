@@ -1,0 +1,62 @@
+{
+  "run_id": 39084236479,
+  "run_url": "https://github.com/jamesddestefano-ui/sparta-fantasy-football-db/actions/runs/39084236479",
+  "head_sha": "763cda78ed1797c61936ecb9bdd781d4b7643486",
+  "conclusion": "failure",
+  "offline_tests_passed": 43,
+  "preflight": {
+    "secret_available": true,
+    "quota_confirmed": false,
+    "credential_rotation_attested": true,
+    "user_authorized_unknown_quota": true,
+    "live_permitted": true
+  },
+  "audit": {
+    "api_requests": 3,
+    "endpoints": [
+      {
+        "http_status": 200,
+        "kind": "consensus",
+        "record_count": null,
+        "request_started_at_utc": "2026-10-18T00:50:24.896524+00:00",
+        "schema_validation": "FAIL",
+        "status": "FAILED"
+      },
+      {
+        "http_status": 200,
+        "kind": "projections",
+        "record_count": null,
+        "request_started_at_utc": "2026-10-18T00:50:25.233138+00:00",
+        "schema_validation": "FAIL",
+        "status": "FAILED"
+      },
+      {
+        "http_status": 200,
+        "kind": "injuries",
+        "record_count": null,
+        "request_started_at_utc": "2026-10-18T00:50:25.403750+00:00",
+        "schema_validation": "FAIL",
+        "status": "FAILED"
+      }
+    ],
+    "production_intelligence_enabled": false,
+    "status": "FAILED_NO_BATCH_ACCEPTED"
+  },
+  "sanitized_validation_diagnostics": [
+    "OPENAPI_SCHEMA_MISMATCH",
+    "OPENAPI_SCHEMA_MISMATCH",
+    "OPENAPI_SCHEMA_MISMATCH"
+  ],
+  "execution_started_at_utc": "2026-10-18T00:50:15Z",
+  "execution_completed_at_utc": "2026-10-18T00:50:28Z",
+  "authentication": "VALID_AUTHENTICATED_DATA_NOT_ESTABLISHED_HTTP_200_ONLY",
+  "remaining_quota": null,
+  "http_429_observed": false,
+  "additional_live_requests_authorized": 0,
+  "raw_provider_payloads_retained": false,
+  "artifact": {
+    "id": 12119759162,
+    "expires_at_utc": "2026-10-19T00:50:25Z",
+    "contents": "SANITIZED_STATUS_ONLY"
+  }
+}

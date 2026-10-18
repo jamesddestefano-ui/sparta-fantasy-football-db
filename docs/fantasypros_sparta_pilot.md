@@ -146,3 +146,11 @@ Authorization does not purchase credits, upgrade a plan, recur, or promote data.
 Sanitized per-endpoint audit records HTTP status, schema result, count and timing.
 Non200/network failures stop remaining calls; HTTP200 local validation failures may
 complete the remaining authorized endpoint tests, with no partial batch accepted.
+
+## Latest pilot result
+
+Run39084236479 at2026-10-18T00:50:15Z used code763cda78 and consumed the one-pilot
+user authorization. Exactly3 calls returnedHTTP200; all response validations
+failed; no batch accepted.43 Actions tests passed. No validated record counts or
+valid authenticated data established. No rerun under this authorization.
+Production intelligence remains disabled; see integration report for evidence.
