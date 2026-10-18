@@ -154,3 +154,7 @@ user authorization. Exactly3 calls returnedHTTP200; all response validations
 failed; no batch accepted.43 Actions tests passed. No validated record counts or
 valid authenticated data established. No rerun under this authorization.
 Production intelligence remains disabled; see integration report for evidence.
+
+## October18 additional controlled validation
+
+Current status and superseding authorization/results: [Sparta Brain engineering handoff](sparta-brain-engineering-handoff-2026-10-18.md). Run39085126777 used exactly3 requests, all HTTP200/schemaFAIL. Detailed mismatching fields now preserved; no batch or production promotion. The new one-shot authorization is consumed. Historical reports above describe earlier runs.

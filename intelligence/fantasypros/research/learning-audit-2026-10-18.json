@@ -1,0 +1,3320 @@
+{
+  "baseline_commit": "d8b72fab79c61d9ec8814f513483b63f73a908f7",
+  "validator_exit_code": 1,
+  "error_count": 653,
+  "records": 160,
+  "error_root_classes": {
+    "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY": 49,
+    "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY": 594,
+    "FORMAL_RECORD_INCOMPLETE_OR_REVIEW_CONTRACT": 10
+  },
+  "error_counts": {
+    "wrong system": 148,
+    "missing": 104,
+    "invalid event_type": 99,
+    "confidence must be 1-5": 102,
+    "invalid urgency": 101,
+    "review/supplement precedes DECISION": 99
+  },
+  "event_types": {
+    "DECISION": 56,
+    "DECISION_SCHEMA_SUPPLEMENT": 2,
+    "None": 99,
+    "OUTCOME_REVIEW": 3
+  },
+  "system_values": {
+    "PRIME_SPARTA_FANTASY_WATCH": 12,
+    "SPARTA_BRAIN_CONTROL_ROOM": 47,
+    "None": 99,
+    "SPARTA_LIVE_CHECK": 2
+  },
+  "formal_decision_count": 56,
+  "duplicate_formal_decision_ids": [],
+  "records_missing_decision_id": 57,
+  "pulse_used_values": {
+    "None": 102,
+    "True": 3,
+    "False": 55
+  },
+  "pulse_lineage_records": 5,
+  "lineage_reference_missing_formal_decision": [
+    "SPARTA-2026W4-CHASE-OUT-CONCUSSION-sparta-live-check-20261004-1550",
+    null
+  ],
+  "source_sha256": {
+    "learning/decision_ledger.jsonl": "0a49972663d1b199bb71165c18193eaaa944f06971b27bf731de32dcc5c8a552",
+    "scripts/validate_learning.py": "f8ef641860744bfc4383c54d56a9cc50728ccb845e92af8d818e45153b60e5c4",
+    "learning/decision_record_schema.json": "68ac18f60ed21a40b726ff9329f32304c6bb0e919475fa4239f412d4615912cd",
+    "learning/schema/decision_event.schema.json": "7e3f7e5ca34df142eeb05c7ae54bcce5c29a13119de0ef897a6752536412a5dd",
+    "learning/pulse_decision_lineage.jsonl": "f0dca2c346f0defbaa7ad8365118acbc528d1fa8b80b3185bba8c51a3fa89a9c"
+  },
+  "errors": [
+    {
+      "line": 5,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 6,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 7,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 9,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 10,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 11,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 14,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 14,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 14,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 14,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 14,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 14,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 15,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 15,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 15,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 15,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 15,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 15,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 16,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 16,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 16,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 16,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 16,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 16,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 17,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 17,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 17,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 17,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 17,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 17,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 18,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 18,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 18,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 18,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 18,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 18,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 19,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 20,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 20,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 20,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 20,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 20,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 20,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 21,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 21,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 21,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 21,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 21,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 21,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 22,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 22,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 22,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 22,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 22,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 22,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 23,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 23,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 23,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 23,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 23,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 23,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 24,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 24,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 24,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 24,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 24,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 24,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 25,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 25,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 25,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 25,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 25,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 25,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 26,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 26,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 26,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 26,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 26,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 26,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 27,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 27,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 27,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 27,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 27,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 27,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 28,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 28,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 28,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 28,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 28,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 28,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 29,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 29,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 29,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 29,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 29,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 29,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 30,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 31,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 31,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 31,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 31,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 31,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 31,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 32,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 32,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 32,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 32,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 32,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 32,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 33,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 33,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 33,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 33,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 33,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 33,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 34,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 34,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 34,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 34,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 34,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 34,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 35,
+      "category": "FORMAL_RECORD_INCOMPLETE_OR_REVIEW_CONTRACT",
+      "validator_message": "missing ['final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 35,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 36,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 37,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 37,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 37,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 37,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 37,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 37,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 38,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 38,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 38,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 38,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 38,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 38,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 39,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 39,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 39,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 39,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 39,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 39,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 40,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 40,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 40,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 40,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 40,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 40,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 41,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 41,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 41,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 41,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 41,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 41,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 42,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 42,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 42,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 42,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 42,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 42,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 43,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 43,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 43,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 43,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 43,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 43,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 44,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 44,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 44,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 44,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 44,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 44,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 45,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 46,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 47,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 47,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 47,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 47,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 47,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 47,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 48,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 48,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 48,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 48,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 48,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 48,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 49,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 49,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 49,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 49,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 49,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 49,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 50,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 50,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 50,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 50,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 50,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 50,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 51,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 51,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 51,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 51,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 51,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 51,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 52,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 52,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 52,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 52,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 52,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 52,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 53,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 53,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 53,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 53,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 53,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 53,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 54,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 54,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 54,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 54,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 54,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 54,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 55,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 55,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 55,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 55,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 55,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 55,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 56,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 56,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 56,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 56,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 56,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 56,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 57,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 57,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 57,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 57,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 57,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 57,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 58,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 58,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 58,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 58,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 58,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 58,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 59,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 59,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 59,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 59,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 59,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 59,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 60,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 60,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 60,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 60,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 60,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 60,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 61,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 61,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 61,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 61,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 61,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 61,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 62,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 62,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 62,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 62,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 62,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 62,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 63,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 63,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 63,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 63,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 63,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 63,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 64,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 64,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 64,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 64,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 64,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 64,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 65,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 65,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 65,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 65,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 65,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 65,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 66,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 66,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 66,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 66,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 66,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 66,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 67,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 67,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 67,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 67,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 67,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 67,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 68,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 68,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 68,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 68,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 68,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 68,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 69,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 69,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 69,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 69,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 69,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 69,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 70,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 70,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 70,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 70,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 70,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 70,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 71,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 71,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 71,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 71,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 71,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 71,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 72,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 72,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 72,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 72,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 72,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 72,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 73,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 73,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 73,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 73,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 73,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 73,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 74,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 74,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 74,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 74,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 74,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 74,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 75,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 75,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 75,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 75,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 75,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 75,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 76,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 76,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 76,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 76,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 76,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 76,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 77,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 77,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 77,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 77,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 77,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 77,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 78,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 78,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 78,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 78,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 78,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 78,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 79,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 79,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 79,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 79,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 79,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 79,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 80,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 80,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 80,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 80,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 80,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 80,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 81,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 82,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 82,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 82,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 82,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 82,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 82,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 83,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 83,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 83,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 83,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 83,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 83,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 84,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 84,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 84,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 84,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 84,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 84,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 85,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 85,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 85,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 85,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 85,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 85,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 86,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 86,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 86,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 86,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 86,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 86,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 87,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 87,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 87,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 87,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 87,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 87,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 88,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 88,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 88,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 88,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 88,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 88,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 89,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 89,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 89,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 89,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 89,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 89,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 90,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 90,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 90,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 90,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 90,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 90,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 91,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 91,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 91,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 91,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 91,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 91,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 92,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 92,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 92,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 92,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 92,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 92,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 93,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 93,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 93,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 93,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 93,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 93,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 94,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 94,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 94,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 94,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 94,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 94,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 95,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 95,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 95,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 95,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 95,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 95,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 96,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 96,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 96,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 96,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 96,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 96,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 97,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 97,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 97,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 97,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 97,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 97,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 98,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 98,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 98,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 98,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 98,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 98,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 99,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 99,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 99,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 99,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 99,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 99,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 100,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 100,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 100,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 100,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 100,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 100,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 101,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 101,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 101,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 101,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 101,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 101,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 102,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 102,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 102,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 102,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 102,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 102,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 103,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 103,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 103,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 103,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 103,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 103,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 104,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 104,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 104,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 104,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 104,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 104,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 105,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 105,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 105,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 105,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 105,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 105,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 106,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 106,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 106,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 106,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 106,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 106,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 107,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 107,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 107,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 107,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 107,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 107,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 108,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 108,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 108,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 108,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 108,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 108,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 109,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 109,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 109,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 109,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 109,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 109,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 110,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 110,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 110,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 110,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 110,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 110,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 111,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 111,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 111,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 111,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 111,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 111,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 112,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 112,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 112,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 112,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 112,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 112,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 113,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 113,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 113,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 113,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 113,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 113,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 114,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 115,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 116,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 117,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 118,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 119,
+      "category": "FORMAL_RECORD_INCOMPLETE_OR_REVIEW_CONTRACT",
+      "validator_message": "missing ['information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 119,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 120,
+      "category": "FORMAL_RECORD_INCOMPLETE_OR_REVIEW_CONTRACT",
+      "validator_message": "missing ['information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 120,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 121,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 122,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 123,
+      "category": "FORMAL_RECORD_INCOMPLETE_OR_REVIEW_CONTRACT",
+      "validator_message": "missing ['confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 123,
+      "category": "FORMAL_RECORD_INCOMPLETE_OR_REVIEW_CONTRACT",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 123,
+      "category": "FORMAL_RECORD_INCOMPLETE_OR_REVIEW_CONTRACT",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 124,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 125,
+      "category": "FORMAL_RECORD_INCOMPLETE_OR_REVIEW_CONTRACT",
+      "validator_message": "missing ['confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 125,
+      "category": "FORMAL_RECORD_INCOMPLETE_OR_REVIEW_CONTRACT",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 125,
+      "category": "FORMAL_RECORD_INCOMPLETE_OR_REVIEW_CONTRACT",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 126,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 127,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 128,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 129,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 129,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 129,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 129,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 129,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 129,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 130,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 131,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 132,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 133,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 133,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 133,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 133,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 133,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 133,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 134,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 134,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 134,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 134,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 134,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 134,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 135,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 136,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 137,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 138,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 139,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 142,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 143,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 144,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 145,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 146,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 147,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 148,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 149,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 150,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 150,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 150,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 150,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 150,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 150,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 151,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 151,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 151,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 151,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 151,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 151,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 152,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 153,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 154,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "missing ['decision_id', 'system', 'timestamp_et', 'week', 'decision_type', 'subject', 'recommendation', 'confidence', 'urgency', 'decision_deadline', 'information_available_at_decision', 'key_supporting_signals', 'key_risk_factors', 'alternative_considered', 'actual_user_action', 'final_pre_deadline_state', 'outcome', 'outcome_grade', 'process_grade', 'result_notes', 'error_category', 'lesson', 'future_rule_adjustment', 'reviewed_at']"
+    },
+    {
+      "line": 154,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 154,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid event_type"
+    },
+    {
+      "line": 154,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 154,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "invalid urgency"
+    },
+    {
+      "line": 154,
+      "category": "LEGACY_EVENT_SCHEMA_INCOMPATIBILITY",
+      "validator_message": "review/supplement precedes DECISION"
+    },
+    {
+      "line": 155,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 156,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 157,
+      "category": "FORMAL_RECORD_INCOMPLETE_OR_REVIEW_CONTRACT",
+      "validator_message": "confidence must be 1-5"
+    },
+    {
+      "line": 158,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 159,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    },
+    {
+      "line": 160,
+      "category": "SYSTEM_IDENTITY_CONTRACT_INCOMPATIBILITY",
+      "validator_message": "wrong system"
+    }
+  ],
+  "historical_records_modified": false,
+  "classification_limits": "Error occurrences, not unique defects. Legacy events may include material decisions requiring source-backed supplements; no automatic exemption. Existing validator does not check Pulse lineage."
+}
