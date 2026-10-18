@@ -55,3 +55,9 @@ PPR and schema-derived tests pass. Added manual Actions/helper and quota preflig
 under new main-install directive.38 offline tests pass. Independent reviews' secret,
 overflow, row-position and count findings reproduced and fixed. Main merge imported
 upstream Pulse intelligence only. Await main installation/readback/preflight evidence.
+
+Task3 complete within available evidence: main install6586e25636859ce0f8f31a1aa00d5aa9445687c2,
+readback verified, manual run39082871937 passed38 tests and verified secret presence.
+Quota/rotation unconfirmed; live stage skipped,0 calls. One-day sanitized artifact
+verified. GitHub reports original PR1 merged after authorized main installation.
+Production readiness remains blocked; final audit metadata committed separately.

@@ -1,7 +1,8 @@
 # FantasyPros NFL API — Sparta read-only pilot
 
-Status: locally validated implementation; live authentication and quota remain unverified.
-Manual Actions installation/run status is recorded in the integration report.
+Status: workflow installed on main;38 local/Actions tests pass; secret presence verified.
+Manual preflight39082871937 sent zero requests because quota/rotation gates were
+not confirmed. Live authentication remains unverified. See the integration report.
 No recurring schedule, transactions, decision-weight changes or production promotion.
 
 ## Authority and isolation

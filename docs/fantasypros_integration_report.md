@@ -1,6 +1,6 @@
 # FantasyPros integration review report
 
-Status: **PARTIAL — offline contracts validated; live authentication/quota unverified**.
+Status: **PARTIAL — workflow installed and preflight verified; live ingestion blocked by quota/rotation gates**.
 Repository: jamesddestefano-ui/sparta-fantasy-football-db.
 Feature branch: feature/sparta-fantasypros-integration; deployment target: main,
 now explicitly requested by the repository owner for the manual Actions workflow.
@@ -8,7 +8,7 @@ Starting commit: acb3611ed5001d286c9bd54630b3bfa6e1ff5cfd.
 Intervening main merged: ba436f7fa102dea9f577b9cffc86e6ec0624a6e7 (Pulse updates only).
 Final SHA and Actions installation/run evidence: delivery message and the verified
 GitHub main history (a commit cannot include its own SHA).
-Draft PR: https://github.com/jamesddestefano-ui/sparta-fantasy-football-db/pull/1.
+PR: https://github.com/jamesddestefano-ui/sparta-fantasy-football-db/pull/1 (GitHub now reports merged/closed after the authorized main installation).
 
 ## Implementation
 
@@ -47,8 +47,8 @@ contents:read, pinned actions, Python 3.12, serialized concurrency, tests first.
 Only sanitized counts/status are uploaded with one-day retention; no raw player
 payloads, credentials or authoritative league data leave the runner as artifacts.
 
-Owner reports adding FANTASYPROS_API_KEY as an Actions secret; its value has not
-been requested or inspected. Preflight verifies Boolean presence, not successful
+Owner added FANTASYPROS_API_KEY; Actions preflight confirmed secret_available=true.
+Its value has not been requested or inspected. Preflight verifies Boolean presence, not successful
 authentication. Default budget=0 makes no API calls. Live pilot requires exactly
 three confirmed requests, a provider quota evidence reference and rotated-key
 attestation. No quota endpoint exists in the supplied OpenAPI. Secret presence
@@ -137,3 +137,28 @@ history. Independently corroborate Week6 usage/injuries and align pre-kickoff
 forecasts/actual outcomes. Resolve source-schema issues before broader positions.
 No hourly collection, paid modeling, rule changes or production intelligence
 promotion until validated evidence and required authorizations exist.
+
+## Verified installation and Actions execution
+
+Installed/tested code commit: **6586e25636859ce0f8f31a1aa00d5aa9445687c2**.
+Main ref verified through GitHub API; changed code/docs/contracts/tests were
+fetched from GitHub main and matched local content. Workflow read back through
+the GitHub connector, blob SHA bafddaa4383dcb8cf272b8b07691abc400942796.
+
+Manual preflight run: [39082871937](https://github.com/jamesddestefano-ui/sparta-fantasy-football-db/actions/runs/39082871937),
+workflow_dispatch, main, conclusion success.38 offline tests passed in Actions.
+Secret presence true, quota confirmation false, credential rotation attestation
+false, live_permitted false. Ingestion step explicitly skipped: **zero API calls**.
+All three endpoint statuses NOT_REQUESTED; record counts null, not fabricated zeros.
+No API authentication success claimed. Presence does not prove the key is valid.
+
+Sanitized artifact12119541449 expires2026-10-19T00:28:29Z (one day), no raw payloads.
+Preflight metadata is recorded in intelligence/fantasypros/research/actions-preflight.json.
+The existing Validate Sparta Database push workflow still fails on its unchanged
+learning-validation step; local validation reports653 existing errors. The manual
+workflow intentionally reports that failure with continue-on-error; its successful
+conclusion is not production readiness or a claim that all repository checks pass.
+
+Recommendation: retain **unvalidated_for_decisions** and do not enable production
+intelligence. Confirm provider remaining quota permits3 calls and attest key rotation,
+then dispatch one live pilot. No scheduled collection or decision rules changed.
