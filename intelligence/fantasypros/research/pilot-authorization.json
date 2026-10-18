@@ -1,0 +1,30 @@
+{
+  "system": "SPARTA",
+  "provider": "FantasyPros Public API v2",
+  "recorded_at_utc": "2026-10-18T00:38:42.240985+00:00",
+  "credential_rotation": {
+    "status": "USER_CONFIRMED",
+    "source": "Repository owner confirmation in Sparta Brain conversation",
+    "key_value_requested": false,
+    "key_value_exposed": false
+  },
+  "quota": {
+    "status": "UNVERIFIED",
+    "remaining_requests": null,
+    "required_requests": 3,
+    "findings": [
+      "No quota/account/usage endpoint in supplied OpenAPI.",
+      "No quota evidence found in current main research, audit or documentation.",
+      "Previous Actions preflight reported quota_confirmed=false."
+    ],
+    "source_of_remaining_quota": null
+  },
+  "pilot": {
+    "status": "BLOCKED_QUOTA_UNVERIFIED",
+    "new_live_requests": 0,
+    "authentication": "NOT_ATTEMPTED",
+    "production_intelligence_enabled": false,
+    "previous_preflight_url": "https://github.com/jamesddestefano-ui/sparta-fantasy-football-db/actions/runs/39082871937"
+  },
+  "next_step": "Obtain current provider dashboard or other authoritative quota evidence for at least three requests; then execute one manual pilot with credential_rotated=true. No credits purchase or recurring collection."
+}

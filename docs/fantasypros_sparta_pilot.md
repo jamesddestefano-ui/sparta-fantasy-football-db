@@ -2,7 +2,9 @@
 
 Status: workflow installed on main;38 local/Actions tests pass; secret presence verified.
 Manual preflight39082871937 sent zero requests because quota/rotation gates were
-not confirmed. Live authentication remains unverified. See the integration report.
+not confirmed at that time. The owner has since confirmed rotation as
+USER_CONFIRMED. Quota remains unverified, so no new pilot was dispatched.
+Live authentication remains unverified. See the integration report.
 No recurring schedule, transactions, decision-weight changes or production promotion.
 
 ## Authority and isolation

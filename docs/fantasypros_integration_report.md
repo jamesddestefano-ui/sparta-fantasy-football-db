@@ -162,3 +162,20 @@ conclusion is not production readiness or a claim that all repository checks pas
 Recommendation: retain **unvalidated_for_decisions** and do not enable production
 intelligence. Confirm provider remaining quota permits3 calls and attest key rotation,
 then dispatch one live pilot. No scheduled collection or decision rules changed.
+
+## Latest owner authorization — rotation USER_CONFIRMED
+
+The repository owner explicitly confirms the API key was rotated. Current rotation
+status is **USER_CONFIRMED**; do not request the key or repeat the rotation question.
+This confirmation supersedes the earlier preflight's unattested rotation state,
+without modifying that historical run record.
+
+Quota remains **UNVERIFIED**, remaining requests unknown. Latest main has no quota
+evidence; the supplied OpenAPI has no quota/account/usage endpoint. The earlier
+zero-request preflight did not establish quota. No speculative API endpoint or
+live data request was made to discover it. The authorized three-request pilot was
+therefore **not dispatched**. Production intelligence stays disabled; no credits
+were purchased or schedules enabled. Authorization and findings are recorded in
+intelligence/fantasypros/research/pilot-authorization.json. Obtain current provider
+quota evidence for at least three requests before dispatching once with rotation
+attested true. The existing workflow remains installed and unchanged.
