@@ -11,3 +11,14 @@ Persist complete batches with immutable content identities and atomic publicatio
 Provide reproducible offline Wicks/Cowing research output from immutable decision-time evidence, explicit missing FantasyPros values and source hashes. Add paired full-PPR evaluation metrics using finite numeric values, common cohorts, no weight promotion. A notebook may consume these analytical inputs without maintaining a second authoritative database.
 
 Acceptance: adversarial offline tests, Sparta validation, unchanged protected paths, recorded existing learning validation failure, verified branch commits and draft PR. Live endpoint correctness, plan access and measurable predictive improvement remain blocked until evidence exists.
+
+## Authorized October 18 continuation
+
+User supplied authoritative OpenAPI YAML attachment; pin its JSON conversion and
+validate nested schemas using justified pinned jsonschema dependency. All seven
+prioritized endpoints and WR ROS adapter now have offline contracts. User then
+explicitly requested installation on main of a workflow_dispatch-only, secret-backed
+manual pilot. Default preflight verifies secret presence but spends zero API calls;
+live ingestion requires confirmed quota evidence and rotation attestation. This
+supersedes earlier draft-only/no-workflow scope. No recurring collection or
+production promotion. Raw data is never a workflow artifact; sanitized counts only.

@@ -1,115 +1,139 @@
 # FantasyPros integration review report
 
-Implementation status: **PARTIAL — OFFLINE ONLY, NOT PRODUCTION READY**.
+Status: **PARTIAL — offline contracts validated; live authentication/quota unverified**.
+Repository: jamesddestefano-ui/sparta-fantasy-football-db.
+Feature branch: feature/sparta-fantasypros-integration; deployment target: main,
+now explicitly requested by the repository owner for the manual Actions workflow.
+Starting commit: acb3611ed5001d286c9bd54630b3bfa6e1ff5cfd.
+Intervening main merged: ba436f7fa102dea9f577b9cffc86e6ec0624a6e7 (Pulse updates only).
+Final SHA and Actions installation/run evidence: delivery message and the verified
+GitHub main history (a commit cannot include its own SHA).
+Draft PR: https://github.com/jamesddestefano-ui/sparta-fantasy-football-db/pull/1.
 
-Repository: `jamesddestefano-ui/sparta-fantasy-football-db`.
-Feature branch: `feature/sparta-fantasypros-integration`; target: `main`.
-Starting commit: `acb3611ed5001d286c9bd54630b3bfa6e1ff5cfd`.
-Final commit: the verified PR head contains this report (reported with full SHA
-in the delivery message; a commit cannot contain its own SHA).
+## Implementation
 
-## Implemented
+All seven requested endpoint adapters now use the supplied OpenAPI structure:
+consensus, projections, injuries, news, compare, player-points and experts.
+Rest-of-season projections use ros=true. Default all remains exactly three pilot
+calls; extra endpoints require explicit selection. Pilot projections deliberately
+request WR only, including Wicks/Cowing's position, due unresolved source-schema
+issues in DST/kicker variants. No FantasyPros IDs are guessed from names.
 
-- Hardened read-only client: provisional player identity/context/PPR validation,
-  safe redirect handling, bounded opt-in transient retries, finite response size,
-  credential echo rejection (including JSON escapes), duplicate/conflict detection,
-  provider/retrieval timestamps and raw response SHA-256.
-- Rotated-key attestation and explicit worst-case request-budget preflight;
-  zero retries by default. No credentials configured or copied.
-- Atomic immutable batch output with repeated-content deduplication; output path
-  checks occur before requests. Failed/partial fetches never publish a batch.
-- Descriptive paired PPR evaluator: MAE/RMSE/bias, within-week pair ordering and
-  caller-supplied interval coverage/width, common-cohort checks and input hash.
-- Week 6 Wicks/Cowing artifact with immutable ledger provenance, recorded usage
-  and injury opportunity signals, missing FantasyPros values, no new recommendation.
+The attached .json file actually contains YAML. Pinned JSON conversion and source
+hash provenance live under contracts/. Runtime uses pinned jsonschema (justified
+for nested allOf/oneOf/ref validation); YAML is not a runtime dependency.
+Documented normalizations: YAML-null type entries, nullable support, NFL-specific
+generic parameter enums. Format annotations are not universally enforced because
+the source's timestamp examples conflict with their offset requirements.
+
+Fixed source-incompatible assumptions: required projection position parameter;
+fpid/name/position_id/stats array; explicit stats.points_ppr even when the top-level
+scoring label is STD; ranking player_position_id/Yahoo ID and epoch timestamp.
+Individual positions must match the requested slice, and declared counts must
+match received records. Empty/malformed/conflicting/truncated responses fail.
+
+Transport uses 15-second timeout, bounded size, no credential-bearing redirects,
+zero retries by default and at most two opt-in transient retries. API errors omit
+bodies/credentials. Decoded secret echoes, duplicate JSON members and nonfinite
+values are rejected. Successful batches preserve provider/retrieval timestamps,
+raw hashes, mappings, quality flags, original fields and normalized PPR values.
+Publication is immutable, atomic and content-deduplicated; no partial batches.
+All results remain unvalidated_for_decisions; availability stays UNKNOWN.
+
+## Manual workflow and secret
+
+.github/workflows/fantasypros_sparta_pilot.yml: workflow_dispatch only,
+contents:read, pinned actions, Python 3.12, serialized concurrency, tests first.
+Only sanitized counts/status are uploaded with one-day retention; no raw player
+payloads, credentials or authoritative league data leave the runner as artifacts.
+
+Owner reports adding FANTASYPROS_API_KEY as an Actions secret; its value has not
+been requested or inspected. Preflight verifies Boolean presence, not successful
+authentication. Default budget=0 makes no API calls. Live pilot requires exactly
+three confirmed requests, a provider quota evidence reference and rotated-key
+attestation. No quota endpoint exists in the supplied OpenAPI. Secret presence
+never establishes quota or credential rotation. Current quota is unconfirmed.
+
+## Tests and review
+
+python -m unittest discover -s tests -v: **38 passed**, including supplied contracts,
+all adapters, ROS, PPR selection, context/identity/count checks, secret echo,
+retry bounds, partial-response rejection, immutable publication and quota gates.
+These are offline synthetic tests, not authenticated provider responses.
+python scripts/validate_sparta.py: PASS (12 teams,204 draft,17 roster,157 transactions).
+python scripts/validate_learning.py: FAIL with **653 pre-existing errors**.
+Historical ledger and validator unchanged; no relaxation or history rewrite.
+git diff --check: PASS. Workflow YAML parsed and dispatch/read-only/concurrency
+invariants checked. Main read-back/run results are reported after installation.
+
+Independent review reproduced credential-echo escaping and numerical overflow;
+regressions verify their fixes. A second review found per-row position/count
+validation gaps; reproduced and fixed with rejection tests. Neither review found
+apparent authoritative-state writes or redirect/header leakage. No review claims
+live correctness.
+
+## Results and data quality
+
+Authenticated endpoints: **none yet**. No FantasyPros live calls made in this
+session before quota confirmation. No provider record counts can be reported.
+
+Week 6 analytical artifact references immutable Oct16/17 decisions with source
+ledger hash. Recorded Wicks target share/usage favors Wicks; recorded SF injuries
+create Cowing opportunity. Cowing's recorded two targets/50% routes and Monday
+status uncertainty weaken certainty. FP ranks/projections/verified intervals are
+null; independent underlying NFL sources and matched actual outcomes are missing.
+This is historical evidence review, not a live prediction or Yahoo lineup change.
+
+Ranking epoch timestamps have a provisional 48-hour freshness/5-minute future
+window. Injury/news responses do not guarantee season/week fields or complete
+identity metadata; flags preserve these limits. Expert publication timestamps
+without offsets require review. Historical as-of evaluation needs a separate
+validated timestamp mode. No predictive improvement or model weight promotion.
+Current user $1 pickup-plus-FAAB instruction conflicts with AGENTS14/50 and v3
+FAAB-only history; research flags it, accounting remains unchanged.
+
+User-facing ownership filtering is not automated: raw NFL intelligence must be
+reviewed against current authenticated Yahoo proof before Brain recommendations.
+No player availability is inferred. No cross-source Pulse dedupe/cursor advance
+is performed just because FantasyPros data is collected.
 
 ## Files
 
-Created `.gitignore`, `scripts/fantasypros_evaluate.py`,
-`tests/test_fantasypros_evaluate.py`, this report,
-`docs/superpowers/specs/2026-10-17-fantasypros-design.md`,
-`docs/superpowers/plans/2026-10-17-fantasypros-integration.md`,
-`intelligence/fantasypros/research/2026-week06-wicks-cowing.json` and
-`intelligence/fantasypros/research/offline-validation.json`.
-Modified `scripts/fantasypros_ingest.py`, `tests/test_fantasypros_ingest.py`
-and `docs/fantasypros_sparta_pilot.md`.
+Created: .github/workflows/fantasypros_sparta_pilot.yml; requirements-fantasypros.txt;
+contracts/fantasypros_public_v2.openapi.json; contracts/fantasypros_source.json;
+scripts/fantasypros_contract.py; scripts/fantasypros_actions.py;
+scripts/fantasypros_evaluate.py; tests/fantasypros_fixtures.py;
+tests/test_fantasypros_contract.py; tests/test_fantasypros_actions.py;
+tests/test_fantasypros_evaluate.py; .gitignore; design/plan/report docs;
+intelligence/fantasypros/research/2026-week06-wicks-cowing.json;
+intelligence/fantasypros/research/offline-validation.json.
+Modified: scripts/fantasypros_ingest.py; tests/test_fantasypros_ingest.py;
+docs/fantasypros_sparta_pilot.md.
+No implementation changes to data/,learning/,Pulse cursors or existing intelligence.
+The merge imports only upstream Pulse updates; FantasyPros did not generate them.
 
-No changes to data/, learning/, ownership, transactions, FAAB, lineup history,
-existing intelligence or Pulse cursors. No Yahoo calls or financial actions.
+## Deepnote / Hugging Face
 
-## Verification
+Deepnote project 4e60d132-6e5b-45ae-b9c5-9765bb95e541, notebook
+6535e38d6bcc4abba510d364dbf141ca: two read-back blocks, evaluator/comparison/manifest
+analytical files pinned to 119b393, before later evaluator numerical hardening.
+Never run; paired cohort empty. Project creation/file tools automatically started
+Basic CPU machine time; cost not reported. Explicit shutdown returned stopped.
+Synchronize reviewed code before future execution. No credential or league DB.
 
-- `python -m unittest discover -s tests -v`: **26 passed**, exit 0. All transport
-  responses are synthetic. These are unit/local safety and pipeline tests,
-  not authoritative OpenAPI contract or live provider integration tests.
-- `python scripts/validate_sparta.py`: **PASS**, exit 0; 12 teams, 204 draft
-  records, 17 current roster players, 157 transactions, JD FAAB 33.
-- `python scripts/validate_learning.py`: **FAIL**, exit 1, **653 existing errors**,
-  including wrong system values, missing fields and heterogeneous event formats.
-  Seen before implementation; validator and ledger are byte-unchanged from base.
-- `git diff --check`: PASS. Protected paths unchanged from base.
-- Comparison regenerated by `python scripts/fantasypros_evaluate.py --comparison`.
-- Test-first rejection checks failed before fixes and passed afterward.
+[Analytical notebook](https://deepnote.com/workspace/james-4106-48eceaa3-2249-4b92-ab08-e63f2de0a40b/project/4e60d132-6e5b-45ae-b9c5-9765bb95e541/notebook/6535e38d6bcc4abba510d364dbf141ca?utm_source=openai&utm_medium=mcp&utm_campaign=openaimcp&utm_content=6535e38d6bcc4abba510d364dbf141ca&utm_term=get_notebook)
 
-## Authenticated endpoints
+Hugging Face model search returned UNAVAILABLE. No model downloads, datasets,
+paid jobs, training or model deployment. Paired descriptive baseline harness
+supports future repeated holdout evaluations; no improvement claim exists.
 
-**None. Zero FantasyPros live calls.** No securely rotated secret was configured.
-The supplied OpenAPI specification was not attached, in the repository or located
-by a usable URL. No endpoint, parameter, response schema, entitlement or quota
-has been verified against it. Request definitions remain provisional. News,
-compare-players, actual player-points, expert accuracy and rest-of-season
-projections remain unimplemented pending these contracts.
+## Remaining gates
 
-## Data quality and learning limits
-
-Existing client accepted empty arrays, weak identities and unconfirmed PPR data;
-new safety checks reject or explicitly quarantine these conditions. Missing
-provider timestamps/Yahoo IDs and historical injury week ambiguity are flagged.
-A 48-hour timestamp window is provisional and rejects historical stale data;
-a validated historical/as-of mode is still needed.
-
-Recorded Wicks workload (17% share with Smith, eight Week 5 targets) favors Wicks;
-recorded Cowing injury-created opportunity favors Cowing. The ledger records
-Cowing's two Week 5 targets/50% routes and unresolved injury/activation risks.
-These are prior decision assertions, not newly verified underlying sources.
-FP ranks/projections, independent usage/injury verification, forecast intervals,
-verified kickoffs and matched actual full-PPR outcomes are missing. No new live
-prediction, ownership inference, lineup change or measurable improvement claim.
-No weights or historical recommendations were rewritten.
-
-Current directive's $1 per pickup plus applicable FAAB conflicts with AGENTS
-14/50 and learning_rules_v3's FAAB-only rule; explicitly flagged in research.
-No historical balances or accounting rules changed.
-
-## Deepnote and Hugging Face
-
-Used connected Deepnote skills for discovery, editing and link construction.
-Created analytical project `4e60d132-6e5b-45ae-b9c5-9765bb95e541`, notebook
-`6535e38d6bcc4abba510d364dbf141ca`, with two verified blocks and three files:
-`fantasypros_evaluate.py`, `week06-comparison.json`, `source_manifest.json`.
-Notebook artifacts are pinned to commit `119b393` (full SHA in manifest), before
-later numerical-hardening changes. They contain no credentials or league DB.
-Notebook has never run; paired cohort is empty, so no accuracy result exists.
-Project/file creation automatically started Basic CPU machine time; cost was not
-reported by the tools. Explicit shutdown returned `status=stopped`. Do not claim
-zero compute cost. Synchronize the final reviewed evaluator before future runs.
-
-[Deepnote notebook](https://deepnote.com/workspace/james-4106-48eceaa3-2249-4b92-ab08-e63f2de0a40b/project/4e60d132-6e5b-45ae-b9c5-9765bb95e541/notebook/6535e38d6bcc4abba510d364dbf141ca?utm_source=openai&utm_medium=mcp&utm_campaign=openaimcp&utm_content=6535e38d6bcc4abba510d364dbf141ca&utm_term=get_notebook)
-
-Hugging Face model-search attempt returned UNAVAILABLE (`model_search` absent
-from tools/list). No models, datasets, uploads, paid jobs or training performed.
-The reproducible paired baseline harness is prepared; model adoption remains
-conditional on repeated rolling holdout improvements and calibration evidence.
-
-## Remaining blockers and next steps
-
-1. Supply authoritative OpenAPI; validate all request/response contracts and add
-   schema-derived fixtures. Confirm plan endpoint entitlements and quota.
-2. Rotate exposed key and bind replacement securely as FANTASYPROS_API_KEY.
-3. Run only the controlled Week 6 pilot after those gates; record actual HTTP
-   success, scope, timestamps, IDs, scoring and independent corroboration.
-4. Address baseline learning-validation incompatibilities in a separate governed
-   change preserving immutable history; this PR does not conceal them.
-5. Synchronize the Deepnote evaluator, align actuals and pre-kickoff forecasts,
-   then evaluate rolling holdouts; no paid compute without spending approval.
-6. Review the draft PR; no merge or scheduled collection is authorized here.
+Verify Actions installation and secret-presence preflight; confirm quota and key
+rotation without exposing values; then run one three-request pilot. Record actual
+HTTP200/authentication/counts and independently reconcile IDs/scoring/timestamps.
+Resolve baseline learning-validation incompatibilities separately, preserving
+history. Independently corroborate Week6 usage/injuries and align pre-kickoff
+forecasts/actual outcomes. Resolve source-schema issues before broader positions.
+No hourly collection, paid modeling, rule changes or production intelligence
+promotion until validated evidence and required authorizations exist.

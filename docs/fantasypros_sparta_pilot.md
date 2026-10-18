@@ -1,106 +1,135 @@
 # FantasyPros NFL API — Sparta read-only pilot
 
-Status: OFFLINE IMPLEMENTATION ONLY; not operational or ready for production.
-The authoritative OpenAPI specification, securely rotated credential and quota
-confirmation were unavailable during implementation. All request definitions and
-record-field mappings are provisional. Synthetic tests validate local safety
-behavior; they do not validate provider contracts. No authenticated API request
-has succeeded or been attempted in this work.
+Status: locally validated implementation; live authentication and quota remain unverified.
+Manual Actions installation/run status is recorded in the integration report.
+No recurring schedule, transactions, decision-weight changes or production promotion.
 
 ## Authority and isolation
 
-FantasyPros is NFL research intelligence only. Authenticated Yahoo Sparta state
-controls ownership, availability, roster, transactions, FAAB, waivers and lineup.
-GitHub stores durable history; Sparta Brain retains final synthesis authority.
-No Yahoo transaction implementation, scheduled collection or workflow is added.
-Outputs always remain `unvalidated_for_decisions`; availability is `UNKNOWN`.
+Authenticated Yahoo Sparta data controls live league truth; GitHub preserves
+history; FantasyPros and Pulse provide NFL research; Sparta Brain remains final
+synthesis authority. Every output is `unvalidated_for_decisions`, availability
+UNKNOWN. No ownership inference from rankings or roster percentages. Raw provider
+collection is not a user-facing recommendation feed: review/filter only JD-owned,
+confirmed Sparta-available or material opponent developments using current Yahoo
+proof before surfacing decisions. Automated ownership filtering is not enabled.
 
-The October 17 directive models $1 real-money cost per completed pickup plus
-applicable waiver FAAB. This conflicts with AGENTS.md rules 14/50 and
-learning_rules_v3 (winning FAAB only). The new research artifact flags the
-conflict; historical accounting and rule files are unchanged.
+October 17 instruction models $1 per completed pickup plus applicable FAAB;
+AGENTS 14/50 and learning_rules_v3 disagree. Research flags the conflict without
+changing historical accounting.
 
-## Offline verification
+## Supplied OpenAPI contract
+
+`contracts/fantasypros_public_v2.openapi.json` is a JSON conversion of the supplied
+YAML attachment. Original filename and SHA-256 are in `fantasypros_source.json`.
+The source is retained without semantic changes. Runtime normalizations are
+explicit in `scripts/fantasypros_contract.py`: YAML null members of `type` arrays
+become JSON Schema `"null"`; OpenAPI `nullable` is honored. Generic SPORT oneOf
+parameter enums overlap, so NFL-specific enums validate NFL parameters.
+Format annotations are not blanket-enforced because source timestamp examples
+omit offsets despite `date-time` annotations; safety timestamp checks are separate.
+This verifies structure against supplied contracts, not actual provider behavior.
+
+| Kind | Request/response behavior |
+| --- | --- |
+| consensus | FLX, PPR, type WW, week; documented player_position_id/Yahoo ID and epoch last_updated_ts |
+| projections | Required position WR, positions WR, week; fpid/name/position_id/stats[].points_ppr |
+| injuries | year/week/include_probabilities; name/yahoo_id and practice statuses; no response season/week/position fields guaranteed |
+| news | limit 10/order_by updated; item IDs allow multiple news items for one player |
+| compare | Two supplied verified FP IDs; weekly WR and player details; select PPR ranking map |
+| points | start=end=requested week; WR, PPR, min false; verify weeks key |
+| experts | WR, type WW, PPR; no supported week query; returned week must match requested pilot week |
+| projections_ros | Same WR slice with documented ros=true; returned week must match requested as-of week |
+
+Projection top-level scoring may be STD: the documented stats contain separate
+points, points_half and points_ppr. Only points_ppr enters normalized PPR values.
+Conflicting multiple stat rows are rejected rather than silently averaged.
+The source DST required-field typo (`points_half def_sack`) and absent kicker
+projection variant are unresolved; this pilot intentionally requests WR only.
+No inference of FP IDs by approximate names. Rankings/injuries provide Yahoo IDs;
+missing mappings and positions are explicit quality flags. ID reconciliation with
+current authenticated Yahoo remains a decision gate.
+
+## Tests and dependency justification
 
 ```bash
+python -m pip install -r requirements-fantasypros.txt
 python -m unittest discover -s tests -v
 python scripts/validate_sparta.py
 python scripts/validate_learning.py
 python scripts/fantasypros_evaluate.py --comparison
 ```
 
-Learning validation already fails on main's heterogeneous immutable ledger
-formats. Do not rewrite history or loosen validation to make this pilot green.
-See `fantasypros_integration_report.md` for the actual results.
+Pinned jsonschema is the one added runtime dependency: validating nested allOf,
+oneOf, refs, required fields and types from OpenAPI correctly warrants a maintained
+validator. YAML was converted locally, so PyYAML is not a runtime requirement.
+Learning validation already fails on heterogeneous immutable records; do not
+rewrite history or weaken it for this integration.
 
-## Contracts requiring authoritative verification
+## Manual GitHub Actions
 
-| Endpoint | Implementation state |
-| --- | --- |
-| `/nfl/2026/consensus-rankings` | Existing provisional FLEX/PPR request, hardened local validation |
-| `/nfl/2026/projections` | Existing provisional weekly request; missing PPR metadata explicitly unverified |
-| `/nfl/injuries` | Existing provisional request; historical week scope explicitly unverified |
-| `/nfl/news` | Deferred pending specification and plan access |
-| `/nfl/compare-players` | Deferred pending specification and plan access |
-| `/nfl/2026/player-points` | Deferred pending specification and scoring rules |
-| `/nfl/2026/rankings/experts` | Deferred pending specification and plan access |
+`.github/workflows/fantasypros_sparta_pilot.yml` uses workflow_dispatch only,
+contents:read, pinned actions, Python 3.12 and serialized concurrency. Unit/contract
+tests run before secret injection or ingestion. Learning validation failure is
+reported explicitly and does not grant permission to promote intelligence.
 
-Rest-of-season projections are not implemented. Do not assume the provider uses
-these provisional parameters, field names, result arrays or timestamp formats.
-The next engineer must validate request parameters and full response schemas
-against the supplied OpenAPI, add schema-derived fixtures and then run live tests.
+The repository owner reports adding FANTASYPROS_API_KEY. Workflow preflight checks
+presence as a Boolean only; no secret value is read through tools, printed or
+persisted. A present secret is not proof of successful FantasyPros authentication
+or rotation. Default dispatch budget 0 runs tests/preflight with no API calls.
+Live ingestion needs all three inputs: confirmed_request_budget=3, a reference to
+verified provider quota evidence, and credential_rotated=true. Do not supply these
+assertions without evidence. The supplied API has no quota-inspection endpoint;
+quota cannot be inferred from key presence, API pricing or a 200 response.
 
-## Secure manual pilot, after resolving blockers
+Live mode makes exactly three calls (no retries), season 2026/week 6. No paid
+service is added. Never enter credentials in dispatch inputs. The only artifact
+is a sanitized status/count summary, retained one day; raw provider data is not
+uploaded and contains no authoritative league information. GitHub controls
+artifact access. Default preflight is safe for a public repository because the
+summary contains no secret values, player-level data or league state.
 
-Rotate the exposed key; inject the replacement as `FANTASYPROS_API_KEY` using
-approved secret management. Never place it in files, command arguments, URLs,
-logs, notebooks or prompts. `--credential-rotated` is an operator attestation,
-not proof of rotation. Default operation sends no requests without it and a
-confirmed request budget. No secret store was created or modified here.
+## Local authenticated pilot after resolving quota and rotation
 
-After contract validation and confirming plan quota, the intended three-request
-Week 6 invocation is:
+Inject rotated key using approved secret management, never a command argument,
+.env committed file, URL, notebook or prompt. Once contracts, plan entitlement
+and quota are confirmed:
 
 ```bash
 python scripts/fantasypros_ingest.py --season 2026 --week 6 \
-  --credential-rotated --request-budget 3 \
+  --credential-rotated --request-budget 3 --retries 0 \
   --output-dir /tmp/sparta-fantasypros-review
 ```
 
-Retries default to zero. `--retries 1` permits up to six total requests for all
-three kinds; the request budget must cover the worst case. At most two retries
-are supported; only transient HTTP/network failures retry. Retry-After over 30
-seconds stops for deferred retry. HTTP redirects are refused to protect headers.
-No quota discovery endpoint is assumed.
+`--kind all` means only the three pilot endpoints. Other kinds require explicit
+selection; compare also requires --player-ids with two verified colon-delimited
+IDs. Default retries zero; at most two opt-in retries for transient failures,
+with worst-case budget coverage required. Redirects are refused. Response size
+is bounded. JSON duplicate keys/nonfinite values, invalid schemas, bad identities,
+context conflicts, empty arrays and stale/future ranking timestamps fail closed.
 
-All requests must finish and validate before publication. One immutable JSON
-batch is published atomically with a content-derived SHA-256 identity; identical
-provider content does not create another file. First retrieval timestamp is
-retained for a repeated batch. Outputs include provider timestamps when present,
-retrieval time, response hashes, quality flags, duplicate counts and explicit
-contract status. Missing provider timestamps or Yahoo mappings are flagged;
-contradictory identities/context, empty arrays and stale/future timestamps fail.
-The provisional freshness window is 48 hours and 5 minutes future tolerance;
-historical provider timestamps will require a separate as-of validation mode.
-No inference of identity from name matching or of availability is performed.
+Batch publication is atomic, immutable and content-deduplicated. First retrieval
+time is preserved on repeated identical provider content. Original provider fields,
+raw response hashes, retrieval timestamps, mapping fields and quality flags are
+retained. Provider timestamps missing or without proven timezone remain review
+gates. News/injuries do not prove their historical week in the response. Existing
+48-hour/5-minute future safety window requires a separate as-of mode for older
+historical forecasts. Nothing advances a Pulse cursor.
 
-Only `intelligence/fantasypros/` or an external review directory is permitted.
-Never point an external review directory at another authoritative datastore.
-No protected league files, decisions or Pulse cursor are written.
+Only intelligence/fantasypros or an external review directory is allowed. Never
+point an external output at another authoritative datastore. No partial batch is
+published on any endpoint failure.
 
-## Research evaluation
+## Research
 
-`fantasypros_evaluate.py --rows paired.json` consumes an explicit common cohort:
-`player_id` (string), season 2026, week 1–18, scoring `PPR`, numeric `fantasypros`,
-`sparta`, `actual`, `lower`, `upper`. Fantasy points must be finite and within
-±1000. Duplicate player/weeks and incomplete paired rows are rejected. Intervals
-are caller-supplied; label their model and nominal coverage in the input manifest.
-Metrics include MAE, RMSE, bias, interval coverage/width and within-week pairwise
-FantasyPros ordering accuracy. They are descriptive; forecast timing/provenance
-is not automatically verified. No weights are promoted. Actual scoring import,
-start/bench outcomes, waiver ROI and trade evaluation remain future adapters.
+The Week 6 artifact hashes immutable October 16/17 decisions. Recorded workload
+favors Wicks; recorded injury-created opportunity favors Cowing. FP values remain
+null until actual authenticated data exists. This is historical evidence review,
+not a new prediction or lineup edit. Underlying route/injury sources still need
+independent verification.
 
-The Week 6 comparison references immutable October 16/17 decisions and hashes the
-source ledger. Recorded usage favors Wicks; injury-contingent opportunity favors
-Cowing. FantasyPros numbers and verified uncertainty intervals are null. This is
-historical evidence review, not a fresh prediction, ownership check or lineup edit.
+`fantasypros_evaluate.py --rows paired.json` expects player_id, season, week,
+scoring=PPR, fantasypros, sparta, actual, lower and upper on a common cohort.
+Metrics are descriptive; pre-kickoff provenance and nominal interval coverage
+must be recorded by the caller. Empty/incomplete cohorts yield no accuracy claim.
+No weights are promoted. Deepnote artifacts remain analytical and have not run.

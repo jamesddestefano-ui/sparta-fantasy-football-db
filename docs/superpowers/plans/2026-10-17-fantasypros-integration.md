@@ -49,3 +49,9 @@ Task 2 complete: 119b393; paired descriptive metrics and immutable-source compar
 Task 3 in progress: 26 tests pass; Sparta validation passes; learning validation fails with 653 pre-existing errors. Protected paths unchanged. Deepnote project/notebook created and verified, no notebook run; automatically started Basic CPU machine was explicitly stopped. HF search unavailable; no download or job.
 Ruling: no OpenAPI reference arrived in the user's reply; do not invent schemas for additional endpoints or claim existing contracts verified.
 Ruling: keep learning validator and immutable events unchanged. A draft PR can expose the blocked state; it does not satisfy production acceptance.
+
+October18 continuation: supplied OpenAPI converted/pinned, all7 adapters+ROS added,
+PPR and schema-derived tests pass. Added manual Actions/helper and quota preflight
+under new main-install directive.38 offline tests pass. Independent reviews' secret,
+overflow, row-position and count findings reproduced and fixed. Main merge imported
+upstream Pulse intelligence only. Await main installation/readback/preflight evidence.

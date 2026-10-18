@@ -2,11 +2,11 @@
   "unit": {
     "command": "python -m unittest discover -s tests -v",
     "exit_code": 0,
-    "output_sha256": "575f244a94d59b7a4167608304a8c70e4c23f4c8b1f9d5267106926fde2794b1",
+    "output_sha256": "db309eba7ac62331ab0c65b479e5f3a214772681ea74144f420dbbfdea3229f9",
     "summary": [
       "",
       "----------------------------------------------------------------------",
-      "Ran 26 tests in 0.047s",
+      "Ran 38 tests in 0.169s",
       "",
       "OK"
     ]
@@ -25,14 +25,7 @@
     "command": "python scripts/validate_learning.py",
     "exit_code": 1,
     "output_sha256": "2cc06c5298f0d400f89a532148cb630d55ae11c9494cf29cab2931b8c08f7434",
-    "error_count": 653,
-    "examples": [
-      "SPARTA LEARNING VALIDATION FAILED:",
-      "- ledger line 5: wrong system",
-      "- ledger line 6: wrong system",
-      "- ledger line 7: wrong system",
-      "- ledger line 9: wrong system"
-    ]
+    "error_count": 653
   },
-  "protected_paths_unchanged": true
+  "protected_paths_unchanged_from_current_main": true
 }

@@ -119,6 +119,8 @@ def validate_payload(payload, kind, season, week, *, now=None, player_ids=None):
         rows=[dict(payload['players'].get(ident,{}),player_id=int(ident)) for ident in ranks if str(ident).isdigit()]
         if len(rows)!=len(ranks): raise IngestionError('FantasyPros: malformed comparison identities')
     else: rows=payload[expected]
+    if 'count' in payload and int(payload['count'])!=len(rows):
+        raise IngestionError('FantasyPros: declared count differs from received records')
     for row in rows:
         ident=row.get('fpid') if contract_kind=='projections' else row.get('expert_id') if kind=='experts' else row.get('player_id')
         if isinstance(ident,bool) or not str(ident).isdigit() or int(ident)<=0:
@@ -129,6 +131,10 @@ def validate_payload(payload, kind, season, week, *, now=None, player_ids=None):
         if name is not None and (not isinstance(name,str) or not name.strip()): raise IngestionError('FantasyPros: invalid player name')
         if pos is not None and pos not in document()[0]['components']['schemas']['NFLPositions']['enum']:
             raise IngestionError('FantasyPros: invalid player position')
+        if kind in ('projections','projections_ros','points','compare') and pos!='WR':
+            raise IngestionError('FantasyPros: player position differs from requested WR slice')
+        if kind=='consensus' and pos not in ('RB','WR','TE'):
+            raise IngestionError('FantasyPros: player position outside requested FLEX slice')
         if not name and kind!='experts': flags.append('PLAYER_NAME_MISSING')
         if not pos and kind!='experts': flags.append('PLAYER_POSITION_MISSING')
         for field,wanted in (("season",season),("year",season),("week",week),("scoring","PPR")):

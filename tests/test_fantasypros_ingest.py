@@ -80,7 +80,7 @@ class SafetyTests(unittest.TestCase):
                 self.get(dict(self.payload(),scoring=scoring))
 
     def test_deduplicate_and_reject_conflicting_identity(self):
-        data=self.payload(); data["players"] *= 2
+        data=self.payload(); data["players"] *= 2; data["count"]=2
         self.assertEqual(self.get(data)["record_count"],1)
         data["players"][1]=dict(data["players"][0], player_name="Other")
         with self.assertRaises(IngestionError): self.get(data)

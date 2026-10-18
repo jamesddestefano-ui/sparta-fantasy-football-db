@@ -67,6 +67,19 @@ class SuppliedContractTests(unittest.TestCase):
             with self.subTest(raw=raw[:30]),self.assertRaises(IngestionError):
                 fetch('consensus',2026,6,'synthetic-api-key',opener=lambda *a,**k:Raw(raw))
 
+    def test_reject_wrong_row_positions_and_truncated_counts(self):
+        for kind in ('consensus','projections','points','compare'):
+            data=fixture(kind)
+            if kind=='compare': data['players']['1']['player_position_id']='RB'
+            elif kind=='consensus': data['players'][0]['player_position_id']='QB'
+            else: data['players'][0]['position_id']='RB'
+            with self.subTest(kind=kind),self.assertRaises(IngestionError):
+                fetch(kind,2026,6,'synthetic-api-key',opener=lambda *a,**k:Response(data),**({'player_ids':'1:2'} if kind=='compare' else {}))
+        for kind in ('consensus','projections','injuries','news','experts'):
+            data=fixture(kind); data['count']='2' if kind=='projections' else 2
+            with self.subTest(count_kind=kind),self.assertRaises(IngestionError):
+                fetch(kind,2026,6,'synthetic-api-key',opener=lambda *a,**k:Response(data))
+
     def test_unknown_parameter_rejected(self):
         with self.assertRaises(ValueError): validate_request('news',2026,{'week':'6'})
 
