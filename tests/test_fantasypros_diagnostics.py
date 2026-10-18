@@ -35,7 +35,8 @@ class DiagnosticsTests(unittest.TestCase):
     def test_error_envelopes_stop_after_one_request_and_preserve_safe_audit(self):
         for body in ({'error':'quota exceeded private-text'}, {'message':'Invalid API key'},
                      {'status':'error','message':'Subscription does not include this endpoint'},
-                     {'status':False,'errors':['not entitled']}, {'code':429,'message':'limit reached'}):
+                     {'status':False,'errors':['not entitled']}, {'code':429,'message':'limit reached'}, {'status':429}, {'status':403},
+                     {'code':200,'status_code':401}, {'code':200,'status':429}):
             calls=[]
             def opener(*a,**k): calls.append(1); return Response(body)
             real_fetch=ingest.fetch
