@@ -60,6 +60,13 @@ class SuppliedContractTests(unittest.TestCase):
             with self.subTest(mutation=mutation),self.assertRaises(IngestionError):
                 fetch('projections',2026,6,'synthetic-api-key',opener=lambda *a,**k:Response(data))
 
+    def test_reject_nonfinite_and_duplicate_json_members(self):
+        class Raw(Response):
+            def read(self,limit): return self.data
+        for raw in ((json.dumps(fixture())[:-1]+',"scoring":"PPR"}').encode(),json.dumps(dict(fixture(),extra=float('nan'))).encode()):
+            with self.subTest(raw=raw[:30]),self.assertRaises(IngestionError):
+                fetch('consensus',2026,6,'synthetic-api-key',opener=lambda *a,**k:Raw(raw))
+
     def test_unknown_parameter_rejected(self):
         with self.assertRaises(ValueError): validate_request('news',2026,{'week':'6'})
 

@@ -217,6 +217,19 @@ def contains_secret(value, secret):
     return False
 
 
+
+def strict_object(pairs):
+    result={}
+    for key,value in pairs:
+        if key in result: raise ValueError('Duplicate JSON member')
+        result[key]=value
+    return result
+
+
+def invalid_constant(_):
+    raise ValueError('Nonfinite JSON value')
+
+
 def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, retries=0, sleep=time.sleep, player_ids=None) -> dict:
     if not api_key.strip():
         raise IngestionError("FANTASYPROS_API_KEY is not configured")
@@ -247,7 +260,7 @@ def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, 
     if len(raw) > 5_000_000:
         raise IngestionError(f"FantasyPros {kind}: response too large")
     try:
-        payload = json.loads(raw)
+        payload = json.loads(raw,object_pairs_hook=strict_object,parse_constant=invalid_constant)
     except (ValueError, UnicodeDecodeError, RecursionError):
         raise IngestionError(f"FantasyPros {kind}: invalid JSON response") from None
     try:
