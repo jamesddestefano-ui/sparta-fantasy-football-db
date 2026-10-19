@@ -6,13 +6,37 @@ on:
   pull_request:
     branches: [main]
 
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: '3.12'
-      - run: python scripts/validate_sparta.py
-      - run: python scripts/validate_learning.py
+      - run: python -m pip install --disable-pip-version-check -r requirements-fantasypros.txt
+      - name: All offline tests (no provider credentials)
+        run: python -m unittest discover -s tests -v
+      - name: Authoritative Sparta state validation
+        run: python scripts/validate_sparta.py
+      - name: Current learning validation (all errors remain fatal)
+        run: python scripts/validate_learning.py
+      - name: Historical evidence and regression gate (full historical report)
+        if: always()
+        env:
+          LEARNING_COMPARISON_REF: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
+        run: python scripts/learning_regression_gate.py --comparison-ref "$LEARNING_COMPARISON_REF" --report-dir "$RUNNER_TEMP/learning-report"
+      - name: Preserve complete historical findings and current regression report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: learning-integrity-report
+          path: ${{ runner.temp }}/learning-report/
+          retention-days: 30
+          if-no-files-found: error

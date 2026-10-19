@@ -26,6 +26,8 @@ concurrency:
 
 jobs:
   board:
+    # Current owner directive: no recurring FP ingestion before separate validation/authorization.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
