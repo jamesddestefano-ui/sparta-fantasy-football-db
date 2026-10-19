@@ -29,6 +29,13 @@ NFL_TEAMS = {
     "TEN": ("Tennessee", "Titans"), "WAS": ("Washington", "Commanders"),
 }
 _NICK_TO_ABBR = {nick.lower(): abbr for abbr, (_, nick) in NFL_TEAMS.items()}
+# Short/long first-name variants seen in Sparta records (e.g. "Kenny" vs "Kenneth Gainwell").
+FIRST_NAME_ALIASES = {
+    "kenny": "kenneth", "chig": "chigoziem", "cam": "cameron", "mike": "michael",
+    "matt": "matthew", "chris": "christopher", "josh": "joshua", "nick": "nicholas",
+    "rob": "robert", "bob": "robert", "tony": "anthony", "jon": "jonathan",
+    "gabe": "gabriel", "zach": "zachary", "dj": "dj", "pat": "patrick",
+}
 _SUFFIX = re.compile(r"\b(jr|sr|ii|iii|iv|v)\b")
 _DEF_TAIL = re.compile(r"\b(d/st|dst|def|defense)\b", re.I)
 
@@ -62,4 +69,7 @@ def name_key(name: str | None, nfl_team: str | None = None, position: str | None
     text = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
     text = re.sub(r"[.'`’\-]", "", text)
     text = _SUFFIX.sub("", text)
-    return " ".join(text.split())
+    words = text.split()
+    if len(words) >= 2 and words[0] in FIRST_NAME_ALIASES:
+        words[0] = FIRST_NAME_ALIASES[words[0]]
+    return " ".join(words)

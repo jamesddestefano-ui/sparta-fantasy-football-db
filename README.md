@@ -48,3 +48,7 @@ Historical recommendation reasoning is immutable. Results, grades, diagnoses, an
 ## Yahoo API auto-sync
 
 `.github/workflows/yahoo_sync.yml` pulls Sparta from the official Yahoo Fantasy API about four times a day (plus early Wednesday/Thursday after waivers) and on demand from the Actions tab. It is read-only on Yahoo. See `docs/yahoo_api_sync.md` for the one-time setup and how report-only vs apply mode work.
+
+## Weekly board
+
+Tuesday and Saturday mornings, `.github/workflows/sparta_weekly_board.yml` pulls FantasyPros (weekly PPR rankings and projections, rest-of-season rankings, injuries) and writes `intelligence/board/latest.md`: the best JD lineup from current projections and waiver targets that beat JD's weakest player at each position. Run it any time from Actions → *Sparta weekly board* → Run workflow.

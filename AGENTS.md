@@ -104,3 +104,9 @@ USER UPDATE → READ CURRENT REPOSITORY STATE → ANALYZE → VALIDATE LEAGUE + 
 72. `scripts/validate_learning.py` accepts decision events from `PRIME_SPARTA_FANTASY_WATCH`, `SPARTA_BRAIN_CONTROL_ROOM`, and `SPARTA_LIVE_CHECK`. A `DECISION` must carry every decision-time field at the moment it is written (rule 40); outcome fields are appended later by an `OUTCOME_REVIEW` (or completed fields) and are not required at decision time.
 73. Operational entries (Pulse consumption, live-check notes, Watch wake/suppress triage) may stay in the ledger but must carry `type` or `decision`, plus a timestamp (`at_et`, `ts_et`, `timestamp_et`, `observed_at`, or `recorded_at_et`). They are not graded recommendations.
 74. `learning/ledger_exceptions.json` grandfathers four pre-v2 records only. Never add new records to it to bypass validation.
+
+## Weekly board (FantasyPros)
+
+75. `.github/workflows/sparta_weekly_board.yml` runs `scripts/fp_weekly.py` (raw FantasyPros responses saved under `intelligence/fantasypros/weekly/<season>-wNN/raw/`, normalized to `players.json`) and `scripts/sparta_board.py` (writes `intelligence/board/<season>-wNN.{json,md}` and `latest.md`). It writes nothing under `data/`.
+76. The board is intelligence for the Brain (`kind: INTELLIGENCE_BOARD_NOT_A_RECORDED_RECOMMENDATION`). Any recommendation the Brain adopts from it must still be recorded as a DECISION. Waiver targets are players absent from `scripts/sparta_ownership.py`'s reconstructed rosters; their availability stays `UNKNOWN_NOT_ON_RECONSTRUCTED_ROSTERS` until Yahoo confirms it (rule 3).
+77. `scripts/sparta_ownership.py` rebuilds all 12 rosters from draft → overrides → transactions → JD snapshot. Teams over 18 players indicate drops missing from the ledger; fixing the ledger fixes the board.
