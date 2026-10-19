@@ -106,8 +106,10 @@ def build_board(week: int, root: Path = ROOT) -> dict:
             sp = by_name[slot["player"]]
             starter_proj[slot["slot"]] = min(starter_proj.get(slot["slot"], 1e9), score(sp))
     weakest = {}
+    active = [p for p in mine if not (p["current_slot"] or "").startswith("IR")]   # IR slot doesn't use a roster spot
+    open_spots = max(0, 17 - len(active))
     for pos in POSITIONS:
-        at = [p for p in mine if p["position"] == pos]
+        at = [p for p in active if p["position"] == pos]
         if at:
             weakest[pos] = min(at, key=lambda p: (p["ros_rank"] is None, -(p["ros_rank"] or 0), score(p)))
     targets = []
@@ -150,6 +152,9 @@ def build_board(week: int, root: Path = ROOT) -> dict:
                                 -(t["proj_ppr"] or 0)))
 
     notes = []
+    if open_spots:
+        notes.append(f"{open_spots} open roster spot(s) ({len(active)}/17 active): your top waiver target can be "
+                     f"added without dropping anyone.")
     ir_used = [p for p in mine if (p["current_slot"] or "").startswith("IR")]
     ir_eligible = [p for p in mine if not (p["current_slot"] or "").startswith("IR") and
                    ((p["yahoo_status"] or "").upper().startswith("IR") or (p["fp_injury"] or "").upper() in ("IR", "PUP"))]
@@ -160,8 +165,9 @@ def build_board(week: int, root: Path = ROOT) -> dict:
     for p in mine:
         ys = (p["yahoo_status"] or "").upper()
         if ys in ("D", "DOUBTFUL", "O", "OUT") and not p["fp_injury"] and (p["proj_ppr"] or 0) > 5:
-            notes.append(f"{p['name']}: Yahoo status '{p['yahoo_status']}' from the roster snapshot, but FantasyPros lists "
-                         f"no injury and projects {p['proj_ppr']}. Status may be stale; check before locking the lineup.")
+            notes.append(f"{p['name']}: Yahoo shows '{p['yahoo_status']}' (roster snapshot), but FantasyPros lists no injury "
+                         f"for this week and projects {p['proj_ppr']}. Check his practice reports before locking the lineup; "
+                         f"he is kept out of the suggested lineup until Yahoo clears him.")
         if ys == "BYE":
             notes.append(f"{p['name']}: snapshot shows BYE (last week); treated as available this week.")
     jd_faab = next((b["balance"] for b in faab["balances"] if b["team"] == "JD"), None)
@@ -173,6 +179,7 @@ def build_board(week: int, root: Path = ROOT) -> dict:
                            "ownership_reconstruction_conflicts": len(recon["conflicts"]),
                            "teams_over_roster_limit": recon.get("over_limit_teams", {})},
         "faab": {"jd_balance": jd_faab, "minimum_bid": 1},
+        "open_roster_spots": open_spots,
         "lineup": {"suggested": lineup, "changes": changes,
                    "proj_current_starters": round(proj_current, 2), "proj_suggested": round(proj_suggested, 2)},
         "roster": sorted(mine, key=lambda p: (POSITIONS.index(p["position"]) if p["position"] in POSITIONS else 9,

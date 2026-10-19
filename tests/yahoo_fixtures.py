@@ -32,18 +32,26 @@ TEAMS = [  # team_id, name, manager nickname, faab, waiver priority
     (12, "X-Factor", "letspartyitup.com", 100, 3),
 ]
 
-# JD's Yahoo roster: repo roster with Dylan Sampson dropped for Kyle Monangai (new waiver claim).
-JD_ROSTER = [
-    ("Kirk Cousins", "LV", "QB", "QB"), ("Braelon Allen", "NYJ", "RB", "RB"),
-    ("Emanuel Wilson", "Sea", "RB", "RB"), ("Jaxon Smith-Njigba", "Sea", "WR", "WR"),
-    ("Tetairoa McMillan", "Car", "WR", "WR"), ("Darren Waller", "Car", "TE", "TE"),
-    ("Devaughn Vele", "NO", "WR", "W/R/T"), ("Jacob Cowing", "SF", "WR", "W/R/T"),
-    ("Blake Grupe", "LAR", "K", "K"), ("Baltimore", "Bal", "DEF", "DEF"),
-    ("J.K. Dobbins", "Den", "RB", "BN"), ("Jaleel McLaughlin", "Den", "RB", "BN"),
-    ("Dontayvion Wicks", "GB", "WR", "BN"), ("Jalen Hurts", "Phi", "QB", "BN"),
-    ("Ja'Marr Chase", "Cin", "WR", "BN"), ("Breece Hall", "NYJ", "RB", "BN"),
-    ("Kyle Monangai", "Chi", "RB", "BN"),
-]
+# JD's Yahoo roster: the repository's current JD roster with Dylan Sampson dropped for
+# Kyle Monangai (the new waiver claim in the fixture transactions). Built from repo data so
+# the fixture follows roster updates.
+def _jd_roster():
+    import json as _json
+    repo = _json.loads((Path(__file__).resolve().parents[1] / "data" / "current_roster_jd.json").read_text())
+    rows = []
+    for p in repo["players"]:
+        if p["name"] == "Dylan Sampson":
+            continue
+        name, pos = p["name"], p.get("position") or "WR"
+        if pos == "DEF":
+            name = "Baltimore" if name == "Ravens" else name
+        slot = "IR" if (p.get("slot") or "").startswith("IR") else p.get("slot")
+        rows.append((name, p.get("nfl_team") or "FA", pos, slot))
+    rows.append(("Kyle Monangai", "Chi", "RB", "BN"))
+    return rows
+
+
+JD_ROSTER = _jd_roster()
 
 
 def ts(local: str) -> int:
