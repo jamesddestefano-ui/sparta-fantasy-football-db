@@ -1,0 +1,611 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sparta evidence-only weekly handoff",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "kind",
+    "league",
+    "yahoo_league_id",
+    "season",
+    "week",
+    "job",
+    "generated_at_utc",
+    "decision_authority",
+    "status",
+    "sections",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "kind": {
+      "const": "SPARTA_EVIDENCE_HANDOFF"
+    },
+    "league": {
+      "const": "sparta"
+    },
+    "yahoo_league_id": {
+      "const": "102586"
+    },
+    "season": {
+      "const": 2026
+    },
+    "week": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 18
+    },
+    "job": {
+      "enum": [
+        "report_card",
+        "waivers",
+        "injuries",
+        "lineup_check"
+      ]
+    },
+    "generated_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "decision_authority": {
+      "const": "CLAUDE_SPARTA_BRAIN"
+    },
+    "status": {
+      "enum": [
+        "COMPLETE",
+        "PARTIAL"
+      ]
+    },
+    "sections": {
+      "type": "object",
+      "required": [
+        "rosters",
+        "matchups",
+        "standings",
+        "free_agents",
+        "faab",
+        "transactions",
+        "jd_roster",
+        "weekly_board",
+        "roster_spots"
+      ],
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "status",
+          "source",
+          "data",
+          "limitations"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "status": {
+            "enum": [
+              "AVAILABLE",
+              "PARTIAL",
+              "STALE",
+              "UNAVAILABLE"
+            ]
+          },
+          "source": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "object",
+                "required": [
+                  "path",
+                  "kind",
+                  "sha256",
+                  "observed_at",
+                  "week"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "path": {
+                    "type": "string"
+                  },
+                  "kind": {
+                    "enum": [
+                      "YAHOO_API",
+                      "YAHOO_BROWSER",
+                      "YAHOO_SCREENSHOT",
+                      "AUTHENTICATED_YAHOO_CONNECTOR",
+                      "VALIDATED_STORED_BOARD"
+                    ]
+                  },
+                  "sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "observed_at": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "week": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 1,
+                    "maximum": 18
+                  }
+                }
+              }
+            ]
+          },
+          "data": {
+            "type": [
+              "object",
+              "array",
+              "null"
+            ]
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "UNAVAILABLE"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "data": {
+                  "type": "null"
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "source": {
+                  "type": "object",
+                  "required": [
+                    "path",
+                    "kind",
+                    "sha256",
+                    "observed_at",
+                    "week"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "path": {
+                      "type": "string"
+                    },
+                    "kind": {
+                      "enum": [
+                        "YAHOO_API",
+                        "YAHOO_BROWSER",
+                        "YAHOO_SCREENSHOT",
+                        "AUTHENTICATED_YAHOO_CONNECTOR",
+                        "VALIDATED_STORED_BOARD"
+                      ]
+                    },
+                    "sha256": {
+                      "type": "string",
+                      "pattern": "^[a-f0-9]{64}$"
+                    },
+                    "observed_at": {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    "week": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "minimum": 1,
+                      "maximum": 18
+                    }
+                  }
+                },
+                "data": {
+                  "type": [
+                    "object",
+                    "array"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "job": {
+            "const": "report_card"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sections": {
+            "required": [
+              "report_card"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "job": {
+            "const": "report_card"
+          },
+          "status": {
+            "const": "COMPLETE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sections": {
+            "properties": {
+              "rosters": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "matchups": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "standings": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "free_agents": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "faab": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "transactions": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "jd_roster": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "report_card": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "job": {
+            "const": "waivers"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sections": {
+            "required": [
+              "waivers"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "job": {
+            "const": "waivers"
+          },
+          "status": {
+            "const": "COMPLETE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sections": {
+            "properties": {
+              "rosters": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "matchups": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "standings": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "free_agents": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "faab": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "transactions": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "jd_roster": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "waivers": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "job": {
+            "const": "injuries"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sections": {
+            "required": [
+              "injuries"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "job": {
+            "const": "injuries"
+          },
+          "status": {
+            "const": "COMPLETE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sections": {
+            "properties": {
+              "rosters": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "matchups": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "standings": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "free_agents": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "faab": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "transactions": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "jd_roster": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "injuries": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "job": {
+            "const": "lineup_check"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sections": {
+            "required": [
+              "lineup_check"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "job": {
+            "const": "lineup_check"
+          },
+          "status": {
+            "const": "COMPLETE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "sections": {
+            "properties": {
+              "rosters": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "matchups": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "standings": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "free_agents": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "faab": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "transactions": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "jd_roster": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              },
+              "lineup_check": {
+                "properties": {
+                  "status": {
+                    "const": "AVAILABLE"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
