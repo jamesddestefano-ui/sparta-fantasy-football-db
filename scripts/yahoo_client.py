@@ -50,25 +50,32 @@ def _basic_auth(client_id: str, client_secret: str) -> str:
     return "Basic " + base64.b64encode(raw).decode()
 
 
+def _post_token(headers: dict, form: dict[str, str]) -> dict:
+    req = urllib.request.Request(TOKEN_URL, data=urllib.parse.urlencode(form).encode(),
+                                 method="POST", headers=headers)
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return json.loads(resp.read().decode())
+
+
 def exchange_token(client_id: str, client_secret: str, form: dict[str, str]) -> dict:
-    """POST to Yahoo's token endpoint (authorization_code or refresh_token grant)."""
-    body = urllib.parse.urlencode(form).encode()
-    req = urllib.request.Request(
-        TOKEN_URL,
-        data=body,
-        method="POST",
-        headers={
-            "Authorization": _basic_auth(client_id, client_secret),
-            "Content-Type": "application/x-www-form-urlencoded",
-            "User-Agent": USER_AGENT,
-        },
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            return json.loads(resp.read().decode())
-    except urllib.error.HTTPError as exc:
-        detail = exc.read().decode(errors="replace")[:300]
-        raise YahooAuthError(f"token endpoint returned HTTP {exc.code}: {detail}") from None
+    """POST to Yahoo's token endpoint (authorization_code or refresh_token grant).
+
+    Tries HTTP Basic client authentication first, then client credentials in the
+    form body (both are accepted by Yahoo's OAuth 2.0 server)."""
+    base = {"Content-Type": "application/x-www-form-urlencoded", "User-Agent": USER_AGENT}
+    attempts = [
+        ({**base, "Authorization": _basic_auth(client_id, client_secret)}, form),
+        (base, {**form, "client_id": client_id, "client_secret": client_secret}),
+    ]
+    last = ""
+    for headers, body in attempts:
+        try:
+            return _post_token(headers, body)
+        except urllib.error.HTTPError as exc:
+            last = f"token endpoint returned HTTP {exc.code}: {exc.read().decode(errors='replace')[:300]}"
+            if exc.code not in (400, 401):
+                break
+    raise YahooAuthError(last)
 
 
 class YahooClient:

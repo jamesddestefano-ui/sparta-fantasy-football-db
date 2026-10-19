@@ -37,6 +37,13 @@ def main() -> int:
         print("::error::No code provided. Paste the code (or the whole localhost URL) into the run form.")
         return 1
 
+    # Shape check only (never prints values): Yahoo client IDs start "dj0y" and are ~96 chars.
+    print(f"::notice title=Secret check::Client ID: {len(cid)} chars, starts with dj0y: {cid.startswith('dj0y')}; "
+          f"Client Secret: {len(secret)} chars; secret looks like an ID: {secret.startswith('dj0y')}; "
+          f"redirect: {redirect}; code: {len(code)} chars")
+    if secret.startswith("dj0y") and not cid.startswith("dj0y"):
+        print("::error::YAHOO_CLIENT_ID and YAHOO_CLIENT_SECRET look swapped.")
+        return 1
     tokens = exchange_token(cid, secret, {"grant_type": "authorization_code",
                                           "redirect_uri": redirect, "code": code})
     refresh = tokens.get("refresh_token")
@@ -63,6 +70,8 @@ if __name__ == "__main__":
     except Exception as exc:  # surface Yahoo's message as a run annotation (no secrets in it)
         msg = str(exc).replace("\n", " ")[:400]
         print(f"::error title=Yahoo sign-in failed::{type(exc).__name__}: {msg}")
+        if "authorization header" in msg.lower() or "invalid_client" in msg.lower():
+            print("::error title=Check secrets::Yahoo rejected the Client ID/Secret pair. Re-copy both from your Yahoo app page into YAHOO_CLIENT_ID and YAHOO_CLIENT_SECRET (no spaces or quotes).")
         if "invalid_grant" in msg or "expired" in msg.lower():
             print("::notice::The Yahoo code was expired or already used. Open the Yahoo link again, click Agree, and run this workflow right away with the new address.")
         if "redirect" in msg.lower():
