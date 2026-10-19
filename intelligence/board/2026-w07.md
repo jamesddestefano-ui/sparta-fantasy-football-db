@@ -27,14 +27,8 @@ Changes: start Dontayvion Wicks, J.K. Dobbins, Ja'Marr Chase; bench Devaughn Vel
 | Pri | Player | Pos | FP waiver # | ROS rank | Yahoo % | Replaces | In Sparta |
 |---|---|---|---|---|---|---|---|
 | HIGH | T.J. Hockenson (MIN) | TE | 2 | 119 | 31% | Darren Waller | verify |
-| HIGH | Michael Penix Jr. (ATL) | QB | 2 | — | 15% | Jalen Hurts | verify (likely free) |
 | HIGH | Omar Cooper Jr. (NYJ) | WR | 3 | 110 | 4% | Dontayvion Wicks | verify (likely free) |
-| HIGH | Geno Smith (NYJ) | QB | 3 | — | 7% | Jalen Hurts | verify (likely free) |
 | HIGH | Mike Washington Jr. (LV) | RB | 19 | 154 | 30% | Dylan Sampson | verify |
-| HIGH | Malik Willis (MIA) | QB | — | — | 19% | Jalen Hurts | verify (likely free) |
-| HIGH | Baker Mayfield (TB) | QB | — | — | — | Jalen Hurts | verify |
-| HIGH | Daniel Jones (IND) | QB | — | — | 28% | Jalen Hurts | verify (likely free) |
-| HIGH | Deshaun Watson (CLE) | QB | — | — | 12% | Jalen Hurts | verify (likely free) |
 | MEDIUM | Michael Mayer (LV) | TE | 11 | 134 | 8% | Darren Waller | verify (likely free) |
 | MEDIUM | Terrance Ferguson (LAR) | TE | 23 | 117 | 13% | Darren Waller | verify (likely free) |
 | MEDIUM | Jaylen Wright (MIA) | RB | 35 | 167 | 5% | Dylan Sampson | verify (likely free) |
@@ -42,6 +36,8 @@ Changes: start Dontayvion Wicks, J.K. Dobbins, Ja'Marr Chase; bench Devaughn Vel
 | MEDIUM | Oronde Gadsden II (LAC) | TE | — | 135 | 6% | Darren Waller | verify (likely free) |
 | MEDIUM | Chris Rodriguez Jr. (JAC) | RB | — | 179 | 27% | Dylan Sampson | verify (likely free) |
 | LOW | Cleveland Browns (CLE) | DEF | 1 | — | 20% | Ravens | verify (likely free) |
+| LOW | Michael Penix Jr. (ATL) | QB | 2 | — | 15% | Jalen Hurts | verify (likely free) |
+| LOW | Geno Smith (NYJ) | QB | 3 | — | 7% | Jalen Hurts | verify (likely free) |
 | LOW | Ryan Fitzgerald (CAR) | K | 3 | — | 2% | Blake Grupe | verify (likely free) |
 | LOW | Tennessee Titans (TEN) | DEF | 4 | — | 2% | Ravens | verify (likely free) |
 | LOW | Evan McPherson (CIN) | K | 5 | — | 31% | Blake Grupe | verify |
@@ -49,8 +45,18 @@ Changes: start Dontayvion Wicks, J.K. Dobbins, Ja'Marr Chase; bench Devaughn Vel
 | LOW | Mike Gesicki (CIN) | TE | — | 141 | 14% | Darren Waller | verify (likely free) |
 | LOW | AJ Barner (SEA) | TE | — | 143 | 11% | Darren Waller | verify (likely free) |
 | LOW | Jonathon Brooks (CAR) | RB | — | 191 | 43% | Dylan Sampson | verify |
+| LOW | Malik Willis (MIA) | QB | — | — | 19% | Jalen Hurts | verify (likely free) |
 | LOW | Wil Lutz (DEN) | K | — | — | 14% | Blake Grupe | verify (likely free) |
 | LOW | Chase McLaughlin (TB) | K | — | — | 16% | Blake Grupe | verify (likely free) |
+| LOW | Harrison Mevis (FA) | K | — | — | — | Blake Grupe | verify |
+| LOW | Jake Elliott (PHI) | K | — | — | 6% | Blake Grupe | verify (likely free) |
+| LOW | Daniel Carlson (NO) | K | — | — | 2% | Blake Grupe | verify (likely free) |
+
+## Roster notes
+
+- IR slot is empty; IR-eligible on bench: Jalen Hurts (IR), Dylan Sampson (IR-R). Moving one to IR frees a bench spot (only 1 IR slot).
+- Ja'Marr Chase: snapshot shows BYE (last week); treated as available this week.
+- Breece Hall: Yahoo status 'D' from the roster snapshot, but FantasyPros lists no injury and projects 15.61. Status may be stale; check before locking the lineup.
 
 Not matched to FantasyPros: Jacob Cowing
 

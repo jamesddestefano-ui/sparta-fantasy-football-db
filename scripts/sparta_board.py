@@ -53,7 +53,10 @@ def build_board(week: int, root: Path = ROOT) -> dict:
         pos = _pos(r) or "?"
         k = name_key(r["name"], r.get("nfl_team"), pos)
         f = by_key.get(k, {})
-        status = (r.get("status") or f.get("injury_status") or "").upper()
+        status = (r.get("status") or "").upper()
+        if status == "BYE":
+            status = ""          # snapshot is from a prior week; FantasyPros bye_week decides this week
+        status = status or (f.get("injury_status") or "").upper()
         bye = str(f.get("bye_week") or "") == str(week)
         mine.append({
             "name": r["name"], "position": pos, "nfl_team": r.get("nfl_team"), "current_slot": r.get("slot"),
@@ -97,6 +100,11 @@ def build_board(week: int, root: Path = ROOT) -> dict:
     proj_suggested = sum(max(score(by_name[s["player"]]), 0) for s in lineup if s["player"])
 
     # ---- waiver targets: not owned on reconstructed rosters, better than JD's weakest at the position
+    starter_proj = {}
+    for slot in lineup:
+        if slot["slot"] in POSITIONS and slot["player"]:
+            sp = by_name[slot["player"]]
+            starter_proj[slot["slot"]] = min(starter_proj.get(slot["slot"], 1e9), score(sp))
     weakest = {}
     for pos in POSITIONS:
         at = [p for p in mine if p["position"] == pos]
@@ -112,8 +120,8 @@ def build_board(week: int, root: Path = ROOT) -> dict:
             continue
         w = weakest.get(pos)
         ros_gain = (w["ros_rank"] - f["ros_rank"]) if (w and w.get("ros_rank") and f.get("ros_rank")) else None
-        week_gain = (f["proj_ppr"] - (w["proj_ppr"] or 0)) if (w and f.get("proj_ppr") is not None
-                                                             and w.get("proj_ppr") is not None) else None
+        # weekly upgrade is measured against the player who would actually start for JD at that position
+        week_gain = (f["proj_ppr"] - starter_proj.get(pos, 0.0)) if f.get("proj_ppr") is not None else None
         wr = f.get("waiver_rank")
         flex_list = (f.get("waiver_list") or "FLX") == "FLX"
         if not ((ros_gain and ros_gain > 0) or (week_gain and week_gain > 1.0) or (wr and wr <= 15)):
@@ -141,6 +149,21 @@ def build_board(week: int, root: Path = ROOT) -> dict:
     targets.sort(key=lambda t: (order[t["priority"]], t["fp_waiver_rank"] or 999, t["ros_rank"] or 9999,
                                 -(t["proj_ppr"] or 0)))
 
+    notes = []
+    ir_used = [p for p in mine if (p["current_slot"] or "").startswith("IR")]
+    ir_eligible = [p for p in mine if not (p["current_slot"] or "").startswith("IR") and
+                   ((p["yahoo_status"] or "").upper().startswith("IR") or (p["fp_injury"] or "").upper() in ("IR", "PUP"))]
+    if ir_eligible and not ir_used:
+        notes.append("IR slot is empty; IR-eligible on bench: " + ", ".join(
+            f"{p['name']} ({p['fp_injury'] or p['yahoo_status']})" for p in ir_eligible)
+                     + ". Moving one to IR frees a bench spot (only 1 IR slot).")
+    for p in mine:
+        ys = (p["yahoo_status"] or "").upper()
+        if ys in ("D", "DOUBTFUL", "O", "OUT") and not p["fp_injury"] and (p["proj_ppr"] or 0) > 5:
+            notes.append(f"{p['name']}: Yahoo status '{p['yahoo_status']}' from the roster snapshot, but FantasyPros lists "
+                         f"no injury and projects {p['proj_ppr']}. Status may be stale; check before locking the lineup.")
+        if ys == "BYE":
+            notes.append(f"{p['name']}: snapshot shows BYE (last week); treated as available this week.")
     jd_faab = next((b["balance"] for b in faab["balances"] if b["team"] == "JD"), None)
     return {
         "league": "sparta", "season": fp["season"], "week": week, "team": "JD",
@@ -156,6 +179,7 @@ def build_board(week: int, root: Path = ROOT) -> dict:
                                               -score(p))),
         "waiver_targets": targets[:25],
         "unmatched_roster_players": [p["name"] for p in mine if not p["matched_fantasypros"]],
+        "roster_notes": notes,
     }
 
 
@@ -187,6 +211,8 @@ def to_markdown(b: dict) -> str:
                  f"{t['replaces'] or '—'} | {avail} |")
     if not b["waiver_targets"]:
         L.append("| — | No upgrades found among players not on reconstructed rosters | | | | | |")
+    if b.get("roster_notes"):
+        L += ["", "## Roster notes", ""] + [f"- {n}" for n in b["roster_notes"]]
     if b["unmatched_roster_players"]:
         L += ["", f"Not matched to FantasyPros: {', '.join(b['unmatched_roster_players'])}"]
     over = b["generated_from"]["teams_over_roster_limit"]
