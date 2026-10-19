@@ -36,14 +36,21 @@ BASE = "https://api.fantasypros.com/public/v2/json"
 SEASON = 2026
 WEEK1_TUESDAY = date(2026, 9, 8)   # NFL week N runs Tuesday..Monday
 
+# Order = priority: if FantasyPros rate-limits us, the most useful data is already saved.
+# NOTE: type=WW is FantasyPros' *Waiver Wire* list (with expert notes), not weekly ranks.
+#       Weekly start/sit ranks come from consensus-rankings with a week and no type.
 REQUESTS = (
-    [("consensus", pos, f"/nfl/{SEASON}/consensus-rankings",
-      {"position": pos, "scoring": "PPR", "type": "WW", "week": "{week}"}) for pos in ("QB", "FLX", "K", "DST")]
-    + [("ros", "FLX", f"/nfl/{SEASON}/consensus-rankings", {"position": "FLX", "scoring": "PPR", "type": "ROS"})]
+    [("weekly", pos, f"/nfl/{SEASON}/consensus-rankings",
+      {"position": pos, "scoring": "PPR", "week": "{week}"}) for pos in ("FLX", "QB", "K", "DST")]
+    + [("waiver", "FLX", f"/nfl/{SEASON}/consensus-rankings",
+        {"position": "FLX", "scoring": "PPR", "type": "WW", "week": "{week}"})]
     + [("projections", pos, f"/nfl/{SEASON}/projections", {"position": pos, "week": "{week}"})
-       for pos in ("QB", "RB", "WR", "TE", "K", "DST")]
+       for pos in ("RB", "WR", "QB", "TE", "K", "DST")]
+    + [("ros", "FLX", f"/nfl/{SEASON}/consensus-rankings", {"position": "FLX", "scoring": "PPR", "type": "ROS"})]
     + [("injuries", "ALL", "/nfl/injuries", {"year": str(SEASON), "week": "{week}"})]
 )
+SPACING_S = 2.5
+RETRY_WAITS_S = (15, 30, 60)
 
 
 def current_week(today: date | None = None) -> int:
@@ -55,15 +62,31 @@ def week_dir(week: int, root: Path = ROOT) -> Path:
     return root / "intelligence" / "fantasypros" / "weekly" / f"{SEASON}-w{week:02d}"
 
 
-def fetch(path: str, params: dict, api_key: str, timeout: int = 20) -> dict:
+class RateLimited(RuntimeError):
+    pass
+
+
+def fetch(path: str, params: dict, api_key: str, timeout: int = 20, sleep=time.sleep) -> dict:
     url = BASE + path + "?" + urllib.parse.urlencode(params)
     req = urllib.request.Request(url, headers={"x-api-key": api_key, "Accept": "application/json",
                                                "User-Agent": "sparta-fantasy-football-db/1.0"})
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return json.loads(resp.read().decode())
-    except urllib.error.HTTPError as exc:
-        raise RuntimeError(f"{path} HTTP {exc.code}") from None
+    for attempt, wait in enumerate((*RETRY_WAITS_S, None)):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return json.loads(resp.read().decode())
+        except urllib.error.HTTPError as exc:
+            if exc.code == 429 and wait is not None:
+                retry_after = exc.headers.get("Retry-After") if exc.headers else None
+                try:
+                    wait = max(wait, min(120, int(retry_after)))
+                except (TypeError, ValueError):
+                    pass
+                sleep(wait)
+                continue
+            if exc.code == 429:
+                raise RateLimited(f"{path} HTTP 429 after {attempt} retries") from None
+            raise RuntimeError(f"{path} HTTP {exc.code}") from None
+    raise RateLimited(f"{path} HTTP 429")
 
 
 # ------------------------------------------------------------ normalization
@@ -150,14 +173,29 @@ def normalize(raw: dict[str, dict]) -> dict:
             if p is None:
                 continue
             used += 1
-            if kind == "consensus":
+            owned = _num(_first(row, "player_owned_yahoo"))
+            if owned is not None:
+                p["yahoo_rostered_pct"] = owned
+            if kind in ("weekly", "consensus"):
+                ptype = str(payload.get("ranking_type_name", "")).lower() if isinstance(payload, dict) else ""
+                if ptype == "waiver":   # FantasyPros returned its waiver list; treat it as such
+                    p["waiver_rank"] = _num(_first(row, "rank_ecr", "rank"))
+                    p["waiver_list"] = payload.get("position_id")
+                    p["waiver_note"] = _first(row, "note")
+                    continue
                 p["ecr_rank"] = _num(_first(row, "rank_ecr", "ecr", "rank"))
                 p["ecr_pos_rank"] = _first(row, "pos_rank", "position_rank")
                 p["ecr_min"], p["ecr_max"] = _num(row.get("rank_min")), _num(row.get("rank_max"))
                 p["ecr_std"] = _num(row.get("rank_std"))
                 p["opponent"] = _first(row, "player_opponent", "opponent")
                 p["bye_week"] = _first(row, "player_bye_week", "bye_week")
-                p["start_sit_grade"] = _first(row, "start_sit_grade")
+                p["game_status"] = _first(row, "player_game_status")
+            elif kind == "waiver":
+                p["waiver_rank"] = _num(_first(row, "rank_ecr", "rank"))
+                p["waiver_list"] = payload.get("position_id") if isinstance(payload, dict) else None
+                p["waiver_note"] = _first(row, "note")
+                p["opponent"] = p.get("opponent") or _first(row, "player_opponent")
+                p["bye_week"] = p.get("bye_week") or _first(row, "player_bye_week")
             elif kind == "ros":
                 p["ros_rank"] = _num(_first(row, "rank_ecr", "ecr", "rank"))
             elif kind == "projections":
@@ -167,6 +205,7 @@ def normalize(raw: dict[str, dict]) -> dict:
                 p["injury_detail"] = _first(row, "injury", "injury_type", "description")
                 p["practice"] = _first(row, "practice_status", "practice")
         report[label] = {"rows_found": len(rows), "rows_used": used,
+                         "ranking_type": payload.get("ranking_type_name") if isinstance(payload, dict) else None,
                          "top_level_keys": sorted(payload)[:20] if isinstance(payload, dict) else type(payload).__name__,
                          "sample_row_keys": sorted(rows[0])[:30] if rows else []}
     return {"players": sorted(players.values(), key=lambda p: (p.get("ecr_rank") or 9999, p["name"])),
@@ -188,11 +227,14 @@ def run(week: int, api_key: str | None, out_root: Path = ROOT, normalize_only: b
             p = {k: v.replace("{week}", str(week)) for k, v in params.items()}
             try:
                 payload = fetcher(path, p, api_key)
+            except RateLimited as exc:
+                errors.append(f"{kind}_{pos}: {exc}; stopped to respect FantasyPros rate limit")
+                break
             except Exception as exc:  # keep going; report per endpoint
                 errors.append(f"{kind}_{pos}: {exc}")
                 continue
             (raw_dir / f"{kind}_{pos}.json").write_text(json.dumps(payload, indent=1, ensure_ascii=False))
-            time.sleep(0.3)
+            time.sleep(SPACING_S)
     raw = {f.stem: json.loads(f.read_text()) for f in sorted(raw_dir.glob("*.json"))}
     norm = normalize(raw)
     norm.update({"season": SEASON, "week": week, "pulled_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
