@@ -9,11 +9,13 @@ from __future__ import annotations
 from datetime import datetime
 from pathlib import Path
 from xml.sax.saxutils import escape
-from zoneinfo import ZoneInfo
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
+from yahoo_parse import ET_TZ  # noqa: E402
 
 NS = 'xmlns="http://fantasysports.yahooapis.com/fantasy/v2/base.rng"'
 LK = "461.l.102586"
-ET = ZoneInfo("America/New_York")
+ET = ET_TZ
 
 TEAMS = [  # team_id, name, manager nickname, faab, waiver priority
     (1, "SHOWSTOPPERS", "the_showstoppers", 100, 12),

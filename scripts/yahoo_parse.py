@@ -5,11 +5,55 @@ they can be unit-tested offline against fixture XML.
 """
 from __future__ import annotations
 
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone, tzinfo
 from xml.etree.ElementTree import Element
-from zoneinfo import ZoneInfo
 
-ET_TZ = ZoneInfo("America/New_York")
+
+class _USEastern(tzinfo):
+    """US Eastern time (current DST rules) for systems without a tz database,
+    e.g. Windows Python without the tzdata package."""
+
+    @staticmethod
+    def _dst_bounds_utc(year: int) -> tuple[datetime, datetime]:
+        mar1 = datetime(year, 3, 1)
+        second_sun_mar = mar1 + timedelta(days=(6 - mar1.weekday()) % 7 + 7)
+        nov1 = datetime(year, 11, 1)
+        first_sun_nov = nov1 + timedelta(days=(6 - nov1.weekday()) % 7)
+        # 2:00 local -> 07:00 UTC (EST) and 06:00 UTC (EDT)
+        return second_sun_mar.replace(hour=7), first_sun_nov.replace(hour=6)
+
+    def utcoffset(self, dt):
+        return timedelta(hours=-4) if self.dst(dt) else timedelta(hours=-5)
+
+    def dst(self, dt):
+        if dt is None:
+            return timedelta(0)
+        start, end = self._dst_bounds_utc(dt.year)
+        local = dt.replace(tzinfo=None)
+        if not (local + timedelta(hours=5) >= start):          # before spring-forward
+            return timedelta(0)
+        if local + timedelta(hours=4) < end:                    # clearly in DST
+            return timedelta(0) if (local + timedelta(hours=5) >= end and dt.fold) else timedelta(hours=1)
+        return timedelta(0)
+
+    def fromutc(self, dt):
+        start, end = self._dst_bounds_utc(dt.year)
+        naive = dt.replace(tzinfo=None)
+        in_dst = start <= naive < end
+        local = naive + (timedelta(hours=-4) if in_dst else timedelta(hours=-5))
+        # second pass through the repeated 1:00-2:00 hour on fall-back day
+        fold = int(not in_dst and end <= naive < end + timedelta(hours=1))
+        return local.replace(tzinfo=self, fold=fold)
+
+    def tzname(self, dt):
+        return "EDT" if self.dst(dt) else "EST"
+
+
+try:
+    from zoneinfo import ZoneInfo
+    ET_TZ = ZoneInfo("America/New_York")
+except Exception:  # ZoneInfoNotFoundError on Windows without tzdata
+    ET_TZ = _USEastern()
 
 
 def _t(el: Element | None, path: str, default=None):
