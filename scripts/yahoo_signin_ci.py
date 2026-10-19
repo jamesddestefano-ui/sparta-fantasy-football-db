@@ -74,6 +74,8 @@ if __name__ == "__main__":
             print("::error title=Check secrets::Yahoo rejected the Client ID/Secret pair. Re-copy both from your Yahoo app page into YAHOO_CLIENT_ID and YAHOO_CLIENT_SECRET (no spaces or quotes).")
         if "invalid_grant" in msg or "expired" in msg.lower():
             print("::notice::The Yahoo code was expired or already used. Open the Yahoo link again, click Agree, and run this workflow right away with the new address.")
+        if "not authorized to perform" in msg.lower():
+            print("::notice::The Yahoo token lacks Fantasy Sports access. Sign in again with a link that includes &scope=fspt-r, and confirm the Yahoo app has Fantasy Sports - Read checked.")
         if "redirect" in msg.lower():
             print("::notice::YAHOO_REDIRECT_URI must exactly match the Redirect URI on your Yahoo app (https://localhost:8080).")
         raise SystemExit(1)

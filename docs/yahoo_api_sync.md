@@ -43,7 +43,7 @@ requests only and cannot make moves, place claims, or set lineups.
    `YAHOO_CLIENT_ID`, `YAHOO_CLIENT_SECRET`, `YAHOO_REDIRECT_URI` = `https://localhost:8080`,
    `SPARTA_SECRETS_PAT` = the token from step 2.
 4. Open in Safari (replace `CLIENT_ID`):
-   `https://api.login.yahoo.com/oauth2/request_auth?client_id=CLIENT_ID&redirect_uri=https://localhost:8080&response_type=code`
+   `https://api.login.yahoo.com/oauth2/request_auth?client_id=CLIENT_ID&redirect_uri=https://localhost:8080&response_type=code&scope=fspt-r`
    and tap **Agree**. Safari then fails to load a `localhost` page — expected.
    Copy the address from the address bar.
 5. Within a few minutes: Actions → **Yahoo sign-in (one time)** → Run workflow →

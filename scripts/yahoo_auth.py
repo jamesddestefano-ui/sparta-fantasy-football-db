@@ -44,7 +44,8 @@ def main() -> int:
     client_id = input("Yahoo Client ID: ").strip()
     client_secret = getpass.getpass("Yahoo Client Secret (hidden): ").strip()
     url = AUTH_URL + "?" + urllib.parse.urlencode({
-        "client_id": client_id, "redirect_uri": args.redirect_uri, "response_type": "code"})
+        "client_id": client_id, "redirect_uri": args.redirect_uri, "response_type": "code",
+        "scope": "fspt-r"})
     print("\nOpen this page, sign in to Yahoo, and click Agree:\n\n  " + url + "\n")
     try:
         webbrowser.open(url)
