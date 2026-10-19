@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "record_type": "public_nfl_evidence_education",
+  "research_window_utc": {
+    "started_at": "2026-10-19T12:09:54Z",
+    "ended_at": "2026-10-19T12:12:04Z"
+  },
+  "coverage": "Bounded Monday opportunity education; not a complete Week 6 review.",
+  "prior_report": "intelligence/news/2026-10-18T2355Z-sunday-opportunity-initial-review.json",
+  "game_coverage": {
+    "SNF": "Completed; Dallas-Green Bay final confirmed.",
+    "MNF": "Not played at this morning cutoff; excluded from outcomes.",
+    "advanced_usage": "Only specifically attributed preliminary usage is included. A complete independently verified final route/snap dataset was not retrieved."
+  },
+  "weekly_continuity": {
+    "status": "MONDAY_PARTIAL_REVIEW_NOT_WEEKLY_FINAL",
+    "calibration": "NOT_ESTIMATED",
+    "original_forecasts": "Retain original qualitative scenarios and decision-time records. No numerical forecast is backfilled from these results.",
+    "decision_boundary": "Logged advice, unpersisted advice and confirmed actions remain distinct. No action or decision grade is certified by this educational report.",
+    "rule_changes_adopted": []
+  },
+  "preservation": {
+    "authoritative_state_write": false,
+    "transaction": false,
+    "rule_change": false,
+    "historical_forecast_backfill": false,
+    "private_state_republished": false
+  },
+  "notification": "Routine educational handoff; not a time-sensitive roster recommendation.",
+  "record_id": "sparta-2026-10-19-monday-usage-evidence",
+  "context": "SPARTA public intelligence",
+  "title": "Monday usage audit: preserve preliminary measurements and later revisions",
+  "sources": [
+    {
+      "creator": "Eric Samulski / NBC Sports Rotoworld",
+      "title": "Waller held without a catch in Week 6",
+      "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-10-18/waller-held-without-a-catch-in-week-6",
+      "publication_date": "2026-10-18; exact original publication time not exposed",
+      "retrieved_at_utc": "2026-10-19T12:12:04Z",
+      "retrieval_time_note": "Upper bound of bounded review starting 12:09:54 UTC",
+      "access_medium": "Original article text reviewed, reached through an attributed syndication source link",
+      "video_timestamp": null
+    },
+    {
+      "creator": "StatPro, attributed to Eric Samulski / NBC Sports",
+      "title": "Darren Waller did not have a catch on two targets in the Panthers' Week 6 win over the Eagles",
+      "url": "https://www.statpro.io/news/nfl/2026/10/18/darren-waller-did-not-have-a-catch-on-two-targets-in-the-panthers-week-6-win-over-the-eagles",
+      "publication_date": "2026-10-18 5:00 PM EDT shown by syndicator",
+      "retrieved_at_utc": "2026-10-19T12:12:04Z",
+      "retrieval_time_note": "Upper bound of bounded review starting 12:09:54 UTC",
+      "access_medium": "Syndicated text and original-source link reviewed; same upstream report, not independent route confirmation",
+      "video_timestamp": null
+    },
+    {
+      "creator": "FantasyPros",
+      "title": "Darren Waller blanked in Week 6",
+      "url": "https://www.fantasypros.com/nfl/news/614633/darren-waller-blanked-week-6.php",
+      "publication_date": "2026-10-18; exact time and author not verified",
+      "retrieved_at_utc": "2026-10-19T12:12:04Z",
+      "retrieval_time_note": "Upper bound of bounded review starting 12:09:54 UTC",
+      "access_medium": "Indexed excerpt only; direct open failed; cross-check limited to box-result context",
+      "video_timestamp": null
+    }
+  ],
+  "findings": [
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "NBC preliminary routes: Waller 21/46 dropbacks; Tremble 14/46. Independent final route verification remains missing.",
+      "confidence": "MODERATE for attributed preliminary counts; not official final data"
+    },
+    {
+      "classification": "MODEL ASSUMPTION",
+      "text": "A route-based opportunity model should retain the measurement version and denominator. Routes per team dropback and snaps per offensive play measure different roles; mixing them can produce a misleading trend.",
+      "confidence": "HIGH analytical rationale; predictive improvement untested"
+    },
+    {
+      "classification": "MODEL ASSUMPTION",
+      "text": "The new access resolves a source-access gap in the prior report, not uncertainty about measurement revisions or next-week role. One postgame observation cannot establish a permanent depth-chart change.",
+      "confidence": "HIGH limitation"
+    }
+  ],
+  "hypothesis": {
+    "classification": "UNTESTED HYPOTHESIS",
+    "text": "Version-aware usage inputs reduce false breakout classifications caused by preliminary-count revisions.",
+    "test": "Freeze initial publication, retrieval time, denominator definition and later final revision in separate records. On chronologically held-out weeks compare early-count and revised-count model forecasts for target error and interval coverage; include all eligible observations, including revised or missing records.",
+    "failure_condition": "Do not adopt if improvement disappears after source/version and missingness are accounted for, or if apparent gains require retrospective access to final inputs.",
+    "status": "OPEN_UNRUN"
+  },
+  "prior_expectation_review": "Yesterday's public report explicitly withheld inaccessible usage. This addendum records newly reviewed preliminary evidence without editing that report. No numeric pregame usage forecast was preserved in that educational record, so no forecast-error score is supplied.",
+  "general_hub_application": "Sparta Brain can use a source-version check before early-waiver or rest-of-season synthesis. This is an evidence-quality proposal, with no add/drop, bid, trade or lineup recommendation.",
+  "source_access_limitations": [
+    "No video watched.",
+    "Original analytical report accessible today; the syndicator is not an independent data source.",
+    "Official final route export, alignment and red-zone route details remain unverified."
+  ],
+  "missing_evidence": [
+    "Independent final route counts with denominator definitions",
+    "Personnel, game-script and injury-context splits",
+    "Current Sparta-specific authority before any actionable decision",
+    "Complete Monday results for weekly reconciliation"
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "record_type": "public_nfl_evidence_education",
+  "research_window_utc": {
+    "started_at": "2026-10-18T12:50:01Z",
+    "ended_at": "2026-10-18T12:50:28Z"
+  },
+  "coverage": "Public NFL facts and general educational methods only.",
+  "prior_report": "intelligence/news/2026-10-17T1235Z-saturday-availability-role-education.json",
+  "weekly_continuity": {
+    "status": "SUPPORTING_EVIDENCE_ONLY",
+    "calibration": "NOT_ESTIMATED",
+    "forecast_outcome_grading": "NOT_PERFORMED: no matched preserved numerical forecast/outcome sample",
+    "rule_changes_adopted": []
+  },
+  "preservation": {
+    "authoritative_state_write": false,
+    "transaction": false,
+    "rule_change": false,
+    "historical_forecast_backfill": false,
+    "private_state_republished": false
+  },
+  "educational_lesson": {
+    "classification": "MODEL ASSUMPTION",
+    "method": "Treat report freshness at the field/event level. Retrieval today does not make a blank table a completed final report. Use the dated team article/transcript to resolve coverage gaps, retain the discrepancy, and do not promote a questionable tag or expected participation into confirmed active status.",
+    "testable_improvement": {
+      "classification": "UNTESTED HYPOTHESIS",
+      "hypothesis": "A final-report completeness check reduces erroneous unknown/cleared classifications relative to relying only on a generic injury URL.",
+      "test": "Freeze timestamped generic-table and dated-report observations before lineup cutoff; compare status error rates against the actual official final designation, preserving blank fields and conflicts. Evaluate game-day active status separately; do not judge injury classification by fantasy points.",
+      "failure_condition": "No adoption if the check increases stale-event substitution or gives no held-out error reduction.",
+      "status": "OPEN_UNRUN"
+    }
+  },
+  "source_access_limitations": [
+    "Article/table text reviewed; no video playback.",
+    "No fresh authenticated league-state refresh performed.",
+    "No new FantasyPros API call or failed-pilot data used."
+  ],
+  "notification": "Routine educational handoff; no claim of breaking news or an executable league action.",
+  "record_id": "sparta-2026-10-18-sunday-report-freshness",
+  "context": "SPARTA public intelligence",
+  "title": "Sunday final-report reconciliation: dated SF source resolves a stale generic table",
+  "sources": [
+    {
+      "creator": "Brooke Evans / San Francisco 49ers",
+      "title": "Kyle Juszczyk Available, Deebo Ruled OUT vs. Commanders in Week 6",
+      "url": "https://www.49ers.com/news/kyle-juszczyk-available-deebo-ruled-out-vs-commanders-in-week-6-wasvssf",
+      "publication_date": "2026-10-17 02:51 PM; displayed timezone unspecified",
+      "retrieved_at_utc": "2026-10-18T12:50:28Z",
+      "access_medium": "Official article body",
+      "video_timestamp": null
+    },
+    {
+      "creator": "San Francisco 49ers",
+      "title": "Injury Report",
+      "url": "https://www.49ers.com/team/injury-report/",
+      "publication_date": null,
+      "retrieved_at_utc": "2026-10-18T12:50:28Z",
+      "access_medium": "Dynamic table",
+      "video_timestamp": null
+    },
+    {
+      "creator": "Kyle Shanahan / San Francisco 49ers",
+      "title": "Head Coach Kyle Shanahan Press Conference",
+      "url": "https://49ers.1rmg.com/transcripts/head-coach-kyle-shanahan-press-conference_10-17-26/",
+      "publication_date": "2026-10-17; exact publication time unavailable",
+      "retrieved_at_utc": "2026-10-18T12:50:28Z",
+      "access_medium": "Original transcript, opening injury and availability questions",
+      "video_timestamp": null
+    }
+  ],
+  "findings": [
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "Dated Saturday article and original transcript confirm Deebo Samuel OUT; Mike Evans and Christian Kirk QUESTIONABLE. Cowing practiced fully throughout the week and Juszczyk is returning. Kirk activation remains possible rather than completed.",
+      "confidence": "HIGH for team statements; availability and role unresolved"
+    },
+    {
+      "classification": "EMPIRICAL EVIDENCE",
+      "text": "At this retrieval the generic SF table still lacks Saturday participation and final status, despite the dated Saturday report being available. The article/transcript are two presentations of one team event, not independent confirmations.",
+      "confidence": "HIGH for retrieved discrepancy"
+    },
+    {
+      "classification": "ANALYST OPINION",
+      "text": "Evans/Kirk are not both ruled out. Their uncertainty should remain in receiver role scenarios; Juszczyk's return is a personnel-mix consideration, not a quantified Cowing route deduction. Sunday alternatives can lock before Monday resolution.",
+      "confidence": "MODERATE; no player projection produced"
+    }
+  ],
+  "novelty": "New to this fantasy education series relative to its Saturday morning missing-report note; the NFL report itself was published Saturday and is not breaking news.",
+  "general_hub_application": "Sparta Brain retains final synthesis. Verify current Yahoo lineup and legal alternatives before any player-specific action; this record is evidence only and does not persist a start/sit decision.",
+  "missing_evidence": [
+    "Monday activation and game-day inactives",
+    "Current package-specific route projections",
+    "Current Yahoo state"
+  ],
+  "numeric_projection": null
+}

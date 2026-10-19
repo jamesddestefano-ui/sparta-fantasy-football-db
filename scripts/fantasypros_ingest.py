@@ -158,6 +158,16 @@ def validate_payload(payload, kind, season, week, *, now=None, player_ids=None):
                 raise IngestionError('FantasyPros: conflicting Yahoo identifier')
             yahoo[str(yid)]=ident
         item={'fantasypros_id':ident,'name':name,'position':pos,'yahoo_id':str(yid) if yid else None}
+        raw_times={field:row[field] for field in ('created','updated','injury_update_date','last_updated') if field in row}
+        publication=None
+        source_time=row.get('created') if kind=='news' else row.get('injury_update_date') if kind=='injuries' else None
+        if isinstance(source_time,str):
+            try:
+                parsed=datetime.fromisoformat(source_time.replace('Z','+00:00'))
+                if parsed.tzinfo is not None: publication=parsed.astimezone(timezone.utc).isoformat()
+            except (ValueError,OverflowError): pass
+        item.update(provider_timestamps_raw=raw_times,published_at_utc=publication,
+                    publication_time_status='AWARE_PROVIDER_TIMESTAMP' if publication else 'UNKNOWN_TIMEZONE_OR_UNAVAILABLE')
         if contract_kind=='projections':
             values={stat['points_ppr'] for stat in row['stats']}
             if len(values)!=1: raise IngestionError('FantasyPros: ambiguous projection rows')
@@ -243,6 +253,12 @@ def invalid_constant(_):
     raise ValueError('Nonfinite JSON value')
 
 
+def finite_float(value):
+    parsed=float(value)
+    if not math.isfinite(parsed): raise ValueError('Nonfinite JSON value')
+    return parsed
+
+
 def provider_error_envelope(payload, expected):
     """Fail closed on provider errors, including successful HTTP transports.
 
@@ -279,10 +295,12 @@ def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, 
         raise ValueError("Retries must be between 0 and 2")
     for attempt in range(retries + 1):
         try:
+            request_started=datetime.now(timezone.utc).isoformat()
             with opener(request, timeout=15) as response:
                 if getattr(response, "status", 200) != 200:
                     raise IngestionError("FantasyPros: incomplete HTTP response",http_status=getattr(response,"status",None))
                 raw = response.read(5_000_001)
+                response_received=datetime.now(timezone.utc).isoformat()
             break
         except HTTPError as exc:
             if exc.code in (429, 500, 502, 503, 504) and attempt < retries:
@@ -299,7 +317,7 @@ def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, 
     if len(raw) > 5_000_000:
         raise IngestionError(f"FantasyPros {kind}: response too large",http_status=200)
     try:
-        payload = json.loads(raw,object_pairs_hook=strict_object,parse_constant=invalid_constant)
+        payload = json.loads(raw,object_pairs_hook=strict_object,parse_constant=invalid_constant,parse_float=finite_float)
     except (ValueError, UnicodeDecodeError, RecursionError):
         raise IngestionError(f"FantasyPros {kind}: invalid JSON response",http_status=200) from None
     try:
@@ -320,7 +338,10 @@ def fetch(kind: str, season: int, week: int, api_key: str, *, opener=safe_open, 
         "http_status":200,
         "system": "SPARTA", "league": "sparta", "season": season, "week": week,
         "provider": "FantasyPros Public API v2", "kind": kind,
-        "source_url": url, "retrieved_at_utc": datetime.now(timezone.utc).isoformat(),
+        "source_url": url, "retrieved_at_utc": response_received,
+        "request_started_at_utc":request_started,"response_received_at_utc":response_received,
+        "requested_season":season,"requested_week":week,
+        "provider_season":payload.get('season',payload.get('year')),"provider_week":payload.get('week'),
         "authority": "NFL_INTELLIGENCE_ONLY_NOT_YAHOO_OWNERSHIP",
         "contract_status": "VALIDATED_SUPPLIED_OPENAPI",
         "openapi_sha256": document()[1], "normalized_players": normalized,

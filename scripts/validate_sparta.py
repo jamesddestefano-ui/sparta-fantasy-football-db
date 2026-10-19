@@ -1,10 +1,11 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "data"
+DATA = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "data"
 
 
 def load(name: str):
@@ -42,9 +43,18 @@ def main() -> None:
 
     if roster.get("team_code") != "JD":
         errors.append("current roster must be JD")
-    if len(roster.get("players", [])) != 17:
-        errors.append("JD current roster must contain 17 players")
-    if len({p["name"] for p in roster.get("players", [])}) != 17:
+    players = roster.get("players", [])
+    ir_players = [p for p in players if str(p.get("slot") or "").upper().startswith("IR")]
+    active_players = len(players) - len(ir_players)
+    if active_players > 17:
+        errors.append(f"JD current roster has {active_players} non-IR players; max is 17 (10 starters + 7 bench)")
+    elif active_players < 14:
+        errors.append(f"JD current roster has only {active_players} non-IR players; snapshot looks incomplete")
+    elif active_players < 17:
+        print(f"WARNING: JD roster has {17 - active_players} open roster spot(s) ({active_players}/17 active)")
+    if len(ir_players) > 1:
+        errors.append("JD current roster has more players in IR than the 1 IR slot")
+    if len({p["name"] for p in players}) != len(players):
         errors.append("JD current roster contains duplicates")
 
     if tx.get("transaction_count") != len(tx.get("transactions", [])):
@@ -71,7 +81,7 @@ def main() -> None:
         raise SystemExit("SPARTA VALIDATION FAILED:\n- " + "\n- ".join(errors))
 
     print("SPARTA VALIDATION PASSED")
-    print("teams=12 draft_records=204 current_roster=17 transactions=" + str(len(tx["transactions"])))
+    print(f"teams=12 draft_records=204 current_roster={len(players)} transactions=" + str(len(tx["transactions"])))
     print("jd_faab=" + str(balances["JD"]) + " waiver_priority=" + str(next(r["priority"] for r in waiver["priority_order"] if r["team"] == "JD")))
 
 

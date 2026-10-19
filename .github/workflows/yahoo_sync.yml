@@ -1,0 +1,111 @@
+name: Sparta Yahoo API sync
+
+# Read-only pull of authenticated Yahoo state for Sparta (Yahoo league 102586).
+# Writes data/yahoo_api/{latest.json,reconciliation_latest.json,history.jsonl}.
+# Durable data/ files change only in apply mode (repo variable SPARTA_YAHOO_APPLY=true,
+# or the "apply" input on a manual run), and only if validate_sparta.py passes afterwards.
+
+on:
+  schedule:
+    # ~8:07 AM, 12:07 PM, 4:07 PM, 8:07 PM ET during daylight time (one hour earlier in EST).
+    - cron: '7 12,16,20,0 * * *'
+    # Extra run after Yahoo's overnight waiver processing (Wed/Thu ~5:07 AM ET).
+    - cron: '7 9 * * 3,4'
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: 'Apply Yahoo-confirmed changes to durable data files'
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sparta-yahoo-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+
+      - name: Offline tests before any Yahoo request
+        run: |
+          python -m pip install --disable-pip-version-check -q -r requirements-fantasypros.txt
+          python -m unittest discover -s tests
+
+      - name: Check Yahoo secrets are configured
+        id: secrets
+        env:
+          YAHOO_CLIENT_ID: ${{ secrets.YAHOO_CLIENT_ID }}
+          YAHOO_CLIENT_SECRET: ${{ secrets.YAHOO_CLIENT_SECRET }}
+          YAHOO_REFRESH_TOKEN: ${{ secrets.YAHOO_REFRESH_TOKEN }}
+        run: |
+          if [ -n "$YAHOO_CLIENT_ID" ] && [ -n "$YAHOO_CLIENT_SECRET" ] && [ -n "$YAHOO_REFRESH_TOKEN" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Yahoo secrets not set yet; run scripts/yahoo_auth.py once and add them. Skipping sync."
+          fi
+
+      - name: Pull Yahoo state and reconcile
+        if: steps.secrets.outputs.ready == 'true'
+        env:
+          YAHOO_CLIENT_ID: ${{ secrets.YAHOO_CLIENT_ID }}
+          YAHOO_CLIENT_SECRET: ${{ secrets.YAHOO_CLIENT_SECRET }}
+          YAHOO_REFRESH_TOKEN: ${{ secrets.YAHOO_REFRESH_TOKEN }}
+          YAHOO_REDIRECT_URI: ${{ secrets.YAHOO_REDIRECT_URI }}
+          YAHOO_ROTATED_TOKEN_FILE: ${{ runner.temp }}/rotated_rt
+          SPARTA_YAHOO_APPLY: ${{ (github.event_name == 'workflow_dispatch' && inputs.apply) && 'true' || vars.SPARTA_YAHOO_APPLY }}
+        run: python scripts/yahoo_sync.py | tee "$RUNNER_TEMP/sync.txt"
+
+      - name: Save rotated Yahoo refresh token
+        if: steps.secrets.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.SPARTA_SECRETS_PAT }}
+        run: |
+          if [ ! -s "$RUNNER_TEMP/rotated_rt" ]; then echo "Token unchanged"; exit 0; fi
+          if [ -n "$GH_TOKEN" ]; then
+            gh secret set YAHOO_REFRESH_TOKEN --repo "$GITHUB_REPOSITORY" < "$RUNNER_TEMP/rotated_rt"
+          else
+            echo "::warning::Yahoo rotated the refresh token; rerun the 'Yahoo sign-in' workflow."
+          fi
+          rm -f "$RUNNER_TEMP/rotated_rt"
+
+      - name: Validate; roll back durable files if invalid
+        if: steps.secrets.outputs.ready == 'true'
+        run: |
+          if ! python scripts/validate_sparta.py; then
+            echo "::warning::Validation failed after sync; keeping only the snapshot and reconciliation report."
+            changed=$(git diff --name-only -- data | grep -v '^data/yahoo_api/' || true)
+            if [ -n "$changed" ]; then echo "$changed" | xargs git checkout --; fi
+            python -c "import json,pathlib; p=pathlib.Path('data/yahoo_api/reconciliation_latest.json'); r=json.loads(p.read_text()); r.update(applied=False, rolled_back_reason='validate_sparta.py failed after apply'); p.write_text(json.dumps(r, indent=2, ensure_ascii=False)+chr(10))"
+            python scripts/validate_sparta.py
+          fi
+
+      - name: Commit snapshot
+        if: steps.secrets.outputs.ready == 'true'
+        run: |
+          git config user.name "sparta-yahoo-sync[bot]"
+          git config user.email "sparta-yahoo-sync@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          summary=$(head -3 "$RUNNER_TEMP/sync.txt" | tail -1)
+          git commit -q -m "Yahoo API sync: $summary"
+          for i in 1 2 3; do
+            git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
+            sleep $((i * 5))
+          done
+          echo "::error::Could not push sync commit"; exit 1
+
+      - name: Summary
+        if: always() && steps.secrets.outputs.ready == 'true'
+        run: |
+          { echo '```'; cat "$RUNNER_TEMP/sync.txt" 2>/dev/null; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
