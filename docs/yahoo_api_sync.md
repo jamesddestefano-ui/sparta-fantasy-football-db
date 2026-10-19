@@ -32,6 +32,28 @@ requests only and cannot make moves, place claims, or set lineups.
 4. **Run it**: Actions → *Sparta Yahoo API sync* → Run workflow (leave *apply* off
    for the first run) and check `data/yahoo_api/reconciliation_latest.json`.
 
+## Setup from an iPhone (no computer)
+
+1. Create the Yahoo app as in step 1 above (Confidential Client, redirect `https://localhost:8080`).
+2. In Safari, create a fine-grained GitHub token at
+   <https://github.com/settings/personal-access-tokens/new>: repository access
+   **Only select repositories → sparta-fantasy-football-db**, permission
+   **Secrets: Read and write**. Copy it.
+3. Add four repository secrets (repo → Settings → Secrets and variables → Actions):
+   `YAHOO_CLIENT_ID`, `YAHOO_CLIENT_SECRET`, `YAHOO_REDIRECT_URI` = `https://localhost:8080`,
+   `SPARTA_SECRETS_PAT` = the token from step 2.
+4. Open in Safari (replace `CLIENT_ID`):
+   `https://api.login.yahoo.com/oauth2/request_auth?client_id=CLIENT_ID&redirect_uri=https://localhost:8080&response_type=code`
+   and tap **Agree**. Safari then fails to load a `localhost` page — expected.
+   Copy the address from the address bar.
+5. Within a few minutes: Actions → **Yahoo sign-in (one time)** → Run workflow →
+   paste the address → Run. It verifies access to league 102586 and saves
+   `YAHOO_REFRESH_TOKEN` for you.
+6. Actions → **Sparta Yahoo API sync** → Run workflow.
+
+`SPARTA_SECRETS_PAT` also lets the scheduled sync save a new refresh token
+automatically if Yahoo ever rotates it.
+
 ## Modes
 
 | Mode | What changes | How to turn on |

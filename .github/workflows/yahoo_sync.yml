@@ -62,8 +62,22 @@ jobs:
           YAHOO_CLIENT_SECRET: ${{ secrets.YAHOO_CLIENT_SECRET }}
           YAHOO_REFRESH_TOKEN: ${{ secrets.YAHOO_REFRESH_TOKEN }}
           YAHOO_REDIRECT_URI: ${{ secrets.YAHOO_REDIRECT_URI }}
+          YAHOO_ROTATED_TOKEN_FILE: ${{ runner.temp }}/rotated_rt
           SPARTA_YAHOO_APPLY: ${{ (github.event_name == 'workflow_dispatch' && inputs.apply) && 'true' || vars.SPARTA_YAHOO_APPLY }}
         run: python scripts/yahoo_sync.py | tee "$RUNNER_TEMP/sync.txt"
+
+      - name: Save rotated Yahoo refresh token
+        if: steps.secrets.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.SPARTA_SECRETS_PAT }}
+        run: |
+          if [ ! -s "$RUNNER_TEMP/rotated_rt" ]; then echo "Token unchanged"; exit 0; fi
+          if [ -n "$GH_TOKEN" ]; then
+            gh secret set YAHOO_REFRESH_TOKEN --repo "$GITHUB_REPOSITORY" < "$RUNNER_TEMP/rotated_rt"
+          else
+            echo "::warning::Yahoo rotated the refresh token; rerun the 'Yahoo sign-in' workflow."
+          fi
+          rm -f "$RUNNER_TEMP/rotated_rt"
 
       - name: Validate; roll back durable files if invalid
         if: steps.secrets.outputs.ready == 'true'

@@ -519,7 +519,12 @@ def main(argv=None) -> int:
           f"faab_diffs={len(rep['faab_diffs'])} waiver_diffs={len(rep['waiver_priority_diffs'])} "
           f"in_sync={rep['in_sync']} applied={rep['applied']}")
     if result["refresh_token_rotated"]:
-        print("WARNING: Yahoo issued a new refresh token; update the YAHOO_REFRESH_TOKEN secret.")
+        target = os.environ.get("YAHOO_ROTATED_TOKEN_FILE")
+        if target:
+            Path(target).write_text(client.refresh_token)
+            print("NOTICE: Yahoo issued a new refresh token; workflow will save it.")
+        else:
+            print("WARNING: Yahoo issued a new refresh token; update the YAHOO_REFRESH_TOKEN secret.")
     return 0
 
 
