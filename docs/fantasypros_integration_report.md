@@ -214,3 +214,7 @@ Sanitized artifact12119759162 expires2026-10-19T00:50:25Z; no raw provider paylo
 Recommendation: keep production intelligence DISABLED. Review contract mismatch
 and add safe field-level diagnostics offline before any separately authorized
 rerun. This authorization is consumed; no additional live call is permitted.
+
+## October18 additional controlled validation
+
+Current status and superseding authorization/results: [Sparta Brain engineering handoff](sparta-brain-engineering-handoff-2026-10-18.md). Run39085126777 used exactly3 requests, all HTTP200/schemaFAIL. Detailed mismatching fields now preserved; no batch or production promotion. The new one-shot authorization is consumed. Historical reports above describe earlier runs.
