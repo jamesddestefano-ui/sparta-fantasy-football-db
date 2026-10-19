@@ -49,6 +49,10 @@ REQUESTS = (
     + [("ros", "FLX", f"/nfl/{SEASON}/consensus-rankings", {"position": "FLX", "scoring": "PPR", "type": "ROS"})]
     + [("injuries", "ALL", "/nfl/injuries", {"year": str(SEASON), "week": "{week}"})]
 )
+# Actual fantasy points for the previous week (for the Brain's report card); fetched once per week.
+RESULT_REQUESTS = [("points", pos, f"/nfl/{SEASON}/player-points",
+                    {"start": "{prev}", "end": "{prev}", "position": pos, "scoring": "PPR"})
+                   for pos in ("QB", "RB", "WR", "TE", "K", "DST")]
 SPACING_S = 2.5
 RETRY_WAITS_S = (15, 30, 60)
 
@@ -212,6 +216,29 @@ def normalize(raw: dict[str, dict]) -> dict:
             "sources": report}
 
 
+def write_results(week: int, out_root: Path = ROOT) -> dict:
+    """Normalize saved player-points files into results.json: {name_key: {name, position, points}}."""
+    res_dir = week_dir(week, out_root) / "results"
+    out = {}
+    for f in sorted(res_dir.glob("points_*.json")):
+        for row in player_rows(json.loads(f.read_text())):
+            b = base_player(row)
+            if not b["key"]:
+                continue
+            pts = None
+            weeks = row.get("weeks") or row.get("points")
+            if isinstance(weeks, dict):
+                pts = _num(weeks.get(str(week)) if weeks.get(str(week)) is not None else next(iter(weeks.values()), None))
+            if pts is None:
+                pts = _num(_first(row, "points", "fpts", "points_ppr", "total"))
+            out[b["key"]] = {"name": b["name"], "position": b["position"], "nfl_team": b["nfl_team"], "points": pts}
+    if out:
+        (week_dir(week, out_root) / "results.json").write_text(
+            json.dumps({"season": SEASON, "week": week, "scoring": "PPR", "players": out}, indent=1,
+                       ensure_ascii=False) + "\n")
+    return out
+
+
 # ------------------------------------------------------------------- main
 
 def run(week: int, api_key: str | None, out_root: Path = ROOT, normalize_only: bool = False,
@@ -235,6 +262,26 @@ def run(week: int, api_key: str | None, out_root: Path = ROOT, normalize_only: b
                 continue
             (raw_dir / f"{kind}_{pos}.json").write_text(json.dumps(payload, indent=1, ensure_ascii=False))
             time.sleep(SPACING_S)
+        prev = week - 1
+        if prev >= 1:
+            res_dir = week_dir(prev, out_root) / "results"
+            res_dir.mkdir(parents=True, exist_ok=True)
+            for kind, pos, path, params in RESULT_REQUESTS:
+                target = res_dir / f"{kind}_{pos}.json"
+                if target.exists():
+                    continue
+                p = {k: v.replace("{prev}", str(prev)) for k, v in params.items()}
+                try:
+                    payload = fetcher(path, p, api_key)
+                except RateLimited as exc:
+                    errors.append(f"results {pos}: {exc}")
+                    break
+                except Exception as exc:
+                    errors.append(f"results {pos}: {exc}")
+                    continue
+                target.write_text(json.dumps(payload, indent=1, ensure_ascii=False))
+                time.sleep(SPACING_S)
+            write_results(prev, out_root)
     raw = {f.stem: json.loads(f.read_text()) for f in sorted(raw_dir.glob("*.json"))}
     norm = normalize(raw)
     norm.update({"season": SEASON, "week": week, "pulled_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),

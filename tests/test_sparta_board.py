@@ -125,3 +125,19 @@ class BoardTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ResultsTests(unittest.TestCase):
+    def test_player_points_normalize_from_weeks_map(self):
+        tmp = Path(tempfile.mkdtemp())
+        try:
+            res = fp_weekly.week_dir(6, tmp) / "results"
+            res.mkdir(parents=True)
+            (res / "points_WR.json").write_text(json.dumps({"players": [
+                {"player_id": 1, "player_name": "Jaxon Smith-Njigba", "player_team_id": "SEA",
+                 "position_id": "WR", "weeks": {"6": 25.4}}]}))
+            out = fp_weekly.write_results(6, tmp)
+            self.assertEqual(out["jaxon smithnjigba"]["points"], 25.4)
+            self.assertTrue((fp_weekly.week_dir(6, tmp) / "results.json").exists())
+        finally:
+            shutil.rmtree(tmp)
