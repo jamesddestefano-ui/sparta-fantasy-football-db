@@ -529,4 +529,8 @@ def main(argv=None) -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    try:
+        raise SystemExit(main())
+    except Exception as exc:  # show the reason on the Actions run page (never includes secrets)
+        print(f"::error title=Yahoo sync failed::{type(exc).__name__}: {str(exc).replace(chr(10), ' ')[:400]}")
+        raise SystemExit(1)

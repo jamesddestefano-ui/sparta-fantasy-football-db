@@ -58,4 +58,13 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    try:
+        raise SystemExit(main())
+    except Exception as exc:  # surface Yahoo's message as a run annotation (no secrets in it)
+        msg = str(exc).replace("\n", " ")[:400]
+        print(f"::error title=Yahoo sign-in failed::{type(exc).__name__}: {msg}")
+        if "invalid_grant" in msg or "expired" in msg.lower():
+            print("::notice::The Yahoo code was expired or already used. Open the Yahoo link again, click Agree, and run this workflow right away with the new address.")
+        if "redirect" in msg.lower():
+            print("::notice::YAHOO_REDIRECT_URI must exactly match the Redirect URI on your Yahoo app (https://localhost:8080).")
+        raise SystemExit(1)
