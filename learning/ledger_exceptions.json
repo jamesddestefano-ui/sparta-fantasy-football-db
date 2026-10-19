@@ -1,0 +1,11 @@
+{
+  "purpose": "Ledger records that predate scripts/validate_learning.py v2 and cannot be completed without rewriting immutable history (AGENTS.md rules 48, 52). Listed records produce warnings, not failures. Do not add new records here to bypass validation; new records must be complete at decision time.",
+  "created_at": "2026-10-19",
+  "created_by": "Claude (validator v2 migration)",
+  "grandfathered": [
+    {"decision_id": "SPARTA-2026W4-PENDING-WALLER-OBSERVED-20260929-0800", "line": 119, "reason": "live-check observation of a pending JD claim logged as DECISION without decision-time evidence fields"},
+    {"decision_id": "SPARTA-2026W4-KINGKONG-TRADE-ALLEN-REVIEW-20260929-0800", "line": 120, "reason": "live-check trade-offer flag (REVIEW_LEAN_REJECT) logged without decision-time evidence fields"},
+    {"decision_id": "SPARTA-2026W4-TRID17-PROCESSED-20260930-1200", "line": 123, "reason": "trade-processed confirmation prompt, not a graded recommendation; no confidence/urgency recorded"},
+    {"decision_id": "SPARTA-2026W4-HALL-Q-TO-D-20260930-1600", "line": 125, "reason": "injury-designation monitor note, not a graded recommendation; no confidence/urgency recorded"}
+  ]
+}

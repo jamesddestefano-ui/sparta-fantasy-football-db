@@ -22,6 +22,8 @@ This repository contains **Sparta data only**. Never import Mongo ownership, ros
 - `data/transactions.json` — immutable confirmed transaction ledger
 - `data/faab.json` — FAAB rules and current balance checkpoints
 - `data/waiver_state.json` — league waiver priority snapshot
+- `data/yahoo_api/latest.json` — current Yahoo state pulled by the official API (all 12 rosters, FAAB, waiver priority, standings, this week's matchups, recent transactions, top available players by position)
+- `data/yahoo_api/reconciliation_latest.json` — what Yahoo shows that the repository does not yet record
 - `AGENTS.md` — mandatory read/write/verification rules for ChatGPT/Codex
 
 ## Required update loop
@@ -42,3 +44,11 @@ A discussed or proposed roster move is never recorded as completed. Only explici
 - `scripts/validate_learning.py` — structural validation
 
 Historical recommendation reasoning is immutable. Results, grades, diagnoses, and lessons are appended later. No historical recommendations are backfilled unless reliable decision-time evidence exists.
+
+## Yahoo API auto-sync
+
+`.github/workflows/yahoo_sync.yml` pulls Sparta from the official Yahoo Fantasy API about four times a day (plus early Wednesday/Thursday after waivers) and on demand from the Actions tab. It is read-only on Yahoo. See `docs/yahoo_api_sync.md` for the one-time setup and how report-only vs apply mode work.
+
+## Weekly board
+
+Tuesday and Saturday mornings, `.github/workflows/sparta_weekly_board.yml` pulls FantasyPros (weekly PPR rankings and projections, rest-of-season rankings, injuries) and writes `intelligence/board/latest.md`: the best JD lineup from current projections and waiver targets that beat JD's weakest player at each position. Run it any time from Actions → *Sparta weekly board* → Run workflow.

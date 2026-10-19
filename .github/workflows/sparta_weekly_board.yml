@@ -1,0 +1,69 @@
+name: Sparta weekly board (FantasyPros)
+
+# Pulls ~12 read-only FantasyPros requests (weekly PPR rankings, ROS FLX rankings,
+# weekly projections, injuries), then builds intelligence/board/<season>-wNN.md:
+# JD lineup suggestions + waiver targets not owned on reconstructed rosters.
+# Board is intelligence for the Brain, not a recorded recommendation.
+
+on:
+  schedule:
+    - cron: '7 13 * * 2'    # Tue ~9:07 AM ET: after MNF, before Wed waivers
+    - cron: '7 13 * * 6'    # Sat ~9:07 AM ET: pre-game refresh
+  workflow_dispatch:
+    inputs:
+      week:
+        description: 'NFL week (blank = current)'
+        required: false
+        default: ''
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sparta-weekly-board
+  cancel-in-progress: false
+
+jobs:
+  board:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.12'
+
+      - name: Offline tests
+        run: |
+          python -m pip install --disable-pip-version-check -q -r requirements-fantasypros.txt
+          python -m unittest discover -s tests
+
+      - name: Pull FantasyPros
+        env:
+          FANTASYPROS_API_KEY: ${{ secrets.FANTASYPROS_API_KEY }}
+          WEEK: ${{ inputs.week }}
+        run: |
+          if [ -z "$FANTASYPROS_API_KEY" ]; then echo "::error::FANTASYPROS_API_KEY secret is not set"; exit 1; fi
+          python scripts/fp_weekly.py ${WEEK:+--week "$WEEK"}
+
+      - name: Build board
+        env:
+          WEEK: ${{ inputs.week }}
+        run: |
+          python scripts/sparta_board.py ${WEEK:+--week "$WEEK"} > "$RUNNER_TEMP/board.md"
+          cat "$RUNNER_TEMP/board.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Validate and commit
+        run: |
+          python scripts/validate_sparta.py
+          git config user.name "sparta-board[bot]"
+          git config user.email "sparta-board@users.noreply.github.com"
+          git add intelligence/fantasypros/weekly intelligence/board
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -q -m "Sparta weekly board: FantasyPros pull + JD lineup/waiver board"
+          for i in 1 2 3; do
+            git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
+            sleep $((i * 5))
+          done
+          echo "::error::Could not push board commit"; exit 1
