@@ -99,7 +99,7 @@ def fixture_name(path: str) -> str:
     return "_".join(r.split(";")[0] for r in rest) + ".xml"
 
 
-def fetch_all(client, league_id: str = SPARTA_YAHOO_LEAGUE_ID) -> dict:
+def fetch_all(client, league_id: str = SPARTA_YAHOO_LEAGUE_ID, coverage_week: int | None = None) -> dict:
     game_key = yp.parse_game_key(client.get("game/nfl"))
     league_key = f"{game_key}.l.{league_id}"
     meta = yp.parse_league_meta(client.get(f"league/{league_key}"))
@@ -107,10 +107,15 @@ def fetch_all(client, league_id: str = SPARTA_YAHOO_LEAGUE_ID) -> dict:
         raise RuntimeError(f"Yahoo returned league {meta.get('league_id')}, expected {league_id}")
     if meta.get("season") != SPARTA_SEASON:
         raise RuntimeError(f"Yahoo returned season {meta.get('season')}, expected {SPARTA_SEASON}")
-    week = meta.get("current_week")
+    if coverage_week is not None and (type(coverage_week) is not int or not 1 <= coverage_week <= 18):
+        raise ValueError("coverage_week must be 1–18")
+    week = coverage_week or meta.get("current_week")
 
     teams = yp.parse_teams(client.get(f"league/{league_key}/teams"))
-    rosters = yp.parse_rosters(client.get(f"league/{league_key}/teams/roster"))
+    roster_path = f"league/{league_key}/teams/roster"
+    if coverage_week is not None:
+        roster_path += f";week={week}/players/stats;type=week;week={week}"
+    rosters = yp.parse_rosters(client.get(roster_path))
     standings = yp.parse_standings(client.get(f"league/{league_key}/standings"))
     scoreboard = yp.parse_scoreboard(client.get(f"league/{league_key}/scoreboard;week={week}"))
 
@@ -135,6 +140,7 @@ def fetch_all(client, league_id: str = SPARTA_YAHOO_LEAGUE_ID) -> dict:
         free_agents[pos] = rows
 
     return {
+        "coverage_week": coverage_week,
         "game_key": game_key,
         "league_key": league_key,
         "league": meta,
@@ -300,6 +306,7 @@ def build_snapshot(raw: dict, repo: dict, observed_at: datetime, requests_made: 
         "yahoo_league_name": raw["league"]["name"],
         "season": raw["league"]["season"],
         "current_week": week,
+        "coverage_week": raw.get("coverage_week") or week,
         "check_id": f"sparta-yahoo-api-{stamp}",
         "observed_at": observed_at.isoformat(),
         "completed": True,
@@ -472,10 +479,16 @@ def load_repo(data: Path = DATA) -> dict:
 
 
 def run(client, out_dir: Path | None = None, apply: bool = False,
-        observed_at: datetime | None = None, root: Path = ROOT) -> dict:
+        observed_at: datetime | None = None, root: Path = ROOT,
+        coverage_week: int | None = None) -> dict:
     out_dir = Path(out_dir) if out_dir else root / "data" / "yahoo_api"
     repo = load_repo(root / "data")
-    raw = fetch_all(client)
+    if coverage_week is not None and apply:
+        raise ValueError("Weekly evidence collection cannot apply durable changes")
+    raw = fetch_all(client, coverage_week=coverage_week)
+    if coverage_week is not None:
+        # Keep historical rosters out of the ownership-authoritative current feed.
+        out_dir = root / "data" / "yahoo_api" / "weekly" / f"2026-w{coverage_week:02d}"
     snap = build_snapshot(raw, repo, observed_at or now_et(), client.requests_made)
     report = reconcile(snap, repo)
     if apply:

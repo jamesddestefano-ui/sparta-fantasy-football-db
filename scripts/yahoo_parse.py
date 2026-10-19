@@ -153,6 +153,9 @@ def parse_player(p: Element) -> dict:
         "ownership_type": _t(p, "ownership/ownership_type"),
         "owner_team_key": _t(p, "ownership/owner_team_key"),
         "waiver_date": _t(p, "ownership/waiver_date"),
+        # Official weekly stats: season totals must never become weekly points.
+        "points": _num(_t(p, "player_points/total")) if _t(p, "player_points/coverage_type") == "week" else None,
+        "points_week": _num(_t(p, "player_points/week"), int) if _t(p, "player_points/coverage_type") == "week" else None,
     }
 
 

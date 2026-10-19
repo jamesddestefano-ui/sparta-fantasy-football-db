@@ -1,0 +1,652 @@
+{
+  "schema_version": 1,
+  "kind": "SPARTA_EVIDENCE_HANDOFF",
+  "league": "sparta",
+  "yahoo_league_id": "102586",
+  "season": 2026,
+  "week": 7,
+  "job": "waivers",
+  "generated_at_utc": "2026-10-19T20:55:16.672605+00:00",
+  "decision_authority": "CLAUDE_SPARTA_BRAIN",
+  "status": "PARTIAL",
+  "sections": {
+    "rosters": {
+      "status": "UNAVAILABLE",
+      "source": null,
+      "data": null,
+      "limitations": [
+        "Populated requested-week rosters for all12 teams are required"
+      ]
+    },
+    "matchups": {
+      "status": "UNAVAILABLE",
+      "source": null,
+      "data": null,
+      "limitations": [
+        "Full six-matchup scoreboard not present"
+      ]
+    },
+    "standings": {
+      "status": "PARTIAL",
+      "source": {
+        "path": "intelligence/yahoo/2026-10-19-jd-authenticated-readback.json",
+        "kind": "AUTHENTICATED_YAHOO_CONNECTOR",
+        "sha256": "b2c8914cf7e29a13d690817b673c1d98a43f00998041266ec0c4da9b41192dd6",
+        "observed_at": "2026-10-19T20:30:54.290Z",
+        "week": null
+      },
+      "data": [
+        {
+          "rank": "12",
+          "teamKey": "470.l.102586.t.10",
+          "teamId": "10",
+          "name": "TB12 of Ass/Cousin Fucker",
+          "wins": "1",
+          "losses": "4",
+          "ties": 0,
+          "percentage": ".200",
+          "pointsFor": "670.10",
+          "pointsAgainst": 770.6199999999999,
+          "waiverPriority": 10,
+          "faabBalance": 33,
+          "playoffSeed": 12,
+          "madePlayoffs": true,
+          "finalRank": null,
+          "championshipWon": null,
+          "playoffOutcome": null,
+          "outcomeConfidence": null
+        }
+      ],
+      "limitations": [
+        "JD-only standings"
+      ]
+    },
+    "faab": {
+      "status": "PARTIAL",
+      "source": {
+        "path": "intelligence/yahoo/2026-10-19-jd-authenticated-readback.json",
+        "kind": "AUTHENTICATED_YAHOO_CONNECTOR",
+        "sha256": "b2c8914cf7e29a13d690817b673c1d98a43f00998041266ec0c4da9b41192dd6",
+        "observed_at": "2026-10-19T20:30:54.290Z",
+        "week": null
+      },
+      "data": {
+        "JD": 33
+      },
+      "limitations": [
+        "JD-only connected budget; other11 team balances unavailable"
+      ]
+    },
+    "transactions": {
+      "status": "PARTIAL",
+      "source": {
+        "path": "intelligence/yahoo/2026-10-19-jd-authenticated-readback.json",
+        "kind": "AUTHENTICATED_YAHOO_CONNECTOR",
+        "sha256": "b2c8914cf7e29a13d690817b673c1d98a43f00998041266ec0c4da9b41192dd6",
+        "observed_at": "2026-10-19T20:30:54.290Z",
+        "week": null
+      },
+      "data": [
+        {
+          "transaction_id": "470.l.102586.tr.226",
+          "type": "add",
+          "status": "complete",
+          "timestamp": 1792294805000,
+          "date": "2026-10-18",
+          "week": null,
+          "team_ids": [
+            "470.l.102586.t.10"
+          ],
+          "players_added": [
+            {
+              "id": "42638",
+              "name": "Kenyon Sadiq",
+              "position": "TE",
+              "team": "NYJ"
+            }
+          ],
+          "players_dropped": [
+            {
+              "id": "40220",
+              "name": "Tanner McKee",
+              "position": "QB",
+              "team": "Phi"
+            }
+          ],
+          "faab_bid": null,
+          "waiver_priority": null,
+          "draft_picks": null
+        },
+        {
+          "transaction_id": "470.l.102586.tr.225",
+          "type": "add",
+          "status": "complete",
+          "timestamp": 1792294682000,
+          "date": "2026-10-18",
+          "week": null,
+          "team_ids": [
+            "470.l.102586.t.10"
+          ],
+          "players_added": [
+            {
+              "id": "31017",
+              "name": "Christian Kirk",
+              "position": "WR",
+              "team": "SF"
+            }
+          ],
+          "players_dropped": [
+            {
+              "id": "40996",
+              "name": "Jacob Cowing",
+              "position": "WR",
+              "team": "SF"
+            }
+          ],
+          "faab_bid": null,
+          "waiver_priority": null,
+          "draft_picks": null
+        },
+        {
+          "transaction_id": "470.l.102586.tr.219",
+          "type": "add",
+          "status": "complete",
+          "timestamp": 1792109932000,
+          "date": "2026-10-16",
+          "week": null,
+          "team_ids": [
+            "470.l.102586.t.10"
+          ],
+          "players_added": [
+            {
+              "id": "40220",
+              "name": "Tanner McKee",
+              "position": "QB",
+              "team": "Phi"
+            }
+          ],
+          "players_dropped": [
+            {
+              "id": "32723",
+              "name": "Jalen Hurts",
+              "position": "QB",
+              "team": "Phi"
+            }
+          ],
+          "faab_bid": null,
+          "waiver_priority": null,
+          "draft_picks": null
+        }
+      ],
+      "limitations": [
+        "Bounded JD-only transaction evidence; FAAB null is unknown",
+        "{\"possibly_truncated\": true, \"upstream_bound_reached\": true}"
+      ]
+    },
+    "jd_roster": {
+      "status": "PARTIAL",
+      "source": {
+        "path": "intelligence/yahoo/2026-10-19-jd-authenticated-readback.json",
+        "kind": "AUTHENTICATED_YAHOO_CONNECTOR",
+        "sha256": "b2c8914cf7e29a13d690817b673c1d98a43f00998041266ec0c4da9b41192dd6",
+        "observed_at": "2026-10-19T20:30:54.290Z",
+        "week": 6
+      },
+      "data": [
+        {
+          "playerKey": "470.p.25812",
+          "playerId": "25812",
+          "name": "Kirk Cousins",
+          "team": "LV",
+          "position": "QB",
+          "selectedPosition": "QB",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "QB",
+          "player_id": "25812",
+          "projected_points": null
+        },
+        {
+          "playerKey": "470.p.40981",
+          "playerId": "40981",
+          "name": "Braelon Allen",
+          "team": "NYJ",
+          "position": "RB",
+          "selectedPosition": "RB",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "RB",
+          "player_id": "40981",
+          "projected_points": null
+        },
+        {
+          "playerKey": "470.p.40707",
+          "playerId": "40707",
+          "name": "Emanuel Wilson",
+          "team": "Sea",
+          "position": "RB",
+          "selectedPosition": "RB",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "RB",
+          "player_id": "40707",
+          "projected_points": null
+        },
+        {
+          "playerKey": "470.p.40041",
+          "playerId": "40041",
+          "name": "Jaxon Smith-Njigba",
+          "team": "Sea",
+          "position": "WR",
+          "selectedPosition": "WR",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "WR",
+          "player_id": "40041",
+          "projected_points": null
+        },
+        {
+          "playerKey": "470.p.41793",
+          "playerId": "41793",
+          "name": "Tetairoa McMillan",
+          "team": "Car",
+          "position": "WR",
+          "selectedPosition": "WR",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "WR",
+          "player_id": "41793",
+          "projected_points": null
+        },
+        {
+          "playerKey": "470.p.28592",
+          "playerId": "28592",
+          "name": "Darren Waller",
+          "team": "Car",
+          "position": "TE",
+          "selectedPosition": "TE",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "TE",
+          "player_id": "28592",
+          "projected_points": null
+        },
+        {
+          "playerKey": "470.p.41097",
+          "playerId": "41097",
+          "name": "Devaughn Vele",
+          "team": "NO",
+          "position": "WR",
+          "selectedPosition": "W/R/T",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "W/R/T",
+          "player_id": "41097",
+          "projected_points": null
+        },
+        {
+          "playerKey": "470.p.32725",
+          "playerId": "32725",
+          "name": "J.K. Dobbins",
+          "team": "Den",
+          "position": "RB",
+          "selectedPosition": "W/R/T",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "W/R/T",
+          "player_id": "32725",
+          "projected_points": null
+        },
+        {
+          "playerKey": "470.p.41907",
+          "playerId": "41907",
+          "name": "Dylan Sampson",
+          "team": "Cle",
+          "position": "RB",
+          "selectedPosition": "BN",
+          "status": "IR-R",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "BN",
+          "player_id": "41907",
+          "projected_points": null
+        },
+        {
+          "playerKey": "470.p.40201",
+          "playerId": "40201",
+          "name": "Dontayvion Wicks",
+          "team": "Phi",
+          "position": "WR",
+          "selectedPosition": "BN",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "BN",
+          "player_id": "40201",
+          "projected_points": null
+        },
+        {
+          "playerKey": "470.p.40696",
+          "playerId": "40696",
+          "name": "Jaleel McLaughlin",
+          "team": "Cle",
+          "position": "RB",
+          "selectedPosition": "BN",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "BN",
+          "player_id": "40696",
+          "projected_points": null
+        },
+        {
+          "playerKey": "470.p.33393",
+          "playerId": "33393",
+          "name": "Ja'Marr Chase",
+          "team": "Cin",
+          "position": "WR",
+          "selectedPosition": "BN",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "BN",
+          "player_id": "33393",
+          "projected_points": null
+        },
+        {
+          "playerKey": "470.p.33991",
+          "playerId": "33991",
+          "name": "Breece Hall",
+          "team": "NYJ",
+          "position": "RB",
+          "selectedPosition": "BN",
+          "status": "O",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "BN",
+          "player_id": "33991",
+          "projected_points": null
+        },
+        {
+          "playerKey": "470.p.42638",
+          "playerId": "42638",
+          "name": "Kenyon Sadiq",
+          "team": "NYJ",
+          "position": "TE",
+          "selectedPosition": "BN",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "BN",
+          "player_id": "42638",
+          "projected_points": null
+        },
+        {
+          "playerKey": "470.p.31017",
+          "playerId": "31017",
+          "name": "Christian Kirk",
+          "team": "SF",
+          "position": "WR",
+          "selectedPosition": "IR",
+          "status": "IR-R",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "IR",
+          "player_id": "31017",
+          "projected_points": null
+        },
+        {
+          "playerKey": "470.p.40296",
+          "playerId": "40296",
+          "name": "Blake Grupe",
+          "team": "LAR",
+          "position": "K",
+          "selectedPosition": "K",
+          "status": "IR",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "K",
+          "player_id": "40296",
+          "projected_points": null
+        },
+        {
+          "playerKey": "470.p.100033",
+          "playerId": "100033",
+          "name": "Ravens",
+          "team": "Bal",
+          "position": "DEF",
+          "selectedPosition": "DEF",
+          "isKeeper": {
+            "status": false,
+            "cost": false,
+            "kept": false
+          },
+          "points": null,
+          "slot": "DEF",
+          "player_id": "100033",
+          "projected_points": null
+        }
+      ],
+      "limitations": []
+    },
+    "free_agents": {
+      "status": "UNAVAILABLE",
+      "source": null,
+      "data": null,
+      "limitations": [
+        "Rostered percentage is context only; availability comes only from fresh Yahoo ownership"
+      ]
+    },
+    "weekly_board": {
+      "status": "UNAVAILABLE",
+      "source": null,
+      "data": null,
+      "limitations": [
+        "No hash-bound validation receipt; existing board excluded"
+      ]
+    },
+    "roster_spots": {
+      "status": "AVAILABLE",
+      "source": {
+        "path": "intelligence/yahoo/2026-10-19-jd-authenticated-readback.json",
+        "kind": "AUTHENTICATED_YAHOO_CONNECTOR",
+        "sha256": "b2c8914cf7e29a13d690817b673c1d98a43f00998041266ec0c4da9b41192dd6",
+        "observed_at": "2026-10-19T20:30:54.290Z",
+        "week": 6
+      },
+      "data": {
+        "active_players": 16,
+        "ir_players": 1,
+        "open_active_slots": 1,
+        "ir_limit": 1
+      },
+      "limitations": []
+    },
+    "waivers": {
+      "status": "PARTIAL",
+      "source": {
+        "path": "intelligence/yahoo/2026-10-19-jd-authenticated-readback.json",
+        "kind": "AUTHENTICATED_YAHOO_CONNECTOR",
+        "sha256": "b2c8914cf7e29a13d690817b673c1d98a43f00998041266ec0c4da9b41192dd6",
+        "observed_at": "2026-10-19T20:30:54.290Z",
+        "week": 6
+      },
+      "data": {
+        "roster_spots": {
+          "active_players": 16,
+          "ir_players": 1,
+          "open_active_slots": 1,
+          "ir_limit": 1
+        },
+        "roster_designations": [
+          {
+            "player": "Kirk Cousins",
+            "status": null,
+            "bye_week": null,
+            "slot": "QB"
+          },
+          {
+            "player": "Braelon Allen",
+            "status": null,
+            "bye_week": null,
+            "slot": "RB"
+          },
+          {
+            "player": "Emanuel Wilson",
+            "status": null,
+            "bye_week": null,
+            "slot": "RB"
+          },
+          {
+            "player": "Jaxon Smith-Njigba",
+            "status": null,
+            "bye_week": null,
+            "slot": "WR"
+          },
+          {
+            "player": "Tetairoa McMillan",
+            "status": null,
+            "bye_week": null,
+            "slot": "WR"
+          },
+          {
+            "player": "Darren Waller",
+            "status": null,
+            "bye_week": null,
+            "slot": "TE"
+          },
+          {
+            "player": "Devaughn Vele",
+            "status": null,
+            "bye_week": null,
+            "slot": "W/R/T"
+          },
+          {
+            "player": "J.K. Dobbins",
+            "status": null,
+            "bye_week": null,
+            "slot": "W/R/T"
+          },
+          {
+            "player": "Dylan Sampson",
+            "status": "IR-R",
+            "bye_week": null,
+            "slot": "BN"
+          },
+          {
+            "player": "Dontayvion Wicks",
+            "status": null,
+            "bye_week": null,
+            "slot": "BN"
+          },
+          {
+            "player": "Jaleel McLaughlin",
+            "status": null,
+            "bye_week": null,
+            "slot": "BN"
+          },
+          {
+            "player": "Ja'Marr Chase",
+            "status": null,
+            "bye_week": null,
+            "slot": "BN"
+          },
+          {
+            "player": "Breece Hall",
+            "status": "O",
+            "bye_week": null,
+            "slot": "BN"
+          },
+          {
+            "player": "Kenyon Sadiq",
+            "status": null,
+            "bye_week": null,
+            "slot": "BN"
+          },
+          {
+            "player": "Christian Kirk",
+            "status": "IR-R",
+            "bye_week": null,
+            "slot": "IR"
+          },
+          {
+            "player": "Blake Grupe",
+            "status": "IR",
+            "bye_week": null,
+            "slot": "K"
+          },
+          {
+            "player": "Ravens",
+            "status": null,
+            "bye_week": null,
+            "slot": "DEF"
+          }
+        ]
+      },
+      "limitations": []
+    }
+  },
+  "limitations": [
+    "Rejected incomplete/unscoped/future Yahoo source: data/yahoo_live_snapshot_latest.json"
+  ]
+}
