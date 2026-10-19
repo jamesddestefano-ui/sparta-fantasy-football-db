@@ -32,3 +32,14 @@ A revised official OpenAPI, versioned documentation link, or sanitized represent
 Thank you.
 
 Owner attachment references: diagnostic Actions run39085126777 (private repository); exact safe schema paths preserved in PR2's `intelligence/fantasypros/research/live-pilot-diagnostics-2026-10-18.json`. Share only the sanitized diagnostics through approved support channels; no league rosters, ownership, FAAB, credentials or private raw payloads are needed.
+
+## Subsequent stored evidence available for support review
+
+Another writer committed week7 raw artifacts to main inbc0e4a8 while this CI task was in progress. We inspected them offline only; no new provider requests were made by this task. These are later observations, not reconstructions of the failed week6 bodies or proof of subscription/authentication for our strict ingestion path.
+
+- `weekly_FLX.json`:151 players, ranking_type_name=`weekly`, first player tier absent; SHA2566afc72c15c4c58d8aa4541c9abb18170d8e559c2d5c7197caf63571ade50f6ca.
+- `consensus_FLX.json`:36 players, ranking_type_name=`waiver`, first player tier absent; SHA256a5efa4ffcf3f6c34af1d9d2c52adbdb41e34adc4e42bf7fc2ebdb43433c88079.
+- `projections_WR.json`:127 players; first player's fpid/mflid are integers and stats is an object with points/points_ppr/points_half keys, rather than the supplied string IDs/array. SHA2561143997bb8e3687d1558d9bef51545b9adfc87f7a29d91aabd69b6607ceb4ebb.
+- `injuries_ALL.json`:229 rows; all observed injury_update_date/status/status_short values are strings, statuses IR/OUT/PUP/Suspended, short codes IR/O/PUP/S. This later snapshot does not reproduce the earlier date/status mismatches. SHA2562fdd5e0453e3d6da54140ad2a9d7f95aeddadf2d04df0c92fbbea34d908ad31b.
+
+Paths are under `intelligence/fantasypros/weekly/2026-w07/raw/` in the now-private repository. Do not send raw/private files automatically. Please confirm current official schema semantics and null/empty cases before we implement adaptations. No strict schema was weakened here.

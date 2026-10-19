@@ -106,3 +106,7 @@ class LearningRegressionGateTests(unittest.TestCase):
             self.assertEqual(out.returncode,1)
             errors=[s[2:] for s in (out.stdout+out.stderr).splitlines() if s.startswith('- ')]
             self.assertEqual(errors,baseline['historical_errors'])
+
+    def test_current_brain_actor_allowed_by_new_main_governance(self):
+        self.append({'event_type':'DECISION','decision_id':'NEW-BRAIN','system':'CLAUDE_SPARTA_BRAIN','timestamp_et':'2026-10-20T09:00:00-04:00','week':7,'decision_type':'ADD_DROP','subject':'Example','recommendation':'Hold','confidence':3,'urgency':'MEDIUM','decision_deadline':None,'information_available_at_decision':[],'key_supporting_signals':[],'key_risk_factors':[],'alternative_considered':'Wait'})
+        self.assertTrue(self.gate()['passed'])

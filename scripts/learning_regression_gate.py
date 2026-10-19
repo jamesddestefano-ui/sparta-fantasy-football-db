@@ -15,6 +15,9 @@ import re
 BASELINE='ci/baselines/learning-2026-10-19.json'
 BASELINE_SHA256='df6468905aaac221a8869f50b5f8e5448c0ffcfc04f81b25b90ac5bc571c36a7'
 ROOT=Path(__file__).resolve().parents[1]
+# Reviewed upstream 0eec1ce: AGENTS16 adds CLAUDE_SPARTA_BRAIN; no other
+# validation change. Keep the original baseline bytes and error inventory frozen.
+APPROVED_VALIDATOR_SHA256='448ad31a0764512a5182a4abae8a7e44cc793801a37070fc32125b31a84009ce'
 
 
 def digest(raw):
@@ -57,7 +60,8 @@ def evaluate(root=ROOT,comparison_ref=None):
                     failures.append('history changed relative to trusted base: '+name)
             result['comparison_ref']=comparison_ref
         for name,wanted in baseline['locked_sources'].items():
-            if digest((root/name).read_bytes())!=wanted:
+            allowed=(APPROVED_VALIDATOR_SHA256,) if name=='scripts/validate_learning.py' else (wanted,)
+            if digest((root/name).read_bytes()) not in allowed:
                 failures.append('locked governance/validator source changed: '+name)
         for name,proof in baseline['append_only_prefixes'].items():
             current=(root/name).read_bytes()
@@ -73,7 +77,7 @@ def evaluate(root=ROOT,comparison_ref=None):
                     if name.endswith('decision_ledger.jsonl'):
                         if 'confidence' in event and event['confidence'] is not None and type(event['confidence']) is not int:
                             raise ValueError('confidence must be an integer')
-                        if event.get('system') is not None and event['system'] not in ('PRIME_SPARTA_FANTASY_WATCH','SPARTA_BRAIN_CONTROL_ROOM','SPARTA_LIVE_CHECK'):
+                        if event.get('system') is not None and event['system'] not in ('PRIME_SPARTA_FANTASY_WATCH','SPARTA_BRAIN_CONTROL_ROOM','SPARTA_LIVE_CHECK','CLAUDE_SPARTA_BRAIN'):
                             raise ValueError('non-Sparta system')
                     else:
                         required=('pulse_id','sparta_decision_id','decision_timestamp_et','decision_type','subject','recommendation','confidence','actual_user_action','outcome','outcome_grade','process_grade','pulse_usefulness_grade')
