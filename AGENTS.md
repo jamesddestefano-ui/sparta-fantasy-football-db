@@ -98,3 +98,9 @@ USER UPDATE → READ CURRENT REPOSITORY STATE → ANALYZE → VALIDATE LEAGUE + 
 69. `data/yahoo_api/reconciliation_latest.json` lists Yahoo-confirmed moves missing from `data/transactions.json`, FAAB and waiver-priority differences, and JD roster differences. In report-only mode these are evidence for the Brain's normal write loop; in apply mode (`SPARTA_YAHOO_APPLY=true`) the sync appends only successful add/drop/add-drop transactions, refreshes FAAB, waiver priority and JD's roster, and the workflow rolls back durable files if `validate_sparta.py` fails. Trades and unmapped-team moves are never auto-applied; they stay in `needs_review`.
 70. Yahoo credentials live only in GitHub Actions secrets (`YAHOO_CLIENT_ID`, `YAHOO_CLIENT_SECRET`, `YAHOO_REFRESH_TOKEN`, optional `YAHOO_REDIRECT_URI`). Never request, print, commit, or paste them into chat.
 71. Yahoo team identity is pinned in `data/yahoo_team_map.json` (`team_id_to_code`). If a team renames and the sync reports `unmapped_teams`, pin its Yahoo `team_id` there rather than editing `teams.json` history.
+
+## Ledger validation (validator v2)
+
+72. `scripts/validate_learning.py` accepts decision events from `PRIME_SPARTA_FANTASY_WATCH`, `SPARTA_BRAIN_CONTROL_ROOM`, and `SPARTA_LIVE_CHECK`. A `DECISION` must carry every decision-time field at the moment it is written (rule 40); outcome fields are appended later by an `OUTCOME_REVIEW` (or completed fields) and are not required at decision time.
+73. Operational entries (Pulse consumption, live-check notes, Watch wake/suppress triage) may stay in the ledger but must carry `type` or `decision`, plus a timestamp (`at_et`, `ts_et`, `timestamp_et`, `observed_at`, or `recorded_at_et`). They are not graded recommendations.
+74. `learning/ledger_exceptions.json` grandfathers four pre-v2 records only. Never add new records to it to bypass validation.
