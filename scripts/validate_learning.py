@@ -26,8 +26,8 @@ LEARNING = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "learning"
 LEDGER = LEARNING / "decision_ledger.jsonl"
 EXCEPTIONS = LEARNING / "ledger_exceptions.json"
 
-# AGENTS.md rule 16: Brain (control room), Watch, and live-check layers may record decisions.
-SYSTEMS = {"PRIME_SPARTA_FANTASY_WATCH", "SPARTA_BRAIN_CONTROL_ROOM", "SPARTA_LIVE_CHECK"}
+# AGENTS.md rule 16: Brain (Claude since 2026-10-19; ChatGPT control room before), Watch, live checks.
+SYSTEMS = {"PRIME_SPARTA_FANTASY_WATCH", "SPARTA_BRAIN_CONTROL_ROOM", "SPARTA_LIVE_CHECK", "CLAUDE_SPARTA_BRAIN"}
 DECISION_TIME_FIELDS = [
     "decision_id", "system", "timestamp_et", "week", "decision_type", "subject", "recommendation",
     "confidence", "urgency", "decision_deadline", "information_available_at_decision",

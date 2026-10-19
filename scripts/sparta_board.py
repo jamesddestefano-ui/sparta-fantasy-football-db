@@ -53,19 +53,28 @@ def build_board(week: int, root: Path = ROOT) -> dict:
         pos = _pos(r) or "?"
         k = name_key(r["name"], r.get("nfl_team"), pos)
         f = by_key.get(k, {})
-        status = (r.get("status") or f.get("injury_status") or "").upper()
+        status = (r.get("status") or "").upper()
+        if status == "BYE":
+            status = ""          # snapshot is from a prior week; FantasyPros bye_week decides this week
+        status = status or (f.get("injury_status") or "").upper()
         bye = str(f.get("bye_week") or "") == str(week)
         mine.append({
             "name": r["name"], "position": pos, "nfl_team": r.get("nfl_team"), "current_slot": r.get("slot"),
             "yahoo_status": r.get("status") or "", "fp_injury": f.get("injury_status"),
             "proj_ppr": f.get("proj_ppr"), "ecr_rank": f.get("ecr_rank"), "ros_rank": f.get("ros_rank"),
             "opponent": f.get("opponent"), "matched_fantasypros": bool(f),
+            "yahoo_rostered_pct": f.get("yahoo_rostered_pct"),
             "unavailable": status in OUT_STATUSES or bye or (r.get("slot") or "").startswith("IR"),
             "on_bye": bye,
         })
 
     def score(p):
-        return p["proj_ppr"] if p["proj_ppr"] is not None else -1
+        """Projected PPR points; falls back to a rank-based estimate when projections are missing."""
+        if p.get("proj_ppr") is not None:
+            return p["proj_ppr"]
+        if p.get("ecr_rank"):
+            return max(0.0, 20.0 - p["ecr_rank"] / 8.0)   # coarse: rank 1 ~ 20 pts, rank 120 ~ 5 pts
+        return -1
 
     # ---- optimal lineup (greedy is optimal: flex is a superset of RB/WR/TE)
     pool = sorted([p for p in mine if not p["unavailable"]], key=score, reverse=True)
@@ -76,20 +85,31 @@ def build_board(week: int, root: Path = ROOT) -> dict:
         if pick:
             used.add(pick["name"])
         lineup.append({"slot": slot, "player": pick["name"] if pick else None,
-                       "proj_ppr": pick["proj_ppr"] if pick else None})
+                       "proj_ppr": pick["proj_ppr"] if pick else None,
+                       "ecr_rank": pick["ecr_rank"] if pick else None,
+                       "basis": ("projection" if pick and pick["proj_ppr"] is not None
+                                 else "ranking" if pick and pick["ecr_rank"] else "none")})
     current_starters = {p["name"] for p in mine if p["current_slot"] not in ("BN", "IR", "IR+", None)}
     suggested = {s["player"] for s in lineup if s["player"]}
     changes = {
         "start": sorted(suggested - current_starters),
         "bench": sorted(current_starters - suggested),
     }
-    proj_current = sum((p["proj_ppr"] or 0) for p in mine if p["name"] in current_starters)
-    proj_suggested = sum((s["proj_ppr"] or 0) for s in lineup)
+    by_name = {p["name"]: p for p in mine}
+    proj_current = sum(max(score(p), 0) for p in mine if p["name"] in current_starters)
+    proj_suggested = sum(max(score(by_name[s["player"]]), 0) for s in lineup if s["player"])
 
     # ---- waiver targets: not owned on reconstructed rosters, better than JD's weakest at the position
+    starter_proj = {}
+    for slot in lineup:
+        if slot["slot"] in POSITIONS and slot["player"]:
+            sp = by_name[slot["player"]]
+            starter_proj[slot["slot"]] = min(starter_proj.get(slot["slot"], 1e9), score(sp))
     weakest = {}
+    active = [p for p in mine if not (p["current_slot"] or "").startswith("IR")]   # IR slot doesn't use a roster spot
+    open_spots = max(0, 17 - len(active))
     for pos in POSITIONS:
-        at = [p for p in mine if p["position"] == pos]
+        at = [p for p in active if p["position"] == pos]
         if at:
             weakest[pos] = min(at, key=lambda p: (p["ros_rank"] is None, -(p["ros_rank"] or 0), score(p)))
     targets = []
@@ -102,23 +122,54 @@ def build_board(week: int, root: Path = ROOT) -> dict:
             continue
         w = weakest.get(pos)
         ros_gain = (w["ros_rank"] - f["ros_rank"]) if (w and w.get("ros_rank") and f.get("ros_rank")) else None
-        week_gain = (f["proj_ppr"] - (w["proj_ppr"] or 0)) if (w and f.get("proj_ppr") is not None) else None
-        if not ((ros_gain and ros_gain > 0) or (week_gain and week_gain > 1.0)):
+        # weekly upgrade is measured against the player who would actually start for JD at that position
+        week_gain = (f["proj_ppr"] - starter_proj.get(pos, 0.0)) if f.get("proj_ppr") is not None else None
+        wr = f.get("waiver_rank")
+        flex_list = (f.get("waiver_list") or "FLX") == "FLX"
+        if not ((ros_gain and ros_gain > 0) or (week_gain and week_gain > 1.0) or (wr and wr <= 15)):
             continue
-        tier = ("HIGH" if (ros_gain or 0) >= 40 or (week_gain or 0) >= 6
-                else "MEDIUM" if (ros_gain or 0) >= 15 or (week_gain or 0) >= 3 else "LOW")
+        if not flex_list and not (week_gain and week_gain > 0):
+            # QB/K/DEF waiver lists are short weekly streaming lists; rank 1-5 there is not a priority add
+            tier = "STREAM"
+        else:
+            tier = ("HIGH" if (ros_gain or 0) >= 40 or (week_gain or 0) >= 6 or (flex_list and wr and wr <= 5)
+                    else "MEDIUM" if (ros_gain or 0) >= 15 or (week_gain or 0) >= 3 or (flex_list and wr and wr <= 12)
+                    else "LOW")
+        pct = f.get("yahoo_rostered_pct")
         targets.append({
             "name": f["name"], "position": pos, "nfl_team": f.get("nfl_team"),
             "proj_ppr": f.get("proj_ppr"), "ecr_rank": f.get("ecr_rank"), "ros_rank": f.get("ros_rank"),
             "injury": f.get("injury_status"), "replaces": w["name"] if w else None,
             "ros_rank_gain": ros_gain, "week_proj_gain": round(week_gain, 2) if week_gain is not None else None,
             "priority": tier, "availability": own["status"],
-            "availability_note": "Verify on Yahoo before claiming (not confirmed available)."
+            "fp_waiver_rank": wr, "yahoo_rostered_pct": pct, "fp_waiver_note": f.get("waiver_note"),
+            "availability_note": (("Likely available: rostered in only %d%% of Yahoo leagues. " % pct if pct is not None and pct < 30 else "")
+                                  + "Verify on Yahoo before claiming (not confirmed available).")
             if own["status"].startswith("UNKNOWN") else own.get("source"),
         })
-    order = {"HIGH": 0, "MEDIUM": 1, "LOW": 2}
-    targets.sort(key=lambda t: (order[t["priority"]], t["ros_rank"] or 9999, -(t["proj_ppr"] or 0)))
+    order = {"HIGH": 0, "MEDIUM": 1, "LOW": 2, "STREAM": 3}
+    targets.sort(key=lambda t: (order[t["priority"]], t["fp_waiver_rank"] or 999, t["ros_rank"] or 9999,
+                                -(t["proj_ppr"] or 0)))
 
+    notes = []
+    if open_spots:
+        notes.append(f"{open_spots} open roster spot(s) ({len(active)}/17 active): your top waiver target can be "
+                     f"added without dropping anyone.")
+    ir_used = [p for p in mine if (p["current_slot"] or "").startswith("IR")]
+    ir_eligible = [p for p in mine if not (p["current_slot"] or "").startswith("IR") and
+                   ((p["yahoo_status"] or "").upper().startswith("IR") or (p["fp_injury"] or "").upper() in ("IR", "PUP"))]
+    if ir_eligible and not ir_used:
+        notes.append("IR slot is empty; IR-eligible on bench: " + ", ".join(
+            f"{p['name']} ({p['fp_injury'] or p['yahoo_status']})" for p in ir_eligible)
+                     + ". Moving one to IR frees a bench spot (only 1 IR slot).")
+    for p in mine:
+        ys = (p["yahoo_status"] or "").upper()
+        if ys in ("D", "DOUBTFUL", "O", "OUT") and not p["fp_injury"] and (p["proj_ppr"] or 0) > 5:
+            notes.append(f"{p['name']}: Yahoo shows '{p['yahoo_status']}' (roster snapshot), but FantasyPros lists no injury "
+                         f"for this week and projects {p['proj_ppr']}. Check his practice reports before locking the lineup; "
+                         f"he is kept out of the suggested lineup until Yahoo clears him.")
+        if ys == "BYE":
+            notes.append(f"{p['name']}: snapshot shows BYE (last week); treated as available this week.")
     jd_faab = next((b["balance"] for b in faab["balances"] if b["team"] == "JD"), None)
     return {
         "league": "sparta", "season": fp["season"], "week": week, "team": "JD",
@@ -128,12 +179,14 @@ def build_board(week: int, root: Path = ROOT) -> dict:
                            "ownership_reconstruction_conflicts": len(recon["conflicts"]),
                            "teams_over_roster_limit": recon.get("over_limit_teams", {})},
         "faab": {"jd_balance": jd_faab, "minimum_bid": 1},
+        "open_roster_spots": open_spots,
         "lineup": {"suggested": lineup, "changes": changes,
                    "proj_current_starters": round(proj_current, 2), "proj_suggested": round(proj_suggested, 2)},
         "roster": sorted(mine, key=lambda p: (POSITIONS.index(p["position"]) if p["position"] in POSITIONS else 9,
                                               -score(p))),
         "waiver_targets": targets[:25],
         "unmatched_roster_players": [p["name"] for p in mine if not p["matched_fantasypros"]],
+        "roster_notes": notes,
     }
 
 
@@ -143,21 +196,30 @@ def to_markdown(b: dict) -> str:
          "_Intelligence for the Brain, not a recorded recommendation. Waiver availability is **unconfirmed** until checked on Yahoo._",
          "",
          f"FAAB: **${b['faab']['jd_balance']}** (min bid $1) · FantasyPros pulled {b['generated_from']['fantasypros_pulled_at']} · roster as of {b['generated_from']['jd_roster_observed_at']}",
-         "", "## Lineup", "", "| Slot | Player | Proj (PPR) |", "|---|---|---|"]
+         "", "## Lineup", "", "| Slot | Player | Proj (PPR) | Week rank |", "|---|---|---|---|"]
     for s in b["lineup"]["suggested"]:
-        L.append(f"| {s['slot']} | {s['player'] or '—'} | {s['proj_ppr'] if s['proj_ppr'] is not None else '—'} |")
+        L.append(f"| {s['slot']} | {s['player'] or '—'} | {s['proj_ppr'] if s['proj_ppr'] is not None else '—'} | "
+                 f"{int(s['ecr_rank']) if s.get('ecr_rank') else '—'} |")
     ch = b["lineup"]["changes"]
-    L += ["", f"Projected: current starters **{b['lineup']['proj_current_starters']}** → suggested **{b['lineup']['proj_suggested']}**"]
+    basis = {s.get("basis") for s in b["lineup"]["suggested"]}
+    L += ["", f"Projected: current starters **{b['lineup']['proj_current_starters']}** → suggested **{b['lineup']['proj_suggested']}**"
+          + (" (some values estimated from rankings; projections unavailable)" if "ranking" in basis else "")]
     if ch["start"] or ch["bench"]:
         L.append(f"Changes: start {', '.join(ch['start']) or '—'}; bench {', '.join(ch['bench']) or '—'}")
     else:
         L.append("No lineup changes suggested.")
-    L += ["", "## Waiver targets", "", "| Pri | Player | Pos | Proj | ROS rank | Replaces | Availability |", "|---|---|---|---|---|---|---|"]
+    L += ["", "## Waiver targets", "", "| Pri | Player | Pos | FP waiver # | ROS rank | Yahoo % | Replaces | In Sparta |",
+          "|---|---|---|---|---|---|---|---|"]
     for t in b["waiver_targets"]:
-        L.append(f"| {t['priority']} | {t['name']} ({t['nfl_team'] or ''}) | {t['position']} | {t['proj_ppr'] if t['proj_ppr'] is not None else '—'} | "
-                 f"{int(t['ros_rank']) if t['ros_rank'] else '—'} | {t['replaces'] or '—'} | {t['availability']} |")
+        avail = "verify (likely free)" if (t["availability"].startswith("UNKNOWN") and (t["yahoo_rostered_pct"] or 100) < 30) \
+            else "verify" if t["availability"].startswith("UNKNOWN") else t["availability"]
+        L.append(f"| {t['priority']} | {t['name']} ({t['nfl_team'] or ''}) | {t['position']} | {int(t['fp_waiver_rank']) if t['fp_waiver_rank'] else '—'} | "
+                 f"{int(t['ros_rank']) if t['ros_rank'] else '—'} | {('%d%%' % t['yahoo_rostered_pct']) if t['yahoo_rostered_pct'] is not None else '—'} | "
+                 f"{t['replaces'] or '—'} | {avail} |")
     if not b["waiver_targets"]:
         L.append("| — | No upgrades found among players not on reconstructed rosters | | | | | |")
+    if b.get("roster_notes"):
+        L += ["", "## Roster notes", ""] + [f"- {n}" for n in b["roster_notes"]]
     if b["unmatched_roster_players"]:
         L += ["", f"Not matched to FantasyPros: {', '.join(b['unmatched_roster_players'])}"]
     over = b["generated_from"]["teams_over_roster_limit"]
