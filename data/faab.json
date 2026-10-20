@@ -273,5 +273,13 @@
       "yahoo_waiver_budget_displayed": 33,
       "result": "CONFLICT_UNRESOLVED \u2014 Yahoo still shows $33; repo keeps user-confirmed $24 (explicit user correction outranks display per rule 8). Needs user to reconcile (FA add costs may be tracked outside Yahoo's waiver budget)."
     }
+  },
+  "yahoo_display_vs_authoritative": {
+    "confirmed_at_et": "2026-10-20T08:45:00-04:00",
+    "source": "Explicit user (James) confirmation in Sparta Brain chat",
+    "yahoo_displayed": 33,
+    "authoritative_balance": 24,
+    "explanation": "$24 is JD's real-money balance; Yahoo still displays $33 because free-agent $1 charges are applied by commissioner budget adjustment. Commissioner expected to set Yahoo to $24 on 2026-10-20.",
+    "live_check_instruction": "Do not overwrite jd_authoritative_balance with the Yahoo display while it shows $33; when Yahoo shows $24 (commissioner log entry), record the adjustment and clear this note."
   }
 }
