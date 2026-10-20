@@ -37,6 +37,11 @@ Tuesday→Wednesday (verify the exact time from Yahoo evidence when available).
 - Every material recommendation → one DECISION via `scripts/record_decision.py decision <file>`
   with confidence 1–5 and urgency. Never edit history. Proposed ≠ completed (rule 15).
 - Commit with a clear message, push, re-read the file, and confirm (rule 11).
+- Standing learning rules (`learning/rules/learning_rules_v4.json`, adopted 2026-10-20) — apply every session:
+  - **LR-012 Rank everyone:** start/sit and FLEX calls rank ALL eligible JD players with a projection, never a two-player duel.
+  - **LR-013 Market-anchored bids:** bid from Sparta's own clearing prices and the real-money balance (JD $24 as of Oct 19); say "pass" rather than a token bid; $1–$2 for backups/K/DEF; keep $10–$15 in reserve for a starter injury.
+  - **LR-014 Fresh roster only:** roster/IR/add-drop/lineup advice needs a JD roster observation < 24h old; otherwise ask for a Team-tab screenshot first.
+  - **LR-015 Log only real decisions:** restatements, watches and confirmations are operational entries, not DECISIONs; a changed call names the DECISION it supersedes.
 
 ## Session A — Tuesday report card (~9:45 AM ET)
 

@@ -1,0 +1,64 @@
+{
+  "system": "CLAUDE_SPARTA_BRAIN",
+  "version": "learning_rules_v4",
+  "effective_date": "2026-10-20",
+  "supersedes": "learning_rules_v3",
+  "adopted_by": "Claude (Sparta Brain) with explicit owner approval (James, chat 2026-10-20 ~00:00 ET)",
+  "changes": [
+    {
+      "rule_id": "SPARTA-LR-012",
+      "date": "2026-10-20",
+      "old_rule": "Start/sit and FLEX notes could compare two named players (e.g. Wicks vs Cowing, Dobbins vs Vele).",
+      "new_rule": "Every start/sit or FLEX recommendation ranks ALL eligible JD players for the open slots (starters and bench) with this week's projection from at least one source, and names the full set of starters, not just a head-to-head pair.",
+      "reason": "The best FLEX option sat on the bench in 4 of 6 weeks; two-player duels missed the actual best option every time.",
+      "supporting_decisions": [
+        "SPARTA-2026W2-DOBBINS-OVER-VELE-20260920-0802",
+        "SPARTA-2026W4-WICKS-SMITH-THU-DNP-WATCH-20261001-1500",
+        "SPARTA-2026W6-WICKS-COWING-USAGE-REASSESS-20261017-0704"
+      ],
+      "sample_size": 4,
+      "expected_effect": "Cut bench points lost (season 72.36, ~12/week) by roughly a third; raise lineup efficiency above 94%."
+    },
+    {
+      "rule_id": "SPARTA-LR-013",
+      "date": "2026-10-20",
+      "old_rule": "Waiver bids were set from generic FAAB guidance.",
+      "new_rule": "Anchor each waiver bid to Sparta's own clearing prices recorded in data/faab.json and data/transactions.json (e.g. hot RBs $12-$27, TE/K/DEF $1-$4) and to JD's remaining real-money FAAB. If the anchored price is unaffordable or not worth it, say 'pass' instead of making a token bid. Backups, kickers and defenses: $1-$2. Keep a reserve (currently $10-$15 of $24) for an injury to a starter.",
+      "reason": "Below-market bids lost (Sanders $4/$5 vs $12 clear; Shipley $7 vs $27) while token bids added churn; JD has only $24 real dollars left.",
+      "supporting_decisions": [
+        "SPARTA-2026W2-SANDERS-WAIVER-20260914-2201",
+        "SPARTA-2026W2-SANDERS-WAIVER-ESCALATE-20260915-0324",
+        "SPARTA-2026W5-SHIPLEY-ADD-20261006-0802"
+      ],
+      "sample_size": 3,
+      "expected_effect": "Fewer lost or wasted claims; FAAB spent only where it can win."
+    },
+    {
+      "rule_id": "SPARTA-LR-014",
+      "date": "2026-10-20",
+      "old_rule": "Roster/IR advice could be issued from the most recent repository snapshot, even if days old.",
+      "new_rule": "Roster, IR, add/drop and lineup advice requires a JD roster observation less than 24 hours old (Yahoo live check, Yahoo API, or James's screenshots). If older, the first line asks James for a Team-tab screenshot and any advice is marked 'pending roster check'. When James reports a move, rebuild the whole roster before advising again.",
+      "reason": "Two Hurts IR recommendations were issued after James had already dropped Hurts (snapshot 2 days stale); Kirk IR status was also misread from stale/indirect data. Structural data-integrity defect: adopted immediately (AGENTS rule 45).",
+      "supporting_decisions": [
+        "SPARTA-2026W6-HURTS-IR-ELIGIBILITY-20261017-1656",
+        "SPARTA-2026W6-HURTS-IR-LONG-TERM-CONTINGENCY-20261018-1501"
+      ],
+      "sample_size": 2,
+      "expected_effect": "Eliminate advice about players JD no longer owns."
+    },
+    {
+      "rule_id": "SPARTA-LR-015",
+      "date": "2026-10-20",
+      "old_rule": "Restatements, watches and confirmations were logged as DECISIONs.",
+      "new_rule": "Log a DECISION only for a new or changed recommendation. Restatements, watches with no action, and confirmations go in as operational entries; when a call is changed, the new DECISION names the one it supersedes.",
+      "reason": "17 of 54 reviewed decisions were restatements/watches/admin and had to be excluded from calibration.",
+      "supporting_decisions": [
+        "SPARTA-2026W1-DEMERCADO-HOLD-20260912-1917",
+        "SPARTA-2026W2-DOBBINS-FLEX-HARVEY-UNLIKELY-20260920-0811",
+        "SPARTA-2026W4-WILSON-START-BEAT-CONFIRM-20261003-0756"
+      ],
+      "sample_size": 17,
+      "expected_effect": "Cleaner scorecard and confidence calibration."
+    }
+  ]
+}
