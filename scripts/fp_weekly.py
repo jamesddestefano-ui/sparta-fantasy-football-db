@@ -239,6 +239,32 @@ def write_results(week: int, out_root: Path = ROOT) -> dict:
     return out
 
 
+def pull_results(week: int, api_key: str, out_root: Path = ROOT, fetcher=fetch) -> list:
+    """Fetch actual PPR points for a completed week into results/ and write results.json.
+
+    Files already saved are not re-requested, so re-running only fills gaps."""
+    errors = []
+    res_dir = week_dir(week, out_root) / "results"
+    res_dir.mkdir(parents=True, exist_ok=True)
+    for kind, pos, path, params in RESULT_REQUESTS:
+        target = res_dir / f"{kind}_{pos}.json"
+        if target.exists():
+            continue
+        p = {k: v.replace("{prev}", str(week)) for k, v in params.items()}
+        try:
+            payload = fetcher(path, p, api_key)
+        except RateLimited as exc:
+            errors.append(f"results w{week} {pos}: {exc}")
+            break
+        except Exception as exc:
+            errors.append(f"results w{week} {pos}: {exc}")
+            continue
+        target.write_text(json.dumps(payload, indent=1, ensure_ascii=False))
+        time.sleep(SPACING_S)
+    write_results(week, out_root)
+    return errors
+
+
 # ------------------------------------------------------------------- main
 
 def run(week: int, api_key: str | None, out_root: Path = ROOT, normalize_only: bool = False,
@@ -262,26 +288,8 @@ def run(week: int, api_key: str | None, out_root: Path = ROOT, normalize_only: b
                 continue
             (raw_dir / f"{kind}_{pos}.json").write_text(json.dumps(payload, indent=1, ensure_ascii=False))
             time.sleep(SPACING_S)
-        prev = week - 1
-        if prev >= 1:
-            res_dir = week_dir(prev, out_root) / "results"
-            res_dir.mkdir(parents=True, exist_ok=True)
-            for kind, pos, path, params in RESULT_REQUESTS:
-                target = res_dir / f"{kind}_{pos}.json"
-                if target.exists():
-                    continue
-                p = {k: v.replace("{prev}", str(prev)) for k, v in params.items()}
-                try:
-                    payload = fetcher(path, p, api_key)
-                except RateLimited as exc:
-                    errors.append(f"results {pos}: {exc}")
-                    break
-                except Exception as exc:
-                    errors.append(f"results {pos}: {exc}")
-                    continue
-                target.write_text(json.dumps(payload, indent=1, ensure_ascii=False))
-                time.sleep(SPACING_S)
-            write_results(prev, out_root)
+        if week - 1 >= 1:
+            errors += pull_results(week - 1, api_key, out_root, fetcher)
     raw = {f.stem: json.loads(f.read_text()) for f in sorted(raw_dir.glob("*.json"))}
     norm = normalize(raw)
     norm.update({"season": SEASON, "week": week, "pulled_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -294,7 +302,26 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--week", type=int, default=None)
     ap.add_argument("--normalize-only", action="store_true")
+    ap.add_argument("--results-only", metavar="WEEKS",
+                    help="only fetch actual points for completed weeks, e.g. 6 or 1-6 (no board pull)")
     args = ap.parse_args(argv)
+    if args.results_only:
+        key = os.environ.get("FANTASYPROS_API_KEY", "").strip()
+        if not key:
+            raise SystemExit("FANTASYPROS_API_KEY is not set")
+        a, _, b = args.results_only.partition("-")
+        weeks = range(int(a), int(b or a) + 1)
+        errors, missing = [], []
+        for w in weeks:
+            errors += pull_results(w, key)
+            res = week_dir(w) / "results.json"
+            n = len(json.loads(res.read_text())["players"]) if res.exists() else 0
+            print(f"RESULTS WEEK {w}: players={n}")
+            if not n:
+                missing.append(w)
+        for e in errors:
+            print(f"::warning title=FantasyPros results::{e}")
+        return 1 if missing else 0
     week = args.week or current_week()
     out = run(week, os.environ.get("FANTASYPROS_API_KEY", "").strip() or None, normalize_only=args.normalize_only)
     print(f"FANTASYPROS WEEK {week}: players={len(out['players'])} errors={len(out['errors'])}")

@@ -16,6 +16,11 @@ on:
         required: false
         default: ''
         type: string
+      results_weeks:
+        description: 'Only backfill actual points for completed weeks, e.g. 6 or 1-6 (skips the board)'
+        required: false
+        default: ''
+        type: string
 
 permissions:
   contents: write
@@ -41,7 +46,15 @@ jobs:
           python -m pip install --disable-pip-version-check -q -r requirements-fantasypros.txt
           python -m unittest discover -s tests
 
+      - name: Backfill actual points (results only)
+        if: inputs.results_weeks
+        env:
+          FANTASYPROS_API_KEY: ${{ secrets.FANTASYPROS_API_KEY }}
+          RESULTS_WEEKS: ${{ inputs.results_weeks }}
+        run: python scripts/fp_weekly.py --results-only "$RESULTS_WEEKS"
+
       - name: Pull FantasyPros
+        if: ${{ !inputs.results_weeks }}
         env:
           FANTASYPROS_API_KEY: ${{ secrets.FANTASYPROS_API_KEY }}
           WEEK: ${{ inputs.week }}
@@ -50,6 +63,7 @@ jobs:
           python scripts/fp_weekly.py ${WEEK:+--week "$WEEK"}
 
       - name: Build board
+        if: ${{ !inputs.results_weeks }}
         env:
           WEEK: ${{ inputs.week }}
         run: |
@@ -57,18 +71,21 @@ jobs:
           cat "$RUNNER_TEMP/board.md" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Validate written board and bind its receipt (offline only)
+        if: ${{ !inputs.results_weeks }}
         env:
           WEEK: ${{ inputs.week }}
         run: python scripts/sparta_board.py --validate-only ${WEEK:+--week "$WEEK"}
 
       - name: Validate and commit
+        env:
+          RESULTS_WEEKS: ${{ inputs.results_weeks }}
         run: |
           python scripts/validate_sparta.py
           git config user.name "sparta-board[bot]"
           git config user.email "sparta-board@users.noreply.github.com"
           git add intelligence/fantasypros/weekly intelligence/board
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
-          git commit -q -m "Sparta weekly board: FantasyPros pull + JD lineup/waiver board"
+          git commit -q -m "Sparta weekly board: FantasyPros pull + JD lineup/waiver board${RESULTS_WEEKS:+ (results backfill weeks $RESULTS_WEEKS)}"
           for i in 1 2 3; do
             git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
             sleep $((i * 5))
