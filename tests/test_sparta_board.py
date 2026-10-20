@@ -123,6 +123,49 @@ class BoardTests(unittest.TestCase):
         self.assertIn("unconfirmed", md)
 
 
+    def save_board(self):
+        out=self.tmp/'intelligence/board';out.mkdir(parents=True,exist_ok=True)
+        path=out/'2026-w07.json';path.write_text(json.dumps(self.board))
+        return path
+
+    def test_validation_receipt_binds_exact_board_and_collector_consumes_it(self):
+        import hashlib
+        import sparta_collect
+        from datetime import datetime,timezone
+        path=self.save_board()
+        receipt=sparta_board.write_validation_receipt(WEEK,root=self.tmp)
+        self.assertEqual(receipt['status'],'PASS')
+        self.assertEqual(receipt['board_sha256'],hashlib.sha256(path.read_bytes()).hexdigest())
+        self.assertFalse(receipt['provider_contract_validated'])
+        result=sparta_collect.collect('waivers',root=self.tmp,week=7,now=datetime(2026,10,20,13,tzinfo=timezone.utc))
+        self.assertTrue(result['sections']['weekly_board']['data']['validated'])
+        path.write_text(path.read_text()+' ')
+        result=sparta_collect.collect('waivers',root=self.tmp,week=7,now=datetime(2026,10,20,13,tzinfo=timezone.utc))
+        self.assertEqual(result['sections']['weekly_board']['status'],'UNAVAILABLE')
+
+    def test_tampered_board_cannot_receive_pass_receipt(self):
+        path=self.save_board();board=json.loads(path.read_text());board['league']='other'
+        path.write_text(json.dumps(board))
+        with self.assertRaises(ValueError):sparta_board.write_validation_receipt(WEEK,root=self.tmp)
+        proof=json.loads(path.with_suffix('.validation.json').read_text())
+        self.assertEqual(proof['status'],'FAIL')
+
+    def test_existing_sparta_validation_failure_revokes_previous_receipt(self):
+        path=self.save_board();sparta_board.write_validation_receipt(WEEK,root=self.tmp)
+        faab=self.tmp/'data/faab.json';data=json.loads(faab.read_text());data['starting_budget']=999
+        faab.write_text(json.dumps(data))
+        with self.assertRaises(ValueError):sparta_board.write_validation_receipt(WEEK,root=self.tmp)
+        self.assertEqual(json.loads(path.with_suffix('.validation.json').read_text())['status'],'FAIL')
+
+    def test_changed_inputs_cannot_attest_old_board(self):
+        path=self.save_board()
+        normalized=fp_weekly.week_dir(WEEK,self.tmp)/'players.json'
+        fp=json.loads(normalized.read_text());fp['pulled_at']='2026-10-21T09:00:00Z'
+        normalized.write_text(json.dumps(fp))
+        with self.assertRaises(ValueError):sparta_board.write_validation_receipt(WEEK,root=self.tmp)
+        self.assertEqual(json.loads(path.with_suffix('.validation.json').read_text())['status'],'FAIL')
+
+
 if __name__ == "__main__":
     unittest.main()
 
