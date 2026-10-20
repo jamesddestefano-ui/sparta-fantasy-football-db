@@ -266,6 +266,12 @@
     "balance_after": 24,
     "delta_usd": -9,
     "likely_cause": "Free-agent adds after the 2026-10-14 07:55 Yahoo read cost >= $1 each (rule 14): McLaughlin, Strong, Estime, Sampson, Cowing, McKee, C. Kirk, Sadiq (8) plus $1 unexplained. Per-move costs not individually confirmed; transactions.json rows left unchanged.",
-    "pending_yahoo_reverification": true
+    "pending_yahoo_reverification": true,
+    "yahoo_reverification_2026_10_20": {
+      "observed_at": "2026-10-20T07:58:00-04:00",
+      "check_id": "sparta-live-check-20261020-0750",
+      "yahoo_waiver_budget_displayed": 33,
+      "result": "CONFLICT_UNRESOLVED \u2014 Yahoo still shows $33; repo keeps user-confirmed $24 (explicit user correction outranks display per rule 8). Needs user to reconcile (FA add costs may be tracked outside Yahoo's waiver budget)."
+    }
   }
 }
