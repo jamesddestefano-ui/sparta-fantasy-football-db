@@ -56,7 +56,7 @@ def comparison(root):
     evidence = []
     for line_number,line in enumerate(lines,1):
         row = json.loads(line)
-        if row.get('decision_id') in ids:
+        if row.get('decision_id') in ids and row.get('event_type','DECISION')=='DECISION':
             evidence.append({'line':line_number,'decision_id':row['decision_id'],
                 'timestamp_et':row['timestamp_et'],'signals':row['key_supporting_signals'],
                 'risks':row['key_risk_factors']})

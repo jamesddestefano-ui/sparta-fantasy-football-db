@@ -8,6 +8,9 @@ from datetime import datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+# Frozen copy of data/ as of 2026-10-19 (commit before d64ab5b). Fixture tests must not
+# depend on live league state, which changes with every roster move or FAAB correction.
+FROZEN_DATA = ROOT / "tests/fixtures/sparta_data_20261019"
 sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "tests"))
 
@@ -37,7 +40,7 @@ class NameKeyTests(unittest.TestCase):
 class SyncTests(unittest.TestCase):
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp())
-        shutil.copytree(ROOT / "data", self.tmp / "data",
+        shutil.copytree(FROZEN_DATA, self.tmp / "data",
                         ignore=shutil.ignore_patterns("yahoo_live_snapshot_*", "transaction_appends", "yahoo_api"))
         self.fx = write_fixtures(self.tmp / "fixtures")
 

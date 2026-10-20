@@ -1,0 +1,95 @@
+{
+  "league": "sparta",
+  "open_issues": [
+    {
+      "category": "OWNERSHIP_CONFLICT",
+      "player": "Greg Dulcich",
+      "draft_board_team": "TM",
+      "later_user_correction_team": "MN",
+      "rule": "Preserve both. Later explicit correction controls current state until superseded by newer authoritative evidence."
+    },
+    {
+      "category": "DRAFT_NIGHT_ADDS",
+      "details": "Yahoo transaction screenshots show Aug. 30 adds for Jaguars D/ST and Michael Wilson by TM and D.J. Moore by VV. These overlap the captured auction board and are preserved separately to avoid double counting."
+    },
+    {
+      "category": "CURRENT_LEAGUE_OWNERSHIP_COMPLETENESS",
+      "details": "Draft results plus captured transactions establish substantial ownership history, but absence from current files is never sufficient to label a player a confirmed free agent. Use UNKNOWN unless Yahoo/user evidence confirms availability."
+    },
+    {
+      "category": "YAHOO_KENDRE_MILLER_STATUS_MAP_LAG_2026_09_16",
+      "details": "Authenticated Yahoo live pull at 08:15 ET contains an internally stale ownership map entry showing Kendre Miller as JP, but the same authenticated pull records JP dropping Miller to waivers at 01:31 ET in the Mack Hollins $3 waiver transaction. Transaction chronology controls current classification: WAIVERS_CONFIRMED. Exact waiver-clear date still requires a later Yahoo status check."
+    }
+  ],
+  "resolved_issues": [
+    {
+      "category": "RAVENS_DST_DISPOSITION",
+      "resolution": "JD dropped Ravens D/ST and added Jets D/ST on 2026-09-08 08:29 ET per Yahoo transaction screenshot."
+    },
+    {
+      "category": "KENDRE_MILLER_CURRENT_OWNER",
+      "resolution": "JP/X-Factor added Kendre Miller on 2026-09-08 22:27 ET per Yahoo transaction screenshot. This ownership was later superseded on Sep. 16 when JP dropped Miller to waivers."
+    },
+    {
+      "category": "KENDRE_MILLER_AVAILABILITY_CLASSIFICATION_2026_09_16",
+      "resolution": "User stated Miller was 'available,' which established that he was a candidate but did not precisely distinguish free agent from waivers. The authenticated Yahoo Sep. 16 01:31 transaction explicitly says JP dropped Kendre Miller 'To Waivers.' Current exact classification is therefore WAIVERS_CONFIRMED, not FREE_AGENT_CONFIRMED, until later Yahoo evidence supersedes it.",
+      "source": "Authenticated Yahoo Agent Computer live pull 2026-09-16T08:15:19-04:00"
+    },
+    {
+      "category": "MONGO_CONTAMINATION_REMOVED_2026_09_11",
+      "resolution": "User clarified that placing Malik Davis on IR and adding Emari Demercado for $0 occurred in Mongo, not Sparta. Removed those false Sparta transaction/FAAB/lineup/roster records; restored Malik Davis as active on JD's Sparta roster. The correction does not record any new Sparta transaction."
+    },
+    {
+      "category": "DEMERCADE_FOR_DAVIS_SPARTA_CONFIRMATION_2026_09_11",
+      "resolution": "After the earlier Mongo contamination was removed, the user separately and explicitly confirmed the actual Sparta transaction at 7:23 PM ET: JD added Emari Demercado and dropped Malik Davis. This later authoritative event supersedes the restored-Davis state. Demercado is active on JD; Davis is dropped/historical. Cost metadata was later corrected on 2026-09-15: this Week 1 transaction had $0 FAAB and no separate pickup fee, so total real-money cost was $0.",
+      "cost": "$0 FAAB; no separate transaction fee; JD FAAB remained $100.",
+      "cost_correction_source": "Billy Enright league-chat rule clarification supplied by user 2026-09-15"
+    },
+    {
+      "category": "SPARTA_PICKUP_COST_RULE_2026_09_11",
+      "resolution": "SUPERSEDED on 2026-09-15. The earlier interpretation that every add carried a separate $1 transaction fee was incorrect. Preserve this entry as provenance only; current rule is controlled by SPARTA_FAAB_MINIMUM_RULE_CORRECTION_2026_09_15."
+    },
+    {
+      "category": "SPARTA_FAAB_MINIMUM_RULE_CORRECTION_2026_09_15",
+      "resolution": "Billy Enright's league-chat message clarified the economics: there is no separate $1 pickup transaction fee. After the Sep. 15 Week 2 FAAB run, all pickups going forward require a minimum $1 FAAB bid. Because Sparta FAAB dollars are real dollars, the winning FAAB bid itself is the real-money cost. Current pending Sanders $12 / Allen $11 / Holani $7 claims therefore cost $12 / $11 / $7 respectively if won, not bid plus $1.",
+      "source": "League-chat screenshot supplied by user at 2026-09-15 21:07 ET",
+      "status": "CURRENT_CONTROLLING_COST_RULE"
+    },
+    {
+      "category": "WEEK1_VELE_DOBBINS_LINEUP_SNAPSHOT_LAG_2026_09_13",
+      "resolution": "The authenticated Yahoo live snapshot observed at 12:38:14 ET still showed J.K. Dobbins in JD's second W/R/T slot, but the user's later Yahoo roster screenshot explicitly showed Devaughn Vele in that W/R/T slot with Dobbins benched. Treat the later user Yahoo screenshot as the newer authoritative lineup evidence. Current Week 1 lineup is Vele START and Dobbins BENCH. Do not let the stale 12:38 snapshot overwrite data/lineups/week_01_jd.json; require a later authenticated Yahoo refresh before superseding this state.",
+      "source": "User Yahoo roster screenshot in Sparta Brain plus data/lineups/week_01_jd.json",
+      "status": "RESOLVED_BY_NEWER_USER_YAHOO_EVIDENCE"
+    },
+    {
+      "category": "YAHOO_HOLANI_TRANSACTION_SNAPSHOT_LAG_2026_09_16",
+      "resolution": "RESOLVED 2026-09-17T08:23:05-04:00. The authenticated Yahoo Sparta live pull re-verified George Holani on JD's roster and Malachi Fields on waivers after the user's Sep. 16 ~21:51 ET completed transaction. The prior Sep. 16 20:21 snapshot remains preserved as pre-transaction provenance and no longer represents an open reconciliation conflict.",
+      "source": "Authenticated Yahoo Agent Computer live pull 2026-09-17T08:23:05-04:00",
+      "status": "RESOLVED_BY_NEWER_YAHOO_EVIDENCE"
+    },
+    {
+      "category": "WEEK2_DOBBINS_VELE_LINEUP_SNAPSHOT_LAG_2026_09_20",
+      "resolution": "The authenticated Yahoo Sparta live snapshot observed at 08:02:30 ET still showed Devaughn Vele in JD's second W/R/T slot and J.K. Dobbins on the bench. At 10:25 ET, after the Sparta Brain recommended START Dobbins over Vele, the user explicitly confirmed 'Dobbins is in.' Treat that later explicit user confirmation as authoritative for the lineup-only change: Week 2 Dobbins START, Vele BENCH, until newer authenticated Yahoo evidence supersedes it.",
+      "source": "Explicit user confirmation in Sparta Brain at 2026-09-20T10:25:00-04:00 plus data/lineups/week_02_jd.json",
+      "status": "RESOLVED_BY_NEWER_USER_CONFIRMATION"
+    },
+    {
+      "category": "DETROIT_DST_USER_REPORTED_PENDING_RECONCILIATION_2026_09_22",
+      "resolution": "RESOLVED 2026-09-22T12:32:13-04:00. Newer authenticated Yahoo Sparta evidence shows the user's 'I went Detroit actually' statement referred to a pending Week 3 waiver claim, not a completed acquisition: JD has a $2 claim on Lions D/ST, dropping Buccaneers D/ST, clearing Sep. 23 at priority 4. Lions remains pending and must not be recorded as acquired unless the claim clears.",
+      "source": "Authenticated Yahoo Agent Computer live pull 2026-09-22T12:32:13-04:00",
+      "status": "RESOLVED_BY_NEWER_YAHOO_EVIDENCE"
+    },
+    {
+      "category": "WEEK3_WAIVER_CLAIMS_SNAPSHOT_LAG_2026_09_22_2059",
+      "resolution": "The authenticated Yahoo Agent snapshot observed at 20:20 ET still showed Gadsden $14 and Lions D/ST $2 as JD's pending Sep. 23 claims. A newer user-provided Yahoo Pending Transactions screenshot at 20:59 ET shows Gadsden raised to $16 and the Lions claim replaced by Packers D/ST $3, while Wilson $5 / Bigsby $3 / Shipley $1 remain unchanged. The newer screenshot controls pending-claim state only. No acquisition has completed and JD FAAB remains $85 until waivers process.",
+      "source": "User-provided Yahoo Pending Transactions screenshot in Sparta Brain, screen time 8:59 PM ET on 2026-09-22",
+      "status": "RESOLVED_BY_NEWER_USER_YAHOO_EVIDENCE"
+    },
+    {
+      "category": "WEEK3_WAIVER_RESULTS_2026_09_23",
+      "resolution": "User-provided Yahoo My Team and league-chat waiver-result screenshots resolve the Sep. 23 pending state. JD acquired Oronde Gadsden for $12 dropping Michael Mayer, Emanuel Wilson for $8 dropping George Holani, Tre Tucker for $3 dropping Caleb Douglas, and Packers D/ST for $3 dropping Buccaneers D/ST. Exact winning bids total $26, reducing authoritative JD FAAB from $85 to $59. Final Gadsden $12 supersedes prior pending $14/$16 snapshots; final Wilson $8 supersedes the prior $5 pending bid. Tucker's $3 tied Michael Capone's $3 and Yahoo explicitly shows Capone as lower waiver priority, so JD won the tie. No separate pickup fee applies.",
+      "source": "User-provided Yahoo Sparta My Team screenshots at 2026-09-23 07:41 ET and Yahoo league-chat / waiver-result screenshots at 2026-09-23 07:43 ET",
+      "status": "RESOLVED_BY_NEWER_USER_YAHOO_EVIDENCE"
+    }
+  ]
+}
