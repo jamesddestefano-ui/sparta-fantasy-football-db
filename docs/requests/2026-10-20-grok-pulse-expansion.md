@@ -3,6 +3,7 @@
 - From: Claude (Sparta Brain), approved by James (owner), 2026-10-20
 - To: Sparta Grok Bot / Grok Pulse maintainer (writes only `intelligence/` mirror files, AGENTS rule 27)
 - Status: REQUESTED — not yet implemented
+- Amended 2026-10-20 by James: coverage expanded from JD's teams to **all 32 NFL teams**.
 
 ## Why
 
@@ -12,7 +13,7 @@ Goal: fewer, more decision-relevant items — not more volume.
 
 ## What to add
 
-1. **One beat reporter per NFL team on JD's roster.** Pick the current primary beat writer for each team; the list follows `data/current_roster_jd.json` and changes as the roster changes. Today: BAL, CAR, CIN, CLE, DEN, LV, NO, NYJ, PHI, SEA, SF — plus ATL if Michael Penix Jr. is acquired (pending claim, processes Oct 21).
+1. **One beat reporter for every NFL team (all 32).** Pick the current primary beat writer for each team. Teams with JD players (today BAL, CAR, CIN, CLE, DEN, LV, NO, NYJ, PHI, SEA, SF, plus ATL if Penix is claimed) get top priority.
 2. **One usage-data account** that posts weekly snap share, route participation and target share (one source, not several).
 3. **Keep** the current national insiders and fantasy analysts unchanged.
 
@@ -20,10 +21,13 @@ Please list each new account in the feed's `sourceNotes` with team, handle and d
 
 ## Filter (what to emit)
 
-Emit an item only if it names at least one of:
+Emit an item if it names at least one of:
 - a player on JD's roster (`data/current_roster_jd.json`);
 - a player on this week's waiver-target list (`intelligence/board/latest.md` / `.json`);
-- a starter for JD's opponent this week.
+- a starter for JD's opponent this week;
+- **any team's role change that could create a waiver pickup** (a starter injured or benched and the backup promoted, a new lead back, a WR moving into a starting role). This is why all 32 teams are covered: to find next week's pickups before they reach the waiver lists.
+
+Do not emit routine items with none of these (general team news, contracts, opinion).
 
 Priority topics: injury status and practice participation (DNP / limited / full), IR activations, depth-chart and first-team-rep changes, snap/route/target share, coach comments on roles, inactives.
 
@@ -32,7 +36,7 @@ Priority topics: injury status and practice participation (DNP / limited / full)
 Keep the existing `grok_pulse_latest.json` item fields: `id`, `at`, `expertId`, `expert`, `handle`, `outlet`, `text`, `players`, `url`, `kind`, `eventId`, `signal`, `priorStatus`, `newStatus`, `why`, `implication`, `opportunity`, `corroboration`, `supportingSources`, `priority`. Add, if possible:
 - `sourceType`: `BEAT` | `NATIONAL` | `ANALYST` | `USAGE_DATA`
 - `team`: NFL team abbreviation
-- `relevance`: `JD_ROSTER` | `WAIVER_TARGET` | `OPPONENT`
+- `relevance`: `JD_ROSTER` | `WAIVER_TARGET` | `OPPONENT` | `DISCOVERY` (role change elsewhere that may create a pickup)
 
 ## Rules that still apply
 
@@ -45,8 +49,9 @@ Keep the existing `grok_pulse_latest.json` item fields: `id`, `at`, `expertId`, 
 
 - Each Sparta decision that uses a Pulse item records `pulse_used=TRUE` and lineage (rules 59, 62).
 - After 4 weeks (target review: Week 11 report card), any added account whose items never changed or confirmed a Sparta decision is proposed for removal; accounts with USEFUL/HIGHLY_USEFUL items stay.
-- Success measure: at least 1 USEFUL or HIGHLY_USEFUL Pulse item per week by Week 11, with no rise in DUPLICATIVE items.
+- Success measure: at least 1 USEFUL or HIGHLY_USEFUL Pulse item per week by Week 11, at least one DISCOVERY item that becomes a JD waiver claim, and no rise in DUPLICATIVE items.
+- With 32 beats, the Brain still shows James only items that touch his roster, his waiver options or his opponent (AGENTS rule 29).
 
 ## Copy-paste message for the Grok bot
 
-> Sparta Pulse expansion (approved by James): add one current beat reporter for each NFL team on JD's roster — BAL, CAR, CIN, CLE, DEN, LV, NO, NYJ, PHI, SEA, SF (add ATL if Penix is claimed) — plus one snap/route/target-share account. Keep current experts. Only emit items naming a JD player, a current waiver target, or JD's opponent's starters; prioritize practice participation, IR activations, depth-chart/first-team reps, usage share, coach role comments, inactives. Keep the existing item schema; add sourceType (BEAT/NATIONAL/ANALYST/USAGE_DATA), team, and relevance (JD_ROSTER/WAIVER_TARGET/OPPONENT) if possible. One fact = one item, reposts go in corroboration. Write only the Pulse mirror files under intelligence/. Full spec: docs/requests/2026-10-20-grok-pulse-expansion.md.
+> Sparta Pulse expansion (approved by James): add one current beat reporter for every NFL team (all 32; JD's teams BAL, CAR, CIN, CLE, DEN, LV, NO, NYJ, PHI, SEA, SF first) plus one snap/route/target-share account. Keep current experts. Emit items naming a JD player, a current waiver target, JD's opponent's starters, or any team's role change that could create a waiver pickup (tag DISCOVERY); skip routine team news; prioritize practice participation, IR activations, depth-chart/first-team reps, usage share, coach role comments, inactives. Keep the existing item schema; add sourceType (BEAT/NATIONAL/ANALYST/USAGE_DATA), team, and relevance (JD_ROSTER/WAIVER_TARGET/OPPONENT/DISCOVERY) if possible. One fact = one item, reposts go in corroboration. Write only the Pulse mirror files under intelligence/. Full spec: docs/requests/2026-10-20-grok-pulse-expansion.md.
