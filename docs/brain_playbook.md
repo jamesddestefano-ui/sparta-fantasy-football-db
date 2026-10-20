@@ -22,7 +22,8 @@ Tuesday→Wednesday (verify the exact time from Yahoo evidence when available).
    If the JD roster is older than 72 hours, lead with: "Roster data is N days old — send me
    Yahoo screenshots (Team tab) or ask Codex for a live check." Never present stale roster
    state as current.
-5. Use WebSearch for late news (injuries, practice reports, inactives) on JD players and
+5. Read `intelligence/grok_pulse_latest.json` (Grok Pulse: X/Twitter posts from tracked experts such as Rapoport, Schefter, Berry, Levitan, Establish The Run). Process only a new `live` pass (AGENTS rules 21–29); pull items naming JD players, this week's waiver targets, or a JD opponent's starters. One originating fact = one event; verify consequential items (rule 24). If the pass is older than 24h, say so in the freshness line.
+6. Use WebSearch for late news (injuries, practice reports, inactives) on JD players and
    the top waiver targets. Treat it as intelligence; one originating fact = one event (rule 61).
 
 ## Hard rules for every recommendation
