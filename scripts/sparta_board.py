@@ -15,6 +15,9 @@ reconstruction; their availability stays UNKNOWN until Yahoo confirms it
 from __future__ import annotations
 
 import argparse
+from datetime import datetime, timezone
+import hashlib
+import subprocess
 import json
 import sys
 from pathlib import Path
@@ -228,11 +231,64 @@ def to_markdown(b: dict) -> str:
     return "\n".join(L) + "\n"
 
 
+def write_validation_receipt(week: int, root: Path = ROOT) -> dict:
+    """Attest existing Sparta validation and exact offline builder read-back.
+
+    This is not validation of the unresolved FantasyPros provider contract.
+    A failure replaces any previous PASS receipt and fails the workflow.
+    """
+    root = Path(root)
+    path = root / 'intelligence' / 'board' / f'{fp_weekly.SEASON}-w{week:02d}.json'
+    proof_path = path.with_suffix('.validation.json')
+    raw = path.read_bytes()
+    proof = {
+        'status': 'FAIL',
+        'board_sha256': hashlib.sha256(raw).hexdigest(),
+        'league': 'sparta', 'season': fp_weekly.SEASON, 'week': week,
+        'validated_at_utc': datetime.now(timezone.utc).isoformat(),
+        'validation_scope': 'EXISTING_SPARTA_VALIDATOR_AND_OFFLINE_BOARD_REBUILD',
+        'provider_contract_validated': False,
+    }
+    try:
+        checked = subprocess.run(
+            [sys.executable, str(ROOT / 'scripts' / 'validate_sparta.py'), str(root / 'data')],
+            capture_output=True, text=True, check=False)
+        proof['sparta_validator_exit_code'] = checked.returncode
+        if checked.returncode != 0:
+            raise ValueError('Existing Sparta validation failed')
+        board = json.loads(raw)
+        # Reuse the existing builder rather than inventing a second board schema.
+        expected = build_board(week, root=root)
+        json.dumps(board, allow_nan=False)
+        if board != expected or path.read_bytes() != raw:
+            raise ValueError('Written board does not match its current offline inputs')
+        proof['status'] = 'PASS'
+    except (OSError, ValueError, KeyError, TypeError):
+        proof['status'] = 'FAIL'
+    temporary = proof_path.with_suffix('.json.tmp')
+    temporary.write_text(json.dumps(proof, indent=2, allow_nan=False) + '\n')
+    temporary.replace(proof_path)
+    if json.loads(proof_path.read_text()) != proof:
+        raise ValueError('Board receipt read-back failed')
+    if proof['status'] != 'PASS':
+        raise ValueError('Board validation failed; no PASS receipt issued')
+    return proof
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--week", type=int, default=None)
+    ap.add_argument("--validate-only", action="store_true", help="Validate existing board offline and write hash-bound receipt")
     args = ap.parse_args(argv)
     week = args.week or fp_weekly.current_week()
+    if args.validate_only:
+        try:
+            proof = write_validation_receipt(week)
+        except (OSError, ValueError):
+            print("Board validation failed; no PASS receipt issued", file=sys.stderr)
+            return 1
+        print(f"BOARD VALIDATION {proof['status']} week={week} sha256={proof['board_sha256']}")
+        return 0
     b = build_board(week)
     out = ROOT / "intelligence" / "board"
     out.mkdir(parents=True, exist_ok=True)
