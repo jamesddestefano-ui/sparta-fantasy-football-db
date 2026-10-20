@@ -1,5 +1,17 @@
 # Sparta Yahoo API sync
 
+## Status (2026-10-20): BLOCKED — waiting on Yahoo approval
+
+- Learned 2026-10-19 (James): Yahoo must approve the app before the Fantasy API returns
+  Sparta data. Until then every run fails and `data/yahoo_api/latest.json` does not exist.
+- The scheduled runs in `.github/workflows/yahoo_sync.yml` are paused; the manual
+  "Run workflow" button still works for testing.
+- Until approval, JD roster/FAAB/ownership come from James's Yahoo screenshots and the
+  Codex live checks (`data/yahoo_live_snapshot_latest.json`, `data/current_roster_jd.json`).
+- Do not spend a session debugging the sync while this note stands. When Yahoo approves:
+  run the workflow manually, confirm `latest.json` is written with `completed: true`, then
+  uncomment the cron lines and update this section.
+
 Replaces hand-captured browser snapshots with scheduled pulls from the official
 Yahoo Fantasy Sports API. Everything is read-only on Yahoo: the code issues GET
 requests only and cannot make moves, place claims, or set lineups.
