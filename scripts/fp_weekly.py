@@ -54,6 +54,9 @@ RESULT_REQUESTS = [("points", pos, f"/nfl/{SEASON}/player-points",
                     {"start": "{prev}", "end": "{prev}", "position": pos, "scoring": "PPR"})
                    for pos in ("QB", "RB", "WR", "TE", "K", "DST")]
 SPACING_S = 2.5
+SCORING_NOTE = ("FantasyPros standard PPR. RB/WR/TE/K matched Sparta's Yahoo totals exactly in Week 6; "
+                "QB (Sparta 6-pt pass TD) and DEF (Sparta DEF scoring) differ, so grade QB and DEF "
+                "from Yahoo screenshots, not from this file.")
 RETRY_WAITS_S = (15, 30, 60)
 
 
@@ -227,14 +230,17 @@ def write_results(week: int, out_root: Path = ROOT) -> dict:
                 continue
             pts = None
             weeks = row.get("weeks") or row.get("points")
-            if isinstance(weeks, dict):
+            if isinstance(row.get("points"), (int, float)) and not isinstance(row.get("points"), bool):
+                pts = _num(row["points"])           # exact single-week total; "weeks" is rounded to 0.1
+            elif isinstance(weeks, dict):
                 pts = _num(weeks.get(str(week)) if weeks.get(str(week)) is not None else next(iter(weeks.values()), None))
             if pts is None:
                 pts = _num(_first(row, "points", "fpts", "points_ppr", "total"))
             out[b["key"]] = {"name": b["name"], "position": b["position"], "nfl_team": b["nfl_team"], "points": pts}
     if out:
         (week_dir(week, out_root) / "results.json").write_text(
-            json.dumps({"season": SEASON, "week": week, "scoring": "PPR", "players": out}, indent=1,
+            json.dumps({"season": SEASON, "week": week, "scoring": "PPR",
+                        "scoring_note": SCORING_NOTE, "players": out}, indent=1,
                        ensure_ascii=False) + "\n")
     return out
 
