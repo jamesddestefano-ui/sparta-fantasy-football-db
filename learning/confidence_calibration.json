@@ -1,7 +1,7 @@
 {
   "system": "PRIME_SPARTA_FANTASY_WATCH",
   "season": 2026,
-  "updated_at": "2026-10-19T21:15:00-04:00",
+  "updated_at": "2026-10-19T23:30:00-04:00",
   "confidence_scale": {
     "1": "weak lean",
     "2": "modest lean",
@@ -29,36 +29,37 @@
       "average_process_grade": 2.5
     },
     "3": {
-      "recommendations": 2,
-      "wins": 0,
-      "losses": 2,
+      "recommendations": 7,
+      "wins": 4,
+      "losses": 3,
       "neutral": 0,
-      "success_rate": 0.0,
-      "average_outcome_grade": 1.0,
+      "success_rate": 0.571,
+      "average_outcome_grade": 2.43,
       "average_process_grade": 3.0
     },
     "4": {
-      "recommendations": 5,
-      "wins": 3,
-      "losses": 2,
-      "neutral": 0,
-      "success_rate": 0.6,
-      "average_outcome_grade": 2.2,
-      "average_process_grade": 2.6
+      "recommendations": 25,
+      "wins": 13,
+      "losses": 6,
+      "neutral": 6,
+      "success_rate": 0.52,
+      "average_outcome_grade": 2.48,
+      "average_process_grade": 2.88
     },
     "5": {
-      "recommendations": 0,
-      "wins": 0,
-      "losses": 0,
+      "recommendations": 3,
+      "wins": 2,
+      "losses": 1,
       "neutral": 0,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null
+      "success_rate": 0.667,
+      "average_outcome_grade": 2.33,
+      "average_process_grade": 3.33
     }
   },
   "rule": "Higher-confidence recommendations should materially outperform lower-confidence recommendations over a meaningful sample.",
   "grade_scale": "A=4 B=3 C=2 D=1 F=0; win=A/B, neutral=C, loss=D/F",
   "calibration_notes": [
-    "2026-w06: sample n=9, too small to recalibrate (rule 45). Both conf-4 losses were stale-roster Hurts IR decisions (ROSTER_STATE_ERROR), not football-judgment misses; excluding them conf 4 went 3-0."
+    "2026-w06: sample n=9, too small to recalibrate (rule 45). Both conf-4 losses were stale-roster Hurts IR decisions (ROSTER_STATE_ERROR), not football-judgment misses; excluding them conf 4 went 3-0.",
+    "2026-10-19 23:30: all Weeks 1-6 graded from Yahoo Matchup screenshots; restatements, watches, superseded and admin confirmations reviewed but excluded from counts. Sample still small (rule 45): no recalibration yet."
   ]
 }
