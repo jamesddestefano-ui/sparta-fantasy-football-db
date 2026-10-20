@@ -41,7 +41,7 @@
     },
     {
       "team": "JD",
-      "balance": 33
+      "balance": 24
     },
     {
       "team": "JU",
@@ -52,7 +52,7 @@
       "balance": 100
     }
   ],
-  "source": "Authenticated Yahoo read-only computerUse browser UI pull sparta-live-check-20261014-0750; JD FAAB $48\u2192$42 commissioner budget adjustment (Tue Oct 13 ~6pm ET) then -$9 W6 waiver wins \u2192 $33. Display $33 matches.",
+  "source": "Authenticated Yahoo read-only computerUse browser UI pull sparta-live-check-20261014-0750; JD FAAB $48\u2192$42 commissioner budget adjustment (Tue Oct 13 ~6pm ET) then -$9 W6 waiver wins \u2192 $33. Display $33 matches. | 2026-10-19 23:55 ET: JD balance corrected to $24 by explicit user confirmation.",
   "observed_at": "2026-10-14T07:55:00-04:00",
   "pickup_transaction_fee_usd": 0,
   "pickup_transaction_fee_is_separate_from_faab": false,
@@ -150,7 +150,7 @@
     "source": "Authenticated Yahoo Sparta live snapshot",
     "resolution": "The later authenticated Yahoo snapshot resolved the earlier display discrepancy before the Holani transaction."
   },
-  "jd_authoritative_balance": 33,
+  "jd_authoritative_balance": 24,
   "pending_yahoo_reverification": false,
   "pending_yahoo_reverification_reason": "CLEARED \u2014 Tue 1950 $48\u2192$42 HELD resolved by commissioner budget adjustment in Yahoo commish log; then W6 waivers -$9 \u2192 display $33 matches auth.",
   "week3_waiver_resolution": {
@@ -258,5 +258,14 @@
     "faab_spent": 9,
     "faab_after_commish_then_waivers": 33,
     "path": "$48 commissioner -$6 \u2192 $42; then waiver -$9 \u2192 $33"
+  },
+  "user_correction_2026_10_19": {
+    "confirmed_at_et": "2026-10-19T23:55:00-04:00",
+    "source": "Explicit user (James) confirmation in Sparta Brain chat: '$24 after last week'",
+    "balance_before_in_repo": 33,
+    "balance_after": 24,
+    "delta_usd": -9,
+    "likely_cause": "Free-agent adds after the 2026-10-14 07:55 Yahoo read cost >= $1 each (rule 14): McLaughlin, Strong, Estime, Sampson, Cowing, McKee, C. Kirk, Sadiq (8) plus $1 unexplained. Per-move costs not individually confirmed; transactions.json rows left unchanged.",
+    "pending_yahoo_reverification": true
   }
 }

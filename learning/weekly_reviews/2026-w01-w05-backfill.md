@@ -49,7 +49,7 @@ Season: 72.36 points left on the bench (91.8% average). A perfect lineup would n
 
 ## DATA QUALITY ISSUES
 - Weekly results were not stored anywhere until today; fixed by `matchups` and `weekly` in `learning/season_scorecard.json`.
-- Recorded FAAB bids sum to $61 while Yahoo shows $33 left of $100 ($67 spent): $6 of free-agent costs not recorded.
+- FAAB: $61 in waiver bids + $6 commissioner budget adjustment (Oct 13) + ~$9 in Oct 14–17 free-agent adds = $76; James confirmed $24 left (Oct 19).
 - Many restatements, watches and admin confirmations were logged as DECISIONs (17 of the 54 reviews so far are excluded from counts for that reason).
 
 ## TIMING ISSUES
@@ -79,7 +79,7 @@ Season: 72.36 points left on the bench (91.8% average). A perfect lineup would n
 - process grade distribution: A8 B20 C7 D2 F0
 - confidence calibration notes: conf 4 = 13-6-6 (52%), conf 3 = 4-3 (57%), conf 5 = 2-1 — confidence is not yet separating good calls from bad ones.
 - transaction fees incurred: $0
-- FAAB spent: $61 recorded ($67 per Yahoo balance)
+- FAAB spent: $76 ($24 left, confirmed by James Oct 19)
 - pickup regret: Sanders $12, Gadsden $12, Holani $1
 - drop regret: Tre Tucker (26.70 against JD in W6)
 - successful early adds: Braelon Allen $1, Emanuel Wilson $8
