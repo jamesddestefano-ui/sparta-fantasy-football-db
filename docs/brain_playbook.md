@@ -51,6 +51,9 @@ Goal: grade last week and show James how he is improving.
 1. Last week = W. Load `python scripts/record_decision.py open --week W` (and older open ones).
 2. Actual points: `intelligence/fantasypros/weekly/2026-wWW/results.json` (from the Tuesday board run).
    If missing, say so and grade only what can be graded.
+   Weeks 1–6 were backfilled 2026-10-20. RB/WR/TE/K match Sparta's Yahoo points; QB and DEF
+   do **not** (Sparta 6-pt pass TD and DEF scoring) — take QB/DEF points from Yahoo screenshots.
+   If a week is missing, run the "Sparta weekly board" workflow manually with `results_weeks` = that week.
 3. What James actually did: compare decisions with the JD roster snapshot and transactions;
    if unknown, mark `actual_user_action: "UNKNOWN — no Yahoo evidence"` (don't guess).
 4. For each open decision, append an OUTCOME_REVIEW (`record_decision.py review`): outcome,
