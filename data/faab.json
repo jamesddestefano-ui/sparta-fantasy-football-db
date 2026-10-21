@@ -60,10 +60,10 @@
     },
     {
       "team": "JD",
-      "balance": 25,
-      "prior_balance": 24,
-      "observed_at": "2026-10-21T10:31:00-04:00",
-      "source": "James's Yahoo Standings screenshot 2026-10-21 10:31 ET (Budget column), after Week 7 waiver processing"
+      "balance": 20,
+      "prior_balance": 25,
+      "observed_at": "2026-10-21T08:01:00-04:00",
+      "source": "Derived: Yahoo $25 (10/21 10:31 ET) minus Week 7 wins Washington $3 + McPherson $1 + Geno $1 (bids from pending screenshot); confirm on Yahoo Standings"
     },
     {
       "team": "JU",
@@ -178,7 +178,7 @@
     "source": "Authenticated Yahoo Sparta live snapshot",
     "resolution": "The later authenticated Yahoo snapshot resolved the earlier display discrepancy before the Holani transaction."
   },
-  "jd_authoritative_balance": 25,
+  "jd_authoritative_balance": 20,
   "pending_yahoo_reverification": false,
   "pending_yahoo_reverification_reason": "CLEARED — Tue 1950 $48→$42 HELD resolved by commissioner budget adjustment in Yahoo commish log; then W6 waivers -$9 → display $33 matches auth.",
   "week3_waiver_resolution": {
@@ -317,5 +317,37 @@
     "week7_wins_confirmed": false,
     "needs": "Commissioner/transaction log explaining the $33 -> $25 change; Yahoo results after Week 7 claims process",
     "week7_claims_status": "PENDING at 2026-10-21 10:46 ET (Yahoo screenshot): Washington Jr. $3/-McLaughlin, Penix $2, McPherson $1/-Grupe, Cooper Jr. $1/-McLaughlin, Geno Smith $1, Mayer $1/-Waller"
+  },
+  "week7_waiver_resolution": {
+    "processed": "overnight 2026-10-21",
+    "wins": [
+      {
+        "bid": 3,
+        "added": "Mike Washington Jr.",
+        "dropped": "Jaleel McLaughlin"
+      },
+      {
+        "bid": 1,
+        "added": "Evan McPherson",
+        "dropped": "Blake Grupe"
+      },
+      {
+        "bid": 1,
+        "added": "Geno Smith",
+        "dropped": null
+      }
+    ],
+    "losses": [
+      "Michael Penix Jr. $2 (not on JD roster; not in Yahoo FA QB list)",
+      "Michael Mayer $1 (Waller still on roster)"
+    ],
+    "voided": [
+      "Omar Cooper Jr. (McLaughlin already dropped)",
+      "Matt Gay backup (Grupe already dropped)"
+    ],
+    "faab_spent_estimate": 5,
+    "balance_estimate": 20,
+    "verified": false,
+    "source": "James's Yahoo Team-tab screenshots 2026-10-21 08:00-08:01 ET (Starters + Bench) and Players-tab QB list; Week 7 waivers processed overnight"
   }
 }
