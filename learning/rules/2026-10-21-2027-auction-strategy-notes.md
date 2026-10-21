@@ -21,3 +21,24 @@ Status: OWNER DIRECTION / PROPOSED. Builds on `2026-10-14-2027-qb-coordinator-co
 - QB: spend $1–3. Target two late starters with different bye weeks, plus the waiver wire. Apply the coordinator/scheme checklist from the 2026-10-14 hypothesis.
 - WR: two top-tier WRs stays the plan. Money saved at QB goes to the WR room or RB depth.
 - Validate at season end: points per auction dollar by position (QB vs WR vs RB) for every Sparta team in 2026. Adopt as a rule only if the season-long data supports it (AGENTS rules 45, 48).
+
+## How the top teams drafted (added 2026-10-21 ~08:50 ET)
+
+Standings from James's Yahoo screenshot (Wed 8:44 AM ET), with 2026 auction dollars by position (positions from FantasyPros):
+
+| Team | Record | PF | QB | RB | WR | TE | Top buys |
+|---|---|---|---|---|---|---|---|
+| ANT | 5-1 | 935.98 | $6 | $83 | $100 | $9 | St. Brown $61, K. Walker $40, J. Love $31 |
+| BE | 4-2 | 876.82 | $10 | $82 | $71 | $33 | Kyren Williams $34, Nabers $29, McBride $28 |
+| SR | 4-2 | 809.46 | $5 | $24 | $130 | $38 | A.J. Brown $54, Bowers $35, Pickens $31 |
+| MN | 4-2 | 803.64 | $8 | $69 | $118 | $2 | Nacua $62, Barkley $53, Olave $29 |
+| TM | 4-2 | 754.02 | $9 | $143 | $43 | $2 | Bijan $70, Cook $56, McConkey $28 |
+| JD | 1-5 | 791.02 | $8 | $36 | $153 | $1 | Chase $65, JSN $64, McMillan $19 |
+
+Takeaways (evidence, not yet rules):
+- Cheap QB holds up: every top-5 team spent $5–10 at QB. The team that paid most (VV, $31 incl. Josh Allen $26) is 3-3.
+- No single build wins: SR went WR-heavy, TM went RB-heavy, and ANT/MN paired one elite WR with one strong RB.
+- JD spent the most on WR ($153) and the least on RB ($36) and TE ($1) in the league. The WRs are delivering; the RB2/TE/FLEX slots have been the weak spots all season.
+- JD's record is mostly luck: PF 791.02 is 7th of 12, but JD's points against (923.22) are the highest in the league. James (2026-10-21): in the five losses, a perfect lineup would only have won one.
+
+Refined proposal for 2027 (James's call): keep two top WRs and a $1–3 QB, and protect $40–50 for an RB1-level back plus a mid-tier TE, instead of a third $19+ WR.
