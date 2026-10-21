@@ -39,6 +39,6 @@ Takeaways (evidence, not yet rules):
 - Cheap QB holds up: every top-5 team spent $5–10 at QB. The team that paid most (VV, $31 incl. Josh Allen $26) is 3-3.
 - No single build wins: SR went WR-heavy, TM went RB-heavy, and ANT/MN paired one elite WR with one strong RB.
 - JD spent the most on WR ($153) and the least on RB ($36) and TE ($1) in the league. The WRs are delivering; the RB2/TE/FLEX slots have been the weak spots all season.
-- JD's record is mostly luck: PF 791.02 is 7th of 12, but JD's points against (923.22) are the highest in the league. James (2026-10-21): in the five losses, a perfect lineup would only have won one.
+- JD's record is mostly luck: PF 791.02 is 7th of 12, but JD's points against (923.22) are the highest of the 8 teams whose PA I've seen (the top 4 rows were cut off). James (2026-10-21): in the five losses, a perfect lineup would only have won one.
 
 Refined proposal for 2027 (James's call): keep two top WRs and a $1–3 QB, and protect $40–50 for an RB1-level back plus a mid-tier TE, instead of a third $19+ WR.
