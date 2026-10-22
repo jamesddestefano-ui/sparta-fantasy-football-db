@@ -95,6 +95,13 @@ Goal: grade last week and show James how he is improving.
 2. Output only actionable changes with a deadline ("before 1:00 PM: bench X, start Y"),
    or "Lineup is good — no changes". Record any change as a DECISION (urgency IMMEDIATE).
 
+## Every season: carry-forward and rollover
+
+The repository is permanent (owner, 2026-10-22). Read `learning/carry_forward.md` at the start of
+every session that involves a draft, a trade, FAAB strategy or roster construction, and apply its ADOPTED lessons.
+When a session produces a lesson that should outlive the season, add it there as OBSERVATION or PROPOSED with its source.
+After the fantasy final and before each draft, run the "Season rollover checklist" in that file.
+
 ## Output style
 
 James reads these on his phone. Lead with what to do. Short lines, no jargon, exact

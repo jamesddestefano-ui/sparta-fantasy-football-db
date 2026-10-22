@@ -2,6 +2,8 @@
 
 This repository is the durable source of truth for Billy's 2026 Sparta fantasy football league.
 
+Permanence (owner direction, James, 2026-10-22): this repository is kept indefinitely and covers the 2026 season and every later Sparta season. Season data is kept side by side and never overwritten. `learning/carry_forward.md` holds the cross-season lessons that every Brain session uses for drafts and in-season decisions. Rules below that name 2026 dates describe the 2026 season; at each season rollover the Brain proposes the equivalent dates for the new season to the owner.
+
 1. Sparta only. Never import Mongo league state into this repository.
 2. Every ownership, roster, transaction, FAAB, waiver, lineup, and recommendation operation must be Sparta-scoped.
 3. Never infer `FREE_AGENT_CONFIRMED` from articles, rankings, projections, low roster percentage, undrafted status, absence from JD's roster, or absence from a data file. Use `UNKNOWN` unless Sparta-specific evidence confirms availability.
