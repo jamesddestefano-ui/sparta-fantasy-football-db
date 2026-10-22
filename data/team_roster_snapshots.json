@@ -1,0 +1,13 @@
+{
+ "league": "sparta",
+ "rule": "Observed full rosters of non-JD teams from Yahoo screenshots. scripts/sparta_ownership.py applies each snapshot after the transaction ledger: listed players belong to that team; that team's other reconstructed players are removed (dropped at an unknown time). Does not invent transactions. A later transaction for that team overrides the snapshot only if it is dated after observed_at.",
+ "snapshots": [
+  {
+   "team": "JU",
+   "observed_at": "2026-10-22T14:28:00-04:00",
+   "source": "James's Yahoo screenshots of The U (Joseph) roster, Week 7, 2026-10-22 2:28 PM ET",
+   "players": ["Caleb Williams", "Jonathan Taylor", "Derrick Henry", "Garrett Wilson", "Jalen Coker", "T.J. Hockenson", "Jaylen Waddle", "Tre Tucker", "Vikings D/ST", "Bryce Young", "Hunter Henry", "Tyler Warren", "Wan'Dale Robinson", "Roschon Johnson", "Rico Dowdle", "Rashid Shaheed", "Jonah Coleman", "Chiefs D/ST"],
+   "notes": "K slot empty. IR: Jonah Coleman. Not on roster vs. reconstruction: Jacoby Brissett, Tyler Bass (drops not in transactions.json). New: Rashid Shaheed."
+  }
+ ]
+}

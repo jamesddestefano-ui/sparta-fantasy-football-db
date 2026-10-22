@@ -92,6 +92,25 @@ def reconstruct(data: Path = ROOT / "data") -> dict:
             for n in _split(tx.get("added")):
                 put(n, team, "trade " + str(tx.get("timestamp_et")))
 
+    # Observed full rosters of other teams (Yahoo screenshots), newer than the ledger.
+    snaps = _load(data, "team_roster_snapshots.json", {"snapshots": []})
+    for snap in snaps.get("snapshots", []):
+        steam, seen_at = snap["team"], snap.get("observed_at") or ""
+        later = any(t.get("team") == steam and str(t.get("timestamp_et") or "") > seen_at[:16].replace("T", " ")
+                    for t in txs)
+        if later:
+            continue  # a newer ledger move for this team wins; refresh the snapshot
+        keys = set()
+        for name in snap.get("players", []):
+            k = name_key(name)
+            keys.add(k)
+            display[k] = name
+            owner[k] = steam
+            availability.pop(k, None)
+        for k, team in list(owner.items()):
+            if team == steam and k not in keys:
+                del owner[k]
+
     # JD's snapshot is newer and authoritative for JD.
     jd_keys = set()
     for p in jd.get("players", []):
