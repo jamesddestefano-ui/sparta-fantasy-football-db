@@ -32,12 +32,13 @@ TEAMS = [  # team_id, name, manager nickname, faab, waiver priority
     (12, "X-Factor", "letspartyitup.com", 100, 3),
 ]
 
-# JD's Yahoo roster: the repository's current JD roster with Dylan Sampson dropped for
-# Kyle Monangai (the new waiver claim in the fixture transactions). Built from repo data so
-# the fixture follows roster updates.
+# JD's Yahoo roster: the frozen 2026-10-19 JD roster (tests/fixtures/sparta_data_20261019)
+# with Dylan Sampson dropped for Kyle Monangai (the new waiver claim in the fixture
+# transactions). Reads the same frozen copy the sync tests use, so live roster moves
+# (e.g. the Week 7 waivers and Bijan trade) can't break CI.
 def _jd_roster():
     import json as _json
-    repo = _json.loads((Path(__file__).resolve().parents[1] / "data" / "current_roster_jd.json").read_text())
+    repo = _json.loads((Path(__file__).resolve().parent / "fixtures" / "sparta_data_20261019" / "current_roster_jd.json").read_text())
     rows = []
     for p in repo["players"]:
         if p["name"] == "Dylan Sampson":
