@@ -54,3 +54,8 @@ Pulse is intelligence only. Never change rosters, ownership, FAAB, waivers, tran
 
 - The first pass lands at the next :20 and `scripts/pulse_guard.py` (workflow `pulse_guard.yml`) leaves it untouched (newer completedAt, history only appended).
 - No commits titled "Update/Append Grok Pulse intelligence 2026-10-19..." appear at :08.
+
+## Status (2026-10-22 ~10:45 ET)
+
+- IMPLEMENTED by Grok Bot as "Sparta LOCK Pulse — hourly pass", task ID 7816b8ad-12c6-4f9e-90d3-8d446a9634b5. Hourly at :20, 7:20 AM–11:20 PM ET. First run ~11:20 AM ET 2026-10-22.
+- Gap: Grok Bot can't run every 30 minutes on Sundays in one job. Suggested fix: a second Sunday-only job at :50 (8:50 AM–8:50 PM ET) with the same directive. It catches the ~11:30 AM inactives before the 1 PM kickoffs.
