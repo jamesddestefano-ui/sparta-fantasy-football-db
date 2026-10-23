@@ -8,6 +8,8 @@ the current files with a trusted base commit and repairs only those two problems
 
   * latest.json: if the working copy's completedAt is older than the base's, the base
     version is restored (a newer or equal pass is always kept).
+  * history.jsonl: the current latest pass is appended if missing, so Grok jobs only
+    need to write latest.json.
   * history.jsonl: history is append-only. Every pass in the base is kept, in order;
     passes in the working copy that the base doesn't have (by completedAt) are appended.
 
@@ -85,6 +87,26 @@ def repair_history(base_text: str | None, cur_text: str | None) -> str | None:
     return "\n".join(merged) + "\n"
 
 
+def append_latest(latest_text: str | None, history_text: str | None) -> str | None:
+    """Append the current latest pass to history if history doesn't have it yet.
+
+    Grok jobs write only latest.json; the guard keeps history append-only from it.
+    """
+    if not latest_text:
+        return None
+    try:
+        d = json.loads(latest_text)
+    except ValueError:
+        return None
+    if d.get("status") != "live" or not d.get("completedAt"):
+        return None  # rule 23: only live, completed passes
+    line = json.dumps(d, ensure_ascii=False, separators=(",", ":"))
+    lines = [l for l in (history_text or "").splitlines() if l.strip()]
+    if pass_key(line) in {pass_key(l) for l in lines}:
+        return None
+    return "\n".join(lines + [line]) + "\n"
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--base", required=True, help="trusted commit to compare against")
@@ -97,6 +119,13 @@ def main() -> None:
         if new is not None and new != cur:
             p.write_text(new)
             changed.append(path)
+    lp, hp = ROOT / LATEST, ROOT / HISTORY
+    hist = hp.read_text() if hp.exists() else None
+    new = append_latest(lp.read_text() if lp.exists() else None, hist)
+    if new is not None and new != hist:
+        hp.write_text(new)
+        if HISTORY not in changed:
+            changed.append(HISTORY)
     if changed:
         print("CHANGED " + " ".join(changed))
     else:

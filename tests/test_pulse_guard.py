@@ -47,6 +47,17 @@ class PulseGuardTests(unittest.TestCase):
         self.assertEqual(pg.repair_history(good, junk), good)
         self.assertEqual(pg.repair_history(None, junk), good)
 
+    def test_latest_pass_is_appended_once(self):
+        latest = json.dumps({"product": "LOCK Pulse", "status": "live", "completedAt": "c"})
+        hist = p("a") + "\n"
+        out = pg.append_latest(latest, hist)
+        self.assertEqual(out.splitlines()[-1], json.dumps(json.loads(latest), separators=(",", ":")))
+        self.assertIsNone(pg.append_latest(latest, out))
+
+    def test_non_live_latest_is_not_appended(self):
+        seeded = json.dumps({"product": "LOCK Pulse", "status": "seeded", "completedAt": "c"})
+        self.assertIsNone(pg.append_latest(seeded, p("a") + "\n"))
+
 
 if __name__ == "__main__":
     unittest.main()
