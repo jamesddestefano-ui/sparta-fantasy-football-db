@@ -59,15 +59,22 @@ def repair_latest(base_text: str | None, cur_text: str | None) -> str | None:
     return None
 
 
+def is_pass(line: str) -> bool:
+    try:
+        return isinstance(json.loads(line), dict)
+    except ValueError:
+        return False
+
+
 def repair_history(base_text: str | None, cur_text: str | None) -> str | None:
-    if not base_text:
-        return None
-    base = [l for l in base_text.splitlines() if l.strip()]
-    cur = [l for l in (cur_text or "").splitlines() if l.strip()]
-    if cur[: len(base)] == base:
-        return None  # append-only respected
-    if {pass_key(l) for l in base} <= {pass_key(l) for l in cur}:
-        return None  # nothing lost (e.g. the base itself was a wiped copy)
+    raw_cur = [l for l in (cur_text or "").splitlines() if l.strip()]
+    cur = [l for l in raw_cur if is_pass(l)]  # drop junk such as "PLACEHOLDER..." or "$(cat ...)"
+    junk = len(cur) != len(raw_cur)
+    base = [l for l in (base_text or "").splitlines() if l.strip() and is_pass(l)]
+    if not base:
+        return "\n".join(cur) + "\n" if junk else None
+    if cur[: len(base)] == base or {pass_key(l) for l in base} <= {pass_key(l) for l in cur}:
+        return "\n".join(cur) + "\n" if junk else None  # nothing lost
     seen = {pass_key(l) for l in base}
     merged = list(base)
     for l in cur:

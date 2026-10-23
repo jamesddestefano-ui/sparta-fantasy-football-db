@@ -41,6 +41,12 @@ class PulseGuardTests(unittest.TestCase):
         full = "\n".join([p("2026-10-18T18:09:49.079Z"), p("2026-10-19T13:09:52.250Z"), p("2026-10-22T13:29:47.000Z")]) + "\n"
         self.assertIsNone(pg.repair_history(wiped, full))
 
+    def test_non_json_junk_lines_are_removed(self):
+        good = p("a") + "\n" + p("b") + "\n"
+        junk = "PLACEHOLDER_FOR_FULL_HISTORY_WITH_APPEND\n" + p("a") + "\n$(cat /tmp/history.jsonl)\n" + p("b") + "\n"
+        self.assertEqual(pg.repair_history(good, junk), good)
+        self.assertEqual(pg.repair_history(None, junk), good)
+
 
 if __name__ == "__main__":
     unittest.main()
