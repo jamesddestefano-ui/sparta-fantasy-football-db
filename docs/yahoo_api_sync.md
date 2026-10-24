@@ -1,6 +1,11 @@
 # Sparta Yahoo API sync
 
-## Status (2026-10-20): BLOCKED — waiting on Yahoo approval
+## Status (2026-10-24): APPROVED by Yahoo — owner finishing setup
+
+- 2026-10-24 (James's email screenshot): Yahoo approved the Fantasy Sports API application. Access turns on after three steps: (1) sign the API Access and Use Agreement (DocuSign), (2) create a **new** app on the Yahoo Developer page with Fantasy Sports selected (existing apps don't get the permission), (3) submit the new app's Client ID with name/email on Yahoo's Developer Application Confirmation Form.
+- Then: update the GitHub secrets to the NEW app's Client ID/Secret, sign in once (iPhone steps below), run the sync manually, and re-enable the cron lines in `yahoo_sync.yml`.
+
+## Earlier status (2026-10-20): BLOCKED — waiting on Yahoo approval
 
 - Learned 2026-10-19 (James): Yahoo must approve the app before the Fantasy API returns
   Sparta data. Until then every run fails and `data/yahoo_api/latest.json` does not exist.
