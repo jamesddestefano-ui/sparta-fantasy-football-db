@@ -1,10 +1,10 @@
 # Sparta Yahoo API sync
 
-## Status (2026-10-24): APPROVED by Yahoo — owner finishing setup
+## Status (2026-10-23): APPROVED by Yahoo — owner finishing setup
 
-- 2026-10-24 (James's email screenshot): Yahoo approved the Fantasy Sports API application. Access turns on after three steps: (1) sign the API Access and Use Agreement (DocuSign), (2) create a **new** app on the Yahoo Developer page with Fantasy Sports selected (existing apps don't get the permission), (3) submit the new app's Client ID with name/email on Yahoo's Developer Application Confirmation Form.
-- 2026-10-24 ~10:12 PM ET: new app created, GitHub secrets updated to the new app (sign-in run #6 exchanged the code fine, then got HTTP 403 "application is not authorized" = access not provisioned yet), Client ID submitted on Yahoo's confirmation form ("We'll be in touch shortly"). Waiting on Yahoo to provision; then redo the sign-in once (fresh Agree link) and run the sync.
-- 2026-10-24 10:14 PM ET: Yahoo auto-reply to the Client ID form: "review process typically takes 1-2 weeks". DocuSign signed by James 2026-10-23 6:35 PM (yahoo.com address; Yahoo countersignature pending). Expect access ~Nov 1-7. Until then: screenshots + Codex live checks.
+- 2026-10-23 (James's email screenshot): Yahoo approved the Fantasy Sports API application. Access turns on after three steps: (1) sign the API Access and Use Agreement (DocuSign), (2) create a **new** app on the Yahoo Developer page with Fantasy Sports selected (existing apps don't get the permission), (3) submit the new app's Client ID with name/email on Yahoo's Developer Application Confirmation Form.
+- 2026-10-23 ~10:12 PM ET: new app created, GitHub secrets updated to the new app (sign-in run #6 exchanged the code fine, then got HTTP 403 "application is not authorized" = access not provisioned yet), Client ID submitted on Yahoo's confirmation form ("We'll be in touch shortly"). Waiting on Yahoo to provision; then redo the sign-in once (fresh Agree link) and run the sync.
+- 2026-10-23 10:14 PM ET: Yahoo auto-reply to the Client ID form: "review process typically takes 1-2 weeks". DocuSign signed by James 2026-10-23 6:35 PM (yahoo.com address; Yahoo countersignature pending). Expect access ~Nov 1-7. Until then: screenshots + Codex live checks.
 - Then: update the GitHub secrets to the NEW app's Client ID/Secret, sign in once (iPhone steps below), run the sync manually, and re-enable the cron lines in `yahoo_sync.yml`.
 
 ## Earlier status (2026-10-20): BLOCKED — waiting on Yahoo approval
