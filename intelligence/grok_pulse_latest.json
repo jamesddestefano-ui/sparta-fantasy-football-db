@@ -1,9 +1,9 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-10-26T12:09:26.487Z",
+  "generatedAt": "2026-10-26T12:09:40.500Z",
   "status": "live",
-  "completedAt": "2026-10-26T12:09:26.440Z",
+  "completedAt": "2026-10-26T12:09:40.470Z",
   "nextAtLabel": "9:09 AM ET",
   "inWindow": true,
   "itemCount": 14,
@@ -15,7 +15,7 @@
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Rams WR Puka Nacua officially ACTIVE vs Raiders despite calf injury; team optimistic after feeling better Saturday.",
+      "text": "Rams WR Puka Nacua officially ACTIVE despite calf injury; optimistic reports confirmed he would play vs Raiders.",
       "playerIds": [
         "puka-nacua"
       ],
@@ -26,32 +26,65 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-puka-nacua-week7",
       "signal": "ACTIVE",
-      "priorStatus": "QUESTIONABLE/GTD",
+      "priorStatus": "QUESTIONABLE/GTD-OPTIMISM",
       "newStatus": "ACTIVE",
-      "why": "McVay called calf minor; no setbacks; confirmed active by Schefter, Rapoport, Berry, ETR.",
-      "implication": "Start with confidence as WR1/2; Adams already out long-term boosts target share.",
-      "opportunity": "Elevated routes/targets/red-zone with Davante Adams out 6-10 weeks.",
+      "why": "Schefter and Rapoport confirmation after ETR GTD/optimism and Rams sources saying no setbacks.",
+      "implication": "Start Puka with full confidence; calf minor per McVay.",
+      "opportunity": "Full routes/targets expected in favorable matchup.",
       "corroboration": [
-        "https://x.com/RapSheet/status/2114431773300183119",
-        "https://x.com/MatthewBerryTMR/status/2114432759250976796",
-        "@EstablishTheRun"
+        "@RapSheet",
+        "@EstablishTheRun",
+        "@MatthewBerryTMR"
       ],
       "supportingSources": [
         "ian-rapoport",
-        "matthew-berry",
         "establish-the-run",
-        "adam-levitan"
+        "matthew-berry"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "lamar-out-w7",
+      "id": "breece-inactive-w7",
+      "at": "2026-10-25T15:30:59Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Jets RB Breece Hall officially INACTIVE (quad); unlikely earlier and missed fourth straight game after limited practice.",
+      "playerIds": [
+        "breece-hall"
+      ],
+      "players": [
+        "Breece Hall"
+      ],
+      "url": "https://x.com/RapSheet/status/2114379203105919463",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-breece-hall-week7",
+      "signal": "INACTIVE",
+      "priorStatus": "QUESTIONABLE/GTD-PESSIMISM",
+      "newStatus": "INACTIVE",
+      "why": "Rapoport sources + Schefter actives/inactives list; ETR pessimism confirmed.",
+      "implication": "Sit Hall; continue monitoring for Week 8 ramp-up.",
+      "opportunity": "Full lead role for backup RB vs soft MIA run D.",
+      "corroboration": [
+        "@AdamSchefter",
+        "@EstablishTheRun",
+        "NBC/PFT reports"
+      ],
+      "supportingSources": [
+        "adam-schefter",
+        "establish-the-run"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "etr-lamar-out-w7",
       "at": "2026-10-25T13:24:39Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Lamar Jackson ruled OUT (high ankle sprain). Tyler Huntley expected to start again for Ravens.",
+      "text": "Lamar Jackson ruled OUT for Week 7 after questionable designation with ankle injury; third straight miss.",
       "playerIds": [
         "lamar-jackson"
       ],
@@ -64,102 +97,32 @@
       "signal": "OUT",
       "priorStatus": "QUESTIONABLE",
       "newStatus": "OUT",
-      "why": "Downgraded from Q; confirmed multiple sources including Schefter/Rapoport.",
-      "implication": "Fade Ravens pass game volume; Huntley limited upside.",
-      "opportunity": "Potential uptick for Derrick Henry, Zay Flowers, Mark Andrews in run-heavy script.",
+      "why": "ETR weekend summary and corroborating reports of high ankle sprain downgrade.",
+      "implication": "Sit Lamar; Ravens backup QB starts vs CIN.",
+      "opportunity": "Boost to Ravens pass-catchers and CIN defense matchup if Huntley starts.",
       "beneficiaries": [
-        "derrick-henry",
         "zay-flowers",
-        "mark-andrews"
+        "mark-andrews",
+        "isaiah-likely"
       ],
       "corroboration": [
-        "https://x.com/AdamSchefter/status/2114088809751281981",
-        "@RapSheet"
+        "@AdamSchefter",
+        "web injury reports"
       ],
       "supportingSources": [
         "adam-schefter",
-        "ian-rapoport",
-        "adam-levitan"
+        "ian-rapoport"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "breece-inactive-w7",
-      "at": "2026-10-25T11:37:47Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Jets RB Breece Hall unlikely then confirmed inactive (quad); not full participant, bit early in return after missing 3 games.",
-      "playerIds": [
-        "breece-hall"
-      ],
-      "players": [
-        "Breece Hall"
-      ],
-      "url": "https://x.com/RapSheet/status/2114320515317789176",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-breece-hall-week7",
-      "signal": "INACTIVE",
-      "priorStatus": "QUESTIONABLE/GTD-PESSIMISM",
-      "newStatus": "INACTIVE",
-      "why": "Sources: may workout but early; Schefter listed inactive with Ridley.",
-      "implication": "Sit; Braelon Allen or committee lead.",
-      "opportunity": "Full backfield opportunity for Jets RBs (Allen primary).",
-      "corroboration": [
-        "https://x.com/AdamSchefter/status/2114378967063110123",
-        "@EstablishTheRun"
-      ],
-      "supportingSources": [
-        "adam-schefter",
-        "establish-the-run",
-        "adam-levitan"
-      ],
-      "priority": "IMMEDIATE"
-    },
-    {
-      "id": "skattebo-hamstring-levitan",
-      "at": "2026-10-26T01:48:03Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
-      "outlet": "Establish The Run",
-      "text": "Cam Skattebo expected lead back and produced 124y/1TD but Levitan thinks actually hurt (hamstring); confirmed felt something, slid, bye helps. Not certain severity.",
-      "playerIds": [
-        "cam-skattebo"
-      ],
-      "players": [
-        "Cam Skattebo"
-      ],
-      "url": "https://x.com/adamlevitan/status/2114534492597780920",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-cam-skattebo-postgame-w7",
-      "signal": "HURT",
-      "priorStatus": "ACTIVE/LEAD",
-      "newStatus": "HAMSTRING WATCH",
-      "why": "Postgame confirmation of hamstring feel on OT run; ETR watching; Rapoport pregame lead expected + tally.",
-      "implication": "Monitor for Week 9; bye cushions; Tracy/Singletary beneficiaries if misses.",
-      "opportunity": "Prior lead role validated by production; reverse if out.",
-      "conflict": "Berry pregame HATE on tough matchup, but usage strong.",
-      "corroboration": [
-        "@RapSheet",
-        "@EstablishTheRun"
-      ],
-      "supportingSources": [
-        "ian-rapoport",
-        "establish-the-run",
-        "matthew-berry"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "gibbs-ankle-levitan",
+      "id": "levitan-gibbs-fine",
       "at": "2026-10-26T01:05:08Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Jahmyr Gibbs turned ankle on purposeful slide but almost certainly fine; would be tilting if serious from smart non-TD.",
+      "text": "Jahmyr Gibbs ankle turn on purposeful slide: almost certainly fine; no real concern for availability or role.",
       "playerIds": [
         "jahmyr-gibbs"
       ],
@@ -168,15 +131,15 @@
       ],
       "url": "https://x.com/adamlevitan/status/2114523692722266317",
       "kind": "ANALYST_OPINION",
-      "eventId": "injury-jahmyr-gibbs-postgame-w7",
+      "eventId": "injury-gibbs-ankle-week7",
       "signal": "FINE",
       "priorStatus": "WATCH",
       "newStatus": "LIKELY FINE",
-      "why": "ETR watching list; Levitan player-specific conclusion post-slide.",
-      "implication": "No major downgrade ROS/weekly; monitor Monday reports.",
-      "opportunity": "Maintains RB1 role/snaps/routes in DET offense.",
+      "why": "Levitan direct take post-ETR watch list; would have been tilting if truly hurt avoiding TD.",
+      "implication": "No downgrade; continue as elite RB1.",
+      "opportunity": "Unchanged high snap/route/carry share.",
       "corroboration": [
-        "@EstablishTheRun"
+        "@EstablishTheRun watch list"
       ],
       "supportingSources": [
         "establish-the-run"
@@ -190,7 +153,7 @@
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Saquon Barkley EXPECTED TO PLAY (Q but in line) vs DAL on MNF; efficient in prior full games.",
+      "text": "Saquon Barkley EXPECTED TO PLAY Monday vs DAL after returning to practice from hamstring; limited Friday but on track.",
       "playerIds": [
         "saquon-barkley"
       ],
@@ -203,27 +166,25 @@
       "signal": "EXPECTED",
       "priorStatus": "QUESTIONABLE",
       "newStatus": "EXPECTED TO PLAY",
-      "why": "Full practice context; Berry also notes in line to play, great DAL matchup.",
-      "implication": "Start as RB1/2 if confirmed active.",
-      "opportunity": "Workload + matchup vs soft DAL run D.",
+      "why": "ETR summary; Berry notes efficient prior games and great DAL matchup for RBs.",
+      "implication": "Strong start candidate if active; volume RB1 upside.",
+      "opportunity": "Workhorse snaps/carries/red-zone vs weak run D.",
       "corroboration": [
-        "@MatthewBerryTMR",
-        "@RapSheet"
+        "Matthew Berry Love notes"
       ],
       "supportingSources": [
-        "matthew-berry",
-        "ian-rapoport"
+        "matthew-berry"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "smith-wicks-out-w7",
+      "id": "devonta-wicks-out-w7",
       "at": "2026-10-25T13:24:39Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Eagles WR DeVonta Smith and Dontayvion Wicks both OUT; Saquon expected, impacts PHI pass game vs DAL.",
+      "text": "Eagles WRs DeVonta Smith (hamstring) and Dontayvion Wicks (ankle) both OUT for MNF vs DAL.",
       "playerIds": [
         "devonta-smith",
         "dontayvion-wicks"
@@ -234,90 +195,114 @@
       ],
       "url": "https://x.com/EstablishTheRun/status/2114347408226431089",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-phi-wrs-week7",
+      "eventId": "injury-eagles-wrs-week7",
       "signal": "OUT",
-      "priorStatus": "QUESTIONABLE",
+      "priorStatus": "QUESTIONABLE/DNP",
       "newStatus": "OUT",
-      "why": "Injury report confirmed; Rapoport noted Smith out.",
-      "implication": "Fade remaining PHI WRs somewhat; boost TE/Goedert and Saquon.",
-      "opportunity": "Target/route share to Dallas Goedert, AJ Brown (if playing), residual WRs.",
+      "why": "ETR final weekend summary matching official reports.",
+      "implication": "Sit both; Eagles pass game thinned.",
+      "opportunity": "Increased targets/routes for remaining WRs/TE, higher Goedert usage.",
+      "conflict": "Berry had pre-injury Love on Smith.",
       "beneficiaries": [
-        "dallas-goedert",
-        "aj-brown"
+        "dallas-goedert"
       ],
       "corroboration": [
-        "@RapSheet",
-        "@AdamSchefter"
-      ],
-      "supportingSources": [
-        "ian-rapoport"
+        "NFL injury reports"
       ],
       "priority": "HIGH"
     },
     {
       "id": "jacobs-in-w7",
-      "at": "2026-10-24T20:00:34Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Packers activated RB Josh Jacobs from exempt; expected to play Sunday at DET in season debut/return.",
+      "at": "2026-10-25T13:24:39Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Packers RB Josh Jacobs listed IN/ACTIVE for return after layoff.",
       "playerIds": [
         "josh-jacobs"
       ],
       "players": [
         "Josh Jacobs"
       ],
-      "url": "https://x.com/AdamSchefter/status/2114084655414620503",
+      "url": "https://x.com/EstablishTheRun/status/2114347408226431089",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-josh-jacobs-week7",
+      "eventId": "status-josh-jacobs-week7",
       "signal": "ACTIVE",
-      "priorStatus": "OUT/EXEMPT",
-      "newStatus": "IN/ACTIVE",
-      "why": "Activated and expected; ETR listed IN.",
-      "implication": "RB2/flex but monitor snaps post-layoff; Berry hates workload uncertainty.",
-      "opportunity": "Lead back role vs DET; handcuff Wilson drops.",
-      "conflict": "Berry HATE due to layoff rust vs volume expectation.",
+      "priorStatus": "OUT/IR-ish",
+      "newStatus": "IN",
+      "why": "ETR IN list; Rapoport noted return to field.",
+      "implication": "Monitor snap share post-layoff; startable but caution.",
+      "opportunity": "Potential lead back carries if full go.",
+      "conflict": "Berry Hate due to workload uncertainty after layoff; Thorman noted elevated 71% neutral pass rate in return.",
       "corroboration": [
         "@RapSheet",
-        "@EstablishTheRun"
+        "@Pat_Thorman"
       ],
       "supportingSources": [
         "ian-rapoport",
-        "establish-the-run",
+        "patrick-thorman",
         "matthew-berry"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "cmc-returned-quad",
-      "at": "2026-10-25T23:38:47Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "Christian McCaffrey (quad) went to locker then returned to game; watching but played through.",
+      "id": "jsn-star-post",
+      "at": "2026-10-26T11:27:10Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Jaxon Smith-Njigba steals show again in Seahawks statement win over Chiefs; tremendous per reports.",
       "playerIds": [
-        "christian-mccaffrey"
+        "jaxon-smith-njigba"
       ],
       "players": [
-        "Christian McCaffrey"
+        "Jaxon Smith-Njigba"
       ],
-      "url": "https://x.com/EstablishTheRun/status/2114501959927628241",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-cmc-quad-w7",
-      "signal": "RETURNED",
-      "priorStatus": "IN-GAME QUESTIONABLE",
-      "newStatus": "RETURNED/ACTIVE",
-      "why": "Schefter confirmed return after locker room; ETR watching list.",
-      "implication": "Minimal long-term concern with bye upcoming; maintains elite role.",
-      "opportunity": "Continued snaps/routes/carries; WR injuries tempt more slot but Levitan skeptical historically.",
+      "url": "https://x.com/RapSheet/status/2114680230745129064",
+      "kind": "USAGE_DATA",
+      "eventId": "usage-jsn-week7",
+      "signal": "BREAKOUT",
+      "why": "Rapoport post-game highlight of continued elite production.",
+      "implication": "Confirm WR1 status ROS; start every week.",
+      "opportunity": "High routes/targets/yards in any script.",
       "corroboration": [
-        "https://x.com/AdamSchefter/status/2114428168853737716"
+        "ESPN story"
+      ],
+      "priority": "NORMAL"
+    },
+    {
+      "id": "levitan-skattebo-hurt",
+      "at": "2026-10-26T01:48:03Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Cam Skattebo: thinks actually hurt (hamstring) but not certain; watched alongside Tracy.",
+      "playerIds": [
+        "cam-skattebo"
+      ],
+      "players": [
+        "Cam Skattebo"
+      ],
+      "url": "https://x.com/adamlevitan/status/2114534492597780920",
+      "kind": "ANALYST_OPINION",
+      "eventId": "injury-skattebo-week7",
+      "signal": "CONCERN",
+      "priorStatus": "LEAD EXPECTED",
+      "newStatus": "HURT UNCERTAIN",
+      "why": "Levitan player-specific conclusion after ETR injury watch.",
+      "implication": "Caution on Skattebo; possible reduced role or risk.",
+      "opportunity": "If limited, boost to other Giants RBs.",
+      "conflict": "Rapoport earlier noted Skattebo back as lead; Berry Hate on matchup.",
+      "corroboration": [
+        "@EstablishTheRun"
       ],
       "supportingSources": [
-        "adam-schefter",
-        "adam-levitan"
+        "establish-the-run",
+        "matthew-berry",
+        "ian-rapoport"
       ],
       "priority": "NORMAL"
     },
@@ -328,7 +313,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "LOVE A.J. Brown @ CHI (WR10): back in real role, usage/matchup vs Bears good for yardage.",
+      "text": "Loves A.J. Brown @ CHI (usage/matchup); Bears good for yardage, Brown back in real role.",
       "playerIds": [
         "aj-brown"
       ],
@@ -339,9 +324,9 @@
       "kind": "ANALYST_OPINION",
       "eventId": "berry-love-aj-brown-w7",
       "signal": "LOVE",
-      "why": "Usage rebound + Bears secondary allows yardage; elite volume context with Smith out later.",
-      "implication": "Strong WR2/flex start.",
-      "opportunity": "Target share expansion with teammates out.",
+      "why": "Berry Love/Hate: elite volume potential vs vulnerable Bears secondary.",
+      "implication": "Strong WR start/upgrade.",
+      "opportunity": "High targets/routes in positive game script.",
       "priority": "NORMAL"
     },
     {
@@ -351,7 +336,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "LOVE Tucker Kraft @ DET (TE6): Lions D is TE buffet (9 TE TDs allowed); strong volume matchup.",
+      "text": "Loves Tucker Kraft @ DET; Lions TE buffet (9 TE TDs allowed), Kraft gets the boost.",
       "playerIds": [
         "tucker-kraft"
       ],
@@ -360,21 +345,21 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-7-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-tucker-kraft-w7",
+      "eventId": "berry-love-kraft-w7",
       "signal": "LOVE",
-      "why": "DET allows high TE fantasy points and TDs; Kraft in good role.",
-      "implication": "TE1 streamer/start.",
-      "opportunity": "Red-zone/routes vs vulnerable TE D.",
+      "why": "Berry: Detroit vulnerable to TEs, Kraft volume upside.",
+      "implication": "TE streamer/start with confidence.",
+      "opportunity": "Red-zone/targets vs soft TE D.",
       "priority": "NORMAL"
     },
     {
-      "id": "berry-love-rbs-volume",
+      "id": "berry-love-volume-rbs",
       "at": "2026-10-22T12:30:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "LOVE volume RBs Jaylen Warren @ NO (RB9), Chuba Hubbard vs TB (RB10), Bucky Irving @ CAR (RB12) for big workloads in friendly matchups.",
+      "text": "Loves volume RBs Jaylen Warren @ NO, Chuba Hubbard vs TB, Bucky Irving @ CAR for big workloads in friendly matchups.",
       "playerIds": [
         "jaylen-warren",
         "chuba-hubbard",
@@ -387,60 +372,68 @@
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-7-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-love-volume-rbs-w7",
+      "eventId": "berry-love-rbs-w7",
       "signal": "LOVE",
-      "why": "Consistent volume + defenses carved by RBs; Hubbard steady.",
-      "implication": "RB2/flex locks.",
-      "opportunity": "Carries/snaps/goal-line in positive scripts.",
+      "why": "Berry RB Love: consistent volume + defenses carved by RBs.",
+      "implication": "Start all three as RB2/flex with upside.",
+      "opportunity": "Carries/snaps/goal-line in positive spots.",
       "priority": "NORMAL"
     },
     {
-      "id": "berry-hate-odunze",
+      "id": "berry-hate-odunze-downs-kelce",
       "at": "2026-10-22T12:30:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "HATE Rome Odunze vs NE (WR32): 90% outside targets likely shadowed by Gonzalez; limited upside history.",
+      "text": "Hates Rome Odunze (Gonzalez shadow, outside targets), Josh Downs (target share/low-scoring), Travis Kelce (tough SEA D).",
       "playerIds": [
-        "rome-odunze"
+        "rome-odunze",
+        "josh-downs",
+        "travis-kelce"
       ],
       "players": [
-        "Rome Odunze"
+        "Rome Odunze",
+        "Josh Downs",
+        "Travis Kelce"
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-7-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-hate-rome-odunze-w7",
+      "eventId": "berry-hate-pass-w7",
       "signal": "HATE",
-      "why": "Tough shadow matchup + role/target issues.",
-      "implication": "Sit/flex down.",
+      "why": "Berry: nasty matchups and role issues.",
+      "implication": "Sit/fade these pass-catchers.",
       "priority": "NORMAL"
     },
     {
-      "id": "berry-hate-kelce-jacobs",
+      "id": "berry-hate-jacobs-skattebo",
       "at": "2026-10-22T12:30:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "HATE Travis Kelce @ SEA (tough D) and Josh Jacobs @ DET (workload Q post-layoff); also Skattebo tough spot pregame.",
+      "text": "Hates Josh Jacobs (workload Q after layoff) and Cam Skattebo (brutal HOU spot).",
       "playerIds": [
-        "travis-kelce",
         "josh-jacobs",
         "cam-skattebo"
       ],
       "players": [
-        "Travis Kelce",
         "Josh Jacobs",
         "Cam Skattebo"
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/recap-of-matthew-berrys-love-hate-for-week-7-fantasy-football",
       "kind": "ANALYST_OPINION",
-      "eventId": "berry-hate-kelce-jacobs-skattebo-w7",
+      "eventId": "berry-hate-rbs-w7",
       "signal": "HATE",
-      "why": "Nasty matchups/roles; Jacobs rust; Skattebo HOU D.",
-      "implication": "Fade or lower rankings.",
-      "conflict": "Jacobs activated/expected counters some hate; Skattebo produced anyway.",
+      "why": "Berry RB Hate list matching Levitan Skattebo concern.",
+      "implication": "Prefer alternatives; Jacobs risk post-return.",
+      "conflict": "ETR/Jacobs IN and potential volume; Thorman high pass rate note.",
+      "corroboration": [
+        "@adamlevitan"
+      ],
+      "supportingSources": [
+        "adam-levitan"
+      ],
       "priority": "NORMAL"
     }
   ],
@@ -448,38 +441,24 @@
   "sourceNotes": [
     {
       "sourceId": "establish-the-run",
-      "source": "Establish The Run",
+      "source": "Adam Levitan / Establish The Run",
       "grade": "USEFUL",
-      "note": "Gold-standard Sun morning summary (Lamar OUT, Puka GTD/opt then ACTIVE via corrob, Breece GTD/pess then inactive, Saquon expected, Smith/Wicks OUT, Jacobs/Coleman/Kirk/Mason/Dell IN). Direct + implied opps. Late injury watch (Gibbs ankle, C",
-      "at": "2026-10-26T00:00:00Z"
+      "note": "Gold-standard Sun morning injury summary (Lamar OUT, Puka GTD-opt then ACTIVE via corrob, Breece GTD-pess then inactive, Saquon expected, Smith/Wicks OUT, Jacobs/Coleman/Kirk/Mason/Dell IN). Direct + implied opps. Late watch (Gibbs ankle, S",
+      "at": "2026-10-26T12:00:00Z"
     },
     {
       "sourceId": "adam-levitan",
       "source": "Adam Levitan",
       "grade": "USEFUL",
-      "note": "Player-specific: projections fully updated on latest statuses; Lamar/Puka/Breece crucial; Gibbs almost certainly fine post-slide; thinks Skattebo actually hurt but not certain. Matches ETR perfectly. DFS value notes.",
-      "at": "2026-10-26T02:00:00Z"
+      "note": "Player-specific: Gibbs almost certainly fine post-slide; Skattebo actually hurt but not certain. Projections updated on statuses (Lamar/Puka/Breece crucial). DFS value on underowned high-proj. Matches ETR.",
+      "at": "2026-10-26T12:00:00Z"
     },
     {
       "sourceId": "matthew-berry",
       "source": "Matthew Berry",
       "grade": "USEFUL",
-      "note": "Per-player Love (AJB usage/matchup, Kraft TE buffet, volume RBs Warren/Hubbard/Irving, Saquon if active, Jonah Coleman roster) / Hate (Odunze shadow, Downs, Kelce tough D, Jacobs post-layoff, Skattebo). Confirmed Puka active. Top ranks.",
-      "at": "2026-10-25T19:00:00Z"
-    },
-    {
-      "sourceId": "adam-schefter",
-      "source": "Adam Schefter",
-      "grade": "USEFUL",
-      "note": "Primary: Puka ACTIVE, Jacobs/Mason/Dell etc activations, Breece/Ridley inactive context, Moton fibula. Perfect status + corroboration. Also CMC return, other actives.",
-      "at": "2026-10-26T03:00:00Z"
-    },
-    {
-      "sourceId": "ian-rapoport",
-      "source": "Ian Rapoport",
-      "grade": "USEFUL",
-      "note": "Breece unlikely then inactive, Skattebo lead expected + production context, Puka ACTIVE, Moton out indefinitely, Lamar close/next week context. Strong status/beat.",
-      "at": "2026-10-26T02:30:00Z"
+      "note": "Per-player Love (AJB usage/matchup, Kraft TE buffet, volume RBs Warren/Hubbard/Irving, Saquon if active, Coleman roster) / Hate (Odunze shadow, Downs, Kelce tough D, Jacobs post-layoff, Skattebo). Confirmed Puka active. Top ranks context.",
+      "at": "2026-10-26T12:00:00Z"
     },
     {
       "sourceId": "establish-the-run",
@@ -613,10 +592,24 @@
       "grade": "USEFUL",
       "note": "Primary: Puka ACTIVE, Jacobs/Mason/Dell etc activations, Breece/Ridley inactive context, CMC context, Moton fibula. Perfect status + corroboration.",
       "at": "2026-10-26T03:00:00Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Breece unlikely then inactive, Skattebo lead expected + production (124/17/1), Puka ACTIVE, Surtain inactive, Moton out indefinitely, Lamar close/next week context. Strong status/beat.",
+      "at": "2026-10-26T02:30:00Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Gold-standard Sun morning summary (Lamar OUT, Puka GTD/opt then ACTIVE via corrob, Breece GTD/pess then inactive, Saquon expected, Smith/Wicks OUT, Jacobs/Coleman/Kirk/Mason/Dell IN). Direct + implied opps. Late injury watch (Gibbs ankle, C",
+      "at": "2026-10-25T13:24:39Z"
     }
   ],
-  "mirroredAt": "2026-10-26T12:09:27.106Z",
+  "mirroredAt": "2026-10-26T12:09:41.038Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-10-26T12:09:26.440Z",
+  "sourceCompletedAt": "2026-10-26T12:09:40.470Z",
   "sourceStatus": "live"
 }
