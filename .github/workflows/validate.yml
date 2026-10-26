@@ -3,8 +3,22 @@ name: Validate Sparta Database
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'intelligence/**'
+      - 'docs/**'
+      - '**/*.md'
   pull_request:
     branches: [main]
+    paths-ignore:
+      - 'intelligence/**'
+      - 'docs/**'
+      - '**/*.md'
+
+# Skip data-only commits (Grok Pulse writes to intelligence/) and cancel superseded runs
+# to save Actions minutes.
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read
