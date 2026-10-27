@@ -1,65 +1,66 @@
 {
-  "system": "PRIME_SPARTA_FANTASY_WATCH",
-  "season": 2026,
-  "updated_at": "2026-10-19T23:30:00-04:00",
-  "confidence_scale": {
-    "1": "weak lean",
-    "2": "modest lean",
-    "3": "solid recommendation",
-    "4": "strong recommendation",
-    "5": "exceptional / immediate-action recommendation"
+ "system": "PRIME_SPARTA_FANTASY_WATCH",
+ "season": 2026,
+ "updated_at": "2026-10-27T10:45:00-04:00",
+ "confidence_scale": {
+  "1": "weak lean",
+  "2": "modest lean",
+  "3": "solid recommendation",
+  "4": "strong recommendation",
+  "5": "exceptional / immediate-action recommendation"
+ },
+ "buckets": {
+  "1": {
+   "recommendations": 0,
+   "wins": 0,
+   "losses": 0,
+   "neutral": 0,
+   "success_rate": null,
+   "average_outcome_grade": null,
+   "average_process_grade": null
   },
-  "buckets": {
-    "1": {
-      "recommendations": 0,
-      "wins": 0,
-      "losses": 0,
-      "neutral": 0,
-      "success_rate": null,
-      "average_outcome_grade": null,
-      "average_process_grade": null
-    },
-    "2": {
-      "recommendations": 2,
-      "wins": 1,
-      "losses": 0,
-      "neutral": 1,
-      "success_rate": 0.5,
-      "average_outcome_grade": 3.0,
-      "average_process_grade": 2.5
-    },
-    "3": {
-      "recommendations": 7,
-      "wins": 4,
-      "losses": 3,
-      "neutral": 0,
-      "success_rate": 0.571,
-      "average_outcome_grade": 2.43,
-      "average_process_grade": 3.0
-    },
-    "4": {
-      "recommendations": 25,
-      "wins": 13,
-      "losses": 6,
-      "neutral": 6,
-      "success_rate": 0.52,
-      "average_outcome_grade": 2.48,
-      "average_process_grade": 2.88
-    },
-    "5": {
-      "recommendations": 3,
-      "wins": 2,
-      "losses": 1,
-      "neutral": 0,
-      "success_rate": 0.667,
-      "average_outcome_grade": 2.33,
-      "average_process_grade": 3.33
-    }
+  "2": {
+   "recommendations": 5,
+   "wins": 2,
+   "losses": 2,
+   "neutral": 1,
+   "success_rate": 0.4,
+   "average_outcome_grade": 2.2,
+   "average_process_grade": 2.4
   },
-  "rule": "Higher-confidence recommendations should materially outperform lower-confidence recommendations over a meaningful sample.",
-  "grade_scale": "A=4 B=3 C=2 D=1 F=0; win=A/B, neutral=C, loss=D/F",
-  "calibration_notes": [
-    "2026-w06: sample n=9, too small to recalibrate (rule 45). Both conf-4 losses were stale-roster Hurts IR decisions (ROSTER_STATE_ERROR), not football-judgment misses; excluding them conf 4 went 3-0.",
-    "2026-10-19 23:30: all Weeks 1-6 graded from Yahoo Matchup screenshots; restatements, watches, superseded and admin confirmations reviewed but excluded from counts. Sample still small (rule 45): no recalibration yet."
-  ]
+  "3": {
+   "recommendations": 10,
+   "wins": 7,
+   "losses": 3,
+   "neutral": 0,
+   "success_rate": 0.7,
+   "average_outcome_grade": 2.8,
+   "average_process_grade": 3.1
+  },
+  "4": {
+   "recommendations": 29,
+   "wins": 16,
+   "losses": 6,
+   "neutral": 7,
+   "success_rate": 0.552,
+   "average_outcome_grade": 2.59,
+   "average_process_grade": 2.93
+  },
+  "5": {
+   "recommendations": 3,
+   "wins": 2,
+   "losses": 1,
+   "neutral": 0,
+   "success_rate": 0.667,
+   "average_outcome_grade": 2.33,
+   "average_process_grade": 3.33
+  }
+ },
+ "rule": "Higher-confidence recommendations should materially outperform lower-confidence recommendations over a meaningful sample.",
+ "grade_scale": "A=4 B=3 C=2 D=1 F=0; win=A/B, neutral=C, loss=D/F",
+ "calibration_notes": [
+  "2026-w06: sample n=9, too small to recalibrate (rule 45). Both conf-4 losses were stale-roster Hurts IR decisions (ROSTER_STATE_ERROR), not football-judgment misses; excluding them conf 4 went 3-0.",
+  "2026-10-19 23:30: all Weeks 1-6 graded from Yahoo Matchup screenshots; restatements, watches, superseded and admin confirmations reviewed but excluded from counts. Sample still small (rule 45): no recalibration yet.",
+  "2026-w07 (n=10 counted): conf 4 went 3-0-1, conf 3 went 3-0, conf 2 went 1-2 (both losses were low-edge FAAB/churn calls: Washington $3, Mayer-for-Waller). Season: conf 3 now 0.70 and conf 4 0.55 \u2014 conf 4 still underperforms conf 3; n=29 and 10, sample still small (rule 45). Watch: if conf 4 trails conf 3 again after Week 9, tighten what earns a 4."
+ ]
 }

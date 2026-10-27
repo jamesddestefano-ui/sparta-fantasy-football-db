@@ -1,229 +1,240 @@
 {
-  "league": "sparta",
-  "pulses_considered": 78,
-  "pulses_used": 3,
-  "pulses_rejected": 0,
-  "actions_changed_by_pulse": 2,
-  "successful_actions_changed_by_pulse": 0,
-  "unsuccessful_actions_changed_by_pulse": 0,
-  "average_information_lead_time": null,
-  "highly_useful_pulses": 0,
-  "misleading_pulses": 0,
-  "too_late_pulses": 0,
-  "pulse_source_performance": {},
-  "pulse_category_performance": {},
-  "usefulness_grades": {
-    "HIGHLY_USEFUL": 0,
-    "USEFUL": 0,
-    "ACCURATE_NOT_ACTIONABLE": 57,
-    "DUPLICATIVE": 0,
-    "TOO_LATE": 0,
-    "MISLEADING": 0,
-    "WRONG": 0,
-    "UNRESOLVED": 2
+ "league": "sparta",
+ "pulses_considered": 78,
+ "pulses_used": 5,
+ "pulses_rejected": 0,
+ "actions_changed_by_pulse": 3,
+ "successful_actions_changed_by_pulse": 1,
+ "unsuccessful_actions_changed_by_pulse": 0,
+ "average_information_lead_time": null,
+ "highly_useful_pulses": 0,
+ "misleading_pulses": 0,
+ "too_late_pulses": 0,
+ "pulse_source_performance": {
+  "Grok Pulse (Schefter/Cimini injury reports)": {
+   "used": 1,
+   "useful_or_better": 1
+  }
+ },
+ "pulse_category_performance": {
+  "INJURY_STATUS": {
+   "used": 2,
+   "useful_or_better": 1,
+   "accurate_not_actionable": 1
+  }
+ },
+ "usefulness_grades": {
+  "HIGHLY_USEFUL": 0,
+  "USEFUL": 1,
+  "ACCURATE_NOT_ACTIONABLE": 58,
+  "DUPLICATIVE": 0,
+  "TOO_LATE": 0,
+  "MISLEADING": 0,
+  "WRONG": 0,
+  "UNRESOLVED": 2
+ },
+ "double_count_protection": true,
+ "ownership_authority": "authenticated Yahoo Sparta state and durable Sparta repository state only",
+ "updated_at_et": "2026-10-27T10:45:00-04:00",
+ "decision_ledger_path": "learning/decision_ledger.jsonl",
+ "pulse_lineage_path": "learning/pulse_decision_lineage.jsonl",
+ "note": "NFL Pulse-specific aggregates only. 2026-09-15 12:00 Live Check: 2 active reviewed (Delane MRI POSSIBLE; Omar Cooper MRI sprain W2W YES), both NO MATERIAL JD; Yahoo pending ladder now matches Brain $12/$11/$7; no new decision_ledger from Pulse. | sparta-live-check-20260930-1600: +2 considered (Reed/Dowdle NON-JD suppress); JD wake Yahoo Hall Q\u2192D not Pulse. | sparta-live-check-20261001-2000: +3 considered (Etienne/Charbonnet-LP/Dowdle-inactive NON-JD soft suppress); quiet Yahoo continuity. | sparta-live-check-20261002-0750: +0 considered (overnight digests quiet delta 0); Yahoo wake = lineup Wicks FLEX not Pulse. | sparta-live-check-20261004-1945: +13 considered (1551\u20131851 McConkey/Evans/Lamar/Higgins/Bigsby/Rice/Coker/Pat Bryant/Nailor) all NON-JD suppress; Coker INACTIVE = positive context JD McMillan/Waller; no JD decision from Pulse. | sparta-live-check-20261005-1150: +12 considered (1951\u20131124 Thornton/Juszczyk/DJ Moore/Lamar/Hill/Bryant/Swift/Rice/Tyson) 0 YES 1 POSSIBLE (Tyson IR \u2192 Vele context) \u2014 no JD decision from Pulse; Pulse REJECT_STAT_NOISE on McMillan 14-192-2 SNF correct per policy but W4 outcome JD-relevant. | sparta-live-check-20261005-1550: +12 considered (1229\u20131522 Bryant/Lane/Bagent/Dell/Slater/Mariota/Hollins/Mixon/Chase/Higgins/Lamar/Charbonnet) 2 YES (Chase protocol continuity; Charbonnet OUT W5 confirms Wilson role) 3 POSSIBLE \u2014 no JD decision change from Pulse. | sparta-live-check-20261005-1950: +11 considered (1620\u20131925 Rice/Thornton/Barkley/Bigsby/Monangai/Mixon/Slater/Lamb/Daniels/White/Fant) 1 YES (Mixon SEA PS = Wilson watch) 2 POSSIBLE (Monangai vs Packers DEF; Fant inactive \u2192 Vele/Pitts active) \u2014 no JD decision change from Pulse; McFarland W5 published 7:30 PM (Dobbins BAD UTIL trend, free section). | aggregates gap: sparta-live-check-20261006-0750/1150/1550 were cursor-only commits (not added to these aggregates). | sparta-live-check-20261006-1950: +3 considered (1626\u20131916 McLaughlin/Brooks/Douglas) 1 YES (Douglas JD BN day-to-day \u2014 confirms existing drop plan) 0 POSSIBLE 2 NO \u2014 no JD decision change from Pulse; all late captures of Mon pressers; McFarland NO_NEW; FPD Everything Report paywalled; FL Receiver Score Wicks GOOD UTIL/BAD RESULT. | sparta-live-check-20261007-0750: 0 delta (5 quiet scans, 2316 incomplete); analyst-layer LATENCY_MISSED_CAPTURE \u2014 McFarland Pitts utilization X post (Tue 12:00 PM ET) not in Pulse capture path; surfaced ~19h late via FL newsletter. | 2026-w07 review (Brain 2026-10-27): +2 used (Sat Hall-GTD/Charbonnet \u2192 E. Wilson FLEX USEFUL; Kirk IR return ACCURATE_NOT_ACTIONABLE).",
+ "last_material_pulse_id": "20260914-170001-lane-wrist-fracture-weeks",
+ "last_decision_id": "SPARTA-2026W2-WAIVER-LADDER-ALIGNED-20260915-1200",
+ "pulses_reviewed": 73,
+ "pulses_rejected_by_sparta": 71,
+ "events": [
+  {
+   "at_et": "2026-09-16T08:18:19-04:00",
+   "type": "waiver_clear_observed",
+   "decision_id": "SPARTA-2026W2-WAIVER-CLEAR-20260916",
+   "summary": "Won Sanders $12; failed Allen/Holani; FA Allen+Bucs DEF; FAAB 88"
   },
-  "double_count_protection": true,
-  "ownership_authority": "authenticated Yahoo Sparta state and durable Sparta repository state only",
-  "updated_at_et": "2026-10-07T08:00:00-04:00",
-  "decision_ledger_path": "learning/decision_ledger.jsonl",
-  "pulse_lineage_path": "learning/pulse_decision_lineage.jsonl",
-  "note": "NFL Pulse-specific aggregates only. 2026-09-15 12:00 Live Check: 2 active reviewed (Delane MRI POSSIBLE; Omar Cooper MRI sprain W2W YES), both NO MATERIAL JD; Yahoo pending ladder now matches Brain $12/$11/$7; no new decision_ledger from Pulse. | sparta-live-check-20260930-1600: +2 considered (Reed/Dowdle NON-JD suppress); JD wake Yahoo Hall Q\u2192D not Pulse. | sparta-live-check-20261001-2000: +3 considered (Etienne/Charbonnet-LP/Dowdle-inactive NON-JD soft suppress); quiet Yahoo continuity. | sparta-live-check-20261002-0750: +0 considered (overnight digests quiet delta 0); Yahoo wake = lineup Wicks FLEX not Pulse. | sparta-live-check-20261004-1945: +13 considered (1551\u20131851 McConkey/Evans/Lamar/Higgins/Bigsby/Rice/Coker/Pat Bryant/Nailor) all NON-JD suppress; Coker INACTIVE = positive context JD McMillan/Waller; no JD decision from Pulse. | sparta-live-check-20261005-1150: +12 considered (1951\u20131124 Thornton/Juszczyk/DJ Moore/Lamar/Hill/Bryant/Swift/Rice/Tyson) 0 YES 1 POSSIBLE (Tyson IR \u2192 Vele context) \u2014 no JD decision from Pulse; Pulse REJECT_STAT_NOISE on McMillan 14-192-2 SNF correct per policy but W4 outcome JD-relevant. | sparta-live-check-20261005-1550: +12 considered (1229\u20131522 Bryant/Lane/Bagent/Dell/Slater/Mariota/Hollins/Mixon/Chase/Higgins/Lamar/Charbonnet) 2 YES (Chase protocol continuity; Charbonnet OUT W5 confirms Wilson role) 3 POSSIBLE \u2014 no JD decision change from Pulse. | sparta-live-check-20261005-1950: +11 considered (1620\u20131925 Rice/Thornton/Barkley/Bigsby/Monangai/Mixon/Slater/Lamb/Daniels/White/Fant) 1 YES (Mixon SEA PS = Wilson watch) 2 POSSIBLE (Monangai vs Packers DEF; Fant inactive \u2192 Vele/Pitts active) \u2014 no JD decision change from Pulse; McFarland W5 published 7:30 PM (Dobbins BAD UTIL trend, free section). | aggregates gap: sparta-live-check-20261006-0750/1150/1550 were cursor-only commits (not added to these aggregates). | sparta-live-check-20261006-1950: +3 considered (1626\u20131916 McLaughlin/Brooks/Douglas) 1 YES (Douglas JD BN day-to-day \u2014 confirms existing drop plan) 0 POSSIBLE 2 NO \u2014 no JD decision change from Pulse; all late captures of Mon pressers; McFarland NO_NEW; FPD Everything Report paywalled; FL Receiver Score Wicks GOOD UTIL/BAD RESULT. | sparta-live-check-20261007-0750: 0 delta (5 quiet scans, 2316 incomplete); analyst-layer LATENCY_MISSED_CAPTURE \u2014 McFarland Pitts utilization X post (Tue 12:00 PM ET) not in Pulse capture path; surfaced ~19h late via FL newsletter.",
-  "last_material_pulse_id": "20260914-170001-lane-wrist-fracture-weeks",
-  "last_decision_id": "SPARTA-2026W2-WAIVER-LADDER-ALIGNED-20260915-1200",
-  "pulses_reviewed": 73,
-  "pulses_rejected_by_sparta": 71,
-  "events": [
-    {
-      "at_et": "2026-09-16T08:18:19-04:00",
-      "type": "waiver_clear_observed",
-      "decision_id": "SPARTA-2026W2-WAIVER-CLEAR-20260916",
-      "summary": "Won Sanders $12; failed Allen/Holani; FA Allen+Bucs DEF; FAAB 88"
-    },
-    {
-      "at_et": "2026-10-01T19:58:36-04:00",
-      "check_id": "sparta-live-check-20261001-2000",
-      "type": "quiet_consume",
-      "digests": [
-        "2026-10-01-1621",
-        "2026-10-01-1722",
-        "2026-10-01-1815",
-        "2026-10-01-1925"
-      ],
-      "delta_count": 3,
-      "jd_elevate": false,
-      "note": "NON-JD soft only (Etienne/Charbonnet LP/Dowdle inactive); Yahoo continuity quiet"
-    },
-    {
-      "at_et": "2026-10-04T19:56:00-04:00",
-      "check_id": "sparta-live-check-20261004-1945",
-      "type": "quiet_consume",
-      "digests": [
-        "2026-10-04-1551",
-        "2026-10-04-1651",
-        "2026-10-04-1751",
-        "2026-10-04-1851"
-      ],
-      "delta_count": 13,
-      "jd_elevate": false,
-      "note": "All NON-JD; Coker inactive positive context McMillan/Waller; Higgins/Bigsby JD-adjacent soft (depth availability unconfirmed)"
-    },
-    {
-      "at_et": "2026-10-05T12:10:00-04:00",
-      "check_id": "sparta-live-check-20261005-1150",
-      "type": "quiet_consume",
-      "digests": [
-        "2026-10-04-1951",
-        "2026-10-04-2051",
-        "2026-10-04-2151",
-        "2026-10-05-0828",
-        "2026-10-05-0929",
-        "2026-10-05-1033",
-        "2026-10-05-1124"
-      ],
-      "delta_count": 12,
-      "jd_elevate": false,
-      "note": "All NON-JD except Tyson IR POSSIBLE context for Vele; McFarland W5 not yet published; FPD paywalled"
-    },
-    {
-      "at_et": "2026-10-05T15:58:00-04:00",
-      "check_id": "sparta-live-check-20261005-1550",
-      "type": "quiet_consume",
-      "digests": [
-        "2026-10-05-1229",
-        "2026-10-05-1320",
-        "2026-10-05-1422",
-        "2026-10-05-1522"
-      ],
-      "delta_count": 12,
-      "jd_elevate": false,
-      "note": "Chase protocol no timeline (continuity) + Charbonnet out W5 (Wilson W5 lead secure) YES but no action change; Bagent vs Packers DEF / Mixon SEA workout / Higgins POSSIBLE; McFarland W5 not yet published; FPD paywalled"
-    },
-    {
-      "at_et": "2026-10-05T20:05:00-04:00",
-      "check_id": "sparta-live-check-20261005-1950",
-      "type": "quiet_consume",
-      "digests": [
-        "2026-10-05-1620",
-        "2026-10-05-1716",
-        "2026-10-05-1823",
-        "2026-10-05-1925"
-      ],
-      "delta_count": 11,
-      "jd_elevate": false,
-      "note": "Mixon SEA practice-squad signing YES (Wilson backfield) but watch only; Monangai DTD / Fant inactive POSSIBLE; McFarland W5 published (Dobbins BAD UTIL trend); FPD paywalled"
-    },
-    {
-      "at_et": "2026-10-06T20:00:00-04:00",
-      "check_id": "sparta-live-check-20261006-1950",
-      "type": "quiet_consume",
-      "digests": [
-        "2026-10-06-1626",
-        "2026-10-06-1723",
-        "2026-10-06-1816",
-        "2026-10-06-1916"
-      ],
-      "delta_count": 3,
-      "jd_elevate": false,
-      "note": "Douglas day-to-day YES (JD BN, drop in Penix/Cousins claims) but not material; McLaughlin TB K / Brooks GB RB NO; McFarland no new; FPD paywalled"
-    },
-    {
-      "at_et": "2026-10-07T08:00:00-04:00",
-      "check_id": "sparta-live-check-20261007-0750",
-      "type": "quiet_consume",
-      "digests": [
-        "2026-10-06-2015",
-        "2026-10-06-2124",
-        "2026-10-06-2223",
-        "2026-10-06-2316",
-        "2026-10-07-0716"
-      ],
-      "delta_count": 0,
-      "jd_elevate": false,
-      "note": "0 accepted pulses; analyst-layer McFarland X Pitts BAD UTIL (JD starting TE) MEDIUM for Brain TE pass \u2014 Pulse missed capture (LATENCY_MISSED_CAPTURE); FPD paywalled/not served"
-    }
-  ],
-  "last_check_id": "sparta-live-check-20261007-0750",
-  "last_updated_et": "2026-10-07T08:00:00-04:00",
-  "recent_checks": [
-    {
-      "check_id": "sparta-live-check-20261002-1950",
-      "at": "2026-10-02T19:59:37-04:00",
-      "pulse_tip": "20261002-182001-terrance-ferguson-lar-te-ir-ankle",
-      "last_scan": "2026-10-02-1924",
-      "pulse_count": 257,
-      "jd_material_from_pulse": false,
-      "wake_driver": "yahoo_lineup_wilson_rb2"
-    },
-    {
-      "check_id": "sparta-live-check-20261004-1945",
-      "at": "2026-10-04T19:56:00-04:00",
-      "pulse_tip": "20261004-185105-jalen-nailor-lv-wr-concussion-out",
-      "last_scan": "2026-10-04-1851",
-      "pulse_count": 284,
-      "jd_material_from_pulse": false,
-      "wake_driver": null
-    },
-    {
-      "check_id": "sparta-live-check-20261005-1150",
-      "at_et": "2026-10-05T12:10:00-04:00",
-      "delta_count": 12,
-      "pulse_count": 296,
-      "jd_material_from_pulse": false,
-      "wake_driver": null
-    },
-    {
-      "check_id": "sparta-live-check-20261005-1550",
-      "at_et": "2026-10-05T15:58:00-04:00",
-      "delta_count": 12,
-      "pulse_count": 308,
-      "jd_material_from_pulse": false,
-      "wake_driver": null
-    },
-    {
-      "check_id": "sparta-live-check-20261005-1950",
-      "at_et": "2026-10-05T20:05:00-04:00",
-      "delta_count": 11,
-      "pulse_count": 319,
-      "jd_material_from_pulse": false,
-      "wake_driver": null
-    },
-    {
-      "check_id": "sparta-live-check-20261006-1950",
-      "at_et": "2026-10-06T20:00:00-04:00",
-      "delta_count": 3,
-      "pulse_count": 336,
-      "jd_material_from_pulse": false,
-      "wake_driver": null
-    },
-    {
-      "check_id": "sparta-live-check-20261007-0750",
-      "at_et": "2026-10-07T08:00:00-04:00",
-      "delta_count": 0,
-      "pulse_count": 336,
-      "jd_material_from_pulse": false,
-      "wake_driver": null
-    },
-    {
-      "check_id": "sparta-live-check-20261011-1550",
-      "at_et": "2026-10-11T16:05:00-04:00",
-      "delta_count": 1,
-      "pulse_count": 497,
-      "jd_material_from_pulse": false,
-      "wake_driver": null,
-      "note": "1551 Henderson OUT NON-JD SHOWSTOPPERS; alert=false"
-    }
-  ],
-  "recent_considerations": [
-    {
-      "ts_et": "2026-10-12T16:14:03-04:00",
-      "check_id": "sparta-live-check-20261012-1550",
-      "pulse_id": "20261012-153302-michael-penix-jr-atl-qb-ribs-not-serious-w6",
-      "SPARTA_relevance": "POSSIBLE",
-      "pulse_fact_confidence": 4,
-      "sparta_decision_confidence": 4,
-      "decision": "NO_WAKE_BN_SOFT_POSITIVE",
-      "ownership": "JD BN Q",
-      "note": "MRI pending\u2192not serious/might play W6; BN soft-positive \u2260 wake; Cousins starting"
-    }
-  ]
+  {
+   "at_et": "2026-10-01T19:58:36-04:00",
+   "check_id": "sparta-live-check-20261001-2000",
+   "type": "quiet_consume",
+   "digests": [
+    "2026-10-01-1621",
+    "2026-10-01-1722",
+    "2026-10-01-1815",
+    "2026-10-01-1925"
+   ],
+   "delta_count": 3,
+   "jd_elevate": false,
+   "note": "NON-JD soft only (Etienne/Charbonnet LP/Dowdle inactive); Yahoo continuity quiet"
+  },
+  {
+   "at_et": "2026-10-04T19:56:00-04:00",
+   "check_id": "sparta-live-check-20261004-1945",
+   "type": "quiet_consume",
+   "digests": [
+    "2026-10-04-1551",
+    "2026-10-04-1651",
+    "2026-10-04-1751",
+    "2026-10-04-1851"
+   ],
+   "delta_count": 13,
+   "jd_elevate": false,
+   "note": "All NON-JD; Coker inactive positive context McMillan/Waller; Higgins/Bigsby JD-adjacent soft (depth availability unconfirmed)"
+  },
+  {
+   "at_et": "2026-10-05T12:10:00-04:00",
+   "check_id": "sparta-live-check-20261005-1150",
+   "type": "quiet_consume",
+   "digests": [
+    "2026-10-04-1951",
+    "2026-10-04-2051",
+    "2026-10-04-2151",
+    "2026-10-05-0828",
+    "2026-10-05-0929",
+    "2026-10-05-1033",
+    "2026-10-05-1124"
+   ],
+   "delta_count": 12,
+   "jd_elevate": false,
+   "note": "All NON-JD except Tyson IR POSSIBLE context for Vele; McFarland W5 not yet published; FPD paywalled"
+  },
+  {
+   "at_et": "2026-10-05T15:58:00-04:00",
+   "check_id": "sparta-live-check-20261005-1550",
+   "type": "quiet_consume",
+   "digests": [
+    "2026-10-05-1229",
+    "2026-10-05-1320",
+    "2026-10-05-1422",
+    "2026-10-05-1522"
+   ],
+   "delta_count": 12,
+   "jd_elevate": false,
+   "note": "Chase protocol no timeline (continuity) + Charbonnet out W5 (Wilson W5 lead secure) YES but no action change; Bagent vs Packers DEF / Mixon SEA workout / Higgins POSSIBLE; McFarland W5 not yet published; FPD paywalled"
+  },
+  {
+   "at_et": "2026-10-05T20:05:00-04:00",
+   "check_id": "sparta-live-check-20261005-1950",
+   "type": "quiet_consume",
+   "digests": [
+    "2026-10-05-1620",
+    "2026-10-05-1716",
+    "2026-10-05-1823",
+    "2026-10-05-1925"
+   ],
+   "delta_count": 11,
+   "jd_elevate": false,
+   "note": "Mixon SEA practice-squad signing YES (Wilson backfield) but watch only; Monangai DTD / Fant inactive POSSIBLE; McFarland W5 published (Dobbins BAD UTIL trend); FPD paywalled"
+  },
+  {
+   "at_et": "2026-10-06T20:00:00-04:00",
+   "check_id": "sparta-live-check-20261006-1950",
+   "type": "quiet_consume",
+   "digests": [
+    "2026-10-06-1626",
+    "2026-10-06-1723",
+    "2026-10-06-1816",
+    "2026-10-06-1916"
+   ],
+   "delta_count": 3,
+   "jd_elevate": false,
+   "note": "Douglas day-to-day YES (JD BN, drop in Penix/Cousins claims) but not material; McLaughlin TB K / Brooks GB RB NO; McFarland no new; FPD paywalled"
+  },
+  {
+   "at_et": "2026-10-07T08:00:00-04:00",
+   "check_id": "sparta-live-check-20261007-0750",
+   "type": "quiet_consume",
+   "digests": [
+    "2026-10-06-2015",
+    "2026-10-06-2124",
+    "2026-10-06-2223",
+    "2026-10-06-2316",
+    "2026-10-07-0716"
+   ],
+   "delta_count": 0,
+   "jd_elevate": false,
+   "note": "0 accepted pulses; analyst-layer McFarland X Pitts BAD UTIL (JD starting TE) MEDIUM for Brain TE pass \u2014 Pulse missed capture (LATENCY_MISSED_CAPTURE); FPD paywalled/not served"
+  }
+ ],
+ "last_check_id": "sparta-live-check-20261007-0750",
+ "last_updated_et": "2026-10-07T08:00:00-04:00",
+ "recent_checks": [
+  {
+   "check_id": "sparta-live-check-20261002-1950",
+   "at": "2026-10-02T19:59:37-04:00",
+   "pulse_tip": "20261002-182001-terrance-ferguson-lar-te-ir-ankle",
+   "last_scan": "2026-10-02-1924",
+   "pulse_count": 257,
+   "jd_material_from_pulse": false,
+   "wake_driver": "yahoo_lineup_wilson_rb2"
+  },
+  {
+   "check_id": "sparta-live-check-20261004-1945",
+   "at": "2026-10-04T19:56:00-04:00",
+   "pulse_tip": "20261004-185105-jalen-nailor-lv-wr-concussion-out",
+   "last_scan": "2026-10-04-1851",
+   "pulse_count": 284,
+   "jd_material_from_pulse": false,
+   "wake_driver": null
+  },
+  {
+   "check_id": "sparta-live-check-20261005-1150",
+   "at_et": "2026-10-05T12:10:00-04:00",
+   "delta_count": 12,
+   "pulse_count": 296,
+   "jd_material_from_pulse": false,
+   "wake_driver": null
+  },
+  {
+   "check_id": "sparta-live-check-20261005-1550",
+   "at_et": "2026-10-05T15:58:00-04:00",
+   "delta_count": 12,
+   "pulse_count": 308,
+   "jd_material_from_pulse": false,
+   "wake_driver": null
+  },
+  {
+   "check_id": "sparta-live-check-20261005-1950",
+   "at_et": "2026-10-05T20:05:00-04:00",
+   "delta_count": 11,
+   "pulse_count": 319,
+   "jd_material_from_pulse": false,
+   "wake_driver": null
+  },
+  {
+   "check_id": "sparta-live-check-20261006-1950",
+   "at_et": "2026-10-06T20:00:00-04:00",
+   "delta_count": 3,
+   "pulse_count": 336,
+   "jd_material_from_pulse": false,
+   "wake_driver": null
+  },
+  {
+   "check_id": "sparta-live-check-20261007-0750",
+   "at_et": "2026-10-07T08:00:00-04:00",
+   "delta_count": 0,
+   "pulse_count": 336,
+   "jd_material_from_pulse": false,
+   "wake_driver": null
+  },
+  {
+   "check_id": "sparta-live-check-20261011-1550",
+   "at_et": "2026-10-11T16:05:00-04:00",
+   "delta_count": 1,
+   "pulse_count": 497,
+   "jd_material_from_pulse": false,
+   "wake_driver": null,
+   "note": "1551 Henderson OUT NON-JD SHOWSTOPPERS; alert=false"
+  }
+ ],
+ "recent_considerations": [
+  {
+   "ts_et": "2026-10-12T16:14:03-04:00",
+   "check_id": "sparta-live-check-20261012-1550",
+   "pulse_id": "20261012-153302-michael-penix-jr-atl-qb-ribs-not-serious-w6",
+   "SPARTA_relevance": "POSSIBLE",
+   "pulse_fact_confidence": 4,
+   "sparta_decision_confidence": 4,
+   "decision": "NO_WAKE_BN_SOFT_POSITIVE",
+   "ownership": "JD BN Q",
+   "note": "MRI pending\u2192not serious/might play W6; BN soft-positive \u2260 wake; Cousins starting"
+  }
+ ]
 }
