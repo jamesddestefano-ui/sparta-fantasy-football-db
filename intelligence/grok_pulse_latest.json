@@ -1,21 +1,21 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-10-29T09:08:30.435Z",
+  "generatedAt": "2026-10-29T10:09:47.139Z",
   "status": "live",
-  "completedAt": "2026-10-29T08:09:43.186Z",
-  "nextAtLabel": "6:00 AM ET",
-  "inWindow": false,
-  "itemCount": 13,
+  "completedAt": "2026-10-29T10:09:47.101Z",
+  "nextAtLabel": "7:09 AM ET",
+  "inWindow": true,
+  "itemCount": 14,
   "items": [
     {
-      "id": "lamar-full-w8",
+      "id": "lamar-jackson-full-practice-w8",
       "at": "2026-10-28T21:21:13Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Ravens listed QB Lamar Jackson as a full participant in Wednesday’s practice, first time fully since ankle injury; expected to play vs Bills.",
+      "text": "Ravens QB Lamar Jackson (ankle) was a full participant in Wednesday practice for the first time since his injury, after missing recent games.",
       "playerIds": [
         "lamar-jackson"
       ],
@@ -25,34 +25,32 @@
       "url": "https://x.com/AdamSchefter/status/2115554503265329263",
       "kind": "INJURY_STATUS",
       "eventId": "injury-lamar-jackson-week8",
-      "signal": "FULL",
+      "signal": "FULL|EXPECTED_TO_PLAY",
       "priorStatus": "LIMITED/OUT",
       "newStatus": "FULL",
-      "why": "First full practice since Week 4 ankle injury after limited prior week.",
-      "implication": "Unlocks Ravens offense; major boost to pass-catchers.",
-      "opportunity": "Increased efficiency and volume for Zay Flowers as YPRR leader.",
+      "why": "First full practice since ankle injury; missed prior games.",
+      "implication": "Significant boost to Ravens pass catchers, especially efficiency leaders.",
+      "opportunity": "Increased designed runs and accurate downfield throws unlock volume.",
       "beneficiaries": [
         "zay-flowers"
       ],
       "corroboration": [
-        "@RapSheet",
-        "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-wednesday-oct-28",
-        "@AdamSchefter"
+        "https://x.com/RapSheet/status/2115554077941899562",
+        "@RapSheet"
       ],
       "supportingSources": [
-        "ian-rapoport",
-        "adam-schefter"
+        "ian-rapoport"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "love-returns-practice",
+      "id": "love-returns-practice-w8",
       "at": "2026-10-29T00:19:03Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Jeremiyah Love returns to practice... (Cardinals injury report).",
+      "text": "Cardinals RB Jeremiyah Love returns to practice (limited) after missing recent games with ankle sprain.",
       "playerIds": [
         "jeremiyah-love"
       ],
@@ -62,25 +60,48 @@
       "url": "https://x.com/RapSheet/status/2115599255113019447",
       "kind": "INJURY_STATUS",
       "eventId": "injury-jeremiyah-love-week8",
-      "signal": "LIMITED",
-      "priorStatus": "OUT",
+      "signal": "LIMITED|RETURNS",
+      "priorStatus": "OUT/DNP",
       "newStatus": "LIMITED",
-      "why": "Returned to practice after ankle issue; Allgeier DNP toe.",
-      "implication": "Potential role recovery in Cardinals backfield.",
-      "opportunity": "Carries/snaps if cleared; watch Allgeier status.",
+      "why": "Sprained left ankle kept him out past two games; first practice since Oct 9.",
+      "implication": "Positive step toward availability vs Cowboys; Bam Knight/Allgeier currently handling work.",
+      "opportunity": "If active, reclaims lead back role; monitor progression to full.",
       "corroboration": [
-        "@joshweinfuss"
+        "NBC Sports"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "gibbs-stbrown-dnp",
+      "id": "berry-laporta-keep-open",
+      "at": "2026-10-28T21:31:37Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Keeping it open on Sam LaPorta; could be in for a big day against Vikings defense pressuring Goff.",
+      "playerIds": [
+        "sam-laporta"
+      ],
+      "players": [
+        "Sam LaPorta"
+      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2115557120368365880",
+      "kind": "ANALYST_OPINION",
+      "eventId": "love-laporta-week8",
+      "signal": "LOVE|UPGRADE",
+      "why": "Matchup vs Vikings pressure creates TE opportunities.",
+      "implication": "Strong start consideration; upside week.",
+      "opportunity": "Red-zone and checkdown volume vs aggressive D.",
+      "priority": "HIGH"
+    },
+    {
+      "id": "gibbs-stbrown-dnp-w8",
       "at": "2026-10-28T20:57:13Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Lions RB Jahmyr Gibbs (shoulder) and WR Amon-Ra St. Brown (ankle) were listed as non-participants at Wednesday’s practice.",
+      "text": "Lions RB Jahmyr Gibbs (shoulder) and WR Amon-Ra St. Brown (ankle) were non-participants at Wednesday practice.",
       "playerIds": [
         "jahmyr-gibbs",
         "amon-ra-st-brown"
@@ -91,50 +112,44 @@
       ],
       "url": "https://x.com/AdamSchefter/status/2115548465363378497",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-lions-skill-week8",
-      "signal": "DNP",
-      "priorStatus": "UNKNOWN",
+      "eventId": "injury-lions-stars-week8",
+      "signal": "DNP|MONITOR",
+      "priorStatus": "HEALTHY",
       "newStatus": "DNP",
-      "why": "Shoulder for Gibbs, ankle for St. Brown on first practice report of week.",
-      "implication": "Monitor rest of week; high chance still play but risk.",
-      "opportunity": "If out, backups and Jameson Williams/LaPorta rise.",
+      "why": "Gibbs shoulder (surprise after awkward slide); St. Brown ankle (expected rest per coach).",
+      "implication": "Monitor Thursday practice; both tough and expected to play but status uncertain early week.",
+      "opportunity": "If limited/out, David Montgomery and Jameson Williams see expanded roles.",
       "beneficiaries": [
-        "jameson-williams",
-        "sam-laporta"
+        "david-montgomery",
+        "jameson-williams"
       ],
       "corroboration": [
-        "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-wednesday-oct-28"
+        "NFL.com roundup"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "chase-dnp-rest",
-      "at": "2026-10-28T20:12:52Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Bengals listed WR Ja'Marr Chase as a non-participant in today’s practice due to an ankle injury and rest.",
-      "playerIds": [
-        "jamarr-chase"
-      ],
-      "players": [
-        "Ja'Marr Chase"
-      ],
-      "url": "https://x.com/AdamSchefter/status/2115537302860837097",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-chase-week8",
-      "signal": "DNP",
-      "priorStatus": "ACTIVE",
-      "newStatus": "DNP",
-      "why": "Ankle + NIR-rest designation.",
-      "implication": "Likely precautionary; expected to play but watch.",
-      "opportunity": "Tee Higgins volume if limited.",
-      "beneficiaries": [
-        "tee-higgins"
-      ],
+      "id": "etr-coleman-forward",
+      "at": "2026-10-28T18:33:59Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Adam Levitan and Evan Silva: time to move on and move forward with Jonah Coleman in DEN backfield upon return.",
+      "playerIds": [],
+      "players": [],
+      "url": "https://x.com/EstablishTheRun/status/2115512417002143869",
+      "kind": "ANALYST_OPINION",
+      "eventId": "role-coleman-den-w8",
+      "signal": "UPGRADE|WAIVER",
+      "why": "Backfield discussion favors Coleman moving forward.",
+      "implication": "Priority add/start if available; role expansion.",
+      "opportunity": "Carries and potential lead if healthy.",
       "corroboration": [
-        "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-wednesday-oct-28"
+        "@adamlevitan"
+      ],
+      "supportingSources": [
+        "adam-levitan"
       ],
       "priority": "HIGH"
     },
@@ -145,7 +160,7 @@
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Truly special stuff from Jaxon Smith-Njigba. Loses Kubiak, few dynamic threats, DCs shading, stadium knows where ball going. Doesn't matter. JSN ripping off 9 more actual fantasy points than opportunity implies.",
+      "text": "Jaxon Smith-Njigba ripping off 9 more actual fantasy points than opportunity implies despite losing Kubiak, limited supporting cast, and shaded coverage.",
       "playerIds": [
         "jaxon-smith-njigba"
       ],
@@ -154,49 +169,24 @@
       ],
       "url": "https://x.com/adamlevitan/status/2115502651421217228",
       "kind": "ANALYST_OPINION",
-      "eventId": "usage-jsn-week7-recap",
-      "signal": "UPGRADE",
-      "why": "Massive overperformance vs opportunity metrics despite scheme/coverage challenges.",
-      "implication": "Elite efficiency sustains high ranking/ROS value.",
-      "opportunity": "Target share and YAC continue elite.",
-      "priority": "HIGH"
-    },
-    {
-      "id": "waddle-chest-tbd",
-      "at": "2026-10-28T14:00:12Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Broncos WR Jaylen Waddle suffered an aggravation of his previous chest injury... status for Sunday vs Chiefs will be determined later; availability based on practice.",
-      "playerIds": [
-        "jaylen-waddle"
-      ],
-      "players": [
-        "Jaylen Waddle"
-      ],
-      "url": "https://x.com/RapSheet/status/2115443518705741826",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-waddle-week8",
-      "signal": "QUESTIONABLE",
-      "priorStatus": "ACTIVE",
-      "newStatus": "DNP/TBD",
-      "why": "Aggravated chest on reverse last week; DNP Wednesday.",
-      "implication": "Game-time or later decision; risk for start.",
-      "opportunity": "If out, other DEN WRs rise in targets.",
-      "beneficiaries": [
-        "courtland-sutton"
+      "eventId": "usage-jsn-overperform-w8",
+      "signal": "UPGRADE|ELITE",
+      "why": "Special efficiency and production vs expected opportunity share.",
+      "implication": "Sustainable WR1 upside even in tougher scheme/environment.",
+      "opportunity": "High target share + YAC/YPRR keeps him elite regardless of surrounding talent.",
+      "supportingSources": [
+        "establish-the-run"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "levitan-flowers-lamar",
+      "id": "levitan-flowers-lamar-unlock",
       "at": "2026-10-27T15:05:44Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Ravens 6th in yards per play despite Huntley 50% snaps. Zay Flowers leads NFL in YPRR despite 64% targets from Huntley. Very excited to see Declan Doyle cook with healthy Lamar.",
+      "text": "Zay Flowers leads NFL in YPRR despite 64% targets from Huntley; Ravens 6th in YPP with Huntley on 50% snaps. Excited for Lamar return with Declan Doyle.",
       "playerIds": [
         "zay-flowers",
         "lamar-jackson"
@@ -207,19 +197,69 @@
       ],
       "url": "https://x.com/adamlevitan/status/2115097622751088909",
       "kind": "ANALYST_OPINION",
-      "eventId": "usage-flowers-lamar-unlock",
-      "signal": "UPGRADE",
-      "why": "Elite YPRR even with backup QB; Lamar return amplifies.",
-      "implication": "Flowers massive upgrade with Jackson healthy.",
-      "opportunity": "Routes/targets/efficiency spike.",
+      "eventId": "usage-flowers-lamar-w8",
+      "signal": "UPGRADE|LOVE",
+      "why": "Elite efficiency under backup QB; Lamar unlocks full offense.",
+      "implication": "Massive ceiling boost with Jackson healthy and full.",
+      "opportunity": "YPRR leader + designed plays and deep shots from Lamar.",
       "beneficiaries": [
         "zay-flowers"
       ],
       "corroboration": [
-        "@AdamSchefter",
-        "@RapSheet"
+        "Schefter/Rapoport full practice"
+      ],
+      "supportingSources": [
+        "establish-the-run"
       ],
       "priority": "HIGH"
+    },
+    {
+      "id": "etr-thorman-rankings-w8",
+      "at": "2026-10-29T03:47:05Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Pat Thorman’s Week 8 rankings are live, with snaps and pace notes on multiple matchups including CAR, CHI, GB, MIN, SEA.",
+      "playerIds": [],
+      "players": [],
+      "url": "https://x.com/EstablishTheRun/status/2115651611054027062",
+      "kind": "RANKING_SIGNAL",
+      "eventId": "rankings-thorman-week8",
+      "signal": "RANKINGS",
+      "why": "Updated weekly rankings and usage context.",
+      "implication": "Use for start/sit and matchup edges.",
+      "opportunity": "Snaps/pace insights for role confirmation.",
+      "corroboration": [
+        "https://establishtherun.com/pat-thormans-rankings-week-8-5/"
+      ],
+      "supportingSources": [
+        "patrick-thorman"
+      ],
+      "priority": "NORMAL"
+    },
+    {
+      "id": "surtain-full-practice",
+      "at": "2026-10-28T22:57:02Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Broncos CB Pat Surtain was a full participant on Wednesday injury report.",
+      "playerIds": [],
+      "players": [],
+      "url": "https://x.com/RapSheet/status/2115578614968180864",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-surtain-week8",
+      "signal": "FULL",
+      "priorStatus": "LIMITED",
+      "newStatus": "FULL",
+      "why": "Improved to full.",
+      "implication": "Defense strengthened; minor fantasy impact on opposing passers.",
+      "corroboration": [
+        "Broncos official"
+      ],
+      "priority": "NORMAL"
     },
     {
       "id": "berry-sell-olave",
@@ -228,7 +268,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Sell Chris Olave or Jordyn Tyson? Give me Olave. I’d rather sell the unproven rookie.",
+      "text": "Prefer to sell Chris Olave over Jordyn Tyson; rather move the unproven rookie.",
       "playerIds": [
         "chris-olave"
       ],
@@ -237,60 +277,30 @@
       ],
       "url": "https://x.com/MatthewBerryTMR/status/2115575588337401950",
       "kind": "ANALYST_OPINION",
-      "eventId": "trade-olave-week8",
-      "signal": "SELL",
-      "why": "Prefer selling proven but capped Olave over unproven Tyson.",
-      "implication": "Trade value window; fade relative to upside plays.",
+      "eventId": "hate-olave-week8",
+      "signal": "HATE|SELL",
+      "why": "Olave more proven but prefers selling rookie unproven asset.",
+      "implication": "Trade candidate if value high; caution on long-term.",
       "priority": "NORMAL"
     },
     {
-      "id": "berry-laporta-open",
-      "at": "2026-10-28T21:31:37Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "I’m KEEPING IT OPEN on Sam LaPorta. He could be in for a big day against a Vikings defense that’s sure to put pressure on Jared Goff.",
-      "playerIds": [
-        "sam-laporta"
-      ],
-      "players": [
-        "Sam LaPorta"
-      ],
-      "url": "https://x.com/MatthewBerryTMR/status/2115557120368365880",
-      "kind": "ANALYST_OPINION",
-      "eventId": "start-laporta-week8",
-      "signal": "LOVE",
-      "why": "Matchup vs pressure-heavy Vikes D favors TE outlets.",
-      "implication": "Strong start candidate; keep rostered.",
-      "opportunity": "Targets/red-zone in high-scoring Lions offense.",
-      "supportingSources": [
-        "adam-levitan"
-      ],
-      "priority": "NORMAL"
-    },
-    {
-      "id": "noel-ir-demercado",
-      "at": "2026-10-28T21:24:04Z",
+      "id": "noel-ir-demercado-claim",
+      "at": "2026-10-28T21:02:12Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Texans claimed former Cowboys RB Emari Demercado on waivers. In corresponding move, placed WR Jaylin Noel on IR due to toe injury.",
+      "text": "Texans placed WR Jaylin Noel on IR (toe) and claimed RB Emari Demercado off waivers in corresponding move.",
       "playerIds": [],
       "players": [],
-      "url": "https://x.com/AdamSchefter/status/2115555222428831782",
-      "kind": "INJURY_STATUS",
-      "eventId": "roster-texans-week8",
-      "signal": "IR",
-      "priorStatus": "ACTIVE",
+      "url": "https://x.com/AdamSchefter/status/2115549719955124401",
+      "kind": "NFL_FACT",
+      "eventId": "roster-texans-noel-demercado-week8",
+      "signal": "IR|CLAIM",
       "newStatus": "IR",
-      "why": "Toe injury for Noel; Demercado claimed.",
-      "implication": "Noel out min 4 weeks; backfield depth add.",
-      "opportunity": "Potential snap share for other HOU RBs/WRs.",
-      "beneficiaries": [
-        "nico-collins"
-      ],
+      "why": "Toe injury for Noel.",
+      "implication": "Depth move; Demercado adds RB depth behind starters.",
+      "opportunity": "Minimal immediate fantasy impact unless further injuries.",
       "priority": "NORMAL"
     },
     {
@@ -300,7 +310,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Jadarian Price is BACK. But can you put him right back into your fantasy football lineup?",
+      "text": "Jadarian Price is back, but can you put him right back into fantasy lineups?",
       "playerIds": [
         "jadarian-price"
       ],
@@ -309,37 +319,41 @@
       ],
       "url": "https://x.com/MatthewBerryTMR/status/2115538148205945145",
       "kind": "ANALYST_OPINION",
-      "eventId": "role-price-week8",
-      "signal": "QUESTIONABLE",
+      "eventId": "status-jadarian-price-week8",
+      "signal": "MONITOR|QUESTIONABLE_LINEUP",
       "priorStatus": "OUT",
-      "newStatus": "ACTIVE",
-      "why": "Returns but immediate lineup viability questioned.",
-      "implication": "Monitor snaps/role share before starting.",
-      "opportunity": "Potential SEA RB committee work.",
+      "newStatus": "BACK",
+      "why": "Returns from absence; role/usage unclear immediately.",
+      "implication": "Stash or flex consideration depending on depth chart confirmation.",
+      "opportunity": "Potential SEA RB upside if workload materializes.",
       "priority": "NORMAL"
     },
     {
-      "id": "etr-coleman-forward",
-      "at": "2026-10-28T18:33:59Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "“I do think it’s time to move on and move forward with Jonah Coleman” – Evansilva and Levitan on DEN backfield and Coleman’s return.",
-      "playerIds": [],
-      "players": [],
-      "url": "https://x.com/EstablishTheRun/status/2115512417002143869",
-      "kind": "ANALYST_OPINION",
-      "eventId": "role-coleman-den-week8",
-      "signal": "UPGRADE",
-      "why": "ETR/Levitan/Silva see path to larger DEN RB role post-return.",
-      "implication": "Waiver/priority add for committee upside.",
-      "opportunity": "Carries/snaps expansion if preferred.",
-      "corroboration": [
-        "@adamlevitan"
+      "id": "chase-dnp-rest-ankle-w8",
+      "at": "2026-10-28T20:12:52Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Bengals WR Ja'Marr Chase listed as non-participant Wednesday due to ankle injury and rest.",
+      "playerIds": [
+        "jamarr-chase"
       ],
-      "supportingSources": [
-        "adam-levitan"
+      "players": [
+        "Ja'Marr Chase"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2115537302860837097",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-jamarr-chase-week8",
+      "signal": "DNP|REST",
+      "priorStatus": "ACTIVE",
+      "newStatus": "DNP",
+      "why": "Ankle + rest designation.",
+      "implication": "Typical midweek rest; likely full later but watch for any lingering.",
+      "opportunity": "Tee Higgins and Chase Brown could see slight bump if limited.",
+      "beneficiaries": [
+        "tee-higgins",
+        "chase-brown"
       ],
       "priority": "NORMAL"
     },
@@ -350,7 +364,7 @@
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Lions in full-PPR PPG: Goff QB2, Gibbs RB1 (3.9 clear of Walker), St. Brown WR4 (behind JSN/Puka/Lamb), LaPorta TE6, Jameson Williams WR24. Zero surprise given defensive woes, schedule, concentration, talent.",
+      "text": "Lions full-PPR PPG dominance: Gibbs RB1 (clear of Walker), St. Brown WR4, LaPorta TE6, Goff QB2, Jameson WR24 amid defensive woes and talent concentration.",
       "playerIds": [
         "jahmyr-gibbs",
         "amon-ra-st-brown",
@@ -364,18 +378,56 @@
         "Jameson Williams"
       ],
       "url": "https://x.com/adamlevitan/status/2115103119109693639",
-      "kind": "USAGE_DATA",
-      "eventId": "lions-dominance-ppg",
-      "signal": "RANKING_SIGNAL",
-      "why": "Full-PPR points per game leadership across skill positions.",
-      "implication": "Continue prioritizing Lions skill in rankings/starts.",
-      "opportunity": "High floor/ceiling from volume and efficiency.",
-      "conflict": "Gibbs/St. Brown DNP Wednesday creates short-term risk.",
+      "kind": "ANALYST_OPINION",
+      "eventId": "usage-lions-dominance-w8",
+      "signal": "RANKING_SIGNAL|ELITE",
+      "why": "Schedule, concentration, talent driving elite production.",
+      "implication": "Continue starting core confidently; high floor/ceiling.",
+      "opportunity": "Heavy usage and efficiency in positive game scripts.",
+      "conflict": "Current DNP statuses for Gibbs/St. Brown create short-term risk.",
+      "supportingSources": [
+        "establish-the-run"
+      ],
       "priority": "NORMAL"
     }
   ],
   "sundayMode": false,
   "sourceNotes": [
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific: JSN massive overperform vs opportunity; Flowers YPRR leader + Lamar unlock; Lions PPG dominance (Gibbs RB1, St. Brown WR4, LaPorta TE6). Aligns with usage focus. Coleman DEN forward with Silva.",
+      "at": "2026-10-29T12:00:00Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Thorman Week 8 rankings/snaps/pace live; Coleman DEN move-forward pod with Levitan/Silva; waiver analysis. Status and role signals timely.",
+      "at": "2026-10-29T12:00:00Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Per-player: LaPorta keep open/big day vs Vikes; Jadarian Price back but lineup Q; prefer sell Olave over Tyson; Gordon must-start (prior); Coleman waiver. Love/Hate actionable.",
+      "at": "2026-10-29T12:00:00Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "Timely Wed practice: Lamar full, Gibbs/St. Brown DNP, Chase DNP rest/ankle, Noel IR + Demercado claim. High corroboration value.",
+      "at": "2026-10-29T12:00:00Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Confirmed Lamar full first time since ankle; Love returns to practice; Surtain full. Strong corroboration.",
+      "at": "2026-10-29T12:00:00Z"
+    },
     {
       "sourceId": "adam-levitan",
       "source": "Adam Levitan",
@@ -508,45 +560,10 @@
       "grade": "USEFUL",
       "note": "Timely Wed practice: Lamar full, Gibbs/St. Brown DNP, Chase DNP rest/ankle, Demercado claim + Noel IR, Pierce IR support. High corroboration with Rapoport/NFL.com.",
       "at": "2026-10-28T21:21:13Z"
-    },
-    {
-      "sourceId": "ian-rapoport",
-      "source": "Ian Rapoport",
-      "grade": "USEFUL",
-      "note": "Confirmed Lamar full first time since ankle; Waddle chest aggravation TBD; Love returns to practice; Pierce IR; Surtain full. Strong corroboration on key statuses.",
-      "at": "2026-10-29T00:19:03Z"
-    },
-    {
-      "sourceId": "adam-levitan",
-      "source": "Adam Levitan",
-      "grade": "USEFUL",
-      "note": "Player-specific: JSN massive overperform vs opportunity; Flowers YPRR leader + Lamar unlock excitement; Lions PPG dominance (Gibbs RB1, St. Brown WR4, LaPorta TE6). Aligns with prior usage focus.",
-      "at": "2026-10-28T19:00:00Z"
-    },
-    {
-      "sourceId": "establish-the-run",
-      "source": "Establish The Run",
-      "grade": "USEFUL",
-      "note": "Coleman DEN move-forward pod with Levitan/Silva; waiver Week 8 content; snaps/pace notes via Thorman. Status/injury gold standard when posted; paywalled depth but timely signals.",
-      "at": "2026-10-28T18:30:00Z"
-    },
-    {
-      "sourceId": "matthew-berry",
-      "source": "Matthew Berry",
-      "grade": "USEFUL",
-      "note": "Per-player: LaPorta keep open/big day vs Vikes; Jadarian Price back but lineup Q; prefer sell Olave over Tyson; Gordon must-start (prior); Coleman waiver push. Love/Hate style actionable.",
-      "at": "2026-10-28T22:45:00Z"
-    },
-    {
-      "sourceId": "adam-schefter",
-      "source": "Adam Schefter",
-      "grade": "USEFUL",
-      "note": "Timely Wed practice: Lamar full, Gibbs/St. Brown DNP, Chase DNP rest/ankle, Demercado claim + Noel IR, Pierce IR support. High corroboration with Rapoport/NFL.com.",
-      "at": "2026-10-28T21:00:00Z"
     }
   ],
-  "mirroredAt": "2026-10-29T09:08:31.108Z",
+  "mirroredAt": "2026-10-29T10:09:47.792Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-10-29T08:09:43.186Z",
+  "sourceCompletedAt": "2026-10-29T10:09:47.101Z",
   "sourceStatus": "live"
 }
