@@ -1,77 +1,606 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-11-02T04:20:42Z",
+  "generatedAt": "2026-11-02T06:08:30.358Z",
   "status": "live",
-  "completedAt": "2026-11-02T04:20:42Z",
-  "nextAtLabel": "7:20 AM ET",
-  "inWindow": true,
-  "itemCount": 1,
-  "sundayMode": true,
-  "sourceNotes": [
-    {
-      "sourceId": "john-keim",
-      "source": "John Keim",
-      "handle": "@john_keim",
-      "team": "WAS",
-      "sourceType": "BEAT",
-      "dateAdded": "2026-11-02",
-      "grade": "USEFUL",
-      "note": "Late Sunday: McNichols headed to locker room limping, then Q to return with foot injury during Eagles game.",
-      "at": "2026-11-02T03:33:12Z"
-    },
-    {
-      "sourceId": "rotowire-nfl",
-      "source": "RotoWire NFL",
-      "handle": "@RotoWireNFL",
-      "team": null,
-      "sourceType": "NATIONAL",
-      "dateAdded": "2026-11-02",
-      "grade": "USEFUL",
-      "note": "Reported McNichols headed to locker room after apparent injury in second half vs Eagles, via Tashan Reed.",
-      "at": "2026-11-02T03:32:11Z"
-    },
-    {
-      "sourceId": "rich-cimini",
-      "source": "Rich Cimini",
-      "handle": "@RichCimini",
-      "team": "NYJ",
-      "sourceType": "BEAT",
-      "dateAdded": "2026-11-02",
-      "grade": "LOW",
-      "note": "Postgame discussion on Jets loss; no new injury status updates in window.",
-      "at": "2026-11-02T03:51:32Z"
-    }
-  ],
+  "completedAt": "2026-11-02T03:09:14.521Z",
+  "nextAtLabel": "2:00 AM ET",
+  "inWindow": false,
+  "itemCount": 12,
   "items": [
     {
-      "id": "keim-mcnichols-q-return",
-      "at": "2026-11-02T03:33:12Z",
-      "expertId": "john-keim",
-      "expert": "John Keim",
-      "handle": "john_keim",
-      "outlet": "ESPN",
-      "text": "McNichols is questionable to return with a foot injury.",
-      "players": ["Jeremy McNichols"],
-      "playerIds": ["jeremy-mcnichols"],
-      "url": "https://x.com/john_keim/status/2117097669508153576",
+      "id": "berry-hall-out-allen",
+      "at": "2026-11-01T16:49:16Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "OUT: Breece Hall... Braelon Allen rides again as a solid RB2. ACTIVE: DJ Moore, Dalton Kincaid, Aaron Jones and Jeremiyah Love. OUT also Carnell Tate, Tajae Spears.",
+      "playerIds": [
+        "breece-hall",
+        "dj-moore",
+        "jeremiyah-love"
+      ],
+      "players": [
+        "Breece Hall",
+        "DJ Moore",
+        "Jeremiyah Love"
+      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2116935616554578086",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-jeremy-mcnichols-week8",
+      "eventId": "injury-breece-hall-week8",
+      "signal": "OUT",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "OUT",
+      "why": "Confirmed inactive; Allen solid RB2 on news",
+      "implication": "Start Allen as RB2; Moore/Love/Kincaid good to go",
+      "opportunity": "Allen primary carries; Moore targets return",
+      "corroboration": [
+        "@RapSheet",
+        "https://x.com/RapSheet/status/2116892271870087615",
+        "@EstablishTheRun",
+        "@AdamSchefter"
+      ],
+      "supportingSources": [
+        "ian-rapoport",
+        "matthew-berry",
+        "adam-schefter",
+        "establish-the-run"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "levitan-lamar",
+      "at": "2026-11-02T01:54:21Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Lamar Jackson obviously terrible. But overall, lightest week of the year for injuries so far.",
+      "playerIds": [
+        "lamar-jackson"
+      ],
+      "players": [
+        "Lamar Jackson"
+      ],
+      "url": "https://x.com/adamlevitan/status/2117072793393398203",
+      "kind": "ANALYST_OPINION",
+      "eventId": "injury-lamar-jackson-week8",
+      "signal": "DOWNGRADE",
+      "why": "Thumb IR is catastrophic for him/Ravens but rest of slate clean",
+      "implication": "Avoid Lamar stacks; limited other pivots needed",
+      "corroboration": [
+        "@EstablishTheRun"
+      ],
+      "supportingSources": [
+        "establish-the-run"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "etr-lamar-watch",
+      "at": "2026-11-02T00:59:19Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Sunday #FantasyFootball injuries we're watching: Lamar Jackson (right thumb, will be placed on IR), Tyler Huntley (toe); also Jeremiyah Love (ankle), Michael Wilson (ribs).",
+      "playerIds": [
+        "lamar-jackson",
+        "jeremiyah-love",
+        "michael-wilson"
+      ],
+      "players": [
+        "Lamar Jackson",
+        "Jeremiyah Love",
+        "Michael Wilson"
+      ],
+      "url": "https://x.com/EstablishTheRun/status/2117058944036438356",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-lamar-jackson-week8",
+      "signal": "IR",
+      "priorStatus": "OUT",
+      "newStatus": "IR",
+      "why": "Postgame confirmation of IR/surgery path",
+      "implication": "Light overall injury week but Lamar massive hit",
+      "beneficiaries": [
+        "zay-flowers"
+      ],
+      "corroboration": [
+        "@RapSheet",
+        "@AdamSchefter"
+      ],
+      "supportingSources": [
+        "ian-rapoport",
+        "establish-the-run",
+        "matthew-berry",
+        "adam-schefter",
+        "adam-levitan"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "schefter-love-q",
+      "at": "2026-11-01T19:05:23Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Cardinals say RB Jeremiyah Love is questionable to return today due to an ankle injury.",
+      "playerIds": [
+        "jeremiyah-love"
+      ],
+      "players": [
+        "Jeremiyah Love"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2116969871280115929",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-jeremiyah-love-week8",
       "signal": "QUESTIONABLE",
       "priorStatus": "ACTIVE",
-      "newStatus": "QUESTIONABLE_TO_RETURN",
-      "why": "Foot injury sustained in-game; left for locker room limping.",
-      "implication": "Possible reduced or no further snaps for McNichols; opportunity for other WAS backs in remaining game time and potentially next week.",
-      "opportunity": "Backup RBs or committee shifts if McNichols limited; monitor for Antonio Williams related offense impact.",
+      "newStatus": "QUESTIONABLE",
+      "why": "Ankle injury in-game",
+      "implication": "Monitor return; possible limited or exit",
+      "opportunity": "If out, other ARI RBs elevate",
+      "conflict": "Earlier active confirmation",
       "corroboration": [
-        "@RotoWireNFL",
-        "https://x.com/RotoWireNFL/status/2117097414095982946"
+        "@EstablishTheRun"
       ],
-      "supportingSources": ["john-keim", "rotowire-nfl"],
-      "priority": "MEDIUM",
-      "sourceType": "BEAT",
-      "team": "WAS",
-      "relevance": "DISCOVERY"
+      "supportingSources": [
+        "establish-the-run"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "rap-actives",
+      "at": "2026-11-01T16:37:26Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Actives/inactives: #Jets RB Breece Hall is out. #Colts RB Jonathan Taylor is officially active. #Cowboys WR George Pickens is up. #Titans WR Calvin Ridley is up. AJ Brown out note.",
+      "playerIds": [
+        "breece-hall",
+        "jonathan-taylor",
+        "george-pickens",
+        "aj-brown"
+      ],
+      "players": [
+        "Breece Hall",
+        "Jonathan Taylor",
+        "George Pickens",
+        "A.J. Brown"
+      ],
+      "url": "https://x.com/RapSheet/status/2116932640100044852",
+      "kind": "INJURY_STATUS",
+      "eventId": "active-jonathan-taylor-week8",
+      "signal": "ACTIVE",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "ACTIVE",
+      "why": "Official actives list",
+      "implication": "JT plays/starts; Pickens clear; Hall confirmed out",
+      "opportunity": "JT full role if no trade drama; Pickens routes",
+      "corroboration": [
+        "@AdamSchefter"
+      ],
+      "supportingSources": [
+        "adam-schefter",
+        "establish-the-run"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "levitan-jt",
+      "at": "2026-11-01T15:55:17Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Really tough projection on Jonathan Taylor today. If you're going to trade JT, obviously makes zero sense to play him. Report says Taylor is expected to start.",
+      "playerIds": [
+        "jonathan-taylor"
+      ],
+      "players": [
+        "Jonathan Taylor"
+      ],
+      "url": "https://x.com/adamlevitan/status/2116922029782032405",
+      "kind": "ANALYST_PROJECTION",
+      "eventId": "active-jonathan-taylor-week8",
+      "signal": "CAUTION",
+      "newStatus": "ACTIVE",
+      "why": "Trade rumors swirling; expected start but risk of limited or deal",
+      "implication": "High variance start; sit if dealing him",
+      "opportunity": "Full carries if active and no deal",
+      "conflict": "Expected start vs trade uncertainty",
+      "corroboration": [
+        "@RapSheet",
+        "@wyche89"
+      ],
+      "supportingSources": [
+        "ian-rapoport"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "schefter-moore-pickens-waddle",
+      "at": "2026-11-01T14:42:44Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Bills WR D.J. Moore expected to play today vs. Ravens. Cowboys WR George Pickens expected to play. Broncos WR Jaylen Waddle trending toward playing.",
+      "playerIds": [
+        "dj-moore",
+        "george-pickens",
+        "jaylen-waddle"
+      ],
+      "players": [
+        "DJ Moore",
+        "George Pickens",
+        "Jaylen Waddle"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2116903773142667386",
+      "kind": "INJURY_STATUS",
+      "eventId": "active-dj-moore-week8",
+      "signal": "ACTIVE",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "EXPECTED",
+      "why": "Shoulder (Moore), other Q tags clearing",
+      "implication": "Moore returns after misses; Pickens/Waddle clear for volume",
+      "opportunity": "Moore targets/routes; Waddle/Pickens full roles",
+      "corroboration": [
+        "@MatthewBerryTMR",
+        "@EstablishTheRun",
+        "@AdamSchefter"
+      ],
+      "supportingSources": [
+        "matthew-berry",
+        "establish-the-run",
+        "adam-schefter"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "etr-ajb-out",
+      "at": "2026-11-01T13:46:22Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "OUT: AJ Brown, TreVeyon Henderson. EXPECTED TO PLAY: George Pickens, Jaylen Waddle, Colston Loveland, Kenny Gainwell, Jadarian Price.",
+      "playerIds": [
+        "aj-brown",
+        "treveyon-henderson",
+        "george-pickens",
+        "jaylen-waddle",
+        "colston-loveland",
+        "kenny-gainwell",
+        "jadarian-price"
+      ],
+      "players": [
+        "A.J. Brown",
+        "TreVeyon Henderson",
+        "George Pickens",
+        "Jaylen Waddle",
+        "Colston Loveland",
+        "Kenny Gainwell",
+        "Jadarian Price"
+      ],
+      "url": "https://x.com/EstablishTheRun/status/2116889589315145918",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-aj-brown-week8",
+      "signal": "OUT",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "OUT",
+      "why": "Weekend reports; lingering issues",
+      "implication": "Patriots WR/RB depth thinned; boosts to remaining targets/carries",
+      "opportunity": "Increased snaps for NE backups; confirmed play for listed",
+      "beneficiaries": [
+        "rhamondre-stevenson"
+      ],
+      "corroboration": [
+        "@RapSheet"
+      ],
+      "supportingSources": [
+        "ian-rapoport"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "etr-expected-play",
+      "at": "2026-11-01T13:46:22Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "EXPECTED TO PLAY: Jadarian Price, Zach Charbonnet, George Pickens, Jaylen Waddle, Colston Loveland, Kenny Gainwell, Calvin Ridley, Treylon Burks. EXPECTED TO START: Braelon Allen.",
+      "playerIds": [
+        "jadarian-price",
+        "george-pickens",
+        "jaylen-waddle",
+        "colston-loveland",
+        "kenny-gainwell"
+      ],
+      "players": [
+        "Jadarian Price",
+        "George Pickens",
+        "Jaylen Waddle",
+        "Colston Loveland",
+        "Kenny Gainwell"
+      ],
+      "url": "https://x.com/EstablishTheRun/status/2116889589315145918",
+      "kind": "INJURY_STATUS",
+      "eventId": "status-expected-play-week8",
+      "signal": "ACTIVE",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "EXPECTED",
+      "why": "Weekend reports summary",
+      "implication": "Clear most Q tags for early lock; start with confidence",
+      "opportunity": "Full snaps/routes for listed skill players",
+      "corroboration": [
+        "@AdamSchefter"
+      ],
+      "supportingSources": [
+        "adam-schefter"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "etr-henderson-out",
+      "at": "2026-11-01T13:46:22Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "OUT: AJ Brown, TreVeyon Henderson.",
+      "playerIds": [
+        "treveyon-henderson",
+        "aj-brown"
+      ],
+      "players": [
+        "TreVeyon Henderson",
+        "A.J. Brown"
+      ],
+      "url": "https://x.com/EstablishTheRun/status/2116889589315145918",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-treveyon-henderson-week8",
+      "signal": "OUT",
+      "priorStatus": "QUESTIONABLE",
+      "newStatus": "OUT",
+      "why": "Illness/lingering for Henderson; knee for Brown",
+      "implication": "NE backfield to Stevenson/others; WR targets redistribute",
+      "opportunity": "Rhamondre elevated carries; other NE WRs routes",
+      "beneficiaries": [
+        "rhamondre-stevenson"
+      ],
+      "corroboration": [
+        "web inactives"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "levitan-allen",
+      "at": "2026-11-01T19:55:59Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Braelon Allen ran for 186-1268-12 back in 2021 as a true freshman. For Wisconsin, in the Big Ten. He was 17 years old.",
+      "playerIds": [],
+      "players": [],
+      "url": "https://x.com/adamlevitan/status/2116982604880867522",
+      "kind": "ANALYST_OPINION",
+      "eventId": "usage-braelon-allen-week8",
+      "signal": "UPGRADE",
+      "why": "College pedigree highlight post-Hall news; supports heavy role",
+      "implication": "Trust Allen as RB1/2 with Hall out",
+      "opportunity": "Workhorse carries/routes in Jets backfield",
+      "corroboration": [
+        "@MatthewBerryTMR"
+      ],
+      "supportingSources": [
+        "matthew-berry",
+        "establish-the-run"
+      ],
+      "priority": "NORMAL"
+    },
+    {
+      "id": "rap-saquon-no-trade",
+      "at": "2026-11-01T18:10:39Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "The #Eagles won’t trade Saquon Barkley.",
+      "playerIds": [
+        "saquon-barkley"
+      ],
+      "players": [
+        "Saquon Barkley"
+      ],
+      "url": "https://x.com/RapSheet/status/2116956099106529526",
+      "kind": "NFL_FACT",
+      "eventId": "trade-saquon-barkley-week8",
+      "signal": "HOLD",
+      "why": "Insiders report no trade",
+      "implication": "Barkley remains Eagles lead back; play as normal",
+      "opportunity": "Full role secured",
+      "priority": "NORMAL"
     }
-  ]
+  ],
+  "sundayMode": false,
+  "sourceNotes": [
+    {
+      "sourceId": "establish-the-run",
+      "source": "Adam Levitan / Establish The Run",
+      "grade": "USEFUL",
+      "note": "Comprehensive Sunday morning injury board with EXPECTED TO START/PLAY, OUT, NO REPORTS; timely Hall not expected update via Rap. High-priority status focus pre-lock; covers Price/Loveland/Gainwell/Waddle/Pickens/AJB/Henderson. Postgame Lama",
+      "at": "2026-11-02T00:59:19Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific: JT tough projection amid trades (expected start but caution); Allen college pedigree highlight post-Hall news; notes big statuses before lock (Hall/Moore/Kincaid). Lamar terrible but light injury week overall.",
+      "at": "2026-11-02T01:54:21Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Per-player actives/outs (Moore/Kincaid/Love/Jones active; Hall/Tate/Spears out); Allen solid RB2 on Hall news. Actionable Happy Hour/pregame volume. RT Lamar IR.",
+      "at": "2026-11-01T16:49:16Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "Timely mid-game Lamar thumb OUT/surgery/IR + Huntley turf toe cascade; Love Q ankle; actives context (Pickens/Moore/Kincaid etc, Hall inactive). Strong factual Sunday including in-game and post.",
+      "at": "2026-11-01T23:18:15Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Corroborated Hall not expected/Allen start; JT/Pickens/Ridley active; Lamar OUT/surgery/IR; Saquon no-trade; AJ Brown out note. Key Sunday statuses and deadline.",
+      "at": "2026-11-01T21:35:07Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Comprehensive Sunday morning injury board with EXPECTED TO START/PLAY, OUT, NO REPORTS; timely Hall not expected update via Rap. High-priority status focus pre-lock; covers Price/Loveland/Gainwell/Waddle/Pickens/AJB/Henderson. Postgame watc",
+      "at": "2026-11-02T01:00:00Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific: JT tough projection amid trades (expected start but caution); Allen college pedigree highlight post-Hall news; notes big statuses before lock (Hall/Moore/Kincaid). Lamar terrible but light injury week overall. No blanket ra",
+      "at": "2026-11-02T01:54:00Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Per-player actives/outs (Moore/Kincaid/Love/Jones active; Hall/Tate/Spears out); Allen solid RB2 on Hall news. Actionable Happy Hour/pregame volume. RT Lamar IR.",
+      "at": "2026-11-01T16:49:00Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "Timely mid-game Lamar thumb OUT/surgery/IR + Huntley turf toe cascade; Love Q ankle; actives context (Pickens/Moore/Kincaid etc, Hall inactive). Strong factual Sunday including in-game and post.",
+      "at": "2026-11-01T23:18:00Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Corroborated Hall not expected/Allen start; JT/Pickens/Ridley active; Lamar OUT/surgery/IR; Saquon no-trade; AJ Brown out note. Key Sunday statuses and deadline.",
+      "at": "2026-11-01T21:35:00Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Comprehensive Sunday morning injury board with EXPECTED TO START/PLAY, OUT, NO REPORTS; timely Hall not expected update via Rap. High-priority status focus pre-lock; covers Price/Loveland/Gainwell/Waddle/Pickens/AJB/Henderson.",
+      "at": "2026-11-01T14:00:00Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific: JT tough projection amid trades (expected start but caution); Allen college pedigree highlight post-Hall news; notes big statuses before lock (Hall/Moore/Kincaid). No blanket rankings.",
+      "at": "2026-11-01T16:00:00Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Per-player actives/outs (Moore/Kincaid/Love/Jones active; Hall/Tate/Spears out); Allen solid RB2 on Hall news; RT Lamar IR. Actionable Happy Hour/pregame volume.",
+      "at": "2026-11-01T17:00:00Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "Timely mid-game Lamar thumb OUT/surgery/IR + Huntley turf toe cascade; Love Q ankle; actives context. Strong factual Sunday including in-game and post.",
+      "at": "2026-11-01T23:30:00Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Corroborated Hall not expected/Allen start; JT/Pickens/Ridley active; Lamar OUT/surgery/IR; Saquon no-trade; AJ Brown out note. Key Sunday statuses and deadline.",
+      "at": "2026-11-01T21:40:00Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Comprehensive Sunday morning injury board with EXPECTED/OUT/NO REPORT; updated Hall not expected. High priority status focus; Rundown live.",
+      "at": "2026-11-01T13:59:35Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific: Harvey unique no-handcuff + targets free; Saquon surprising IN not 100%; Lamar small rush docks; Breece Q cryptic; Meyers practice weird → Hunter routes possible; Egbuka/Tate/Spears/AJB outs + fallout. JT tough proj. Projec",
+      "at": "2026-11-01T15:55:17Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Per-player: Allen solid RB2 on Hall news. Actives/outs list. Saquon pregame segment. Parlay leans Higgins/Washington/Goedert. High-volume actionable via Happy Hour.",
+      "at": "2026-11-01T16:49:16Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "Timely: Lamar thumb OUT + Huntley; Hall inactive; Pickens/Moore/Kincaid/Meyers/Ridley active; JT trade open; Love QTR ankle. Strong factual Sunday including mid-game.",
+      "at": "2026-11-01T18:34:08Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Corroborated Hall not expected/Allen start; Waddle trending; actives including Pickens/JT/Ridley; Lamar OUT; AJ Brown out note; Saquon no-trade. Key Sunday statuses.",
+      "at": "2026-11-01T16:37:26Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Comprehensive Sunday morning injury board with EXPECTED/OUT/NO REPORT; updated Hall not expected. High priority status focus; Rundown live.",
+      "at": "2026-11-01T13:46:22Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific: Harvey unique no-handcuff + targets free; Saquon surprising IN not 100%; Lamar small rush docks; Breece Q cryptic; Meyers practice weird → Hunter routes possible; Egbuka/Tate/Spears/AJB outs + fallout. JT tough proj. Projec",
+      "at": "2026-10-31T03:24:57Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Per-player: Allen solid RB2 on Hall news. Actives/outs list. Saquon pregame segment. Parlay leans Higgins/Washington/Goedert. High-volume actionable via Happy Hour.",
+      "at": "2026-11-01T14:59:18Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "Timely: Lamar thumb OUT + Huntley; Hall inactive; Pickens/Moore/Kincaid/Meyers/Ridley active; JT trade open; Love QTR ankle. Strong factual Sunday including mid-game.",
+      "at": "2026-11-01T18:34:08Z"
+    }
+  ],
+  "mirroredAt": "2026-11-02T06:08:30.888Z",
+  "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
+  "sourceCompletedAt": "2026-11-02T03:09:14.521Z",
+  "sourceStatus": "live"
 }
