@@ -1,47 +1,46 @@
-# Sparta Week 8 board — JD
+# Sparta Week 9 board — JD
 
 _Intelligence for the Brain, not a recorded recommendation. Waiver availability is **unconfirmed** until checked on Yahoo._
 
-FAAB: **$20** (min bid $1) · FantasyPros pulled 2026-10-31T17:38:11+00:00 · roster as of 2026-10-23T22:17:00-04:00
+FAAB: **$18** (min bid $1) · FantasyPros pulled 2026-11-03T03:26:56+00:00 · roster as of 2026-11-02T22:11:51-05:00
 
 ## Lineup
 
 | Slot | Player | Proj (PPR) | Week rank |
 |---|---|---|---|
-| QB | Geno Smith | 17.13 | 18 |
-| RB | Bijan Robinson | 21.8 | 4 |
-| RB | Breece Hall | 13.25 | 43 |
-| WR | Jaxon Smith-Njigba | 23.53 | 2 |
-| WR | Tetairoa McMillan | 14.84 | 27 |
-| TE | Darren Waller | 6.8 | 111 |
-| W/R/T | Braelon Allen | 10.02 | 67 |
-| W/R/T | Emanuel Wilson | 6.42 | 89 |
-| K | Evan McPherson | 8.81 | 2 |
-| DEF | Ravens | 5.15 | 24 |
+| QB | Sam Darnold | 17.53 | 15 |
+| RB | Bijan Robinson | 21.15 | 6 |
+| RB | Braelon Allen | 9.09 | 56 |
+| WR | Jaxon Smith-Njigba | 19.41 | 3 |
+| WR | Tetairoa McMillan | 12.73 | 35 |
+| TE | Darren Waller | 8.21 | 122 |
+| W/R/T | Devaughn Vele | 8.86 | 67 |
+| W/R/T | Mike Washington Jr. | 7.38 | 115 |
+| K | Evan McPherson | 8.14 | 5 |
+| DEF | Ravens | 5.08 | 28 |
 
-Projected: current starters **119.56** → suggested **127.75**
-Changes: start Darren Waller, Emanuel Wilson; bench Devaughn Vele, Kenyon Sadiq
+Projected: current starters **112.21** → suggested **117.58**
+Changes: start Darren Waller, Devaughn Vele, Sam Darnold; bench Dylan Sampson, Geno Smith, Mike Gesicki
 
 ## Waiver targets
 
 | Pri | Player | Pos | FP waiver # | ROS rank | Yahoo % | Replaces | In Sparta |
 |---|---|---|---|---|---|---|---|
-| HIGH | Omar Cooper Jr. (NYJ) | WR | 1 | 72 | 71% | Dontayvion Wicks | verify |
-| HIGH | Antonio Williams (WAS) | WR | 4 | 96 | 22% | Dontayvion Wicks | verify (likely free) |
-| MEDIUM | Caleb Douglas (MIA) | WR | 9 | 97 | 26% | Dontayvion Wicks | verify (likely free) |
-| MEDIUM | Terrance Ferguson (LAR) | TE | 20 | 120 | 16% | Darren Waller | verify (likely free) |
-| MEDIUM | New Orleans Saints (NO) | DEF | — | — | — | Ravens | verify |
-| MEDIUM | New York Giants (NYG) | DEF | — | — | — | Ravens | verify |
-| LOW | Seth McGowan (IND) | RB | 14 | 179 | 24% | Dylan Sampson | verify (likely free) |
-| LOW | Mason Taylor (NYJ) | TE | 21 | 165 | 3% | Darren Waller | verify (likely free) |
-| LOW | Chris Rodriguez Jr. (JAC) | RB | 23 | 170 | 24% | Dylan Sampson | verify (likely free) |
-| LOW | AJ Barner (SEA) | TE | — | 133 | 10% | Darren Waller | ON_WAIVERS_YAHOO_CONFIRMED |
-| LOW | Mike Gesicki (CIN) | TE | — | 143 | 18% | Darren Waller | verify (likely free) |
-| LOW | Cade Otton (TB) | TE | — | 164 | 5% | Darren Waller | ON_WAIVERS_YAHOO_CONFIRMED |
-| LOW | Colby Parkinson (LAR) | TE | — | 168 | 2% | Darren Waller | verify (likely free) |
-| LOW | Jacoby Brissett (ARI) | QB | — | — | 49% | Kirk Cousins | verify |
-| LOW | Jacksonville Jaguars (JAC) | DEF | — | — | 82% | Ravens | verify |
-| LOW | Cincinnati Bengals (CIN) | DEF | — | — | 85% | Ravens | verify |
-| LOW | Washington Commanders (WAS) | DEF | — | — | 40% | Ravens | verify |
+| MEDIUM | Adonai Mitchell (NYJ) | WR | 7 | 103 | 11% | Devaughn Vele | ON_WAIVERS_YAHOO_CONFIRMED |
+| MEDIUM | Greg Dulcich (MIA) | TE | 22 | 138 | 6% | Darren Waller | ON_WAIVERS_YAHOO_CONFIRMED |
+| MEDIUM | Kenyon Sadiq (NYJ) | TE | 23 | 137 | 13% | Darren Waller | verify (likely free) |
+| MEDIUM | RJ Harvey (DEN) | RB | — | 146 | 69% | Dylan Sampson | verify |
+| LOW | AJ Barner (SEA) | TE | 25 | 141 | 12% | Darren Waller | ON_WAIVERS_YAHOO_CONFIRMED |
+| LOW | Colby Parkinson (LAR) | TE | — | 164 | 2% | Darren Waller | verify (likely free) |
+| LOW | Kimani Vidal (LAC) | RB | — | 178 | 13% | Dylan Sampson | verify (likely free) |
+| LOW | Malik Willis (MIA) | QB | — | — | 20% | Geno Smith | ON_WAIVERS_YAHOO_CONFIRMED |
+| LOW | Spencer Shrader (IND) | K | — | — | 81% | Evan McPherson | verify |
+| LOW | Buffalo Bills (BUF) | DEF | — | — | 10% | Ravens | verify (likely free) |
+| LOW | Philadelphia Eagles (PHI) | DEF | — | — | 41% | Ravens | verify |
+| LOW | New Orleans Saints (NO) | DEF | — | — | 3% | Ravens | verify (likely free) |
+| LOW | Chicago Bears (CHI) | DEF | — | — | 28% | Ravens | verify (likely free) |
 
-Note: ownership ledger is missing drops for {'ANT': 19}; some 'owned' players may actually be available.
+## Roster notes
+
+- Breece Hall: Yahoo shows 'O' (roster snapshot), but FantasyPros lists no injury for this week and projects 12.8. Check his practice reports before locking the lineup; he is kept out of the suggested lineup until Yahoo clears him.
+- Brian Robinson Jr.: Yahoo shows 'O' (roster snapshot), but FantasyPros lists no injury for this week and projects 7.03. Check his practice reports before locking the lineup; he is kept out of the suggested lineup until Yahoo clears him.
