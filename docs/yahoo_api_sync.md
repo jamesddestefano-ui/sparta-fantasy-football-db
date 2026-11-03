@@ -2,6 +2,8 @@
 
 ## Status (2026-10-23): APPROVED by Yahoo — owner finishing setup
 
+- 2026-11-03 (sign-in run #7): Yahoo access WORKS — the run verified read access to league 102586 (week 8). It then failed saving the refresh token: `SPARTA_SECRETS_PAT` produced an invalid Authorization header (likely a stray space/newline from a phone paste). Workflow now strips whitespace from the PAT. Yahoo codes are single-use, so redo the Agree link and the sign-in run once.
+
 - 2026-10-23 (James's email screenshot): Yahoo approved the Fantasy Sports API application. Access turns on after three steps: (1) sign the API Access and Use Agreement (DocuSign), (2) create a **new** app on the Yahoo Developer page with Fantasy Sports selected (existing apps don't get the permission), (3) submit the new app's Client ID with name/email on Yahoo's Developer Application Confirmation Form.
 - 2026-10-23 ~10:12 PM ET: new app created, GitHub secrets updated to the new app (sign-in run #6 exchanged the code fine, then got HTTP 403 "application is not authorized" = access not provisioned yet), Client ID submitted on Yahoo's confirmation form ("We'll be in touch shortly"). Waiting on Yahoo to provision; then redo the sign-in once (fresh Agree link) and run the sync.
 - 2026-10-23 10:14 PM ET: Yahoo auto-reply to the Client ID form: "review process typically takes 1-2 weeks". DocuSign signed by James 2026-10-23 6:35 PM (yahoo.com address; Yahoo countersignature pending). Expect access ~Nov 1-7. Until then: screenshots + Codex live checks.

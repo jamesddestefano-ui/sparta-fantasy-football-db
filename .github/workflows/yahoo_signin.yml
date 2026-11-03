@@ -44,6 +44,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.SPARTA_SECRETS_PAT }}
         run: |
+          # Phone pastes often add a trailing space/newline, which breaks the Authorization header.
+          GH_TOKEN="$(printf '%s' "$GH_TOKEN" | tr -d '[:space:]')"
+          export GH_TOKEN
           if [ -z "$GH_TOKEN" ]; then
             echo "::error::Add the SPARTA_SECRETS_PAT secret so this run can save YAHOO_REFRESH_TOKEN."; exit 1
           fi
