@@ -6,14 +6,12 @@ name: Sparta Yahoo API sync
 # or the "apply" input on a manual run), and only if validate_sparta.py passes afterwards.
 
 on:
-  # Schedule PAUSED 2026-10-20: Yahoo has not yet approved API access for the Sparta app,
-  # so every scheduled run failed. Re-enable by uncommenting the two cron lines once
-  # Yahoo approves and a manual run succeeds (see docs/yahoo_api_sync.md, "Status").
-  # schedule:
-  #   # ~8:07 AM, 12:07 PM, 4:07 PM, 8:07 PM ET during daylight time (one hour earlier in EST).
-  #   - cron: '7 12,16,20,0 * * *'
-  #   # Extra run after Yahoo's overnight waiver processing (Wed/Thu ~5:07 AM ET).
-  #   - cron: '7 9 * * 3,4'
+  # Schedule re-enabled 2026-11-03 (owner request) after manual runs #3 (report) and #4 (apply) succeeded.
+  schedule:
+    # ~7:07 AM, 11:07 AM, 3:07 PM, 7:07 PM ET during standard time (one hour later in EDT).
+    - cron: '7 12,16,20,0 * * *'
+    # Extra run after Yahoo's overnight waiver processing (Wed/Thu ~4:07 AM ET).
+    - cron: '7 9 * * 3,4'
   workflow_dispatch:
     inputs:
       apply:
