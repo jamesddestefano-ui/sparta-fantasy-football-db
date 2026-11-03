@@ -31,6 +31,7 @@ Status labels: **ADOPTED** (an active rule in `learning/rules/learning_rules_v*.
 - Yahoo is the source of truth for ownership and FAAB. Ask for screenshots when data is older than 24h; check what time a screenshot was taken (2026 W7: a 10:31 PM screenshot was logged as AM).
 - Other teams' rosters drift without league-wide transaction pulls (2026: ANT 19, JU 18 rosters in the reconstruction; Hockenson, Mayer and Flournoy moves missed). Fix: pull all 12 rosters each week.
 - FantasyPros QB and DEF points don't match Sparta's scoring (6-pt pass TD, Sparta DEF). Use Yahoo for QB/DEF grading.
+- Yahoo's IR slot takes IR, IR-R and O only, not Q or D. Check `eligible_positions` on the day: an O can turn Q and lose eligibility (2026 W9: B. Robinson Jr.). OBSERVATION.
 
 ## Season rollover checklist
 
