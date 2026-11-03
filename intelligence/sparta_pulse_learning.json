@@ -1,17 +1,21 @@
 {
  "league": "sparta",
- "pulses_considered": 78,
- "pulses_used": 5,
+ "pulses_considered": 219,
+ "pulses_used": 6,
  "pulses_rejected": 0,
- "actions_changed_by_pulse": 3,
- "successful_actions_changed_by_pulse": 1,
+ "actions_changed_by_pulse": 4,
+ "successful_actions_changed_by_pulse": 2,
  "unsuccessful_actions_changed_by_pulse": 0,
  "average_information_lead_time": null,
- "highly_useful_pulses": 0,
+ "highly_useful_pulses": 1,
  "misleading_pulses": 0,
  "too_late_pulses": 0,
  "pulse_source_performance": {
   "Grok Pulse (Schefter/Cimini injury reports)": {
+   "used": 1,
+   "useful_or_better": 1
+  },
+  "Grok Pulse (Rapoport/Dehner, All IR)": {
    "used": 1,
    "useful_or_better": 1
   }
@@ -21,10 +25,14 @@
    "used": 2,
    "useful_or_better": 1,
    "accurate_not_actionable": 1
+  },
+  "INJURY_REPLACEMENT": {
+   "used": 1,
+   "useful_or_better": 1
   }
  },
  "usefulness_grades": {
-  "HIGHLY_USEFUL": 0,
+  "HIGHLY_USEFUL": 1,
   "USEFUL": 1,
   "ACCURATE_NOT_ACTIONABLE": 58,
   "DUPLICATIVE": 0,
@@ -35,12 +43,12 @@
  },
  "double_count_protection": true,
  "ownership_authority": "authenticated Yahoo Sparta state and durable Sparta repository state only",
- "updated_at_et": "2026-10-27T10:45:00-04:00",
+ "updated_at_et": "2026-11-03T10:15:00-05:00",
  "decision_ledger_path": "learning/decision_ledger.jsonl",
  "pulse_lineage_path": "learning/pulse_decision_lineage.jsonl",
- "note": "NFL Pulse-specific aggregates only. 2026-09-15 12:00 Live Check: 2 active reviewed (Delane MRI POSSIBLE; Omar Cooper MRI sprain W2W YES), both NO MATERIAL JD; Yahoo pending ladder now matches Brain $12/$11/$7; no new decision_ledger from Pulse. | sparta-live-check-20260930-1600: +2 considered (Reed/Dowdle NON-JD suppress); JD wake Yahoo Hall Q\u2192D not Pulse. | sparta-live-check-20261001-2000: +3 considered (Etienne/Charbonnet-LP/Dowdle-inactive NON-JD soft suppress); quiet Yahoo continuity. | sparta-live-check-20261002-0750: +0 considered (overnight digests quiet delta 0); Yahoo wake = lineup Wicks FLEX not Pulse. | sparta-live-check-20261004-1945: +13 considered (1551\u20131851 McConkey/Evans/Lamar/Higgins/Bigsby/Rice/Coker/Pat Bryant/Nailor) all NON-JD suppress; Coker INACTIVE = positive context JD McMillan/Waller; no JD decision from Pulse. | sparta-live-check-20261005-1150: +12 considered (1951\u20131124 Thornton/Juszczyk/DJ Moore/Lamar/Hill/Bryant/Swift/Rice/Tyson) 0 YES 1 POSSIBLE (Tyson IR \u2192 Vele context) \u2014 no JD decision from Pulse; Pulse REJECT_STAT_NOISE on McMillan 14-192-2 SNF correct per policy but W4 outcome JD-relevant. | sparta-live-check-20261005-1550: +12 considered (1229\u20131522 Bryant/Lane/Bagent/Dell/Slater/Mariota/Hollins/Mixon/Chase/Higgins/Lamar/Charbonnet) 2 YES (Chase protocol continuity; Charbonnet OUT W5 confirms Wilson role) 3 POSSIBLE \u2014 no JD decision change from Pulse. | sparta-live-check-20261005-1950: +11 considered (1620\u20131925 Rice/Thornton/Barkley/Bigsby/Monangai/Mixon/Slater/Lamb/Daniels/White/Fant) 1 YES (Mixon SEA PS = Wilson watch) 2 POSSIBLE (Monangai vs Packers DEF; Fant inactive \u2192 Vele/Pitts active) \u2014 no JD decision change from Pulse; McFarland W5 published 7:30 PM (Dobbins BAD UTIL trend, free section). | aggregates gap: sparta-live-check-20261006-0750/1150/1550 were cursor-only commits (not added to these aggregates). | sparta-live-check-20261006-1950: +3 considered (1626\u20131916 McLaughlin/Brooks/Douglas) 1 YES (Douglas JD BN day-to-day \u2014 confirms existing drop plan) 0 POSSIBLE 2 NO \u2014 no JD decision change from Pulse; all late captures of Mon pressers; McFarland NO_NEW; FPD Everything Report paywalled; FL Receiver Score Wicks GOOD UTIL/BAD RESULT. | sparta-live-check-20261007-0750: 0 delta (5 quiet scans, 2316 incomplete); analyst-layer LATENCY_MISSED_CAPTURE \u2014 McFarland Pitts utilization X post (Tue 12:00 PM ET) not in Pulse capture path; surfaced ~19h late via FL newsletter. | 2026-w07 review (Brain 2026-10-27): +2 used (Sat Hall-GTD/Charbonnet \u2192 E. Wilson FLEX USEFUL; Kirk IR return ACCURATE_NOT_ACTIONABLE).",
+ "note": "NFL Pulse-specific aggregates only. 2026-09-15 12:00 Live Check: 2 active reviewed (Delane MRI POSSIBLE; Omar Cooper MRI sprain W2W YES), both NO MATERIAL JD; Yahoo pending ladder now matches Brain $12/$11/$7; no new decision_ledger from Pulse. | sparta-live-check-20260930-1600: +2 considered (Reed/Dowdle NON-JD suppress); JD wake Yahoo Hall Q→D not Pulse. | sparta-live-check-20261001-2000: +3 considered (Etienne/Charbonnet-LP/Dowdle-inactive NON-JD soft suppress); quiet Yahoo continuity. | sparta-live-check-20261002-0750: +0 considered (overnight digests quiet delta 0); Yahoo wake = lineup Wicks FLEX not Pulse. | sparta-live-check-20261004-1945: +13 considered (1551–1851 McConkey/Evans/Lamar/Higgins/Bigsby/Rice/Coker/Pat Bryant/Nailor) all NON-JD suppress; Coker INACTIVE = positive context JD McMillan/Waller; no JD decision from Pulse. | sparta-live-check-20261005-1150: +12 considered (1951–1124 Thornton/Juszczyk/DJ Moore/Lamar/Hill/Bryant/Swift/Rice/Tyson) 0 YES 1 POSSIBLE (Tyson IR → Vele context) — no JD decision from Pulse; Pulse REJECT_STAT_NOISE on McMillan 14-192-2 SNF correct per policy but W4 outcome JD-relevant. | sparta-live-check-20261005-1550: +12 considered (1229–1522 Bryant/Lane/Bagent/Dell/Slater/Mariota/Hollins/Mixon/Chase/Higgins/Lamar/Charbonnet) 2 YES (Chase protocol continuity; Charbonnet OUT W5 confirms Wilson role) 3 POSSIBLE — no JD decision change from Pulse. | sparta-live-check-20261005-1950: +11 considered (1620–1925 Rice/Thornton/Barkley/Bigsby/Monangai/Mixon/Slater/Lamb/Daniels/White/Fant) 1 YES (Mixon SEA PS = Wilson watch) 2 POSSIBLE (Monangai vs Packers DEF; Fant inactive → Vele/Pitts active) — no JD decision change from Pulse; McFarland W5 published 7:30 PM (Dobbins BAD UTIL trend, free section). | aggregates gap: sparta-live-check-20261006-0750/1150/1550 were cursor-only commits (not added to these aggregates). | sparta-live-check-20261006-1950: +3 considered (1626–1916 McLaughlin/Brooks/Douglas) 1 YES (Douglas JD BN day-to-day — confirms existing drop plan) 0 POSSIBLE 2 NO — no JD decision change from Pulse; all late captures of Mon pressers; McFarland NO_NEW; FPD Everything Report paywalled; FL Receiver Score Wicks GOOD UTIL/BAD RESULT. | sparta-live-check-20261007-0750: 0 delta (5 quiet scans, 2316 incomplete); analyst-layer LATENCY_MISSED_CAPTURE — McFarland Pitts utilization X post (Tue 12:00 PM ET) not in Pulse capture path; surfaced ~19h late via FL newsletter. | 2026-w07 review (Brain 2026-10-27): +2 used (Sat Hall-GTD/Charbonnet → E. Wilson FLEX USEFUL; Kirk IR return ACCURATE_NOT_ACTIONABLE). | W8: pulses_considered +141 live passes in the Week 8 window (1074 items; not itemized, closing the 10/7-onward backlog only for this week).",
  "last_material_pulse_id": "20260914-170001-lane-wrist-fracture-weeks",
- "last_decision_id": "SPARTA-2026W2-WAIVER-LADDER-ALIGNED-20260915-1200",
+ "last_decision_id": "SPARTA-2026W8-CLAIM-GESICKI-1-20261027-1455",
  "pulses_reviewed": 73,
  "pulses_rejected_by_sparta": 71,
  "events": [
@@ -150,7 +158,7 @@
    ],
    "delta_count": 0,
    "jd_elevate": false,
-   "note": "0 accepted pulses; analyst-layer McFarland X Pitts BAD UTIL (JD starting TE) MEDIUM for Brain TE pass \u2014 Pulse missed capture (LATENCY_MISSED_CAPTURE); FPD paywalled/not served"
+   "note": "0 accepted pulses; analyst-layer McFarland X Pitts BAD UTIL (JD starting TE) MEDIUM for Brain TE pass — Pulse missed capture (LATENCY_MISSED_CAPTURE); FPD paywalled/not served"
   }
  ],
  "last_check_id": "sparta-live-check-20261007-0750",
@@ -234,7 +242,7 @@
    "sparta_decision_confidence": 4,
    "decision": "NO_WAKE_BN_SOFT_POSITIVE",
    "ownership": "JD BN Q",
-   "note": "MRI pending\u2192not serious/might play W6; BN soft-positive \u2260 wake; Cousins starting"
+   "note": "MRI pending→not serious/might play W6; BN soft-positive ≠ wake; Cousins starting"
   }
  ]
 }

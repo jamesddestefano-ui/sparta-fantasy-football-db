@@ -1,37 +1,37 @@
 {
  "system": "PRIME_SPARTA_FANTASY_WATCH",
  "season": 2026,
- "updated_at": "2026-10-27T10:45:00-04:00",
- "total_decisions": 47,
- "wins": 27,
- "losses": 12,
- "neutral": 8,
+ "updated_at": "2026-11-03T10:15:00-05:00",
+ "total_decisions": 55,
+ "wins": 32,
+ "losses": 13,
+ "neutral": 10,
  "outcome_grade_distribution": {
-  "A": 14,
-  "B": 13,
-  "C": 8,
-  "D": 10,
+  "A": 17,
+  "B": 15,
+  "C": 10,
+  "D": 11,
   "F": 2
  },
  "process_grade_distribution": {
-  "A": 10,
-  "B": 26,
-  "C": 9,
+  "A": 11,
+  "B": 32,
+  "C": 10,
   "D": 2,
   "F": 0
  },
  "decision_type_performance": {
   "ADD_DROP_FAAB": {
-   "count": 3,
-   "wins": 1,
-   "losses": 1,
+   "count": 6,
+   "wins": 3,
+   "losses": 2,
    "neutral": 1
   },
   "DEFENSE": {
-   "count": 1,
+   "count": 2,
    "wins": 1,
    "losses": 0,
-   "neutral": 0
+   "neutral": 1
   },
   "FLEX_START_SIT_FRIDAY_INJURY_RECONCILIATION": {
    "count": 1,
@@ -64,8 +64,8 @@
    "neutral": 0
   },
   "IR": {
-   "count": 4,
-   "wins": 2,
+   "count": 5,
+   "wins": 3,
    "losses": 1,
    "neutral": 1
   },
@@ -82,10 +82,10 @@
    "neutral": 0
   },
   "LINEUP_START_SIT": {
-   "count": 3,
-   "wins": 3,
+   "count": 6,
+   "wins": 5,
    "losses": 0,
-   "neutral": 0
+   "neutral": 1
   },
   "LINEUP_WATCH": {
    "count": 2,
@@ -173,54 +173,56 @@
   }
  },
  "major_error_counts": {
-  "PROCESS_GOOD_VARIANCE_BAD": 3,
+  "PROCESS_GOOD_VARIANCE_BAD": 4,
   "VOLUME_PROJECTION_ERROR": 1,
-  "ROSTER_STATE_ERROR": 2,
+  "ROSTER_STATE_ERROR": 3,
   "PLAYER_EVALUATION_ERROR": 7,
   "DROP_ERROR": 2,
   "START_SIT_ERROR": 1,
   "INJURY_MISREAD": 1,
   "RECENCY_BIAS": 1,
-  "NEWS_REACTION_TOO_SLOW": 1
+  "NEWS_REACTION_TOO_SLOW": 1,
+  "FAAB_UNDERBID": 2,
+  "STALE_DATA": 1
  },
  "timing_failures": 0,
- "data_quality_failures": 2,
+ "data_quality_failures": 3,
  "user_overrode_recommendation_outcomes": {
-  "count": 5,
+  "count": 7,
   "wins": 2,
-  "losses": 2,
-  "neutral": 1,
+  "losses": 3,
+  "neutral": 2,
   "note": "Wins/losses here are the RECOMMENDATION's grade; a 'loss' means James's override was the better choice."
  },
  "system_recommendation_followed_outcomes": {
-  "count": 33,
-  "wins": 21,
+  "count": 39,
+  "wins": 26,
   "losses": 7,
-  "neutral": 5
+  "neutral": 6
  },
  "system_recommendation_ignored_outcomes": {
-  "count": 5,
+  "count": 7,
   "wins": 2,
-  "losses": 2,
-  "neutral": 1
+  "losses": 3,
+  "neutral": 2
  },
  "sparta": {
-  "faab_spent": 81,
+  "faab_spent": 82,
   "transaction_fees": 0,
   "faab_saved": 0,
   "faab_overspent": 0,
   "points_above_replacement": null,
   "value_per_faab_dollar": null,
-  "drop_regret_count": 1,
+  "drop_regret_count": 2,
   "pickup_regret_count": 4,
   "missed_breakout_count": 0,
-  "successful_early_add_count": 3,
-  "faab_spent_note": "$76 of $100 spent (balance $24, user-confirmed 2026-10-19): $61 winning waiver bids + $6 commissioner budget adjustment (Oct 13, likely earlier free-agent charges) + ~$9 Oct 14-17 free-agent adds. | W7 waivers +$5 (Washington $3, McPherson $1, Geno $1; bids from pending-claim screenshot) \u2192 $81 spent, balance $20 (derived; Yahoo showed $33 on 10/23 \u2014 unreconciled).",
+  "successful_early_add_count": 4,
+  "faab_spent_note": "$76 of $100 spent (balance $24, user-confirmed 2026-10-19): $61 winning waiver bids + $6 commissioner budget adjustment (Oct 13, likely earlier free-agent charges) + ~$9 Oct 14-17 free-agent adds. | W7 waivers +$5 (Washington $3, McPherson $1, Geno $1; bids from pending-claim screenshot) → $81 spent, balance $20 (derived; Yahoo showed $33 on 10/23 — unreconciled). | W8 waivers +$2 (Darnold $1, Gesicki $1). Yahoo API 2026-11-02/03: balance $18, so $82 spent (the $33 display and the $81 tally are superseded; season adds that cost $0 remain possible per Yahoo).",
   "pickup_regret_note": "Sanders $12 (W2), Gadsden $12 (W3), Holani $1 (W2), Washington Jr. $3 (W7, 2.7 pts, Q)",
-  "drop_regret_note": "Tre Tucker (dropped Sep 30 for Waller; scored 26.70 against JD in W6)",
+  "drop_regret_note": "Tre Tucker (dropped Sep 30 for Waller; scored 26.70 against JD in W6) | W8: Cousins 28.18 FP std the week he was dropped (bench QB; one week).",
   "successful_early_add_note": "Braelon Allen $1 (W2), Emanuel Wilson $8 (W3), Geno Smith $1 (W7, started, 24.48 FP-std)"
  },
- "note": "All 2026 Weeks 1-6 DECISIONs graded (Brain, 2026-10-19) from James's Yahoo Matchup screenshots; restatements/watches/superseded/admin reviewed but excluded from counts. Only the W6 Waller TE watch remains open (resolves after Week 7). | 2026-w07 graded 2026-10-27 (10 counted, 6 superseded excluded); Bijan trade left open for rest-of-season grading.",
+ "note": "All 2026 Weeks 1-6 DECISIONs graded (Brain, 2026-10-19) from James's Yahoo Matchup screenshots; restatements/watches/superseded/admin reviewed but excluded from counts. Only the W6 Waller TE watch remains open (resolves after Week 7). | 2026-w07 graded 2026-10-27 (10 counted, 6 superseded excluded); Bijan trade left open for rest-of-season grading. | 2026-w08 graded 2026-11-03 (8 counted, 5 superseded excluded); Bijan trade still open for rest-of-season grading. W9 decisions not graded.",
  "weekly": {
   "2026-w06": {
    "jd_points": 120.92,
@@ -269,8 +271,8 @@
    "source": "Yahoo Matchup screenshots"
   },
   "2026-w07": {
-   "jd_points": null,
-   "jd_points_note": "UNKNOWN \u2014 final lineup and Yahoo score not captured",
+   "jd_points": 159.28,
+   "jd_points_note": "Derived 2026-11-03: Yahoo API points_for 950.30 through W7 minus Weeks 1-6 sum 791.02. Final lineup still not captured.",
    "recommended_lineup_points_fp": 149.28,
    "optimal_points_fp": 151.98,
    "friday_snapshot_lineup_points_fp": 120.38,
@@ -287,9 +289,38 @@
    "waiver_add_points_started_fp": 29.48,
    "value_per_faab_dollar": 5.9,
    "trade": "Bijan Robinson + Brian Robinson Jr. for Ja'Marr Chase + J.K. Dobbins (W7: 17.2 vs 25.5; ROS grade pending)",
-   "matchup_result": "UNKNOWN (vs King Kong)",
+   "matchup_result": "W 159.28-106.50 vs King Kong (derived from Yahoo API points_for/against; opp = 1029.72 minus Weeks 1-6 sum 923.22)",
    "reviews_graded": 10,
    "source": "intelligence/fantasypros/weekly/2026-w07/results.json; QB/DEF FantasyPros standard, not Sparta scoring"
+  },
+  "2026-w08": {
+   "jd_points": 140.26,
+   "optimal_points": 148.36,
+   "bench_points_lost": 8.1,
+   "lineup_efficiency_pct": 94.5,
+   "realistic_bench_points_lost": 7.4,
+   "realistic_note": "Wan'Dale 15.7 over Washington 8.3; the full 8.1 needs benching Bijan.",
+   "faab_spent": 2,
+   "waiver_adds": [
+    "Sam Darnold $1",
+    "Mike Gesicki $1",
+    "Wan'Dale Robinson $0 free agent"
+   ],
+   "waiver_add_points_started": 17.6,
+   "value_per_faab_dollar": 8.8,
+   "free_agent_moves": 1,
+   "matchup_result": "W 140.26-138.78 vs Brown Rice & Kraft (Yahoo API standings delta, check 20261103-0954)",
+   "record_after_w8": "3-5-0, 8th",
+   "reviews_graded": 13,
+   "reviews_counted": 8,
+   "derived_points": {
+    "jsn_box": 23.8,
+    "geno_plus_ravens_sparta": 29.86,
+    "geno_sparta_est": 23.0,
+    "ravens_sparta_est": 6.86
+   },
+   "trade_tracker": "Bijan + B. Robinson vs Chase + Dobbins: W7 17.2 vs 25.5, W8 7.6 vs 32.4; running 24.8 vs 57.9. Open.",
+   "source": "data/yahoo_api/latest.json; results.json (no MNF); public box scores for JSN/Darnold; QB/DEF not Yahoo-observed"
   }
  },
  "matchups": [
@@ -334,13 +365,27 @@
    "jd": 120.92,
    "opp": 152.6,
    "result": "L"
+  },
+  {
+   "week": 7,
+   "opponent": "King Kong",
+   "jd": 159.28,
+   "opp": 106.5,
+   "result": "W"
+  },
+  {
+   "week": 8,
+   "opponent": "Brown Rice & Kraft",
+   "jd": 140.26,
+   "opp": 138.78,
+   "result": "W"
   }
  ],
- "matchups_source": "James's Yahoo Matchup screenshots, sent in chat 2026-10-19 ~22:45 ET; Week 5 also from Yahoo live check. Weeks 1-2 opponent names not shown in screenshots.",
+ "matchups_source": "James's Yahoo Matchup screenshots, sent in chat 2026-10-19 ~22:45 ET; Week 5 also from Yahoo live check. Weeks 1-2 opponent names not shown in screenshots. Weeks 7-8 from Yahoo API standings (derived deltas).",
  "season_lineup": {
-  "bench_points_lost_total": 72.36,
-  "avg_efficiency_pct": 91.8,
+  "bench_points_lost_total": 80.46,
+  "avg_efficiency_pct": 92.2,
   "games_flipped_by_optimal_lineup": 0,
-  "note": "Even a perfect lineup would have lost every one of JD's 5 losses."
+  "note": "Even a perfect lineup would have lost every one of JD's 5 losses. Weeks 7-8 were wins; Week 7 efficiency is unknown and excluded from these totals."
  }
 }
