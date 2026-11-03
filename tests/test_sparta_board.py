@@ -40,9 +40,10 @@ class OwnershipTests(unittest.TestCase):
         r = reconstruct()
         self.assertEqual(ownership_status(r, "Totally Made Up Player")["status"], "UNKNOWN_NOT_ON_RECONSTRUCTED_ROSTERS")
         self.assertEqual(ownership_status(r, "Bijan Robinson")["status"], "OWNED")
-        # Sep 17 "FA" confirmation is superseded: JU added him Oct 7 and dropped him Oct 12.
-        # A drop does not prove free agency (AGENTS.md rule 8), so he is UNKNOWN, not FREE_AGENT_CONFIRMED.
-        self.assertEqual(ownership_status(r, "Seth McGowan")["status"], "UNKNOWN_NOT_ON_RECONSTRUCTED_ROSTERS")
+        # Sep 17 "FA" confirmation is superseded: JU added him Oct 7 and dropped him Oct 12
+        # (a drop alone left him UNKNOWN, AGENTS.md rule 8); the Yahoo API sync then recorded
+        # TM adding him Oct 28 (tr.292), so the later authoritative add makes him OWNED.
+        self.assertEqual(ownership_status(r, "Seth McGowan")["status"], "OWNED")
 
 
 class WeekTests(unittest.TestCase):
