@@ -1,6 +1,10 @@
 # Sparta Yahoo API sync
 
-## Status (2026-10-23): APPROVED by Yahoo — owner finishing setup
+## Status (2026-11-03): LIVE
+
+- 2026-11-03 ~10:05 PM ET: sign-in run #9 saved `YAHOO_REFRESH_TOKEN`. Sync run #3 (report-only) wrote `data/yahoo_api/latest.json` (completed, team mapping complete); run #4 (apply) appended 69 Yahoo-confirmed moves and refreshed FAAB, waiver priority and JD's roster; validators pass. 5 trades remain in `needs_review` (never auto-applied). Schedule re-enabled at the owner's request. Scheduled runs apply changes only if repo variable `SPARTA_YAHOO_APPLY=true`; otherwise they are report-only.
+
+## Earlier status (2026-10-23): APPROVED by Yahoo — owner finishing setup
 
 - 2026-11-03 (sign-in run #7): Yahoo access WORKS — the run verified read access to league 102586 (week 8). It then failed saving the refresh token: `SPARTA_SECRETS_PAT` produced an invalid Authorization header (likely a stray space/newline from a phone paste). Workflow now strips whitespace from the PAT. Yahoo codes are single-use, so redo the Agree link and the sign-in run once.
 
