@@ -22,4 +22,4 @@ _Brain read 2026-11-03. Intelligence only; not a recorded recommendation. JD ros
 - Softest vs RB: NO, DAL, ATL, LV, GB, CAR. Toughest: JAX, DET, MIN, CHI, TB.
 - Softest vs WR: TEN, PHI, DAL, BAL, GB, HOU. Toughest: SEA, KC, MIA, MIN.
 - Softest vs TE: DET, LV, WAS, DEN, MIA. Toughest: MIN, SEA, HOU, GB, LAC.
-- Best defenses by EPA/play: MIN, TB, SEA, LAR, JAX. Worst: DAL, MIA, DET, PHI, LV (DEF streaming targets face these offenses' opponents).
+- Best defenses by EPA/play: MIN, TB, SEA, LAR, JAX. Worst: DAL, MIA, DET, PHI, LV — start offensive players against these.
