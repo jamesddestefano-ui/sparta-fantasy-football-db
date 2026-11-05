@@ -1,85 +1,636 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-11-05T02:21:07Z",
+  "generatedAt": "2026-11-05T03:09:36.862Z",
   "status": "live",
-  "completedAt": "2026-11-05T02:21:30Z",
-  "nextAtLabel": "10:20 PM ET",
+  "completedAt": "2026-11-05T03:09:36.807Z",
+  "nextAtLabel": "11:09 PM ET",
   "inWindow": true,
-  "itemCount": 1,
+  "itemCount": 14,
+  "items": [
+    {
+      "id": "brissett-to-ravens-trade",
+      "at": "2026-11-04T19:51:00Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Ravens finalizing trade for Cardinals QB Jacoby Brissett (deal expected weekend); Fagnano starts TNF, Brissett likely Week 10+ starter vs LAC.",
+      "playerIds": [
+        "lamar-jackson"
+      ],
+      "players": [
+        "Lamar Jackson"
+      ],
+      "url": "https://www.espn.com/nfl/story/_/id/50381318/sources-ravens-finalizing-trade-cardinals-qb-brissett",
+      "kind": "NFL_FACT",
+      "eventId": "trade-brissett-ravens-w9",
+      "signal": "UPGRADE",
+      "priorStatus": "ARI QB3 after benching",
+      "newStatus": "BAL QB1 incoming",
+      "why": "BAL QB depth decimated by Jackson/Huntley/Fagnano ankle; ARI benched Brissett for Minshew.",
+      "implication": "Stabilizes BAL offense ROS; more dropbacks, fewer scrambles than Lamar.",
+      "opportunity": "Higher pass volume (Brissett 47% of starts 35+ attempts vs Lamar 15%) for Flowers/Andrews/Henry.",
+      "beneficiaries": [
+        "zay-flowers",
+        "mark-andrews",
+        "derrick-henry"
+      ],
+      "corroboration": [
+        "@RapSheet",
+        "@adamlevitan"
+      ],
+      "supportingSources": [
+        "ian-rapoport",
+        "adam-levitan"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "tuten-q-gtd-dnp",
+      "at": "2026-11-04T16:17:00Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Jaguars RB Bhayshul Tuten (ankle/foot) 3x DNP, listed Questionable and game-time decision for TNF vs Ravens; Coen says feels better but no practice Wednesday.",
+      "playerIds": [
+        "bhayshul-tuten"
+      ],
+      "players": [
+        "Bhayshul Tuten"
+      ],
+      "url": "https://www.jaguars.com/news/wednesday-quick-hits-tuten-a-game-time-decision-ahead-of-week-9-vs-ravens",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-tuten-week9-tnf",
+      "signal": "QUESTIONABLE",
+      "priorStatus": "active lead back",
+      "newStatus": "QUESTIONABLE/GTD",
+      "why": "Ankle/foot; left briefly Week 8 but returned for big game; short week no practice.",
+      "implication": "If OUT/INACTIVE, Chris Rodriguez elevates to lead role; check inactives pre-TNF.",
+      "opportunity": "Full carry/target share to Rodriguez if Tuten sits or limited; reverse if unexpectedly ACTIVE.",
+      "corroboration": [
+        "NFL.com injury report",
+        "Coen comments"
+      ],
+      "supportingSources": [
+        "adam-schefter"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "lamar-jackson-out-ir-w9",
+      "at": "2026-11-04T12:24:17Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Ravens QB Lamar Jackson is out indefinitely with a right thumb injury requiring surgery and is expected to land on IR; he will miss Thursday vs JAX and beyond.",
+      "playerIds": [
+        "lamar-jackson"
+      ],
+      "players": [
+        "Lamar Jackson"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2117956094878175244",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-lamar-jackson-week9",
+      "signal": "OUT",
+      "priorStatus": "returning/active prior week",
+      "newStatus": "OUT indefinitely/IR-likely",
+      "why": "Thumb injury on first snap Week 8; surgery needed per Schefter/Hensley.",
+      "implication": "Ravens QB chaos; Fagnano starts TNF; Brissett incoming for Week 10+; Flowers/Henry/Andrews volume shifts under pocket passer.",
+      "opportunity": "Increased pass volume potential for Zay Flowers, Mark Andrews, Derrick Henry under Brissett/Fagnano vs Lamar scramble style.",
+      "beneficiaries": [
+        "zay-flowers",
+        "derrick-henry",
+        "mark-andrews"
+      ],
+      "corroboration": [
+        "@RapSheet",
+        "https://x.com/EstablishTheRun"
+      ],
+      "supportingSources": [
+        "ian-rapoport",
+        "establish-the-run"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "huntley-season-ending-turf-toe",
+      "at": "2026-11-04T12:24:17Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Tests confirm Ravens QB Tyler Huntley suffered season-ending turf toe; out for year, surgery expected. Joe Fagnano starts Thursday vs Jaguars.",
+      "playerIds": [],
+      "players": [],
+      "url": "https://x.com/AdamSchefter/status/2117956094878175244",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-huntley-season-ending-w9",
+      "signal": "OUT",
+      "priorStatus": "backup/Q",
+      "newStatus": "OUT season-ending",
+      "why": "Turf toe confirmed via tests after Week 8 injury; similar to prior Burrow case per Rapoport.",
+      "implication": "Ravens fully without top-2 QBs; accelerates Brissett trade; Fagnano one-game bridge.",
+      "opportunity": "Short-term Fagnano/Brissett pass volume; Henry/Flowers remain viable but efficiency drop expected.",
+      "beneficiaries": [
+        "zay-flowers",
+        "derrick-henry",
+        "mark-andrews"
+      ],
+      "corroboration": [
+        "@RapSheet"
+      ],
+      "supportingSources": [
+        "ian-rapoport"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "love-ir-high-ankle",
+      "at": "2026-11-03T18:54:18Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Cardinals RB Jeremiyah Love headed to IR with high-ankle sprain (new injury portion); out 4-5 weeks. First-round pick previously dealing with different ankle issue.",
+      "playerIds": [
+        "jeremiyah-love"
+      ],
+      "players": [
+        "Jeremiyah Love"
+      ],
+      "url": "https://x.com/RapSheet/status/2117691856708362496",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-jeremiyah-love-ir-w9",
+      "signal": "OUT",
+      "priorStatus": "active/playing",
+      "newStatus": "IR 4-5 weeks",
+      "why": "High-ankle sprain suffered in win over Cowboys; confirmed by sources/LaFleur.",
+      "implication": "ARI backfield opens; handcuff/backup elevation for remaining weeks.",
+      "opportunity": "Carries/snaps to next ARI RBs; monitor depth chart for goal-line/third-down roles.",
+      "corroboration": [
+        "@AdamSchefter",
+        "ETR Week 9 flags"
+      ],
+      "supportingSources": [
+        "adam-schefter",
+        "establish-the-run",
+        "matthew-berry"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "levitan-brissett-volume-bull-case",
+      "at": "2026-11-05T00:17:12Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Bull case for Ravens pass game under Brissett: less efficiency offset by more volume. Lamar 35+ att only 15% of starts; Brissett 47%. Worse QB than Lamar creates more passes and fewer scrambles.",
+      "playerIds": [
+        "zay-flowers",
+        "mark-andrews",
+        "derrick-henry",
+        "lamar-jackson"
+      ],
+      "players": [
+        "Zay Flowers",
+        "Mark Andrews",
+        "Derrick Henry",
+        "Lamar Jackson"
+      ],
+      "url": "https://x.com/adamlevitan/status/2118135506559287807",
+      "kind": "ANALYST_OPINION",
+      "eventId": "usage-brissett-ravens-pass-w9",
+      "signal": "UPGRADE",
+      "why": "Career start data on pass attempts; Brissett pocket style vs Lamar dual-threat.",
+      "implication": "Flowers/Andrews target upside rises ROS despite lower QB talent; Henry receiving work possible.",
+      "opportunity": "Route/target volume expansion for BAL pass-catchers; monitor red-zone/third-down shares under new QB.",
+      "beneficiaries": [
+        "zay-flowers",
+        "mark-andrews"
+      ],
+      "corroboration": [
+        "@EstablishTheRun"
+      ],
+      "supportingSources": [
+        "establish-the-run"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "etr-sea-rb-committee",
+      "at": "2026-11-04T21:43:26Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Levitan/Silva on Seattle backfield with Charbonnet and Jadarian Price returns: 'gonna be like Charbonnet/Walker expect with worse versions of the players' — committee expected.",
+      "playerIds": [
+        "jadarian-price"
+      ],
+      "players": [
+        "Jadarian Price"
+      ],
+      "url": "https://x.com/EstablishTheRun/status/2118096808903946594",
+      "kind": "ANALYST_OPINION",
+      "eventId": "role-sea-rb-committee-w9",
+      "signal": "DOWNGRADE",
+      "newStatus": "committee",
+      "why": "Returns create split; video/analysis from ETR pod.",
+      "implication": "Neither SEA RB full every-down; fade standalone starts, prefer handcuff pairs.",
+      "opportunity": "Split carries/snaps/third-down; no clear lead back lock.",
+      "beneficiaries": [
+        "jadarian-price"
+      ],
+      "corroboration": [
+        "@adamlevitan"
+      ],
+      "supportingSources": [
+        "adam-levitan"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "garrett-wilson-concussion-protocol",
+      "at": "2026-11-04T20:08:00Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Jets WR Garrett Wilson placed in concussion protocol (day-to-day) after helmet hit late in Week 8; Week 9 status vs Chiefs in doubt, needs clearance by Saturday.",
+      "playerIds": [
+        "garrett-wilson"
+      ],
+      "players": [
+        "Garrett Wilson"
+      ],
+      "url": "https://www.foxsports.com/stories/nfl/garrett-wilson-concussion-protocol-jets-chiefs-injury-report",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-garrett-wilson-conc-w9",
+      "signal": "QUESTIONABLE",
+      "priorStatus": "active",
+      "newStatus": "concussion protocol/day-to-day",
+      "why": "Helmet-to-helmet Week 8; symptoms Monday, protocol Wednesday per Glenn.",
+      "implication": "If OUT, targets to Adonai Mitchell/others; Wilson still WR2 if clears.",
+      "opportunity": "Secondary Jets WRs route/target spike if Wilson inactive.",
+      "corroboration": [
+        "Aaron Glenn",
+        "ESPN"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "montgomery-out-groin-w9",
+      "at": "2026-11-04T18:45:00Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Texans RB David Montgomery (groin) officially OUT for Week 9 vs Chargers; remains week-to-week after missing prior games + bye, though making progress.",
+      "playerIds": [
+        "david-montgomery"
+      ],
+      "players": [
+        "David Montgomery"
+      ],
+      "url": "https://www.nbcsports.com/nfl/david-montgomery/6256/news",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-montgomery-out-w9",
+      "signal": "OUT",
+      "priorStatus": "questionable/week-to-week",
+      "newStatus": "OUT",
+      "why": "Groin from Week 5; DNP Wednesday; Ryans confirms another miss.",
+      "implication": "Woody Marks continues as lead RB2 vs soft LAC defense.",
+      "opportunity": "Marks snaps/carries/red-zone locked in; Montgomery return target Week 10+.",
+      "corroboration": [
+        "DeMeco Ryans",
+        "injury reports"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "aj-brown-out-etr",
+      "at": "2026-11-03T23:45:57Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "ETR Week 9 flags: AJ Brown misses another game due to lingering knee/ankle issue; Lamar IR-likely and JT saga also highlighted in Silva/Levitan team-by-team.",
+      "playerIds": [
+        "aj-brown"
+      ],
+      "players": [
+        "A.J. Brown"
+      ],
+      "url": "https://x.com/EstablishTheRun/status/2117765255199682736",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-aj-brown-out-w9",
+      "signal": "OUT",
+      "priorStatus": "QUESTIONABLE lingering",
+      "newStatus": "OUT",
+      "why": "Lingering knee issue per ETR pod/notes; multiple misses.",
+      "implication": "NE pass-catchers elevate; monitor depth for targets/red-zone.",
+      "opportunity": "Increased snaps/routes for remaining NE WRs/TEs.",
+      "corroboration": [
+        "@adamlevitan"
+      ],
+      "supportingSources": [
+        "adam-levitan"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "levitan-ferguson-usage-return",
+      "at": "2026-11-05T00:00:48Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Rams opening practice window for TE Terrance Ferguson. In last full game (Puka out): 70% routes on dropbacks, 29% target share, 42% slot/wide alignment.",
+      "playerIds": [
+        "puka-nacua"
+      ],
+      "players": [
+        "Puka Nacua"
+      ],
+      "url": "https://x.com/adamlevitan/status/2118131377397019041",
+      "kind": "USAGE_DATA",
+      "eventId": "usage-ferguson-rams-return-w9",
+      "signal": "UPGRADE",
+      "priorStatus": "IR/window",
+      "newStatus": "practice window open",
+      "why": "Prior high route/target rates when healthy and Puka limited; McVay comments.",
+      "implication": "Potential TE1 upside if role sticks; monitor snaps vs Kittle-like usage.",
+      "opportunity": "Routes/targets/red-zone if elevated; Puka healthy may compress.",
+      "corroboration": [
+        "McVay",
+        "@EstablishTheRun"
+      ],
+      "supportingSources": [
+        "establish-the-run"
+      ],
+      "priority": "NORMAL"
+    },
+    {
+      "id": "etr-thorman-pace-snaps",
+      "at": "2026-11-04T23:29:19Z",
+      "expertId": "patrick-thorman",
+      "expert": "Patrick Thorman",
+      "handle": "Pat_Thorman",
+      "outlet": "Establish the Run",
+      "text": "Thorman Week 9 Snaps & Pace via ETR: DAL@IND up in pace; HOU@LAC slow slog. Other slate notes for opportunity modeling.",
+      "playerIds": [],
+      "players": [],
+      "url": "https://establishtherun.com/thormans-snaps-and-pace-week-9-8/",
+      "kind": "USAGE_DATA",
+      "eventId": "pace-snaps-week9-etr",
+      "signal": "UPGRADE",
+      "why": "Historical/team pace data for projected plays.",
+      "implication": "Higher play volume DAL/IND skill players; lower HOU/LAC.",
+      "opportunity": "Snap/route/carry inflation in up-tempo games.",
+      "corroboration": [
+        "@EstablishTheRun"
+      ],
+      "supportingSources": [
+        "establish-the-run"
+      ],
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-mcconkey-keep-open",
+      "at": "2026-11-04T22:45:00Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Matthew Berry keeping it open on Ladd McConkey this week as a WR3 (not higher); reacts to foot injury practice (LP-DNP-LP) and cracked rib history.",
+      "playerIds": [
+        "ladd-mcconkey"
+      ],
+      "players": [
+        "Ladd McConkey"
+      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2118112303342293213",
+      "kind": "ANALYST_OPINION",
+      "eventId": "startsit-mcconkey-w9-berry",
+      "signal": "LOVE",
+      "priorStatus": "QUESTIONABLE foot",
+      "newStatus": "startable WR3",
+      "why": "Pregame/Happy Hour; volume intact if active despite limited practice.",
+      "implication": "Flex/WR3 viable if clears; monitor final status.",
+      "opportunity": "Routes/targets if full go; LAC pass game reliance.",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-pickens-neutral",
+      "at": "2026-11-04T20:03:04Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Jerry Jones said George Pickens needs the ball more; Berry: does not really change fantasy outlook (neutral). Even routes noted with Lamb/Flournoy.",
+      "playerIds": [
+        "george-pickens",
+        "ceedee-lamb"
+      ],
+      "players": [
+        "George Pickens",
+        "CeeDee Lamb"
+      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2118071550679130399",
+      "kind": "ANALYST_OPINION",
+      "eventId": "role-pickens-dal-w9",
+      "signal": "NEUTRAL",
+      "why": "Coach comment vs actual even route shares (Levitan data: Lamb 29, Flournoy 26, Pickens 25 on 38 dropbacks).",
+      "implication": "No major upgrade; DAL WR committee continues; Pickens WR3/flex range.",
+      "opportunity": "Monitor actual targets vs rhetoric; 2-TE sets compress WR snaps.",
+      "conflict": "Coach wants more ball but usage data even/split.",
+      "corroboration": [
+        "@adamlevitan routes"
+      ],
+      "supportingSources": [
+        "adam-levitan"
+      ],
+      "priority": "NORMAL"
+    }
+  ],
   "sundayMode": false,
   "sourceNotes": [
     {
-      "sourceId": "brady-henderson",
-      "source": "Brady Henderson",
-      "handle": "@BradyHenderson",
-      "team": "SEA",
-      "sourceType": "BEAT",
-      "dateAdded": "2026-11-05",
-      "grade": "USEFUL",
-      "note": "Seahawks injury report and Darnold status confirmation.",
-      "at": "2026-11-05T02:14:15Z"
-    },
-    {
       "sourceId": "adam-schefter",
       "source": "Adam Schefter",
-      "handle": "@AdamSchefter",
-      "team": null,
-      "sourceType": "NATIONAL",
-      "dateAdded": "2026-11-05",
-      "grade": "CHECKED",
-      "note": "No new qualifying posts in window.",
-      "at": "2026-11-05T02:21:00Z"
+      "grade": "USEFUL",
+      "note": "Broke Huntley season-ending turf toe + Lamar indefinite; Brissett trade finalizing; Fagnano start; strong corroboration on Love IR and other statuses.",
+      "at": "2026-11-05T02:00:00Z"
     },
     {
       "sourceId": "ian-rapoport",
       "source": "Ian Rapoport",
-      "handle": "@RapSheet",
-      "team": null,
-      "sourceType": "NATIONAL",
-      "dateAdded": "2026-11-05",
-      "grade": "CHECKED",
-      "note": "No new qualifying posts in window.",
-      "at": "2026-11-05T02:21:00Z"
+      "grade": "USEFUL",
+      "note": "Corroborated Love IR 4-5 weeks high ankle; Huntley season-ending; Brissett-to-Ravens; Hollins return practice; timely status facts.",
+      "at": "2026-11-05T02:00:00Z"
     },
     {
-      "sourceId": "roto-wire",
-      "source": "RotoWire NFL",
-      "handle": "@RotoWireNFL",
-      "team": null,
-      "sourceType": "ANALYST",
-      "dateAdded": "2026-11-05",
-      "grade": "CHECKED",
-      "note": "Practice notes for Gainwell, Stafford.",
-      "at": "2026-11-05T02:10:30Z"
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Timely Week 9 flags (Lamar IR-likely, AJB out, JT saga); SEA RB committee Levitan/Silva video; Thorman snaps/pace (DAL-IND up); multi-player status/role.",
+      "at": "2026-11-05T02:00:00Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific: Brissett volume (more passes/fewer scrambles career data); Ferguson prior routes/targets (70%/29%); SEA RB committee; DAL WR even routes (Lamb/Flournoy/Pickens). Opportunity focus.",
+      "at": "2026-11-05T02:00:00Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Per-player: McConkey keep WR3; Pickens/Jones neutral; Love IR sit/start reactions; Lamar scenarios; actionable Love/Hate-style from Happy Hour/Pregame.",
+      "at": "2026-11-05T02:00:00Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific: Brissett volume (more passes/fewer scrambles); Ferguson prior routes/targets (70%/29%); SEA RB committee video; LV RB context implied via ETR. Opportunity focus continues.",
+      "at": "2026-11-05T01:47:45Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Timely Week 9 flags (Lamar IR-likely, AJB out, JT saga); SEA RB committee Levitan/Silva; waiver (LV Washington/Jeanty); Thorman snaps/pace (DAL-IND up). Strong multi-player status/role.",
+      "at": "2026-11-04T23:29:19Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Week 9 Sit/Start podcast reacts to Love IR and tough decisions; per-player actionable style holds from prior Love/Hate.",
+      "at": "2026-11-04T00:00:00Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "Key breaks: Huntley SE turf toe + Lamar indefinite; Brissett-to-Ravens details; Fagnano start. High-confidence facts.",
+      "at": "2026-11-04T19:56:35Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Corroborated Brissett trade; Love IR; Huntley SE; 49ers practice (CMC positive, Bosa return); strong status corroboration.",
+      "at": "2026-11-04T22:32:20Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Timely Week 9 flags (Lamar IR-likely, AJB out, JT saga); SEA RB committee video Levitan/Silva; waiver (LV Washington/Jeanty); Thorman snaps/pace (DAL-IND up). Strong multi-player status/role.",
+      "at": "2026-11-05T00:00:00Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific: Brissett volume stats; Ferguson prior routes/targets; DAL WR even routes (Lamb/Flournoy/Pickens); Lawrence quarter script; SEA/LV RB context. Opportunity focus.",
+      "at": "2026-11-05T00:00:00Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Per-player: McConkey keep WR3; Pickens/Jones neutral; Charbonnet > Price ROS; Flournoy waiver (4 straight DD); Lamar scenarios. Actionable Love/Hate-style.",
+      "at": "2026-11-05T00:00:00Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "Key breaks: Brissett-to-Ravens details; Lamar thumb/IR + Huntley SE; Rams Watson SE surgery; Saints limited; in-season trade list. High-confidence facts.",
+      "at": "2026-11-05T00:00:00Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Corroborated Brissett trade fully; 49ers practice (Bosa return, CMC/Evans DNP, Aiyuk none); Rams Watson SE; Saints limited; IR/PUP returns list. Strong status corroboration.",
+      "at": "2026-11-05T00:00:00Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Timely Week 9 team-by-team (Lamar IR-likely, AJB out, JT saga); SEA RB committee video Levitan/Silva; waiver wire (LV Washington/Jeanty); Thorman snaps/pace (DAL-IND up). Strong multi-player status/role.",
+      "at": "2026-11-05T00:00:00Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific: DAL WR routes (Lamb/Flournoy/Pickens even); Lawrence quarter volume/script; SEA backfield context; LV RB snaps (Washington>Jeanty); Ferguson prior usage; RB snap notes (Judkins, Hampton, Warren). Opportunity focus.",
+      "at": "2026-11-05T00:00:00Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Per-player: McConkey keep open WR3; Pickens/Jones neutral; Shough close-out; prior Flournoy waiver push and Black priority. Actionable Love/Hate-style.",
+      "at": "2026-11-05T00:00:00Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "Key breaks: Brissett-to-Ravens details; Lamar thumb/IR + Huntley SE; Rams Watson SE surgery; Saints limited; in-season trade list. High-confidence facts.",
+      "at": "2026-11-05T00:00:00Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Corroborated Brissett trade fully; 49ers practice (Bosa return, CMC/Evans DNP, Aiyuk none); Rams Watson SE; Saints limited; IR/PUP returns list. Strong status corroboration.",
+      "at": "2026-11-05T00:00:00Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Timely Week 9 flags (Lamar IR-likely, AJB out, JT saga); SEA RB committee video with Levitan/Silva; waiver wire (LV RB Washington/Jeanty note). Strong multi-player status/role.",
+      "at": "2026-11-04T21:43:26Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific usage: DAL WR routes (Lamb/Flournoy/Pickens even); Lawrence quarter volume/script; multi-team RB snaps (Washington>Jeanty, Warren lead, Judkins, Hampton); SEA context via ETR.",
+      "at": "2026-11-04T17:46:24Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Per-player: Charbonnet > Price ROS; Pickens/Jones neutral; Lamar scenarios; Flournoy waiver (4 straight DD); McConkey keep open WR3; Shough close-out. Actionable Love/Hate and status.",
+      "at": "2026-11-04T22:45:00Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "Key breaks: Brissett-to-Ravens details (timing, W10 debut); Lamar thumb/IR + Huntley SE; Rams Watson SE surgery; Saints limited; in-season trade list. High-confidence facts.",
+      "at": "2026-11-04T19:42:52Z"
     }
   ],
-  "items": [
-    {
-      "id": "darnold-out-quad-w9",
-      "at": "2026-11-05T02:14:15Z",
-      "expertId": "brady-henderson",
-      "expert": "Brady Henderson",
-      "handle": "BradyHenderson",
-      "outlet": "ESPN",
-      "text": "The Seahawks’ injury report today is an estimation since they just held a walk-through. Drew Lock is listed as limited. With Sam Darnold out, the plan is to start Lock Sunday vs. Arizona, but he’s dealing with an injury to his throwing elbow and thus his reps are being managed.",
-      "players": ["Sam Darnold", "Jaxon Smith-Njigba"],
-      "playerIds": ["sam-darnold", "jaxon-smith-njigba"],
-      "url": "https://x.com/BradyHenderson/status/2118164962363531332",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-sam-darnold-week9",
-      "signal": "OUT",
-      "priorStatus": "ACTIVE",
-      "newStatus": "OUT",
-      "why": "Macdonald confirmed Darnold out Week 9 with quad (cracked rib also); Lock to start despite elbow limitation. From beat reporter.",
-      "implication": "JD's Sam Darnold unavailable; JSN may see reduced volume or efficiency with Lock under center.",
-      "opportunity": "Monitor Lock's elbow for potential further QB issues; JSN still elite but lower floor short-term.",
-      "corroboration": ["Macdonald press conference", "The Athletic", "FOX Sports"],
-      "supportingSources": ["brady-henderson"],
-      "priority": "HIGH",
-      "sourceType": "BEAT",
-      "team": "SEA",
-      "relevance": "JD_ROSTER"
-    }
-  ]
+  "mirroredAt": "2026-11-05T03:09:37.426Z",
+  "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
+  "sourceCompletedAt": "2026-11-05T03:09:36.807Z",
+  "sourceStatus": "live"
 }
