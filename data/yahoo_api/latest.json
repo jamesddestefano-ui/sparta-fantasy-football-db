@@ -7,8 +7,8 @@
   "season": 2026,
   "current_week": 9,
   "coverage_week": 9,
-  "check_id": "sparta-yahoo-api-20261106-0825",
-  "observed_at": "2026-11-06T08:25:49-05:00",
+  "check_id": "sparta-yahoo-api-20261106-1414",
+  "observed_at": "2026-11-06T14:14:23-05:00",
   "completed": true,
   "source": "Yahoo Fantasy API v2 (OAuth, read-only) via scripts/yahoo_sync.py",
   "mutations": false,
@@ -40,16 +40,16 @@
           "team_key": "470.l.102586.t.8",
           "name": "Pablo Pledgescobars",
           "points": 0.0,
-          "projected_points": 130.11,
-          "win_probability": 0.44,
+          "projected_points": 124.49,
+          "win_probability": 0.38,
           "code": "MM"
         },
         {
           "team_key": "470.l.102586.t.10",
           "name": "TB12 of Ass/Cousin Fucker",
           "points": 0.0,
-          "projected_points": 138.28,
-          "win_probability": 0.56,
+          "projected_points": 140.69,
+          "win_probability": 0.62,
           "code": "JD"
         }
       ]
@@ -66,7 +66,7 @@
       ],
       "faab_balance": 72,
       "waiver_priority": 12,
-      "number_of_moves": 9,
+      "number_of_moves": 10,
       "standing": {
         "team_key": "470.l.102586.t.1",
         "name": "SHOWSTOPPERS",
@@ -343,28 +343,6 @@
           "points_week": null
         },
         {
-          "player_key": "470.p.41823",
-          "player_id": 41823,
-          "name": "TreVeyon Henderson",
-          "nfl_team": "NE",
-          "position": "RB",
-          "eligible_positions": [
-            "RB",
-            "W/R/T"
-          ],
-          "status": "Q",
-          "status_full": "Questionable",
-          "injury_note": "Illness",
-          "bye_week": 11,
-          "slot": "BN",
-          "percent_owned": null,
-          "ownership_type": null,
-          "owner_team_key": null,
-          "waiver_date": null,
-          "points": null,
-          "points_week": null
-        },
-        {
           "player_key": "470.p.40893",
           "player_id": 40893,
           "name": "Marvin Harrison Jr.",
@@ -394,6 +372,28 @@
           "position": "QB",
           "eligible_positions": [
             "QB"
+          ],
+          "status": "",
+          "status_full": null,
+          "injury_note": null,
+          "bye_week": 11,
+          "slot": "BN",
+          "percent_owned": null,
+          "ownership_type": null,
+          "owner_team_key": null,
+          "waiver_date": null,
+          "points": null,
+          "points_week": null
+        },
+        {
+          "player_key": "470.p.42386",
+          "player_id": 42386,
+          "name": "Corey Kiner",
+          "nfl_team": "NE",
+          "position": "RB",
+          "eligible_positions": [
+            "RB",
+            "W/R/T"
           ],
           "status": "",
           "status_full": null,
@@ -1936,10 +1936,11 @@
           "position": "WR",
           "eligible_positions": [
             "WR",
-            "W/R/T"
+            "W/R/T",
+            "IR"
           ],
-          "status": "Q",
-          "status_full": "Questionable",
+          "status": "O",
+          "status_full": "Out",
           "injury_note": "Knee",
           "bye_week": 11,
           "slot": "BN",
@@ -3191,9 +3192,9 @@
             "WR",
             "W/R/T"
           ],
-          "status": "",
-          "status_full": null,
-          "injury_note": null,
+          "status": "Q",
+          "status_full": "Questionable",
+          "injury_note": "Foot",
           "bye_week": 10,
           "slot": "BN",
           "percent_owned": null,
@@ -4069,10 +4070,11 @@
           "position": "RB",
           "eligible_positions": [
             "RB",
-            "W/R/T"
+            "W/R/T",
+            "IR"
           ],
-          "status": "Q",
-          "status_full": "Questionable",
+          "status": "O",
+          "status_full": "Out",
           "injury_note": "Hamstring",
           "bye_week": 11,
           "slot": "BN",
@@ -4326,28 +4328,6 @@
           "points_week": null
         },
         {
-          "player_key": "470.p.33965",
-          "player_id": 33965,
-          "name": "Garrett Wilson",
-          "nfl_team": "NYJ",
-          "position": "WR",
-          "eligible_positions": [
-            "WR",
-            "W/R/T"
-          ],
-          "status": "Q",
-          "status_full": "Questionable",
-          "injury_note": "Concussion",
-          "bye_week": 13,
-          "slot": "W/R/T",
-          "percent_owned": null,
-          "ownership_type": null,
-          "owner_team_key": null,
-          "waiver_date": null,
-          "points": null,
-          "points_week": null
-        },
-        {
           "player_key": "470.p.42730",
           "player_id": 42730,
           "name": "Jonah Coleman",
@@ -4383,6 +4363,29 @@
           "status_full": null,
           "injury_note": null,
           "bye_week": 6,
+          "slot": "W/R/T",
+          "percent_owned": null,
+          "ownership_type": null,
+          "owner_team_key": null,
+          "waiver_date": null,
+          "points": null,
+          "points_week": null
+        },
+        {
+          "player_key": "470.p.33965",
+          "player_id": 33965,
+          "name": "Garrett Wilson",
+          "nfl_team": "NYJ",
+          "position": "WR",
+          "eligible_positions": [
+            "WR",
+            "W/R/T",
+            "IR"
+          ],
+          "status": "O",
+          "status_full": "Out",
+          "injury_note": "Concussion",
+          "bye_week": 13,
           "slot": "BN",
           "percent_owned": null,
           "ownership_type": null,
@@ -4816,10 +4819,11 @@
           "position": "RB",
           "eligible_positions": [
             "RB",
-            "W/R/T"
+            "W/R/T",
+            "IR"
           ],
-          "status": "Q",
-          "status_full": "Questionable",
+          "status": "O",
+          "status_full": "Out",
           "injury_note": "Concussion",
           "bye_week": 14,
           "slot": "BN",
@@ -5018,7 +5022,7 @@
           "team_key": "470.l.102586.t.1",
           "name": "SHOWSTOPPERS",
           "points": 25.9,
-          "projected_points": 140.25,
+          "projected_points": 140.41,
           "win_probability": 0.55,
           "code": "BE"
         },
@@ -5026,7 +5030,7 @@
           "team_key": "470.l.102586.t.9",
           "name": "Brown Rice & Kraft",
           "points": 0.0,
-          "projected_points": 137.97,
+          "projected_points": 138.14,
           "win_probability": 0.45,
           "code": "ME"
         }
@@ -5042,16 +5046,16 @@
           "team_key": "470.l.102586.t.2",
           "name": "CLIN-TON POR-TIS",
           "points": 14.0,
-          "projected_points": 129.46,
-          "win_probability": 0.52,
+          "projected_points": 132.08,
+          "win_probability": 0.54,
           "code": "MC"
         },
         {
           "team_key": "470.l.102586.t.5",
           "name": "King Kong",
           "points": 25.74,
-          "projected_points": 127.37,
-          "win_probability": 0.48,
+          "projected_points": 127.64,
+          "win_probability": 0.46,
           "code": "SR"
         }
       ]
@@ -5066,16 +5070,16 @@
           "team_key": "470.l.102586.t.3",
           "name": "FOCUS",
           "points": 0.0,
-          "projected_points": 137.3,
-          "win_probability": 0.37,
+          "projected_points": 138.13,
+          "win_probability": 0.38,
           "code": "VV"
         },
         {
           "team_key": "470.l.102586.t.6",
           "name": "MattyBAD",
           "points": 0.0,
-          "projected_points": 156.71,
-          "win_probability": 0.63,
+          "projected_points": 156.39,
+          "win_probability": 0.62,
           "code": "MN"
         }
       ]
@@ -5090,16 +5094,16 @@
           "team_key": "470.l.102586.t.4",
           "name": "“Busted Ass Lucky”- Mr. U",
           "points": 15.58,
-          "projected_points": 133.91,
-          "win_probability": 0.35,
+          "projected_points": 134.32,
+          "win_probability": 0.33,
           "code": "TM"
         },
         {
           "team_key": "470.l.102586.t.7",
           "name": "AMON A ROLL",
           "points": 0.0,
-          "projected_points": 148.91,
-          "win_probability": 0.65,
+          "projected_points": 152.53,
+          "win_probability": 0.67,
           "code": "ANT"
         }
       ]
@@ -5114,16 +5118,16 @@
           "team_key": "470.l.102586.t.8",
           "name": "Pablo Pledgescobars",
           "points": 0.0,
-          "projected_points": 130.11,
-          "win_probability": 0.44,
+          "projected_points": 124.49,
+          "win_probability": 0.38,
           "code": "MM"
         },
         {
           "team_key": "470.l.102586.t.10",
           "name": "TB12 of Ass/Cousin Fucker",
           "points": 0.0,
-          "projected_points": 138.28,
-          "win_probability": 0.56,
+          "projected_points": 140.69,
+          "win_probability": 0.62,
           "code": "JD"
         }
       ]
@@ -5138,22 +5142,37 @@
           "team_key": "470.l.102586.t.11",
           "name": "The U",
           "points": 5.58,
-          "projected_points": 134.4,
-          "win_probability": 0.58,
+          "projected_points": 132.88,
+          "win_probability": 0.57,
           "code": "JU"
         },
         {
           "team_key": "470.l.102586.t.12",
           "name": "X-Factor",
           "points": 9.5,
-          "projected_points": 132.16,
-          "win_probability": 0.42,
+          "projected_points": 132.12,
+          "win_probability": 0.43,
           "code": "JP"
         }
       ]
     }
   ],
   "transactions": [
+    {
+      "timestamp_et": "2026-11-06 10:37",
+      "calendar_day_et": "2026-11-06",
+      "yahoo_transaction_key": "470.l.102586.tr.343",
+      "league": "102586",
+      "yahoo_league_id": "102586",
+      "team": "BE",
+      "team_name": "SHOWSTOPPERS",
+      "action": "ADD_DROP",
+      "added": "Corey Kiner",
+      "dropped": "TreVeyon Henderson",
+      "faab_bid": 0,
+      "via": "free_agent",
+      "semantic_key": "102586|BE|ADD_DROP|Corey Kiner|TreVeyon Henderson|2026-11-06"
+    },
     {
       "timestamp_et": "2026-11-05 20:57",
       "calendar_day_et": "2026-11-05",
@@ -8867,7 +8886,7 @@
         "player_key": "470.p.29325",
         "player_id": 29325,
         "name": "Jacoby Brissett",
-        "nfl_team": "Ari",
+        "nfl_team": "Bal",
         "position": "QB",
         "eligible_positions": [
           "QB"
@@ -8875,12 +8894,12 @@
         "status": "",
         "status_full": null,
         "injury_note": null,
-        "bye_week": 14,
+        "bye_week": 13,
         "slot": null,
         "percent_owned": 22.0,
-        "ownership_type": "freeagents",
+        "ownership_type": "waivers",
         "owner_team_key": null,
-        "waiver_date": null,
+        "waiver_date": "2026-11-11",
         "points": null,
         "points_week": null
       },
@@ -9552,6 +9571,29 @@
         "points_week": null
       },
       {
+        "player_key": "470.p.41823",
+        "player_id": 41823,
+        "name": "TreVeyon Henderson",
+        "nfl_team": "NE",
+        "position": "RB",
+        "eligible_positions": [
+          "RB",
+          "W/R/T",
+          "IR"
+        ],
+        "status": "O",
+        "status_full": "Out",
+        "injury_note": "Illness",
+        "bye_week": 11,
+        "slot": null,
+        "percent_owned": 64.0,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-11-08",
+        "points": null,
+        "points_week": null
+      },
+      {
         "player_key": "470.p.32018",
         "player_id": 32018,
         "name": "Ty Johnson",
@@ -9589,28 +9631,6 @@
         "bye_week": 10,
         "slot": null,
         "percent_owned": 6.0,
-        "ownership_type": "freeagents",
-        "owner_team_key": null,
-        "waiver_date": null,
-        "points": null,
-        "points_week": null
-      },
-      {
-        "player_key": "470.p.42386",
-        "player_id": 42386,
-        "name": "Corey Kiner",
-        "nfl_team": "NE",
-        "position": "RB",
-        "eligible_positions": [
-          "RB",
-          "W/R/T"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 11,
-        "slot": null,
-        "percent_owned": 3.0,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
@@ -10032,7 +10052,7 @@
         "injury_note": null,
         "bye_week": 7,
         "slot": null,
-        "percent_owned": 5.0,
+        "percent_owned": 6.0,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
@@ -10159,10 +10179,11 @@
         "position": "RB",
         "eligible_positions": [
           "RB",
-          "W/R/T"
+          "W/R/T",
+          "IR"
         ],
-        "status": "Q",
-        "status_full": "Questionable",
+        "status": "O",
+        "status_full": "Out",
         "injury_note": "Shoulder",
         "bye_week": 8,
         "slot": null,
@@ -10503,7 +10524,7 @@
         "injury_note": "Toe",
         "bye_week": 8,
         "slot": null,
-        "percent_owned": 6.0,
+        "percent_owned": 5.0,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
@@ -12293,7 +12314,7 @@
         "injury_note": null,
         "bye_week": 10,
         "slot": null,
-        "percent_owned": 16.0,
+        "percent_owned": 17.0,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
@@ -12624,8 +12645,8 @@
         "eligible_positions": [
           "K"
         ],
-        "status": "",
-        "status_full": null,
+        "status": "NA",
+        "status_full": "Inactive: Coach's Decision or Not on Roster",
         "injury_note": null,
         "bye_week": 13,
         "slot": null,
@@ -12884,7 +12905,7 @@
         "injury_note": null,
         "bye_week": 5,
         "slot": null,
-        "percent_owned": 9.0,
+        "percent_owned": 8.0,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
