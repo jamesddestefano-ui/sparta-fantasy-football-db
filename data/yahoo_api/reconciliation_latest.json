@@ -1,8 +1,8 @@
 {
   "league": "sparta",
   "yahoo_league_id": "102586",
-  "check_id": "sparta-yahoo-api-20261107-0042",
-  "observed_at": "2026-11-07T00:42:56-05:00",
+  "check_id": "sparta-yahoo-api-20261107-1242",
+  "observed_at": "2026-11-07T12:42:22-05:00",
   "in_sync": false,
   "team_mapping_complete": true,
   "unmapped_teams": [],
@@ -126,6 +126,36 @@
       "faab_bid": 0,
       "via": "free_agent",
       "semantic_key": "102586|TM|ADD_DROP|Justin Herbert|Bengals D/ST|2026-11-06"
+    },
+    {
+      "timestamp_et": "2026-11-07 04:06",
+      "calendar_day_et": "2026-11-07",
+      "yahoo_transaction_key": "470.l.102586.tr.347",
+      "league": "102586",
+      "yahoo_league_id": "102586",
+      "team": "JU",
+      "team_name": "The U",
+      "action": "ADD_DROP",
+      "added": "Tyler Bass",
+      "dropped": "Matt Gay",
+      "faab_bid": 2,
+      "via": "waiver",
+      "semantic_key": "102586|JU|ADD_DROP|Tyler Bass|Matt Gay|2026-11-07"
+    },
+    {
+      "timestamp_et": "2026-11-07 07:13",
+      "calendar_day_et": "2026-11-07",
+      "yahoo_transaction_key": "470.l.102586.tr.348",
+      "league": "102586",
+      "yahoo_league_id": "102586",
+      "team": "ME",
+      "team_name": "Brown Rice & Kraft",
+      "action": "DROP",
+      "added": null,
+      "dropped": "Dameon Pierce",
+      "faab_bid": null,
+      "via": null,
+      "semantic_key": "102586|ME|DROP||Dameon Pierce|2026-11-07"
     }
   ],
   "needs_review": [
@@ -280,7 +310,13 @@
       "reason": "trade"
     }
   ],
-  "faab_diffs": [],
+  "faab_diffs": [
+    {
+      "team": "JU",
+      "repo": 54,
+      "yahoo": 52
+    }
+  ],
   "waiver_priority_diffs": [],
   "jd_roster_diff": {
     "on_yahoo_not_repo": [
