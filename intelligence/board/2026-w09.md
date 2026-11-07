@@ -2,46 +2,34 @@
 
 _Intelligence for the Brain, not a recorded recommendation. Waiver availability is **unconfirmed** until checked on Yahoo._
 
-FAAB: **$18** (min bid $1) · FantasyPros pulled 2026-11-03T20:04:48+00:00 · roster as of 2026-11-02T22:11:51-05:00
+FAAB: **$14** (min bid $1) · FantasyPros pulled 2026-11-07T17:59:59+00:00 · roster as of 2026-11-04T11:21:53-05:00
 
 ## Lineup
 
 | Slot | Player | Proj (PPR) | Week rank |
 |---|---|---|---|
-| QB | Sam Darnold | 17.43 | 15 |
+| QB | Geno Smith | 13.86 | 25 |
 | RB | Bijan Robinson | 21.3 | 6 |
-| RB | Braelon Allen | 8.65 | 58 |
+| RB | Breece Hall | 10.84 | 67 |
 | WR | Jaxon Smith-Njigba | 23.79 | 2 |
-| WR | Tetairoa McMillan | 13.08 | 40 |
-| TE | Mike Gesicki | 8.44 | 79 |
-| W/R/T | Devaughn Vele | 8.91 | 70 |
-| W/R/T | Dylan Sampson | 8.53 | 93 |
-| K | Evan McPherson | 8.04 | 5 |
-| DEF | Ravens | 4.7 | 27 |
+| WR | Tetairoa McMillan | 13.08 | 36 |
+| TE | Greg Dulcich | 9.2 | 94 |
+| W/R/T | Mike Gesicki | 9.06 | 98 |
+| W/R/T | Devaughn Vele | 8.91 | 79 |
+| K | Evan McPherson | 8.04 | 3 |
+| DEF | Saints | 6.76 | 13 |
 
-Projected: current starters **117.07** → suggested **122.87**
-Changes: start Devaughn Vele, Sam Darnold; bench Geno Smith, Mike Washington Jr.
+Projected: current starters **121.98** → suggested **124.84**
+Changes: start Breece Hall, Greg Dulcich; bench Braelon Allen, Dylan Sampson
 
 ## Waiver targets
 
 | Pri | Player | Pos | FP waiver # | ROS rank | Yahoo % | Replaces | In Sparta |
 |---|---|---|---|---|---|---|---|
-| MEDIUM | Adonai Mitchell (NYJ) | WR | 7 | 103 | 11% | Devaughn Vele | ON_WAIVERS_YAHOO_CONFIRMED |
-| MEDIUM | Greg Dulcich (MIA) | TE | 22 | 138 | 6% | Darren Waller | ON_WAIVERS_YAHOO_CONFIRMED |
-| MEDIUM | Kenyon Sadiq (NYJ) | TE | 23 | 137 | 13% | Darren Waller | verify (likely free) |
-| MEDIUM | RJ Harvey (DEN) | RB | — | 146 | 69% | Dylan Sampson | verify |
-| MEDIUM | Tennessee Titans (TEN) | DEF | — | — | — | Ravens | verify |
-| MEDIUM | New Orleans Saints (NO) | DEF | — | — | 4% | Ravens | verify (likely free) |
-| LOW | AJ Barner (SEA) | TE | 25 | 141 | 12% | Darren Waller | ON_WAIVERS_YAHOO_CONFIRMED |
-| LOW | Kimani Vidal (LAC) | RB | — | 177 | 13% | Dylan Sampson | verify (likely free) |
-| LOW | Chicago Bears (CHI) | DEF | — | — | 29% | Ravens | verify (likely free) |
-| LOW | Jacksonville Jaguars (JAC) | DEF | — | — | 85% | Ravens | verify |
-| LOW | New York Giants (NYG) | DEF | — | — | 3% | Ravens | verify (likely free) |
-| LOW | Philadelphia Eagles (PHI) | DEF | — | — | 41% | Ravens | verify |
-| LOW | Buffalo Bills (BUF) | DEF | — | — | 10% | Ravens | verify (likely free) |
-| LOW | Green Bay Packers (GB) | DEF | — | — | 25% | Ravens | verify (likely free) |
-
-## Roster notes
-
-- Breece Hall: Yahoo shows 'O' (roster snapshot), but FantasyPros lists no injury for this week and projects 10.84. Check his practice reports before locking the lineup; he is kept out of the suggested lineup until Yahoo clears him.
-- Brian Robinson Jr.: Yahoo shows 'O' (roster snapshot), but FantasyPros lists no injury for this week and projects 6.37. Check his practice reports before locking the lineup; he is kept out of the suggested lineup until Yahoo clears him.
+| HIGH | RJ Harvey (DEN) | RB | — | 149 | 61% | Emanuel Wilson | verify |
+| MEDIUM | Malik Willis (MIA) | QB | — | — | 20% | Geno Smith | ON_WAIVERS_YAHOO_CONFIRMED |
+| MEDIUM | Tennessee Titans (TEN) | DEF | — | — | — | Saints | verify |
+| LOW | Kimani Vidal (LAC) | RB | — | 181 | 11% | Emanuel Wilson | verify (likely free) |
+| LOW | J.J. McCarthy (NYG) | QB | — | — | 9% | Geno Smith | verify (likely free) |
+| LOW | Deshaun Watson (CLE) | QB | — | — | 12% | Geno Smith | verify (likely free) |
+| LOW | Daniel Jones (IND) | QB | — | — | 16% | Geno Smith | verify (likely free) |
