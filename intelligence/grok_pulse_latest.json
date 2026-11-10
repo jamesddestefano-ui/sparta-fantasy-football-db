@@ -1,21 +1,21 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-11-10T00:09:28.036Z",
+  "generatedAt": "2026-11-10T00:09:51.787Z",
   "status": "live",
-  "completedAt": "2026-11-10T00:09:27.991Z",
+  "completedAt": "2026-11-10T00:09:51.754Z",
   "nextAtLabel": "8:09 PM ET",
   "inWindow": true,
   "itemCount": 13,
   "items": [
     {
-      "id": "jacobs-surgery",
+      "id": "jacobs-finger-surgery",
       "at": "2026-11-09T23:02:25Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Packers RB Josh Jacobs needs surgery on fractured ring finger; LaFleur does not rule out IR (min 4 weeks). Could miss up to 3 weeks otherwise; no grip strength.",
+      "text": "Packers RB Josh Jacobs needs surgery on fractured right ring finger; LaFleur not ruling out IR. Could miss up to 3 weeks (bye helps).",
       "playerIds": [
         "josh-jacobs"
       ],
@@ -26,11 +26,11 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-jacobs-finger-week10",
       "signal": "OUT",
-      "priorStatus": "INJURED",
-      "newStatus": "SURGERY/IR-possible",
-      "why": "Finger caught in facemask; clean break; surgery this week",
-      "implication": "GB backfield opens for Lloyd/Strong/Johnson/Brooks",
-      "opportunity": "Handcuff/committee RB snaps and carries",
+      "priorStatus": "ACTIVE",
+      "newStatus": "OUT/possible IR",
+      "why": "Fractured finger in facemask contact vs NE; surgery opted over splint for grip/security.",
+      "implication": "GB RBBC scramble; short-term starter opportunity.",
+      "opportunity": "Carries/snaps for backups (Lloyd, Johnson, Brooks).",
       "beneficiaries": [
         "marshawn-lloyd"
       ],
@@ -43,13 +43,93 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "wilson-season",
+      "id": "minshew-ucl-season",
+      "at": "2026-11-09T22:41:38Z",
+      "expertId": "ian-rapoport",
+      "expert": "Ian Rapoport",
+      "handle": "RapSheet",
+      "outlet": "NFL Network",
+      "text": "Cardinals QB Gardner Minshew feared torn UCL (throwing arm), played through after halftime hit; likely season-ending surgery/months rehab. Carson Beck up as QB1. Cardinals signing Josh Johnson.",
+      "playerIds": [
+        "trey-mcbride",
+        "michael-wilson"
+      ],
+      "players": [
+        "Trey McBride",
+        "Michael Wilson"
+      ],
+      "url": "https://x.com/RapSheet/status/2119923397270663568",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-minshew-ucl-week10",
+      "signal": "OUT",
+      "priorStatus": "ACTIVE",
+      "newStatus": "OUT-SEASON",
+      "why": "UCL tear suspected; additional opinions sought; Brissett already traded.",
+      "implication": "Rookie Beck starts; offense volatility but McBride still high-floor.",
+      "opportunity": "Checkdown/TE targets may rise under new QB; overall pass volume risk.",
+      "beneficiaries": [
+        "trey-mcbride"
+      ],
+      "corroboration": [
+        "@AdamSchefter"
+      ],
+      "supportingSources": [
+        "adam-schefter"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "nacua-rams-wrs-levitan",
+      "at": "2026-11-09T22:21:14Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Healthy Rams WRs now: 1. Konata Mumpfield 2. Tutu Atwell 3. Jordan Whittington 4. CJ Daniels. Nacua (PCL/MCL/turf toe) to IR/return timeline unclear; Adams (ruptured hamstring) IR back Week 12 best case; Ferguson hamstring week-to-week.",
+      "playerIds": [
+        "puka-nacua",
+        "davante-adams"
+      ],
+      "players": [
+        "Puka Nacua",
+        "Davante Adams"
+      ],
+      "url": "https://x.com/adamlevitan/status/2119918262381388137",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-nacua-ir-week10",
+      "signal": "IR",
+      "priorStatus": "ACTIVE",
+      "newStatus": "IR",
+      "why": "Confirmed multi-ligament + turf toe; Adams already IR.",
+      "implication": "Extreme WR thinning; volume to unproven depth + TEs/RBs.",
+      "opportunity": "Routes/targets for Mumpfield/Atwell; TE usage; RB receiving/carries.",
+      "beneficiaries": [
+        "kyren-williams",
+        "davante-adams"
+      ],
+      "corroboration": [
+        "@RapSheet",
+        "https://www.nfl.com/news/rams-wr-puka-nacua-likely-to-be-placed-on-injured-reserve-with-turf-toe-sprained-mcl-and-pcl",
+        "@adamlevitan",
+        "@AdamSchefter",
+        "@MatthewBerryTMR"
+      ],
+      "supportingSources": [
+        "ian-rapoport",
+        "adam-levitan",
+        "matthew-berry",
+        "establish-the-run"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "wilson-season-neck",
       "at": "2026-11-09T21:55:00Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Cardinals WR Michael Wilson out for season with neck injury (fractured vertebra); brace 6 weeks-2 months. Played through it after early hit.",
+      "text": "Cardinals WR Michael Wilson out for season with neck injury (fractured vertebra); played through it after early hit.",
       "playerIds": [
         "michael-wilson"
       ],
@@ -58,16 +138,15 @@
       ],
       "url": "https://www.espn.com/nfl/story/_/id/50435608/cardinals-wr-michael-wilson-neck-miss-rest-season",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-wilson-neck-season",
+      "eventId": "injury-wilson-season-week10",
       "signal": "OUT",
       "priorStatus": "ACTIVE",
-      "newStatus": "SEASON-ENDING",
-      "why": "Vertebra fracture on early catch/tackle; warrior played on",
-      "implication": "ARI WR depth thin; McBride target monopoly rises further",
-      "opportunity": "Trey McBride routes/targets spike; other ARI WRs",
+      "newStatus": "OUT-SEASON",
+      "why": "Vertebra fracture on early catch/tackle vs SEA; tough player hid it initially.",
+      "implication": "ARI WR room decimated (already lost others); McBride target monopoly expands.",
+      "opportunity": "Targets/routes for Trey McBride and remaining WRs.",
       "beneficiaries": [
-        "trey-mcbride",
-        "marvin-harrison"
+        "trey-mcbride"
       ],
       "corroboration": [
         "@RapSheet",
@@ -80,47 +159,13 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "minshew-ucl",
-      "at": "2026-11-09T22:41:38Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Cardinals QB Gardner Minshew feared torn UCL (throwing arm), played through 2nd half; likely season-ending surgery/months rehab. Carson Beck becomes QB1; Josh Johnson signed.",
-      "playerIds": [
-        "trey-mcbride"
-      ],
-      "players": [
-        "Trey McBride"
-      ],
-      "url": "https://x.com/RapSheet/status/2119923397270663568",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-minshew-ucl-season",
-      "signal": "OUT",
-      "priorStatus": "ACTIVE",
-      "newStatus": "SEASON-ENDING",
-      "why": "Hit on arm mid-throw before half; additional opinions for surgery confirm",
-      "implication": "Rookie Beck start vs Rams; offense volatility but McBride still anchor",
-      "opportunity": "McBride target share even higher in depleted ARI pass game",
-      "beneficiaries": [
-        "trey-mcbride"
-      ],
-      "corroboration": [
-        "@AdamSchefter"
-      ],
-      "supportingSources": [
-        "adam-schefter"
-      ],
-      "priority": "HIGH"
-    },
-    {
       "id": "nacua-beneficiaries-berry",
       "at": "2026-11-09T22:37:57Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "With Nacua injured/IR, Rams lean heavier on run with Williams and Corum, heavier multiple-TE sets making Higbee viable, plus uptick for Mumpfield and Atwell; possible WR trade before deadline.",
+      "text": "With Nacua injured, Berry expects Rams lean run-heavy with Williams/Corum, heavier multiple-TE sets (Higbee viable), uptick for Mumpfield & Atwell; possible WR trade before deadline.",
       "playerIds": [
         "puka-nacua",
         "kyren-williams"
@@ -133,58 +178,18 @@
       "kind": "ANALYST_OPINION",
       "eventId": "injury-nacua-ir-week10",
       "signal": "UPGRADE",
-      "why": "Nacua target share ~44-48% recently gone; Adams already IR",
-      "implication": "Kyren Williams volume spike in run-heavy script; streaming TEs/WRs",
-      "opportunity": "RB carries/red-zone + TE routes in multi-TE",
+      "why": "Nacua IR removes ~half recent target share; Adams already out.",
+      "implication": "Kyren Williams/Corum volume spike; TE/WR2-3 opportunity.",
+      "opportunity": "Run share, red-zone, multi-TE sets, secondary WR routes/targets.",
       "beneficiaries": [
         "kyren-williams"
       ],
       "corroboration": [
-        "@adamlevitan"
+        "@adamlevitan",
+        "@RapSheet"
       ],
       "supportingSources": [
         "adam-levitan"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "levitan-rams-wrs",
-      "at": "2026-11-09T22:21:14Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
-      "outlet": "Establish The Run",
-      "text": "Healthy Rams WRs now: Mumpfield, Atwell, Whittington, Daniels. Nacua (PCL/MCL/turf toe) to IR/return unclear; Adams (ruptured hamstring) IR back Week 12 best case; Ferguson hamstring week-to-week.",
-      "playerIds": [
-        "puka-nacua",
-        "davante-adams"
-      ],
-      "players": [
-        "Puka Nacua",
-        "Davante Adams"
-      ],
-      "url": "https://x.com/adamlevitan/status/2119918262381388137",
-      "kind": "USAGE_DATA",
-      "eventId": "injury-nacua-ir-week10",
-      "signal": "DEPTH-CHART",
-      "why": "Post-injury roster reality check after Nacua/Adams losses",
-      "implication": "Thin WR room forces scheme change to run/TE",
-      "opportunity": "Elevated snaps/routes for remaining WRs and TEs",
-      "beneficiaries": [
-        "kyren-williams",
-        "davante-adams"
-      ],
-      "corroboration": [
-        "@RapSheet",
-        "@adamlevitan",
-        "https://www.nfl.com/news/rams-wr-puka-nacua-likely-to-be-placed-on-injured-reserve-with-turf-toe-sprained-mcl-and-pcl",
-        "@MatthewBerryTMR"
-      ],
-      "supportingSources": [
-        "ian-rapoport",
-        "adam-levitan",
-        "matthew-berry",
-        "establish-the-run"
       ],
       "priority": "HIGH"
     },
@@ -195,7 +200,7 @@
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Notable RB splits: Hall 19 opp vs Allen 10 (Allen outsnapped 37-27); Coleman 58 snaps/37 opp last 2 wks vs Dobbins 12; Charbonnet outsnapped/routed Price; Jeanty 32 snaps/24 routes vs Washington 17/6 in trail script.",
+      "text": "Notable RB splits: NYJ Hall 19 opps vs Allen 10 (Allen outsnapped 37-27 on return); DEN Coleman 58 snaps/dominant last 2 wks vs Dobbins 11; SEA Charbonnet outsnapped/routed Price; LV Jeanty 32 snaps/24 routes vs Washington 17 (even carries in trail script).",
       "playerIds": [
         "breece-hall",
         "ashton-jeanty",
@@ -211,46 +216,10 @@
       "url": "https://x.com/adamlevitan/status/2119801992826790170",
       "kind": "USAGE_DATA",
       "eventId": "usage-rb-splits-week9",
-      "signal": "ROLE",
-      "why": "Post-game snap/route/opportunity data",
-      "implication": "Hall lead back but Allen involved; Coleman clear lead; Charbonnet preferred; Jeanty workhorse",
-      "opportunity": "Jeanty/Coleman clear opportunity edges; monitor Hall/Allen split",
-      "supportingSources": [
-        "establish-the-run"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "levitan-late-injuries",
-      "at": "2026-11-09T00:35:33Z",
-      "expertId": "adam-levitan",
-      "expert": "Adam Levitan",
-      "handle": "adamlevitan",
-      "outlet": "Establish The Run",
-      "text": "Injuries to both Puka Nacua and Rhamondre Stevenson occurred very late in their games.",
-      "playerIds": [
-        "puka-nacua",
-        "rhamondre-stevenson"
-      ],
-      "players": [
-        "Puka Nacua",
-        "Rhamondre Stevenson"
-      ],
-      "url": "https://x.com/adamlevitan/status/2119589675862315133",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-nacua-stevenson-late",
-      "signal": "MONITOR",
-      "priorStatus": "ACTIVE",
-      "newStatus": "INJURED-LATE",
-      "why": "Timing of injuries in final snaps",
-      "implication": "Status uncertainty carries into next week; Stevenson knee watch",
-      "opportunity": "NE RB handcuffs if Stevenson limited/OUT",
-      "beneficiaries": [
-        "treveyon-henderson"
-      ],
-      "corroboration": [
-        "@EstablishTheRun"
-      ],
+      "signal": "UPGRADE",
+      "why": "Post-game snap/route/opp data shows clear hierarchies or committees.",
+      "implication": "Hall lead back on return; Coleman emerging; Charbonnet preferred; Jeanty workhorse even trailing.",
+      "opportunity": "Snaps, routes, carries, third-down for leaders; handcuff value if injured.",
       "supportingSources": [
         "establish-the-run"
       ],
@@ -263,38 +232,34 @@
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Sunday injuries watching: Nacua (knee), Mahomes (elbow returned)/Worthy (hamstring), Stevenson (knee), Jacobs (hand), Waddle (concussion), McConkey (back)/Herbert (undisclosed), McCarthy (hip returned), Willis (groin returned), Ferguson/Goodson (knee). Added Lock (oblique).",
+      "text": "Sunday injuries watching: Puka Nacua (knee), Mahomes (elbow returned)/Worthy (hamstring), Rhamondre Stevenson (knee), Josh Jacobs (hand), Jaylen Waddle (concussion), Ladd McConkey (back)/Herbert (undisclosed), plus Lock (oblique), Ferguson/Goodson (knee). Several returned.",
       "playerIds": [
         "puka-nacua",
-        "patrick-mahomes",
-        "xavier-worthy",
         "rhamondre-stevenson",
         "josh-jacobs",
         "jaylen-waddle",
         "ladd-mcconkey",
-        "justin-herbert",
-        "malik-willis"
+        "xavier-worthy"
       ],
       "players": [
         "Puka Nacua",
-        "Patrick Mahomes",
-        "Xavier Worthy",
         "Rhamondre Stevenson",
         "Josh Jacobs",
         "Jaylen Waddle",
         "Ladd McConkey",
-        "Justin Herbert",
-        "Malik Willis"
+        "Xavier Worthy"
       ],
       "url": "https://x.com/EstablishTheRun/status/2119585242768150701",
       "kind": "INJURY_STATUS",
       "eventId": "injury-watch-week9-sunday",
-      "signal": "MONITOR",
+      "signal": "QUESTIONABLE",
+      "priorStatus": "ACTIVE",
       "newStatus": "VARIOUS",
-      "why": "In-game and post-game injury tracking",
-      "implication": "Multiple key players for Week 10 status; late hits on Nacua/Stevenson",
-      "opportunity": "Handcuffs and backups elevate if OUT",
+      "why": "In-game exits/returns tracked for fantasy relevance.",
+      "implication": "Monitor midweek reports for OUT/GTD; handcuffs elevate.",
+      "opportunity": "Backups for Stevenson/Jacobs/Waddle/McConkey if limited.",
       "beneficiaries": [
+        "treveyon-henderson",
         "marshawn-lloyd"
       ],
       "corroboration": [
@@ -306,22 +271,80 @@
       "priority": "HIGH"
     },
     {
-      "id": "berry-stroud",
+      "id": "stevenson-knee-watch",
+      "at": "2026-11-09T00:17:56Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Rhamondre Stevenson (knee) among key Sunday injuries watched; left game, MRI pending, no clear update Monday. Handcuff elevated.",
+      "playerIds": [
+        "rhamondre-stevenson",
+        "treveyon-henderson"
+      ],
+      "players": [
+        "Rhamondre Stevenson",
+        "TreVeyon Henderson"
+      ],
+      "url": "https://x.com/EstablishTheRun/status/2119585242768150701",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-stevenson-knee-week10",
+      "signal": "QUESTIONABLE",
+      "priorStatus": "ACTIVE",
+      "newStatus": "QUESTIONABLE",
+      "why": "Knee injury late vs GB; Vrabel no update, MRIs ongoing.",
+      "implication": "Potential miss or limit vs DET; NE RB uncertainty.",
+      "opportunity": "Carries/targets for Henderson or committee if OUT.",
+      "beneficiaries": [
+        "treveyon-henderson"
+      ],
+      "supportingSources": [
+        "adam-levitan"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "waddle-concussion",
+      "at": "2026-11-09T00:17:56Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Jaylen Waddle (concussion) on ETR Sunday injury watch list after game exit.",
+      "playerIds": [
+        "jaylen-waddle"
+      ],
+      "players": [
+        "Jaylen Waddle"
+      ],
+      "url": "https://x.com/EstablishTheRun/status/2119585242768150701",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-waddle-concussion-week10",
+      "signal": "QUESTIONABLE",
+      "priorStatus": "ACTIVE",
+      "newStatus": "QUESTIONABLE",
+      "why": "Concussion protocol entry.",
+      "implication": "Protocol timeline; DEN WR depth test if misses.",
+      "opportunity": "Targets to other DEN receivers if OUT.",
+      "priority": "HIGH"
+    },
+    {
+      "id": "berry-stroud-ros",
       "at": "2026-11-09T23:05:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "C.J. Stroud is QB5 in fantasy PPG; comfortable starting him the rest of the way.",
+      "text": "CJ Stroud is QB5 in fantasy PPG; Berry comfortable starting him the rest of the way.",
       "playerIds": [],
       "players": [],
       "url": "https://x.com/MatthewBerryTMR/status/2119929275872584142",
       "kind": "ANALYST_OPINION",
-      "eventId": "ranking-stroud-ros",
+      "eventId": "opinion-stroud-ros-berry",
       "signal": "LOVE",
-      "why": "PPG ranking and film/confidence",
-      "implication": "Start with confidence ROS; streamer to every-week",
-      "opportunity": "Stable QB volume",
+      "why": "Strong PPG ranking amid QB landscape.",
+      "implication": "Start with confidence ROS; streaming not needed.",
+      "opportunity": "Consistent QB1 production.",
       "priority": "NORMAL"
     },
     {
@@ -332,21 +355,17 @@
       "handle": "AdamSchefter",
       "outlet": "ESPN",
       "text": "NFL reinstated 49ers WR Brandon Aiyuk after physical; 2-week roster exemption.",
-      "playerIds": [
-        "mike-evans"
-      ],
-      "players": [
-        "Mike Evans"
-      ],
+      "playerIds": [],
+      "players": [],
       "url": "https://www.espn.com/nfl/story/_/id/50435848/49ers-receiver-brandon-aiyuk-reinstated-nfl",
       "kind": "NFL_FACT",
       "eventId": "roster-aiyuk-reinstated",
       "signal": "ACTIVE",
-      "priorStatus": "LEFT-SQUAD",
+      "priorStatus": "LEFT SQUAD",
       "newStatus": "REINSTATED",
-      "why": "Reported for physical; transaction wire",
-      "implication": "Path back to SF WR room; depth competition",
-      "opportunity": "Potential snaps if activated soon",
+      "why": "Reported for physical; next step in return.",
+      "implication": "Potential WR depth addition for SF soon; CMC/Kittle still primary.",
+      "opportunity": "Future routes if activated; limited immediate.",
       "corroboration": [
         "@RapSheet"
       ],
@@ -362,7 +381,7 @@
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Best values at ADP this season are Packers WRs: Matthew Golden first, Christian Watson second. Love/Golden/Watson explosion impressive.",
+      "text": "Best ADP values this season: Packers WRs Matthew Golden first, Christian Watson second. Love/Golden/Watson explosion impressive.",
       "playerIds": [
         "christian-watson"
       ],
@@ -371,11 +390,17 @@
       ],
       "url": "https://x.com/MatthewBerryTMR/status/2119891528428720288",
       "kind": "ANALYST_OPINION",
-      "eventId": "love-packers-wrs",
+      "eventId": "opinion-packers-wrs-berry",
       "signal": "LOVE",
-      "why": "On-field production and ADP value",
-      "implication": "Hold/start both; strong ROS in Love offense",
-      "opportunity": "Routes/targets in efficient Packers pass game",
+      "why": "Strong recent production and value vs ADP; Love supporting.",
+      "implication": "Hold/start both; upside continues.",
+      "opportunity": "Targets/routes in high-powered GB pass game.",
+      "corroboration": [
+        "@adamlevitan"
+      ],
+      "supportingSources": [
+        "adam-levitan"
+      ],
       "priority": "NORMAL"
     },
     {
@@ -385,11 +410,13 @@
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Tightest two-player target concentrations: NYG Nabers+Likely 54.9%; ARI McBride+Wilson 50.7%; DAL Lamb+Pickens 50.6%; DET St.Brown+LaPorta 49.3%; GB Golden+Watson 48.7%. Chase+Higgins 47.3%.",
+      "text": "Tightest two-player target concentration: NYG Nabers+Likely 54.9%; ARI McBride+Wilson 50.7%; DAL Lamb+Pickens 50.6%; DET St. Brown+LaPorta 49.3%; GB Golden+Watson 48.7%. Tee+Chase 47.3%.",
       "playerIds": [
         "malik-nabers",
         "trey-mcbride",
+        "michael-wilson",
         "ceedee-lamb",
+        "george-pickens",
         "amon-ra-st-brown",
         "christian-watson",
         "jamarr-chase",
@@ -398,7 +425,9 @@
       "players": [
         "Malik Nabers",
         "Trey McBride",
+        "Michael Wilson",
         "CeeDee Lamb",
+        "George Pickens",
         "Amon-Ra St. Brown",
         "Christian Watson",
         "Ja'Marr Chase",
@@ -406,49 +435,13 @@
       ],
       "url": "https://x.com/adamlevitan/status/2119836147706912793",
       "kind": "USAGE_DATA",
-      "eventId": "usage-target-conc-season",
-      "signal": "TARGETS",
-      "why": "Season-long target share data to two players",
-      "implication": "Wilson out further concentrates ARI to McBride; high floor for listed pairs",
-      "opportunity": "McBride monopoly post-Wilson; Nabers/Likely stack value",
+      "eventId": "usage-target-conc-2026",
+      "signal": "RANKING_SIGNAL",
+      "why": "Season-long target share data to two players.",
+      "implication": "High floor/ceiling for listed pairs; Wilson out now boosts McBride further; volatility elsewhere.",
+      "opportunity": "Target monopoly if one misses; two-man games reliable.",
       "beneficiaries": [
         "trey-mcbride"
-      ],
-      "priority": "NORMAL"
-    },
-    {
-      "id": "etr-weekend-expected",
-      "at": "2026-11-08T12:56:24Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "Weekend reports summary: Expected to play Amon-Ra St. Brown, Emeka Egbuka; activated likely Tyson/Bryant/Hollins/Robinson; not expected Deshaun Watson/Jaylen Wright; waiting Pickens/Ferguson/Henry/Vaki/Lloyd/Parkinson.",
-      "playerIds": [
-        "amon-ra-st-brown",
-        "emeka-egbuka",
-        "george-pickens",
-        "marshawn-lloyd",
-        "pat-bryant"
-      ],
-      "players": [
-        "Amon-Ra St. Brown",
-        "Emeka Egbuka",
-        "George Pickens",
-        "Marshawn Lloyd",
-        "Pat Bryant"
-      ],
-      "url": "https://x.com/EstablishTheRun/status/2119413728190099843",
-      "kind": "INJURY_STATUS",
-      "eventId": "status-weekend-week9",
-      "signal": "EXPECTED",
-      "priorStatus": "UNCERTAIN",
-      "newStatus": "EXPECTED/NOT",
-      "why": "Pre-game practice and activation intel",
-      "implication": "Clear starts for listed expected; monitor waitlist",
-      "opportunity": "Lloyd if active post-Jacobs",
-      "supportingSources": [
-        "adam-levitan"
       ],
       "priority": "NORMAL"
     }
@@ -459,36 +452,22 @@
       "sourceId": "establish-the-run",
       "source": "Establish The Run",
       "grade": "USEFUL",
-      "note": "Comprehensive Sunday injury watch (Nacua knee, Stevenson knee, Waddle concussion, Jacobs hand, McConkey back, Herbert, Worthy hamstring, Mahomes returned, Lock oblique); multi-player expected/not expected and weekend status tracking.",
+      "note": "Sunday multi-player injury watch (Nacua knee, Stevenson knee, Waddle concussion, Jacobs hand, McConkey back, Herbert, Worthy hamstring, Mahomes returned, Lock oblique); status tracking and expected play notes aligned with Levitan usage.",
       "at": "2026-11-09T00:17:56Z"
     },
     {
       "sourceId": "adam-levitan",
       "source": "Adam Levitan",
       "grade": "USEFUL",
-      "note": "Player-specific RB opportunity/snap/route splits (Hall/Allen, Coleman/Dobbins, Charbonnet/Price, Jeanty) + two-player target concentration; late Nacua/Stevenson timing; Nacua IR WR depth update; high-value usage intel.",
+      "note": "Player-specific RB opp/snap/route splits (Hall/Allen, Coleman/Dobbins, Charbonnet/Price, Jeanty) + two-player target concentration; Nacua IR + Rams healthy WR depth + Adams timeline; high-value usage intel post-Week 9.",
       "at": "2026-11-09T22:21:14Z"
     },
     {
       "sourceId": "matthew-berry",
       "source": "Matthew Berry",
       "grade": "USEFUL",
-      "note": "Per-player signals on Nacua IR implications (run heavy Williams/Corum, TE Higbee, Mumpfield/Atwell); Wilson season-ending reaction; Stroud ROS love/start confidence; Packers Watson/Golden values; limited full new Love/Hate but strong post-g",
+      "note": "Per-player Nacua IR implications (run-heavy Williams/Corum, TE Higbee, Mumpfield/Atwell + trade guess); Wilson season-ending reaction; Stroud ROS love/start confidence; Packers Golden/Watson ADP value/Love explosion; limited full new Love/H",
       "at": "2026-11-09T22:37:57Z"
-    },
-    {
-      "sourceId": "adam-schefter",
-      "source": "Adam Schefter",
-      "grade": "USEFUL",
-      "note": "High-confidence facts: Nacua likely IR MCL/PCL/turf toe; Jacobs finger surgery possible IR; Wilson season neck out; Minshew UCL likely season surgery; Aiyuk reinstated; strong factual alignment on key injuries/trades.",
-      "at": "2026-11-09T23:02:25Z"
-    },
-    {
-      "sourceId": "ian-rapoport",
-      "source": "Ian Rapoport",
-      "grade": "USEFUL",
-      "note": "Corroborated Minshew torn UCL likely season/Carson Beck up; Nacua IR expected; Wilson season neck; Aiyuk reinstated; strong factual sourcing aligned with Schefter.",
-      "at": "2026-11-09T22:41:38Z"
     },
     {
       "sourceId": "establish-the-run",
@@ -622,10 +601,24 @@
       "grade": "USEFUL",
       "note": "High-confidence facts: Nacua knee MRI/ACL intact belief; Herbert finger possible fracture/testing; Mahomes elbow day-to-day positive; Darnold out/Lock start; Jacobs fracture context.",
       "at": "2026-11-09T19:13:58Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Corroborated Mahomes elbow MRI no major/positive rehab; Waddle concussion out; Lock oblique minor/expected start; Jacobs fracture details; video roundup on key injuries.",
+      "at": "2026-11-09T19:44:07Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific RB opportunity splits (Hall/Allen, Coleman/Dobbins, Charbonnet/Price, Jeanty) and two-player target concentration data; noted late timing of Nacua/Stevenson injuries.",
+      "at": "2026-11-09T17:00:00Z"
     }
   ],
-  "mirroredAt": "2026-11-10T00:09:28.583Z",
+  "mirroredAt": "2026-11-10T00:09:52.383Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-11-10T00:09:27.991Z",
+  "sourceCompletedAt": "2026-11-10T00:09:51.754Z",
   "sourceStatus": "live"
 }
