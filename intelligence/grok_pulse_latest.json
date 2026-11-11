@@ -1,21 +1,21 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-11-11T22:09:09.480Z",
+  "generatedAt": "2026-11-11T22:09:46.654Z",
   "status": "live",
-  "completedAt": "2026-11-11T22:09:09.438Z",
+  "completedAt": "2026-11-11T22:09:46.612Z",
   "nextAtLabel": "6:09 PM ET",
   "inWindow": true,
   "itemCount": 14,
   "items": [
     {
-      "id": "nacua-status-w10",
+      "id": "nacua-status-1111",
       "at": "2026-11-11T20:54:13Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Rams HC Sean McVay said the team will not place Puka Nacua on IR due to roster mechanics, but he will be out for a significant period of time (MCL/PCL/turf toe); optimistic return around Week 14-15.",
+      "text": "Rams HC Sean McVay said the team will not place Puka Nacua on IR due to roster mechanics, but he will still be out for a significant period of time after MCL/PCL sprains and turf toe.",
       "playerIds": [
         "puka-nacua"
       ],
@@ -27,32 +27,34 @@
       "eventId": "injury-nacua-week10",
       "signal": "OUT",
       "priorStatus": "LIKELY_IR",
-      "newStatus": "OUT_NO_IR",
-      "why": "Roster mechanics prevent IR; significant time expected despite no IR designation.",
-      "implication": "Stash if possible; no IR slot relief in many leagues. Rams lean run-heavy.",
-      "opportunity": "Increased snaps/targets for remaining WRs/TEs and RBs Kyren Williams/Blake Corum.",
+      "newStatus": "OUT_SIGNIFICANT_NO_IR",
+      "why": "Roster activation limits (already 12 on IR, 3 of 8 activations used); optimistic return Week 14/15 possible without mandatory 4-game IR sit.",
+      "implication": "Rams pass game severely depleted with Adams also out; expect run-heavier approach.",
+      "opportunity": "Increased carries/snaps for Kyren Williams and remaining WRs/TEs like Higbee.",
       "beneficiaries": [
         "kyren-williams",
         "davante-adams"
       ],
       "corroboration": [
-        "https://x.com/AdamSchefter/status/2120621139525263707",
-        "@RapSheet"
+        "https://x.com/RapSheet",
+        "establishtherun.com",
+        "@adamlevitan"
       ],
       "supportingSources": [
+        "ian-rapoport",
         "adam-levitan",
         "establish-the-run"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "jacobs-finger-surgery",
+      "id": "jacobs-finger-1111",
       "at": "2026-11-11T17:55:00Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "Packers RB Josh Jacobs will have surgery later this week on broken ring finger; could return as quickly as 2-3 weeks. Out vs Vikings before bye; IR decision Saturday not guaranteed.",
+      "text": "Packers RB Josh Jacobs will have surgery later this week on broken ring finger and could return in 2-3 weeks; out vs Vikings before bye. IR decision Saturday, not guaranteed.",
       "playerIds": [
         "josh-jacobs"
       ],
@@ -63,25 +65,26 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-jacobs-week10",
       "signal": "OUT",
-      "priorStatus": "QUESTIONABLE",
-      "newStatus": "OUT_SURGERY",
-      "why": "Fractured finger, no grip strength; surgery required.",
-      "implication": "Miss at least Week 10; possible short-term absence without IR.",
-      "opportunity": "Handcuff/backup RBs elevated for volume in high-powered Packers offense.",
+      "priorStatus": "QUESTIONABLE_PLAY_THROUGH",
+      "newStatus": "SURGERY_2-3WEEKS_IR_TBD",
+      "why": "No grip strength; clean break requires surgery rather than splint.",
+      "implication": "Miss at least Week 10; potential short absence if no IR.",
+      "opportunity": "Expanded role for Marshawn Lloyd, Kaleb Johnson, Chris Brooks return candidates.",
       "beneficiaries": [
         "marshawn-lloyd"
       ],
       "corroboration": [
-        "https://x.com/AdamSchefter",
-        "NBC Sports"
+        "@AdamSchefter",
+        "packers.com"
       ],
       "supportingSources": [
-        "adam-schefter"
+        "adam-schefter",
+        "establish-the-run"
       ],
       "priority": "IMMEDIATE"
     },
     {
-      "id": "mahomes-full-practice",
+      "id": "mahomes-practice-1111",
       "at": "2026-11-11T21:30:57Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
@@ -98,20 +101,32 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-mahomes-week10",
       "signal": "ACTIVE",
-      "priorStatus": "LIMITED",
-      "newStatus": "FULL",
-      "why": "Full practice participation after prior elbow concern.",
-      "implication": "Expected to start; stabilizes Chiefs offense post-deadline additions.",
+      "priorStatus": "LIMITED_ELBOW",
+      "newStatus": "FULL_PRACTICE",
+      "why": "Full participant after elbow issue; returned previously.",
+      "implication": "Expected starter; stabilizes Chiefs offense and skill players.",
+      "opportunity": "Full snaps/usage for Rashee Rice, Xavier Worthy, Travis Kelce.",
+      "beneficiaries": [
+        "rashee-rice",
+        "xavier-worthy",
+        "travis-kelce"
+      ],
+      "corroboration": [
+        "@RapSheet"
+      ],
+      "supportingSources": [
+        "ian-rapoport"
+      ],
       "priority": "HIGH"
     },
     {
-      "id": "skattebo-good-to-go",
+      "id": "skattebo-active-1111",
       "at": "2026-11-11T21:09:00Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Giants RB Cam Skattebo (hamstring) has no injury status designation for Thursday night and is good to go vs. the Commanders.",
+      "text": "Giants RB Cam Skattebo (hamstring) and QB JJ McCarthy (hip) have no injury status designation for Thursday night and are good to go vs. the Commanders.",
       "playerIds": [
         "cam-skattebo"
       ],
@@ -122,42 +137,53 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-skattebo-week10",
       "signal": "ACTIVE",
-      "priorStatus": "QUESTIONABLE",
-      "newStatus": "ACTIVE",
-      "why": "No designation after hamstring issue.",
-      "implication": "Full go for TNF; maintain RB role.",
+      "priorStatus": "QUESTIONABLE_HAMSTRING",
+      "newStatus": "NO_DESIGNATION_ACTIVE",
+      "why": "Cleared with no status for TNF.",
+      "implication": "Expected lead back role after prior absence.",
+      "opportunity": "Primary carries/routes; limits Singletary/Desrosiers standalone.",
       "priority": "HIGH"
     },
     {
-      "id": "rams-proe-nacua",
+      "id": "levitan-proe-rams-vikes-1111",
       "at": "2026-11-11T20:44:14Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Expecting Rams to lean more negative PROE (run-oriented) while playing without both Puka Nacua (knee/toe) and Davante Adams (hamstring). No. 9 OL helps.",
+      "text": "Expecting Rams to lean more negative PROE (run-heavy) without both Puka Nacua (knee/toe) and Davante Adams (hamstring). Vikings positive PROE despite bad QB play; pass rate could spike with Kirk Cousins as KOC wants to throw. Healthy Burrow/Chase/Higgins lets Bengals cook.",
       "playerIds": [
         "puka-nacua",
         "davante-adams",
-        "kyren-williams"
+        "justin-jefferson",
+        "jamarr-chase",
+        "tee-higgins",
+        "joe-burrow",
+        "bucky-irving"
       ],
       "players": [
         "Puka Nacua",
         "Davante Adams",
-        "Kyren Williams"
+        "Justin Jefferson",
+        "Ja'Marr Chase",
+        "Tee Higgins",
+        "Joe Burrow",
+        "Bucky Irving"
       ],
       "url": "https://x.com/adamlevitan/status/2120618625606533133",
       "kind": "USAGE_DATA",
-      "eventId": "usage-rams-week10",
-      "signal": "DOWNGRADE",
-      "why": "Pass-game injuries force defensive/run lean; healthy OL supports.",
-      "implication": "Elevated RB opportunity; WR depth (Mumpfield/Atwell) limited upside.",
-      "opportunity": "Kyren Williams/Corum snap/carry share up; Higbee targets.",
+      "eventId": "usage-proe-week10",
+      "signal": "UPGRADE",
+      "why": "Last four games PROE data; OL ranks (Rams No. 9 helps run game).",
+      "implication": "Kyren Williams volume up; Jefferson/Addison ceiling rises with Cousins; Chase/Higgins elite.",
+      "opportunity": "Rams RB snaps/carries expand; MIN pass catchers target volume.",
       "beneficiaries": [
-        "kyren-williams"
+        "kyren-williams",
+        "justin-jefferson"
       ],
       "corroboration": [
-        "Thorn OL rankings"
+        "establishtherun.com",
+        "@BrandonThornNFL"
       ],
       "supportingSources": [
         "establish-the-run"
@@ -165,13 +191,89 @@
       "priority": "HIGH"
     },
     {
-      "id": "cousins-vikings-fallout",
-      "at": "2026-11-11T20:44:14Z",
+      "id": "beck-starter-1111",
+      "at": "2026-11-11T20:33:56Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Cardinals officially named rookie QB Carson Beck their starter for Sunday’s game vs. the Rams.",
+      "playerIds": [],
+      "players": [],
+      "url": "https://x.com/AdamSchefter/status/2120616034063237614",
+      "kind": "NFL_FACT",
+      "eventId": "qb-beck-ari-week10",
+      "signal": "STARTER",
+      "priorStatus": "BACKUP",
+      "newStatus": "STARTER",
+      "why": "Minshew UCL likely season-ending; Brissett traded.",
+      "implication": "Rookie debut vs tough Rams front; supports McBride as TE1 but lowers overall offense ceiling.",
+      "opportunity": "Target share stability for Trey McBride; watch OL (ranked low) impact.",
+      "beneficiaries": [
+        "trey-mcbride"
+      ],
+      "corroboration": [
+        "@RapSheet"
+      ],
+      "supportingSources": [
+        "ian-rapoport",
+        "adam-levitan"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "downs-allen-trades-1110",
+      "at": "2026-11-11T15:39:44Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Vikings acquire Kirk Cousins; expect pass rate spike as Kevin O'Connell wants to throw. Positive PROE recently despite bad QB play. Jefferson value vaults; Raiders (Mendoza) see lower floor for Bowers/Jeanty.",
+      "text": "Josh Downs to Chiefs, Keenan Allen to 49ers in trade deadline fallout. 49ers loading up #TeamOlds with Allen (34), Evans (33), Kittle, CMC. Downs joins Mahomes.",
+      "playerIds": [
+        "josh-downs",
+        "mike-evans",
+        "christian-mccaffrey",
+        "george-kittle",
+        "patrick-mahomes"
+      ],
+      "players": [
+        "Josh Downs",
+        "Mike Evans",
+        "Christian McCaffrey",
+        "George Kittle",
+        "Patrick Mahomes"
+      ],
+      "url": "https://x.com/adamlevitan/status/2120541998549712972",
+      "kind": "NFL_FACT",
+      "eventId": "trade-downs-allen-deadline",
+      "signal": "UPGRADE",
+      "why": "Deadline moves; IND shipping veterans.",
+      "implication": "Downs target opportunity with Mahomes/Rice; Allen depth for SF pass game; IND WR corps thinner.",
+      "opportunity": "Downs routes/targets in KC; Allen snaps behind stars in SF.",
+      "beneficiaries": [
+        "josh-downs",
+        "rashee-rice"
+      ],
+      "corroboration": [
+        "@AdamSchefter",
+        "@RapSheet",
+        "establishtherun.com"
+      ],
+      "supportingSources": [
+        "adam-schefter",
+        "ian-rapoport",
+        "establish-the-run"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "etr-cousins-fallout-1110",
+      "at": "2026-11-10T20:59:00Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Vikings acquire Kirk Cousins: immediate upgrade; Jefferson value vaults to WR1 (historically 106+ YPG with him). Expect more pass rate. Raiders to Mendoza: Bowers still elite TE1 but lower floor; Jeanty biggest loser as checkdown king with Cousins.",
       "playerIds": [
         "justin-jefferson",
         "brock-bowers",
@@ -182,103 +284,34 @@
         "Brock Bowers",
         "Ashton Jeanty"
       ],
-      "url": "https://x.com/adamlevitan/status/2120618625606533133",
-      "kind": "ANALYST_OPINION",
-      "eventId": "trade-cousins-min-week10",
+      "url": "https://establishtherun.com/fantasy-fallout-vikings-acquire-kirk-cousins/",
+      "kind": "ANALYST_PROJECTION",
+      "eventId": "trade-cousins-min-lv",
       "signal": "UPGRADE",
-      "why": "Cousins familiar with O'Connell scheme; better EPA/YPA than prior MIN QBs. Mendoza rookie growing pains.",
-      "implication": "Jefferson back to WR1 territory; Bowers elite but lower floor; Jeanty checkdowns may drop.",
-      "opportunity": "Increased MIN pass volume/routes for Jefferson/Addison.",
+      "why": "Cousins 7.4 YPA, top EPA; familiar with KOC; Mendoza pro-ready but growing pains vs SEA/DEN.",
+      "implication": "MIN offense rebound; LV scoring/efficiency drop short-term.",
+      "opportunity": "Jefferson/Addison routes/targets; Bowers volume holds but variance up; Jeanty targets down.",
       "beneficiaries": [
         "justin-jefferson"
       ],
       "corroboration": [
-        "https://establishtherun.com/fantasy-fallout-vikings-acquire-kirk-cousins/"
+        "@adamlevitan",
+        "@MatthewBerryTMR"
       ],
       "supportingSources": [
-        "establish-the-run",
+        "adam-levitan",
         "matthew-berry"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "beck-starter-ari",
-      "at": "2026-11-11T20:33:56Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Cardinals officially named rookie QB Carson Beck their starter for Sunday’s game vs. the Rams after Minshew season-ending UCL.",
-      "playerIds": [],
-      "players": [],
-      "url": "https://x.com/AdamSchefter/status/2120616034063237614",
-      "kind": "NFL_FACT",
-      "eventId": "qb-beck-start-week10",
-      "signal": "STARTER",
-      "priorStatus": "BACKUP",
-      "newStatus": "STARTER",
-      "why": "Minshew torn UCL season surgery; Brissett traded.",
-      "implication": "Rookie debut vs tough Rams front; impacts ARI pass-catchers like McBride.",
-      "opportunity": "McBride remains TE1 priority target.",
-      "beneficiaries": [
-        "trey-mcbride"
-      ],
-      "corroboration": [
-        "@RapSheet"
-      ],
-      "supportingSources": [
-        "adam-levitan"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "downs-chiefs-trade",
-      "at": "2026-11-10T20:41:11Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Josh Downs traded to Chiefs: Great trade. Mahomes gets needed WR help & Downs goes to much better offense/QB despite more target competition.",
-      "playerIds": [
-        "josh-downs",
-        "rashee-rice",
-        "patrick-mahomes"
-      ],
-      "players": [
-        "Josh Downs",
-        "Rashee Rice",
-        "Patrick Mahomes"
-      ],
-      "url": "https://x.com/MatthewBerryTMR/status/2120255470086824177",
-      "kind": "ANALYST_OPINION",
-      "eventId": "trade-downs-kc-week10",
-      "signal": "UPGRADE",
-      "why": "Massive QB/scheme upgrade from Jones/Colts to Mahomes/Reid.",
-      "implication": "Downs WR3/flex upside; Warren benefits in Indy short-area.",
-      "opportunity": "Slot/separation role vs man; third-down usage.",
-      "conflict": "Competition with Rice/Kelce/Worthy.",
-      "beneficiaries": [
-        "tyler-warren"
-      ],
-      "corroboration": [
-        "@AdamSchefter",
-        "@RapSheet",
-        "Fantasy Life"
-      ],
-      "supportingSources": [
-        "adam-levitan",
-        "establish-the-run"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "berry-jefferson-cousins",
+      "id": "berry-jefferson-cousins-1110",
       "at": "2026-11-10T20:12:16Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Vikings bring back Kirk Cousins: If you roster Justin Jefferson, you LOVE that. Across 54 games with Cousins, Jefferson averaged 19.6 PPR ppg.",
+      "text": "I said the Vikings should bring Kirk Cousins back. If you roster Justin Jefferson, you get why. Across 54 games with Cousins, Jefferson averaging 19.6 PPR. JEFFERSON MANAGERS WE ARE SO BACK. You like that?! If you’ve got Jefferson, you LOVE that.",
       "playerIds": [
         "justin-jefferson"
       ],
@@ -287,22 +320,23 @@
       ],
       "url": "https://x.com/MatthewBerryTMR/status/2120248193233666071",
       "kind": "ANALYST_OPINION",
-      "eventId": "trade-cousins-min-jeff",
+      "eventId": "trade-cousins-jefferson",
       "signal": "LOVE",
-      "why": "Historical elite production together; O'Connell familiarity.",
-      "implication": "Jefferson WR1 reinflation ROS.",
-      "opportunity": "Higher pass volume/target share.",
+      "why": "Historical production split with Cousins; predicted trade.",
+      "implication": "Major ROS upgrade to locked WR1.",
+      "opportunity": "Increased targets/yards with competent QB.",
       "corroboration": [
-        "Fantasy Life"
+        "establishtherun.com",
+        "@adamlevitan"
       ],
       "supportingSources": [
-        "adam-levitan",
-        "establish-the-run"
+        "establish-the-run",
+        "adam-levitan"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "berry-price-open",
+      "id": "berry-price-1111",
       "at": "2026-11-11T21:55:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
@@ -317,19 +351,22 @@
       ],
       "url": "https://x.com/MatthewBerryTMR/status/2120636434831016184",
       "kind": "ANALYST_OPINION",
-      "eventId": "opinion-price-sea-week10",
-      "signal": "HOLD",
-      "why": "Role/opportunity remains despite Charbonnet return.",
-      "implication": "Monitor for continued committee share in SEA backfield.",
-      "opportunity": "Potential split carries/routes.",
-      "conflict": "Charbonnet out-snapped/routed him recently per Levitan.",
+      "eventId": "role-price-sea-week10",
+      "signal": "LOVE",
+      "why": "Continued opportunity/role in SEA backfield despite Charbonnet return.",
+      "implication": "Viable flex/handcuff with standalone upside.",
+      "opportunity": "Shared snaps/carries/routes; monitor split.",
+      "conflict": "Levitan noted Charbonnet out-snapped/routed Price recently.",
+      "corroboration": [
+        "@adamlevitan"
+      ],
       "supportingSources": [
         "adam-levitan"
       ],
       "priority": "NORMAL"
     },
     {
-      "id": "berry-bowers-mendoza",
+      "id": "berry-bowers-1111",
       "at": "2026-11-11T20:43:10Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
@@ -344,24 +381,52 @@
       ],
       "url": "https://x.com/MatthewBerryTMR/status/2120618358726934884",
       "kind": "ANALYST_OPINION",
-      "eventId": "opinion-bowers-qb-week10",
+      "eventId": "qb-mendoza-bowers",
       "signal": "LOVE",
-      "why": "Proven production with multiple mediocre QBs as rookie.",
-      "implication": "Maintain elite TE1 ranking despite rookie QB transition.",
-      "conflict": "Some lower floor expected with Mendoza vs Cousins.",
+      "why": "Proven production with multiple QBs as rookie; elite talent/matchup nightmare.",
+      "implication": "Maintain elite TE1 ranking/start confidence despite QB change.",
+      "opportunity": "High target share continues.",
+      "conflict": "ETR notes lower floor/growing pains for Mendoza.",
+      "corroboration": [
+        "establishtherun.com"
+      ],
       "supportingSources": [
+        "establish-the-run",
         "adam-levitan"
       ],
       "priority": "NORMAL"
     },
     {
-      "id": "willis-ir-mia",
+      "id": "berry-douglas-waiver-1110",
+      "at": "2026-11-10T21:45:00Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Need a WR off the waiver wire? Pop Douglas is still available in 54% of leagues. He’s had an 80% route share over his last two games. I’d pick him up, and I’m fine starting him in a pinch against Detroit.",
+      "playerIds": [
+        "caleb-douglas"
+      ],
+      "players": [
+        "Caleb Douglas"
+      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2120271530684997734",
+      "kind": "WAIVER_SIGNAL",
+      "eventId": "waiver-douglas-week10",
+      "signal": "UPGRADE",
+      "why": "80% route share last two; available widely.",
+      "implication": "Stream/start candidate vs DET.",
+      "opportunity": "High route participation in MIA offense.",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "willis-ir-1110",
       "at": "2026-11-10T20:46:48Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Dolphins placing QB Malik Willis on injured reserve due to a groin injury.",
+      "text": "Dolphins are placing QB Malik Willis on injured reserve due to a groin injury.",
       "playerIds": [
         "malik-willis"
       ],
@@ -370,92 +435,57 @@
       ],
       "url": "https://x.com/AdamSchefter/status/2120256883491778960",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-willis-week10",
-      "signal": "IR",
-      "priorStatus": "ACTIVE",
+      "eventId": "injury-willis-mia",
+      "signal": "OUT",
+      "priorStatus": "QUESTIONABLE",
       "newStatus": "IR",
       "why": "Groin injury.",
-      "implication": "Season impact for MIA QB depth; affects surrounding skill players.",
+      "implication": "MIA QB situation further strained; impacts pass catchers.",
+      "opportunity": "Potential for other QBs or scheme adjustments; watch Douglas/Vele.",
+      "beneficiaries": [
+        "caleb-douglas"
+      ],
       "corroboration": [
         "@MatthewBerryTMR"
+      ],
+      "supportingSources": [
+        "matthew-berry"
       ],
       "priority": "NORMAL"
     },
     {
-      "id": "levitan-rb-splits",
+      "id": "levitan-rb-splits-1109",
       "at": "2026-11-09T14:39:13Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Notable RB splits Week 9: Hall 19 opps vs Allen 10 (Allen more snaps); Coleman 58 snaps/ dominant vs Dobbins; Charbonnet out-snapped/routed Price; Jeanty heavy routes in trailing script.",
+      "text": "Notable RB splits: NYJ Hall 19 opportunities vs Allen 10 (Allen outsnapped); DEN Coleman 58 snaps/ dominant last two weeks vs Dobbins; SEA Charbonnet out-snapped/routed Price 37-24/13-9; LV Jeanty 32 snaps/24 routes vs Washington in trailing script.",
       "playerIds": [
         "breece-hall",
         "jadarian-price",
-        "ashton-jeanty"
+        "ashton-jeanty",
+        "jk-dobbins"
       ],
       "players": [
         "Breece Hall",
         "Jadarian Price",
-        "Ashton Jeanty"
+        "Ashton Jeanty",
+        "J.K. Dobbins"
       ],
       "url": "https://x.com/adamlevitan/status/2119801992826790170",
       "kind": "USAGE_DATA",
-      "eventId": "usage-rbs-week9",
-      "signal": "USAGE",
-      "why": "Post-game snap/route/opportunity data.",
-      "implication": "Hall lead back returning; Coleman/Dobbins committee tilt; SEA/LV roles fluid.",
-      "opportunity": "Monitor for sustained shares.",
+      "eventId": "usage-rb-splits-week9",
+      "signal": "UPGRADE",
+      "why": "Post-Week 9 snap/route/opportunity data.",
+      "implication": "Hall lead back confirmed; Coleman clear lead; Price secondary; Jeanty pass-down preferred.",
+      "opportunity": "Monitor Coleman/Dobbins, Charbonnet/Price, Jeanty roles ROS.",
+      "conflict": "Berry keeping Price open.",
+      "beneficiaries": [
+        "breece-hall"
+      ],
       "supportingSources": [
         "establish-the-run"
-      ],
-      "priority": "NORMAL"
-    },
-    {
-      "id": "etr-sunday-injuries",
-      "at": "2026-11-09T00:17:56Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "Sunday injuries watched: Puka Nacua (knee), Mahomes (elbow returned), Worthy (hamstring), Stevenson (knee), Jacobs (hand), Waddle (concussion), McConkey (back), Herbert, McCarthy (hip returned), Willis (groin).",
-      "playerIds": [
-        "puka-nacua",
-        "patrick-mahomes",
-        "xavier-worthy",
-        "rhamondre-stevenson",
-        "josh-jacobs",
-        "jaylen-waddle",
-        "ladd-mcconkey",
-        "justin-herbert",
-        "cam-skattebo",
-        "malik-willis"
-      ],
-      "players": [
-        "Puka Nacua",
-        "Patrick Mahomes",
-        "Xavier Worthy",
-        "Rhamondre Stevenson",
-        "Josh Jacobs",
-        "Jaylen Waddle",
-        "Ladd McConkey",
-        "Justin Herbert",
-        "Cam Skattebo",
-        "Malik Willis"
-      ],
-      "url": "https://x.com/EstablishTheRun/status/2119585242768150701",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-watch-week9",
-      "signal": "MONITOR",
-      "why": "Multi-player post-Week 9 tracking.",
-      "implication": "Status changes evolving into confirmed OUT/IR/ACTIVE.",
-      "opportunity": "Beneficiaries for confirmed outs.",
-      "corroboration": [
-        "@adamlevitan"
-      ],
-      "supportingSources": [
-        "adam-schefter",
-        "ian-rapoport"
       ],
       "priority": "NORMAL"
     }
@@ -466,21 +496,21 @@
       "sourceId": "establish-the-run",
       "source": "Establish The Run",
       "grade": "USEFUL",
-      "note": "Trade deadline fallout (Cousins, Downs, Allen), waiver wire, ROS rankings show, PROE/OL notes, Nacua/Rams run lean, Sunday injury watch aligned with confirms.",
+      "note": "Strong trade deadline fallout (Cousins/MIN pass spike, Mendoza/Bowers/Jeanty), Week 10 waivers, Nacua/Rams IR watch evolving to no-IR significant out, PROE/usage context via Levitan/Silva; aligned injury tracking.",
       "at": "2026-11-11T21:00:00Z"
     },
     {
       "sourceId": "adam-levitan",
       "source": "Adam Levitan",
       "grade": "USEFUL",
-      "note": "Player-specific PROE (Vikings spike w/ Cousins, Rams negative w/o Nacua/Adams, Burrow/Chase cook), RB opp/snap/route splits (Hall/Allen, Coleman/Dobbins, Charbonnet/Price, Jeanty), Rams WR depth post-Nacua, Team-by-Team deadline show.",
+      "note": "Player-specific PROE (Rams run lean sans Nacua/Adams, Vikes pass up with Cousins, Bengals cook), RB opportunity/snap/route splits (Hall, Coleman, Charbonnet/Price, Jeanty), healthy Rams WR depth list, deadline team-by-team, OL ranks impact ",
       "at": "2026-11-11T20:44:00Z"
     },
     {
       "sourceId": "matthew-berry",
       "source": "Matthew Berry",
       "grade": "USEFUL",
-      "note": "Per-player: Love Bowers w/ Mendoza (rookie QB history), keep open Price w/ Charb, Jefferson LOVE w/ Cousins (19.6 PPR hist), Downs UPGRADE to Mahomes, Pop Douglas waiver, trade reactions.",
+      "note": "Per-player: keep Price open vs Charb; Bowers fine w/ Mendoza; Jefferson LOVE/upgrade w/ Cousins (19.6 PPR hist); Pop Douglas (Caleb) waiver 80% routes startable; Flournoy room in DAL; trade reactions video.",
       "at": "2026-11-11T21:55:00Z"
     },
     {
@@ -631,8 +661,8 @@
       "at": "2026-11-08T23:59:17Z"
     }
   ],
-  "mirroredAt": "2026-11-11T22:09:10.189Z",
+  "mirroredAt": "2026-11-11T22:09:47.340Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-11-11T22:09:09.438Z",
+  "sourceCompletedAt": "2026-11-11T22:09:46.612Z",
   "sourceStatus": "live"
 }
