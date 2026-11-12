@@ -1,52 +1,630 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-11-12T14:45:28Z",
+  "generatedAt": "2026-11-12T17:08:30.988Z",
   "status": "live",
-  "completedAt": "2026-11-12T14:45:28Z",
-  "nextAtLabel": "10:20 AM ET",
+  "completedAt": "2026-11-12T09:09:30.265Z",
+  "nextAtLabel": "this hour",
   "inWindow": true,
-  "itemCount": 1,
-  "sundayMode": false,
-  "sourceNotes": [
-    {
-      "sourceId": "ian-rapoport",
-      "source": "Ian Rapoport",
-      "handle": "RapSheet",
-      "team": null,
-      "sourceType": "NATIONAL",
-      "dateAdded": "2026-11-12T14:45:28Z",
-      "grade": "USEFUL",
-      "note": "Confirmed Browns will start Deshaun Watson Sunday vs Texans after concussion; Jacobs finger surgery 2-3w possible; Adams hamstring return after Week 12 realistic.",
-      "at": "2026-11-12T14:45:28Z"
-    }
-  ],
+  "itemCount": 14,
   "items": [
     {
-      "id": "watson-start-cle-w10",
-      "at": "2026-11-12T14:35:58Z",
+      "id": "nacua-out-no-ir-w10",
+      "at": "2026-11-11T20:54:13Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Rams HC Sean McVay said the team will not place Puka Nacua on IR due to roster mechanics, but the WR will still be out for a significant period of time with knee (MCL/PCL) and turf toe injuries.",
+      "playerIds": [
+        "puka-nacua"
+      ],
+      "players": [
+        "Puka Nacua"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2120621139525263707",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-nacua-week10",
+      "signal": "OUT",
+      "priorStatus": "likely-IR",
+      "newStatus": "OUT-no-IR",
+      "why": "Roster activation limits; still multi-week absence",
+      "implication": "Rams WR depth thin; lean run-heavy; Adams return scenarios matter more",
+      "opportunity": "Targets to Atwell/Mumpfield/others; Kyren Williams volume up",
+      "beneficiaries": [
+        "kyren-williams",
+        "davante-adams"
+      ],
+      "corroboration": [
+        "@EstablishTheRun",
+        "https://www.rotowire.com/football/player/puka-nacua-16790"
+      ],
+      "supportingSources": [
+        "establish-the-run",
+        "adam-levitan"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "jacobs-surgery-2-3w",
+      "at": "2026-11-11T17:55:00Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "The Browns will start Deshaun Watson on Sunday against the Texans.",
-      "players": ["Deshaun Watson"],
-      "playerIds": ["deshaun-watson"],
-      "url": "https://x.com/RapSheet/status/2120888336881758698",
-      "kind": "DEPTH_CHART",
-      "eventId": "watson-qb1-w10",
-      "signal": "START",
-      "priorStatus": "out-concussion",
-      "newStatus": "starting-QB",
-      "why": "Named starter after missing time with concussion; preferred over Shedeur Sanders",
-      "implication": "CLE passing game potentially more efficient; run game and RB roles (incl. Dylan Sampson) may stabilize with veteran QB",
-      "opportunity": "Monitor Sampson snap share and targets with Watson at QB",
-      "corroboration": ["AP News", "Tom Withers report"],
-      "supportingSources": ["ian-rapoport"],
-      "priority": "MEDIUM",
-      "sourceType": "NATIONAL",
-      "team": "CLE",
-      "relevance": "JD_ROSTER"
+      "text": "Packers RB Josh Jacobs will have surgery later this week on broken ring finger and could return in as few as 2-3 weeks; IR not guaranteed, decision Saturday. Out vs Vikings before bye.",
+      "playerIds": [
+        "josh-jacobs"
+      ],
+      "players": [
+        "Josh Jacobs"
+      ],
+      "url": "https://x.com/RapSheet/status/2120576036958060601",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-jacobs-week10",
+      "signal": "OUT",
+      "priorStatus": "questionable-surgery",
+      "newStatus": "OUT-surgery-2-3w-possible",
+      "why": "Broken finger, no grip strength",
+      "implication": "Short-term committee; potential Week 12 return post-bye",
+      "opportunity": "Carries/snaps to MarShawn Lloyd, Kaleb Johnson, Chris Brooks",
+      "beneficiaries": [
+        "marshawn-lloyd"
+      ],
+      "corroboration": [
+        "@AdamSchefter"
+      ],
+      "supportingSources": [
+        "establish-the-run"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "stevenson-dnp-knee",
+      "at": "2026-11-11T22:55:00Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Rhamondre Stevenson (knee) did not practice Wednesday; expected to miss some time (tendon issue, short period possible). With Henderson out, Kiner next up.",
+      "playerIds": [
+        "rhamondre-stevenson",
+        "treveyon-henderson"
+      ],
+      "players": [
+        "Rhamondre Stevenson",
+        "TreVeyon Henderson"
+      ],
+      "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-11/stevenson-knee-does-not-practice-on-wednesday",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-stevenson-week10",
+      "signal": "OUT",
+      "priorStatus": "limited/uncertain",
+      "newStatus": "DNP-miss-time",
+      "why": "Knee tendon",
+      "implication": "NE backfield to Kiner/Larison; bye helps recovery",
+      "opportunity": "Kiner three-down potential",
+      "corroboration": [
+        "Patriots reports"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "henderson-out-w10",
+      "at": "2026-11-11T22:41:14Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Patriots ruled out RB TreVeyon Henderson for Sunday’s game in Germany against the Lions (illness).",
+      "playerIds": [
+        "treveyon-henderson"
+      ],
+      "players": [
+        "TreVeyon Henderson"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2120648072929615904",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-henderson-week10",
+      "signal": "OUT",
+      "priorStatus": "DNP",
+      "newStatus": "OUT",
+      "why": "Illness/medical; did not practice",
+      "implication": "With Stevenson also DNP/knee issues, backfield opens wide",
+      "opportunity": "Corey Kiner lead role likely",
+      "corroboration": [
+        "Patriots official"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "adams-week12-timeline",
+      "at": "2026-11-11T22:32:50Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "There are scenarios where Davante Adams (hamstring) plays and Puka Nacua (knee, toe) doesn't for some of fantasy's most important weeks. McVay: Week 12 vs Packers realistic return timeline for Adams.",
+      "playerIds": [
+        "davante-adams",
+        "puka-nacua"
+      ],
+      "players": [
+        "Davante Adams",
+        "Puka Nacua"
+      ],
+      "url": "https://x.com/adamlevitan/status/2120645957444665810",
+      "kind": "ANALYST_PROJECTION",
+      "eventId": "adams-return-timeline",
+      "signal": "UPGRADE",
+      "priorStatus": "IR-6-10w",
+      "newStatus": "Week12-possible",
+      "why": "Surgery recovery on shorter end; McVay optimistic",
+      "implication": "Adams ROS boost if back for fantasy playoffs stretch; Nacua longer out",
+      "opportunity": "Adams targets when active; interim WRs temporary",
+      "beneficiaries": [
+        "davante-adams"
+      ],
+      "corroboration": [
+        "Sean McVay quotes",
+        "@AdamSchefter"
+      ],
+      "supportingSources": [
+        "establish-the-run"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "mahomes-full-practice",
+      "at": "2026-11-11T21:30:57Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Chiefs listed QB Patrick Mahomes as a full participant in Wednesday practice, putting him on track to play Sunday at Atlanta.",
+      "playerIds": [
+        "patrick-mahomes"
+      ],
+      "players": [
+        "Patrick Mahomes"
+      ],
+      "url": "https://x.com/AdamSchefter/status/2120630383989637492",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-mahomes-week10",
+      "signal": "ACTIVE",
+      "priorStatus": "limited/uncertain",
+      "newStatus": "full-practice-on-track",
+      "why": "Full participant",
+      "implication": "No fantasy concern; Chiefs offense full strength",
+      "beneficiaries": [
+        "rashee-rice",
+        "xavier-worthy",
+        "travis-kelce"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "levitan-proe-vikings-rams-bengals",
+      "at": "2026-11-11T20:44:14Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Vikings positive PROE despite bad QB play; pass rate could spike with Kirk Cousins as KOC wants to throw. Expect Rams more negative PROE without Nacua and Adams. Healthy Burrow/Chase/Higgins: let them cook (positive PROE).",
+      "playerIds": [
+        "justin-jefferson",
+        "puka-nacua",
+        "davante-adams",
+        "jamarr-chase",
+        "tee-higgins",
+        "joe-burrow"
+      ],
+      "players": [
+        "Justin Jefferson",
+        "Puka Nacua",
+        "Davante Adams",
+        "Ja'Marr Chase",
+        "Tee Higgins",
+        "Joe Burrow"
+      ],
+      "url": "https://x.com/adamlevitan/status/2120618625606533133",
+      "kind": "USAGE_DATA",
+      "eventId": "proe-week10-insights",
+      "signal": "UPGRADE",
+      "why": "PROE data last 4 games + personnel changes",
+      "implication": "Jefferson volume/efficiency up; Rams RBs up; Bengals pass game elite",
+      "opportunity": "Jefferson routes/targets; Kyren carries; Chase/Higgins targets",
+      "beneficiaries": [
+        "justin-jefferson",
+        "kyren-williams",
+        "jamarr-chase"
+      ],
+      "corroboration": [
+        "ETR PROE tracker"
+      ],
+      "supportingSources": [
+        "establish-the-run"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "berry-jefferson-love",
+      "at": "2026-11-10T20:12:16Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "I said the Vikings should bring Kirk Cousins back. If you roster Justin Jefferson, you get why. Across 54 games with Cousins, Jefferson averaging 19.6 PPR. JEFFERSON MANAGERS WE ARE SO BACK. LOVE.",
+      "playerIds": [
+        "justin-jefferson"
+      ],
+      "players": [
+        "Justin Jefferson"
+      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2120248193233666071",
+      "kind": "ANALYST_OPINION",
+      "eventId": "cousins-jefferson-love",
+      "signal": "LOVE",
+      "why": "Historical production with Cousins (19.6 PPR)",
+      "implication": "Start with confidence; ROS WR1",
+      "opportunity": "High target volume expected",
+      "corroboration": [
+        "Fantasy Life graphic",
+        "ETR fallout"
+      ],
+      "supportingSources": [
+        "establish-the-run",
+        "adam-levitan"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "etr-cousins-jefferson-upgrade",
+      "at": "2026-11-10T00:00:00Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Vikings acquire Kirk Cousins: Jefferson value vaults to WR1 territory (historically 106+ ypg with Cousins). Offense likely more pass-heavy. Raiders Mendoza: Bowers still elite TE1 but lower floor; Jeanty biggest loser (checkdowns).",
+      "playerIds": [
+        "justin-jefferson",
+        "brock-bowers",
+        "ashton-jeanty",
+        "jordan-addison"
+      ],
+      "players": [
+        "Justin Jefferson",
+        "Brock Bowers",
+        "Ashton Jeanty",
+        "Jordan Addison"
+      ],
+      "url": "https://establishtherun.com/fantasy-fallout-vikings-acquire-kirk-cousins/",
+      "kind": "ANALYST_OPINION",
+      "eventId": "cousins-trade-fallout",
+      "signal": "UPGRADE",
+      "why": "Cousins familiarity with KOC scheme, better EPA/YPA than prior MIN QBs",
+      "implication": "Jefferson immediate upgrade; Addison hold; Bowers/Jeanty slight downgrade",
+      "opportunity": "Jefferson target share stable/high; Raiders RB targets down",
+      "beneficiaries": [
+        "justin-jefferson"
+      ],
+      "corroboration": [
+        "@adamlevitan",
+        "@MatthewBerryTMR"
+      ],
+      "supportingSources": [
+        "adam-levitan",
+        "matthew-berry"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "id": "berry-price-open",
+      "at": "2026-11-11T21:55:00Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "I am KEEPING IT OPEN on Jadarian Price, even with Charb back.",
+      "playerIds": [
+        "jadarian-price"
+      ],
+      "players": [
+        "Jadarian Price"
+      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2120636434831016184",
+      "kind": "ANALYST_OPINION",
+      "eventId": "price-role-open",
+      "signal": "HOLD",
+      "why": "Role opportunity persists despite Charbs return",
+      "implication": "Monitor snaps/carries; potential flex",
+      "opportunity": "Committee share possible",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-bowers-fine-mendoza",
+      "at": "2026-11-11T20:43:10Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Worried about Brock Bowers with Fernando Mendoza at QB? Bowers put up monster numbers as a rookie with Aidan O’Connell, Gardner Minshew and Desmond Ridder. I think he’ll be just fine.",
+      "playerIds": [
+        "brock-bowers"
+      ],
+      "players": [
+        "Brock Bowers"
+      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2120618358726934884",
+      "kind": "ANALYST_OPINION",
+      "eventId": "bowers-mendoza",
+      "signal": "HOLD",
+      "why": "Proven with multiple QBs as rookie",
+      "implication": "Still start TE1; floor lower but volume safe",
+      "opportunity": "High target share continues",
+      "conflict": "ETR notes lower floor/offense efficiency risk",
+      "corroboration": [
+        "ETR"
+      ],
+      "supportingSources": [
+        "establish-the-run"
+      ],
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-flournoy-room",
+      "at": "2026-11-11T01:00:58Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Yes, the Cowboys have CeeDee Lamb and George Pickens. Yes, I’m still telling you to pick up Ryan Flournoy. There’s room for him in this offense.",
+      "playerIds": [
+        "ceedee-lamb",
+        "george-pickens"
+      ],
+      "players": [
+        "CeeDee Lamb",
+        "George Pickens"
+      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2120320846593954033",
+      "kind": "WAIVER_SIGNAL",
+      "eventId": "flournoy-waiver-dal",
+      "signal": "WAIVER",
+      "why": "Room in DAL offense despite Lamb/Pickens",
+      "implication": "Deep league add; potential target share",
+      "opportunity": "Routes available",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "st-brown-ribs-limited",
+      "at": "2026-11-11T00:00:00Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Amon-Ra St. Brown (ribs) limited in Wednesday practice; same as last week when he played and produced (8/86). Questionable but expected to play vs Pats.",
+      "playerIds": [
+        "amon-ra-st-brown"
+      ],
+      "players": [
+        "Amon-Ra St. Brown"
+      ],
+      "url": "https://www.rotowire.com/football/player/amon-ra-st-brown-15332",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-stbrown-ribs-w10",
+      "signal": "QUESTIONABLE",
+      "priorStatus": "played-through",
+      "newStatus": "limited-Q",
+      "why": "Ribs; limited practice",
+      "implication": "Monitor Friday report; likely WR1 as usual",
+      "opportunity": "Full snap/target share if active",
+      "beneficiaries": [
+        "jameson-williams"
+      ],
+      "corroboration": [
+        "RotoWire",
+        "NBC"
+      ],
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-douglas-waiver",
+      "at": "2026-11-10T21:45:00Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Need a WR off the waiver wire? Pop Douglas is still available in 54% of leagues. He’s had an 80% route share over his last two games. I’d pick him up, and I’m fine starting him in a pinch against Detroit.",
+      "playerIds": [
+        "caleb-douglas"
+      ],
+      "players": [
+        "Caleb Douglas"
+      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2120271530684997734",
+      "kind": "WAIVER_SIGNAL",
+      "eventId": "douglas-waiver-w10",
+      "signal": "WAIVER",
+      "why": "80% route share last two games",
+      "implication": "Add and consider start in pinch",
+      "opportunity": "High route participation",
+      "priority": "NORMAL"
     }
-  ]
+  ],
+  "sundayMode": false,
+  "sourceNotes": [
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "PROE insights (Vikes spike w/ Cousins, Rams run lean sans Nacua/Adams, Bengals cook); Adams/Nacua timeline scenarios on ROS show; OL ranks; team-by-team deadline fallout; player-specific usage.",
+      "at": "2026-11-12T00:00:00Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Cousins/MIN fallout (Jefferson upgrade, Bowers/Jeanty LV impact); Week 10 waivers; ROS rankings; OL ranks; injury/status tracking (Nacua no-IR significant out evolving); deadline coverage.",
+      "at": "2026-11-12T00:00:00Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Per-player: Jefferson LOVE w/ Cousins (19.6 PPR hist); Bowers fine w/ Mendoza; Price open vs Charb; Douglas 80% routes waiver/start; Flournoy room in DAL; Tyson close W10; trade/role reactions.",
+      "at": "2026-11-12T00:00:00Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "High-conf facts: Nacua no-IR significant out; Mahomes full practice on track; Henderson OUT; Adams timeline context; deadline notes.",
+      "at": "2026-11-12T00:00:00Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Jacobs surgery 2-3 weeks return possible, IR not guaranteed, out Week 10; aligned on key injuries and trades (Cousins/Mendoza).",
+      "at": "2026-11-12T00:00:00Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "PROE insights (Vikes spike w/ Cousins, Rams run lean sans Nacua/Adams, Bengals cook); Adams/Nacua timeline scenarios on ROS show; OL ranks; team-by-team deadline fallout; player-specific usage.",
+      "at": "2026-11-11T22:32:50Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Cousins/MIN fallout (Jefferson upgrade, Bowers/Jeanty LV impact); Week 10 waivers; ROS rankings; OL ranks; injury/status tracking (Nacua no-IR significant out evolving); deadline coverage.",
+      "at": "2026-11-11T19:07:26Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Per-player: Jefferson LOVE w/ Cousins (19.6 PPR hist); Bowers fine w/ Mendoza; Price open vs Charb; Douglas 80% routes waiver/start; Flournoy room in DAL; Tyson close W10; trade/role reactions.",
+      "at": "2026-11-11T22:38:43Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "High-conf facts: Nacua no-IR significant out; Mahomes full practice on track; Henderson OUT; Adams timeline context; deadline notes.",
+      "at": "2026-11-11T22:41:14Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Jacobs surgery 2-3 weeks return possible, IR not guaranteed, out Week 10; aligned on key injuries and trades (Cousins/Mendoza).",
+      "at": "2026-11-11T17:55:00Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "PROE insights (Vikes spike w/ Cousins, Rams run lean sans Nacua/Adams, Bengals cook); Adams/Nacua timeline scenarios on ROS show; OL ranks; team-by-team deadline fallout; player-specific usage.",
+      "at": "2026-11-11T22:32:50Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Cousins/MIN fallout (Jefferson upgrade, Bowers/Jeanty LV impact); Week 10 waivers; ROS rankings; OL ranks; injury/status tracking (Nacua no-IR significant out evolving); deadline coverage.",
+      "at": "2026-11-11T21:46:30Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Per-player: Jefferson LOVE w/ Cousins (19.6 PPR hist); Bowers fine w/ Mendoza; Price open vs Charb; Douglas 80% routes waiver/start; Flournoy room in DAL; trade reactions.",
+      "at": "2026-11-11T22:38:43Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "High-conf facts: Nacua no-IR significant out; Mahomes full practice on track; Henderson OUT; Skattebo good to go; Adams timeline context; deadline notes.",
+      "at": "2026-11-11T22:41:14Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Jacobs surgery 2-3 weeks return possible, IR not guaranteed, out Week 10; aligned on key injuries and trades (Cousins/Mendoza).",
+      "at": "2026-11-11T17:55:00Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "PROE insights (Vikes spike w/ Cousins, Rams run lean sans Nacua/Adams, Bengals cook); Adams/Nacua timeline scenarios on ROS show; OL ranks; team-by-team deadline fallout; player-specific usage.",
+      "at": "2026-11-11T22:32:50Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Cousins/MIN fallout (Jefferson upgrade); Week 10 waivers; ROS rankings Nov 11; OL ranks; injury/status tracking (Nacua no-IR significant out evolving); deadline coverage.",
+      "at": "2026-11-11T11:30:00Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Per-player: Jefferson LOVE w/ Cousins (19.6 PPR hist); Bowers fine w/ Mendoza; Price open vs Charb; Douglas 80% routes waiver/start; Tyson close W10; trade/role reactions.",
+      "at": "2026-11-11T22:38:43Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "High-conf facts: Nacua no-IR significant out; Mahomes full practice on track; Henderson OUT; Skattebo good to go; Beck starter; deadline/Keenan Allen context.",
+      "at": "2026-11-11T22:41:14Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Jacobs surgery 2-3 weeks return possible, IR not guaranteed, out Week 10; aligned on key injuries and trades (Downs).",
+      "at": "2026-11-11T17:55:00Z"
+    },
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "PROE insights (Vikes spike w/ Cousins, Rams run lean sans Nacua/Adams, Bengals cook); Adams/Nacua timeline scenarios; OL ranks; team-by-team deadline fallout; player-specific usage.",
+      "at": "2026-11-11T22:32:50Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Cousins/MIN fallout (Jefferson upgrade, Bowers/Jeanty LV impact); Week 10 waivers; ROS rankings; OL ranks; injury/status tracking aligned. Nacua no-IR significant out evolving.",
+      "at": "2026-11-11T21:46:30Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "Per-player: Jefferson LOVE w/ Cousins (19.6 PPR hist); Bowers fine w/ Mendoza; Price open vs Charb; Douglas 80% routes waiver/start; Flournoy room in DAL; trade reactions.",
+      "at": "2026-11-11T21:55:00Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "High-conf facts: Nacua no-IR significant out; Mahomes full practice on track; Henderson OUT; Skattebo good; Willis IR; Keenan Allen to SF; Beck starter.",
+      "at": "2026-11-11T22:41:14Z"
+    }
+  ],
+  "mirroredAt": "2026-11-12T17:08:31.795Z",
+  "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
+  "sourceCompletedAt": "2026-11-12T09:09:30.265Z",
+  "sourceStatus": "live"
 }
