@@ -1,12 +1,12 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-11-12T20:24:10.000Z",
+  "generatedAt": "2026-11-12T21:24:09.000Z",
   "status": "live",
-  "completedAt": "2026-11-12T20:24:10.000Z",
-  "nextAtLabel": "4:20 PM ET",
+  "completedAt": "2026-11-12T21:24:30.000Z",
+  "nextAtLabel": "5:20 PM ET",
   "inWindow": true,
-  "itemCount": 0,
+  "itemCount": 1,
   "sundayMode": false,
   "sourceNotes": [
     {
@@ -18,7 +18,7 @@
       "dateAdded": "2026-11-12",
       "grade": "USEFUL",
       "note": "Checked last 2h; no new JD/waiver/role-change items.",
-      "at": "2026-11-12T20:24:10Z"
+      "at": "2026-11-12T21:24:09Z"
     },
     {
       "sourceId": "adam-schefter",
@@ -28,8 +28,8 @@
       "sourceType": "NATIONAL",
       "dateAdded": "2026-11-12",
       "grade": "USEFUL",
-      "note": "Checked last 2h; no new relevant practice/injury for JD roster or waivers.",
-      "at": "2026-11-12T20:24:10Z"
+      "note": "AJ Brown limited practice confirmed.",
+      "at": "2026-11-12T21:24:09Z"
     },
     {
       "sourceId": "tom-pelissero",
@@ -40,7 +40,7 @@
       "dateAdded": "2026-11-12",
       "grade": "USEFUL",
       "note": "No new qualifying posts in window.",
-      "at": "2026-11-12T20:24:10Z"
+      "at": "2026-11-12T21:24:09Z"
     },
     {
       "sourceId": "jordan-schultz",
@@ -51,7 +51,7 @@
       "dateAdded": "2026-11-12",
       "grade": "USEFUL",
       "note": "No new qualifying posts in window.",
-      "at": "2026-11-12T20:24:10Z"
+      "at": "2026-11-12T21:24:09Z"
     },
     {
       "sourceId": "matthew-berry",
@@ -61,8 +61,8 @@
       "sourceType": "ANALYST",
       "dateAdded": "2026-11-12",
       "grade": "USEFUL",
-      "note": "Prior Warren note already captured; no new in last 2h.",
-      "at": "2026-11-12T20:24:10Z"
+      "note": "No new in last 2h.",
+      "at": "2026-11-12T21:24:09Z"
     },
     {
       "sourceId": "adam-levitan",
@@ -73,7 +73,7 @@
       "dateAdded": "2026-11-12",
       "grade": "USEFUL",
       "note": "No new relevant in window.",
-      "at": "2026-11-12T20:24:10Z"
+      "at": "2026-11-12T21:24:09Z"
     },
     {
       "sourceId": "establish-the-run",
@@ -84,7 +84,7 @@
       "dateAdded": "2026-11-12",
       "grade": "USEFUL",
       "note": "No new qualifying.",
-      "at": "2026-11-12T20:24:10Z"
+      "at": "2026-11-12T21:24:09Z"
     },
     {
       "sourceId": "rotowire-nfl",
@@ -94,8 +94,8 @@
       "sourceType": "NATIONAL",
       "dateAdded": "2026-11-12",
       "grade": "USEFUL",
-      "note": "OBJ PS signing, Tate side work, Pickens practicing \u2014 none JD roster/waiver/discovery role change.",
-      "at": "2026-11-12T20:24:10Z"
+      "note": "AJ Brown limited, other practice reports not relevant to JD/waivers/discovery.",
+      "at": "2026-11-12T21:24:09Z"
     },
     {
       "sourceId": "fantasy-pts-data",
@@ -106,19 +106,46 @@
       "dateAdded": "2026-11-12",
       "grade": "USEFUL",
       "note": "No new posts in window.",
-      "at": "2026-11-12T20:24:10Z"
+      "at": "2026-11-12T21:24:09Z"
     },
     {
-      "sourceId": "tdavenport-nfl",
-      "source": "Turron Davenport",
-      "handle": "@TDavenport_NFL",
-      "team": "TEN",
+      "sourceId": "josephperson",
+      "source": "Joe Person",
+      "handle": "@josephperson",
+      "team": "CAR",
       "sourceType": "BEAT",
       "dateAdded": "2026-11-12",
       "grade": "USEFUL",
-      "note": "Titans practice: Tate side work, Spears side field \u2014 not relevant to JD.",
-      "at": "2026-11-12T20:24:10Z"
+      "note": "Panthers practice report; no JD relevant.",
+      "at": "2026-11-12T21:24:09Z"
     }
   ],
-  "items": []
+  "items": [
+    {
+      "id": "aj-brown-limited-thursday",
+      "at": "2026-11-12T21:04:20Z",
+      "expertId": "rotowire-nfl",
+      "expert": "RotoWire NFL",
+      "handle": "@RotoWireNFL",
+      "outlet": "RotoWire",
+      "text": "A.J. Brown (ankle/knee) remained a limited participant on Thursday's injury report. Via @Patriots",
+      "players": ["A.J. Brown"],
+      "playerIds": ["aj-brown"],
+      "url": "https://x.com/RotoWireNFL/status/2120986073123692581",
+      "kind": "PRACTICE_REPORT",
+      "eventId": "ne-practice-thursday",
+      "signal": "limited",
+      "priorStatus": "limited",
+      "newStatus": "limited",
+      "why": "Opponent starter A.J. Brown limited in practice with ankle/knee.",
+      "implication": "May be limited or at risk for Sunday; monitor for opponent impact.",
+      "opportunity": null,
+      "corroboration": ["Adam Schefter confirmed limited"],
+      "supportingSources": ["@AdamSchefter"],
+      "priority": "MEDIUM",
+      "sourceType": "NATIONAL",
+      "team": "NE",
+      "relevance": "OPPONENT"
+    }
+  ]
 }
