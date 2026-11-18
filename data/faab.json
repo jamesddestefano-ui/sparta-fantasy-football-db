@@ -60,10 +60,10 @@
     },
     {
       "team": "JD",
-      "balance": 14,
-      "prior_balance": 25,
-      "observed_at": "2026-10-21T08:01:00-04:00",
-      "source": "Derived: Yahoo $25 (10/20 10:31 PM ET) minus Week 7 wins Washington $3 + McPherson $1 + Geno $1 (bids from pending screenshot); confirm on Yahoo Standings"
+      "balance": 9,
+      "prior_balance": 14,
+      "observed_at": "2026-11-17T21:05:00-05:00",
+      "source": "Explicit user (James) correction in Sparta Brain chat 2026-11-17 ~9:05 PM ET: 'the FAAB we have left in Yahoo is only $9' (before Week 11 waivers process)"
     },
     {
       "team": "JU",
@@ -178,9 +178,9 @@
     "source": "Authenticated Yahoo Sparta live snapshot",
     "resolution": "The later authenticated Yahoo snapshot resolved the earlier display discrepancy before the Holani transaction."
   },
-  "jd_authoritative_balance": 14,
+  "jd_authoritative_balance": 9,
   "pending_yahoo_reverification": false,
-  "pending_yahoo_reverification_reason": "CLEARED — Tue 1950 $48→$42 HELD resolved by commissioner budget adjustment in Yahoo commish log; then W6 waivers -$9 → display $33 matches auth.",
+  "pending_yahoo_reverification_reason": "CLEARED \u2014 Tue 1950 $48\u2192$42 HELD resolved by commissioner budget adjustment in Yahoo commish log; then W6 waivers -$9 \u2192 display $33 matches auth.",
   "week3_waiver_resolution": {
     "observed_at": "2026-09-23T07:43:00-04:00",
     "winning_bids": {
@@ -212,11 +212,11 @@
     "losses": [
       {
         "claim": "Kendre Miller $5 Drop Tucker",
-        "result": "LOST — King Kong won Miller $8"
+        "result": "LOST \u2014 King Kong won Miller $8"
       },
       {
         "claim": "Michael Mayer $1 Drop Tucker",
-        "result": "CLEARED unused — Tucker already dropped on Waller win; Mayer FA"
+        "result": "CLEARED unused \u2014 Tucker already dropped on Waller win; Mayer FA"
       }
     ],
     "faab_spent": 4,
@@ -234,11 +234,11 @@
     "losses": [
       {
         "claim": "Michael Mayer $2 Drop Oronde Gadsden",
-        "result": "NOT AWARDED — Mayer in no Oct 7 transaction; Gadsden still JD BN; reason not shown by Yahoo"
+        "result": "NOT AWARDED \u2014 Mayer in no Oct 7 transaction; Gadsden still JD BN; reason not shown by Yahoo"
       },
       {
         "claim": "Kirk Cousins $2 Drop Caleb Douglas",
-        "result": "FAILED — drop player Douglas already released by order-1 Penix win"
+        "result": "FAILED \u2014 drop player Douglas already released by order-1 Penix win"
       }
     ],
     "faab_spent": 7,
@@ -247,7 +247,7 @@
       "player": "Michael Penix Jr.",
       "repo_recorded_pending_bid": 4,
       "yahoo_winning_bid": 7,
-      "resolution": "Yahoo authoritative — $7 recorded; FAAB $55→$48 corroborates. Pending bid was last observed $4 at 2026-10-06T19:55 ET; edit after that snapshot not observed."
+      "resolution": "Yahoo authoritative \u2014 $7 recorded; FAAB $55\u2192$48 corroborates. Pending bid was last observed $4 at 2026-10-06T19:55 ET; edit after that snapshot not observed."
     }
   },
   "commissioner_budget_adjustment": {
@@ -259,8 +259,8 @@
     "delta_usd": -6,
     "balance_before": 48,
     "balance_after": 42,
-    "resolves": "Tue 1950 HELD FAAB display $48→$42 discrepancy (INGESTION HELD cleared)",
-    "note": "Not a waiver/FA transaction — commissioner acquisition-budget adjustment only. Recorded in faab ledger; no transactions.json row (no ADD/DROP).",
+    "resolves": "Tue 1950 HELD FAAB display $48\u2192$42 discrepancy (INGESTION HELD cleared)",
+    "note": "Not a waiver/FA transaction \u2014 commissioner acquisition-budget adjustment only. Recorded in faab ledger; no transactions.json row (no ADD/DROP).",
     "check_id": "sparta-live-check-20261014-0750"
   },
   "week6_waiver_resolution": {
@@ -285,7 +285,7 @@
     "losses": [],
     "faab_spent": 9,
     "faab_after_commish_then_waivers": 33,
-    "path": "$48 commissioner -$6 → $42; then waiver -$9 → $33"
+    "path": "$48 commissioner -$6 \u2192 $42; then waiver -$9 \u2192 $33"
   },
   "user_correction_2026_10_19": {
     "confirmed_at_et": "2026-10-19T23:55:00-04:00",
@@ -299,7 +299,7 @@
       "observed_at": "2026-10-20T07:58:00-04:00",
       "check_id": "sparta-live-check-20261020-0750",
       "yahoo_waiver_budget_displayed": 33,
-      "result": "CONFLICT_UNRESOLVED — Yahoo still shows $33; repo keeps user-confirmed $24 (explicit user correction outranks display per rule 8). Needs user to reconcile (FA add costs may be tracked outside Yahoo's waiver budget)."
+      "result": "CONFLICT_UNRESOLVED \u2014 Yahoo still shows $33; repo keeps user-confirmed $24 (explicit user correction outranks display per rule 8). Needs user to reconcile (FA add costs may be tracked outside Yahoo's waiver budget)."
     }
   },
   "yahoo_display_vs_authoritative": {
@@ -350,5 +350,13 @@
     "verified": false,
     "source": "James's Yahoo Team-tab screenshots 2026-10-21 08:00-08:01 ET (Starters + Bench) and Players-tab QB list; Week 7 waivers processed overnight"
   },
-  "timestamp_correction_2026_10_21": "The standings (10:31) and pending-claims (10:46) screenshots were taken Tue 2026-10-20 at 10:31/10:46 PM ET (before overnight processing), not Wed 10:31/10:46 AM. Derived-state timestamps corrected 2026-10-21 08:10 ET; transactions.json rows appended 2026-10-21 keep their original source text ('10/21 10:46 ET' there means 10/20 10:46 PM ET)."
+  "timestamp_correction_2026_10_21": "The standings (10:31) and pending-claims (10:46) screenshots were taken Tue 2026-10-20 at 10:31/10:46 PM ET (before overnight processing), not Wed 10:31/10:46 AM. Derived-state timestamps corrected 2026-10-21 08:10 ET; transactions.json rows appended 2026-10-21 keep their original source text ('10/21 10:46 ET' there means 10/20 10:46 PM ET).",
+  "user_correction_2026_11_17": {
+    "confirmed_at_et": "2026-11-17T21:05:00-05:00",
+    "source": "Explicit user (James) statement in Sparta Brain chat: 'So the fab we have left in Yahoo is only $9.'",
+    "balance_before_in_repo": 14,
+    "balance_after": 9,
+    "conflicting_evidence": "data/yahoo_api/latest.json check observed 2026-11-17T15:44:31-05:00 reports JD faab_balance 10; user-confirmed Yahoo figure recorded as authoritative (rules 4, 10). Cause of the extra $1 not identified (possibly a free-agent $1 charge applied by commissioner adjustment, as on 2026-10-20). Week 11 claims still pending; pending bids not deducted.",
+    "week11_pending_claims_recommended": "Ward $3 (backup Herbert $2) / -D. Jones; Bryant $1 (backup Treadwell $1) / -Washington. Max spend $4 -> $5 left if both win."
+  }
 }
