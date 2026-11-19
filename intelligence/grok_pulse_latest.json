@@ -1,52 +1,21 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-11-19T07:09:01.993Z",
+  "generatedAt": "2026-11-19T07:09:38.238Z",
   "status": "live",
-  "completedAt": "2026-11-19T07:09:01.941Z",
+  "completedAt": "2026-11-19T07:09:38.192Z",
   "nextAtLabel": "4:00 AM ET",
   "inWindow": true,
   "itemCount": 14,
   "items": [
     {
-      "id": "montgomery-cleared",
-      "at": "2026-11-18T20:56:00Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "David Montgomery (groin) removed from injury report after full practices; expected to play TNF vs Colts. Woody Marks (concussion) ruled out.",
-      "playerIds": [
-        "david-montgomery"
-      ],
-      "players": [
-        "David Montgomery"
-      ],
-      "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-18/david-montgomery-groin-cleared-to-play-vs-colts",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-david-montgomery-week11",
-      "signal": "ACTIVE",
-      "priorStatus": "OUT-multi-weeks",
-      "newStatus": "cleared-no-tag",
-      "why": "Full practices short week; Marks out opens three-down role.",
-      "implication": "RB2/flex restart vs soft Colts front; volume spike.",
-      "opportunity": "Majority of HOU RB snaps/carries/redzone with Marks out.",
-      "beneficiaries": [
-        "david-montgomery"
-      ],
-      "corroboration": [
-        "https://www.profootballrumors.com/2026/11/texans-getting-rb-david-montgomery-back-in-week-11-rule-out-marvin-harrison-danielle-hunter"
-      ],
-      "priority": "IMMEDIATE"
-    },
-    {
-      "id": "walker-groin-dnp-w11",
+      "id": "kw3-groin-w11-reid-levitan",
       "at": "2026-11-18T17:54:27Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Andy Reid on Kenneth Walker (groin): sore last week, getting better, but 'don't want to do something stupid.' Levitan agrees playing him less than 100% is stupid, especially with huge Week 12 at BUF; Chiefs 15.5-pt favorites vs ARI.",
+      "text": "Andy Reid on Kenneth Walker III (groin): getting better but 'we just don't want to do something stupid.' Levitan fully agrees—playing him less than 100% would be stupid given huge Week 12 at BUF and Emmett Johnson's recent production. High chance Walker sits again vs ARI.",
       "playerIds": [
         "kenneth-walker"
       ],
@@ -57,14 +26,15 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-kenneth-walker-week11",
       "signal": "QUESTIONABLE",
-      "priorStatus": "OUT-week10",
-      "newStatus": "DNP-Wed-cautious",
-      "why": "Reid comments + DNP Wed; short-term rehab priority over this matchup.",
-      "implication": "High risk of another sit; monitor practice/Fri designation closely.",
-      "opportunity": "Lead back role intact if active; Emmett Johnson continues smash if out.",
+      "priorStatus": "OUT",
+      "newStatus": "QUESTIONABLE",
+      "why": "Reid caution + Levitan endorsement; Chiefs big favorites and can afford rest",
+      "implication": "Do not start Walker; handcuff/backup elevated",
+      "opportunity": "Full backfield opportunity if OUT",
       "corroboration": [
         "@RapSheet",
-        "https://www.cbssports.com/nfl/news/nfl-week-11-injury-report-chiefs-kenneth-walker-iii-lions-kerby-joseph/"
+        "@ByNateTaylor",
+        "https://x.com/RapSheet/status/2123137405473681668"
       ],
       "supportingSources": [
         "ian-rapoport",
@@ -73,49 +43,125 @@
       "priority": "IMMEDIATE"
     },
     {
-      "id": "wandale-season-out",
-      "at": "2026-11-19T01:07:00Z",
-      "expertId": "ian-rapoport",
-      "expert": "Ian Rapoport",
-      "handle": "RapSheet",
-      "outlet": "NFL Network",
-      "text": "Wan'Dale Robinson will miss the rest of the season.",
+      "id": "montgomery-return-cleared",
+      "at": "2026-11-18T17:46:00Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "David Montgomery (groin) off injury report / fully expected to return Thursday vs IND after missing four games. Woody Marks (concussion) ruled out.",
       "playerIds": [
-        "wandale-robinson"
+        "david-montgomery"
       ],
       "players": [
-        "Wan'Dale Robinson"
+        "David Montgomery"
       ],
-      "url": "https://x.com/RotoWireNFL/status/2123221511011975610",
+      "url": "https://sports.yahoo.com/fantasy/article/nfl-injury-report-week-11-latest-news-updates-for-kenneth-walker-iii-brock-bowers-and-more-players-for-fantasy-football-224519099.html",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-wandale-robinson-ros",
+      "eventId": "injury-david-montgomery-week11",
+      "signal": "ACTIVE",
+      "priorStatus": "OUT",
+      "newStatus": "ACTIVE",
+      "why": "Cleared, no tag for TNF",
+      "implication": "Start Montgomery as lead back; reverse any Marks beneficiaries",
+      "opportunity": "Goal-line/early-down role restored",
+      "corroboration": [
+        "multiple injury reports"
+      ],
+      "supportingSources": [
+        "ian-rapoport"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "maye-ankle-season-etr",
+      "at": "2026-11-17T20:45:00Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Drake Maye ankle injury (possible fracture) leaves Patriots cooked; Vrabel already said not ready post-bye. Hard negatives on entire NE offense ROS with Tommy DeVito/backup options and AJ Brown also hurt. Season potentially over for Maye.",
+      "playerIds": [
+        "drake-maye",
+        "aj-brown"
+      ],
+      "players": [
+        "Drake Maye",
+        "A.J. Brown"
+      ],
+      "url": "https://www.youtube.com/watch?v=tWAuUK0l5kE",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-drake-maye-week10-11",
       "signal": "OUT",
-      "newStatus": "season-ending",
-      "why": "Injury forces rest of season miss.",
-      "implication": "NYG WR vacuum; boosts Nabers/others.",
+      "priorStatus": "INJURED",
+      "newStatus": "OUT",
+      "why": "Fracture speculation, movement QB, Vrabel comments, bye doesn't help return timeline",
+      "implication": "Drop/trade Maye in most formats; fade NE pass catchers/RBs heavily",
+      "corroboration": [
+        "@RapSheet",
+        "https://www.draftsharks.com/article/latest-fantasy-football-injury-updates"
+      ],
+      "supportingSources": [
+        "establish-the-run",
+        "ian-rapoport"
+      ],
+      "priority": "IMMEDIATE"
+    },
+    {
+      "id": "bowers-ankle-dnp",
+      "at": "2026-11-18T22:23:00Z",
+      "expertId": "establish-the-run",
+      "expert": "Establish The Run",
+      "handle": "EstablishTheRun",
+      "outlet": "Establish The Run",
+      "text": "Brock Bowers (ankle/quad) DNP Wednesday, day-to-day / significant but not major. Michael Mayer elevated if OUT vs DEN.",
+      "playerIds": [
+        "brock-bowers",
+        "michael-mayer"
+      ],
+      "players": [
+        "Brock Bowers",
+        "Michael Mayer"
+      ],
+      "url": "https://www.si.com/onsi/fantasy/injuries/brock-bowers-kenneth-walker-david-montgomery-and-more-in-the-week-11-fantasy-football-injury-report",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-brock-bowers-week11",
+      "signal": "QUESTIONABLE",
+      "priorStatus": "INJURED",
+      "newStatus": "QUESTIONABLE",
+      "why": "Missed practice post-Week 10 sprain",
+      "implication": "Game-time; Mayer TE streamer if OUT",
+      "opportunity": "Mayer targets/routes spike",
       "beneficiaries": [
-        "malik-nabers"
+        "michael-mayer"
+      ],
+      "corroboration": [
+        "injury reports"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "mayfield-foot-dnp",
+      "id": "mayfield-foot-dnp-schefter",
       "at": "2026-11-18T21:22:58Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Buccaneers QB Baker Mayfield did not practice Wednesday due to a foot injury.",
+      "text": "Buccaneers QB Baker Mayfield did not practice Wednesday due to foot injury. Trending toward possible miss vs DET; Jalon Daniels could start again.",
       "playerIds": [],
       "players": [],
       "url": "https://x.com/AdamSchefter/status/2123165089771421933",
       "kind": "INJURY_STATUS",
       "eventId": "injury-baker-mayfield-week11",
-      "signal": "DNP",
-      "priorStatus": "uncertain",
-      "newStatus": "DNP-foot",
-      "why": "Foot strain; Rapoport notes trending toward missing vs Lions.",
-      "implication": "Rookie likely to start again; impacts TB pass catchers/ dual-threat.",
+      "signal": "QUESTIONABLE",
+      "priorStatus": "LIMITED",
+      "newStatus": "DNP",
+      "why": "Foot strain from prior week, walking boot reports, DNP midweek",
+      "implication": "Monitor Friday; fade Bucs pass game / elevate Daniels if OUT; impacts Bucky Irving script",
+      "opportunity": "Backup QB opportunity",
+      "beneficiaries": [
+        "bucky-irving"
+      ],
       "corroboration": [
         "@RapSheet"
       ],
@@ -125,13 +171,36 @@
       "priority": "HIGH"
     },
     {
-      "id": "addison-no-ir",
+      "id": "berry-hubbard-love-ros",
+      "at": "2026-11-18T20:35:00Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Chuba Hubbard is Berry’s RB6 ROS. Full Chub(a) endorsement after strong recent usage.",
+      "playerIds": [
+        "chuba-hubbard"
+      ],
+      "players": [
+        "Chuba Hubbard"
+      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2123153017369170022",
+      "kind": "RANKING_SIGNAL",
+      "eventId": "berry-hubbard-ros-w11",
+      "signal": "LOVE",
+      "why": "Workload and production sustaining",
+      "implication": "Start/hold confidently ROS; buy if available",
+      "opportunity": "Lead back snaps/carries locked",
+      "priority": "HIGH"
+    },
+    {
+      "id": "addison-no-ir-rapoport",
       "at": "2026-11-18T19:21:32Z",
       "expertId": "ian-rapoport",
       "expert": "Ian Rapoport",
       "handle": "RapSheet",
       "outlet": "NFL Network",
-      "text": "No IR for Jordan Addison per coach Kevin O’Connell after thumb surgery.",
+      "text": "Jordan Addison (thumb surgery) will not go on IR, per Kevin O’Connell. Remains available but timeline unclear for return.",
       "playerIds": [
         "jordan-addison"
       ],
@@ -141,13 +210,17 @@
       "url": "https://x.com/RapSheet/status/2123134530840371259",
       "kind": "INJURY_STATUS",
       "eventId": "injury-jordan-addison-week11",
-      "signal": "OUT-short",
-      "priorStatus": "surgery",
-      "newStatus": "no-IR",
-      "why": "Surgery but avoid IR designation.",
-      "implication": "Misses near-term but rosterable ROS; Jefferson volume boost short-term.",
+      "signal": "OUT",
+      "priorStatus": "INJURED",
+      "newStatus": "OUT",
+      "why": "Surgery but avoided IR designation",
+      "implication": "Hold in deeper leagues; Jefferson/others absorb targets short-term",
+      "opportunity": "Vikings WR2/3 volume temporary",
       "beneficiaries": [
         "justin-jefferson"
+      ],
+      "corroboration": [
+        "@AdamSchefter"
       ],
       "supportingSources": [
         "adam-schefter"
@@ -155,95 +228,55 @@
       "priority": "HIGH"
     },
     {
-      "id": "colts-outs-tnf",
-      "at": "2026-11-18T18:34:26Z",
-      "expertId": "adam-schefter",
-      "expert": "Adam Schefter",
-      "handle": "AdamSchefter",
-      "outlet": "ESPN",
-      "text": "Colts ruled out TE Will Mallory, OT Bernhard Raimann, DT Jerry Tillery, OT Jalen Travis and CB Charvarius Ward for TNF vs Texans. Sauce Gardner questionable.",
-      "playerIds": [],
-      "players": [],
-      "url": "https://x.com/AdamSchefter/status/2123122678223741276",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-colts-outs-week11",
-      "signal": "OUT",
-      "newStatus": "OUT",
-      "why": "Multiple injuries confirmed for short week.",
-      "implication": "OL/DB thin; boosts HOU run/pass efficiency.",
-      "opportunity": "Montgomery/HOU skill upgrade.",
-      "beneficiaries": [
-        "david-montgomery",
-        "nico-collins"
+      "id": "vikings-proe-cousins-levitan",
+      "at": "2026-11-18T17:28:08Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "In first game with Kirk Cousins, Vikings set season-high Pass Rate Over Expectation. O’Connell wants to throw a lot—boosts Justin Jefferson and pass-catchers.",
+      "playerIds": [
+        "justin-jefferson"
       ],
-      "corroboration": [
-        "@RapSheet"
+      "players": [
+        "Justin Jefferson"
+      ],
+      "url": "https://x.com/adamlevitan/status/2123105992087065031",
+      "kind": "USAGE_DATA",
+      "eventId": "vikings-proe-cousins-w10-11",
+      "signal": "UPGRADE",
+      "why": "Season-high PROE with Cousins; prior positive PROE even with bad QB play",
+      "implication": "Jefferson WR1 locked; elevated TE/WR2 upside",
+      "opportunity": "Pass rate/routes/targets spike",
+      "beneficiaries": [
+        "justin-jefferson"
       ],
       "supportingSources": [
-        "ian-rapoport"
+        "establish-the-run"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "bowers-ankle-dnp",
-      "at": "2026-11-18T00:00:00Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "Brock Bowers (ankle) DNP Wednesday, remains day-to-day; coach says significant but not as bad as thought, doesn't need practice to play.",
+      "id": "berry-hampton-start",
+      "at": "2026-11-17T20:20:02Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Omarion Hampton finally got lead-back volume (22 carries, 105 yds, TD, 63% snaps). Start him vs Jets with six teams on bye.",
       "playerIds": [
-        "brock-bowers"
+        "omarion-hampton"
       ],
       "players": [
-        "Brock Bowers"
+        "Omarion Hampton"
       ],
-      "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/kubiak-bowers-ankle-will-be-reevaluated-on-mon",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-brock-bowers-week11",
-      "signal": "QUESTIONABLE",
-      "priorStatus": "injured-Week10",
-      "newStatus": "DNP-day-to-day",
-      "why": "Ankle from Week 10; multiple return attempts failed then.",
-      "implication": "TE1 if active vs DEN; Mayer streams if out.",
-      "opportunity": "High target share intact with Mendoza if healthy.",
-      "beneficiaries": [
-        "michael-mayer"
-      ],
-      "corroboration": [
-        "RotoWire"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "maye-season-threat",
-      "at": "2026-11-17T23:44:29Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "NE loses Drake Maye, potentially for the season (ankle); team-by-team negatives post-Maye noted.",
-      "playerIds": [
-        "drake-maye"
-      ],
-      "players": [
-        "Drake Maye"
-      ],
-      "url": "https://x.com/EstablishTheRun/status/2122838315703689289",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-drake-maye-ros",
-      "signal": "OUT",
-      "priorStatus": "injured-Week10",
-      "newStatus": "pot-season",
-      "why": "Significant lower leg/ankle; bye then uncertain.",
-      "implication": "NE offense downgrade ROS; hard negatives on skill players.",
-      "corroboration": [
-        "@RapSheet"
-      ],
-      "supportingSources": [
-        "adam-levitan",
-        "ian-rapoport"
-      ],
+      "url": "https://x.com/MatthewBerryTMR/status/2122786865577341317",
+      "kind": "USAGE_DATA",
+      "eventId": "hampton-lead-back-w10-11",
+      "signal": "UPGRADE",
+      "why": "Confirmed lead volume and snap share",
+      "implication": "Must-start RB2/flex this week",
+      "opportunity": "Carries + snaps expansion locked in",
       "priority": "HIGH"
     },
     {
@@ -253,72 +286,72 @@
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "Up in pace: TEN @ DAL. Slow paced slogs: MIA @ BUF. Full Week 11 Snaps & Pace from Pat Thorman.",
+      "text": "Thorman Snaps & Pace Week 11: TEN @ DAL up in pace (Titans hurry-up/no-huddle exploding, both teams high play volume). MIA @ BUF slow-paced slog.",
       "playerIds": [],
       "players": [],
-      "url": "https://x.com/EstablishTheRun/status/2123228529898692699",
+      "url": "https://establishtherun.com/thormans-snaps-and-pace-week-11-8/",
       "kind": "USAGE_DATA",
-      "eventId": "pace-week11-ten-dal",
+      "eventId": "pace-ten-dal-mia-buf-w11",
       "signal": "UPGRADE",
-      "why": "TEN hurry-up/no-huddle surge + DAL high play volume; MIA-BUF slow.",
-      "implication": "Volume boost for TEN/DAL skill; suppress MIA/BUF.",
-      "opportunity": "Higher snaps/targets/carries in TEN@DAL.",
+      "why": "Titans 1st in hurry-up, combined high plays/points lately; Cowboys fast neutral pace",
+      "implication": "Stack/pass-game upside TEN/DAL; fade volume MIA/BUF",
+      "opportunity": "Elevated play volume for skill players",
+      "corroboration": [
+        "@Pat_Thorman"
+      ],
       "supportingSources": [
         "patrick-thorman"
       ],
       "priority": "NORMAL"
     },
     {
-      "id": "devonta-smith-return",
-      "at": "2026-11-19T01:07:00Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "DeVonta Smith returned to practice and 'felt good'; trending toward return.",
-      "playerIds": [
-        "devonta-smith"
-      ],
-      "players": [
-        "DeVonta Smith"
-      ],
-      "url": "https://x.com/RotoWireNFL/status/2123221511011975610",
-      "kind": "INJURY_STATUS",
-      "eventId": "injury-devonta-smith-week11",
-      "signal": "QUESTIONABLE",
-      "priorStatus": "hamstring",
-      "newStatus": "practice-return",
-      "why": "Felt good on return to practice.",
-      "implication": "Likely active; PHI WR depth stabilizes.",
-      "opportunity": "Target share rebound if full.",
-      "priority": "NORMAL"
-    },
-    {
-      "id": "berry-coker-hate",
+      "id": "berry-coker-closeout",
       "at": "2026-11-18T22:45:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Coke heads, I’m sorry. I am CLOSING IT OUT on Jalen Coker. The talent is there. The fantasy production has not been.",
+      "text": "Berry closing it out on Jalen Coker. Talent there but fantasy production has not been.",
       "playerIds": [],
       "players": [],
       "url": "https://x.com/MatthewBerryTMR/status/2123185732827197764",
       "kind": "ANALYST_OPINION",
-      "eventId": "hate-jalen-coker-w11",
+      "eventId": "berry-coker-hate-w11",
       "signal": "HATE",
-      "why": "Talent vs lack of fantasy production.",
-      "implication": "Drop/close out.",
+      "why": "Lack of production despite talent",
+      "implication": "Drop candidate; do not chase",
       "priority": "NORMAL"
     },
     {
-      "id": "berry-waddle-hate",
+      "id": "brooks-hype-dunk-levitan",
+      "at": "2026-11-18T21:35:39Z",
+      "expertId": "adam-levitan",
+      "expert": "Adam Levitan",
+      "handle": "adamlevitan",
+      "outlet": "Establish The Run",
+      "text": "Levitan dunks hard on Jonathan Brooks hype: 'The Jonathan Brooks slappies have a mental illness, it's legit scary.'",
+      "playerIds": [
+        "jonathon-brooks"
+      ],
+      "players": [
+        "Jonathon Brooks"
+      ],
+      "url": "https://x.com/adamlevitan/status/2123168282564038657",
+      "kind": "ANALYST_OPINION",
+      "eventId": "brooks-hype-levitan-w11",
+      "signal": "HATE",
+      "why": "Overhyped relative to actual role/opportunity",
+      "implication": "Avoid or sell any Brooks shares; do not roster based on hype",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-waddle-closeout",
       "at": "2026-11-18T21:35:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "I am CLOSING IT OUT on Jaylen Waddle. The target share is nice. The production is not.",
+      "text": "Berry closing it out on Jaylen Waddle: target share nice but production is not. Full-go in practice post-concussion but still HATE/close-out.",
       "playerIds": [
         "jaylen-waddle"
       ],
@@ -327,58 +360,39 @@
       ],
       "url": "https://x.com/MatthewBerryTMR/status/2123168116851053004",
       "kind": "ANALYST_OPINION",
-      "eventId": "hate-jaylen-waddle-w11",
+      "eventId": "berry-waddle-hate-w11",
       "signal": "HATE",
-      "why": "Full practice post-concussion but production lagging targets.",
-      "implication": "Sit/flex down; close out in shallow leagues.",
-      "conflict": "Full participant Wed but Berry production-focused.",
+      "newStatus": "ACTIVE",
+      "why": "Production lagging opportunity",
+      "implication": "Sit/flex down or sell; prefer other options",
+      "conflict": "Full practice participant",
       "priority": "NORMAL"
     },
     {
-      "id": "berry-hubbard-love",
-      "at": "2026-11-18T20:35:00Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "FULL CHUB(A) FOR MR. HUBBARD! Chuba Hubbard is my RB6 in rest-of-season rankings.",
+      "id": "hutchinson-ir-schefter",
+      "at": "2026-11-18T21:15:15Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Lions placed EDGE Aidan Hutchinson on injured reserve and activated S Kerby Joseph from Reserve/PUP. Cam Skattebo retiring celebratory backflips in wake of the injury.",
       "playerIds": [
-        "chuba-hubbard"
+        "cam-skattebo"
       ],
       "players": [
-        "Chuba Hubbard"
+        "Cam Skattebo"
       ],
-      "url": "https://x.com/MatthewBerryTMR/status/2123153017369170022",
-      "kind": "ANALYST_OPINION",
-      "eventId": "ranking-chuba-hubbard-ros",
-      "signal": "LOVE",
-      "why": "Consistent top-10 finishes, strong volume/matchups.",
-      "implication": "Start every week; RB1/2 ROS value.",
-      "opportunity": "Workhorse role with CAR offense.",
-      "priority": "NORMAL"
-    },
-    {
-      "id": "hampton-volume",
-      "at": "2026-11-17T20:20:02Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Omarion Hampton finally got lead-back volume: 22 carries, 105 yards, a touchdown, and 63% of the snaps. With six teams on bye, he’s a start against the Jets.",
-      "playerIds": [
-        "omarion-hampton"
+      "url": "https://x.com/AdamSchefter/status/2123163146747592988",
+      "kind": "NFL_FACT",
+      "eventId": "hutchinson-ir-w11",
+      "signal": "OUT",
+      "priorStatus": "INJURED",
+      "newStatus": "IR",
+      "why": "Season-ending injury placement",
+      "implication": "Lions defense hit; minimal direct fantasy skill impact beyond IDP",
+      "corroboration": [
+        "https://x.com/AdamSchefter/status/2123208729915215944"
       ],
-      "players": [
-        "Omarion Hampton"
-      ],
-      "url": "https://x.com/MatthewBerryTMR/status/2122786865577341317",
-      "kind": "USAGE_DATA",
-      "eventId": "usage-omarion-hampton-w10",
-      "signal": "UPGRADE",
-      "newStatus": "lead-back",
-      "why": "63% snaps, 22 carries in recent game.",
-      "implication": "Start vs Jets; role expansion sticky.",
-      "opportunity": "Lead RB snaps/carries/routes vs NYJ.",
       "priority": "NORMAL"
     }
   ],
@@ -388,22 +402,36 @@
       "sourceId": "adam-levitan",
       "source": "Adam Levitan",
       "grade": "USEFUL",
-      "note": "Player-specific: Walker Reid 'stupid' caution + BUF week priority; prior JT/Chase Brown ROS, NE negatives, Cousins/Jefferson PROE.",
+      "note": "Player-specific: Walker Reid 'stupid' caution + BUF week; Vikings season-high PROE Cousins/Jefferson; Brooks hype dunk; NE hard negatives post-Maye; Team-by-Team pod notes.",
       "at": "2026-11-19T05:00:00Z"
     },
     {
       "sourceId": "establish-the-run",
       "source": "Establish The Run",
       "grade": "USEFUL",
-      "note": "Snaps/pace TEN@DAL up MIA@BUF slow; ROS Top-150 context; injury tracking Maye pot season Bowers ankle; waiver/injury reports; team-by-team NE negatives.",
+      "note": "Snaps/pace TEN@DAL up MIA@BUF slow; injury tracking Maye pot season Bowers ankle; Team-by-Team Week 11; waiver wire posted (paywalled details).",
       "at": "2026-11-19T01:35:00Z"
     },
     {
       "sourceId": "matthew-berry",
       "source": "Matthew Berry",
       "grade": "USEFUL",
-      "note": "Per-player: Hubbard RB6 ROS LOVE; Waddle/Coker close-out HATE; Hampton volume start; waiver RBs (Kaelon Black etc).",
+      "note": "Per-player: Hubbard RB6 ROS LOVE; Waddle close-out HATE production; Coker close-out; Hampton lead volume START; waiver RBs targeting (Kaelon Black).",
       "at": "2026-11-18T22:45:00Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "High-conf: Mayfield DNP foot; Hutchinson IR; Colts outs (Ward etc); Montgomery cleared implied; Walker Emmett Johnson path context.",
+      "at": "2026-11-19T00:16:00Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Addison no-IR; Walker sit possible; Geno limited; Mayfield/Maye/Colts aligned facts; Reid caution amplification.",
+      "at": "2026-11-18T19:32:00Z"
     },
     {
       "sourceId": "adam-levitan",
@@ -537,24 +565,10 @@
       "grade": "USEFUL",
       "note": "Player-specific: Walker caution (Reid stupid + BUF week); Vikings season-high PROE Cousins confirming pass-heavy/Jefferson routes; team-by-team notes; DvP playoffs (Vikings QB schedule); ROS150 context JT vs Brown.",
       "at": "2026-11-18T21:35:39Z"
-    },
-    {
-      "sourceId": "establish-the-run",
-      "source": "Establish The Run",
-      "grade": "USEFUL",
-      "note": "Week 11 waivers post (paywalled details); ROS Top-150 updates; DvP metrics playoffs; injury tracking (Maye pot season, Bowers ankle); team-by-team show (NE hard positives, Cousins MIN, Tyson targets).",
-      "at": "2026-11-18T23:10:53Z"
-    },
-    {
-      "sourceId": "matthew-berry",
-      "source": "Matthew Berry",
-      "grade": "USEFUL",
-      "note": "Per-player: Hubbard RB6 ROS LOVE; Waddle close-out HATE on production; Hampton lead volume start vs Jets; Coker close-out; Kaelon Black waiver flex; waiver RBs/QBs targeting (Mendoza/McCarthy etc).",
-      "at": "2026-11-18T22:45:00Z"
     }
   ],
-  "mirroredAt": "2026-11-19T07:09:02.571Z",
+  "mirroredAt": "2026-11-19T07:09:38.800Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-11-19T07:09:01.941Z",
+  "sourceCompletedAt": "2026-11-19T07:09:38.192Z",
   "sourceStatus": "live"
 }
