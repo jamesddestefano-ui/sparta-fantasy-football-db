@@ -1,21 +1,21 @@
 {
   "product": "LOCK Pulse",
   "timezone": "America/New_York",
-  "generatedAt": "2026-11-26T07:09:41.610Z",
+  "generatedAt": "2026-11-26T09:09:27.033Z",
   "status": "live",
-  "completedAt": "2026-11-26T07:09:41.577Z",
-  "nextAtLabel": "4:00 AM ET",
+  "completedAt": "2026-11-26T09:09:26.998Z",
+  "nextAtLabel": "6:00 AM ET",
   "inWindow": true,
   "itemCount": 14,
   "items": [
     {
-      "id": "watson-out-concussion-gb-lar",
+      "id": "watson-out-concussion",
       "at": "2026-11-26T03:06:01Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Packers WR Christian Watson ruled out after being evaluated for concussion following sideline hit (earlier questionable with thigh, returned briefly); Rams S Kamren Kinchens ejected on the play. Higbee also ruled out chest for Rams.",
+      "text": "Packers ruled out WR Christian Watson after evaluation for concussion (also thigh earlier). Caught 4/4 for 65 yards before exiting vs Rams.",
       "playerIds": [
         "christian-watson"
       ],
@@ -24,18 +24,14 @@
       ],
       "url": "https://x.com/AdamSchefter/status/2125788136873644299",
       "kind": "INJURY_STATUS",
-      "eventId": "injury-christian-watson-week12-gameday",
+      "eventId": "injury-christian-watson-week12",
       "signal": "OUT",
-      "priorStatus": "QUESTIONABLE/ACTIVE",
+      "priorStatus": "QUESTIONABLE/EVAL",
       "newStatus": "OUT",
-      "why": "Concussion evaluation after hit; previously thigh issue in same game.",
-      "implication": "Immediate target/snap boost to remaining Packers WRs in ongoing game; Watson out rest of contest.",
-      "opportunity": "Increased routes/targets for Jayden Reed and other GB pass-catchers.",
-      "beneficiaries": [
-        "jayden-reed"
-      ],
+      "why": "Concussion from sideline hit; second documented concussion.",
+      "implication": "Misses remainder of TNF; 11 days to clear for Week 13.",
+      "opportunity": "Increased snaps/targets for other Packers WRs",
       "corroboration": [
-        "https://x.com/RapSheet/status/2125788391057011136",
         "@RapSheet"
       ],
       "supportingSources": [
@@ -50,7 +46,7 @@
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Chiefs officially ruled out RB Kenneth Walker III for Thursday Night vs Bills due to groin injury; rookie Emmett Johnson will start in his place for the third straight game.",
+      "text": "Chiefs officially ruled out RB Kenneth Walker for Thursday night vs Bills due to groin injury. Rookie Emmett Johnson will start for the third straight game.",
       "playerIds": [
         "kenneth-walker"
       ],
@@ -61,19 +57,43 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-kenneth-walker-week12",
       "signal": "OUT",
-      "priorStatus": "QUESTIONABLE",
+      "priorStatus": "QUESTIONABLE/LIMITED",
       "newStatus": "OUT",
-      "why": "Groin injury; limited then ruled out after Wednesday activity.",
-      "implication": "Handcuff/backup elevated to starter role for TNF; Walker owners need pivot.",
-      "opportunity": "Full backfield opportunity for KC RB2/handcuff with Walker out third straight.",
+      "why": "Groin injury; DNP Wednesday after limited earlier in week.",
+      "implication": "Full lead role for backup RB; Walker misses third straight.",
+      "opportunity": "Backup RB every-down usage including carries/targets/RZ",
       "corroboration": [
-        "https://x.com/RapSheet/status/2125631436937937152",
-        "@RapSheet"
+        "@RapSheet",
+        "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-wednesday-nov-25"
       ],
       "supportingSources": [
         "ian-rapoport"
       ],
       "priority": "IMMEDIATE"
+    },
+    {
+      "id": "higbee-out-chest",
+      "at": "2026-11-26T03:46:23Z",
+      "expertId": "adam-schefter",
+      "expert": "Adam Schefter",
+      "handle": "AdamSchefter",
+      "outlet": "ESPN",
+      "text": "Rams ruled out TE Tyler Higbee due to chest injury. Already ruled out TE Davis Allen. Both exited TNF vs Packers.",
+      "playerIds": [],
+      "players": [],
+      "url": "https://x.com/AdamSchefter/status/2125798292478886201",
+      "kind": "INJURY_STATUS",
+      "eventId": "injury-higbee-allen-week12",
+      "signal": "OUT",
+      "priorStatus": "ACTIVE",
+      "newStatus": "OUT",
+      "why": "Chest injury mid-game; Allen ankle.",
+      "implication": "Rams thin at TE with Ferguson already season-ending; Parkinson next up.",
+      "opportunity": "TE snaps/routes/targets to remaining Rams TEs",
+      "corroboration": [
+        "https://www.draftsharks.com/fantasy-football-news"
+      ],
+      "priority": "HIGH"
     },
     {
       "id": "purdy-dnp-ankle",
@@ -82,7 +102,7 @@
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "49ers QB Brock Purdy did not practice Wednesday with ankle injury suffered Sunday night vs Vikings; day-to-day per reports.",
+      "text": "49ers QB Brock Purdy did not practice Wednesday with ankle injury from SNF. Day-to-day per reports.",
       "playerIds": [
         "brock-purdy"
       ],
@@ -93,13 +113,11 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-brock-purdy-week12",
       "signal": "DNP",
-      "priorStatus": "ACTIVE",
-      "newStatus": "DAY-TO-DAY",
-      "why": "Ankle sprain from Week 11; DNP Wednesday.",
-      "implication": "Monitor Friday practice/report; potential limited or backup contingency for SF.",
-      "opportunity": "If sits, elevated role for SF backup QB and possible run-game lean.",
+      "priorStatus": "UNKNOWN",
+      "newStatus": "DNP/DAY-TO-DAY",
+      "why": "Ankle sprain suffered Week 11.",
+      "implication": "Monitor practice; not expected to miss but worth watching for Week 12.",
       "corroboration": [
-        "https://x.com/RapSheet/status/2125671653355200834",
         "@RapSheet"
       ],
       "supportingSources": [
@@ -108,13 +126,13 @@
       "priority": "HIGH"
     },
     {
-      "id": "berry-love-bucky-irving",
+      "id": "berry-love-bucky",
       "at": "2026-11-25T22:25:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Berry LOVES Bucky Irving this week: since Week 5 only Gibbs and CMC have averaged more PPG among RBs; gets Carolina matchup.",
+      "text": "LOVE Bucky Irving this week. Since Week 5 only Gibbs and CMC averaged more FPPG among RBs; now gets Carolina.",
       "playerIds": [
         "bucky-irving"
       ],
@@ -125,19 +143,19 @@
       "kind": "ANALYST_OPINION",
       "eventId": "start-bucky-irving-week12",
       "signal": "LOVE",
-      "why": "Elite recent PPG (top-3 RB since W5) + soft CAR matchup.",
-      "implication": "Strong start/sit lock as RB1 this week.",
-      "opportunity": "High snap/carry/target expectation vs weak run D.",
+      "why": "Elite recent FPPG + soft CAR matchup.",
+      "implication": "Strong start/RB1 upside Week 12.",
+      "opportunity": "High snap/touch share vs weak run D",
       "priority": "HIGH"
     },
     {
-      "id": "tuten-dnp-ankle-foot",
+      "id": "tuten-dnp-ankle",
       "at": "2026-11-25T21:13:14Z",
       "expertId": "adam-schefter",
       "expert": "Adam Schefter",
       "handle": "AdamSchefter",
       "outlet": "ESPN",
-      "text": "Jaguars RB Bhayshul Tuten did not practice Wednesday due to foot/ankle injuries (re-aggravated in Week 11 loss); ETR flagged injury resurfacing.",
+      "text": "Jaguars RB Bhayshul Tuten did not practice Wednesday due to foot/ankle injuries. Could be GTD.",
       "playerIds": [
         "bhayshul-tuten"
       ],
@@ -148,14 +166,13 @@
       "kind": "INJURY_STATUS",
       "eventId": "injury-bhayshul-tuten-week12",
       "signal": "DNP",
-      "priorStatus": "QUESTIONABLE/PLAYING-THROUGH",
+      "priorStatus": "INJURY CONCERN",
       "newStatus": "DNP",
-      "why": "Lingering foot/ankle; stepped on late Week 11, nothing 'too bad' but DNP and priority to get healthy.",
-      "implication": "Game-time or OUT risk vs TEN; monitor rest of week practice.",
-      "opportunity": "If OUT/INACTIVE, next-man-up (e.g. Rodriguez/handcuffs) full opportunity in JAX backfield.",
+      "why": "Foot/ankle; injury resurfaced.",
+      "implication": "Monitor; next man up if sits.",
+      "opportunity": "Backup RB carries/snaps if Tuten out",
       "corroboration": [
-        "ETR Week 12 preview",
-        "@EstablishTheRun"
+        "https://www.si.com/onsi/fantasy/injuries/week-12-fantasy-football-injury-report-the-latest-update-on-bhayshul-tuten-derrick-henry-and-all-the-stars"
       ],
       "supportingSources": [
         "establish-the-run"
@@ -163,13 +180,13 @@
       "priority": "HIGH"
     },
     {
-      "id": "berry-henry-brissett-targets",
+      "id": "berry-henry-targets",
       "at": "2026-11-25T15:00:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Berry 10 Facts: Derrick Henry target share jumped from <6% (1.3 rec/g) first 9 games to 12% and 4.5 receptions in 2 games with Jacoby Brissett; significantly raises PPR floor.",
+      "text": "Derrick Henry target share jumped to 12% and 4.5 rec/g with Brissett (from <6%/1.3). Raises PPR floor.",
       "playerIds": [
         "derrick-henry"
       ],
@@ -179,21 +196,20 @@
       "url": "https://www.fantasylife.com/articles/fantasy/matthew-berrys-10-facts-for-week-12-fantasy-football",
       "kind": "USAGE_DATA",
       "eventId": "usage-derrick-henry-brissett",
-      "signal": "LOVE",
-      "newStatus": "UPGRADE-FLOOR",
-      "why": "QB change increased checkdowns/targets to Henry.",
-      "implication": "Safer PPR RB1/2 with receiving upside holding.",
-      "opportunity": "Elevated target share + red-zone/goal-line role sustained.",
+      "signal": "UPGRADE",
+      "why": "Two games with Brissett show elevated receiving role.",
+      "implication": "Higher PPR floor; LOVE for volume.",
+      "opportunity": "Targets/receptions boost alongside carries",
       "priority": "HIGH"
     },
     {
-      "id": "puka-ferguson-season-out",
+      "id": "puka-season-ending",
       "at": "2026-11-25T00:15:22Z",
       "expertId": "establish-the-run",
       "expert": "Establish The Run",
       "handle": "EstablishTheRun",
       "outlet": "Establish The Run",
-      "text": "ETR Week 12 preview: Puka Nacua and Terrance Ferguson out for the season (Nacua post-MCL surgery/IR + suspension context; Ferguson ankle/hamstring).",
+      "text": "Puka Nacua and Terrance Ferguson out for the season (Nacua MCL surgery 4-5 months). Highlighted in Week 12 preview.",
       "playerIds": [
         "puka-nacua"
       ],
@@ -206,53 +222,28 @@
       "signal": "OUT",
       "priorStatus": "IR",
       "newStatus": "SEASON-ENDING",
-      "why": "MCL surgery; expected out rest of regular season (months recovery).",
-      "implication": "Permanent void in LAR WR corps; Adams still IR too; volume to remaining WRs/TEs/Corum.",
-      "opportunity": "Sustained target/snap share increase for other Rams pass-catchers and RB Blake Corum usage.",
+      "why": "MCL surgery recovery 4-5 months; rules out playoffs.",
+      "implication": "Rams WR/TE corps depleted long-term; Adams return candidate later.",
+      "opportunity": "Elevated targets for remaining Rams pass-catchers",
       "beneficiaries": [
-        "kyren-williams"
+        "davante-adams"
       ],
       "corroboration": [
-        "ESPN reports on surgery"
+        "https://www.cbssports.com/fantasy/football/news/rams-puka-nacua-out-for-remainder-of-season-including-playoffs/"
+      ],
+      "supportingSources": [
+        "adam-schefter"
       ],
       "priority": "HIGH"
     },
     {
-      "id": "colts-ar-start-jones-cut",
-      "at": "2026-11-25T00:15:22Z",
-      "expertId": "establish-the-run",
-      "expert": "Establish The Run",
-      "handle": "EstablishTheRun",
-      "outlet": "Establish The Run",
-      "text": "ETR: Colts cut Daniel Jones; Anthony Richardson set to start (confirmed by coach for Week 12 vs Giants).",
-      "playerIds": [],
-      "players": [],
-      "url": "https://x.com/EstablishTheRun/status/2125382803403747748",
-      "kind": "NFL_FACT",
-      "eventId": "colts-qb-change-week12",
-      "signal": "ROLE-CHANGE",
-      "priorStatus": "JONES-STARTER",
-      "newStatus": "AR-STARTER",
-      "why": "Jones waived after poor play; AR named starter.",
-      "implication": "Mobile QB upside changes Colts offense; potential boost to RBs/TEs via designed runs/scrambles; weapons depleted.",
-      "opportunity": "Rushing opportunity expansion for Colts skill players under dual-threat QB.",
-      "beneficiaries": [
-        "jonathan-taylor",
-        "tyler-warren"
-      ],
-      "corroboration": [
-        "coach comments"
-      ],
-      "priority": "HIGH"
-    },
-    {
-      "id": "berry-hate-bo-nix",
+      "id": "berry-hate-nix",
       "at": "2026-11-25T21:05:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Berry has Bo Nix on HATE list this week: expects heavy Jonah Coleman vs Pittsburgh; insufficient Nix rushing to compensate; outside top 20 QBs.",
+      "text": "HATE Bo Nix this week. Expecting lots of Jonah Coleman vs PIT; not enough rushing from Nix. Outside top 20.",
       "playerIds": [
         "bo-nix"
       ],
@@ -263,18 +254,18 @@
       "kind": "ANALYST_OPINION",
       "eventId": "sit-bo-nix-week12",
       "signal": "HATE",
-      "why": "Matchup projects run-heavy (Coleman); Nix rushing upside not enough.",
-      "implication": "Sit/stream elsewhere; low-end QB2 or worse.",
+      "why": "Run-heavy script expected; limited rush production.",
+      "implication": "Bench outside top-20 QBs.",
       "priority": "NORMAL"
     },
     {
-      "id": "levitan-etienne-snaps-routes",
+      "id": "levitan-etienne",
       "at": "2026-11-25T19:50:24Z",
       "expertId": "adam-levitan",
       "expert": "Adam Levitan",
       "handle": "adamlevitan",
       "outlet": "Establish The Run",
-      "text": "Levitan on Travis Etienne (citing Graziano): could see disappointing snaps and routes down the stretch but reasonably high carry count; favorable ARZ/ATL in Weeks 16/17.",
+      "text": "On Travis Etienne: could see disappointing snaps/routes down stretch but reasonably high carry count. Gets ARZ/ATL Weeks 16/17. Cites Graziano.",
       "playerIds": [
         "travis-etienne"
       ],
@@ -284,78 +275,46 @@
       "url": "https://x.com/adamlevitan/status/2125678509318349029",
       "kind": "ANALYST_OPINION",
       "eventId": "usage-travis-etienne-ros",
-      "signal": "CAUTION-FLOOR",
-      "why": "Role evolution post-team changes; data on snaps/routes vs carries.",
-      "implication": "Carry-based floor viable but limited receiving upside; strong late-season schedule keeps relevant.",
-      "opportunity": "Volume carries in favorable playoff matchups; monitor actual snap/route share weekly.",
+      "signal": "CAUTION",
+      "why": "Snaps/routes may lag but carries solid; favorable late schedule.",
+      "implication": "Carry-floor playoff RB with volume risk on routes/targets.",
+      "opportunity": "Carry share floor; schedule boost Weeks 16-17",
       "corroboration": [
-        "ESPN Graziano"
+        "https://www.espn.com/nfl/story/_/id/50582929/week-12-buzz-fantasy-predictions-graziano-fowler-2026"
       ],
       "priority": "NORMAL"
     },
     {
-      "id": "berry-warren-downgrade",
+      "id": "berry-smith-share",
       "at": "2026-11-25T15:00:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Berry 10 Facts: Since Rico Dowdle return Week 6, Jaylen Warren only 51% of PIT rush attempts, <10% target share in 3/5 games; ranks RB20 utilization; mid-to-low RB2 now (Mason Rudolph may help but view as downgrade).",
+      "text": "DeVonta Smith 57% target share Week 11; 36% avg in 5 games, 50% EZ targets. Role elite despite injuries tanking season.",
       "playerIds": [
-        "jaylen-warren",
-        "rico-dowdle"
+        "devonta-smith"
       ],
       "players": [
-        "Jaylen Warren",
-        "Rico Dowdle"
+        "DeVonta Smith"
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/matthew-berrys-10-facts-for-week-12-fantasy-football",
       "kind": "USAGE_DATA",
-      "eventId": "usage-jaylen-warren-downgrade",
-      "signal": "DOWNGRADE",
-      "priorStatus": "RB1-ISH",
-      "newStatus": "MID-LOW-RB2",
-      "why": "Split backfield with Dowdle reducing carries and targets.",
-      "implication": "Lower weekly floor/ceiling; flex rather than locked starter.",
-      "opportunity": "Dowdle benefiting from the split.",
-      "beneficiaries": [
-        "rico-dowdle"
-      ],
+      "eventId": "usage-devonta-smith-week11",
+      "signal": "UPGRADE",
+      "why": "Massive target share and red-zone work.",
+      "implication": "WR1 upside when healthy/QB stable.",
+      "opportunity": "Dominant target/EZ share",
       "priority": "NORMAL"
     },
     {
-      "id": "berry-swift-downgrade",
+      "id": "berry-mcconkey-return",
       "at": "2026-11-25T15:00:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Berry 10 Facts: With Kyle Monangai back Week 11, D'Andre Swift 47% snap rate, 39% rush attempts, <10% targets in 4/5 games Monangai active; mid-to-low RB2 rather than prior RB1.",
-      "playerIds": [
-        "dandre-swift"
-      ],
-      "players": [
-        "D'Andre Swift"
-      ],
-      "url": "https://www.fantasylife.com/articles/fantasy/matthew-berrys-10-facts-for-week-12-fantasy-football",
-      "kind": "USAGE_DATA",
-      "eventId": "usage-dandre-swift-downgrade",
-      "signal": "DOWNGRADE",
-      "priorStatus": "RB1",
-      "newStatus": "MID-LOW-RB2",
-      "why": "Committee return reducing snaps/carries/targets.",
-      "implication": "Role contraction; start with caution or as flex.",
-      "opportunity": "Monangai/handcuff upside if split continues.",
-      "priority": "NORMAL"
-    },
-    {
-      "id": "berry-mcconkey-return-share",
-      "at": "2026-11-25T15:00:00Z",
-      "expertId": "matthew-berry",
-      "expert": "Matthew Berry",
-      "handle": "MatthewBerryTMR",
-      "outlet": "Fantasy Life",
-      "text": "Berry 10 Facts: Ladd McConkey in return saw season-high 38% target share and 20.7 FP; when >=20% share averages 17.5 PPG (only 3rd game >50% snaps); solid if healthy.",
+      "text": "Ladd McConkey season-high 38% target share on return; 17.5 PPG when 20%+ share. Solid if stays healthy.",
       "playerIds": [
         "ladd-mcconkey"
       ],
@@ -366,41 +325,98 @@
       "kind": "USAGE_DATA",
       "eventId": "usage-ladd-mcconkey-return",
       "signal": "UPGRADE",
-      "priorStatus": "INJURED",
-      "newStatus": "HIGH-SHARE",
-      "why": "Immediate high target share on return.",
-      "implication": "WR2/flex viability if health holds; monitor snaps.",
-      "opportunity": "Sustained high target/route share in LAC offense.",
+      "why": "High share and efficiency on limited healthy snaps.",
+      "implication": "Startable WR if volume holds.",
+      "opportunity": "Target share expansion",
       "priority": "NORMAL"
     },
     {
-      "id": "berry-mcbride-volume-adot",
+      "id": "berry-warren-swift-downgrade",
       "at": "2026-11-25T15:00:00Z",
       "expertId": "matthew-berry",
       "expert": "Matthew Berry",
       "handle": "MatthewBerryTMR",
       "outlet": "Fantasy Life",
-      "text": "Berry 10 Facts: Trey McBride 39% target share (19 targets) over past 2 weeks with backup QBs but aDOT only 3 yards, 1/19 targets 10+ air yards; 6.5 YPR, 11.8 PPG; volume keeps top-5 TE PPR but not elite prior form.",
+      "text": "Jaylen Warren only 51% rush attempts since Dowdle return, low targets; D'Andre Swift 47% snaps/39% rushes with Monangai back. Both mid-low RB2.",
       "playerIds": [
-        "trey-mcbride"
+        "jaylen-warren",
+        "dandre-swift"
       ],
       "players": [
-        "Trey McBride"
+        "Jaylen Warren",
+        "D'Andre Swift"
       ],
       "url": "https://www.fantasylife.com/articles/fantasy/matthew-berrys-10-facts-for-week-12-fantasy-football",
       "kind": "USAGE_DATA",
-      "eventId": "usage-trey-mcbride-qb-change",
-      "signal": "CAUTION",
-      "priorStatus": "ELITE",
-      "newStatus": "VOLUME-FLOOR",
-      "why": "High volume but short aDOT under new QBs vs prior Brissett production.",
-      "implication": "Reliable TE1 floor via targets but lower ceiling/YPR; don't expect prior upside.",
-      "opportunity": "Continued high target share regardless of QB.",
+      "eventId": "usage-warren-swift-role",
+      "signal": "DOWNGRADE",
+      "why": "Shared backfields reducing volume.",
+      "implication": "Lower floor; not RB1s.",
+      "priority": "NORMAL"
+    },
+    {
+      "id": "berry-mcbride-egbuka",
+      "at": "2026-11-25T15:00:00Z",
+      "expertId": "matthew-berry",
+      "expert": "Matthew Berry",
+      "handle": "MatthewBerryTMR",
+      "outlet": "Fantasy Life",
+      "text": "Trey McBride 39% target share last 2 but 3 aDOT/low YPR (volume TE but not elite). Emeka Egbuka last in YPT among 50+ tgt WRs, under 12 PPR in 17/20 recent.",
+      "playerIds": [
+        "trey-mcbride",
+        "emeka-egbuka"
+      ],
+      "players": [
+        "Trey McBride",
+        "Emeka Egbuka"
+      ],
+      "url": "https://www.fantasylife.com/articles/fantasy/matthew-berrys-10-facts-for-week-12-fantasy-football",
+      "kind": "USAGE_DATA",
+      "eventId": "usage-mcbride-egbuka-fade",
+      "signal": "DOWNGRADE",
+      "why": "McBride short aDOT limits upside; Egbuka efficiency collapse.",
+      "implication": "McBride solid but not WR-level; fade Egbuka.",
+      "opportunity": "McBride volume floor",
       "priority": "NORMAL"
     }
   ],
   "sundayMode": false,
   "sourceNotes": [
+    {
+      "sourceId": "adam-levitan",
+      "source": "Adam Levitan",
+      "grade": "USEFUL",
+      "note": "Player-specific Etienne snaps/routes caution + carry floor and playoff schedule ARZ/ATL; projections live for Thanksgiving/GB-LAR and Best Ball ranks; sale/promos but core usage takeaways actionable.",
+      "at": "2026-11-26T12:00:00Z"
+    },
+    {
+      "sourceId": "establish-the-run",
+      "source": "Establish The Run",
+      "grade": "USEFUL",
+      "note": "Week 12 preview highlights: Puka/Ferguson season-ending, Colts Jones cut/AR start, Tuten injury resurfaces; waiver wire (paywalled), Thanksgiving shows/projections/Thorman snaps-pace; DFS GPP content.",
+      "at": "2026-11-26T12:00:00Z"
+    },
+    {
+      "sourceId": "matthew-berry",
+      "source": "Matthew Berry",
+      "grade": "USEFUL",
+      "note": "10 Facts per-player usage: Henry targets up w/ Brissett LOVE floor; Smith 57% share; McConkey return share; Warren/Swift role drops DOWNGRADE; McBride volume but low aDOT; Egbuka efficiency fade; plus LOVE Bucky vs CAR and HATE Nix outside ",
+      "at": "2026-11-26T12:00:00Z"
+    },
+    {
+      "sourceId": "adam-schefter",
+      "source": "Adam Schefter",
+      "grade": "USEFUL",
+      "note": "High-conf injury facts: Walker OUT groin TNF (Johnson starts); Tuten DNP foot/ankle; Purdy DNP ankle day-to-day; Parsons active; Watson OUT concussion (in-game); Higbee OUT chest; roster moves.",
+      "at": "2026-11-26T12:00:00Z"
+    },
+    {
+      "sourceId": "ian-rapoport",
+      "source": "Ian Rapoport",
+      "grade": "USEFUL",
+      "note": "Walker OUT align; Parsons active/return; Purdy DNP day-to-day; Watson OUT concussion; McCarthy full support post-Rodgers drama; roster/injury corroboration strong.",
+      "at": "2026-11-26T12:00:00Z"
+    },
     {
       "sourceId": "adam-levitan",
       "source": "Adam Levitan",
@@ -533,45 +549,10 @@
       "grade": "USEFUL",
       "note": "High-conf: Walker OUT groin TNF; Tuten DNP foot/ankle; Purdy DNP ankle day-to-day; Parsons active; Jacobs inactive context; Rodgers released/McCarthy support.",
       "at": "2026-11-26T00:45:23Z"
-    },
-    {
-      "sourceId": "ian-rapoport",
-      "source": "Ian Rapoport",
-      "grade": "USEFUL",
-      "note": "Walker OUT align; Parsons active/return; Purdy DNP day-to-day; McCarthy full support post-Rodgers; roster moves corroboration.",
-      "at": "2026-11-25T23:49:29Z"
-    },
-    {
-      "sourceId": "adam-levitan",
-      "source": "Adam Levitan",
-      "grade": "USEFUL",
-      "note": "Player-specific Etienne snaps/routes caution + carry floor and playoff schedule; projections live for Thanksgiving/GB-LAR; ETR injury/role context.",
-      "at": "2026-11-25T19:50:00Z"
-    },
-    {
-      "sourceId": "establish-the-run",
-      "source": "Establish The Run",
-      "grade": "USEFUL",
-      "note": "Week 12 preview: Puka/Ferguson season-ending, Colts Jones cut/AR start, Tuten injury resurfaces; waiver wire (paywalled), Thanksgiving shows/projections/Thorman snaps-pace live.",
-      "at": "2026-11-25T00:15:00Z"
-    },
-    {
-      "sourceId": "matthew-berry",
-      "source": "Matthew Berry",
-      "grade": "USEFUL",
-      "note": "10 Facts per-player: Henry targets up w/ Brissett LOVE floor; Smith 57% share; McConkey return share; Warren/Swift role drops DOWNGRADE; McBride volume but low aDOT; Nix HATE outside top 20; Egbuka efficiency fade; LOVE Bucky vs CAR.",
-      "at": "2026-11-25T15:00:00Z"
-    },
-    {
-      "sourceId": "adam-schefter",
-      "source": "Adam Schefter",
-      "grade": "USEFUL",
-      "note": "High-conf: Walker OUT groin TNF; Tuten DNP foot/ankle; Purdy DNP ankle day-to-day; Parsons active; Jacobs inactive context; Rodgers released/McCarthy support.",
-      "at": "2026-11-26T00:45:00Z"
     }
   ],
-  "mirroredAt": "2026-11-26T07:09:42.191Z",
+  "mirroredAt": "2026-11-26T09:09:27.654Z",
   "sourceEndpoint": "https://trail-sunny-orchid-ember.grok.me/api/pulse",
-  "sourceCompletedAt": "2026-11-26T07:09:41.577Z",
+  "sourceCompletedAt": "2026-11-26T09:09:26.998Z",
   "sourceStatus": "live"
 }
