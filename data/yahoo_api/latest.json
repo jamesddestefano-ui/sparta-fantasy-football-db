@@ -7,8 +7,8 @@
   "season": 2026,
   "current_week": 12,
   "coverage_week": 12,
-  "check_id": "sparta-yahoo-api-20261127-0257",
-  "observed_at": "2026-11-27T02:57:23-05:00",
+  "check_id": "sparta-yahoo-api-20261127-1600",
+  "observed_at": "2026-11-27T16:00:25-05:00",
   "completed": true,
   "source": "Yahoo Fantasy API v2 (OAuth, read-only) via scripts/yahoo_sync.py",
   "mutations": false,
@@ -40,16 +40,16 @@
           "team_key": "470.l.102586.t.7",
           "name": "AMON A ROLL",
           "points": 50.72,
-          "projected_points": 134.77,
-          "win_probability": 0.45,
+          "projected_points": 134.52,
+          "win_probability": 0.44,
           "code": "ANT"
         },
         {
           "team_key": "470.l.102586.t.10",
           "name": "TB12 of Ass/Cousin Fucker",
           "points": 0.0,
-          "projected_points": 132.1,
-          "win_probability": 0.55,
+          "projected_points": 132.26,
+          "win_probability": 0.56,
           "code": "JD"
         }
       ]
@@ -66,7 +66,7 @@
       ],
       "faab_balance": 49,
       "waiver_priority": 10,
-      "number_of_moves": 15,
+      "number_of_moves": 16,
       "standing": {
         "team_key": "470.l.102586.t.1",
         "name": "SHOWSTOPPERS",
@@ -255,28 +255,6 @@
           "points_week": null
         },
         {
-          "player_key": "470.p.41087",
-          "player_id": 41087,
-          "name": "Ryan Flournoy",
-          "nfl_team": "Dal",
-          "position": "WR",
-          "eligible_positions": [
-            "WR",
-            "W/R/T"
-          ],
-          "status": "",
-          "status_full": null,
-          "injury_note": null,
-          "bye_week": 14,
-          "slot": "BN",
-          "percent_owned": null,
-          "ownership_type": null,
-          "owner_team_key": null,
-          "waiver_date": null,
-          "points": null,
-          "points_week": null
-        },
-        {
           "player_key": "470.p.41900",
           "player_id": 41900,
           "name": "Bhayshul Tuten",
@@ -378,6 +356,28 @@
           "status_full": null,
           "injury_note": null,
           "bye_week": 8,
+          "slot": "BN",
+          "percent_owned": null,
+          "ownership_type": null,
+          "owner_team_key": null,
+          "waiver_date": null,
+          "points": null,
+          "points_week": null
+        },
+        {
+          "player_key": "470.p.40883",
+          "player_id": 40883,
+          "name": "Brian Thomas Jr.",
+          "nfl_team": "Jax",
+          "position": "WR",
+          "eligible_positions": [
+            "WR",
+            "W/R/T"
+          ],
+          "status": "",
+          "status_full": null,
+          "injury_note": null,
+          "bye_week": 7,
           "slot": "BN",
           "percent_owned": null,
           "ownership_type": null,
@@ -791,9 +791,9 @@
             "RB",
             "W/R/T"
           ],
-          "status": "Q",
-          "status_full": "Questionable",
-          "injury_note": "Concussion",
+          "status": "",
+          "status_full": null,
+          "injury_note": null,
           "bye_week": 8,
           "slot": "BN",
           "percent_owned": null,
@@ -1047,28 +1047,6 @@
           "points_week": null
         },
         {
-          "player_key": "470.p.40232",
-          "player_id": 40232,
-          "name": "Xavier Hutchinson",
-          "nfl_team": "Hou",
-          "position": "WR",
-          "eligible_positions": [
-            "WR",
-            "W/R/T"
-          ],
-          "status": "",
-          "status_full": null,
-          "injury_note": null,
-          "bye_week": 8,
-          "slot": "W/R/T",
-          "percent_owned": null,
-          "ownership_type": null,
-          "owner_team_key": null,
-          "waiver_date": null,
-          "points": null,
-          "points_week": null
-        },
-        {
           "player_key": "470.p.40901",
           "player_id": 40901,
           "name": "Rome Odunze",
@@ -1104,6 +1082,28 @@
           "status_full": null,
           "injury_note": null,
           "bye_week": 9,
+          "slot": "W/R/T",
+          "percent_owned": null,
+          "ownership_type": null,
+          "owner_team_key": null,
+          "waiver_date": null,
+          "points": null,
+          "points_week": null
+        },
+        {
+          "player_key": "470.p.40232",
+          "player_id": 40232,
+          "name": "Xavier Hutchinson",
+          "nfl_team": "Hou",
+          "position": "WR",
+          "eligible_positions": [
+            "WR",
+            "W/R/T"
+          ],
+          "status": "",
+          "status_full": null,
+          "injury_note": null,
+          "bye_week": 8,
           "slot": "BN",
           "percent_owned": null,
           "ownership_type": null,
@@ -1164,10 +1164,11 @@
           "position": "WR",
           "eligible_positions": [
             "WR",
-            "W/R/T"
+            "W/R/T",
+            "IR"
           ],
-          "status": "Q",
-          "status_full": "Questionable",
+          "status": "O",
+          "status_full": "Out",
           "injury_note": "Hamstring",
           "bye_week": 11,
           "slot": "BN",
@@ -1582,10 +1583,11 @@
           "position": "TE",
           "eligible_positions": [
             "TE",
-            "W/R/T"
+            "W/R/T",
+            "IR"
           ],
-          "status": "Q",
-          "status_full": "Questionable",
+          "status": "O",
+          "status_full": "Out",
           "injury_note": "Hamstring",
           "bye_week": 8,
           "slot": "BN",
@@ -1716,7 +1718,7 @@
       ],
       "faab_balance": 2,
       "waiver_priority": 9,
-      "number_of_moves": 36,
+      "number_of_moves": 37,
       "standing": {
         "team_key": "470.l.102586.t.5",
         "name": "King Kong",
@@ -1817,18 +1819,18 @@
           "points_week": null
         },
         {
-          "player_key": "470.p.40234",
-          "player_id": 40234,
-          "name": "Parker Washington",
+          "player_key": "470.p.42813",
+          "player_id": 42813,
+          "name": "Josh Cameron",
           "nfl_team": "Jax",
           "position": "WR",
           "eligible_positions": [
             "WR",
             "W/R/T"
           ],
-          "status": "Q",
-          "status_full": "Questionable",
-          "injury_note": "Shoulder",
+          "status": "",
+          "status_full": null,
+          "injury_note": null,
           "bye_week": 7,
           "slot": "WR",
           "percent_owned": null,
@@ -1905,6 +1907,29 @@
           "points_week": null
         },
         {
+          "player_key": "470.p.40234",
+          "player_id": 40234,
+          "name": "Parker Washington",
+          "nfl_team": "Jax",
+          "position": "WR",
+          "eligible_positions": [
+            "WR",
+            "W/R/T",
+            "IR"
+          ],
+          "status": "O",
+          "status_full": "Out",
+          "injury_note": "Shoulder",
+          "bye_week": 7,
+          "slot": "BN",
+          "percent_owned": null,
+          "ownership_type": null,
+          "owner_team_key": null,
+          "waiver_date": null,
+          "points": null,
+          "points_week": null
+        },
+        {
           "player_key": "470.p.31056",
           "player_id": 31056,
           "name": "Mark Andrews",
@@ -1936,9 +1961,9 @@
             "TE",
             "W/R/T"
           ],
-          "status": "Q",
-          "status_full": "Questionable",
-          "injury_note": "Illness",
+          "status": "",
+          "status_full": null,
+          "injury_note": null,
           "bye_week": 8,
           "slot": "BN",
           "percent_owned": null,
@@ -1956,10 +1981,11 @@
           "position": "WR",
           "eligible_positions": [
             "WR",
-            "W/R/T"
+            "W/R/T",
+            "IR"
           ],
-          "status": "D",
-          "status_full": "Doubtful",
+          "status": "O",
+          "status_full": "Out",
           "injury_note": "Hamstring",
           "bye_week": 11,
           "slot": "BN",
@@ -2006,28 +2032,6 @@
           "status": "O",
           "status_full": "Out",
           "injury_note": "Finger",
-          "bye_week": 11,
-          "slot": "BN",
-          "percent_owned": null,
-          "ownership_type": null,
-          "owner_team_key": null,
-          "waiver_date": null,
-          "points": null,
-          "points_week": null
-        },
-        {
-          "player_key": "470.p.40971",
-          "player_id": 40971,
-          "name": "MarShawn Lloyd",
-          "nfl_team": "GB",
-          "position": "RB",
-          "eligible_positions": [
-            "RB",
-            "W/R/T"
-          ],
-          "status": "",
-          "status_full": null,
-          "injury_note": null,
           "bye_week": 11,
           "slot": "BN",
           "percent_owned": null,
@@ -2638,9 +2642,9 @@
             "WR",
             "W/R/T"
           ],
-          "status": "",
-          "status_full": null,
-          "injury_note": null,
+          "status": "Q",
+          "status_full": "Questionable",
+          "injury_note": "Hamstring",
           "bye_week": 6,
           "slot": "WR",
           "percent_owned": null,
@@ -2791,10 +2795,11 @@
           "position": "WR",
           "eligible_positions": [
             "WR",
-            "W/R/T"
+            "W/R/T",
+            "IR"
           ],
-          "status": "Q",
-          "status_full": "Questionable",
+          "status": "O",
+          "status_full": "Out",
           "injury_note": "Ankle",
           "bye_week": 13,
           "slot": "BN",
@@ -4723,8 +4728,8 @@
             "TE",
             "W/R/T"
           ],
-          "status": "Q",
-          "status_full": "Questionable",
+          "status": "D",
+          "status_full": "Doubtful",
           "injury_note": "Knee",
           "bye_week": 10,
           "slot": "TE",
@@ -4988,17 +4993,17 @@
         {
           "team_key": "470.l.102586.t.1",
           "name": "SHOWSTOPPERS",
-          "points": 82.04,
-          "projected_points": 147.11,
-          "win_probability": 0.63,
+          "points": 84.54,
+          "projected_points": 147.17,
+          "win_probability": 0.58,
           "code": "BE"
         },
         {
           "team_key": "470.l.102586.t.4",
           "name": "“Busted Ass Lucky”- Mr. U",
           "points": 59.0,
-          "projected_points": 140.29,
-          "win_probability": 0.37,
+          "projected_points": 141.79,
+          "win_probability": 0.42,
           "code": "TM"
         }
       ]
@@ -5013,16 +5018,16 @@
           "team_key": "470.l.102586.t.2",
           "name": "CLIN-TON POR-TIS",
           "points": 64.86,
-          "projected_points": 131.52,
-          "win_probability": 0.55,
+          "projected_points": 131.28,
+          "win_probability": 0.56,
           "code": "MC"
         },
         {
           "team_key": "470.l.102586.t.6",
           "name": "MattyBAD",
           "points": 4.9,
-          "projected_points": 141.67,
-          "win_probability": 0.45,
+          "projected_points": 140.21,
+          "win_probability": 0.44,
           "code": "MN"
         }
       ]
@@ -5037,16 +5042,16 @@
           "team_key": "470.l.102586.t.3",
           "name": "FOCUS",
           "points": 126.74,
-          "projected_points": 145.3,
-          "win_probability": 0.82,
+          "projected_points": 140.52,
+          "win_probability": 0.77,
           "code": "VV"
         },
         {
           "team_key": "470.l.102586.t.12",
           "name": "X-Factor",
           "points": 22.3,
-          "projected_points": 143.35,
-          "win_probability": 0.18,
+          "projected_points": 142.95,
+          "win_probability": 0.23,
           "code": "JP"
         }
       ]
@@ -5060,17 +5065,17 @@
         {
           "team_key": "470.l.102586.t.5",
           "name": "King Kong",
-          "points": 11.7,
-          "projected_points": 124.56,
-          "win_probability": 0.37,
+          "points": 21.7,
+          "projected_points": 115.01,
+          "win_probability": 0.27,
           "code": "SR"
         },
         {
           "team_key": "470.l.102586.t.9",
           "name": "Brown Rice & Kraft",
           "points": 53.5,
-          "projected_points": 131.35,
-          "win_probability": 0.63,
+          "projected_points": 130.93,
+          "win_probability": 0.73,
           "code": "ME"
         }
       ]
@@ -5085,16 +5090,16 @@
           "team_key": "470.l.102586.t.7",
           "name": "AMON A ROLL",
           "points": 50.72,
-          "projected_points": 134.77,
-          "win_probability": 0.45,
+          "projected_points": 134.52,
+          "win_probability": 0.44,
           "code": "ANT"
         },
         {
           "team_key": "470.l.102586.t.10",
           "name": "TB12 of Ass/Cousin Fucker",
           "points": 0.0,
-          "projected_points": 132.1,
-          "win_probability": 0.55,
+          "projected_points": 132.26,
+          "win_probability": 0.56,
           "code": "JD"
         }
       ]
@@ -5109,22 +5114,52 @@
           "team_key": "470.l.102586.t.8",
           "name": "Pablo Pledgescobars",
           "points": 55.02,
-          "projected_points": 140.7,
-          "win_probability": 0.53,
+          "projected_points": 139.35,
+          "win_probability": 0.54,
           "code": "MM"
         },
         {
           "team_key": "470.l.102586.t.11",
           "name": "The U",
-          "points": 40.3,
-          "projected_points": 135.6,
-          "win_probability": 0.47,
+          "points": 48.5,
+          "projected_points": 136.95,
+          "win_probability": 0.46,
           "code": "JU"
         }
       ]
     }
   ],
   "transactions": [
+    {
+      "timestamp_et": "2026-11-27 11:25",
+      "calendar_day_et": "2026-11-27",
+      "yahoo_transaction_key": "470.l.102586.tr.449",
+      "league": "102586",
+      "yahoo_league_id": "102586",
+      "team": "SR",
+      "team_name": "King Kong",
+      "action": "ADD_DROP",
+      "added": "Josh Cameron",
+      "dropped": "MarShawn Lloyd",
+      "faab_bid": 0,
+      "via": "free_agent",
+      "semantic_key": "102586|SR|ADD_DROP|Josh Cameron|MarShawn Lloyd|2026-11-27"
+    },
+    {
+      "timestamp_et": "2026-11-27 11:04",
+      "calendar_day_et": "2026-11-27",
+      "yahoo_transaction_key": "470.l.102586.tr.448",
+      "league": "102586",
+      "yahoo_league_id": "102586",
+      "team": "BE",
+      "team_name": "SHOWSTOPPERS",
+      "action": "ADD_DROP",
+      "added": "Brian Thomas Jr.",
+      "dropped": "Ryan Flournoy",
+      "faab_bid": 0,
+      "via": "free_agent",
+      "semantic_key": "102586|BE|ADD_DROP|Brian Thomas Jr.|Ryan Flournoy|2026-11-27"
+    },
     {
       "timestamp_et": "2026-11-26 12:41",
       "calendar_day_et": "2026-11-26",
@@ -9907,10 +9942,10 @@
         "injury_note": "Lower Leg",
         "bye_week": 11,
         "slot": null,
-        "percent_owned": 64.0,
-        "ownership_type": "waivers",
+        "percent_owned": 63.0,
+        "ownership_type": "freeagents",
         "owner_team_key": null,
-        "waiver_date": "2026-11-27",
+        "waiver_date": null,
         "points": null,
         "points_week": null
       },
@@ -9928,10 +9963,10 @@
         "injury_note": null,
         "bye_week": 9,
         "slot": null,
-        "percent_owned": 22.0,
-        "ownership_type": "freeagents",
+        "percent_owned": 21.0,
+        "ownership_type": "waivers",
         "owner_team_key": null,
-        "waiver_date": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -10094,12 +10129,12 @@
         "eligible_positions": [
           "QB"
         ],
-        "status": "Q",
-        "status_full": "Questionable",
-        "injury_note": "Hamstring",
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
         "bye_week": 6,
         "slot": null,
-        "percent_owned": 26.0,
+        "percent_owned": 25.0,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
@@ -10188,6 +10223,27 @@
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
+        "points": null,
+        "points_week": null
+      },
+      {
+        "player_key": "470.p.41060",
+        "player_id": 41060,
+        "name": "Joe Milton",
+        "nfl_team": "Phi",
+        "position": "QB",
+        "eligible_positions": [
+          "QB"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 10,
+        "slot": null,
+        "percent_owned": 9.0,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -10362,27 +10418,6 @@
         "points_week": null
       },
       {
-        "player_key": "470.p.41060",
-        "player_id": 41060,
-        "name": "Joe Milton",
-        "nfl_team": "Phi",
-        "position": "QB",
-        "eligible_positions": [
-          "QB"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 10,
-        "slot": null,
-        "percent_owned": 9.0,
-        "ownership_type": "waivers",
-        "owner_team_key": null,
-        "waiver_date": "2026-12-02",
-        "points": null,
-        "points_week": null
-      },
-      {
         "player_key": "470.p.41971",
         "player_id": 41971,
         "name": "Kyle McCord",
@@ -10463,10 +10498,32 @@
         "injury_note": null,
         "bye_week": 7,
         "slot": null,
-        "percent_owned": 8.0,
+        "percent_owned": 7.0,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
+        "points": null,
+        "points_week": null
+      },
+      {
+        "player_key": "470.p.40971",
+        "player_id": 40971,
+        "name": "MarShawn Lloyd",
+        "nfl_team": "GB",
+        "position": "RB",
+        "eligible_positions": [
+          "RB",
+          "W/R/T"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 11,
+        "slot": null,
+        "percent_owned": 23.0,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -10493,28 +10550,6 @@
         "points_week": null
       },
       {
-        "player_key": "470.p.41054",
-        "player_id": 41054,
-        "name": "Dylan Laube",
-        "nfl_team": "LV",
-        "position": "RB",
-        "eligible_positions": [
-          "RB",
-          "W/R/T"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 13,
-        "slot": null,
-        "percent_owned": 1.0,
-        "ownership_type": "freeagents",
-        "owner_team_key": null,
-        "waiver_date": null,
-        "points": null,
-        "points_week": null
-      },
-      {
         "player_key": "470.p.32018",
         "player_id": 32018,
         "name": "Ty Johnson",
@@ -10533,6 +10568,28 @@
         "ownership_type": "waivers",
         "owner_team_key": null,
         "waiver_date": "2026-12-02",
+        "points": null,
+        "points_week": null
+      },
+      {
+        "player_key": "470.p.41054",
+        "player_id": 41054,
+        "name": "Dylan Laube",
+        "nfl_team": "LV",
+        "position": "RB",
+        "eligible_positions": [
+          "RB",
+          "W/R/T"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 13,
+        "slot": null,
+        "percent_owned": 1.0,
+        "ownership_type": "freeagents",
+        "owner_team_key": null,
+        "waiver_date": null,
         "points": null,
         "points_week": null
       },
@@ -10626,6 +10683,28 @@
         "points_week": null
       },
       {
+        "player_key": "470.p.41006",
+        "player_id": 41006,
+        "name": "Sione Vaki",
+        "nfl_team": "Det",
+        "position": "RB",
+        "eligible_positions": [
+          "RB",
+          "W/R/T"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 6,
+        "slot": null,
+        "percent_owned": 2.0,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-12-02",
+        "points": null,
+        "points_week": null
+      },
+      {
         "player_key": "470.p.42235",
         "player_id": 42235,
         "name": "Anthony Tyus III",
@@ -10667,28 +10746,6 @@
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
-        "points": null,
-        "points_week": null
-      },
-      {
-        "player_key": "470.p.41006",
-        "player_id": 41006,
-        "name": "Sione Vaki",
-        "nfl_team": "Det",
-        "position": "RB",
-        "eligible_positions": [
-          "RB",
-          "W/R/T"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 6,
-        "slot": null,
-        "percent_owned": 3.0,
-        "ownership_type": "waivers",
-        "owner_team_key": null,
-        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -10738,6 +10795,28 @@
         "points_week": null
       },
       {
+        "player_key": "470.p.41002",
+        "player_id": 41002,
+        "name": "Will Shipley",
+        "nfl_team": "Phi",
+        "position": "RB",
+        "eligible_positions": [
+          "RB",
+          "W/R/T"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 10,
+        "slot": null,
+        "percent_owned": 3.0,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-12-02",
+        "points": null,
+        "points_week": null
+      },
+      {
         "player_key": "470.p.34261",
         "player_id": 34261,
         "name": "Tyler Goodson",
@@ -10754,6 +10833,28 @@
         "bye_week": 14,
         "slot": null,
         "percent_owned": null,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-12-02",
+        "points": null,
+        "points_week": null
+      },
+      {
+        "player_key": "470.p.40980",
+        "player_id": 40980,
+        "name": "Ray Davis",
+        "nfl_team": "Buf",
+        "position": "RB",
+        "eligible_positions": [
+          "RB",
+          "W/R/T"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 7,
+        "slot": null,
+        "percent_owned": 3.0,
         "ownership_type": "waivers",
         "owner_team_key": null,
         "waiver_date": "2026-12-02",
@@ -10851,50 +10952,6 @@
         "points_week": null
       },
       {
-        "player_key": "470.p.40980",
-        "player_id": 40980,
-        "name": "Ray Davis",
-        "nfl_team": "Buf",
-        "position": "RB",
-        "eligible_positions": [
-          "RB",
-          "W/R/T"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 7,
-        "slot": null,
-        "percent_owned": 4.0,
-        "ownership_type": "waivers",
-        "owner_team_key": null,
-        "waiver_date": "2026-12-02",
-        "points": null,
-        "points_week": null
-      },
-      {
-        "player_key": "470.p.41002",
-        "player_id": 41002,
-        "name": "Will Shipley",
-        "nfl_team": "Phi",
-        "position": "RB",
-        "eligible_positions": [
-          "RB",
-          "W/R/T"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 10,
-        "slot": null,
-        "percent_owned": 3.0,
-        "ownership_type": "waivers",
-        "owner_team_key": null,
-        "waiver_date": "2026-12-02",
-        "points": null,
-        "points_week": null
-      },
-      {
         "player_key": "470.p.33605",
         "player_id": 33605,
         "name": "Khalil Herbert",
@@ -10958,6 +11015,28 @@
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
+        "points": null,
+        "points_week": null
+      },
+      {
+        "player_key": "470.p.40474",
+        "player_id": 40474,
+        "name": "Jacob Saylors",
+        "nfl_team": "Det",
+        "position": "RB",
+        "eligible_positions": [
+          "RB",
+          "W/R/T"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 6,
+        "slot": null,
+        "percent_owned": null,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -11081,15 +11160,15 @@
           "RB",
           "W/R/T"
         ],
-        "status": "Q",
-        "status_full": "Questionable",
-        "injury_note": "Thumb",
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
         "bye_week": 10,
         "slot": null,
         "percent_owned": null,
-        "ownership_type": "freeagents",
+        "ownership_type": "waivers",
         "owner_team_key": null,
-        "waiver_date": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -11110,9 +11189,9 @@
         "bye_week": 9,
         "slot": null,
         "percent_owned": 1.0,
-        "ownership_type": "freeagents",
+        "ownership_type": "waivers",
         "owner_team_key": null,
-        "waiver_date": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -11152,28 +11231,6 @@
         "status_full": null,
         "injury_note": null,
         "bye_week": 11,
-        "slot": null,
-        "percent_owned": null,
-        "ownership_type": "waivers",
-        "owner_team_key": null,
-        "waiver_date": "2026-12-02",
-        "points": null,
-        "points_week": null
-      },
-      {
-        "player_key": "470.p.40474",
-        "player_id": 40474,
-        "name": "Jacob Saylors",
-        "nfl_team": "Det",
-        "position": "RB",
-        "eligible_positions": [
-          "RB",
-          "W/R/T"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 6,
         "slot": null,
         "percent_owned": null,
         "ownership_type": "waivers",
@@ -11316,6 +11373,28 @@
         "points_week": null
       },
       {
+        "player_key": "470.p.33265",
+        "player_id": 33265,
+        "name": "Salvon Ahmed",
+        "nfl_team": "Chi",
+        "position": "RB",
+        "eligible_positions": [
+          "RB",
+          "W/R/T"
+        ],
+        "status": "NA",
+        "status_full": "Inactive: Coach's Decision or Not on Roster",
+        "injury_note": null,
+        "bye_week": 10,
+        "slot": null,
+        "percent_owned": null,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-12-02",
+        "points": null,
+        "points_week": null
+      },
+      {
         "player_key": "470.p.42809",
         "player_id": 42809,
         "name": "Kaytron Allen",
@@ -11353,9 +11432,9 @@
         "bye_week": 9,
         "slot": null,
         "percent_owned": null,
-        "ownership_type": "freeagents",
+        "ownership_type": "waivers",
         "owner_team_key": null,
-        "waiver_date": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -11471,29 +11550,6 @@
         "points_week": null
       },
       {
-        "player_key": "470.p.40926",
-        "player_id": 40926,
-        "name": "Jonathon Brooks",
-        "nfl_team": "Car",
-        "position": "RB",
-        "eligible_positions": [
-          "RB",
-          "W/R/T",
-          "IR"
-        ],
-        "status": "IR-R",
-        "status_full": "Injured Reserve - Designated for Return",
-        "injury_note": "Groin",
-        "bye_week": 5,
-        "slot": null,
-        "percent_owned": 36.0,
-        "ownership_type": "freeagents",
-        "owner_team_key": null,
-        "waiver_date": null,
-        "points": null,
-        "points_week": null
-      },
-      {
         "player_key": "470.p.40780",
         "player_id": 40780,
         "name": "Hunter Luepke",
@@ -11512,29 +11568,6 @@
         "ownership_type": "waivers",
         "owner_team_key": null,
         "waiver_date": "2026-12-02",
-        "points": null,
-        "points_week": null
-      },
-      {
-        "player_key": "470.p.40519",
-        "player_id": 40519,
-        "name": "Brady Russell",
-        "nfl_team": "Sea",
-        "position": "RB,TE",
-        "eligible_positions": [
-          "RB",
-          "TE",
-          "W/R/T"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 11,
-        "slot": null,
-        "percent_owned": null,
-        "ownership_type": "freeagents",
-        "owner_team_key": null,
-        "waiver_date": null,
         "points": null,
         "points_week": null
       }
@@ -11587,6 +11620,28 @@
         "points_week": null
       },
       {
+        "player_key": "470.p.41087",
+        "player_id": 41087,
+        "name": "Ryan Flournoy",
+        "nfl_team": "Dal",
+        "position": "WR",
+        "eligible_positions": [
+          "WR",
+          "W/R/T"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 14,
+        "slot": null,
+        "percent_owned": 61.0,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-12-02",
+        "points": null,
+        "points_week": null
+      },
+      {
         "player_key": "470.p.42616",
         "player_id": 42616,
         "name": "Dohnte Meyers",
@@ -11605,6 +11660,28 @@
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
+        "points": null,
+        "points_week": null
+      },
+      {
+        "player_key": "470.p.42642",
+        "player_id": 42642,
+        "name": "Makai Lemon",
+        "nfl_team": "Phi",
+        "position": "WR",
+        "eligible_positions": [
+          "WR",
+          "W/R/T"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 10,
+        "slot": null,
+        "percent_owned": 40.0,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -11641,12 +11718,12 @@
           "WR",
           "W/R/T"
         ],
-        "status": "Q",
-        "status_full": "Questionable",
-        "injury_note": "Knee",
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
         "bye_week": 6,
         "slot": null,
-        "percent_owned": 7.0,
+        "percent_owned": 6.0,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
@@ -11699,50 +11776,6 @@
         "points_week": null
       },
       {
-        "player_key": "470.p.42813",
-        "player_id": 42813,
-        "name": "Josh Cameron",
-        "nfl_team": "Jax",
-        "position": "WR",
-        "eligible_positions": [
-          "WR",
-          "W/R/T"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 7,
-        "slot": null,
-        "percent_owned": 1.0,
-        "ownership_type": "freeagents",
-        "owner_team_key": null,
-        "waiver_date": null,
-        "points": null,
-        "points_week": null
-      },
-      {
-        "player_key": "470.p.42642",
-        "player_id": 42642,
-        "name": "Makai Lemon",
-        "nfl_team": "Phi",
-        "position": "WR",
-        "eligible_positions": [
-          "WR",
-          "W/R/T"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 10,
-        "slot": null,
-        "percent_owned": 40.0,
-        "ownership_type": "waivers",
-        "owner_team_key": null,
-        "waiver_date": "2026-12-02",
-        "points": null,
-        "points_week": null
-      },
-      {
         "player_key": "470.p.40224",
         "player_id": 40224,
         "name": "Kayshon Boutte",
@@ -11750,10 +11783,11 @@
         "position": "WR",
         "eligible_positions": [
           "WR",
-          "W/R/T"
+          "W/R/T",
+          "IR"
         ],
-        "status": "Q",
-        "status_full": "Questionable",
+        "status": "O",
+        "status_full": "Out",
         "injury_note": "Hip",
         "bye_week": 8,
         "slot": null,
@@ -11761,6 +11795,28 @@
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
+        "points": null,
+        "points_week": null
+      },
+      {
+        "player_key": "470.p.34709",
+        "player_id": 34709,
+        "name": "KaVontae Turpin",
+        "nfl_team": "Dal",
+        "position": "WR",
+        "eligible_positions": [
+          "WR",
+          "W/R/T"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 14,
+        "slot": null,
+        "percent_owned": 5.0,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -11845,10 +11901,32 @@
         "injury_note": null,
         "bye_week": 7,
         "slot": null,
-        "percent_owned": 7.0,
+        "percent_owned": 6.0,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
+        "points": null,
+        "points_week": null
+      },
+      {
+        "player_key": "470.p.42711",
+        "player_id": 42711,
+        "name": "Zavion Thomas",
+        "nfl_team": "Chi",
+        "position": "WR",
+        "eligible_positions": [
+          "WR",
+          "W/R/T"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 10,
+        "slot": null,
+        "percent_owned": 1.0,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -11867,32 +11945,10 @@
         "injury_note": null,
         "bye_week": 9,
         "slot": null,
-        "percent_owned": 23.0,
-        "ownership_type": "waivers",
+        "percent_owned": 22.0,
+        "ownership_type": "freeagents",
         "owner_team_key": null,
-        "waiver_date": "2026-11-27",
-        "points": null,
-        "points_week": null
-      },
-      {
-        "player_key": "470.p.34709",
-        "player_id": 34709,
-        "name": "KaVontae Turpin",
-        "nfl_team": "Dal",
-        "position": "WR",
-        "eligible_positions": [
-          "WR",
-          "W/R/T"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 14,
-        "slot": null,
-        "percent_owned": 5.0,
-        "ownership_type": "waivers",
-        "owner_team_key": null,
-        "waiver_date": "2026-12-02",
+        "waiver_date": null,
         "points": null,
         "points_week": null
       },
@@ -11972,9 +12028,9 @@
           "WR",
           "W/R/T"
         ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
+        "status": "Q",
+        "status_full": "Questionable",
+        "injury_note": "Illness",
         "bye_week": 10,
         "slot": null,
         "percent_owned": null,
@@ -11992,39 +12048,18 @@
         "position": "WR",
         "eligible_positions": [
           "WR",
-          "W/R/T"
+          "W/R/T",
+          "IR"
         ],
-        "status": "D",
-        "status_full": "Doubtful",
+        "status": "O",
+        "status_full": "Out",
         "injury_note": "Thumb",
         "bye_week": 6,
         "slot": null,
-        "percent_owned": 58.0,
+        "percent_owned": 57.0,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
-        "points": null,
-        "points_week": null
-      },
-      {
-        "player_key": "470.p.42711",
-        "player_id": 42711,
-        "name": "Zavion Thomas",
-        "nfl_team": "Chi",
-        "position": "WR",
-        "eligible_positions": [
-          "WR",
-          "W/R/T"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 10,
-        "slot": null,
-        "percent_owned": 1.0,
-        "ownership_type": "waivers",
-        "owner_team_key": null,
-        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -12134,28 +12169,6 @@
         "bye_week": 13,
         "slot": null,
         "percent_owned": 2.0,
-        "ownership_type": "freeagents",
-        "owner_team_key": null,
-        "waiver_date": null,
-        "points": null,
-        "points_week": null
-      },
-      {
-        "player_key": "470.p.40883",
-        "player_id": 40883,
-        "name": "Brian Thomas Jr.",
-        "nfl_team": "Jax",
-        "position": "WR",
-        "eligible_positions": [
-          "WR",
-          "W/R/T"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 7,
-        "slot": null,
-        "percent_owned": 30.0,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
@@ -12400,9 +12413,9 @@
         "bye_week": 10,
         "slot": null,
         "percent_owned": 2.0,
-        "ownership_type": "freeagents",
+        "ownership_type": "waivers",
         "owner_team_key": null,
-        "waiver_date": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -12447,6 +12460,28 @@
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
+        "points": null,
+        "points_week": null
+      },
+      {
+        "player_key": "470.p.32523",
+        "player_id": 32523,
+        "name": "Greg Dortch",
+        "nfl_team": "Buf",
+        "position": "WR",
+        "eligible_positions": [
+          "WR",
+          "W/R/T"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 7,
+        "slot": null,
+        "percent_owned": null,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -12504,32 +12539,10 @@
           "WR",
           "W/R/T"
         ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
+        "status": "NA",
+        "status_full": "Inactive: Coach's Decision or Not on Roster",
+        "injury_note": "Coach's Decision",
         "bye_week": 9,
-        "slot": null,
-        "percent_owned": null,
-        "ownership_type": "freeagents",
-        "owner_team_key": null,
-        "waiver_date": null,
-        "points": null,
-        "points_week": null
-      },
-      {
-        "player_key": "470.p.32523",
-        "player_id": 32523,
-        "name": "Greg Dortch",
-        "nfl_team": "Buf",
-        "position": "WR",
-        "eligible_positions": [
-          "WR",
-          "W/R/T"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 7,
         "slot": null,
         "percent_owned": null,
         "ownership_type": "waivers",
@@ -12583,6 +12596,28 @@
         "points_week": null
       },
       {
+        "player_key": "470.p.42773",
+        "player_id": 42773,
+        "name": "Cyrus Allen",
+        "nfl_team": "KC",
+        "position": "WR",
+        "eligible_positions": [
+          "WR",
+          "W/R/T"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 5,
+        "slot": null,
+        "percent_owned": 1.0,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-12-02",
+        "points": null,
+        "points_week": null
+      },
+      {
         "player_key": "470.p.40257",
         "player_id": 40257,
         "name": "Jalen Brooks",
@@ -12613,10 +12648,11 @@
         "position": "WR",
         "eligible_positions": [
           "WR",
-          "W/R/T"
+          "W/R/T",
+          "IR"
         ],
-        "status": "Q",
-        "status_full": "Questionable",
+        "status": "O",
+        "status_full": "Out",
         "injury_note": "Hamstring",
         "bye_week": 11,
         "slot": null,
@@ -12667,9 +12703,9 @@
         "bye_week": 13,
         "slot": null,
         "percent_owned": 27.0,
-        "ownership_type": "waivers",
+        "ownership_type": "freeagents",
         "owner_team_key": null,
-        "waiver_date": "2026-11-27",
+        "waiver_date": null,
         "points": null,
         "points_week": null
       },
@@ -12711,9 +12747,9 @@
         "bye_week": 9,
         "slot": null,
         "percent_owned": 4.0,
-        "ownership_type": "freeagents",
+        "ownership_type": "waivers",
         "owner_team_key": null,
-        "waiver_date": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -12754,7 +12790,7 @@
         "injury_note": null,
         "bye_week": 11,
         "slot": null,
-        "percent_owned": 8.0,
+        "percent_owned": 9.0,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
@@ -12866,31 +12902,9 @@
         "bye_week": 10,
         "slot": null,
         "percent_owned": 3.0,
-        "ownership_type": "freeagents",
+        "ownership_type": "waivers",
         "owner_team_key": null,
-        "waiver_date": null,
-        "points": null,
-        "points_week": null
-      },
-      {
-        "player_key": "470.p.41905",
-        "player_id": 41905,
-        "name": "Gunnar Helm",
-        "nfl_team": "Ten",
-        "position": "TE",
-        "eligible_positions": [
-          "TE",
-          "W/R/T"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 9,
-        "slot": null,
-        "percent_owned": 2.0,
-        "ownership_type": "freeagents",
-        "owner_team_key": null,
-        "waiver_date": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -12913,6 +12927,28 @@
         "ownership_type": "waivers",
         "owner_team_key": null,
         "waiver_date": "2026-12-02",
+        "points": null,
+        "points_week": null
+      },
+      {
+        "player_key": "470.p.41905",
+        "player_id": 41905,
+        "name": "Gunnar Helm",
+        "nfl_team": "Ten",
+        "position": "TE",
+        "eligible_positions": [
+          "TE",
+          "W/R/T"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 9,
+        "slot": null,
+        "percent_owned": 2.0,
+        "ownership_type": "freeagents",
+        "owner_team_key": null,
+        "waiver_date": null,
         "points": null,
         "points_week": null
       },
@@ -12948,8 +12984,8 @@
           "TE",
           "W/R/T"
         ],
-        "status": "Q",
-        "status_full": "Questionable",
+        "status": "D",
+        "status_full": "Doubtful",
         "injury_note": "Ankle",
         "bye_week": 11,
         "slot": null,
@@ -12992,15 +13028,37 @@
           "TE",
           "W/R/T"
         ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
+        "status": "Q",
+        "status_full": "Questionable",
+        "injury_note": "Calf",
         "bye_week": 8,
         "slot": null,
         "percent_owned": null,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
+        "points": null,
+        "points_week": null
+      },
+      {
+        "player_key": "470.p.41371",
+        "player_id": 41371,
+        "name": "Brevyn Spann-Ford",
+        "nfl_team": "Dal",
+        "position": "TE",
+        "eligible_positions": [
+          "TE",
+          "W/R/T"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 14,
+        "slot": null,
+        "percent_owned": 1.0,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -13064,28 +13122,6 @@
         "bye_week": 11,
         "slot": null,
         "percent_owned": 2.0,
-        "ownership_type": "waivers",
-        "owner_team_key": null,
-        "waiver_date": "2026-12-02",
-        "points": null,
-        "points_week": null
-      },
-      {
-        "player_key": "470.p.41371",
-        "player_id": 41371,
-        "name": "Brevyn Spann-Ford",
-        "nfl_team": "Dal",
-        "position": "TE",
-        "eligible_positions": [
-          "TE",
-          "W/R/T"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 14,
-        "slot": null,
-        "percent_owned": 1.0,
         "ownership_type": "waivers",
         "owner_team_key": null,
         "waiver_date": "2026-12-02",
@@ -13196,9 +13232,9 @@
         "bye_week": 10,
         "slot": null,
         "percent_owned": null,
-        "ownership_type": "freeagents",
+        "ownership_type": "waivers",
         "owner_team_key": null,
-        "waiver_date": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       }
@@ -13239,7 +13275,7 @@
         "injury_note": null,
         "bye_week": 8,
         "slot": null,
-        "percent_owned": 17.0,
+        "percent_owned": 18.0,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
@@ -13263,7 +13299,7 @@
         "percent_owned": 30.0,
         "ownership_type": "waivers",
         "owner_team_key": null,
-        "waiver_date": "2026-11-27",
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -13281,7 +13317,7 @@
         "injury_note": null,
         "bye_week": 7,
         "slot": null,
-        "percent_owned": 17.0,
+        "percent_owned": 18.0,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
@@ -13429,9 +13465,9 @@
         "bye_week": 10,
         "slot": null,
         "percent_owned": 23.0,
-        "ownership_type": "freeagents",
+        "ownership_type": "waivers",
         "owner_team_key": null,
-        "waiver_date": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -13453,6 +13489,27 @@
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
+        "points": null,
+        "points_week": null
+      },
+      {
+        "player_key": "470.p.30266",
+        "player_id": 30266,
+        "name": "Jake Elliott",
+        "nfl_team": "Phi",
+        "position": "K",
+        "eligible_positions": [
+          "K"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 10,
+        "slot": null,
+        "percent_owned": 3.0,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -13496,27 +13553,6 @@
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
-        "points": null,
-        "points_week": null
-      },
-      {
-        "player_key": "470.p.30266",
-        "player_id": 30266,
-        "name": "Jake Elliott",
-        "nfl_team": "Phi",
-        "position": "K",
-        "eligible_positions": [
-          "K"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 10,
-        "slot": null,
-        "percent_owned": 3.0,
-        "ownership_type": "waivers",
-        "owner_team_key": null,
-        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -13818,6 +13854,27 @@
         "points_week": null
       },
       {
+        "player_key": "470.p.100006",
+        "player_id": 100006,
+        "name": "Cowboys",
+        "nfl_team": "Dal",
+        "position": "DEF",
+        "eligible_positions": [
+          "DEF"
+        ],
+        "status": "",
+        "status_full": null,
+        "injury_note": null,
+        "bye_week": 14,
+        "slot": null,
+        "percent_owned": 32.0,
+        "ownership_type": "waivers",
+        "owner_team_key": null,
+        "waiver_date": "2026-12-02",
+        "points": null,
+        "points_week": null
+      },
+      {
         "player_key": "470.p.100033",
         "player_id": 100033,
         "name": "Ravens",
@@ -13873,7 +13930,7 @@
         "injury_note": null,
         "bye_week": 9,
         "slot": null,
-        "percent_owned": 3.0,
+        "percent_owned": 2.0,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
@@ -13898,27 +13955,6 @@
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
-        "points": null,
-        "points_week": null
-      },
-      {
-        "player_key": "470.p.100006",
-        "player_id": 100006,
-        "name": "Cowboys",
-        "nfl_team": "Dal",
-        "position": "DEF",
-        "eligible_positions": [
-          "DEF"
-        ],
-        "status": "",
-        "status_full": null,
-        "injury_note": null,
-        "bye_week": 14,
-        "slot": null,
-        "percent_owned": 32.0,
-        "ownership_type": "waivers",
-        "owner_team_key": null,
-        "waiver_date": "2026-12-02",
         "points": null,
         "points_week": null
       },
@@ -13978,7 +14014,7 @@
         "injury_note": null,
         "bye_week": 7,
         "slot": null,
-        "percent_owned": 27.0,
+        "percent_owned": 26.0,
         "ownership_type": "freeagents",
         "owner_team_key": null,
         "waiver_date": null,
