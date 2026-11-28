@@ -2,54 +2,55 @@
 
 _Intelligence for the Brain, not a recorded recommendation. Waiver availability is **unconfirmed** until checked on Yahoo._
 
-FAAB: **$9** (min bid $1) · FantasyPros pulled 2026-11-24T22:59:41+00:00 · roster as of 2026-11-04T11:21:53-05:00
+FAAB: **$9** (min bid $1) · FantasyPros pulled 2026-11-28T20:51:58+00:00 · roster as of 2026-11-04T11:21:53-05:00
 
 ## Lineup
 
 | Slot | Player | Proj (PPR) | Week rank |
 |---|---|---|---|
-| QB | Geno Smith | 16.76 | 23 |
-| RB | Bijan Robinson | 18.31 | 8 |
-| RB | Breece Hall | 13.95 | 29 |
-| WR | Jaxon Smith-Njigba | 22.57 | 3 |
-| WR | Tetairoa McMillan | 13.84 | 45 |
-| TE | Mike Gesicki | 8.03 | 88 |
-| W/R/T | Dylan Sampson | 9.79 | 93 |
-| W/R/T | Braelon Allen | 8.67 | 85 |
-| K | Evan McPherson | 8.68 | 6 |
-| DEF | Saints | 4.95 | 29 |
+| QB | Geno Smith | 16.9 | 23 |
+| RB | Bijan Robinson | 18.86 | 7 |
+| RB | Breece Hall | 13.87 | 30 |
+| WR | Jaxon Smith-Njigba | 22.36 | 3 |
+| WR | Tetairoa McMillan | 14.03 | 44 |
+| TE | Mike Gesicki | 7.62 | 89 |
+| W/R/T | Dylan Sampson | 9.55 | 77 |
+| W/R/T | Braelon Allen | 9.25 | 82 |
+| K | Evan McPherson | 8.65 | 5 |
+| DEF | Saints | 4.9 | 30 |
 
-Projected: current starters **119.52** → suggested **125.55**
+Projected: current starters **119.94** → suggested **125.99**
 Changes: start Breece Hall; bench Devaughn Vele
 
 ## Waiver targets
 
 | Pri | Player | Pos | FP waiver # | ROS rank | Yahoo % | Replaces | In Sparta |
 |---|---|---|---|---|---|---|---|
-| HIGH | Justice Hill (BAL) | RB | 5 | 169 | 21% | Emanuel Wilson | verify (likely free) |
-| MEDIUM | Ted Hurst III (TB) | WR | 6 | 121 | 1% | Devaughn Vele | verify (likely free) |
-| MEDIUM | Darren Waller (CAR) | TE | 10 | 128 | 23% | Greg Dulcich | verify (likely free) |
-| MEDIUM | Tre' Harris (LAC) | WR | — | 96 | 8% | Devaughn Vele | verify (likely free) |
-| MEDIUM | Kaleb Johnson (GB) | RB | — | 165 | 9% | Emanuel Wilson | verify (likely free) |
-| MEDIUM | Kimani Vidal (LAC) | RB | — | 178 | 8% | Emanuel Wilson | verify (likely free) |
-| MEDIUM | RJ Harvey (DEN) | RB | — | 179 | 48% | Emanuel Wilson | verify |
-| LOW | Will Shipley (PHI) | RB | 13 | 191 | 2% | Emanuel Wilson | verify (likely free) |
-| LOW | Chimere Dike (TEN) | WR | 15 | 105 | 13% | Devaughn Vele | verify (likely free) |
-| LOW | Pat Bryant (DEN) | WR | — | 104 | 18% | Devaughn Vele | verify (likely free) |
-| LOW | Tank Dell (HOU) | WR | — | 111 | 46% | Devaughn Vele | verify |
-| LOW | Corey Kiner (NE) | RB | — | 187 | 25% | Emanuel Wilson | verify (likely free) |
-| LOW | Jonathon Brooks (CAR) | RB | — | 189 | 36% | Emanuel Wilson | verify |
-| LOW | Ray Davis (BUF) | RB | — | 192 | 4% | Emanuel Wilson | verify (likely free) |
-| LOW | Jaylen Wright (MIA) | RB | — | 193 | 1% | Emanuel Wilson | verify (likely free) |
-| LOW | Deshaun Watson (CLE) | QB | — | — | 14% | Sam Darnold | verify (likely free) |
-| LOW | Cleveland Browns (CLE) | DEF | — | — | 13% | Saints | verify (likely free) |
-| LOW | New York Giants (NYG) | DEF | — | — | 9% | Saints | verify (likely free) |
-| LOW | Los Angeles Chargers (LAC) | DEF | — | — | 36% | Saints | verify |
-| LOW | Jacksonville Jaguars (JAC) | DEF | — | — | 91% | Saints | verify |
-| LOW | Las Vegas Raiders (LV) | DEF | — | — | 5% | Saints | verify (likely free) |
-| LOW | New York Jets (NYJ) | DEF | — | — | 27% | Saints | verify (likely free) |
-| LOW | Dallas Cowboys (DAL) | DEF | — | — | 18% | Saints | verify (likely free) |
-| LOW | Indianapolis Colts (IND) | DEF | — | — | 18% | Saints | verify (likely free) |
+| HIGH | Ted Hurst III (TB) | WR | 5 | 111 | 4% | Devaughn Vele | verify (likely free) |
+| HIGH | Justice Hill (BAL) | RB | 6 | 155 | 33% | Emanuel Wilson | verify |
+| HIGH | Kaleb Johnson (GB) | RB | — | 156 | 10% | Emanuel Wilson | verify (likely free) |
+| MEDIUM | Darren Waller (CAR) | TE | 10 | 120 | 23% | Greg Dulcich | verify (likely free) |
+| MEDIUM | Will Shipley (PHI) | RB | 14 | 181 | 3% | Emanuel Wilson | verify (likely free) |
+| MEDIUM | Corey Kiner (NE) | RB | — | 169 | 21% | Emanuel Wilson | verify (likely free) |
+| MEDIUM | Kimani Vidal (LAC) | RB | — | 170 | 8% | Emanuel Wilson | verify (likely free) |
+| MEDIUM | RJ Harvey (DEN) | RB | — | 175 | 49% | Emanuel Wilson | verify |
+| MEDIUM | Ray Davis (BUF) | RB | — | 179 | 3% | Emanuel Wilson | verify (likely free) |
+| MEDIUM | Sione Vaki (DET) | RB | — | 187 | 2% | Emanuel Wilson | verify (likely free) |
+| LOW | Chimere Dike (TEN) | WR | 13 | 102 | 21% | Devaughn Vele | verify (likely free) |
+| LOW | Tre' Harris (LAC) | WR | — | 99 | 6% | Devaughn Vele | verify (likely free) |
+| LOW | Tank Dell (HOU) | WR | — | 101 | 41% | Devaughn Vele | verify |
+| LOW | Pat Bryant (DEN) | WR | — | 104 | 13% | Devaughn Vele | verify (likely free) |
+| LOW | Kenyon Sadiq (NYJ) | TE | — | 140 | 8% | Greg Dulcich | verify (likely free) |
+| LOW | Colby Parkinson (LAR) | TE | — | 145 | 2% | Greg Dulcich | verify (likely free) |
+| LOW | Austin Ekeler (WAS) | RB | — | 194 | 14% | Emanuel Wilson | verify (likely free) |
+| LOW | Jonathon Brooks (CAR) | RB | — | 196 | 35% | Emanuel Wilson | verify |
+| LOW | Jaylen Wright (MIA) | RB | — | 197 | 2% | Emanuel Wilson | verify (likely free) |
+| LOW | Los Angeles Chargers (LAC) | DEF | — | — | 26% | Saints | verify (likely free) |
+| LOW | Cleveland Browns (CLE) | DEF | — | — | 23% | Saints | verify (likely free) |
+| LOW | New York Giants (NYG) | DEF | — | — | 57% | Saints | verify |
+| LOW | Jacksonville Jaguars (JAC) | DEF | — | — | 90% | Saints | verify |
+| LOW | Las Vegas Raiders (LV) | DEF | — | — | 6% | Saints | verify (likely free) |
+| LOW | New York Jets (NYJ) | DEF | — | — | 34% | Saints | verify |
 
 ## Roster notes
 
